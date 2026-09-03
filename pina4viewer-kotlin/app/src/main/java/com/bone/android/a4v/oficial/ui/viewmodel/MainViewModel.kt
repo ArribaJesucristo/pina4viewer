@@ -15,11 +15,12 @@ import kotlinx.coroutines.launch
 
 data class MainUiState(
     val isLoading: Boolean = false,
-    val currentSource: SourceType = SourceType.SERVER_IN,
+    val currentSource: SourceType = SourceType.CAIDO,
     val allEvents: List<EventItem> = emptyList(),
     val filteredEvents: List<EventItem> = emptyList(),
     val searchQuery: String = "",
     val sportFilter: String = "",
+    val lastUpdated: String = "",
     val errorMessage: String? = null
 )
 
@@ -33,7 +34,7 @@ class MainViewModel(
     private var searchJob: Job? = null
 
     init {
-        loadEvents(SourceType.SERVER_IN)
+        loadEvents(SourceType.CAIDO)
     }
 
     fun selectSource(source: SourceType) {
@@ -65,12 +66,16 @@ class MainViewModel(
             _uiState.update { it.copy(isLoading = true, errorMessage = null) }
 
             val result = repository.getEvents(source, forceRefresh)
+            val currentDateTime = java.text.SimpleDateFormat("dd/MM/yyyy HH:mm", java.util.Locale.getDefault()).format(java.util.Date())
+            val footerText = "Actualizado $currentDateTime\nZona: Madrid,Paris,Bruselas"
+
             result.fold(
                 onSuccess = { events ->
                     _uiState.update { state ->
                         state.copy(
                             isLoading = false,
                             allEvents = events,
+                            lastUpdated = footerText,
                             filteredEvents = filterList(events, state.searchQuery, state.sportFilter)
                         )
                     }

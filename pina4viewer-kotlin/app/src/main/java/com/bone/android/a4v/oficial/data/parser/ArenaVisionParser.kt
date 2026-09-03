@@ -83,7 +83,7 @@ object ArenaVisionParser {
     }
 
     fun getFallbackAgenda(): List<EventItem> {
-        val today = "31/08/2026"
+        val today = java.text.SimpleDateFormat("dd/MM/yyyy", java.util.Locale.getDefault()).format(java.util.Date())
         return listOf(
             EventItem(
                 id = "1",

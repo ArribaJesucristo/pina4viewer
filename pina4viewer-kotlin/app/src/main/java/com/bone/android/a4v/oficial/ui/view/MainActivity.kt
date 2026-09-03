@@ -129,6 +129,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         val allRadios = radioMap.keys.toList()
+        allRadios.forEach { rb -> rb.isChecked = (rb == binding.rbCaido) }
 
         radioMap.forEach { (radioButton, sourceType) ->
             radioButton.setOnClickListener {
@@ -195,6 +196,10 @@ class MainActivity : AppCompatActivity() {
 
                     val count = state.filteredEvents.size
                     binding.tvUserCount.text = "Hay 2013357 descargas • $count eventos disponibles"
+
+                    if (state.lastUpdated.isNotEmpty()) {
+                        binding.tvFooterZone.text = state.lastUpdated
+                    }
 
                     binding.tvEmpty.visibility = if (!state.isLoading && state.filteredEvents.isEmpty()) {
                         View.VISIBLE
