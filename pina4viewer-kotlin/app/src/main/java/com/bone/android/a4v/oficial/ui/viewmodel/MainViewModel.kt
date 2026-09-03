@@ -1,9 +1,11 @@
 package com.bone.android.a4v.oficial.ui.viewmodel
 
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.bone.android.a4v.oficial.data.model.EventItem
 import com.bone.android.a4v.oficial.data.model.SourceType
+import com.bone.android.a4v.oficial.data.parser.ArenaVisionParser
 import com.bone.android.a4v.oficial.data.repository.EventsRepository
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -15,18 +17,21 @@ import kotlinx.coroutines.launch
 
 data class MainUiState(
     val isLoading: Boolean = false,
-    val currentSource: SourceType = SourceType.CAIDO,
+    val currentSource: SourceType = SourceType.SERVER_IN,
     val allEvents: List<EventItem> = emptyList(),
     val filteredEvents: List<EventItem> = emptyList(),
     val searchQuery: String = "",
     val sportFilter: String = "",
     val lastUpdated: String = "",
+    val isOffMode: Boolean = false,
     val errorMessage: String? = null
 )
 
 class MainViewModel(
-    private val repository: EventsRepository = EventsRepository()
-) : ViewModel() {
+    application: Application
+) : AndroidViewModel(application) {
+
+    private val repository = EventsRepository(application.applicationContext)
 
     private val _uiState = MutableStateFlow(MainUiState())
     val uiState: StateFlow<MainUiState> = _uiState.asStateFlow()
@@ -34,7 +39,8 @@ class MainViewModel(
     private var searchJob: Job? = null
 
     init {
-        loadEvents(SourceType.CAIDO)
+        ArenaVisionParser.initDefaultAgenda(application.applicationContext)
+        loadEvents(SourceType.SERVER_IN)
     }
 
     fun selectSource(source: SourceType) {
@@ -68,6 +74,7 @@ class MainViewModel(
             val result = repository.getEvents(source, forceRefresh)
             val currentDateTime = java.text.SimpleDateFormat("dd/MM/yyyy HH:mm", java.util.Locale.getDefault()).format(java.util.Date())
             val footerText = "Actualizado $currentDateTime\nZona: Madrid,Paris,Bruselas"
+            val isOff = repository.isCurrentSourceOffMode || source == SourceType.OFF_MODE
 
             result.fold(
                 onSuccess = { events ->
@@ -76,6 +83,7 @@ class MainViewModel(
                             isLoading = false,
                             allEvents = events,
                             lastUpdated = footerText,
+                            isOffMode = isOff,
                             filteredEvents = filterList(events, state.searchQuery, state.sportFilter)
                         )
                     }
@@ -84,6 +92,7 @@ class MainViewModel(
                     _uiState.update { state ->
                         state.copy(
                             isLoading = false,
+                            isOffMode = true,
                             errorMessage = error.localizedMessage ?: "Error al cargar la agenda"
                         )
                     }
@@ -93,28 +102,30 @@ class MainViewModel(
     }
 
     private fun applyFilters(query: String, sport: String) {
-        _uiState.update { state ->
-            state.copy(filteredEvents = filterList(state.allEvents, query, sport))
-        }
+        val filtered = filterList(_uiState.value.allEvents, query, sport)
+        _uiState.update { it.copy(filteredEvents = filtered) }
     }
 
-    private fun filterList(list: List<EventItem>, query: String, sport: String): List<EventItem> {
-        var filtered = list
+    private fun filterList(
+        events: List<EventItem>,
+        query: String,
+        sport: String
+    ): List<EventItem> {
+        val trimmedQuery = query.trim()
+        val hasQuery = trimmedQuery.isNotEmpty()
+        val hasSport = sport.isNotBlank()
 
-        if (sport.isNotBlank() && !sport.equals("TODOS", ignoreCase = true) && !sport.equals("UNFILTERED", ignoreCase = true)) {
-            filtered = filtered.filter { it.sport.contains(sport, ignoreCase = true) }
+        if (!hasQuery && !hasSport) return events
+
+        return events.filter { item ->
+            val matchSport = !hasSport || item.sport.contains(sport, ignoreCase = true)
+            val matchQuery = !hasQuery ||
+                item.title.contains(trimmedQuery, ignoreCase = true) ||
+                item.competition.contains(trimmedQuery, ignoreCase = true) ||
+                item.sport.contains(trimmedQuery, ignoreCase = true) ||
+                item.channels.any { it.name.contains(trimmedQuery, ignoreCase = true) }
+
+            matchSport && matchQuery
         }
-
-        if (query.isNotBlank()) {
-            val q = query.trim().lowercase()
-            filtered = filtered.filter {
-                it.title.lowercase().contains(q) ||
-                it.sport.lowercase().contains(q) ||
-                it.competition.lowercase().contains(q) ||
-                it.channels.any { ch -> ch.name.lowercase().contains(q) }
-            }
-        }
-
-        return filtered
     }
 }

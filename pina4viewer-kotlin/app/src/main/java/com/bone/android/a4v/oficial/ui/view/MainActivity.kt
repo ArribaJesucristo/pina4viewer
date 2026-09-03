@@ -22,6 +22,7 @@ import com.bone.android.a4v.oficial.R
 import com.bone.android.a4v.oficial.data.model.ChannelItem
 import com.bone.android.a4v.oficial.data.model.EventItem
 import com.bone.android.a4v.oficial.data.model.SourceType
+import com.bone.android.a4v.oficial.data.parser.ArenaVisionParser
 import com.bone.android.a4v.oficial.databinding.ActivityMainBinding
 import com.bone.android.a4v.oficial.ui.adapter.EventListAdapter
 import com.bone.android.a4v.oficial.ui.viewmodel.MainViewModel
@@ -129,7 +130,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         val allRadios = radioMap.keys.toList()
-        allRadios.forEach { rb -> rb.isChecked = (rb == binding.rbCaido) }
+        allRadios.forEach { rb -> rb.isChecked = (rb == binding.rbIn) }
 
         radioMap.forEach { (radioButton, sourceType) ->
             radioButton.setOnClickListener {
@@ -164,8 +165,9 @@ class MainActivity : AppCompatActivity() {
         binding.drawerChannelList.setOnItemClickListener { _, _, position, _ ->
             val channelNumber = position + 1
             val channelName = "AV$channelNumber"
+            val streamHash = ArenaVisionParser.cachedStreams[channelNumber.toString()] ?: channelName
             binding.drawerLayout.closeDrawers()
-            playChannel(ChannelItem(name = channelName, streamId = channelName))
+            playChannel(ChannelItem(name = channelName, streamId = streamHash))
         }
     }
 
@@ -195,7 +197,13 @@ class MainActivity : AppCompatActivity() {
                     eventAdapter.submitList(state.filteredEvents)
 
                     val count = state.filteredEvents.size
-                    binding.tvUserCount.text = "Hay 2013357 descargas • $count eventos disponibles"
+                    if (state.isOffMode) {
+                        binding.tvUserCount.text = "[OFF-MODE]"
+                        binding.tvUserCount.setTextColor(android.graphics.Color.parseColor("#FFD700"))
+                    } else {
+                        binding.tvUserCount.text = "Hay 2013357 descargas • $count eventos disponibles"
+                        binding.tvUserCount.setTextColor(android.graphics.Color.parseColor("#E0E0E0"))
+                    }
 
                     if (state.lastUpdated.isNotEmpty()) {
                         binding.tvFooterZone.text = state.lastUpdated

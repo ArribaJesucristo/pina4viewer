@@ -4,12 +4,12 @@ enum class SourceType(val title: String, val shortCode: String, val url: String)
     SERVER_IN(
         title = "ArenaVision (IN)",
         shortCode = "IN(D)",
-        url = "http://www.arena4viewer.in/"
+        url = "http://www.arena4viewer.in/misguia2.php"
     ),
     SERVER_PL(
         title = "ArenaVision (PL)",
         shortCode = "PL(D)",
-        url = "https://www.arena4viewer.pl/"
+        url = "https://www.arena4viewer.pl/misguia2.php"
     ),
     OFF_MODE(
         title = "Modo Offline",
@@ -19,27 +19,27 @@ enum class SourceType(val title: String, val shortCode: String, val url: String)
     SERVER_CO_IN(
         title = "ArenaVision (CO.IN)",
         shortCode = "CO.IN(D)",
-        url = "https://www.arena4viewer.co.in/"
+        url = "https://www.arena4viewer.co.in/misguia2.php"
     ),
     SERVER_COOL(
         title = "ArenaVision (COOL)",
         shortCode = "COOL(D)",
-        url = "https://www.arena4viewer.cool/guia2.php"
+        url = "https://www.arena4viewer.cool/misguia2.php"
     ),
     SERVER_INFO(
         title = "ArenaVision (INFO)",
         shortCode = "INFO(D)",
-        url = "https://www.arena4viewer.info/guia2.php"
+        url = "https://www.arena4viewer.info/misguia2.php"
     ),
     SERVER_TOP(
         title = "ArenaVision (TOP)",
         shortCode = "TOP(D)",
-        url = "https://www.arena4viewer.top/"
+        url = "https://www.arena4viewer.top/misguia2.php"
     ),
     SERVER_LV(
         title = "ArenaVision (LV)",
         shortCode = "LV(D)",
-        url = "https://www.arena4viewer.lv/"
+        url = "https://www.arena4viewer.lv/misguia2.php"
     ),
     SEARCH(
         title = "Lista M3U Peticiones",
