@@ -1,0 +1,59 @@
+package com.bone.android.a4v.oficial.data.model
+
+enum class SourceType(val title: String, val shortCode: String, val url: String) {
+    SERVER_IN(
+        title = "ArenaVision (IN)",
+        shortCode = "IN(D)",
+        url = "http://www.arena4viewer.in/"
+    ),
+    SERVER_PL(
+        title = "ArenaVision (PL)",
+        shortCode = "PL(D)",
+        url = "https://www.arena4viewer.pl/"
+    ),
+    OFF_MODE(
+        title = "Modo Offline",
+        shortCode = "[OFF-MODE]",
+        url = "offline"
+    ),
+    SERVER_CO_IN(
+        title = "ArenaVision (CO.IN)",
+        shortCode = "CO.IN(D)",
+        url = "https://www.arena4viewer.co.in/"
+    ),
+    SERVER_COOL(
+        title = "ArenaVision (COOL)",
+        shortCode = "COOL(D)",
+        url = "https://www.arena4viewer.cool/guia2.php"
+    ),
+    SERVER_INFO(
+        title = "ArenaVision (INFO)",
+        shortCode = "INFO(D)",
+        url = "https://www.arena4viewer.info/guia2.php"
+    ),
+    SERVER_TOP(
+        title = "ArenaVision (TOP)",
+        shortCode = "TOP(D)",
+        url = "https://www.arena4viewer.top/"
+    ),
+    SERVER_LV(
+        title = "ArenaVision (LV)",
+        shortCode = "LV(D)",
+        url = "https://www.arena4viewer.lv/"
+    ),
+    SEARCH(
+        title = "Lista M3U Peticiones",
+        shortCode = "Search",
+        url = "https://raw.githubusercontent.com/Icastresana/lista1/main/peticiones"
+    ),
+    CAIDO(
+        title = "MarkelLinks En Vivo",
+        shortCode = "CAIDO",
+        url = "https://www.markellinks.app/assets/links.json"
+    ),
+    PETICIONES(
+        title = "Peticiones Directas",
+        shortCode = "PETI",
+        url = "https://raw.githubusercontent.com/Icastresana/lista1/main/peticiones"
+    )
+}

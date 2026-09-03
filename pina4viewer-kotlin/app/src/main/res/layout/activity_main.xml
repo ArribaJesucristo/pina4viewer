@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Main Content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_dark">
+
+        <!-- Toolbar / Action Bar with Centered Logo -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/surface_dark"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="">
+
+            <ImageView
+                android:id="@+id/ivToolbarLogo"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:contentDescription="Piña4Viewer"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/logo_actionbar" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- User Count Text -->
+        <TextView
+            android:id="@+id/tvUserCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="Hay 2013357 descargas"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <!-- Radio Buttons Row 1 -->
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="6dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tvUserCount">
+
+            <RadioButton
+                android:id="@+id/rbIn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_bg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="IN(D)"
+                android:textColor="@color/radio_text_color"
+                android:textSize="12sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/rbOffMode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="[OFF-MODE]"
+                android:textColor="@color/radio_text_color"
+                android:textSize="10sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/rbCool"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="COOL(D)"
+                android:textColor="@color/radio_text_color"
+                android:textSize="11sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/rbTop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="TOP(D)"
+                android:textColor="@color/radio_text_color"
+                android:textSize="11sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/rbSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Search"
+                android:textColor="@color/radio_text_color"
+                android:textSize="11sp"
+                android:textStyle="bold|italic" />
+        </RadioGroup>
+
+        <!-- Radio Buttons Row 2 -->
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup1">
+
+            <RadioButton
+                android:id="@+id/rbPl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="PL(D)"
+                android:textColor="@color/radio_text_color"
+                android:textSize="12sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/rbCoIn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="CO.IN(D)"
+                android:textColor="@color/radio_text_color"
+                android:textSize="10sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/rbInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="INFO(D)"
+                android:textColor="@color/radio_text_color"
+                android:textSize="11sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/rbLv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="LV(D)"
+                android:textColor="@color/radio_text_color"
+                android:textSize="11sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/rbCaido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="CAIDO"
+                android:textColor="@color/radio_text_color"
+                android:textSize="11sp"
+                android:textStyle="bold|italic" />
+        </RadioGroup>
+
+        <!-- Search Input Box -->
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/search_input_bg"
+            android:hint="🔍 Buscar evento o canal..."
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingHorizontal="12dp"
+            android:singleLine="true"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint"
+            android:textSize="13sp"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup2" />
+
+        <!-- Event List with Pull to Refresh -->
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toTopOf="@id/tvFooterZone"
+            app:layout_constraintTop_toBottomOf="@id/etSearch">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewEvents"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingVertical="4dp"
+                    tools:listitem="@layout/item_event" />
+
+                <TextView
+                    android:id="@+id/tvEmpty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="24dp"
+                    android:text="@string/empty_events"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <!-- Bottom Footer Status Text -->
+        <TextView
+            android:id="@+id/tvFooterZone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingVertical="4dp"
+            android:text="Actualizado 31/08/2026 19:00\nZona: Madrid,Paris,Bruselas"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Side Navigation Drawer (Direct Channels & Social Media) -->
+    <LinearLayout
+        android:id="@+id/navigationDrawer"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/surface_dark"
+        android:orientation="vertical">
+
+        <!-- Drawer Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_dark"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:contentDescription="Logo"
+                android:src="@mipmap/logo_actionbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Canales Directos"
+                android:textColor="@color/gold_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_color" />
+
+        <!-- Direct Channels List -->
+        <ListView
+            android:id="@+id/drawerChannelList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/divider_color"
+            android:dividerHeight="1dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_color" />
+
+        <!-- Social Media Shortcuts -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageButton
+                android:id="@+id/btnTelegram"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Telegram"
+                android:src="@mipmap/icotelegram" />
+
+            <ImageButton
+                android:id="@+id/btnTwitter"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Twitter"
+                android:src="@mipmap/icotwitter" />
+
+            <ImageButton
+                android:id="@+id/btnInstagram"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Instagram"
+                android:src="@mipmap/icoinstagram" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

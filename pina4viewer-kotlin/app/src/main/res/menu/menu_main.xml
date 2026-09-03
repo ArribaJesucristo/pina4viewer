@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_vpn"
+        android:orderInCategory="1"
+        android:title="VPN"
+        app:actionLayout="@layout/view_toolbar_vpn"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_filter_sport"
+        android:orderInCategory="2"
+        android:title="⚽ Filtrar por deporte"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_timezone"
+        android:orderInCategory="3"
+        android:title="🌍 Ajustar Mi Zona Horaria"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_orientation"
+        android:orderInCategory="4"
+        android:title="🔄 Cambiar Orientación"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_software"
+        android:orderInCategory="5"
+        android:title="📲 Descargar Reproductores"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_update"
+        android:orderInCategory="6"
+        android:title="🔄 Buscar Actualización"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_about"
+        android:orderInCategory="7"
+        android:title="ℹ️ Acerca de Piña4Viewer"
+        app:showAsAction="never" />
+
+</menu>

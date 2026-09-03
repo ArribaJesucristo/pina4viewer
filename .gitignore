@@ -1,0 +1,25 @@
+# Decompiled workspace from original app
+apk-workspace/
+
+# Android / Gradle Build files
+.gradle/
+build/
+app/build/
+**/build/
+**/.gradle/
+**/gradle_bin/
+local.properties
+**/local.properties
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Temporary files
+markel_*.html
+markel_*.js
+markel_*.json
+screen_*.png
+*.tmp
+*.apk
