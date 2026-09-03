@@ -1,6 +1,6 @@
 {
-  "versionCode": 2004,
-  "versionName": "8.1.3",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.1.3/pina4viewer-v8.1.3.apk",
-  "changelog": "• Cambio ultra-rápido e instantáneo entre servidores (0ms)\n• Caché DNS en memoria con IPs pre-sembradas (evita retrasos en DoH)\n• Reutilización inmediata de agenda entre espejos de ArenaVision\n• Reducción de timeouts de red y pool de conexiones HTTP activas"
+  "versionCode": 2005,
+  "versionName": "8.1.4",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.1.4/pina4viewer-v8.1.4.apk",
+  "changelog": "• Navegación 100% nativa con mando a distancia para Fire TV Stick y Android TV (D-Pad)\n• Resaltado dorado de alto contraste en las tarjetas de eventos y botones al navegar con mando\n• Detección y prioridad de AceStream para Android TV (org.acestream.media.atv)\n• Cambio instantáneo entre servidores (0ms) y filtro oficial de fechas pasadas"
 }

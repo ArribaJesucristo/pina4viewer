@@ -98,10 +98,10 @@ object StreamLauncher {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK
         }
 
-        if (isStandardInstalled) {
-            intent.component = ComponentName(PACKAGE_ACESTREAM, "org.acestream.engine.ContentStartActivity")
-        } else if (isAtvInstalled) {
+        if (isAtvInstalled) {
             intent.component = ComponentName(PACKAGE_ACESTREAM_ATV, "org.acestream.engine.ContentStartActivity")
+        } else if (isStandardInstalled) {
+            intent.component = ComponentName(PACKAGE_ACESTREAM, "org.acestream.engine.ContentStartActivity")
         }
 
         try {

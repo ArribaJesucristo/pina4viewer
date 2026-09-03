@@ -68,9 +68,17 @@ class EventListAdapter(
                 }
             }
 
-            // TV focusable setup
+            // TV remote focus setup
             binding.cardRoot.isFocusable = true
-            binding.cardRoot.isFocusableInTouchMode = false
+            binding.cardRoot.isClickable = true
+            binding.cardRoot.setOnKeyListener { _, keyCode, event ->
+                if (event.action == android.view.KeyEvent.ACTION_DOWN && keyCode == android.view.KeyEvent.KEYCODE_DPAD_UP && bindingAdapterPosition == 0) {
+                    binding.root.rootView.findViewById<android.view.View>(com.bone.android.a4v.oficial.R.id.etSearch)?.requestFocus()
+                    true
+                } else {
+                    false
+                }
+            }
         }
     }
 

@@ -225,6 +225,8 @@
             android:textColor="@color/text_primary"
             android:textColorHint="@color/text_hint"
             android:textSize="13sp"
+            android:nextFocusUp="@id/radioGroup2"
+            android:nextFocusDown="@id/recyclerViewEvents"
             app:layout_constraintTop_toBottomOf="@id/radioGroup2" />
 
         <!-- Event List with Pull to Refresh -->
@@ -233,12 +235,14 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="4dp"
+            android:descendantFocusability="afterDescendants"
             app:layout_constraintBottom_toTopOf="@id/tvFooterZone"
             app:layout_constraintTop_toBottomOf="@id/etSearch">
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:descendantFocusability="afterDescendants">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerViewEvents"
@@ -246,6 +250,9 @@
                     android:layout_height="match_parent"
                     android:clipToPadding="false"
                     android:paddingVertical="4dp"
+                    android:focusable="true"
+                    android:descendantFocusability="afterDescendants"
+                    android:nextFocusUp="@id/etSearch"
                     tools:listitem="@layout/item_event" />
 
                 <TextView

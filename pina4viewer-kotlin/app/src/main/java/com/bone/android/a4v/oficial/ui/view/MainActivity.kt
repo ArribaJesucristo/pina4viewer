@@ -143,6 +143,29 @@ class MainActivity : AppCompatActivity() {
         binding.etSearch.addTextChangedListener { text ->
             viewModel.onSearchQueryChanged(text?.toString().orEmpty())
         }
+
+        binding.etSearch.setOnKeyListener { _, keyCode, event ->
+            if (event.action == android.view.KeyEvent.ACTION_DOWN) {
+                when (keyCode) {
+                    android.view.KeyEvent.KEYCODE_DPAD_DOWN -> {
+                        val firstChild = binding.recyclerViewEvents.layoutManager?.findViewByPosition(0)
+                        if (firstChild != null) {
+                            firstChild.requestFocus()
+                        } else {
+                            binding.recyclerViewEvents.requestFocus()
+                        }
+                        true
+                    }
+                    android.view.KeyEvent.KEYCODE_DPAD_UP -> {
+                        binding.rbPl.requestFocus()
+                        true
+                    }
+                    else -> false
+                }
+            } else {
+                false
+            }
+        }
     }
 
     private fun setupSwipeRefresh() {
@@ -236,6 +259,36 @@ class MainActivity : AppCompatActivity() {
                 WebBrowserActivity.start(this, url)
             }
         )
+    }
+
+    override fun dispatchKeyEvent(event: android.view.KeyEvent): Boolean {
+        if (event.action == android.view.KeyEvent.ACTION_DOWN) {
+            when (event.keyCode) {
+                android.view.KeyEvent.KEYCODE_DPAD_DOWN -> {
+                    if (binding.etSearch.hasFocus()) {
+                        val firstChild = binding.recyclerViewEvents.layoutManager?.findViewByPosition(0)
+                        if (firstChild != null) {
+                            firstChild.requestFocus()
+                            return true
+                        }
+                    }
+                }
+                android.view.KeyEvent.KEYCODE_DPAD_UP -> {
+                    val focused = currentFocus
+                    if (focused != null) {
+                        val containing = binding.recyclerViewEvents.findContainingItemView(focused)
+                        if (containing != null) {
+                            val pos = binding.recyclerViewEvents.getChildAdapterPosition(containing)
+                            if (pos == 0) {
+                                binding.etSearch.requestFocus()
+                                return true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return super.dispatchKeyEvent(event)
     }
 
     override fun onResume() {
