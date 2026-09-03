@@ -26,3 +26,4 @@
 ## 📲 Descarga
 
 Puedes descargar la última versión del archivo APK directamente desde la sección de [Releases](https://github.com/ArribaJesucristo/pina4viewer/releases).
+
