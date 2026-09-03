@@ -1,4 +1,4 @@
-# 🍍 Piña4Viewer 2.0 (Kotlin)
+# 🍍 Piña4Viewer (Kotlin)
 
 > Aplicación moderna y nativa para Android, Amazon Fire TV Stick y Android TV para ver eventos deportivos y transmisiones de canales en directo con AceStream.
 
