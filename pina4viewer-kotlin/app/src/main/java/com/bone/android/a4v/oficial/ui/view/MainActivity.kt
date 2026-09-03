@@ -191,6 +191,25 @@ class MainActivity : AppCompatActivity() {
             binding.drawerLayout.closeDrawers()
             playChannel(ChannelItem(name = channelName, streamId = streamHash))
         }
+
+        binding.drawerLayout.addDrawerListener(object : androidx.drawerlayout.widget.DrawerLayout.SimpleDrawerListener() {
+            override fun onDrawerOpened(drawerView: android.view.View) {
+                binding.drawerChannelList.requestFocus()
+            }
+            override fun onDrawerClosed(drawerView: android.view.View) {
+                binding.rbIn.requestFocus()
+            }
+        })
+
+        binding.drawerChannelList.setOnKeyListener { _, keyCode, event ->
+            if (event.action == android.view.KeyEvent.ACTION_DOWN && keyCode == android.view.KeyEvent.KEYCODE_DPAD_RIGHT) {
+                binding.drawerLayout.closeDrawers()
+                binding.rbIn.requestFocus()
+                true
+            } else {
+                false
+            }
+        }
     }
 
     private fun observeState() {
@@ -264,6 +283,10 @@ class MainActivity : AppCompatActivity() {
     override fun dispatchKeyEvent(event: android.view.KeyEvent): Boolean {
         if (event.action == android.view.KeyEvent.ACTION_DOWN) {
             when (event.keyCode) {
+                android.view.KeyEvent.KEYCODE_MENU -> {
+                    openOptionsMenu()
+                    return true
+                }
                 android.view.KeyEvent.KEYCODE_DPAD_DOWN -> {
                     if (binding.etSearch.hasFocus()) {
                         val firstChild = binding.recyclerViewEvents.layoutManager?.findViewByPosition(0)
@@ -274,6 +297,38 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 android.view.KeyEvent.KEYCODE_DPAD_UP -> {
+                    if (binding.rbIn.hasFocus() || binding.rbOffMode.hasFocus() || binding.rbCool.hasFocus() || binding.rbTop.hasFocus() || binding.rbSearch.hasFocus()) {
+                        if (binding.rbIn.hasFocus() || binding.rbOffMode.hasFocus()) {
+                            binding.drawerLayout.openDrawer(androidx.core.view.GravityCompat.START)
+                        } else {
+                            openOptionsMenu()
+                        }
+                        return true
+                    }
+                    if (binding.rbPl.hasFocus()) {
+                        binding.rbIn.requestFocus()
+                        return true
+                    }
+                    if (binding.rbCoIn.hasFocus()) {
+                        binding.rbOffMode.requestFocus()
+                        return true
+                    }
+                    if (binding.rbInfo.hasFocus()) {
+                        binding.rbCool.requestFocus()
+                        return true
+                    }
+                    if (binding.rbLv.hasFocus()) {
+                        binding.rbTop.requestFocus()
+                        return true
+                    }
+                    if (binding.rbCaido.hasFocus()) {
+                        binding.rbSearch.requestFocus()
+                        return true
+                    }
+                    if (binding.etSearch.hasFocus()) {
+                        binding.rbPl.requestFocus()
+                        return true
+                    }
                     val focused = currentFocus
                     if (focused != null) {
                         val containing = binding.recyclerViewEvents.findContainingItemView(focused)
@@ -284,6 +339,18 @@ class MainActivity : AppCompatActivity() {
                                 return true
                             }
                         }
+                    }
+                }
+                android.view.KeyEvent.KEYCODE_DPAD_LEFT -> {
+                    if (binding.rbIn.hasFocus() || binding.rbPl.hasFocus()) {
+                        binding.drawerLayout.openDrawer(androidx.core.view.GravityCompat.START)
+                        return true
+                    }
+                }
+                android.view.KeyEvent.KEYCODE_DPAD_RIGHT -> {
+                    if (binding.rbSearch.hasFocus() || binding.rbCaido.hasFocus()) {
+                        openOptionsMenu()
+                        return true
                     }
                 }
             }

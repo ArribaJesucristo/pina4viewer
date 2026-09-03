@@ -70,7 +70,8 @@
                 android:text="IN(D)"
                 android:textColor="@color/radio_text_color"
                 android:textSize="12sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:nextFocusDown="@+id/rbPl" />
 
             <RadioButton
                 android:id="@+id/rbOffMode"
@@ -84,7 +85,8 @@
                 android:text="[OFF-MODE]"
                 android:textColor="@color/radio_text_color"
                 android:textSize="10sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:nextFocusDown="@+id/rbCoIn" />
 
             <RadioButton
                 android:id="@+id/rbCool"
@@ -98,7 +100,8 @@
                 android:text="COOL(D)"
                 android:textColor="@color/radio_text_color"
                 android:textSize="11sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:nextFocusDown="@+id/rbInfo" />
 
             <RadioButton
                 android:id="@+id/rbTop"
@@ -112,7 +115,8 @@
                 android:text="TOP(D)"
                 android:textColor="@color/radio_text_color"
                 android:textSize="11sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:nextFocusDown="@+id/rbLv" />
 
             <RadioButton
                 android:id="@+id/rbSearch"
@@ -126,7 +130,8 @@
                 android:text="Search"
                 android:textColor="@color/radio_text_color"
                 android:textSize="11sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:nextFocusDown="@+id/rbCaido" />
         </RadioGroup>
 
         <!-- Radio Buttons Row 2 -->
@@ -150,7 +155,9 @@
                 android:text="PL(D)"
                 android:textColor="@color/radio_text_color"
                 android:textSize="12sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:nextFocusUp="@+id/rbIn"
+                android:nextFocusDown="@+id/etSearch" />
 
             <RadioButton
                 android:id="@+id/rbCoIn"
@@ -164,7 +171,9 @@
                 android:text="CO.IN(D)"
                 android:textColor="@color/radio_text_color"
                 android:textSize="10sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:nextFocusUp="@+id/rbOffMode"
+                android:nextFocusDown="@+id/etSearch" />
 
             <RadioButton
                 android:id="@+id/rbInfo"
@@ -178,7 +187,9 @@
                 android:text="INFO(D)"
                 android:textColor="@color/radio_text_color"
                 android:textSize="11sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:nextFocusUp="@+id/rbCool"
+                android:nextFocusDown="@+id/etSearch" />
 
             <RadioButton
                 android:id="@+id/rbLv"
@@ -192,7 +203,9 @@
                 android:text="LV(D)"
                 android:textColor="@color/radio_text_color"
                 android:textSize="11sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:nextFocusUp="@+id/rbTop"
+                android:nextFocusDown="@+id/etSearch" />
 
             <RadioButton
                 android:id="@+id/rbCaido"
@@ -206,7 +219,9 @@
                 android:text="CAIDO"
                 android:textColor="@color/radio_text_color"
                 android:textSize="11sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:nextFocusUp="@+id/rbSearch"
+                android:nextFocusDown="@+id/etSearch" />
         </RadioGroup>
 
         <!-- Search Input Box -->
