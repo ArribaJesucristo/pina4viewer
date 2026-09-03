@@ -1,6 +1,6 @@
 {
-  "versionCode": 2001,
-  "versionName": "8.1.0",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.1.0/pina4viewer-v8.1.0.apk",
-  "changelog": "• Integración oficial del protocolo POST original de ArenaVision (misguia2.php)\n• Servidores IN(D), PL(D), CO.IN(D), COOL(D) e INFO(D) 100% operativos con agenda en directo\n• Soporte idéntico para [OFF-MODE] y caché local a4v.lic\n• Mapeo dinámico de canales AV con sus hashes directos de AceStream"
+  "versionCode": 2002,
+  "versionName": "8.1.1",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.1.1/pina4viewer-v8.1.1.apk",
+  "changelog": "• Filtro exacto de fechas pasadas (comparaFechas): se ocultan eventos caducados de días anteriores (días 1 y 2)\n• Muestra únicamente partidos de hoy en vivo y próximos días\n• Protocolo POST oficial de ArenaVision activo\n• Mapeo dinámico de streams y hashes AceStream"
 }

@@ -66,18 +66,22 @@ object ArenaVisionParser {
                 val channelsRaw = columns.getOrNull(5).orEmpty()
 
                 if (match.isNotEmpty() && !match.equals("EVENT", ignoreCase = true) && !match.equals("MATCH", ignoreCase = true)) {
-                    val channelList = extractChannels(channelsRaw, streamMap)
-                    events.add(
-                        EventItem(
-                            id = (index++).toString(),
-                            title = match,
-                            sport = sport,
-                            competition = competition,
-                            time = time,
-                            date = date,
-                            channels = channelList
+                    val cleanTime = time.replace("CET", "").trim()
+                    val fullDateTime = "$date $cleanTime"
+                    if (comparaFechas(fullDateTime)) {
+                        val channelList = extractChannels(channelsRaw, streamMap)
+                        events.add(
+                            EventItem(
+                                id = (index++).toString(),
+                                title = match,
+                                sport = sport,
+                                competition = competition,
+                                time = time,
+                                date = date,
+                                channels = channelList
+                            )
                         )
-                    )
+                    }
                 }
             }
         }
@@ -87,6 +91,22 @@ object ArenaVisionParser {
         }
 
         return events
+    }
+
+    fun comparaFechas(dateTimeStr: String): Boolean {
+        return try {
+            val sdf = java.text.SimpleDateFormat("dd/MM/yyyy HH:mm", java.util.Locale.getDefault())
+            sdf.timeZone = java.util.TimeZone.getTimeZone("Europe/Madrid")
+            val eventDate = sdf.parse(dateTimeStr) ?: return true
+
+            val cal = java.util.Calendar.getInstance(java.util.TimeZone.getTimeZone("Europe/Madrid"))
+            cal.add(java.util.Calendar.HOUR_OF_DAY, -3)
+            val threshold = cal.time
+
+            threshold.before(eventDate)
+        } catch (e: Exception) {
+            true
+        }
     }
 
     fun extractChannels(raw: String, streamMap: Map<String, String> = cachedStreams): List<ChannelItem> {
