@@ -1,6 +1,6 @@
 {
-  "versionCode": 2003,
-  "versionName": "8.1.2",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.1.2/pina4viewer-v8.1.2.apk",
-  "changelog": "• Eliminadas todas las referencias y botones de redes sociales al desarrollador original\n• Barra lateral de canales más limpia y despejada\n• Filtro exacto de fechas pasadas (comparaFechas)\n• Protocolo POST oficial de ArenaVision activo"
+  "versionCode": 2004,
+  "versionName": "8.1.3",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.1.3/pina4viewer-v8.1.3.apk",
+  "changelog": "• Cambio ultra-rápido e instantáneo entre servidores (0ms)\n• Caché DNS en memoria con IPs pre-sembradas (evita retrasos en DoH)\n• Reutilización inmediata de agenda entre espejos de ArenaVision\n• Reducción de timeouts de red y pool de conexiones HTTP activas"
 }

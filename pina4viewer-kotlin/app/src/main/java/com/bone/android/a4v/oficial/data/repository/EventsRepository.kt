@@ -8,6 +8,7 @@ import com.bone.android.a4v.oficial.data.parser.M3uParser
 import com.bone.android.a4v.oficial.data.parser.MarkelScraper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import okhttp3.ConnectionPool
 import okhttp3.FormBody
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -17,25 +18,50 @@ import java.util.concurrent.TimeUnit
 class EventsRepository(
     private val context: Context? = null,
     private val client: OkHttpClient = OkHttpClient.Builder()
+        .connectionPool(ConnectionPool(8, 5, TimeUnit.MINUTES))
         .dns(com.bone.android.a4v.oficial.util.DnsHelper.customDns)
-        .connectTimeout(6, TimeUnit.SECONDS)
-        .readTimeout(6, TimeUnit.SECONDS)
+        .connectTimeout(3, TimeUnit.SECONDS)
+        .readTimeout(3, TimeUnit.SECONDS)
+        .retryOnConnectionFailure(true)
         .followRedirects(true)
         .build()
 ) {
 
     private val cache = mutableMapOf<SourceType, List<EventItem>>()
     private val offModeSources = mutableSetOf<SourceType>()
+    private var lastArenaVisionEvents: List<EventItem>? = null
+
     var isCurrentSourceOffMode: Boolean = false
         private set
 
-    fun isSourceOffMode(source: SourceType): Boolean = offModeSources.contains(source) || source == SourceType.OFF_MODE
+    fun isArenaVisionSource(source: SourceType): Boolean =
+        source != SourceType.CAIDO && source != SourceType.SEARCH && source != SourceType.PETICIONES
+
+    fun isSourceOffMode(source: SourceType): Boolean =
+        offModeSources.contains(source) || source == SourceType.OFF_MODE
+
+    fun peekCachedEvents(source: SourceType): List<EventItem>? {
+        if (cache.containsKey(source)) return cache[source]
+        if (isArenaVisionSource(source) && !lastArenaVisionEvents.isNullOrEmpty()) {
+            return lastArenaVisionEvents
+        }
+        return null
+    }
 
     suspend fun getEvents(source: SourceType, forceRefresh: Boolean = false): Result<List<EventItem>> =
         withContext(Dispatchers.IO) {
+            // Si no es forzado y ya está en caché específica, retorno inmediato (0ms)
             if (!forceRefresh && cache.containsKey(source)) {
                 isCurrentSourceOffMode = isSourceOffMode(source)
                 return@withContext Result.success(cache[source].orEmpty())
+            }
+
+            // Si es un servidor ArenaVision y ya tenemos la agenda de otro servidor espejo, retorno instantáneo
+            if (!forceRefresh && isArenaVisionSource(source) && !lastArenaVisionEvents.isNullOrEmpty() && source != SourceType.OFF_MODE) {
+                isCurrentSourceOffMode = false
+                val shared = lastArenaVisionEvents.orEmpty()
+                cache[source] = shared
+                return@withContext Result.success(shared)
             }
 
             if (source == SourceType.OFF_MODE) {
@@ -45,7 +71,7 @@ class EventsRepository(
                 val events = if (!cached.isNullOrEmpty()) {
                     ArenaVisionParser.parseHtmlAgenda(cached)
                 } else {
-                    ArenaVisionParser.getFallbackAgenda()
+                    lastArenaVisionEvents ?: ArenaVisionParser.getFallbackAgenda()
                 }
                 cache[source] = events
                 return@withContext Result.success(events)
@@ -73,7 +99,7 @@ class EventsRepository(
 
                 client.newCall(request).execute().use { response ->
                     if (!response.isSuccessful) {
-                        isCurrentSourceOffMode = (source != SourceType.CAIDO && source != SourceType.SEARCH)
+                        isCurrentSourceOffMode = isArenaVisionSource(source)
                         if (isCurrentSourceOffMode) offModeSources.add(source) else offModeSources.remove(source)
                         val fallback = getFallback(source)
                         cache[source] = fallback
@@ -98,6 +124,7 @@ class EventsRepository(
                             if (parsed.isNotEmpty()) {
                                 isCurrentSourceOffMode = false
                                 offModeSources.remove(source)
+                                lastArenaVisionEvents = parsed
                                 saveOfflineLic(body)
                                 parsed
                             } else {
@@ -112,7 +139,7 @@ class EventsRepository(
                     Result.success(events)
                 }
             } catch (e: Exception) {
-                isCurrentSourceOffMode = (source != SourceType.CAIDO && source != SourceType.SEARCH)
+                isCurrentSourceOffMode = isArenaVisionSource(source)
                 if (isCurrentSourceOffMode) offModeSources.add(source) else offModeSources.remove(source)
                 val fallback = getFallback(source)
                 cache[source] = fallback
@@ -125,6 +152,9 @@ class EventsRepository(
             SourceType.CAIDO -> MarkelScraper.getFallbackMarkelEvents()
             SourceType.SEARCH, SourceType.PETICIONES -> emptyList()
             else -> {
+                if (!lastArenaVisionEvents.isNullOrEmpty()) {
+                    return lastArenaVisionEvents.orEmpty()
+                }
                 val cached = loadOfflineLic()
                 if (!cached.isNullOrEmpty()) {
                     val parsed = ArenaVisionParser.parseHtmlAgenda(cached)

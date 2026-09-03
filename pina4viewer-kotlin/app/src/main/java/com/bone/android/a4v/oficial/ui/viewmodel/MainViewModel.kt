@@ -45,7 +45,23 @@ class MainViewModel(
 
     fun selectSource(source: SourceType) {
         if (_uiState.value.currentSource == source && _uiState.value.allEvents.isNotEmpty()) return
-        _uiState.update { it.copy(currentSource = source, sportFilter = "") }
+
+        val cached = repository.peekCachedEvents(source)
+        if (!cached.isNullOrEmpty()) {
+            val isOff = repository.isSourceOffMode(source)
+            _uiState.update { state ->
+                state.copy(
+                    currentSource = source,
+                    sportFilter = "",
+                    isLoading = false,
+                    isOffMode = isOff,
+                    allEvents = cached,
+                    filteredEvents = filterList(cached, state.searchQuery, "")
+                )
+            }
+        } else {
+            _uiState.update { it.copy(currentSource = source, sportFilter = "") }
+        }
         loadEvents(source)
     }
 
@@ -69,7 +85,10 @@ class MainViewModel(
 
     private fun loadEvents(source: SourceType, forceRefresh: Boolean = false) {
         viewModelScope.launch {
-            _uiState.update { it.copy(isLoading = true, errorMessage = null) }
+            val hasCached = repository.peekCachedEvents(source) != null
+            if (!hasCached || forceRefresh) {
+                _uiState.update { it.copy(isLoading = true, errorMessage = null) }
+            }
 
             val result = repository.getEvents(source, forceRefresh)
             val currentDateTime = java.text.SimpleDateFormat("dd/MM/yyyy HH:mm", java.util.Locale.getDefault()).format(java.util.Date())
