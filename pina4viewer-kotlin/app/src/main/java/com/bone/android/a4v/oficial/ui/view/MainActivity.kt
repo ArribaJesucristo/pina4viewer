@@ -64,7 +64,6 @@ class MainActivity : AppCompatActivity() {
         setupSearch()
         setupSwipeRefresh()
         setupDrawerChannels()
-        setupSocialButtons()
         observeState()
         initVpnShield()
         checkAppUpdate(manual = false)
@@ -168,18 +167,6 @@ class MainActivity : AppCompatActivity() {
             val streamHash = ArenaVisionParser.cachedStreams[channelNumber.toString()] ?: channelName
             binding.drawerLayout.closeDrawers()
             playChannel(ChannelItem(name = channelName, streamId = streamHash))
-        }
-    }
-
-    private fun setupSocialButtons() {
-        binding.btnTelegram.setOnClickListener {
-            openUrl("https://t.me/joinchat/DlmTURFmRLF8JORESy7xAg")
-        }
-        binding.btnTwitter.setOnClickListener {
-            openUrl("https://twitter.com/BeOneDevCo")
-        }
-        binding.btnInstagram.setOnClickListener {
-            openUrl("https://www.instagram.com/beonedev/")
         }
     }
 
