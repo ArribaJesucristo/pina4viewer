@@ -10,8 +10,14 @@
         app:showAsAction="always" />
 
     <item
-        android:id="@+id/menu_filter_sport"
+        android:id="@+id/menu_vpn_settings"
         android:orderInCategory="2"
+        android:title="🛡️ Estado y Configuración de VPN"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_filter_sport"
+        android:orderInCategory="3"
         android:title="⚽ Filtrar por deporte"
         app:showAsAction="never" />
 

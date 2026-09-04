@@ -181,9 +181,9 @@ object UpdateHelper {
 
     fun getAppVersionName(context: Context): String {
         return try {
-            context.packageManager.getPackageInfo(context.packageName, 0).versionName ?: "8.1.9"
+            context.packageManager.getPackageInfo(context.packageName, 0).versionName ?: "8.2.0"
         } catch (e: Exception) {
-            "8.1.9"
+            "8.2.0"
         }
     }
 }

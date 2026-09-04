@@ -37,6 +37,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var drawerToggle: ActionBarDrawerToggle
 
     private var isLandscape = false
+    private var vpnActionView: View? = null
+    private var vpnDialog: AlertDialog? = null
 
     private val directChannels = (1..30).map { i ->
         val quality = if (i <= 6 || i in 11..16) "1080p" else "720p"
@@ -67,6 +69,7 @@ class MainActivity : AppCompatActivity() {
         observeState()
         initVpnShield()
         checkAppUpdate(manual = false)
+        binding.root.post { binding.rbIn.requestFocus() }
     }
 
     private fun initVpnShield() {
@@ -290,7 +293,19 @@ class MainActivity : AppCompatActivity() {
                     openOptionsMenu()
                     return true
                 }
+                android.view.KeyEvent.KEYCODE_DPAD_CENTER,
+                android.view.KeyEvent.KEYCODE_ENTER,
+                android.view.KeyEvent.KEYCODE_NUMPAD_ENTER -> {
+                    if (vpnActionView?.hasFocus() == true) {
+                        showVpnDialog()
+                        return true
+                    }
+                }
                 android.view.KeyEvent.KEYCODE_DPAD_DOWN -> {
+                    if (vpnActionView?.hasFocus() == true) {
+                        binding.rbCool.requestFocus()
+                        return true
+                    }
                     if (binding.etSearch.hasFocus()) {
                         val firstChild = binding.recyclerViewEvents.layoutManager?.findViewByPosition(0)
                         if (firstChild != null) {
@@ -300,12 +315,21 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 android.view.KeyEvent.KEYCODE_DPAD_UP -> {
-                    if (binding.rbIn.hasFocus() || binding.rbOffMode.hasFocus() || binding.rbCool.hasFocus() || binding.rbTop.hasFocus() || binding.rbSearch.hasFocus()) {
-                        if (binding.rbIn.hasFocus() || binding.rbOffMode.hasFocus()) {
-                            binding.drawerLayout.openDrawer(androidx.core.view.GravityCompat.START)
+                    if (vpnActionView?.hasFocus() == true) {
+                        return true
+                    }
+                    if (binding.rbCool.hasFocus() || binding.rbTop.hasFocus() || binding.rbSearch.hasFocus()) {
+                        val target = vpnActionView ?: binding.toolbar.findViewById(R.id.btnToolbarVpn)
+                        if (target != null) {
+                            vpnActionView = target
+                            target.requestFocus()
                         } else {
                             openOptionsMenu()
                         }
+                        return true
+                    }
+                    if (binding.rbIn.hasFocus() || binding.rbOffMode.hasFocus()) {
+                        binding.drawerLayout.openDrawer(androidx.core.view.GravityCompat.START)
                         return true
                     }
                     if (binding.rbPl.hasFocus()) {
@@ -345,14 +369,28 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 android.view.KeyEvent.KEYCODE_DPAD_LEFT -> {
+                    if (vpnActionView?.hasFocus() == true) {
+                        binding.drawerLayout.openDrawer(androidx.core.view.GravityCompat.START)
+                        return true
+                    }
                     if (binding.rbIn.hasFocus() || binding.rbPl.hasFocus()) {
                         binding.drawerLayout.openDrawer(androidx.core.view.GravityCompat.START)
                         return true
                     }
                 }
                 android.view.KeyEvent.KEYCODE_DPAD_RIGHT -> {
-                    if (binding.rbSearch.hasFocus() || binding.rbCaido.hasFocus()) {
+                    if (vpnActionView?.hasFocus() == true) {
                         openOptionsMenu()
+                        return true
+                    }
+                    if (binding.rbSearch.hasFocus() || binding.rbCaido.hasFocus()) {
+                        val target = vpnActionView ?: binding.toolbar.findViewById(R.id.btnToolbarVpn)
+                        if (target != null) {
+                            vpnActionView = target
+                            target.requestFocus()
+                        } else {
+                            openOptionsMenu()
+                        }
                         return true
                     }
                 }
@@ -376,12 +414,29 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPrepareOptionsMenu(menu: Menu?): Boolean {
         setupVpnActionView(menu)
+        val vpnSettingsItem = menu?.findItem(R.id.menu_vpn_settings)
+        if (vpnSettingsItem != null) {
+            val isVpnOn = com.bone.android.a4v.oficial.util.VpnHelper.isVpnActive(this)
+            vpnSettingsItem.title = if (isVpnOn) {
+                "🛡️ VPN: Conectada (Ajustes)"
+            } else {
+                "🛡️ VPN: Desconectada (Activar)"
+            }
+        }
         return super.onPrepareOptionsMenu(menu)
     }
 
-    private fun setupVpnActionView(menu: Menu?) {
-        val vpnMenuItem = menu?.findItem(R.id.menu_vpn) ?: return
-        val actionView = vpnMenuItem.actionView ?: return
+    private fun setupVpnActionView(menu: Menu? = null) {
+        val targetMenu = menu ?: binding.toolbar.menu
+        val actionView = targetMenu?.findItem(R.id.menu_vpn)?.actionView
+            ?: binding.toolbar.findViewById(R.id.btnToolbarVpn)
+        if (actionView == null) return
+        vpnActionView = actionView
+
+        actionView.isFocusable = true
+        actionView.isFocusableInTouchMode = true
+        actionView.isClickable = true
+
         val ivIcon = actionView.findViewById<android.widget.ImageView>(R.id.ivVpnStatusIcon)
         val tvText = actionView.findViewById<android.widget.TextView>(R.id.tvVpnStatusText)
 
@@ -400,6 +455,14 @@ class MainActivity : AppCompatActivity() {
 
         actionView.setOnClickListener {
             showVpnDialog()
+        }
+
+        actionView.setOnFocusChangeListener { v, hasFocus ->
+            if (hasFocus) {
+                v.animate().scaleX(1.1f).scaleY(1.1f).setDuration(150).start()
+            } else {
+                v.animate().scaleX(1.0f).scaleY(1.0f).setDuration(150).start()
+            }
         }
     }
 
@@ -425,7 +488,7 @@ class MainActivity : AppCompatActivity() {
                 showSoftwareDialog()
                 true
             }
-            R.id.menu_vpn -> {
+            R.id.menu_vpn, R.id.menu_vpn_settings -> {
                 showVpnDialog()
                 true
             }
@@ -531,6 +594,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showVpnDialog() {
+        if (vpnDialog?.isShowing == true) return
+
         val isExternal = com.bone.android.a4v.oficial.util.VpnHelper.isExternalVpnActive(this)
         val isBuiltIn = com.bone.android.a4v.oficial.util.VpnHelper.isBuiltInVpnActive()
         val installedVpn = com.bone.android.a4v.oficial.util.VpnHelper.getInstalledVpnApp(this)
@@ -552,7 +617,16 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            dialogBuilder.show()
+            val d = dialogBuilder.create()
+            d.setOnDismissListener {
+                vpnDialog = null
+                vpnActionView?.requestFocus()
+            }
+            d.setOnShowListener {
+                d.getButton(AlertDialog.BUTTON_POSITIVE)?.requestFocus()
+            }
+            vpnDialog = d
+            d.show()
             return
         }
 
@@ -586,7 +660,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        builder.show()
+        val d = builder.create()
+        d.setOnDismissListener {
+            vpnDialog = null
+            vpnActionView?.requestFocus()
+        }
+        d.setOnShowListener {
+            d.getButton(AlertDialog.BUTTON_POSITIVE)?.requestFocus()
+        }
+        vpnDialog = d
+        d.show()
     }
 
     private fun showAboutDialog() {

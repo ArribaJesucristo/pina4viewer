@@ -5,12 +5,16 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
     android:layout_marginEnd="8dp"
-    android:background="?attr/selectableItemBackgroundBorderless"
+    android:background="@drawable/bg_vpn_button"
     android:clickable="true"
     android:focusable="true"
+    android:focusableInTouchMode="true"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:padding="6dp">
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
 
     <ImageView
         android:id="@+id/ivVpnStatusIcon"
