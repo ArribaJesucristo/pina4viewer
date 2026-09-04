@@ -1,6 +1,6 @@
 {
-  "versionCode": 2006,
-  "versionName": "8.1.5",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.1.5/pina4viewer-v8.1.5.apk",
-  "changelog": "• Acceso directo con el mando a la barra superior y menú de opciones\n• Botón Menú del mando Fire TV (☰) abre directamente las opciones (actualizar, zona horaria, filtros, vpn)\n• Pulsar ARRIBA en los servidores o DERECHA en Search abre el menú\n• Pulsar IZQUIERDA en IN(D) abre los Canales Directos\n• Navegación bidireccional perfecta entre eventos, buscador y las dos filas de servidores"
+  "versionCode": 2007,
+  "versionName": "8.1.6",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.1.6/pina4viewer-v8.1.6.apk",
+  "changelog": "• Compatibilidad total con VPNs externas (Proton VPN, WireGuard, Surfshark, etc.) sin interferencias ni bucles\n• Si ya tienes Proton VPN activa, la app lo detecta automáticamente mostrando VPN ON sin intentar quitarte la conexión\n• Corrección de crash en Android 14 por tipo de servicio en primer plano\n• Protección ante permisos revocados o bloqueo por Always-on VPN"
 }

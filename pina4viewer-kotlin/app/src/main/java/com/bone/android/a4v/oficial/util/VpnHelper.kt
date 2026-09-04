@@ -16,12 +16,19 @@ object VpnHelper {
     const val PACKAGE_CLOUDFLARE_WARP = "com.cloudflare.onedotonedotonedotone"
     val vpnStateFlow = kotlinx.coroutines.flow.MutableStateFlow(false)
 
-    fun isVpnActive(context: Context): Boolean {
-        if (PinaVpnService.isVpnActive) return true
+    fun isBuiltInVpnActive(): Boolean = PinaVpnService.isVpnActive
+
+    fun isExternalVpnActive(context: Context): Boolean {
+        if (PinaVpnService.isVpnActive) return false
         val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager ?: return false
         val activeNetwork = cm.activeNetwork ?: return false
         val caps = cm.getNetworkCapabilities(activeNetwork) ?: return false
         return caps.hasTransport(NetworkCapabilities.TRANSPORT_VPN)
+    }
+
+    fun isVpnActive(context: Context): Boolean {
+        if (PinaVpnService.isVpnActive) return true
+        return isExternalVpnActive(context)
     }
 
     fun updateState(context: Context) {
@@ -33,6 +40,10 @@ object VpnHelper {
     }
 
     fun startBuiltInVpn(context: Context) {
+        if (isExternalVpnActive(context)) {
+            // Ya hay una VPN externa activa (ej. Proton VPN). No interferir.
+            return
+        }
         PinaVpnService.start(context)
     }
 
@@ -41,7 +52,12 @@ object VpnHelper {
     }
 
     fun toggleBuiltInVpn(activity: Activity, onPermissionNeeded: (Intent) -> Unit) {
-        if (isVpnActive(activity)) {
+        if (isExternalVpnActive(activity)) {
+            Toast.makeText(activity, "🟢 Ya estás protegido con tu VPN externa (Proton VPN)", Toast.LENGTH_LONG).show()
+            return
+        }
+
+        if (isBuiltInVpnActive()) {
             stopBuiltInVpn(activity)
             Toast.makeText(activity, "🛡️ Escudo VPN Desactivado", Toast.LENGTH_SHORT).show()
         } else {

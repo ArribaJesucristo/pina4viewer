@@ -70,11 +70,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initVpnShield() {
-        val prepIntent = com.bone.android.a4v.oficial.util.VpnHelper.prepareVpn(this)
-        if (prepIntent != null) {
-            vpnLauncher.launch(prepIntent)
-        } else {
-            com.bone.android.a4v.oficial.util.VpnHelper.startBuiltInVpn(this)
+        if (com.bone.android.a4v.oficial.util.VpnHelper.isExternalVpnActive(this)) {
+            invalidateOptionsMenu()
+            return
         }
     }
 
@@ -382,11 +380,12 @@ class MainActivity : AppCompatActivity() {
         val ivIcon = actionView.findViewById<android.widget.ImageView>(R.id.ivVpnStatusIcon)
         val tvText = actionView.findViewById<android.widget.TextView>(R.id.tvVpnStatusText)
 
+        val isExternal = com.bone.android.a4v.oficial.util.VpnHelper.isExternalVpnActive(this)
         val isVpnOn = com.bone.android.a4v.oficial.util.VpnHelper.isVpnActive(this)
 
         if (isVpnOn) {
             ivIcon?.setImageResource(R.drawable.ic_shield_check)
-            tvText?.text = "VPN ON"
+            tvText?.text = if (isExternal) "VPN ON" else "VPN ON"
             tvText?.setTextColor(android.graphics.Color.parseColor("#00E676"))
         } else {
             ivIcon?.setImageResource(R.drawable.ic_shield_off)
@@ -523,7 +522,22 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showVpnDialog() {
-        val isVpnOn = com.bone.android.a4v.oficial.util.VpnHelper.isVpnActive(this)
+        val isExternal = com.bone.android.a4v.oficial.util.VpnHelper.isExternalVpnActive(this)
+        val isBuiltIn = com.bone.android.a4v.oficial.util.VpnHelper.isBuiltInVpnActive()
+
+        if (isExternal) {
+            AlertDialog.Builder(this)
+                .setTitle("🛡️ Estado de Conexión VPN")
+                .setMessage("🟢 VPN EXTERNA CONECTADA (ej. Proton VPN)\n\n• Tu dispositivo ya cuenta con un túnel VPN activo a nivel de sistema.\n• Las transmisiones de AceStream y los servidores de ArenaVision ya están protegidos contra bloqueos de operadoras.\n• En Android solo puede haber una única VPN activa a la vez; por tanto, no necesitas activar el escudo interno de Piña4Viewer.")
+                .setPositiveButton("Entendido", null)
+                .setNeutralButton("Ajustes VPN Android") { _, _ ->
+                    com.bone.android.a4v.oficial.util.VpnHelper.openSystemVpnSettings(this)
+                }
+                .show()
+            return
+        }
+
+        val isVpnOn = isBuiltIn
         val statusText = if (isVpnOn) {
             "🟢 ESCUDO VPN: CONECTADO\n\n• Túnel Cifrado Anti-Bloqueos (Quad9 Suiza 9.9.9.9 + Google + AdGuard)\n• Inmune a bloqueos de operadoras en España\n• AceStream y transmisiones desbloqueadas\n• 100% velocidad de tu conexión sin límites"
         } else {

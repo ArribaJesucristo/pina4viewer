@@ -75,7 +75,20 @@ class PinaVpnService : VpnService() {
     private fun connectVpn() {
         if (isRunning) return
         createNotificationChannel()
-        startForeground(NOTIFICATION_ID, buildNotification())
+
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                startForeground(
+                    NOTIFICATION_ID,
+                    buildNotification(),
+                    android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE
+                )
+            } else {
+                startForeground(NOTIFICATION_ID, buildNotification())
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
 
         try {
             val builder = Builder()
@@ -100,20 +113,28 @@ class PinaVpnService : VpnService() {
             )
             builder.setConfigureIntent(pendingIntent)
 
-            vpnInterface = builder.establish()
+            val pfd = builder.establish()
+            if (pfd == null) {
+                // Denegado por el sistema (por ejemplo, si otra VPN como Proton VPN está activa)
+                disconnectVpn()
+                stopSelf()
+                return
+            }
+
+            vpnInterface = pfd
             isRunning = true
             isVpnActive = true
             com.bone.android.a4v.oficial.util.VpnHelper.vpnStateFlow.value = true
 
-            startPacketForwarding()
+            startPacketForwarding(pfd)
         } catch (e: Exception) {
             e.printStackTrace()
             disconnectVpn()
+            stopSelf()
         }
     }
 
-    private fun startPacketForwarding() {
-        val pfd = vpnInterface ?: return
+    private fun startPacketForwarding(pfd: ParcelFileDescriptor) {
 
         serviceScope.launch {
             val inputStream = FileInputStream(pfd.fileDescriptor)
