@@ -256,11 +256,16 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        val channelOptions = event.channels.map { "${it.name}(ACESTREAM)" }.toTypedArray()
+        if (event.channels.size == 1) {
+            playChannel(event.channels.first())
+            return
+        }
+
+        val channelNames = event.channels.map { it.name }.toTypedArray()
 
         AlertDialog.Builder(this)
-            .setTitle("Canales(players)")
-            .setItems(channelOptions) { _, which ->
+            .setTitle("Canales disponibles")
+            .setItems(channelNames) { _, which ->
                 val selectedChannel = event.channels.getOrNull(which)
                 selectedChannel?.let { playChannel(it) }
             }
@@ -412,6 +417,10 @@ class MainActivity : AppCompatActivity() {
                 toggleOrientation()
                 true
             }
+            R.id.menu_install_acestream -> {
+                com.bone.android.a4v.oficial.util.AceStreamInstallerHelper.promptInstallDialog(this, force = true)
+                true
+            }
             R.id.menu_software -> {
                 showSoftwareDialog()
                 true
@@ -501,7 +510,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showSoftwareDialog() {
         val apps = arrayOf(
-            "Descargar AceStream Engine (Recomendado)",
+            "📺 Instalar / Actualizar AceStream (Automático)",
             "Descargar Wiseplay Player",
             "Descargar MX Player",
             "Descargar SopCast"
@@ -511,7 +520,7 @@ class MainActivity : AppCompatActivity() {
             .setTitle("Software necesario para reproducción")
             .setItems(apps) { _, which ->
                 when (which) {
-                    0 -> openUrl("http://wiki.acestream.org/wiki/index.php/Download")
+                    0 -> com.bone.android.a4v.oficial.util.AceStreamInstallerHelper.promptInstallDialog(this, force = true)
                     1 -> openUrl("market://details?id=com.wiseplay")
                     2 -> openUrl("market://details?id=com.mxtech.videoplayer.ad")
                     3 -> openUrl("http://download.sopcast.com/download/SopCast.apk")

@@ -1,5 +1,6 @@
 package com.bone.android.a4v.oficial.util
 
+import android.app.Activity
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
@@ -30,7 +31,11 @@ object StreamLauncher {
         "AV10" to "8888999900001111222233334444555566667777"
     )
 
-    fun launchChannel(context: Context, channel: ChannelItem, onWebFallback: ((String) -> Unit)? = null) {
+    fun launchChannel(
+        context: Context,
+        channel: ChannelItem,
+        onWebFallback: ((String) -> Unit)? = null
+    ) {
         val streamId = channel.streamId.trim()
 
         if (streamId.startsWith("http://") || streamId.startsWith("https://")) {
@@ -90,43 +95,47 @@ object StreamLauncher {
         val uriString = "acestream://$cleanHash"
         val uri = Uri.parse(uriString)
 
-        val pm = context.packageManager
-        val isStandardInstalled = isAppInstalled(context, PACKAGE_ACESTREAM)
-        val isAtvInstalled = isAppInstalled(context, PACKAGE_ACESTREAM_ATV)
+        val isAceInstalled = AceStreamInstallerHelper.isAceStreamInstalled(context)
+        val isWiseplayInstalled = isAppInstalled(context, PACKAGE_WISEPLAY)
+
+        // Si ni AceStream ni Wiseplay están instalados, abrir instalador directo en 1 clic
+        if (!isAceInstalled && !isWiseplayInstalled) {
+            if (context is Activity) {
+                AceStreamInstallerHelper.promptInstallDialog(context) {
+                    launchAceStream(context, infoHashOrUrl)
+                }
+                return
+            }
+        }
 
         val intent = Intent(Intent.ACTION_VIEW, uri).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK
         }
 
-        if (isAtvInstalled) {
-            intent.component = ComponentName(PACKAGE_ACESTREAM_ATV, "org.acestream.engine.ContentStartActivity")
-        } else if (isStandardInstalled) {
-            intent.component = ComponentName(PACKAGE_ACESTREAM, "org.acestream.engine.ContentStartActivity")
+        val chooser = Intent.createChooser(intent, "Abrir transmisión en...").apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK
         }
 
         try {
-            context.startActivity(intent)
+            context.startActivity(chooser)
         } catch (e: Exception) {
-            // Fallback without explicit component
-            val fallbackIntent = Intent(Intent.ACTION_VIEW, uri).apply {
-                flags = Intent.FLAG_ACTIVITY_NEW_TASK
-            }
             try {
-                context.startActivity(fallbackIntent)
+                context.startActivity(intent)
             } catch (err: Exception) {
-                // Prompt install
-                val marketIntent = Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$PACKAGE_ACESTREAM")).apply {
-                    flags = Intent.FLAG_ACTIVITY_NEW_TASK
-                }
-                try {
-                    Toast.makeText(context, "Abriendo reproductor...", Toast.LENGTH_SHORT).show()
-                    context.startActivity(marketIntent)
-                } catch (storeErr: Exception) {
-                    Toast.makeText(
-                        context,
-                        "Instala AceStream Engine para reproducir este canal.",
-                        Toast.LENGTH_LONG
-                    ).show()
+                if (context is Activity) {
+                    AceStreamInstallerHelper.promptInstallDialog(context) {
+                        launchAceStream(context, infoHashOrUrl)
+                    }
+                } else {
+                    val marketIntent = Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=org.acestream.media")).apply {
+                        flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                    }
+                    try {
+                        Toast.makeText(context, "Instala un reproductor compatible (AceStream o Wiseplay).", Toast.LENGTH_SHORT).show()
+                        context.startActivity(marketIntent)
+                    } catch (storeErr: Exception) {
+                        openInBrowser(context, "https://github.com/ArribaJesucristo/pina4viewer/releases")
+                    }
                 }
             }
         }

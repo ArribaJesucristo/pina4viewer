@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
 
     <uses-feature
         android:name="android.hardware.touchscreen"
@@ -26,6 +27,14 @@
         </intent>
         <package android:name="org.acestream.media" />
         <package android:name="org.acestream.media.atv" />
+        <package android:name="org.acestream.core" />
+        <package android:name="org.acestream.core.atv" />
+        <package android:name="org.acestream.node" />
+        <package android:name="org.acestream.node.web" />
+        <package android:name="org.acestream.core.web" />
+        <package android:name="org.acestream.media.web" />
+        <package android:name="org.acestream.engine" />
+        <package android:name="org.acestream.engine.web" />
         <package android:name="com.wiseplay" />
         <package android:name="com.mxtech.videoplayer.ad" />
         <package android:name="org.videolan.vlc" />

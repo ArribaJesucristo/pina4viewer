@@ -1,6 +1,8 @@
 {
-  "versionCode": 2009,
-  "versionName": "8.1.8",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.1.8/pina4viewer-v8.1.8.apk",
-  "changelog": "• Soporte universal para cualquier VPN: NordVPN, Proton VPN, Surfshark, ExpressVPN, WireGuard, CyberGhost, Mullvad, etc.\n• Detección automática del nombre de tu app VPN activa con acceso directo en 1 clic para abrirla\n• Coexistencia limpia a nivel de sistema operativo sin interferencias ni cortes"
+  "versionCode": 2010,
+  "versionName": "8.1.9",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.1.9/pina4viewer-v8.1.9.apk",
+  "acestreamAtvUrl": "https://download.acestream.media/products/android-tv/acestream-core/armv7/latest",
+  "acestreamMobileUrl": "https://android.acestream.net/download/apk",
+  "changelog": "• Instalador automático de AceStream en 1 clic (Modo Abuela) para Android TV y Móvil\n• Detección automática de dispositivo y descarga directa con bypass de censura DNS\n• Acceso directo en el menú superior para instalar o actualizar el reproductor en cualquier momento"
 }
