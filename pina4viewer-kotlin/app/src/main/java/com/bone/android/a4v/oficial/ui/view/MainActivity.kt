@@ -546,7 +546,7 @@ class MainActivity : AppCompatActivity() {
 
         val toggleButtonTitle = if (isVpnOn) "Desactivar Escudo" else "Activar Escudo (1-Clic)"
 
-        AlertDialog.Builder(this)
+        val builder = AlertDialog.Builder(this)
             .setTitle("🛡️ Escudo Anti-Bloqueos Integrado")
             .setMessage(statusText)
             .setPositiveButton(toggleButtonTitle) { _, _ ->
@@ -556,7 +556,14 @@ class MainActivity : AppCompatActivity() {
                 binding.root.postDelayed({ invalidateOptionsMenu() }, 500)
             }
             .setNegativeButton("Cerrar", null)
-            .show()
+
+        if (com.bone.android.a4v.oficial.util.VpnHelper.isProtonVpnInstalled(this)) {
+            builder.setNeutralButton("Abrir Proton VPN") { _, _ ->
+                com.bone.android.a4v.oficial.util.VpnHelper.launchProtonVpn(this)
+            }
+        }
+
+        builder.show()
     }
 
     private fun showAboutDialog() {

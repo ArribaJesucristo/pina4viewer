@@ -1,6 +1,6 @@
 {
-  "versionCode": 2007,
-  "versionName": "8.1.6",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.1.6/pina4viewer-v8.1.6.apk",
-  "changelog": "• Compatibilidad total con VPNs externas (Proton VPN, WireGuard, Surfshark, etc.) sin interferencias ni bucles\n• Si ya tienes Proton VPN activa, la app lo detecta automáticamente mostrando VPN ON sin intentar quitarte la conexión\n• Corrección de crash en Android 14 por tipo de servicio en primer plano\n• Protección ante permisos revocados o bloqueo por Always-on VPN"
+  "versionCode": 2008,
+  "versionName": "8.1.7",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.1.7/pina4viewer-v8.1.7.apk",
+  "changelog": "• Eliminada por completo la autoactivación del escudo VPN al arrancar la app\n• Integración nativa con Proton VPN: acceso directo con 1 clic para abrir Proton VPN\n• Coexistencia total con VPNs externas sin cortes ni bucles\n• Estabilidad 100% en Android 14"
 }

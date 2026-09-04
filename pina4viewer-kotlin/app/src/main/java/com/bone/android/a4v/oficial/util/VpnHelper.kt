@@ -13,8 +13,37 @@ import com.bone.android.a4v.oficial.vpn.PinaVpnService
 
 object VpnHelper {
 
+    const val PACKAGE_PROTON_VPN = "ch.protonvpn.android"
     const val PACKAGE_CLOUDFLARE_WARP = "com.cloudflare.onedotonedotonedotone"
     val vpnStateFlow = kotlinx.coroutines.flow.MutableStateFlow(false)
+
+    fun isProtonVpnInstalled(context: Context): Boolean {
+        return try {
+            context.packageManager.getPackageInfo(PACKAGE_PROTON_VPN, 0)
+            true
+        } catch (e: Exception) {
+            false
+        }
+    }
+
+    fun launchProtonVpn(context: Context) {
+        val pm = context.packageManager
+        val intent = pm.getLaunchIntentForPackage(PACKAGE_PROTON_VPN)
+        if (intent != null) {
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            context.startActivity(intent)
+        } else {
+            val storeIntent = Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$PACKAGE_PROTON_VPN")).apply {
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            }
+            try {
+                Toast.makeText(context, "Abriendo Proton VPN en Google Play...", Toast.LENGTH_SHORT).show()
+                context.startActivity(storeIntent)
+            } catch (e: Exception) {
+                openWebUrl(context, "https://protonvpn.com/")
+            }
+        }
+    }
 
     fun isBuiltInVpnActive(): Boolean = PinaVpnService.isVpnActive
 
