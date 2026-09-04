@@ -524,16 +524,26 @@ class MainActivity : AppCompatActivity() {
     private fun showVpnDialog() {
         val isExternal = com.bone.android.a4v.oficial.util.VpnHelper.isExternalVpnActive(this)
         val isBuiltIn = com.bone.android.a4v.oficial.util.VpnHelper.isBuiltInVpnActive()
+        val installedVpn = com.bone.android.a4v.oficial.util.VpnHelper.getInstalledVpnApp(this)
+        val vpnName = installedVpn?.name ?: "externa (NordVPN, Proton, etc.)"
 
         if (isExternal) {
-            AlertDialog.Builder(this)
+            val dialogBuilder = AlertDialog.Builder(this)
                 .setTitle("🛡️ Estado de Conexión VPN")
-                .setMessage("🟢 VPN EXTERNA CONECTADA (ej. Proton VPN)\n\n• Tu dispositivo ya cuenta con un túnel VPN activo a nivel de sistema.\n• Las transmisiones de AceStream y los servidores de ArenaVision ya están protegidos contra bloqueos de operadoras.\n• En Android solo puede haber una única VPN activa a la vez; por tanto, no necesitas activar el escudo interno de Piña4Viewer.")
+                .setMessage("🟢 VPN ACTIVA ($vpnName)\n\n• Tu dispositivo ya cuenta con un túnel VPN activo a nivel de sistema.\n• Las transmisiones de AceStream y los servidores de ArenaVision ya están protegidos contra bloqueos de operadoras.\n• En Android solo puede haber una única VPN activa a la vez; por tanto, no necesitas activar el escudo interno de Piña4Viewer.")
                 .setPositiveButton("Entendido", null)
-                .setNeutralButton("Ajustes VPN Android") { _, _ ->
+
+            if (installedVpn != null) {
+                dialogBuilder.setNeutralButton("Abrir ${installedVpn.name}") { _, _ ->
+                    com.bone.android.a4v.oficial.util.VpnHelper.launchVpnApp(this, installedVpn)
+                }
+            } else {
+                dialogBuilder.setNeutralButton("Ajustes VPN Android") { _, _ ->
                     com.bone.android.a4v.oficial.util.VpnHelper.openSystemVpnSettings(this)
                 }
-                .show()
+            }
+
+            dialogBuilder.show()
             return
         }
 
@@ -541,13 +551,13 @@ class MainActivity : AppCompatActivity() {
         val statusText = if (isVpnOn) {
             "🟢 ESCUDO VPN: CONECTADO\n\n• Túnel Cifrado Anti-Bloqueos (Quad9 Suiza 9.9.9.9 + Google + AdGuard)\n• Inmune a bloqueos de operadoras en España\n• AceStream y transmisiones desbloqueadas\n• 100% velocidad de tu conexión sin límites"
         } else {
-            "🔴 ESCUDO VPN: DESCONECTADO\n\nLas operadoras pueden bloquear las emisiones de AceStream. Pulsa el botón de abajo para activar el escudo integrado."
+            "🔴 ESCUDO VPN: DESCONECTADO\n\nLas operadoras pueden bloquear las emisiones de AceStream. Puedes activar el escudo integrado o abrir tu aplicación VPN favorita."
         }
 
         val toggleButtonTitle = if (isVpnOn) "Desactivar Escudo" else "Activar Escudo (1-Clic)"
 
         val builder = AlertDialog.Builder(this)
-            .setTitle("🛡️ Escudo Anti-Bloqueos Integrado")
+            .setTitle("🛡️ Escudo Anti-Bloqueos")
             .setMessage(statusText)
             .setPositiveButton(toggleButtonTitle) { _, _ ->
                 com.bone.android.a4v.oficial.util.VpnHelper.toggleBuiltInVpn(this) { intent ->
@@ -557,9 +567,13 @@ class MainActivity : AppCompatActivity() {
             }
             .setNegativeButton("Cerrar", null)
 
-        if (com.bone.android.a4v.oficial.util.VpnHelper.isProtonVpnInstalled(this)) {
-            builder.setNeutralButton("Abrir Proton VPN") { _, _ ->
-                com.bone.android.a4v.oficial.util.VpnHelper.launchProtonVpn(this)
+        if (installedVpn != null) {
+            builder.setNeutralButton("Abrir ${installedVpn.name}") { _, _ ->
+                com.bone.android.a4v.oficial.util.VpnHelper.launchVpnApp(this, installedVpn)
+            }
+        } else {
+            builder.setNeutralButton("Ajustes VPN") { _, _ ->
+                com.bone.android.a4v.oficial.util.VpnHelper.openSystemVpnSettings(this)
             }
         }
 
