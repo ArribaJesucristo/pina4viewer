@@ -6,6 +6,10 @@ apk-workspace/
 build/
 app/build/
 **/build/
+**/bin/
+**/.settings/
+**/.project
+**/.classpath
 **/.gradle/
 **/gradle_bin/
 local.properties

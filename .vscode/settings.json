@@ -1,5 +1,6 @@
 {
-    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.configuration.updateBuildConfiguration": "disabled",
+    "java.import.gradle.enabled": false,
     "git.autofetch": false,
     "git.autorefresh": false,
     "git.terminalAuthentication": false,
