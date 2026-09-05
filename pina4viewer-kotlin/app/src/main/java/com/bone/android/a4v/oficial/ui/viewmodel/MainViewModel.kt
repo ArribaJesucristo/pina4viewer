@@ -132,12 +132,32 @@ class MainViewModel(
     ): List<EventItem> {
         val trimmedQuery = query.trim()
         val hasQuery = trimmedQuery.isNotEmpty()
-        val hasSport = sport.isNotBlank()
+        val hasSport = sport.isNotBlank() && !sport.equals("ALL", ignoreCase = true)
 
         if (!hasQuery && !hasSport) return events
 
         return events.filter { item ->
-            val matchSport = !hasSport || item.sport.contains(sport, ignoreCase = true)
+            val s = item.sport.uppercase().trim()
+            val matchSport = when {
+                !hasSport -> true
+                sport.equals("FUTBOL", ignoreCase = true) ->
+                    s.contains("FUTBOL") || s.contains("SOCCER") || s.contains("FOOTBALL") || s.contains("FUTSAL")
+                sport.equals("TENIS", ignoreCase = true) ->
+                    s.contains("TENIS") || s.contains("TENNIS") || s.contains("PADEL") || s.contains("ATP") || s.contains("WTA")
+                sport.equals("MOTOR", ignoreCase = true) ->
+                    s.contains("MOTOR") || s.contains("F1") || s.contains("FORMULA") || s.contains("MOTO") || s.contains("MOTOGP") || s.contains("SUPERBIKE")
+                sport.equals("BASKET", ignoreCase = true) || sport.equals("BALONCESTO", ignoreCase = true) ->
+                    s.contains("BALONCESTO") || s.contains("BASKET") || s.contains("NBA")
+                sport.equals("OTROS", ignoreCase = true) -> {
+                    val isMainSport = s.contains("FUTBOL") || s.contains("SOCCER") || s.contains("FOOTBALL") || s.contains("FUTSAL") ||
+                        s.contains("TENIS") || s.contains("TENNIS") || s.contains("PADEL") || s.contains("ATP") || s.contains("WTA") ||
+                        s.contains("MOTOR") || s.contains("F1") || s.contains("FORMULA") || s.contains("MOTO") || s.contains("MOTOGP") || s.contains("SUPERBIKE") ||
+                        s.contains("BALONCESTO") || s.contains("BASKET") || s.contains("NBA")
+                    !isMainSport
+                }
+                else -> item.sport.contains(sport, ignoreCase = true)
+            }
+
             val matchQuery = !hasQuery ||
                 item.title.contains(trimmedQuery, ignoreCase = true) ||
                 item.competition.contains(trimmedQuery, ignoreCase = true) ||

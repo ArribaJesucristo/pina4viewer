@@ -68,6 +68,7 @@ class MainActivity : AppCompatActivity() {
         setupRecyclerView()
         setupRadioButtons()
         setupSearch()
+        setupSportChips()
         setupSwipeRefresh()
         setupDrawerChannels()
         observeState()
@@ -139,6 +140,7 @@ class MainActivity : AppCompatActivity() {
         radioMap.forEach { (radioButton, sourceType) ->
             radioButton.setOnClickListener {
                 allRadios.forEach { rb -> rb.isChecked = (rb == radioButton) }
+                binding.chipSportAll.isChecked = true
                 viewModel.selectSource(sourceType)
             }
         }
@@ -153,12 +155,15 @@ class MainActivity : AppCompatActivity() {
             if (event.action == android.view.KeyEvent.ACTION_DOWN) {
                 when (keyCode) {
                     android.view.KeyEvent.KEYCODE_DPAD_DOWN -> {
-                        val firstChild = binding.recyclerViewEvents.layoutManager?.findViewByPosition(0)
-                        if (firstChild != null) {
-                            firstChild.requestFocus()
-                        } else {
-                            binding.recyclerViewEvents.requestFocus()
+                        val checkedChip = when {
+                            binding.chipSportFutbol.isChecked -> binding.chipSportFutbol
+                            binding.chipSportTenis.isChecked -> binding.chipSportTenis
+                            binding.chipSportMotor.isChecked -> binding.chipSportMotor
+                            binding.chipSportBasket.isChecked -> binding.chipSportBasket
+                            binding.chipSportOtros.isChecked -> binding.chipSportOtros
+                            else -> binding.chipSportAll
                         }
+                        checkedChip.requestFocus()
                         true
                     }
                     android.view.KeyEvent.KEYCODE_DPAD_UP -> {
@@ -169,6 +174,44 @@ class MainActivity : AppCompatActivity() {
                 }
             } else {
                 false
+            }
+        }
+    }
+
+    private fun setupSportChips() {
+        val chipMap = mapOf(
+            binding.chipSportAll to "",
+            binding.chipSportFutbol to "FUTBOL",
+            binding.chipSportTenis to "TENIS",
+            binding.chipSportMotor to "MOTOR",
+            binding.chipSportBasket to "BASKET",
+            binding.chipSportOtros to "OTROS"
+        )
+
+        chipMap.forEach { (chip, sportKey) ->
+            chip.setOnClickListener {
+                viewModel.setSportFilter(sportKey)
+            }
+
+            chip.setOnKeyListener { _, keyCode, event ->
+                if (event.action == android.view.KeyEvent.ACTION_DOWN) {
+                    when (keyCode) {
+                        android.view.KeyEvent.KEYCODE_DPAD_DOWN -> {
+                            val firstChild = binding.recyclerViewEvents.layoutManager?.findViewByPosition(0)
+                            if (firstChild != null) {
+                                firstChild.requestFocus()
+                            } else {
+                                binding.recyclerViewEvents.requestFocus()
+                            }
+                            true
+                        }
+                        android.view.KeyEvent.KEYCODE_DPAD_UP -> {
+                            binding.etSearch.requestFocus()
+                            true
+                        }
+                        else -> false
+                    }
+                } else false
             }
         }
     }
@@ -262,6 +305,15 @@ class MainActivity : AppCompatActivity() {
                     updateDrawerChannelsIfChanged()
                     binding.swipeRefresh.isRefreshing = state.isLoading
                     eventAdapter.submitList(state.filteredEvents)
+
+                    when {
+                        state.sportFilter.isEmpty() -> if (!binding.chipSportAll.isChecked) binding.chipSportAll.isChecked = true
+                        state.sportFilter.equals("FUTBOL", ignoreCase = true) -> if (!binding.chipSportFutbol.isChecked) binding.chipSportFutbol.isChecked = true
+                        state.sportFilter.equals("TENIS", ignoreCase = true) -> if (!binding.chipSportTenis.isChecked) binding.chipSportTenis.isChecked = true
+                        state.sportFilter.equals("MOTOR", ignoreCase = true) -> if (!binding.chipSportMotor.isChecked) binding.chipSportMotor.isChecked = true
+                        state.sportFilter.equals("BASKET", ignoreCase = true) -> if (!binding.chipSportBasket.isChecked) binding.chipSportBasket.isChecked = true
+                        state.sportFilter.equals("OTROS", ignoreCase = true) -> if (!binding.chipSportOtros.isChecked) binding.chipSportOtros.isChecked = true
+                    }
 
                     val count = state.filteredEvents.size
                     if (state.isOffMode) {

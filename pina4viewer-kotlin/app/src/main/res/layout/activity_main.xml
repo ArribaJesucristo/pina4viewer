@@ -241,8 +241,124 @@
             android:textColorHint="@color/text_hint"
             android:textSize="13sp"
             android:nextFocusUp="@id/radioGroup2"
-            android:nextFocusDown="@id/recyclerViewEvents"
+            android:nextFocusDown="@id/chipSportAll"
             app:layout_constraintTop_toBottomOf="@id/radioGroup2" />
+
+        <!-- Sport Filter Chips (Horizontal Scroll) -->
+        <HorizontalScrollView
+            android:id="@+id/scrollSportChips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="3dp"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            app:layout_constraintTop_toBottomOf="@id/etSearch">
+
+            <RadioGroup
+                android:id="@+id/radioGroupSports"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/chipSportAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="12dp"
+                    android:background="@drawable/chip_sport_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="🏆 Todos"
+                    android:textColor="@color/radio_text_color"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:checked="true"
+                    android:nextFocusUp="@+id/etSearch"
+                    android:nextFocusDown="@+id/recyclerViewEvents" />
+
+                <RadioButton
+                    android:id="@+id/chipSportFutbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:paddingHorizontal="12dp"
+                    android:background="@drawable/chip_sport_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="⚽ Fútbol"
+                    android:textColor="@color/radio_text_color"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:nextFocusUp="@+id/etSearch"
+                    android:nextFocusDown="@+id/recyclerViewEvents" />
+
+                <RadioButton
+                    android:id="@+id/chipSportTenis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:paddingHorizontal="12dp"
+                    android:background="@drawable/chip_sport_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="🎾 Tenis / Pádel"
+                    android:textColor="@color/radio_text_color"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:nextFocusUp="@+id/etSearch"
+                    android:nextFocusDown="@+id/recyclerViewEvents" />
+
+                <RadioButton
+                    android:id="@+id/chipSportMotor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:paddingHorizontal="12dp"
+                    android:background="@drawable/chip_sport_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="🏎️ Motor"
+                    android:textColor="@color/radio_text_color"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:nextFocusUp="@+id/etSearch"
+                    android:nextFocusDown="@+id/recyclerViewEvents" />
+
+                <RadioButton
+                    android:id="@+id/chipSportBasket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:paddingHorizontal="12dp"
+                    android:background="@drawable/chip_sport_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="🏀 Basket"
+                    android:textColor="@color/radio_text_color"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:nextFocusUp="@+id/etSearch"
+                    android:nextFocusDown="@+id/recyclerViewEvents" />
+
+                <RadioButton
+                    android:id="@+id/chipSportOtros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:paddingHorizontal="12dp"
+                    android:background="@drawable/chip_sport_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="🥊 Otros"
+                    android:textColor="@color/radio_text_color"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:nextFocusUp="@+id/etSearch"
+                    android:nextFocusDown="@+id/recyclerViewEvents" />
+
+            </RadioGroup>
+        </HorizontalScrollView>
 
         <!-- Event List with Pull to Refresh -->
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -252,7 +368,7 @@
             android:layout_marginTop="4dp"
             android:descendantFocusability="afterDescendants"
             app:layout_constraintBottom_toTopOf="@id/tvFooterZone"
-            app:layout_constraintTop_toBottomOf="@id/etSearch">
+            app:layout_constraintTop_toBottomOf="@id/scrollSportChips">
 
             <FrameLayout
                 android:layout_width="match_parent"
