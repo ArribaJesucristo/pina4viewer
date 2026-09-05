@@ -46,10 +46,8 @@ class EventListAdapter(
             // Match Title
             binding.tvTitle.text = event.title
 
-            // Channels text
-            val channelsText = event.getChannelsFormatted()
-            binding.tvChannels.text = channelsText
-            binding.tvChannels.visibility = if (channelsText.isNotBlank()) View.VISIBLE else View.GONE
+            // Channels text hidden on cards for a clean, compact view
+            binding.tvChannels.visibility = View.GONE
 
             // Date and Time
             val dt = listOfNotNull(
