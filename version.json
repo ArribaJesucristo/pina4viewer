@@ -1,8 +1,8 @@
 {
-  "versionCode": 2014,
-  "versionName": "8.2.3",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.2.3/pina4viewer-v8.2.3.apk",
+  "versionCode": 2015,
+  "versionName": "8.2.4",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.2.4/pina4viewer-v8.2.4.apk",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
-  "changelog": "• Nuevas pestañas duales CAIDO 1 (MarkelLinks) y CAIDO 2 (Peticiones)\n• Agenda multideporte completa (Fútbol, Baloncesto, Tenis, F1, MotoGP, Pádel, Ciclismo, etc.) en ambas pestañas\n• En CAIDO 2 se integran cientos de fuentes AceStream comunitarias ([Elcano], [New Era], [New Loop]) emparejadas automáticamente por evento\n• Canales 24/7 en directo disponibles siempre al final de ambas listas"
+  "changelog": "• Nuevo botón PIÑAVISION: agenda propia unificada que combina lo mejor de MarkelLinks y la comunidad (Elcano, New Era, New Loop)\n• Cada partido o carrera reúne en una única tarjeta todos los enlaces AceStream de todas las fuentes disponibles\n• Generador automatizado cada 30 min en GitHub Actions con caché y respaldo local permanente\n• Canales temáticos 24/7 en directo integrados al final"
 }

@@ -6,6 +6,7 @@ import com.bone.android.a4v.oficial.data.model.SourceType
 import com.bone.android.a4v.oficial.data.parser.ArenaVisionParser
 import com.bone.android.a4v.oficial.data.parser.M3uParser
 import com.bone.android.a4v.oficial.data.parser.MarkelScraper
+import com.bone.android.a4v.oficial.data.parser.PinaVisionParser
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import okhttp3.ConnectionPool
@@ -35,10 +36,10 @@ class EventsRepository(
         private set
 
     fun isArenaVisionSource(source: SourceType): Boolean =
-        source != SourceType.CAIDO && source != SourceType.SEARCH && source != SourceType.PETICIONES
+        source != SourceType.CAIDO && source != SourceType.SEARCH && source != SourceType.PETICIONES && source != SourceType.OFF_MODE
 
     fun isSourceOffMode(source: SourceType): Boolean =
-        offModeSources.contains(source) || source == SourceType.OFF_MODE
+        offModeSources.contains(source)
 
     fun peekCachedEvents(source: SourceType): List<EventItem>? {
         if (cache.containsKey(source)) return cache[source]
@@ -57,24 +58,11 @@ class EventsRepository(
             }
 
             // Si es un servidor ArenaVision y ya tenemos la agenda de otro servidor espejo, retorno instantáneo
-            if (!forceRefresh && isArenaVisionSource(source) && !lastArenaVisionEvents.isNullOrEmpty() && source != SourceType.OFF_MODE) {
+            if (!forceRefresh && isArenaVisionSource(source) && !lastArenaVisionEvents.isNullOrEmpty()) {
                 isCurrentSourceOffMode = false
                 val shared = lastArenaVisionEvents.orEmpty()
                 cache[source] = shared
                 return@withContext Result.success(shared)
-            }
-
-            if (source == SourceType.OFF_MODE) {
-                isCurrentSourceOffMode = true
-                offModeSources.add(source)
-                val cached = loadOfflineLic()
-                val events = if (!cached.isNullOrEmpty()) {
-                    ArenaVisionParser.parseHtmlAgenda(cached)
-                } else {
-                    lastArenaVisionEvents ?: ArenaVisionParser.getFallbackAgenda()
-                }
-                cache[source] = events
-                return@withContext Result.success(events)
             }
 
             try {
@@ -141,6 +129,15 @@ class EventsRepository(
                             }
                             M3uParser.parse(body, marcaHtml)
                         }
+                        SourceType.OFF_MODE -> {
+                            isCurrentSourceOffMode = false
+                            offModeSources.remove(source)
+                            val parsed = PinaVisionParser.parse(body)
+                            if (parsed.isNotEmpty()) {
+                                saveOfflineLic(body)
+                            }
+                            parsed
+                        }
                         else -> {
                             val parsed = ArenaVisionParser.parseHtmlAgenda(body)
                             isCurrentSourceOffMode = false
@@ -167,6 +164,23 @@ class EventsRepository(
 
     private fun getFallback(source: SourceType): List<EventItem> {
         return when (source) {
+            SourceType.OFF_MODE -> {
+                val cached = loadOfflineLic()
+                if (!cached.isNullOrEmpty()) {
+                    val parsed = PinaVisionParser.parse(cached)
+                    if (parsed.isNotEmpty()) return parsed
+                }
+                val fromAsset = try {
+                    context?.assets?.open("agenda.json")?.bufferedReader()?.use { it.readText() }
+                } catch (e: Exception) {
+                    null
+                }
+                if (!fromAsset.isNullOrEmpty()) {
+                    val parsed = PinaVisionParser.parse(fromAsset)
+                    if (parsed.isNotEmpty()) return parsed
+                }
+                cache[source].orEmpty()
+            }
             SourceType.CAIDO -> MarkelScraper.getFallbackMarkelEvents()
             SourceType.SEARCH, SourceType.PETICIONES -> emptyList()
             else -> {

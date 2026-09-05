@@ -93,7 +93,7 @@ class MainViewModel(
             val result = repository.getEvents(source, forceRefresh)
             val currentDateTime = java.text.SimpleDateFormat("dd/MM/yyyy HH:mm", java.util.Locale.getDefault()).format(java.util.Date())
             val footerText = "Actualizado $currentDateTime\nZona: Madrid,Paris,Bruselas"
-            val isOff = repository.isCurrentSourceOffMode || source == SourceType.OFF_MODE
+            val isOff = repository.isCurrentSourceOffMode
 
             result.fold(
                 onSuccess = { events ->

@@ -12,9 +12,9 @@ enum class SourceType(val title: String, val shortCode: String, val url: String)
         url = "https://www.arena4viewer.pl/misguia2.php"
     ),
     OFF_MODE(
-        title = "Modo Offline",
-        shortCode = "[OFF-MODE]",
-        url = "offline"
+        title = "PIÑAVISION (Agenda Propia)",
+        shortCode = "PIÑAVISION",
+        url = "https://raw.githubusercontent.com/ArribaJesucristo/pina4viewer/main/agenda.json"
     ),
     SERVER_CO_IN(
         title = "ArenaVision (CO.IN)",
