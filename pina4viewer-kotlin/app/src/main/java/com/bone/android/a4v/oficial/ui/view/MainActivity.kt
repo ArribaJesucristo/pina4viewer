@@ -40,10 +40,14 @@ class MainActivity : AppCompatActivity() {
     private var vpnActionView: View? = null
     private var vpnDialog: AlertDialog? = null
 
-    private val directChannels = (1..30).map { i ->
-        val quality = if (i <= 6 || i in 11..16) "1080p" else "720p"
-        "AV$i ($quality)"
-    }
+    data class DrawerChannel(
+        val displayName: String,
+        val channelNumber: String,
+        val streamHash: String
+    )
+
+    private val drawerChannels = mutableListOf<DrawerChannel>()
+    private lateinit var drawerAdapter: ArrayAdapter<String>
 
     private val vpnLauncher = registerForActivityResult(
         androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult()
@@ -176,25 +180,45 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun buildDrawerChannelList(): List<DrawerChannel> {
+        val streamMap = ArenaVisionParser.cachedStreams
+        val sortedKeys = streamMap.keys.mapNotNull { it.toIntOrNull() }.distinct().sorted()
+        val numbers = if (sortedKeys.isNotEmpty()) sortedKeys else ((1..102) + (103..103) + (105..141) + (150..155) + (160..160)).distinct().sorted()
+
+        return numbers.map { num ->
+            val numStr = num.toString()
+            val quality = if (num in 1..6 || num in 11..16 || num in 132..133) "1080p" else "720p"
+            val streamHash = streamMap[numStr] ?: "AV$num"
+            DrawerChannel(
+                displayName = "AV$num ($quality)",
+                channelNumber = numStr,
+                streamHash = streamHash
+            )
+        }
+    }
+
     private fun setupDrawerChannels() {
-        val drawerAdapter = ArrayAdapter(
+        drawerChannels.clear()
+        drawerChannels.addAll(buildDrawerChannelList())
+
+        drawerAdapter = ArrayAdapter(
             this,
             R.layout.item_drawer_channel,
             R.id.tvDrawerItem,
-            directChannels
+            drawerChannels.map { it.displayName }.toMutableList()
         )
         binding.drawerChannelList.adapter = drawerAdapter
 
         binding.drawerChannelList.setOnItemClickListener { _, _, position, _ ->
-            val channelNumber = position + 1
-            val channelName = "AV$channelNumber"
-            val streamHash = ArenaVisionParser.cachedStreams[channelNumber.toString()] ?: channelName
+            val channel = drawerChannels.getOrNull(position) ?: return@setOnItemClickListener
+            val streamHash = ArenaVisionParser.cachedStreams[channel.channelNumber] ?: channel.streamHash
             binding.drawerLayout.closeDrawers()
-            playChannel(ChannelItem(name = channelName, streamId = streamHash))
+            playChannel(ChannelItem(name = "AV${channel.channelNumber}", streamId = streamHash))
         }
 
         binding.drawerLayout.addDrawerListener(object : androidx.drawerlayout.widget.DrawerLayout.SimpleDrawerListener() {
             override fun onDrawerOpened(drawerView: android.view.View) {
+                updateDrawerChannelsIfChanged()
                 binding.drawerChannelList.requestFocus()
             }
             override fun onDrawerClosed(drawerView: android.view.View) {
@@ -213,6 +237,18 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun updateDrawerChannelsIfChanged() {
+        if (!::drawerAdapter.isInitialized) return
+        val newItems = buildDrawerChannelList()
+        if (newItems.size != drawerChannels.size || (newItems.isNotEmpty() && newItems.first().streamHash != drawerChannels.firstOrNull()?.streamHash)) {
+            drawerChannels.clear()
+            drawerChannels.addAll(newItems)
+            drawerAdapter.clear()
+            drawerAdapter.addAll(drawerChannels.map { it.displayName })
+            drawerAdapter.notifyDataSetChanged()
+        }
+    }
+
     private fun observeState() {
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
@@ -223,6 +259,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 viewModel.uiState.collect { state ->
+                    updateDrawerChannelsIfChanged()
                     binding.swipeRefresh.isRefreshing = state.isLoading
                     eventAdapter.submitList(state.filteredEvents)
 

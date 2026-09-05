@@ -121,17 +121,13 @@ class EventsRepository(
                         }
                         else -> {
                             val parsed = ArenaVisionParser.parseHtmlAgenda(body)
+                            isCurrentSourceOffMode = false
+                            offModeSources.remove(source)
                             if (parsed.isNotEmpty()) {
-                                isCurrentSourceOffMode = false
-                                offModeSources.remove(source)
                                 lastArenaVisionEvents = parsed
                                 saveOfflineLic(body)
-                                parsed
-                            } else {
-                                isCurrentSourceOffMode = true
-                                offModeSources.add(source)
-                                getFallback(source)
                             }
+                            parsed
                         }
                     }
 

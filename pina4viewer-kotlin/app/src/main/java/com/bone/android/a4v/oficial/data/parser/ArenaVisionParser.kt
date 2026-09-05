@@ -12,6 +12,7 @@ object ArenaVisionParser {
     private val CHANNEL_PATTERN = Pattern.compile("([\\d\\-]+)\\s*(\\[[A-Za-z0-9]+\\])?")
 
     val cachedStreams = java.util.concurrent.ConcurrentHashMap<String, String>()
+    private val DATE_REGEX = Regex("""^\d{1,2}/\d{1,2}/\d{4}$""")
 
     fun parseStreams(html: String): Map<String, String> {
         val map = mutableMapOf<String, String>()
@@ -65,11 +66,26 @@ object ArenaVisionParser {
                 val match = columns.getOrNull(4).orEmpty()
                 val channelsRaw = columns.getOrNull(5).orEmpty()
 
-                if (match.isNotEmpty() && !match.equals("EVENT", ignoreCase = true) && !match.equals("MATCH", ignoreCase = true)) {
-                    val cleanTime = time.replace("CET", "").trim()
-                    val fullDateTime = "$date $cleanTime"
-                    if (comparaFechas(fullDateTime)) {
-                        val channelList = extractChannels(channelsRaw, streamMap)
+                // Validate that date is a real date (dd/MM/yyyy)
+                if (!DATE_REGEX.matches(date)) continue
+
+                // Discard table headers or timezone / footer rows
+                if (match.isEmpty() ||
+                    match.equals("EVENT", ignoreCase = true) ||
+                    match.equals("MATCH", ignoreCase = true) ||
+                    match.contains("CET TIME", ignoreCase = true) ||
+                    match.contains("Arenavision", ignoreCase = true) ||
+                    competition.contains("TIMEZONE", ignoreCase = true) ||
+                    channelsRaw.contains("Arenavision", ignoreCase = true)
+                ) {
+                    continue
+                }
+
+                val cleanTime = time.replace("CET", "").trim()
+                val fullDateTime = "$date $cleanTime"
+                if (comparaFechas(fullDateTime)) {
+                    val channelList = extractChannels(channelsRaw, streamMap)
+                    if (channelList.isNotEmpty()) {
                         events.add(
                             EventItem(
                                 id = (index++).toString(),
@@ -86,10 +102,6 @@ object ArenaVisionParser {
             }
         }
 
-        if (events.isEmpty()) {
-            return getFallbackAgenda()
-        }
-
         return events
     }
 
@@ -97,7 +109,7 @@ object ArenaVisionParser {
         return try {
             val sdf = java.text.SimpleDateFormat("dd/MM/yyyy HH:mm", java.util.Locale.getDefault())
             sdf.timeZone = java.util.TimeZone.getTimeZone("Europe/Madrid")
-            val eventDate = sdf.parse(dateTimeStr) ?: return true
+            val eventDate = sdf.parse(dateTimeStr) ?: return false
 
             val cal = java.util.Calendar.getInstance(java.util.TimeZone.getTimeZone("Europe/Madrid"))
             cal.add(java.util.Calendar.HOUR_OF_DAY, -3)
@@ -105,7 +117,7 @@ object ArenaVisionParser {
 
             threshold.before(eventDate)
         } catch (e: Exception) {
-            true
+            false
         }
     }
 
