@@ -1,0 +1,30 @@
+name: Actualizar Agenda PIÑAVISION
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update-agenda:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generar agenda PIÑAVISION
+        run: python scripts/generate_agenda.py
+
+      - name: Commit y push cambios si hay actualizacion
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add agenda.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(agenda): actualizar agenda PIÑAVISION [skip ci]" && git push)
