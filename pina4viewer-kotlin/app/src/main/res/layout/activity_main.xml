@@ -119,7 +119,7 @@
                 android:nextFocusDown="@+id/rbLv" />
 
             <RadioButton
-                android:id="@+id/rbSearch"
+                android:id="@+id/rbCaido"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="2dp"
@@ -127,11 +127,11 @@
                 android:background="@drawable/radio_button_bg"
                 android:button="@null"
                 android:gravity="center"
-                android:text="Search"
+                android:text="CAIDO 1"
                 android:textColor="@color/radio_text_color"
-                android:textSize="11sp"
+                android:textSize="10sp"
                 android:textStyle="bold|italic"
-                android:nextFocusDown="@+id/rbCaido" />
+                android:nextFocusDown="@+id/rbSearch" />
         </RadioGroup>
 
         <!-- Radio Buttons Row 2 -->
@@ -208,7 +208,7 @@
                 android:nextFocusDown="@+id/etSearch" />
 
             <RadioButton
-                android:id="@+id/rbCaido"
+                android:id="@+id/rbSearch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="2dp"
@@ -216,11 +216,11 @@
                 android:background="@drawable/radio_button_bg"
                 android:button="@null"
                 android:gravity="center"
-                android:text="CAIDO"
+                android:text="CAIDO 2"
                 android:textColor="@color/radio_text_color"
-                android:textSize="11sp"
+                android:textSize="10sp"
                 android:textStyle="bold|italic"
-                android:nextFocusUp="@+id/rbSearch"
+                android:nextFocusUp="@+id/rbCaido"
                 android:nextFocusDown="@+id/etSearch" />
         </RadioGroup>
 

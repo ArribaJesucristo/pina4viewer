@@ -128,7 +128,18 @@ class EventsRepository(
                         SourceType.PETICIONES, SourceType.SEARCH -> {
                             isCurrentSourceOffMode = false
                             offModeSources.remove(source)
-                            M3uParser.parse(body)
+                            val marcaHtml = try {
+                                val marcaRequest = Request.Builder()
+                                    .url("https://www.marca.com/programacion-tv.html")
+                                    .header("User-Agent", "Mozilla/5.0 (Linux; Android 14; Mobile) AppleWebKit/537.36 (KHTML, like Gecko)")
+                                    .build()
+                                client.newCall(marcaRequest).execute().use { res ->
+                                    if (res.isSuccessful) res.body?.string() ?: "" else ""
+                                }
+                            } catch (e: Exception) {
+                                ""
+                            }
+                            M3uParser.parse(body, marcaHtml)
                         }
                         else -> {
                             val parsed = ArenaVisionParser.parseHtmlAgenda(body)

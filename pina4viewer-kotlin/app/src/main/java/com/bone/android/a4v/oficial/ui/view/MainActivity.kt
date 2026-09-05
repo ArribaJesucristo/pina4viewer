@@ -355,7 +355,7 @@ class MainActivity : AppCompatActivity() {
                     if (vpnActionView?.hasFocus() == true) {
                         return true
                     }
-                    if (binding.rbCool.hasFocus() || binding.rbTop.hasFocus() || binding.rbSearch.hasFocus()) {
+                    if (binding.rbCool.hasFocus() || binding.rbTop.hasFocus() || binding.rbCaido.hasFocus()) {
                         val target = vpnActionView ?: binding.toolbar.findViewById(R.id.btnToolbarVpn)
                         if (target != null) {
                             vpnActionView = target
@@ -385,8 +385,8 @@ class MainActivity : AppCompatActivity() {
                         binding.rbTop.requestFocus()
                         return true
                     }
-                    if (binding.rbCaido.hasFocus()) {
-                        binding.rbSearch.requestFocus()
+                    if (binding.rbSearch.hasFocus()) {
+                        binding.rbCaido.requestFocus()
                         return true
                     }
                     if (binding.etSearch.hasFocus()) {

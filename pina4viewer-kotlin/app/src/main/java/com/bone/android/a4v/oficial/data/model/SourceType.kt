@@ -42,13 +42,13 @@ enum class SourceType(val title: String, val shortCode: String, val url: String)
         url = "https://www.arena4viewer.lv/misguia2.php"
     ),
     SEARCH(
-        title = "Lista M3U Peticiones",
-        shortCode = "Search",
+        title = "CAIDO 2 (Peticiones)",
+        shortCode = "CAIDO 2",
         url = "https://raw.githubusercontent.com/Icastresana/lista1/main/peticiones"
     ),
     CAIDO(
-        title = "MarkelLinks En Vivo",
-        shortCode = "CAIDO",
+        title = "CAIDO 1 (MarkelLinks)",
+        shortCode = "CAIDO 1",
         url = "https://www.markellinks.app/assets/links.json"
     ),
     PETICIONES(
