@@ -11,8 +11,8 @@ android {
         applicationId = "com.bone.android.a4v.oficial"
         minSdk = 21
         targetSdk = 34
-        versionCode = 2015
-        versionName = "8.2.4"
+        versionCode = 2016
+        versionName = "8.2.5"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

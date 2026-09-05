@@ -127,9 +127,9 @@
                 android:background="@drawable/radio_button_bg"
                 android:button="@null"
                 android:gravity="center"
-                android:text="CAIDO 1"
+                android:text="CAIDO"
                 android:textColor="@color/radio_text_color"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 android:textStyle="bold|italic"
                 android:nextFocusDown="@+id/rbSearch" />
         </RadioGroup>
@@ -216,9 +216,9 @@
                 android:background="@drawable/radio_button_bg"
                 android:button="@null"
                 android:gravity="center"
-                android:text="CAIDO 2"
+                android:text="24/7 TV"
                 android:textColor="@color/radio_text_color"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 android:textStyle="bold|italic"
                 android:nextFocusUp="@+id/rbCaido"
                 android:nextFocusDown="@+id/etSearch" />

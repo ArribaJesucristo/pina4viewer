@@ -113,7 +113,14 @@ class EventsRepository(
                             val parsed = MarkelScraper.parse(body, marcaHtml)
                             if (parsed.isEmpty()) MarkelScraper.getFallbackMarkelEvents() else parsed
                         }
-                        SourceType.PETICIONES, SourceType.SEARCH -> {
+                        SourceType.SEARCH -> {
+                            isCurrentSourceOffMode = false
+                            offModeSources.remove(source)
+                            val parsed = PinaVisionParser.parse(body)
+                            val channels247 = parsed.filter { it.sport == "DIRECTO 24/7" || it.competition.contains("24/7", ignoreCase = true) }
+                            if (channels247.isNotEmpty()) channels247 else parsed
+                        }
+                        SourceType.PETICIONES -> {
                             isCurrentSourceOffMode = false
                             offModeSources.remove(source)
                             val marcaHtml = try {
@@ -182,7 +189,22 @@ class EventsRepository(
                 cache[source].orEmpty()
             }
             SourceType.CAIDO -> MarkelScraper.getFallbackMarkelEvents()
-            SourceType.SEARCH, SourceType.PETICIONES -> emptyList()
+            SourceType.SEARCH -> {
+                val cached = cache[source]
+                if (!cached.isNullOrEmpty()) return cached
+                val fromAsset = try {
+                    context?.assets?.open("agenda.json")?.bufferedReader()?.use { it.readText() }
+                } catch (e: Exception) {
+                    null
+                }
+                if (!fromAsset.isNullOrEmpty()) {
+                    val parsed = PinaVisionParser.parse(fromAsset)
+                    val channels247 = parsed.filter { it.sport == "DIRECTO 24/7" || it.competition.contains("24/7", ignoreCase = true) }
+                    if (channels247.isNotEmpty()) return channels247
+                }
+                emptyList()
+            }
+            SourceType.PETICIONES -> emptyList()
             else -> {
                 if (!lastArenaVisionEvents.isNullOrEmpty()) {
                     return lastArenaVisionEvents.orEmpty()
