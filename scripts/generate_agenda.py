@@ -135,6 +135,70 @@ def load_peticiones_channels():
             current_title = ""
     return channels_by_base
 
+def load_arenavision():
+    import urllib.parse
+    mirrors = [
+        "http://www.arena4viewer.in/misguia2.php",
+        "https://www.arena4viewer.pl/misguia2.php",
+        "https://www.arena4viewer.cool/misguia2.php",
+        "https://www.arena4viewer.top/misguia2.php"
+    ]
+    data = urllib.parse.urlencode({'key': 'fc8c75bd41f06b0fa1d32c8b0b76493d', 'expire': '20250000'}).encode('utf-8')
+    html = ""
+    for u in mirrors:
+        try:
+            req = urllib.request.Request(u, data=data, headers={'User-Agent': 'Apache-HttpClient/UNAVAILABLE (java 1.4)'})
+            with urllib.request.urlopen(req, timeout=6) as r:
+                html = r.read().decode('utf-8', errors='ignore')
+                if "streams" in html:
+                    break
+        except Exception:
+            continue
+
+    if not html or "streams" not in html:
+        print("Aviso: No se pudo conectar a los mirrors de ArenaVision.")
+        return {}, []
+
+    streams_map = {}
+    s_match = re.search(r'streams[^>]*>(.*?)</div>', html, re.DOTALL)
+    if s_match:
+        for part in s_match.group(1).split(","):
+            sub = part.split("#")
+            if len(sub) >= 2:
+                ch_key = sub[0].strip().lower().replace("av", "")
+                h = extract_hash(sub[1])
+                if ch_key and h:
+                    streams_map[ch_key] = h
+
+    arena_events = []
+    rows = re.findall(r'<tr[^>]*>(.*?)</tr>', html, re.DOTALL)
+    for r in rows:
+        cols = [re.sub(r'<[^>]+>', '', c).replace('&nbsp;', ' ').strip() for c in re.findall(r'<td[^>]*>(.*?)</td>', r, re.DOTALL)]
+        if len(cols) >= 6:
+            raw_channels = cols[5]
+            ch_nums = re.findall(r'\b(\d+)\b', raw_channels)
+            channels = []
+            for num in ch_nums:
+                if num in streams_map:
+                    channels.append({
+                        "name": f"ArenaVision {num} (AV{num})",
+                        "streamId": streams_map[num],
+                        "type": "ACESTREAM",
+                        "source": "ArenaVision"
+                    })
+            if cols[4] and channels:
+                arena_events.append({
+                    "title": cols[4].replace("-", " vs "),
+                    "sport": normalize_sport(cols[2]),
+                    "competition": cols[3],
+                    "time": cols[1].replace(" CET", "").strip(),
+                    "date": cols[0],
+                    "channels": channels
+                })
+
+    print(f"ArenaVision cargado: {len(streams_map)} streams, {len(arena_events)} eventos de agenda.")
+    return streams_map, arena_events
+
 def clean_channel_name(s):
     import unicodedata
     s = unicodedata.normalize('NFKD', s).encode('ASCII', 'ignore').decode('ASCII').lower()
@@ -309,9 +373,22 @@ def generate_piñavision_agenda():
     peticiones = load_peticiones_channels()
     print(f"Canales Peticiones cargados: {len(peticiones)} bases")
 
+    arena_streams, arena_events = load_arenavision()
+
+    # Add ArenaVision streams to unified channels so they can be viewed in 24/7 TV too
+    arenavision_channels = OrderedDict()
+    for num, h in arena_streams.items():
+        base = f"ArenaVision {num}"
+        arenavision_channels[base] = [{
+            "name": f"ArenaVision {num} (AV{num})",
+            "streamId": h,
+            "type": "ACESTREAM",
+            "source": "ArenaVision"
+        }]
+
     # Unify channels by base name
     unified_channels = OrderedDict()
-    all_bases = list(OrderedDict.fromkeys(list(markel.keys()) + list(peticiones.keys())))
+    all_bases = list(OrderedDict.fromkeys(list(markel.keys()) + list(peticiones.keys()) + list(arenavision_channels.keys())))
 
     for b in all_bases:
         unified_channels[b] = []
@@ -319,6 +396,8 @@ def generate_piñavision_agenda():
             unified_channels[b].extend(markel[b])
         if b in peticiones:
             unified_channels[b].extend(peticiones[b])
+        if b in arenavision_channels:
+            unified_channels[b].extend(arenavision_channels[b])
 
     print(f"Total bases unificadas: {len(unified_channels)}")
 
@@ -331,6 +410,34 @@ def generate_piñavision_agenda():
         schedule_events = parse_marca_schedule(marca_html, unified_channels)
         print(f"Eventos emparejados con Marca: {len(schedule_events)}")
 
+    # Merge ArenaVision events into schedule_events
+    if arena_events:
+        added_arena_count = 0
+        merged_arena_count = 0
+        for a_ev in arena_events:
+            matched = False
+            a_title_clean = clean_channel_name(a_ev["title"])
+            a_words = [w for w in a_title_clean.split() if len(w) > 3]
+
+            for s_ev in schedule_events:
+                s_title_clean = clean_channel_name(s_ev["title"])
+                if a_words and any(w in s_title_clean for w in a_words):
+                    existing_hashes = {c["streamId"] for c in s_ev["channels"]}
+                    for ch in a_ev["channels"]:
+                        if ch["streamId"] not in existing_hashes:
+                            s_ev["channels"].append(ch)
+                            existing_hashes.add(ch["streamId"])
+                    matched = True
+                    merged_arena_count += 1
+                    break
+
+            if not matched:
+                a_ev["id"] = str(len(schedule_events) + 1)
+                schedule_events.append(a_ev)
+                added_arena_count += 1
+
+        print(f"ArenaVision integrado: {merged_arena_count} emparejados con eventos existentes, {added_arena_count} añadidos como nuevos eventos.")
+
     # Add 24/7 channels at the end
     used_hashes = set()
     for ev in schedule_events:
@@ -342,11 +449,12 @@ def generate_piñavision_agenda():
     for base, ch_list in unified_channels.items():
         if not ch_list:
             continue
-        # Filter sports 24/7
+        # Filter sports 24/7 (include ArenaVision channels too)
         cu = base.upper()
         is_sports = any(k in cu for k in [
             "DAZN", "M+", "LALIGA", "DEPORTES", "VAMOS", "GOL", "TELEDEPORTE", "TDP",
-            "EUROSPORT", "RFEF", "FORMULA", "F1", "MOTOGP", "REAL MADRID", "BARÇA", "BETIS", "SEVILLA"
+            "EUROSPORT", "RFEF", "FORMULA", "F1", "MOTOGP", "REAL MADRID", "BARÇA", "BETIS", "SEVILLA",
+            "ARENAVISION", "AV"
         ])
         if is_sports:
             channels_247.append({

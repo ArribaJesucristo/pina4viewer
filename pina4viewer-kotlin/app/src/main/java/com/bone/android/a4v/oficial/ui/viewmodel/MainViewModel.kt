@@ -17,7 +17,7 @@ import kotlinx.coroutines.launch
 
 data class MainUiState(
     val isLoading: Boolean = false,
-    val currentSource: SourceType = SourceType.SERVER_IN,
+    val currentSource: SourceType = SourceType.OFF_MODE,
     val allEvents: List<EventItem> = emptyList(),
     val filteredEvents: List<EventItem> = emptyList(),
     val searchQuery: String = "",
@@ -40,7 +40,7 @@ class MainViewModel(
 
     init {
         ArenaVisionParser.initDefaultAgenda(application.applicationContext)
-        loadEvents(SourceType.SERVER_IN)
+        loadEvents(SourceType.OFF_MODE)
     }
 
     fun selectSource(source: SourceType) {

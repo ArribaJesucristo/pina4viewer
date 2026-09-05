@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
         observeState()
         initVpnShield()
         checkAppUpdate(manual = false)
-        binding.root.post { binding.rbIn.requestFocus() }
+        binding.root.post { binding.rbPina.requestFocus() }
     }
 
     private fun initVpnShield() {
@@ -122,20 +122,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupRadioButtons() {
         val radioMap = mapOf(
-            binding.rbIn to SourceType.SERVER_IN,
-            binding.rbOffMode to SourceType.OFF_MODE,
-            binding.rbCool to SourceType.SERVER_COOL,
-            binding.rbTop to SourceType.SERVER_TOP,
-            binding.rbSearch to SourceType.SEARCH,
-            binding.rbPl to SourceType.SERVER_PL,
-            binding.rbCoIn to SourceType.SERVER_CO_IN,
-            binding.rbInfo to SourceType.SERVER_INFO,
-            binding.rbLv to SourceType.SERVER_LV,
+            binding.rbPina to SourceType.OFF_MODE,
+            binding.rbTv to SourceType.SEARCH,
             binding.rbCaido to SourceType.CAIDO
         )
 
         val allRadios = radioMap.keys.toList()
-        allRadios.forEach { rb -> rb.isChecked = (rb == binding.rbIn) }
+        allRadios.forEach { rb -> rb.isChecked = (rb == binding.rbPina) }
 
         radioMap.forEach { (radioButton, sourceType) ->
             radioButton.setOnClickListener {
@@ -167,7 +160,7 @@ class MainActivity : AppCompatActivity() {
                         true
                     }
                     android.view.KeyEvent.KEYCODE_DPAD_UP -> {
-                        binding.rbPl.requestFocus()
+                        binding.rbPina.requestFocus()
                         true
                     }
                     else -> false
@@ -265,14 +258,14 @@ class MainActivity : AppCompatActivity() {
                 binding.drawerChannelList.requestFocus()
             }
             override fun onDrawerClosed(drawerView: android.view.View) {
-                binding.rbIn.requestFocus()
+                binding.rbPina.requestFocus()
             }
         })
 
         binding.drawerChannelList.setOnKeyListener { _, keyCode, event ->
             if (event.action == android.view.KeyEvent.ACTION_DOWN && keyCode == android.view.KeyEvent.KEYCODE_DPAD_RIGHT) {
                 binding.drawerLayout.closeDrawers()
-                binding.rbIn.requestFocus()
+                binding.rbPina.requestFocus()
                 true
             } else {
                 false
@@ -392,7 +385,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 android.view.KeyEvent.KEYCODE_DPAD_DOWN -> {
                     if (vpnActionView?.hasFocus() == true) {
-                        binding.rbCool.requestFocus()
+                        binding.rbTv.requestFocus()
                         return true
                     }
                     if (binding.etSearch.hasFocus()) {
@@ -407,7 +400,7 @@ class MainActivity : AppCompatActivity() {
                     if (vpnActionView?.hasFocus() == true) {
                         return true
                     }
-                    if (binding.rbCool.hasFocus() || binding.rbTop.hasFocus() || binding.rbCaido.hasFocus()) {
+                    if (binding.rbTv.hasFocus() || binding.rbCaido.hasFocus()) {
                         val target = vpnActionView ?: binding.toolbar.findViewById(R.id.btnToolbarVpn)
                         if (target != null) {
                             vpnActionView = target
@@ -417,32 +410,12 @@ class MainActivity : AppCompatActivity() {
                         }
                         return true
                     }
-                    if (binding.rbIn.hasFocus() || binding.rbOffMode.hasFocus()) {
+                    if (binding.rbPina.hasFocus()) {
                         binding.drawerLayout.openDrawer(androidx.core.view.GravityCompat.START)
                         return true
                     }
-                    if (binding.rbPl.hasFocus()) {
-                        binding.rbIn.requestFocus()
-                        return true
-                    }
-                    if (binding.rbCoIn.hasFocus()) {
-                        binding.rbOffMode.requestFocus()
-                        return true
-                    }
-                    if (binding.rbInfo.hasFocus()) {
-                        binding.rbCool.requestFocus()
-                        return true
-                    }
-                    if (binding.rbLv.hasFocus()) {
-                        binding.rbTop.requestFocus()
-                        return true
-                    }
-                    if (binding.rbSearch.hasFocus()) {
-                        binding.rbCaido.requestFocus()
-                        return true
-                    }
                     if (binding.etSearch.hasFocus()) {
-                        binding.rbPl.requestFocus()
+                        binding.rbPina.requestFocus()
                         return true
                     }
                     val focused = currentFocus
@@ -451,7 +424,7 @@ class MainActivity : AppCompatActivity() {
                         if (containing != null) {
                             val pos = binding.recyclerViewEvents.getChildAdapterPosition(containing)
                             if (pos == 0) {
-                                binding.etSearch.requestFocus()
+                                binding.chipSportAll.requestFocus()
                                 return true
                             }
                         }
@@ -462,7 +435,7 @@ class MainActivity : AppCompatActivity() {
                         binding.drawerLayout.openDrawer(androidx.core.view.GravityCompat.START)
                         return true
                     }
-                    if (binding.rbIn.hasFocus() || binding.rbPl.hasFocus()) {
+                    if (binding.rbPina.hasFocus()) {
                         binding.drawerLayout.openDrawer(androidx.core.view.GravityCompat.START)
                         return true
                     }
@@ -472,7 +445,7 @@ class MainActivity : AppCompatActivity() {
                         openOptionsMenu()
                         return true
                     }
-                    if (binding.rbSearch.hasFocus() || binding.rbCaido.hasFocus()) {
+                    if (binding.rbCaido.hasFocus()) {
                         val target = vpnActionView ?: binding.toolbar.findViewById(R.id.btnToolbarVpn)
                         if (target != null) {
                             vpnActionView = target

@@ -49,178 +49,58 @@
             android:textStyle="bold|italic"
             app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
-        <!-- Radio Buttons Row 1 -->
+        <!-- Radio Buttons Main Sources -->
         <RadioGroup
-            android:id="@+id/radioGroup1"
+            android:id="@+id/radioGroupSources"
             android:layout_width="match_parent"
-            android:layout_height="32dp"
+            android:layout_height="36dp"
             android:layout_marginHorizontal="6dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@id/tvUserCount">
 
             <RadioButton
-                android:id="@+id/rbIn"
+                android:id="@+id/rbPina"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/radio_button_bg"
                 android:button="@null"
                 android:checked="true"
                 android:gravity="center"
-                android:text="IN(D)"
+                android:text="🍍 PIÑAVISION"
                 android:textColor="@color/radio_text_color"
                 android:textSize="12sp"
                 android:textStyle="bold|italic"
-                android:nextFocusDown="@+id/rbPl" />
+                android:nextFocusDown="@+id/etSearch" />
 
             <RadioButton
-                android:id="@+id/rbOffMode"
+                android:id="@+id/rbTv"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/radio_button_bg"
                 android:button="@null"
                 android:gravity="center"
-                android:text="PIÑAVISION"
+                android:text="📺 24/7 TV"
                 android:textColor="@color/radio_text_color"
-                android:textSize="10sp"
+                android:textSize="12sp"
                 android:textStyle="bold|italic"
-                android:nextFocusDown="@+id/rbCoIn" />
-
-            <RadioButton
-                android:id="@+id/rbCool"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
-                android:layout_weight="1"
-                android:background="@drawable/radio_button_bg"
-                android:button="@null"
-                android:gravity="center"
-                android:text="COOL(D)"
-                android:textColor="@color/radio_text_color"
-                android:textSize="11sp"
-                android:textStyle="bold|italic"
-                android:nextFocusDown="@+id/rbInfo" />
-
-            <RadioButton
-                android:id="@+id/rbTop"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
-                android:layout_weight="1"
-                android:background="@drawable/radio_button_bg"
-                android:button="@null"
-                android:gravity="center"
-                android:text="TOP(D)"
-                android:textColor="@color/radio_text_color"
-                android:textSize="11sp"
-                android:textStyle="bold|italic"
-                android:nextFocusDown="@+id/rbLv" />
+                android:nextFocusDown="@+id/etSearch" />
 
             <RadioButton
                 android:id="@+id/rbCaido"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/radio_button_bg"
                 android:button="@null"
                 android:gravity="center"
-                android:text="CAIDO"
-                android:textColor="@color/radio_text_color"
-                android:textSize="11sp"
-                android:textStyle="bold|italic"
-                android:nextFocusDown="@+id/rbSearch" />
-        </RadioGroup>
-
-        <!-- Radio Buttons Row 2 -->
-        <RadioGroup
-            android:id="@+id/radioGroup2"
-            android:layout_width="match_parent"
-            android:layout_height="32dp"
-            android:layout_marginHorizontal="6dp"
-            android:layout_marginTop="2dp"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@id/radioGroup1">
-
-            <RadioButton
-                android:id="@+id/rbPl"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/radio_button_bg"
-                android:button="@null"
-                android:gravity="center"
-                android:text="PL(D)"
+                android:text="⚡ CAIDO"
                 android:textColor="@color/radio_text_color"
                 android:textSize="12sp"
                 android:textStyle="bold|italic"
-                android:nextFocusUp="@+id/rbIn"
-                android:nextFocusDown="@+id/etSearch" />
-
-            <RadioButton
-                android:id="@+id/rbCoIn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
-                android:layout_weight="1"
-                android:background="@drawable/radio_button_bg"
-                android:button="@null"
-                android:gravity="center"
-                android:text="CO.IN(D)"
-                android:textColor="@color/radio_text_color"
-                android:textSize="10sp"
-                android:textStyle="bold|italic"
-                android:nextFocusUp="@+id/rbOffMode"
-                android:nextFocusDown="@+id/etSearch" />
-
-            <RadioButton
-                android:id="@+id/rbInfo"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
-                android:layout_weight="1"
-                android:background="@drawable/radio_button_bg"
-                android:button="@null"
-                android:gravity="center"
-                android:text="INFO(D)"
-                android:textColor="@color/radio_text_color"
-                android:textSize="11sp"
-                android:textStyle="bold|italic"
-                android:nextFocusUp="@+id/rbCool"
-                android:nextFocusDown="@+id/etSearch" />
-
-            <RadioButton
-                android:id="@+id/rbLv"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
-                android:layout_weight="1"
-                android:background="@drawable/radio_button_bg"
-                android:button="@null"
-                android:gravity="center"
-                android:text="LV(D)"
-                android:textColor="@color/radio_text_color"
-                android:textSize="11sp"
-                android:textStyle="bold|italic"
-                android:nextFocusUp="@+id/rbTop"
-                android:nextFocusDown="@+id/etSearch" />
-
-            <RadioButton
-                android:id="@+id/rbSearch"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
-                android:layout_weight="1"
-                android:background="@drawable/radio_button_bg"
-                android:button="@null"
-                android:gravity="center"
-                android:text="24/7 TV"
-                android:textColor="@color/radio_text_color"
-                android:textSize="11sp"
-                android:textStyle="bold|italic"
-                android:nextFocusUp="@+id/rbCaido"
                 android:nextFocusDown="@+id/etSearch" />
         </RadioGroup>
 
@@ -240,9 +120,9 @@
             android:textColor="@color/text_primary"
             android:textColorHint="@color/text_hint"
             android:textSize="13sp"
-            android:nextFocusUp="@id/radioGroup2"
+            android:nextFocusUp="@id/radioGroupSources"
             android:nextFocusDown="@id/chipSportAll"
-            app:layout_constraintTop_toBottomOf="@id/radioGroup2" />
+            app:layout_constraintTop_toBottomOf="@id/radioGroupSources" />
 
         <!-- Sport Filter Chips (Horizontal Scroll) -->
         <HorizontalScrollView
