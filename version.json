@@ -1,8 +1,8 @@
 {
-  "versionCode": 2020,
-  "versionName": "8.2.9",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.2.9/pina4viewer-v8.2.9.apk",
+  "versionCode": 2030,
+  "versionName": "8.3.0",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.0/pina4viewer-v8.3.0.apk",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
-  "changelog": "- Reseteo automático de posición al cambiar de fuente (24/7 TV, PIÑAVISION o CAIDO vuelven arriba del todo)\n- Diseño de tarjetas ultra limpio y compacto\n- Navegación optimizada"
+  "changelog": "- Detección y aviso automático cuando un canal de AceStream no está emitiendo en directo (evita error 'Cannot get transport file')\n- Eliminados enlaces placeholder caducados\n- Verificación de hash P2P y aviso claro al usuario en canales offline\n- Mayor estabilidad al abrir directos"
 }

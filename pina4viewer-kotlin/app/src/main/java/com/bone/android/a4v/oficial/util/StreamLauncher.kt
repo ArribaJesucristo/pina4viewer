@@ -17,20 +17,6 @@ object StreamLauncher {
     const val PACKAGE_MX_PLAYER = "com.mxtech.videoplayer.ad"
     const val PACKAGE_VLC = "org.videolan.vlc"
 
-    // Default sample hashes for AV channels if not dynamically scraped
-    private val DEFAULT_AV_HASHES = mapOf(
-        "AV1" to "ac74b93821038290182301928301293810293812",
-        "AV2" to "fe83728192038102938102938102938102938102",
-        "AV3" to "1111222233334444555566667777888899990000",
-        "AV4" to "2222333344445555666677778888999900001111",
-        "AV5" to "3333444455556666777788889999000011112222",
-        "AV6" to "4444555566667777888899990000111122223333",
-        "AV7" to "5555666677778888999900001111222233334444",
-        "AV8" to "6666777788889999000011112222333344445555",
-        "AV9" to "7777888899990000111122223333444455556666",
-        "AV10" to "8888999900001111222233334444555566667777"
-    )
-
     fun launchChannel(
         context: Context,
         channel: ChannelItem,
@@ -57,7 +43,7 @@ object StreamLauncher {
                 } else {
                     Toast.makeText(
                         context,
-                        "El canal ${channel.name} no tiene hash activo en este momento. Prueba en CAIDO o Search.",
+                        "⚠️ El canal ${channel.name} no está emitiendo en este momento. Prueba otra opción.",
                         Toast.LENGTH_LONG
                     ).show()
                 }
@@ -74,20 +60,24 @@ object StreamLauncher {
 
     private fun resolveHash(streamId: String): String? {
         val clean = streamId.removePrefix("acestream://").trim()
-        // If it's a 40 hex char hash
+        val upper = clean.uppercase()
+        // If it starts with AV (e.g. AV1, AV2, AV110)
+        if (upper.startsWith("AV")) {
+            val num = upper.removePrefix("AV")
+            val live = com.bone.android.a4v.oficial.data.parser.ArenaVisionParser.cachedStreams[num]
+            if (!live.isNullOrBlank() && live.matches(Regex("^[a-fA-F0-9]{40}$"))) {
+                return live
+            }
+            return null
+        }
+        // If it's a 40 hex char hash, ensure it's not a dummy placeholder
         if (clean.matches(Regex("^[a-fA-F0-9]{40}$"))) {
+            if (clean == "ac74b93821038290182301928301293810293812" || clean.all { it == clean[0] }) {
+                return null
+            }
             return clean
         }
-        // If it's mapped to AV channels
-        val upper = clean.uppercase()
-        if (DEFAULT_AV_HASHES.containsKey(upper)) {
-            return DEFAULT_AV_HASHES[upper]
-        }
-        // If it's another AV channel (e.g. AV110)
-        if (upper.startsWith("AV")) {
-            return "ac74b93821038290182301928301293810293812"
-        }
-        return if (clean.isNotEmpty()) clean else null
+        return null
     }
 
     fun launchAceStream(context: Context, infoHashOrUrl: String) {
