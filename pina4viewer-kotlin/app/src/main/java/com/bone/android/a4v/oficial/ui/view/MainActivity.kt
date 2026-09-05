@@ -134,6 +134,7 @@ class MainActivity : AppCompatActivity() {
             radioButton.setOnClickListener {
                 allRadios.forEach { rb -> rb.isChecked = (rb == radioButton) }
                 binding.chipSportAll.isChecked = true
+                (binding.recyclerViewEvents.layoutManager as? LinearLayoutManager)?.scrollToPositionWithOffset(0, 0)
                 viewModel.selectSource(sourceType)
             }
         }
@@ -141,6 +142,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupSearch() {
         binding.etSearch.addTextChangedListener { text ->
+            (binding.recyclerViewEvents.layoutManager as? LinearLayoutManager)?.scrollToPositionWithOffset(0, 0)
             viewModel.onSearchQueryChanged(text?.toString().orEmpty())
         }
 
@@ -183,6 +185,7 @@ class MainActivity : AppCompatActivity() {
 
         chipMap.forEach { (chip, sportKey) ->
             chip.setOnClickListener {
+                (binding.recyclerViewEvents.layoutManager as? LinearLayoutManager)?.scrollToPositionWithOffset(0, 0)
                 viewModel.setSportFilter(sportKey)
             }
 
@@ -294,10 +297,27 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
+                var lastSource: SourceType? = null
+                var lastSportFilter: String? = null
+                var lastSearchQuery: String? = null
+
                 viewModel.uiState.collect { state ->
                     updateDrawerChannelsIfChanged()
                     binding.swipeRefresh.isRefreshing = state.isLoading
-                    eventAdapter.submitList(state.filteredEvents)
+
+                    val shouldScrollToTop = (state.currentSource != lastSource) ||
+                            (state.sportFilter != lastSportFilter) ||
+                            (state.searchQuery != lastSearchQuery)
+
+                    lastSource = state.currentSource
+                    lastSportFilter = state.sportFilter
+                    lastSearchQuery = state.searchQuery
+
+                    eventAdapter.submitList(state.filteredEvents) {
+                        if (shouldScrollToTop) {
+                            (binding.recyclerViewEvents.layoutManager as? LinearLayoutManager)?.scrollToPositionWithOffset(0, 0)
+                        }
+                    }
 
                     when {
                         state.sportFilter.isEmpty() -> if (!binding.chipSportAll.isChecked) binding.chipSportAll.isChecked = true
