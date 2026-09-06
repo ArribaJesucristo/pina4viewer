@@ -78,9 +78,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initVpnShield() {
-        if (com.bone.android.a4v.oficial.util.VpnHelper.isExternalVpnActive(this)) {
-            invalidateOptionsMenu()
-            return
+        try {
+            if (com.bone.android.a4v.oficial.util.VpnHelper.isExternalVpnActive(this)) {
+                invalidateOptionsMenu()
+                return
+            }
+        } catch (e: Throwable) {
+            e.printStackTrace()
         }
     }
 
@@ -496,9 +500,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        com.bone.android.a4v.oficial.util.VpnHelper.updateState(this)
-        invalidateOptionsMenu()
-        setupVpnActionView()
+        try {
+            com.bone.android.a4v.oficial.util.VpnHelper.updateState(this)
+            invalidateOptionsMenu()
+        } catch (e: Throwable) {
+            e.printStackTrace()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -523,42 +530,45 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupVpnActionView(menu: Menu? = null) {
-        val targetMenu = menu ?: binding.toolbar.menu
-        val actionView = targetMenu?.findItem(R.id.menu_vpn)?.actionView
-            ?: binding.toolbar.findViewById(R.id.btnToolbarVpn)
-        if (actionView == null) return
-        vpnActionView = actionView
+        try {
+            val targetMenu = menu ?: try { binding.toolbar.menu } catch (_: Throwable) { null }
+            val actionView = targetMenu?.findItem(R.id.menu_vpn)?.actionView
+                ?: binding.toolbar.findViewById(R.id.btnToolbarVpn)
+            if (actionView == null) return
+            vpnActionView = actionView
 
-        actionView.isFocusable = true
-        actionView.isFocusableInTouchMode = true
-        actionView.isClickable = true
+            actionView.isFocusable = true
+            actionView.isFocusableInTouchMode = true
+            actionView.isClickable = true
 
-        val ivIcon = actionView.findViewById<android.widget.ImageView>(R.id.ivVpnStatusIcon)
-        val tvText = actionView.findViewById<android.widget.TextView>(R.id.tvVpnStatusText)
+            val ivIcon = actionView.findViewById<android.widget.ImageView>(R.id.ivVpnStatusIcon)
+            val tvText = actionView.findViewById<android.widget.TextView>(R.id.tvVpnStatusText)
 
-        val isExternal = com.bone.android.a4v.oficial.util.VpnHelper.isExternalVpnActive(this)
-        val isVpnOn = com.bone.android.a4v.oficial.util.VpnHelper.isVpnActive(this)
+            val isVpnOn = com.bone.android.a4v.oficial.util.VpnHelper.isVpnActive(this)
 
-        if (isVpnOn) {
-            ivIcon?.setImageResource(R.drawable.ic_shield_check)
-            tvText?.text = if (isExternal) "VPN ON" else "VPN ON"
-            tvText?.setTextColor(android.graphics.Color.parseColor("#00E676"))
-        } else {
-            ivIcon?.setImageResource(R.drawable.ic_shield_off)
-            tvText?.text = "VPN OFF"
-            tvText?.setTextColor(android.graphics.Color.parseColor("#FF5252"))
-        }
-
-        actionView.setOnClickListener {
-            showVpnDialog()
-        }
-
-        actionView.setOnFocusChangeListener { v, hasFocus ->
-            if (hasFocus) {
-                v.animate().scaleX(1.1f).scaleY(1.1f).setDuration(150).start()
+            if (isVpnOn) {
+                ivIcon?.setImageResource(R.drawable.ic_shield_check)
+                tvText?.text = "VPN ON"
+                tvText?.setTextColor(android.graphics.Color.parseColor("#00E676"))
             } else {
-                v.animate().scaleX(1.0f).scaleY(1.0f).setDuration(150).start()
+                ivIcon?.setImageResource(R.drawable.ic_shield_off)
+                tvText?.text = "VPN OFF"
+                tvText?.setTextColor(android.graphics.Color.parseColor("#FF5252"))
             }
+
+            actionView.setOnClickListener {
+                showVpnDialog()
+            }
+
+            actionView.setOnFocusChangeListener { v, hasFocus ->
+                if (hasFocus) {
+                    v.animate().scaleX(1.1f).scaleY(1.1f).setDuration(150).start()
+                } else {
+                    v.animate().scaleX(1.0f).scaleY(1.0f).setDuration(150).start()
+                }
+            }
+        } catch (e: Throwable) {
+            e.printStackTrace()
         }
     }
 
@@ -690,84 +700,88 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showVpnDialog() {
-        if (vpnDialog?.isShowing == true) return
+        try {
+            if (vpnDialog?.isShowing == true) return
 
-        // Shut down legacy internal DNS shield if running, to avoid blocking real VPNs
-        if (com.bone.android.a4v.oficial.util.VpnHelper.isBuiltInVpnActive()) {
-            com.bone.android.a4v.oficial.util.VpnHelper.stopBuiltInVpn(this)
-        }
-
-        val isVpnConnected = com.bone.android.a4v.oficial.util.VpnHelper.isVpnActive(this)
-        val installedVpn = com.bone.android.a4v.oficial.util.VpnHelper.getInstalledVpnApp(this)
-        val vpnName = installedVpn?.name ?: "Proton VPN"
-
-        val dialogBuilder = AlertDialog.Builder(this)
-
-        if (isVpnConnected) {
-            dialogBuilder.setTitle("🛡️ VPN Conectada y Activa")
-                .setMessage(
-                    "🟢 TU CONEXIÓN ESTÁ PROTEGIDA FUERA DE ESPAÑA\n\n" +
-                    "• Tu dispositivo está conectado mediante $vpnName.\n" +
-                    "• Los bloqueos de operadoras y de LaLiga en AceStream están saltados con éxito.\n" +
-                    "• Ya puedes reproducir cualquier partido en directo sin el error 'Cannot get transport file'."
-                )
-                .setPositiveButton("Entendido", null)
-
-            if (installedVpn != null) {
-                dialogBuilder.setNeutralButton("Abrir ${installedVpn.name}") { _, _ ->
-                    com.bone.android.a4v.oficial.util.VpnHelper.launchVpnApp(this, installedVpn)
-                }
-            } else {
-                dialogBuilder.setNeutralButton("Ajustes VPN") { _, _ ->
-                    com.bone.android.a4v.oficial.util.VpnHelper.openSystemVpnSettings(this)
-                }
+            // Shut down legacy internal DNS shield if running, to avoid blocking real VPNs
+            if (com.bone.android.a4v.oficial.util.VpnHelper.isBuiltInVpnActive()) {
+                com.bone.android.a4v.oficial.util.VpnHelper.stopBuiltInVpn(this)
             }
-        } else {
-            if (installedVpn != null) {
-                dialogBuilder.setTitle("🛡️ Conectar ${installedVpn.name}")
+
+            val isVpnConnected = com.bone.android.a4v.oficial.util.VpnHelper.isVpnActive(this)
+            val installedVpn = com.bone.android.a4v.oficial.util.VpnHelper.getInstalledVpnApp(this)
+            val vpnName = installedVpn?.name ?: "Proton VPN"
+
+            val dialogBuilder = AlertDialog.Builder(this)
+
+            if (isVpnConnected) {
+                dialogBuilder.setTitle("🛡️ VPN Conectada y Activa")
                     .setMessage(
-                        "⚠️ Para ver partidos en AceStream sin bloqueos ('Cannot get transport file'), tu conexión debe salir por otro país (ej. Holanda / Países Bajos).\n\n" +
-                        "Tienes instalada ${installedVpn.name}.\n\n" +
-                        "Pulsa 'Abrir ${installedVpn.name}' y dale a 'Conexión Rápida' (Quick Connect) para conectar a Holanda."
+                        "🟢 TU CONEXIÓN ESTÁ PROTEGIDA FUERA DE ESPAÑA\n\n" +
+                        "• Tu dispositivo está conectado mediante $vpnName.\n" +
+                        "• Los bloqueos de operadoras y de LaLiga en AceStream están saltados con éxito.\n" +
+                        "• Ya puedes reproducir cualquier partido en directo sin el error 'Cannot get transport file'."
                     )
-                    .setPositiveButton("🚀 Abrir ${installedVpn.name}") { _, _ ->
+                    .setPositiveButton("Entendido", null)
+
+                if (installedVpn != null) {
+                    dialogBuilder.setNeutralButton("Abrir ${installedVpn.name}") { _, _ ->
                         com.bone.android.a4v.oficial.util.VpnHelper.launchVpnApp(this, installedVpn)
                     }
-                    .setNeutralButton("Ajustes VPN") { _, _ ->
+                } else {
+                    dialogBuilder.setNeutralButton("Ajustes VPN") { _, _ ->
                         com.bone.android.a4v.oficial.util.VpnHelper.openSystemVpnSettings(this)
                     }
-                    .setNegativeButton("Cerrar", null)
+                }
             } else {
-                dialogBuilder.setTitle("🛡️ Desbloquear AceStream con Proton VPN")
-                    .setMessage(
-                        "⚠️ En España, las operadoras bloquean los enlaces de AceStream durante los partidos y provocan el error 'Cannot get transport file'.\n\n" +
-                        "Para saltar el bloqueo necesitas una VPN gratuita con servidores fuera de España.\n\n" +
-                        "Recomendamos Proton VPN:\n" +
-                        "• 100% Gratis y sin límite de megas ni tiempo\n" +
-                        "• Conexión directa a Países Bajos (Holanda) y Suiza\n" +
-                        "• Sin publicidad y sin tarjeta de crédito\n" +
-                        "• Compatible con Android TV, Fire TV y móvil"
-                    )
-                    .setPositiveButton("📥 Instalar Proton VPN (Gratis)") { _, _ ->
-                        com.bone.android.a4v.oficial.util.VpnHelper.openProtonVpnInstall(this)
-                    }
-                    .setNeutralButton("Ajustes VPN Android") { _, _ ->
-                        com.bone.android.a4v.oficial.util.VpnHelper.openSystemVpnSettings(this)
-                    }
-                    .setNegativeButton("Cerrar", null)
+                if (installedVpn != null) {
+                    dialogBuilder.setTitle("🛡️ Conectar ${installedVpn.name}")
+                        .setMessage(
+                            "⚠️ Para ver partidos en AceStream sin bloqueos ('Cannot get transport file'), tu conexión debe salir por otro país (ej. Holanda / Países Bajos).\n\n" +
+                            "Tienes instalada ${installedVpn.name}.\n\n" +
+                            "Pulsa 'Abrir ${installedVpn.name}' y dale a 'Conexión Rápida' (Quick Connect) para conectar a Holanda."
+                        )
+                        .setPositiveButton("🚀 Abrir ${installedVpn.name}") { _, _ ->
+                            com.bone.android.a4v.oficial.util.VpnHelper.launchVpnApp(this, installedVpn)
+                        }
+                        .setNeutralButton("Ajustes VPN") { _, _ ->
+                            com.bone.android.a4v.oficial.util.VpnHelper.openSystemVpnSettings(this)
+                        }
+                        .setNegativeButton("Cerrar", null)
+                } else {
+                    dialogBuilder.setTitle("🛡️ Desbloquear AceStream con Proton VPN")
+                        .setMessage(
+                            "⚠️ En España, las operadoras bloquean los enlaces de AceStream durante los partidos y provocan el error 'Cannot get transport file'.\n\n" +
+                            "Para saltar el bloqueo necesitas una VPN gratuita con servidores fuera de España.\n\n" +
+                            "Recomendamos Proton VPN:\n" +
+                            "• 100% Gratis y sin límite de megas ni tiempo\n" +
+                            "• Conexión directa a Países Bajos (Holanda) y Suiza\n" +
+                            "• Sin publicidad y sin tarjeta de crédito\n" +
+                            "• Compatible con Android TV, Fire TV y móvil"
+                        )
+                        .setPositiveButton("📥 Instalar Proton VPN (Gratis)") { _, _ ->
+                            com.bone.android.a4v.oficial.util.VpnHelper.openProtonVpnInstall(this)
+                        }
+                        .setNeutralButton("Ajustes VPN Android") { _, _ ->
+                            com.bone.android.a4v.oficial.util.VpnHelper.openSystemVpnSettings(this)
+                        }
+                        .setNegativeButton("Cerrar", null)
+                }
             }
-        }
 
-        val d = dialogBuilder.create()
-        d.setOnDismissListener {
-            vpnDialog = null
-            vpnActionView?.requestFocus()
+            val d = dialogBuilder.create()
+            d.setOnDismissListener {
+                vpnDialog = null
+                vpnActionView?.requestFocus()
+            }
+            d.setOnShowListener {
+                d.getButton(AlertDialog.BUTTON_POSITIVE)?.requestFocus()
+            }
+            vpnDialog = d
+            d.show()
+        } catch (e: Throwable) {
+            e.printStackTrace()
         }
-        d.setOnShowListener {
-            d.getButton(AlertDialog.BUTTON_POSITIVE)?.requestFocus()
-        }
-        vpnDialog = d
-        d.show()
     }
 
     private fun showAboutDialog() {

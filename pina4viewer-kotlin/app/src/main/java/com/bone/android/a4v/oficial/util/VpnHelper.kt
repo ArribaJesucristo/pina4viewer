@@ -94,10 +94,26 @@ object VpnHelper {
     fun isBuiltInVpnActive(): Boolean = PinaVpnService.isVpnActive
 
     fun isExternalVpnActive(context: Context): Boolean {
-        val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager ?: return false
-        val activeNetwork = cm.activeNetwork ?: return false
-        val caps = cm.getNetworkCapabilities(activeNetwork) ?: return false
-        return caps.hasTransport(NetworkCapabilities.TRANSPORT_VPN)
+        return try {
+            val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager ?: return false
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+                val activeNetwork = cm.activeNetwork ?: return false
+                val caps = cm.getNetworkCapabilities(activeNetwork) ?: return false
+                caps.hasTransport(NetworkCapabilities.TRANSPORT_VPN)
+            } else {
+                @Suppress("DEPRECATION")
+                val networks = cm.allNetworks ?: return false
+                for (network in networks) {
+                    val caps = cm.getNetworkCapabilities(network)
+                    if (caps != null && caps.hasTransport(NetworkCapabilities.TRANSPORT_VPN)) {
+                        return true
+                    }
+                }
+                false
+            }
+        } catch (_: Throwable) {
+            false
+        }
     }
 
     fun isVpnActive(context: Context): Boolean {
@@ -105,7 +121,10 @@ object VpnHelper {
     }
 
     fun updateState(context: Context) {
-        vpnStateFlow.value = isVpnActive(context)
+        try {
+            vpnStateFlow.value = isVpnActive(context)
+        } catch (_: Throwable) {
+        }
     }
 
     fun prepareVpn(activity: Activity): Intent? {

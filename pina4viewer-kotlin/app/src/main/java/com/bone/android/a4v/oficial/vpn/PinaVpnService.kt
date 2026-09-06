@@ -52,10 +52,15 @@ class PinaVpnService : VpnService() {
         }
 
         fun stop(context: Context) {
-            val intent = Intent(context, PinaVpnService::class.java).apply {
-                action = ACTION_DISCONNECT
+            isVpnActive = false
+            try {
+                val intent = Intent(context, PinaVpnService::class.java).apply {
+                    action = ACTION_DISCONNECT
+                }
+                context.startService(intent)
+            } catch (e: Throwable) {
+                e.printStackTrace()
             }
-            context.startService(intent)
         }
     }
 

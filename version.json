@@ -1,8 +1,8 @@
 {
-  "versionCode": 2032,
-  "versionName": "8.3.2",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.2/pina4viewer-v8.3.2.apk",
+  "versionCode": 2033,
+  "versionName": "8.3.3",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.3/pina4viewer-v8.3.3.apk",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
-  "changelog": "- Integración 1-Clic de Proton VPN en el botón superior (desbloqueo real de AceStream fuera de España / Países Bajos)\n- Detección automática en tiempo real de conexión protegida (VPN ON / VPN OFF)\n- Acceso directo para instalar Proton VPN o abrirla para conectar a Holanda"
+  "changelog": "- Solución definitiva a cuelgue/cierre inesperado al abrir la aplicación (corrección de compatibilidad en menú y detección de red)\n- Botón 1-Clic de Proton VPN blindado con protección total de excepciones\n- Detección en tiempo real de VPN activa y salto de bloqueos en AceStream"
 }
