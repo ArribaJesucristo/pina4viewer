@@ -1,9 +1,9 @@
 {
-  "versionCode": 2034,
-  "versionName": "8.3.4",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.4/pina4viewer-v8.3.4.apk",
+  "versionCode": 2035,
+  "versionName": "8.3.5",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.5/pina4viewer-v8.3.5.apk",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
   "psiphonUrl": "https://psiphon.ca/PsiphonAndroid.apk",
-  "changelog": "- Integración 'A prueba de abuelas': VPN Psiphon 100% libre de cuentas, correos y contraseñas\n- Descarga e instalación directa en 1-Clic del APK sin pasar por Google Play Store\n- Conexión europea automática que elimina el error 'Cannot get transport file'"
+  "changelog": "- Priorización inteligente de Psiphon: opción directa de instalación 1-clic aunque tengas Proton instalado en el móvil\n- Detección mejorada de VPNs y visibilidad de paquete para Android 11+\n- Muestra el número de versión exacta en 'Acerca de'"
 }

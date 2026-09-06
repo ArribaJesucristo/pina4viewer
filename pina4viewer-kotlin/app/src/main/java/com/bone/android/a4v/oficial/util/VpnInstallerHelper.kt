@@ -26,6 +26,7 @@ object VpnInstallerHelper {
     private const val DEFAULT_PSIPHON_URL = "https://psiphon.ca/PsiphonAndroid.apk"
 
     const val PSIPHON_PACKAGE = "com.psiphon3"
+    const val PSIPHON_PACKAGE_PLAY = "com.psiphon3.subscription"
 
     private val client = OkHttpClient.Builder()
         .dns(DnsHelper.customDns)
@@ -36,12 +37,19 @@ object VpnInstallerHelper {
         .build()
 
     fun isPsiphonInstalled(context: Context): Boolean {
-        return try {
-            context.packageManager.getPackageInfo(PSIPHON_PACKAGE, 0)
-            true
-        } catch (_: Exception) {
-            false
+        return getInstalledPsiphonPackage(context) != null
+    }
+
+    fun getInstalledPsiphonPackage(context: Context): String? {
+        val pm = context.packageManager
+        for (pkg in listOf(PSIPHON_PACKAGE, PSIPHON_PACKAGE_PLAY)) {
+            try {
+                pm.getPackageInfo(pkg, 0)
+                return pkg
+            } catch (_: Exception) {
+            }
         }
+        return null
     }
 
     private suspend fun resolveDownloadUrl(): String = withContext(Dispatchers.IO) {
@@ -166,3 +174,4 @@ object VpnInstallerHelper {
         }
     }
 }
+

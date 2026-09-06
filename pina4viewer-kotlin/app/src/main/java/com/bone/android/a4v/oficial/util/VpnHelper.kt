@@ -18,10 +18,12 @@ object VpnHelper {
     const val PACKAGE_CLOUDFLARE_WARP = "com.cloudflare.onedotonedotonedotone"
 
     val PSIPHON = VpnApp("Psiphon", "com.psiphon3", "https://psiphon.ca/PsiphonAndroid.apk")
+    val PSIPHON_PLAY = VpnApp("Psiphon", "com.psiphon3.subscription", "https://psiphon.ca/PsiphonAndroid.apk")
     val PROTON_VPN = VpnApp("Proton VPN", "ch.protonvpn.android", "https://protonvpn.com/download-android")
 
     val KNOWN_VPN_APPS = listOf(
         PSIPHON,
+        PSIPHON_PLAY,
         PROTON_VPN,
         VpnApp("NordVPN", "com.nordvpn.android", "https://nordvpn.com/"),
         VpnApp("Surfshark", "com.surfshark.vpnclient.android", "https://surfshark.com/"),
@@ -48,7 +50,8 @@ object VpnHelper {
     }
 
     fun launchPsiphon(context: Context) {
-        launchVpnApp(context, PSIPHON)
+        val installedPkg = VpnInstallerHelper.getInstalledPsiphonPackage(context) ?: PSIPHON.packageName
+        launchVpnApp(context, VpnApp("Psiphon", installedPkg, PSIPHON.website))
     }
 
     fun launchProtonVpn(context: Context) {
@@ -57,6 +60,19 @@ object VpnHelper {
 
     fun installPsiphonDirect(activity: Activity) {
         VpnInstallerHelper.startDownloadAndInstall(activity)
+    }
+
+    fun getOtherInstalledVpnApp(context: Context): VpnApp? {
+        val pm = context.packageManager
+        for (vpn in KNOWN_VPN_APPS) {
+            if (vpn.packageName == PSIPHON.packageName || vpn.packageName == PSIPHON_PLAY.packageName) continue
+            try {
+                pm.getPackageInfo(vpn.packageName, 0)
+                return vpn
+            } catch (_: Exception) {
+            }
+        }
+        return null
     }
 
     fun openProtonVpnInstall(context: Context) {
