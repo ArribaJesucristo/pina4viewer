@@ -41,9 +41,11 @@ object UpdateHelper {
 
     suspend fun checkForUpdate(context: Context): UpdateInfo? = withContext(Dispatchers.IO) {
         try {
+            val urlWithBuster = "$VERSION_URL?t=${System.currentTimeMillis()}"
             val request = Request.Builder()
-                .url(VERSION_URL)
+                .url(urlWithBuster)
                 .header("Cache-Control", "no-cache")
+                .header("Pragma", "no-cache")
                 .build()
 
             client.newCall(request).execute().use { response ->
