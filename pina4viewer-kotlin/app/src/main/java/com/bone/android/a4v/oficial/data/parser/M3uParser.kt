@@ -92,51 +92,76 @@ object M3uParser {
                 }
             }
 
+            val sectionPattern = Pattern.compile("(?si)<li\\s+class=[\"']content-item[\"']>(.*?)(?=<li\\s+class=[\"']content-item[\"']|</ul>|</ol>\\s*</div>)")
             val eventPattern = Pattern.compile("(?si)<li\\s+class=[\"']dailyevent[\"']>(.*?)</li>")
             val sportPattern = Pattern.compile("(?si)<span\\s+class=[\"']dailyday[\"']>(.*?)</span>")
             val hourPattern = Pattern.compile("(?si)<strong\\s+class=[\"']dailyhour[\"']>(.*?)</strong>")
             val compPattern = Pattern.compile("(?si)<span\\s+class=[\"']dailycompetition[\"']>(.*?)</span>")
             val teamsPattern = Pattern.compile("(?si)<h4\\s+class=[\"']dailyteams[\"']>(.*?)</h4>")
             val channelPattern = Pattern.compile("(?si)<span\\s+class=[\"']dailychannel[\"']>(.*?)</span>")
+            val headerPattern = Pattern.compile("(?si)<span\\s+class=[\"']title-section-widget[\"']>(.*?)</span>")
 
-            val matcher = eventPattern.matcher(marcaHtml)
+            val sectionMatcher = sectionPattern.matcher(marcaHtml)
+            val sections = mutableListOf<Pair<String, String>>()
+            var dayIdx = 0
+
+            while (sectionMatcher.find()) {
+                val secBlock = sectionMatcher.group(1) ?: continue
+                val hM = headerPattern.matcher(secBlock)
+                val hText = if (hM.find()) hM.group(1)?.replace(Regex("<[^>]+>"), " ")?.trim().orEmpty() else ""
+                val dayLabel = when (dayIdx) {
+                    0 -> "Hoy"
+                    1 -> "Mañana"
+                    else -> hText.ifEmpty { "Día +$dayIdx" }
+                }
+                sections.add(dayLabel to secBlock)
+                dayIdx++
+            }
+
+            if (sections.isEmpty()) {
+                sections.add("Hoy" to marcaHtml)
+            }
+
             val events = mutableListOf<EventItem>()
             var idCounter = 1
 
-            while (matcher.find()) {
-                val block = matcher.group(1) ?: continue
+            for ((dayLabel, secHtml) in sections) {
+                val matcher = eventPattern.matcher(secHtml)
+                while (matcher.find()) {
+                    val block = matcher.group(1) ?: continue
 
-                val sM = sportPattern.matcher(block)
-                val rawSport = if (sM.find()) sM.group(1)?.replace(Regex("<[^>]+>"), "")?.trim().orEmpty() else ""
+                    val sM = sportPattern.matcher(block)
+                    val rawSport = if (sM.find()) sM.group(1)?.replace(Regex("<[^>]+>"), "")?.trim().orEmpty() else ""
 
-                val hM = hourPattern.matcher(block)
-                val rawHour = if (hM.find()) hM.group(1)?.replace(Regex("<[^>]+>"), "")?.trim().orEmpty() else ""
+                    val hM = hourPattern.matcher(block)
+                    val rawHour = if (hM.find()) hM.group(1)?.replace(Regex("<[^>]+>"), "")?.trim().orEmpty() else ""
 
-                val cM = compPattern.matcher(block)
-                val rawComp = if (cM.find()) cM.group(1)?.replace(Regex("<[^>]+>"), "")?.trim().orEmpty() else ""
+                    val cM = compPattern.matcher(block)
+                    val rawComp = if (cM.find()) cM.group(1)?.replace(Regex("<[^>]+>"), "")?.trim().orEmpty() else ""
 
-                val tM = teamsPattern.matcher(block)
-                val rawTeams = if (tM.find()) tM.group(1)?.replace(Regex("<[^>]+>"), "")?.trim().orEmpty() else ""
+                    val tM = teamsPattern.matcher(block)
+                    val rawTeams = if (tM.find()) tM.group(1)?.replace(Regex("<[^>]+>"), "")?.trim().orEmpty() else ""
 
-                val chM = channelPattern.matcher(block)
-                val rawChannel = if (chM.find()) chM.group(1)?.replace(Regex("<[^>]+>"), "")?.trim().orEmpty() else ""
+                    val chM = channelPattern.matcher(block)
+                    val rawChannel = if (chM.find()) chM.group(1)?.replace(Regex("<[^>]+>"), "")?.trim().orEmpty() else ""
 
-                if (rawTeams.isEmpty() || rawChannel.isEmpty()) continue
+                    if (rawTeams.isEmpty() || rawChannel.isEmpty()) continue
 
-                val matchedChannels = findChannelsForEvent(rawChannel, channelsByBase)
-                if (matchedChannels.isNotEmpty()) {
-                    events.add(
-                        EventItem(
-                            id = "peticiones_marca_$idCounter",
-                            title = rawTeams,
-                            sport = normalizeSport(rawSport),
-                            competition = rawComp.ifEmpty { "Multideporte" },
-                            time = rawHour.ifEmpty { "Directo" },
-                            date = "Hoy",
-                            channels = matchedChannels
+                    val matchedChannels = findChannelsForEvent(rawChannel, channelsByBase)
+                    if (matchedChannels.isNotEmpty()) {
+                        events.add(
+                            EventItem(
+                                id = "peticiones_marca_$idCounter",
+                                title = rawTeams,
+                                sport = normalizeSport(rawSport),
+                                competition = rawComp.ifEmpty { "Multideporte" },
+                                time = rawHour.ifEmpty { "Directo" },
+                                date = dayLabel,
+                                channels = matchedChannels
+                            )
                         )
-                    )
-                    idCounter++
+                        idCounter++
+                    }
                 }
             }
 

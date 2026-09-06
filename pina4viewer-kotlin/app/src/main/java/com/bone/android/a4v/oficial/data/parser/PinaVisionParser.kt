@@ -39,6 +39,24 @@ object PinaVisionParser {
                 val time = obj.optString("time", "")
                 val date = obj.optString("date", "")
 
+                // Defense-in-depth: skip events with dates strictly in the past (e.g. yesterday)
+                if (date.matches(Regex("^\\d{2}/\\d{2}/\\d{4}$"))) {
+                    try {
+                        val sdf = java.text.SimpleDateFormat("dd/MM/yyyy", java.util.Locale.getDefault())
+                        sdf.timeZone = java.util.TimeZone.getTimeZone("Europe/Madrid")
+                        val evDate = sdf.parse(date)
+                        val cal = java.util.Calendar.getInstance(java.util.TimeZone.getTimeZone("Europe/Madrid"))
+                        cal.set(java.util.Calendar.HOUR_OF_DAY, 0)
+                        cal.set(java.util.Calendar.MINUTE, 0)
+                        cal.set(java.util.Calendar.SECOND, 0)
+                        cal.set(java.util.Calendar.MILLISECOND, 0)
+                        if (evDate != null && evDate.before(cal.time)) {
+                            continue
+                        }
+                    } catch (_: Exception) {
+                    }
+                }
+
                 val channelsArray = obj.optJSONArray("channels")
                 val channels = mutableListOf<ChannelItem>()
                 if (channelsArray != null) {

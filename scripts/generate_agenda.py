@@ -321,47 +321,71 @@ def find_channels_for_event(marca_channel_str, unified_channels):
 
 def parse_marca_schedule(html_content, unified_channels):
     events = []
+    sections = re.findall(r'<li\s+class=["\']content-item["\']>(.*?)(?=<li\s+class=["\']content-item["\']|</ul>|</ol>\s*</div>)', html_content, re.DOTALL)
+
     event_pattern = re.compile(r'(?si)<li\s+class=[\'"]dailyevent[\'"]>(.*?)</li>')
     sport_pattern = re.compile(r'(?si)<span\s+class=[\'"]dailyday[\'"]>(.*?)</span>')
     hour_pattern = re.compile(r'(?si)<strong\s+class=[\'"]dailyhour[\'"]>(.*?)</strong>')
     comp_pattern = re.compile(r'(?si)<span\s+class=[\'"]dailycompetition[\'"]>(.*?)</span>')
     teams_pattern = re.compile(r'(?si)<h4\s+class=[\'"]dailyteams[\'"]>(.*?)</h4>')
     channel_pattern = re.compile(r'(?si)<span\s+class=[\'"]dailychannel[\'"]>(.*?)</span>')
+    header_pattern = re.compile(r'(?si)<span\s+class=[\'"]title-section-widget[\'"]>(.*?)</span>')
 
-    blocks = event_pattern.findall(html_content)
+    # If sections not found, fallback to parsing all dailyevents
+    if not sections:
+        sections = [html_content]
+
+    day_index = 0
     event_counter = 1
 
-    for block in blocks:
-        sM = sport_pattern.search(block)
-        raw_sport = re.sub(r'<[^>]+>', '', sM.group(1)).strip() if sM else ""
-
-        hM = hour_pattern.search(block)
-        raw_hour = re.sub(r'<[^>]+>', '', hM.group(1)).strip() if hM else ""
-
-        cM = comp_pattern.search(block)
-        raw_comp = re.sub(r'<[^>]+>', '', cM.group(1)).strip() if cM else ""
-
-        tM = teams_pattern.search(block)
-        raw_teams = unescape(re.sub(r'<[^>]+>', '', tM.group(1)).strip()) if tM else ""
-
-        chM = channel_pattern.search(block)
-        raw_channel = re.sub(r'<[^>]+>', '', chM.group(1)).strip() if chM else ""
-
-        if not raw_teams or not raw_channel:
+    for section in sections:
+        blocks = event_pattern.findall(section)
+        if not blocks:
             continue
 
-        matched_channels = find_channels_for_event(raw_channel, unified_channels)
-        if matched_channels:
-            events.append({
-                "id": f"pina_{event_counter}",
-                "title": raw_teams,
-                "sport": normalize_sport(raw_sport),
-                "competition": raw_comp if raw_comp else normalize_sport(raw_sport),
-                "time": raw_hour if raw_hour else "",
-                "date": "Hoy",
-                "channels": matched_channels
-            })
-            event_counter += 1
+        h_match = header_pattern.search(section)
+        h_text = re.sub(r'<[^>]+>', ' ', h_match.group(1)).strip() if h_match else ""
+
+        if day_index == 0:
+            day_label = "Hoy"
+        elif day_index == 1:
+            day_label = "Mañana"
+        else:
+            day_label = h_text if h_text else f"Día +{day_index}"
+
+        day_index += 1
+
+        for block in blocks:
+            sM = sport_pattern.search(block)
+            raw_sport = re.sub(r'<[^>]+>', '', sM.group(1)).strip() if sM else ""
+
+            hM = hour_pattern.search(block)
+            raw_hour = re.sub(r'<[^>]+>', '', hM.group(1)).strip() if hM else ""
+
+            cM = comp_pattern.search(block)
+            raw_comp = re.sub(r'<[^>]+>', '', cM.group(1)).strip() if cM else ""
+
+            tM = teams_pattern.search(block)
+            raw_teams = unescape(re.sub(r'<[^>]+>', '', tM.group(1)).strip()) if tM else ""
+
+            chM = channel_pattern.search(block)
+            raw_channel = re.sub(r'<[^>]+>', '', chM.group(1)).strip() if chM else ""
+
+            if not raw_teams or not raw_channel:
+                continue
+
+            matched_channels = find_channels_for_event(raw_channel, unified_channels)
+            if matched_channels:
+                events.append({
+                    "id": f"pina_{event_counter}",
+                    "title": raw_teams,
+                    "sport": normalize_sport(raw_sport),
+                    "competition": raw_comp if raw_comp else normalize_sport(raw_sport),
+                    "time": raw_hour if raw_hour else "",
+                    "date": day_label,
+                    "channels": matched_channels
+                })
+                event_counter += 1
 
     return events
 
@@ -410,18 +434,74 @@ def generate_piñavision_agenda():
         schedule_events = parse_marca_schedule(marca_html, unified_channels)
         print(f"Eventos emparejados con Marca: {len(schedule_events)}")
 
-    # Merge ArenaVision events into schedule_events
+    # Setup dates for Madrid timezone
+    from datetime import datetime, timedelta
+    try:
+        from zoneinfo import ZoneInfo
+        madrid_tz = ZoneInfo("Europe/Madrid")
+    except Exception:
+        import datetime as dt
+        madrid_tz = dt.timezone(dt.timedelta(hours=2))
+
+    now_madrid = datetime.now(madrid_tz)
+    today = now_madrid.date()
+    today_str = today.strftime("%d/%m/%Y")
+    tomorrow_str = (today + timedelta(days=1)).strftime("%d/%m/%Y")
+
+    # Team translation dictionary for enhanced matching between English & Spanish listings
+    NAME_TRANSLATIONS = {
+        "turkey": "turquia", "asutralia": "australia", "belgium": "belgica",
+        "czech republic": "republica checa", "czech": "checa", "spain": "espana",
+        "germany": "alemania", "france": "francia", "italy": "italia",
+        "united states": "usa", "south korea": "corea", "stage": "etapa"
+    }
+
+    def get_title_tokens(text):
+        clean = clean_channel_name(text)
+        for k, v in NAME_TRANSLATIONS.items():
+            clean = clean.replace(k, v)
+        return set([w for w in clean.split() if len(w) > 3 or w.isdigit()])
+
+    # Filter ArenaVision events: discard past events, normalize dates to 'Hoy' / 'Mañana'
+    filtered_arena_events = []
     if arena_events:
+        for a_ev in arena_events:
+            d_raw = a_ev.get("date", "").strip()
+            try:
+                ev_date = datetime.strptime(d_raw, "%d/%m/%Y").date()
+            except Exception:
+                continue
+
+            # Skip past events (yesterday or older)
+            if ev_date < today:
+                continue
+
+            if ev_date == today:
+                a_ev["date"] = "Hoy"
+            elif ev_date == today + timedelta(days=1):
+                a_ev["date"] = "Mañana"
+            else:
+                a_ev["date"] = d_raw
+
+            filtered_arena_events.append(a_ev)
+
         added_arena_count = 0
         merged_arena_count = 0
-        for a_ev in arena_events:
+        for a_ev in filtered_arena_events:
             matched = False
-            a_title_clean = clean_channel_name(a_ev["title"])
-            a_words = [w for w in a_title_clean.split() if len(w) > 3]
+            a_tokens = get_title_tokens(a_ev["title"])
 
             for s_ev in schedule_events:
-                s_title_clean = clean_channel_name(s_ev["title"])
-                if a_words and any(w in s_title_clean for w in a_words):
+                # Merge only if same date!
+                if s_ev["date"] != a_ev["date"]:
+                    continue
+
+                s_tokens = get_title_tokens(s_ev["title"])
+                # Match if shares at least 2 tokens, or 1 long token (>4 chars) and same hour
+                has_token_match = len(a_tokens & s_tokens) >= 2 or any(len(w) >= 5 and w in s_tokens for w in a_tokens)
+                same_hour = s_ev.get("time", "").split(":")[0] == a_ev.get("time", "").split(":")[0] if s_ev.get("time") and a_ev.get("time") else False
+
+                if has_token_match or (len(a_tokens & s_tokens) >= 1 and same_hour):
                     existing_hashes = {c["streamId"] for c in s_ev["channels"]}
                     for ch in a_ev["channels"]:
                         if ch["streamId"] not in existing_hashes:
@@ -432,18 +512,39 @@ def generate_piñavision_agenda():
                     break
 
             if not matched:
-                a_ev["id"] = str(len(schedule_events) + 1)
+                a_ev["id"] = f"pina_{len(schedule_events) + 1}"
                 schedule_events.append(a_ev)
                 added_arena_count += 1
 
-        print(f"ArenaVision integrado: {merged_arena_count} emparejados con eventos existentes, {added_arena_count} añadidos como nuevos eventos.")
+        print(f"ArenaVision integrado: {merged_arena_count} emparejados con eventos existentes, {added_arena_count} añadidos como nuevos eventos (descartados {len(arena_events) - len(filtered_arena_events)} pasados).")
+
+    # Chronological sorting for all schedule events
+    def get_event_sort_key(ev):
+        d = ev.get("date", "")
+        t = ev.get("time", "")
+        if d == "Hoy":
+            day_rank = 0
+        elif d == "Mañana":
+            day_rank = 1
+        else:
+            try:
+                dt_obj = datetime.strptime(d, "%d/%m/%Y").date()
+                day_rank = (dt_obj - today).days
+            except Exception:
+                day_rank = 99
+
+        time_tuple = (99, 99)
+        if t and ":" in t:
+            parts = t.split(":")
+            try:
+                time_tuple = (int(parts[0]), int(parts[1]))
+            except Exception:
+                pass
+
+        return (day_rank, time_tuple)
+    schedule_events.sort(key=get_event_sort_key)
 
     # Add 24/7 channels at the end
-    used_hashes = set()
-    for ev in schedule_events:
-        for ch in ev["channels"]:
-            used_hashes.add(ch["streamId"])
-
     event_id = len(schedule_events) + 1
     channels_247 = []
     for base, ch_list in unified_channels.items():

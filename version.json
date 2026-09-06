@@ -1,9 +1,9 @@
 {
-  "versionCode": 2036,
-  "versionName": "8.3.6",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.6/pina4viewer-v8.3.6.apk",
+  "versionCode": 2037,
+  "versionName": "8.3.7",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.7/pina4viewer-v8.3.7.apk",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
   "psiphonUrl": "https://psiphon.ca/PsiphonAndroid.apk",
-  "changelog": "- Prioriza la VPN que ya tengas instalada (Proton, Nord, etc.)\n- Si no tienes ninguna VPN, ofrece Psiphon (1-clic directo sin cuentas ni contraseñas)\n- Detección completa de visibilidad en Android 11+"
+  "changelog": "- Corrección de la agenda: orden cronológico perfecto por días ('Hoy', 'Mañana')\n- Eliminación automática de eventos caducados de días anteriores\n- Integración y fusión inteligente de canales entre Marca y ArenaVision"
 }
