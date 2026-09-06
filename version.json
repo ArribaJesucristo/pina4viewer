@@ -1,8 +1,9 @@
 {
-  "versionCode": 2033,
-  "versionName": "8.3.3",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.3/pina4viewer-v8.3.3.apk",
+  "versionCode": 2034,
+  "versionName": "8.3.4",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.4/pina4viewer-v8.3.4.apk",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
-  "changelog": "- Solución definitiva a cuelgue/cierre inesperado al abrir la aplicación (corrección de compatibilidad en menú y detección de red)\n- Botón 1-Clic de Proton VPN blindado con protección total de excepciones\n- Detección en tiempo real de VPN activa y salto de bloqueos en AceStream"
+  "psiphonUrl": "https://psiphon.ca/PsiphonAndroid.apk",
+  "changelog": "- Integración 'A prueba de abuelas': VPN Psiphon 100% libre de cuentas, correos y contraseñas\n- Descarga e instalación directa en 1-Clic del APK sin pasar por Google Play Store\n- Conexión europea automática que elimina el error 'Cannot get transport file'"
 }

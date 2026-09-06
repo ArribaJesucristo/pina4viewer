@@ -680,6 +680,7 @@ class MainActivity : AppCompatActivity() {
     private fun showSoftwareDialog() {
         val apps = arrayOf(
             "📺 Instalar / Actualizar AceStream (Automático)",
+            "🛡️ Instalar Psiphon VPN (Sin Cuentas / Automático)",
             "Descargar Wiseplay Player",
             "Descargar MX Player",
             "Descargar SopCast"
@@ -690,9 +691,10 @@ class MainActivity : AppCompatActivity() {
             .setItems(apps) { _, which ->
                 when (which) {
                     0 -> com.bone.android.a4v.oficial.util.AceStreamInstallerHelper.promptInstallDialog(this, force = true)
-                    1 -> openUrl("market://details?id=com.wiseplay")
-                    2 -> openUrl("market://details?id=com.mxtech.videoplayer.ad")
-                    3 -> openUrl("http://download.sopcast.com/download/SopCast.apk")
+                    1 -> com.bone.android.a4v.oficial.util.VpnInstallerHelper.startDownloadAndInstall(this)
+                    2 -> openUrl("market://details?id=com.wiseplay")
+                    3 -> openUrl("market://details?id=com.mxtech.videoplayer.ad")
+                    4 -> openUrl("http://download.sopcast.com/download/SopCast.apk")
                 }
             }
             .setNegativeButton("Cerrar", null)
@@ -737,9 +739,9 @@ class MainActivity : AppCompatActivity() {
                 if (installedVpn != null) {
                     dialogBuilder.setTitle("🛡️ Conectar ${installedVpn.name}")
                         .setMessage(
-                            "⚠️ Para ver partidos en AceStream sin bloqueos ('Cannot get transport file'), tu conexión debe salir por otro país (ej. Holanda / Países Bajos).\n\n" +
+                            "⚠️ Para ver partidos en AceStream sin bloqueos ('Cannot get transport file'), tu conexión debe salir por otro país (ej. Reino Unido / Países Bajos).\n\n" +
                             "Tienes instalada ${installedVpn.name}.\n\n" +
-                            "Pulsa 'Abrir ${installedVpn.name}' y dale a 'Conexión Rápida' (Quick Connect) para conectar a Holanda."
+                            "Pulsa 'Abrir ${installedVpn.name}' y dale a 'Iniciar'. Cero registros y cero contraseñas."
                         )
                         .setPositiveButton("🚀 Abrir ${installedVpn.name}") { _, _ ->
                             com.bone.android.a4v.oficial.util.VpnHelper.launchVpnApp(this, installedVpn)
@@ -749,18 +751,18 @@ class MainActivity : AppCompatActivity() {
                         }
                         .setNegativeButton("Cerrar", null)
                 } else {
-                    dialogBuilder.setTitle("🛡️ Desbloquear AceStream con Proton VPN")
+                    dialogBuilder.setTitle("🛡️ Desbloquear AceStream (Sin Cuentas)")
                         .setMessage(
-                            "⚠️ En España, las operadoras bloquean los enlaces de AceStream durante los partidos y provocan el error 'Cannot get transport file'.\n\n" +
-                            "Para saltar el bloqueo necesitas una VPN gratuita con servidores fuera de España.\n\n" +
-                            "Recomendamos Proton VPN:\n" +
-                            "• 100% Gratis y sin límite de megas ni tiempo\n" +
-                            "• Conexión directa a Países Bajos (Holanda) y Suiza\n" +
-                            "• Sin publicidad y sin tarjeta de crédito\n" +
-                            "• Compatible con Android TV, Fire TV y móvil"
+                            "⚠️ En España las operadoras bloquean los enlaces de AceStream durante los partidos provocando el error 'Cannot get transport file'.\n\n" +
+                            "Para saltar el bloqueo necesitas una VPN que envíe tu conexión fuera de España.\n\n" +
+                            "Recomendamos Psiphon:\n" +
+                            "• 100% Gratis e ilimitada\n" +
+                            "• CERO cuentas, CERO correos y CERO contraseñas\n" +
+                            "• Conexión directa por Europa (Reino Unido / Países Bajos)\n" +
+                            "• Apta para abuelas: solo pulsar 'Iniciar' y listo"
                         )
-                        .setPositiveButton("📥 Instalar Proton VPN (Gratis)") { _, _ ->
-                            com.bone.android.a4v.oficial.util.VpnHelper.openProtonVpnInstall(this)
+                        .setPositiveButton("📥 Instalar Psiphon (Descarga Directa)") { _, _ ->
+                            com.bone.android.a4v.oficial.util.VpnHelper.installPsiphonDirect(this)
                         }
                         .setNeutralButton("Ajustes VPN Android") { _, _ ->
                             com.bone.android.a4v.oficial.util.VpnHelper.openSystemVpnSettings(this)

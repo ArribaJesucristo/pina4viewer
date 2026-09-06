@@ -17,9 +17,11 @@ object VpnHelper {
 
     const val PACKAGE_CLOUDFLARE_WARP = "com.cloudflare.onedotonedotonedotone"
 
+    val PSIPHON = VpnApp("Psiphon", "com.psiphon3", "https://psiphon.ca/PsiphonAndroid.apk")
     val PROTON_VPN = VpnApp("Proton VPN", "ch.protonvpn.android", "https://protonvpn.com/download-android")
 
     val KNOWN_VPN_APPS = listOf(
+        PSIPHON,
         PROTON_VPN,
         VpnApp("NordVPN", "com.nordvpn.android", "https://nordvpn.com/"),
         VpnApp("Surfshark", "com.surfshark.vpnclient.android", "https://surfshark.com/"),
@@ -34,6 +36,8 @@ object VpnHelper {
 
     val vpnStateFlow = kotlinx.coroutines.flow.MutableStateFlow(false)
 
+    fun isPsiphonInstalled(context: Context): Boolean = VpnInstallerHelper.isPsiphonInstalled(context)
+
     fun isProtonVpnInstalled(context: Context): Boolean {
         return try {
             context.packageManager.getPackageInfo(PROTON_VPN.packageName, 0)
@@ -43,8 +47,16 @@ object VpnHelper {
         }
     }
 
+    fun launchPsiphon(context: Context) {
+        launchVpnApp(context, PSIPHON)
+    }
+
     fun launchProtonVpn(context: Context) {
         launchVpnApp(context, PROTON_VPN)
+    }
+
+    fun installPsiphonDirect(activity: Activity) {
+        VpnInstallerHelper.startDownloadAndInstall(activity)
     }
 
     fun openProtonVpnInstall(context: Context) {
