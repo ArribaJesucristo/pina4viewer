@@ -711,9 +711,9 @@ class MainActivity : AppCompatActivity() {
             }
 
             val isVpnConnected = com.bone.android.a4v.oficial.util.VpnHelper.isVpnActive(this)
+            val installedVpn = com.bone.android.a4v.oficial.util.VpnHelper.getInstalledVpnApp(this)
             val isPsiphonInstalled = com.bone.android.a4v.oficial.util.VpnHelper.isPsiphonInstalled(this)
-            val otherVpn = com.bone.android.a4v.oficial.util.VpnHelper.getOtherInstalledVpnApp(this)
-            val activeName = if (isPsiphonInstalled) "Psiphon" else (otherVpn?.name ?: "VPN")
+            val vpnName = installedVpn?.name ?: "VPN"
 
             val dialogBuilder = AlertDialog.Builder(this)
 
@@ -721,19 +721,15 @@ class MainActivity : AppCompatActivity() {
                 dialogBuilder.setTitle("🛡️ VPN Conectada y Activa")
                     .setMessage(
                         "🟢 TU CONEXIÓN ESTÁ PROTEGIDA FUERA DE ESPAÑA\n\n" +
-                        "• Tu dispositivo está conectado mediante $activeName.\n" +
+                        "• Tu dispositivo está conectado mediante $vpnName.\n" +
                         "• Los bloqueos de operadoras y de LaLiga en AceStream están saltados con éxito.\n" +
                         "• Ya puedes reproducir cualquier partido en directo sin el error 'Cannot get transport file'."
                     )
                     .setPositiveButton("Entendido", null)
 
-                if (isPsiphonInstalled) {
-                    dialogBuilder.setNeutralButton("Abrir Psiphon") { _, _ ->
-                        com.bone.android.a4v.oficial.util.VpnHelper.launchPsiphon(this)
-                    }
-                } else if (otherVpn != null) {
-                    dialogBuilder.setNeutralButton("Abrir ${otherVpn.name}") { _, _ ->
-                        com.bone.android.a4v.oficial.util.VpnHelper.launchVpnApp(this, otherVpn)
+                if (installedVpn != null) {
+                    dialogBuilder.setNeutralButton("Abrir ${installedVpn.name}") { _, _ ->
+                        com.bone.android.a4v.oficial.util.VpnHelper.launchVpnApp(this, installedVpn)
                     }
                 } else {
                     dialogBuilder.setNeutralButton("Ajustes VPN") { _, _ ->
@@ -741,21 +737,28 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             } else {
-                if (isPsiphonInstalled) {
-                    dialogBuilder.setTitle("🛡️ Conectar Psiphon (Sin Cuentas)")
+                if (installedVpn != null) {
+                    val isPsiphon = installedVpn.packageName == com.bone.android.a4v.oficial.util.VpnHelper.PSIPHON.packageName ||
+                                    installedVpn.packageName == com.bone.android.a4v.oficial.util.VpnHelper.PSIPHON_PLAY.packageName
+
+                    val descText = if (isPsiphon) {
+                        "Tienes instalada Psiphon.\n\nPulsa 'Abrir Psiphon' y dale a 'Iniciar'. Conexión automática sin cuentas ni contraseñas."
+                    } else {
+                        "Tienes instalada ${installedVpn.name}.\n\nPulsa 'Abrir ${installedVpn.name}' y conéctate a cualquier país fuera de España para saltar el bloqueo de las operadoras."
+                    }
+
+                    dialogBuilder.setTitle("🛡️ Conectar ${installedVpn.name}")
                         .setMessage(
-                            "⚠️ Para ver partidos en AceStream sin bloqueos ('Cannot get transport file'):\n\n" +
-                            "1. Pulsa '🚀 Abrir Psiphon'.\n" +
-                            "2. Dale al botón 'Iniciar' (Start).\n" +
-                            "3. Cero cuentas, correos ni contraseñas. En cuanto conecte, vuelve aquí y verás 'VPN ON' en verde."
+                            "⚠️ Para ver partidos en AceStream sin bloqueos ('Cannot get transport file'), tu conexión debe salir por otro país (ej. Reino Unido / Países Bajos).\n\n" +
+                            descText
                         )
-                        .setPositiveButton("🚀 Abrir Psiphon") { _, _ ->
-                            com.bone.android.a4v.oficial.util.VpnHelper.launchPsiphon(this)
+                        .setPositiveButton("🚀 Abrir ${installedVpn.name}") { _, _ ->
+                            com.bone.android.a4v.oficial.util.VpnHelper.launchVpnApp(this, installedVpn)
                         }
 
-                    if (otherVpn != null) {
-                        dialogBuilder.setNeutralButton("Abrir ${otherVpn.name}") { _, _ ->
-                            com.bone.android.a4v.oficial.util.VpnHelper.launchVpnApp(this, otherVpn)
+                    if (!isPsiphon && !isPsiphonInstalled) {
+                        dialogBuilder.setNeutralButton("📥 Instalar Psiphon") { _, _ ->
+                            com.bone.android.a4v.oficial.util.VpnHelper.installPsiphonDirect(this)
                         }
                     } else {
                         dialogBuilder.setNeutralButton("Ajustes VPN") { _, _ ->
@@ -763,22 +766,6 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                     dialogBuilder.setNegativeButton("Cerrar", null)
-                } else if (otherVpn != null) {
-                    dialogBuilder.setTitle("🛡️ Desbloqueo VPN (Psiphon Recomendado)")
-                        .setMessage(
-                            "Para ver partidos sin cortes ni el error 'Cannot get transport file', tu conexión debe salir por fuera de España.\n\n" +
-                            "💡 NUEVA OPCIÓN RECOMENDADA (A prueba de abuelas):\n" +
-                            "• Instala Psiphon en 1 clic: CERO cuentas, correos ni contraseñas.\n" +
-                            "• Solo pulsar 'Iniciar' y a ver el partido.\n\n" +
-                            "(Detectado: tienes ${otherVpn.name} instalado, pero requiere crear cuenta y contraseña. Si prefieres usar esa, pulsa 'Abrir ${otherVpn.name}')."
-                        )
-                        .setPositiveButton("📥 Instalar Psiphon (1-Clic)") { _, _ ->
-                            com.bone.android.a4v.oficial.util.VpnHelper.installPsiphonDirect(this)
-                        }
-                        .setNeutralButton("🚀 Abrir ${otherVpn.name}") { _, _ ->
-                            com.bone.android.a4v.oficial.util.VpnHelper.launchVpnApp(this, otherVpn)
-                        }
-                        .setNegativeButton("Cerrar", null)
                 } else {
                     dialogBuilder.setTitle("🛡️ Desbloquear AceStream (Sin Cuentas)")
                         .setMessage(

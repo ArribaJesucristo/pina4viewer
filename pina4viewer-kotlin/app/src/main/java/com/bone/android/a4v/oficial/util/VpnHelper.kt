@@ -22,9 +22,9 @@ object VpnHelper {
     val PROTON_VPN = VpnApp("Proton VPN", "ch.protonvpn.android", "https://protonvpn.com/download-android")
 
     val KNOWN_VPN_APPS = listOf(
+        PROTON_VPN,
         PSIPHON,
         PSIPHON_PLAY,
-        PROTON_VPN,
         VpnApp("NordVPN", "com.nordvpn.android", "https://nordvpn.com/"),
         VpnApp("Surfshark", "com.surfshark.vpnclient.android", "https://surfshark.com/"),
         VpnApp("Windscribe", "com.windscribe.vpn", "https://windscribe.com/"),

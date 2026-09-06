@@ -1,9 +1,9 @@
 {
-  "versionCode": 2035,
-  "versionName": "8.3.5",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.5/pina4viewer-v8.3.5.apk",
+  "versionCode": 2036,
+  "versionName": "8.3.6",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.6/pina4viewer-v8.3.6.apk",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
   "psiphonUrl": "https://psiphon.ca/PsiphonAndroid.apk",
-  "changelog": "- Priorización inteligente de Psiphon: opción directa de instalación 1-clic aunque tengas Proton instalado en el móvil\n- Detección mejorada de VPNs y visibilidad de paquete para Android 11+\n- Muestra el número de versión exacta en 'Acerca de'"
+  "changelog": "- Prioriza la VPN que ya tengas instalada (Proton, Nord, etc.)\n- Si no tienes ninguna VPN, ofrece Psiphon (1-clic directo sin cuentas ni contraseñas)\n- Detección completa de visibilidad en Android 11+"
 }
