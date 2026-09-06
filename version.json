@@ -1,8 +1,8 @@
 {
-  "versionCode": 2031,
-  "versionName": "8.3.1",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.1/pina4viewer-v8.3.1.apk",
+  "versionCode": 2032,
+  "versionName": "8.3.2",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.2/pina4viewer-v8.3.2.apk",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
-  "changelog": "- Fecha de actualización sincronizada con la ejecución real del workflow de GitHub Actions (abajo a la derecha)\n- Advertencia informativa sobre 'Cannot get transport file' y Tebas (abajo a la izquierda)\n- Caché dinámica optimizada para refresco instantáneo de partidos"
+  "changelog": "- Integración 1-Clic de Proton VPN en el botón superior (desbloqueo real de AceStream fuera de España / Países Bajos)\n- Detección automática en tiempo real de conexión protegida (VPN ON / VPN OFF)\n- Acceso directo para instalar Proton VPN o abrirla para conectar a Holanda"
 }

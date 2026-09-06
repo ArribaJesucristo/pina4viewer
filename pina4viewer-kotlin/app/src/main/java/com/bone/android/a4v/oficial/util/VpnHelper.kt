@@ -17,21 +17,47 @@ object VpnHelper {
 
     const val PACKAGE_CLOUDFLARE_WARP = "com.cloudflare.onedotonedotonedotone"
 
+    val PROTON_VPN = VpnApp("Proton VPN", "ch.protonvpn.android", "https://protonvpn.com/download-android")
+
     val KNOWN_VPN_APPS = listOf(
+        PROTON_VPN,
         VpnApp("NordVPN", "com.nordvpn.android", "https://nordvpn.com/"),
-        VpnApp("Proton VPN", "ch.protonvpn.android", "https://protonvpn.com/"),
         VpnApp("Surfshark", "com.surfshark.vpnclient.android", "https://surfshark.com/"),
+        VpnApp("Windscribe", "com.windscribe.vpn", "https://windscribe.com/"),
         VpnApp("ExpressVPN", "com.expressvpn.vpn", "https://www.expressvpn.com/"),
         VpnApp("CyberGhost", "de.mobileconcepts.cyberghost", "https://www.cyberghostvpn.com/"),
         VpnApp("Mullvad", "net.mullvad.mullvadvpn", "https://mullvad.net/"),
-        VpnApp("Windscribe", "com.windscribe.vpn", "https://windscribe.com/"),
         VpnApp("WireGuard", "com.wireguard.android", "https://www.wireguard.com/"),
-        VpnApp("1.1.1.1 + WARP", "com.cloudflare.onedotonedotonedotone", "https://1.1.1.1/"),
         VpnApp("OpenVPN", "net.openvpn.openvpn", "https://openvpn.net/"),
         VpnApp("OpenVPN for Android", "de.blinkt.openvpn", "https://ics-openvpn.blinkt.de/")
     )
 
     val vpnStateFlow = kotlinx.coroutines.flow.MutableStateFlow(false)
+
+    fun isProtonVpnInstalled(context: Context): Boolean {
+        return try {
+            context.packageManager.getPackageInfo(PROTON_VPN.packageName, 0)
+            true
+        } catch (_: Exception) {
+            false
+        }
+    }
+
+    fun launchProtonVpn(context: Context) {
+        launchVpnApp(context, PROTON_VPN)
+    }
+
+    fun openProtonVpnInstall(context: Context) {
+        val storeIntent = Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=${PROTON_VPN.packageName}")).apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        }
+        try {
+            Toast.makeText(context, "Abriendo Proton VPN en Google Play...", Toast.LENGTH_SHORT).show()
+            context.startActivity(storeIntent)
+        } catch (e: Exception) {
+            openWebUrl(context, PROTON_VPN.website)
+        }
+    }
 
     fun getInstalledVpnApp(context: Context): VpnApp? {
         val pm = context.packageManager
@@ -50,6 +76,7 @@ object VpnHelper {
         val intent = pm.getLaunchIntentForPackage(vpn.packageName)
         if (intent != null) {
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            Toast.makeText(context, "🚀 Abriendo ${vpn.name}...", Toast.LENGTH_SHORT).show()
             context.startActivity(intent)
         } else {
             val storeIntent = Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=${vpn.packageName}")).apply {
@@ -67,7 +94,6 @@ object VpnHelper {
     fun isBuiltInVpnActive(): Boolean = PinaVpnService.isVpnActive
 
     fun isExternalVpnActive(context: Context): Boolean {
-        if (PinaVpnService.isVpnActive) return false
         val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager ?: return false
         val activeNetwork = cm.activeNetwork ?: return false
         val caps = cm.getNetworkCapabilities(activeNetwork) ?: return false
@@ -75,7 +101,6 @@ object VpnHelper {
     }
 
     fun isVpnActive(context: Context): Boolean {
-        if (PinaVpnService.isVpnActive) return true
         return isExternalVpnActive(context)
     }
 
