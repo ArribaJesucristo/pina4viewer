@@ -1,9 +1,9 @@
 {
-  "versionCode": 2037,
-  "versionName": "8.3.7",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.7/pina4viewer-v8.3.7.apk",
+  "versionCode": 2038,
+  "versionName": "8.3.8",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.8/pina4viewer-v8.3.8.apk",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
   "psiphonUrl": "https://psiphon.ca/PsiphonAndroid.apk",
-  "changelog": "- Corrección de la agenda: orden cronológico perfecto por días ('Hoy', 'Mañana')\n- Eliminación automática de eventos caducados de días anteriores\n- Integración y fusión inteligente de canales entre Marca y ArenaVision"
+  "changelog": "- Purga dinámica de eventos antiguos del mismo día (hora actual - 3h)\n- Solo se muestran eventos en directo o pendientes de hoy y de mañana\n- Reevaluación automática de horarios al reanudar la aplicación"
 }

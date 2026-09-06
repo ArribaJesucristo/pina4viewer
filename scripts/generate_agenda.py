@@ -518,6 +518,28 @@ def generate_piñavision_agenda():
 
         print(f"ArenaVision integrado: {merged_arena_count} emparejados con eventos existentes, {added_arena_count} añadidos como nuevos eventos (descartados {len(arena_events) - len(filtered_arena_events)} pasados).")
 
+    # Filter out events from 'Hoy' that started more than 3 hours ago (Madrid time)
+    now_minutes = now_madrid.hour * 60 + now_madrid.minute
+    cutoff_minutes_today = now_minutes - 180  # 3 hours ago
+    if cutoff_minutes_today > 0:
+        valid_schedule_events = []
+        purged_today_count = 0
+        for ev in schedule_events:
+            d = ev.get("date", "")
+            t = ev.get("time", "")
+            if d == "Hoy" and t and ":" in t:
+                try:
+                    parts = t.split(":")
+                    ev_minutes = int(parts[0]) * 60 + int(parts[1])
+                    if ev_minutes < cutoff_minutes_today:
+                        purged_today_count += 1
+                        continue
+                except Exception:
+                    pass
+            valid_schedule_events.append(ev)
+        print(f"Purgados {purged_today_count} eventos de 'Hoy' que comenzaron hace más de 3 horas (anteriores a {cutoff_minutes_today // 60:02d}:{cutoff_minutes_today % 60:02d}).")
+        schedule_events = valid_schedule_events
+
     # Chronological sorting for all schedule events
     def get_event_sort_key(ev):
         d = ev.get("date", "")

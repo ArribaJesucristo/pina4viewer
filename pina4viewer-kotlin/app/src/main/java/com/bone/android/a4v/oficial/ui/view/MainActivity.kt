@@ -503,6 +503,7 @@ class MainActivity : AppCompatActivity() {
         try {
             com.bone.android.a4v.oficial.util.VpnHelper.updateState(this)
             invalidateOptionsMenu()
+            viewModel.reapplyFilters()
         } catch (e: Throwable) {
             e.printStackTrace()
         }

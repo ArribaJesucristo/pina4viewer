@@ -129,6 +129,10 @@ class MainViewModel(
         }
     }
 
+    fun reapplyFilters() {
+        applyFilters(_uiState.value.searchQuery, _uiState.value.sportFilter)
+    }
+
     private fun applyFilters(query: String, sport: String) {
         val filtered = filterList(_uiState.value.allEvents, query, sport)
         _uiState.update { it.copy(filteredEvents = filtered) }
@@ -143,9 +147,39 @@ class MainViewModel(
         val hasQuery = trimmedQuery.isNotEmpty()
         val hasSport = sport.isNotBlank() && !sport.equals("ALL", ignoreCase = true)
 
-        if (!hasQuery && !hasSport) return events
+        // Dynamic 3-hour purge for today's events based on local time
+        val tz = try {
+            java.util.TimeZone.getTimeZone("Europe/Madrid")
+        } catch (_: Exception) {
+            java.util.TimeZone.getDefault()
+        }
+        val cal = java.util.Calendar.getInstance(tz)
+        val currentHour = cal.get(java.util.Calendar.HOUR_OF_DAY)
+        val currentMinute = cal.get(java.util.Calendar.MINUTE)
+        val nowMinutes = currentHour * 60 + currentMinute
+        val cutoffMinutes = nowMinutes - 180 // 3 hours ago
+        val todayStr = java.text.SimpleDateFormat("dd/MM/yyyy", java.util.Locale.getDefault()).apply {
+            timeZone = tz
+        }.format(cal.time)
 
         return events.filter { item ->
+            // Purge events from today that started more than 3 hours ago
+            val isToday = item.date.equals("Hoy", ignoreCase = true) || item.date == todayStr
+            if (isToday && cutoffMinutes > 0 && item.time.isNotBlank()) {
+                val timeClean = item.time.replace("CET", "", ignoreCase = true).trim()
+                val parts = timeClean.split(":")
+                if (parts.size >= 2) {
+                    val h = parts[0].trim().toIntOrNull()
+                    val m = parts[1].trim().toIntOrNull()
+                    if (h != null && m != null) {
+                        val itemMinutes = h * 60 + m
+                        if (itemMinutes < cutoffMinutes) {
+                            return@filter false
+                        }
+                    }
+                }
+            }
+
             val s = item.sport.uppercase().trim()
             val matchSport = when {
                 !hasSport -> true
