@@ -79,8 +79,15 @@ class EventsRepository(
                         .header("User-Agent", "Apache-HttpClient/UNAVAILABLE (java 1.4)")
                         .build()
                 } else {
+                    val finalUrl = if (source.url.contains("githubusercontent") && forceRefresh) {
+                        "${source.url}?t=${System.currentTimeMillis()}"
+                    } else {
+                        source.url
+                    }
                     Request.Builder()
-                        .url(source.url)
+                        .url(finalUrl)
+                        .header("Cache-Control", "no-cache")
+                        .header("Pragma", "no-cache")
                         .header("User-Agent", "Mozilla/5.0 (Linux; Android 14; Mobile) AppleWebKit/537.36 (KHTML, like Gecko)")
                         .build()
                 }

@@ -7,12 +7,31 @@ import org.json.JSONArray
 
 object PinaVisionParser {
 
+    var lastParsedUpdatedAt: String? = null
+        private set
+
+    fun init(savedTime: String?) {
+        if (lastParsedUpdatedAt == null && !savedTime.isNullOrBlank()) {
+            lastParsedUpdatedAt = savedTime
+        }
+    }
+
     fun parse(jsonString: String): List<EventItem> {
         return try {
             val events = mutableListOf<EventItem>()
             val array = JSONArray(jsonString.trim())
             for (i in 0 until array.length()) {
                 val obj = array.optJSONObject(i) ?: continue
+
+                // Check for metadata entry with workflow execution timestamp
+                if (obj.optBoolean("_metadata", false) || obj.has("updatedAt")) {
+                    val upd = obj.optString("updatedAt", "")
+                    if (upd.isNotEmpty()) {
+                        lastParsedUpdatedAt = upd
+                    }
+                    continue
+                }
+
                 val id = obj.optString("id", "pina_$i")
                 val title = obj.optString("title", "").trim()
                 val sport = obj.optString("sport", "")

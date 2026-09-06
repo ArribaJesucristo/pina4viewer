@@ -39,6 +39,10 @@ class MainViewModel(
     private var searchJob: Job? = null
 
     init {
+        val prefs = application.getSharedPreferences("pina_prefs", android.content.Context.MODE_PRIVATE)
+        val savedTime = prefs.getString("workflow_updated_at", null)
+        com.bone.android.a4v.oficial.data.parser.PinaVisionParser.init(savedTime)
+
         ArenaVisionParser.initDefaultAgenda(application.applicationContext)
         loadEvents(SourceType.OFF_MODE)
     }
@@ -91,8 +95,13 @@ class MainViewModel(
             }
 
             val result = repository.getEvents(source, forceRefresh)
-            val currentDateTime = java.text.SimpleDateFormat("dd/MM/yyyy HH:mm", java.util.Locale.getDefault()).format(java.util.Date())
-            val footerText = "Actualizado $currentDateTime\nZona: Madrid,Paris,Bruselas"
+            val workflowTime = com.bone.android.a4v.oficial.data.parser.PinaVisionParser.lastParsedUpdatedAt
+            if (!workflowTime.isNullOrBlank()) {
+                val prefs = getApplication<Application>().getSharedPreferences("pina_prefs", android.content.Context.MODE_PRIVATE)
+                prefs.edit().putString("workflow_updated_at", workflowTime).apply()
+            }
+            val displayTime = workflowTime ?: java.text.SimpleDateFormat("dd/MM/yyyy HH:mm", java.util.Locale.getDefault()).format(java.util.Date())
+            val footerText = "Actualizado:\n$displayTime"
             val isOff = repository.isCurrentSourceOffMode
 
             result.fold(

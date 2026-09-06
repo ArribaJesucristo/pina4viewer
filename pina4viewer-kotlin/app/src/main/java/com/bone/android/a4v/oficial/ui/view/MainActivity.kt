@@ -217,6 +217,19 @@ class MainActivity : AppCompatActivity() {
         binding.swipeRefresh.setOnRefreshListener {
             viewModel.refresh()
         }
+        binding.tvFooterWarning.setOnClickListener {
+            androidx.appcompat.app.AlertDialog.Builder(this)
+                .setTitle("⚠️ Cannot get transport file")
+                .setMessage(
+                    "¿Por qué sale este mensaje en AceStream?\n\n" +
+                    "1. 📡 El canal aún no está emitiendo: los emisores encienden la señal unos 15 minutos antes del inicio del evento.\n\n" +
+                    "2. 🔄 Prueba otra opción: en el selector de canales del evento, elige Opción 2, Opción 3 u otra fuente alternativa.\n\n" +
+                    "3. 🧹 Limpia la caché: en Ajustes de Android > Aplicaciones > Ace Stream > Almacenamiento > Borrar caché.\n\n" +
+                    "4. 🛡️ Fuga de DNS: en Ajustes de Red de Android pon DNS privado en 'dns.google'."
+                )
+                .setPositiveButton("Entendido", null)
+                .show()
+        }
     }
 
     private fun buildDrawerChannelList(): List<DrawerChannel> {

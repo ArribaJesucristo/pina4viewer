@@ -1,8 +1,8 @@
 {
-  "versionCode": 2030,
-  "versionName": "8.3.0",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.0/pina4viewer-v8.3.0.apk",
+  "versionCode": 2031,
+  "versionName": "8.3.1",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.1/pina4viewer-v8.3.1.apk",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
-  "changelog": "- Detección y aviso automático cuando un canal de AceStream no está emitiendo en directo (evita error 'Cannot get transport file')\n- Eliminados enlaces placeholder caducados\n- Verificación de hash P2P y aviso claro al usuario en canales offline\n- Mayor estabilidad al abrir directos"
+  "changelog": "- Fecha de actualización sincronizada con la ejecución real del workflow de GitHub Actions (abajo a la derecha)\n- Advertencia informativa sobre 'Cannot get transport file' y Tebas (abajo a la izquierda)\n- Caché dinámica optimizada para refresco instantáneo de partidos"
 }

@@ -472,9 +472,27 @@ def generate_piñavision_agenda():
     print(f"Total eventos generados: {len(total_agenda)} (Eventos: {len(schedule_events)}, Canales 24/7: {len(channels_247)})")
 
     if total_agenda:
+        from datetime import datetime
+        try:
+            from zoneinfo import ZoneInfo
+            madrid_tz = ZoneInfo("Europe/Madrid")
+        except Exception:
+            import datetime as dt
+            madrid_tz = dt.timezone(dt.timedelta(hours=2))
+
+        now_madrid = datetime.now(madrid_tz)
+        updated_str = now_madrid.strftime("%d/%m/%Y %H:%M")
+
+        metadata_item = {
+            "_metadata": True,
+            "updatedAt": updated_str,
+            "timezone": "Madrid,Paris,Bruselas"
+        }
+        total_agenda.insert(0, metadata_item)
+
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             json.dump(total_agenda, f, ensure_ascii=False, indent=2)
-        print(f"Archivo guardado exitosamente en: {OUTPUT_FILE}")
+        print(f"Archivo guardado exitosamente con metadatos ({updated_str}) en: {OUTPUT_FILE}")
     else:
         print("Error: No se generó ningún evento. Conservando agenda previa si existe.")
 
