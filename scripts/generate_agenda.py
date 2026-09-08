@@ -198,13 +198,16 @@ def load_markel_channels():
     return channels_by_base
 
 def load_peticiones_channels():
-    urls = [
-        "https://raw.githubusercontent.com/Icastresana/lista1/main/peticiones",
-        "https://raw.githubusercontent.com/Icastresana/lista1/main/Probando"
+    sources = [
+        ("https://raw.githubusercontent.com/Icastresana/lista1/main/peticiones", "Comunidad"),
+        ("https://raw.githubusercontent.com/Icastresana/lista1/main/Probando", "Comunidad"),
+        ("https://raw.githubusercontent.com/GitCorion/Elcano/main/base.txt", "Elcano"),
+        ("https://raw.githubusercontent.com/rciptv2019/RCacediariosRC/main/RC%20ACESTREAMS%20DIARIOS", "RCP"),
+        ("https://raw.githubusercontent.com/rciptv2019/RCacediariosRC/main/RC%20ACESTREAM%20DIARIOS%202", "RCP")
     ]
     channels_by_base = OrderedDict()
 
-    for url in urls:
+    for url, default_source in sources:
         raw = fetch_url(url)
         if not raw:
             continue
@@ -219,7 +222,7 @@ def load_peticiones_channels():
             elif not line.startswith("#"):
                 h = extract_hash(line)
                 if h and current_title:
-                    community = "Comunidad"
+                    community = default_source
                     cu = current_title.upper()
                     if "ELCANO" in cu:
                         community = "Elcano"
@@ -229,6 +232,8 @@ def load_peticiones_channels():
                         community = "New Era"
                     elif "DIRECTOS" in cu:
                         community = "Directos"
+                    elif "RC " in cu or "RCP" in cu:
+                        community = "RCP"
 
                     base = canonical_channel_name(current_title)
                     if not base:
@@ -246,27 +251,33 @@ def load_peticiones_channels():
     return channels_by_base
 
 def load_direct_eventos():
-    url = "https://raw.githubusercontent.com/Icastresana/lista1/main/eventos.m3u"
-    raw = fetch_url(url)
-    if not raw:
-        return []
+    urls = [
+        "https://raw.githubusercontent.com/Icastresana/lista1/main/eventos.m3u",
+        "https://raw.githubusercontent.com/rciptv2019/RCacediariosRC/main/RC%20EVENTOS%20DIARIOS"
+    ]
     eventos = []
-    current_title = ""
-    for line in raw.splitlines():
-        line = line.strip()
-        if not line:
+    seen_hashes = set()
+    for url in urls:
+        raw = fetch_url(url)
+        if not raw:
             continue
-        if line.startswith("#EXTINF:"):
-            parts = line.split(",")
-            current_title = parts[-1].strip() if len(parts) > 1 else ""
-        elif not line.startswith("#"):
-            h = extract_hash(line)
-            if h and current_title:
-                eventos.append({
-                    "raw_title": current_title,
-                    "streamId": h
-                })
-            current_title = ""
+        current_title = ""
+        for line in raw.splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            if line.startswith("#EXTINF:"):
+                parts = line.split(",")
+                current_title = parts[-1].strip() if len(parts) > 1 else ""
+            elif not line.startswith("#"):
+                h = extract_hash(line)
+                if h and current_title and h not in seen_hashes:
+                    seen_hashes.add(h)
+                    eventos.append({
+                        "raw_title": current_title,
+                        "streamId": h
+                    })
+                current_title = ""
     return eventos
 
 def load_arenavision():
@@ -552,8 +563,9 @@ def generate_piñavision_agenda():
                 same_h = (s_ev.get("time", "") == ev_hour) if (s_ev.get("time") and ev_hour) else False
                 if word_matches >= 2 or (word_matches >= 1 and same_h):
                     if not any(c["streamId"] == h for c in s_ev["channels"]):
+                        opt_num = sum(1 for c in s_ev["channels"] if "Directa" in c["name"]) + 1
                         s_ev["channels"].append({
-                            "name": f"{s_title} - Opción Directa [Comunidad]",
+                            "name": f"{s_title} - Opción Directa {opt_num} [Comunidad]",
                             "streamId": h,
                             "type": "ACESTREAM",
                             "source": "Comunidad"
