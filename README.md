@@ -1,7 +1,7 @@
 # 🍍 Piña4Viewer
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Versi%C3%B3n-v8.4.2-FFD700?style=for-the-badge&logo=android&logoColor=black" alt="Versión">
+  <img src="https://img.shields.io/badge/Versi%C3%B3n-v8.4.3-FFD700?style=for-the-badge&logo=android&logoColor=black" alt="Versión">
   <img src="https://img.shields.io/badge/Kotlin-1.9-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
   <img src="https://img.shields.io/badge/Plataforma-Android%20%7C%20Fire%20TV%20%7C%20Google%20TV-3DDC84?style=for-the-badge&logo=android" alt="Plataforma">
   <img src="https://img.shields.io/badge/AceStream-P2P%20Ready-00A4E4?style=for-the-badge" alt="AceStream">

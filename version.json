@@ -1,9 +1,9 @@
 {
-  "versionCode": 2042,
-  "versionName": "8.4.2",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.2/pina4viewer-v8.4.2.apk",
+  "versionCode": 2043,
+  "versionName": "8.4.3",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.3/pina4viewer-v8.4.3.apk",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
   "psiphonUrl": "https://psiphon.ca/PsiphonAndroid.apk",
-  "changelog": "- Solucionada la pulsación y selección de opciones en el cuadro de canales disponibles, filtro de deportes y zona horaria en Android TV y Fire TV\n- Corrección de navegación completa y apertura del menú con mando de TV"
+  "changelog": "- Corregido el resaltado simultaneo en la lista de canales del dialogo\n- Foco dorado individual por elemento al navegar con el mando de TV (D-Pad)"
 }
