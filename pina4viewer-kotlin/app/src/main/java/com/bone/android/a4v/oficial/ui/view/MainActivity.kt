@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
 
     private var isLandscape = false
     private var vpnActionView: View? = null
+    private var overflowButtonView: View? = null
     private var vpnDialog: AlertDialog? = null
 
     data class DrawerChannel(
@@ -110,6 +111,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.toolbar.overflowIcon?.setTint(android.graphics.Color.parseColor("#FFD700"))
+        binding.toolbar.post {
+            setupOverflowButtonFocus()
+        }
     }
 
     private fun setupRecyclerView() {
@@ -412,11 +416,66 @@ class MainActivity : AppCompatActivity() {
         )
     }
 
+    private fun openAppMenu() {
+        val opened = binding.toolbar.showOverflowMenu()
+        if (!opened) {
+            openOptionsMenu()
+        }
+    }
+
+    private fun findOverflowButton(toolbar: androidx.appcompat.widget.Toolbar): View? {
+        for (i in 0 until toolbar.childCount) {
+            val child = toolbar.getChildAt(i)
+            if (child is androidx.appcompat.widget.ActionMenuView) {
+                for (j in 0 until child.childCount) {
+                    val menuChild = child.getChildAt(j)
+                    if (menuChild.javaClass.simpleName.contains("OverflowMenuButton", ignoreCase = true)) {
+                        return menuChild
+                    }
+                }
+                for (j in 0 until child.childCount) {
+                    val menuChild = child.getChildAt(j)
+                    val desc = menuChild.contentDescription?.toString() ?: ""
+                    if (desc.contains("opcion", ignoreCase = true) || desc.contains("option", ignoreCase = true)) {
+                        return menuChild
+                    }
+                }
+                for (j in 0 until child.childCount) {
+                    val menuChild = child.getChildAt(j)
+                    if (menuChild != vpnActionView && menuChild is android.widget.ImageView) {
+                        return menuChild
+                    }
+                }
+            }
+        }
+        return null
+    }
+
+    private fun setupOverflowButtonFocus() {
+        binding.toolbar.post {
+            val overflowBtn = findOverflowButton(binding.toolbar) ?: return@post
+            overflowButtonView = overflowBtn
+            overflowBtn.isFocusable = true
+            overflowBtn.isFocusableInTouchMode = true
+            overflowBtn.background = androidx.core.content.ContextCompat.getDrawable(this, R.drawable.selector_dialog_item_focus)
+            overflowBtn.setOnFocusChangeListener { v, hasFocus ->
+                if (hasFocus) {
+                    v.animate().scaleX(1.15f).scaleY(1.15f).setDuration(150).start()
+                } else {
+                    v.animate().scaleX(1.0f).scaleY(1.0f).setDuration(150).start()
+                }
+            }
+            overflowBtn.setOnClickListener {
+                openAppMenu()
+            }
+        }
+    }
+
     override fun dispatchKeyEvent(event: android.view.KeyEvent): Boolean {
         if (event.action == android.view.KeyEvent.ACTION_DOWN) {
             when (event.keyCode) {
                 android.view.KeyEvent.KEYCODE_MENU -> {
-                    openOptionsMenu()
+                    openAppMenu()
                     return true
                 }
                 android.view.KeyEvent.KEYCODE_DPAD_CENTER,
@@ -426,9 +485,13 @@ class MainActivity : AppCompatActivity() {
                         showVpnDialog()
                         return true
                     }
+                    if (overflowButtonView?.hasFocus() == true) {
+                        openAppMenu()
+                        return true
+                    }
                 }
                 android.view.KeyEvent.KEYCODE_DPAD_DOWN -> {
-                    if (vpnActionView?.hasFocus() == true) {
+                    if (vpnActionView?.hasFocus() == true || overflowButtonView?.hasFocus() == true) {
                         binding.rbTv.requestFocus()
                         return true
                     }
@@ -441,7 +504,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 android.view.KeyEvent.KEYCODE_DPAD_UP -> {
-                    if (vpnActionView?.hasFocus() == true) {
+                    if (vpnActionView?.hasFocus() == true || overflowButtonView?.hasFocus() == true) {
                         return true
                     }
                     if (binding.rbTv.hasFocus() || binding.rbCaido.hasFocus()) {
@@ -450,7 +513,7 @@ class MainActivity : AppCompatActivity() {
                             vpnActionView = target
                             target.requestFocus()
                         } else {
-                            openOptionsMenu()
+                            openAppMenu()
                         }
                         return true
                     }
@@ -475,6 +538,14 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 android.view.KeyEvent.KEYCODE_DPAD_LEFT -> {
+                    if (overflowButtonView?.hasFocus() == true) {
+                        val target = vpnActionView ?: binding.toolbar.findViewById(R.id.btnToolbarVpn)
+                        if (target != null) {
+                            vpnActionView = target
+                            target.requestFocus()
+                        }
+                        return true
+                    }
                     if (vpnActionView?.hasFocus() == true) {
                         binding.drawerLayout.openDrawer(androidx.core.view.GravityCompat.START)
                         return true
@@ -486,7 +557,16 @@ class MainActivity : AppCompatActivity() {
                 }
                 android.view.KeyEvent.KEYCODE_DPAD_RIGHT -> {
                     if (vpnActionView?.hasFocus() == true) {
-                        openOptionsMenu()
+                        val overflow = overflowButtonView ?: findOverflowButton(binding.toolbar)
+                        if (overflow != null) {
+                            overflowButtonView = overflow
+                            overflow.requestFocus()
+                        } else {
+                            openAppMenu()
+                        }
+                        return true
+                    }
+                    if (overflowButtonView?.hasFocus() == true) {
                         return true
                     }
                     if (binding.rbCaido.hasFocus()) {
@@ -495,7 +575,7 @@ class MainActivity : AppCompatActivity() {
                             vpnActionView = target
                             target.requestFocus()
                         } else {
-                            openOptionsMenu()
+                            openAppMenu()
                         }
                         return true
                     }
@@ -520,6 +600,7 @@ class MainActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.menu_main, menu)
         binding.toolbar.overflowIcon?.setTint(android.graphics.Color.parseColor("#FFD700"))
         setupVpnActionView(menu)
+        setupOverflowButtonFocus()
         return true
     }
 

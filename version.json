@@ -1,9 +1,9 @@
 {
-  "versionCode": 2040,
-  "versionName": "8.4.0",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.0/pina4viewer-v8.4.0.apk",
+  "versionCode": 2041,
+  "versionName": "8.4.1",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.1/pina4viewer-v8.4.1.apk",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
   "psiphonUrl": "https://psiphon.ca/PsiphonAndroid.apk",
-  "changelog": "- Modo Oscuro nativo forzado para Fire TV y televisores\n- Selector de foco dorado (#FFD700) de alto contraste para mando de TV en menú, enlaces y filtros\n- Menú contextual oscuro con marco dorado redondeado\n- Actualizado aviso inferior: 'enciende la vpn'"
+  "changelog": "- Corrección de navegación en Android TV: el cursor ya no se queda atrapado en la VPN y salta a los 3 puntos con foco dorado\n- Apertura universal del menú de ajustes en cualquier televisor y mando\n- Navegación bidireccional fluida entre VPN y opciones"
 }
