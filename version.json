@@ -1,9 +1,9 @@
 {
-  "versionCode": 2041,
-  "versionName": "8.4.1",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.1/pina4viewer-v8.4.1.apk",
+  "versionCode": 2042,
+  "versionName": "8.4.2",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.2/pina4viewer-v8.4.2.apk",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
   "psiphonUrl": "https://psiphon.ca/PsiphonAndroid.apk",
-  "changelog": "- Corrección de navegación en Android TV: el cursor ya no se queda atrapado en la VPN y salta a los 3 puntos con foco dorado\n- Apertura universal del menú de ajustes en cualquier televisor y mando\n- Navegación bidireccional fluida entre VPN y opciones"
+  "changelog": "- Solucionada la pulsación y selección de opciones en el cuadro de canales disponibles, filtro de deportes y zona horaria en Android TV y Fire TV\n- Corrección de navegación completa y apertura del menú con mando de TV"
 }

@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -389,14 +390,25 @@ class MainActivity : AppCompatActivity() {
         }
 
         val channelNames = event.channels.map { it.name }.toTypedArray()
-        val adapter = ArrayAdapter(
+        var dialog: AlertDialog? = null
+        val adapter = object : ArrayAdapter<String>(
             this,
             R.layout.item_dialog_channel,
             R.id.tvChannelChoice,
             channelNames
-        )
+        ) {
+            override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+                val view = super.getView(position, convertView, parent)
+                view.setOnClickListener {
+                    dialog?.dismiss()
+                    val selectedChannel = event.channels.getOrNull(position)
+                    selectedChannel?.let { playChannel(it) }
+                }
+                return view
+            }
+        }
 
-        AlertDialog.Builder(this)
+        dialog = AlertDialog.Builder(this)
             .setTitle("Canales disponibles")
             .setAdapter(adapter) { _, which ->
                 val selectedChannel = event.channels.getOrNull(which)
@@ -404,6 +416,12 @@ class MainActivity : AppCompatActivity() {
             }
             .setNegativeButton("Cancelar", null)
             .show()
+
+        dialog.listView?.setOnItemClickListener { _, _, position, _ ->
+            dialog.dismiss()
+            val selectedChannel = event.channels.getOrNull(position)
+            selectedChannel?.let { playChannel(it) }
+        }
     }
 
     private fun playChannel(channel: ChannelItem) {
@@ -729,14 +747,25 @@ class MainActivity : AppCompatActivity() {
             "Voleibol"
         )
 
-        val adapter = ArrayAdapter(
+        var dialog: AlertDialog? = null
+        val adapter = object : ArrayAdapter<String>(
             this,
             R.layout.item_dialog_channel,
             R.id.tvChannelChoice,
             sports
-        )
+        ) {
+            override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+                val view = super.getView(position, convertView, parent)
+                view.setOnClickListener {
+                    dialog?.dismiss()
+                    val selected = if (position == 0) "" else sports[position].split(" ")[0]
+                    viewModel.setSportFilter(selected)
+                }
+                return view
+            }
+        }
 
-        AlertDialog.Builder(this)
+        dialog = AlertDialog.Builder(this)
             .setTitle("Seleccionar filtro de deporte:")
             .setAdapter(adapter) { _, which ->
                 val selected = if (which == 0) "" else sports[which].split(" ")[0]
@@ -744,6 +773,12 @@ class MainActivity : AppCompatActivity() {
             }
             .setNegativeButton("Cancelar", null)
             .show()
+
+        dialog.listView?.setOnItemClickListener { _, _, position, _ ->
+            dialog.dismiss()
+            val selected = if (position == 0) "" else sports[position].split(" ")[0]
+            viewModel.setSportFilter(selected)
+        }
     }
 
     private fun showTimezoneDialog() {
@@ -755,20 +790,35 @@ class MainActivity : AppCompatActivity() {
             "Hora Local del Dispositivo"
         )
 
-        val adapter = ArrayAdapter(
+        var dialog: AlertDialog? = null
+        val adapter = object : ArrayAdapter<String>(
             this,
             R.layout.item_dialog_channel,
             R.id.tvChannelChoice,
             timezones
-        )
+        ) {
+            override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+                val view = super.getView(position, convertView, parent)
+                view.setOnClickListener {
+                    dialog?.dismiss()
+                    Toast.makeText(this@MainActivity, "Zona horaria fijada: ${timezones[position]}", Toast.LENGTH_SHORT).show()
+                }
+                return view
+            }
+        }
 
-        AlertDialog.Builder(this)
+        dialog = AlertDialog.Builder(this)
             .setTitle("Configuración de Zona Horaria")
             .setAdapter(adapter) { _, which ->
                 Toast.makeText(this, "Zona horaria fijada: ${timezones[which]}", Toast.LENGTH_SHORT).show()
             }
             .setNegativeButton("Cerrar", null)
             .show()
+
+        dialog.listView?.setOnItemClickListener { _, _, position, _ ->
+            dialog.dismiss()
+            Toast.makeText(this, "Zona horaria fijada: ${timezones[position]}", Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun toggleOrientation() {
