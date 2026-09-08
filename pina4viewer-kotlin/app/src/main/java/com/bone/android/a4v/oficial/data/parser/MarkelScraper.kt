@@ -190,7 +190,7 @@ object MarkelScraper {
         marcaChannelStr: String,
         channelsByBase: Map<String, List<ChannelItem>>
     ): List<ChannelItem> {
-        val parts = marcaChannelStr.split(Regex("[/,|+()]"))
+        val parts = marcaChannelStr.split(Regex("[/,|()]"))
         val matched = mutableListOf<ChannelItem>()
         val seenHashes = mutableSetOf<String>()
 

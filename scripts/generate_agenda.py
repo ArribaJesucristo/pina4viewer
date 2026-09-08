@@ -32,17 +32,123 @@ def fetch_url(url, timeout=15):
         print(f"Error fetching {url}: {e}")
         return ""
 
-def clean_base_name(name):
+def canonical_channel_name(raw_name):
     # Strip community tags, resolutions, asterisks, arrows, hashes
-    s = re.sub(r'\[.*?\]', '', name)
+    s = re.sub(r'\[.*?\]', '', raw_name)
     s = re.sub(r'\(.*?\)', '', s)
     s = re.sub(r'-->.*', '', s)
     s = re.sub(r'#.*', '', s)
     s = re.sub(r'https?://\S+', '', s)
-    s = re.sub(r'(?i)\b(1080p?|720p?|4k|fhd|hd|hevc|multiaudio|spa|esp|audio|stream)\b', '', s)
+    s = re.sub(r'(?i)\b(1080p?|720p?|4k|fhd|hd|hevc|multiaudio|spa|esp|audio|stream|spain)\b', '', s)
     s = re.sub(r'[*_~|]', '', s)
     s = re.sub(r'\s+', ' ', s).strip()
+    if not s:
+        return ""
+
+    low = s.lower().replace(".", " ").replace("+", "plus").replace("-", " ")
+    low = re.sub(r'\s+', ' ', low).strip()
+
+    # M+ Liga de Campeones
+    m_champ = re.search(r'(?:liga de campeones|l de campeones|champions)\s*(\d*)', low)
+    if m_champ and ("m " in low or "mplus" in low or "movistar" in low or low.startswith("l ")):
+        num = m_champ.group(1).strip()
+        return f"M+ Liga de Campeones {num}".strip()
+
+    # M+ LaLiga
+    m_laliga = re.search(r'(?:movistar|mplus|m)\s+laliga\s*(\d*)', low)
+    if m_laliga:
+        num = m_laliga.group(1).strip()
+        return f"M+ LaLiga {num}".strip()
+
+    # DAZN LaLiga
+    m_dazn_la = re.search(r'dazn\s+la\s*liga\s*(\d*)', low)
+    if m_dazn_la:
+        num = m_dazn_la.group(1).strip()
+        return f"DAZN LaLiga {num}".strip()
+
+    # DAZN numbered
+    m_dazn = re.search(r'^dazn\s*([1-4])$', low)
+    if m_dazn:
+        return f"DAZN {m_dazn.group(1)}"
+
+    # DAZN F1
+    if "dazn" in low and ("f1" in low or "formula" in low):
+        return "DAZN F1"
+
+    # DAZN MotoGP
+    if "dazn" in low and "moto" in low:
+        return "DAZN MotoGP"
+
+    # DAZN Baloncesto
+    m_dazn_b = re.search(r'dazn\s+baloncesto\s*(\d*)', low)
+    if m_dazn_b:
+        num = m_dazn_b.group(1).strip()
+        return f"DAZN Baloncesto {num}".strip()
+
+    # LaLiga TV Hypermotion
+    m_hyper = re.search(r'(?:laliga tv hypermotion|laliga hypermotion|hypermotion)\s*(\d*)', low)
+    if m_hyper:
+        num = m_hyper.group(1).strip()
+        return f"LaLiga TV Hypermotion {num}".strip()
+
+    # Movistar Plus+
+    if low in ("movistar", "movistar plus", "movistar plusplus", "movistar plus 1", "mplus", "m plus"):
+        return "Movistar Plus+"
+    if low in ("movistar plus 2", "movistar plusplus 2", "mplus 2"):
+        return "Movistar Plus+ 2"
+
+    # M+ Deportes
+    m_dep = re.search(r'(?:m\s+deportes|mplus\s+deportes|movistar\s+deportes)\s*(\d*)', low)
+    if m_dep:
+        num = m_dep.group(1).strip()
+        return f"M+ Deportes {num}".strip()
+
+    # M+ Vamos
+    m_vam = re.search(r'(?:m\s+vamos|mplus\s+vamos|vamos)\s*(\d*)', low)
+    if m_vam:
+        num = m_vam.group(1).strip()
+        return f"M+ Vamos {num}".strip()
+
+    # M+ Baloncesto
+    m_bal = re.search(r'(?:m\s+baloncesto|mplus\s+baloncesto|movistar\s+baloncesto)\s*(\d*)', low)
+    if m_bal:
+        num = m_bal.group(1).strip()
+        return f"M+ Baloncesto {num}".strip()
+
+    # M+ Golf
+    m_golf = re.search(r'(?:m\s+golf|mplus\s+golf|movistar\s+golf)\s*(\d*)', low)
+    if m_golf:
+        num = m_golf.group(1).strip()
+        return f"M+ Golf {num}".strip()
+
+    # Eurosport
+    m_euro = re.search(r'eurosport\s*(\d*)', low)
+    if m_euro:
+        num = m_euro.group(1).strip()
+        return f"Eurosport {num if num else '1'}".strip()
+
+    # Teledeporte
+    if "teledeporte" in low or low == "tdp":
+        return "Teledeporte"
+
+    # Gol Play
+    if low in ("gol", "gol play", "gol television"):
+        return "Gol Play"
+
+    # La 1 / La 2
+    if low in ("la 1", "tve 1", "tve1"):
+        return "La 1"
+    if low in ("la 2", "tve 2", "tve2"):
+        return "La 2"
+
+    # Esport 3
+    if low in ("esport 3", "esport3", "esports 3", "esports3"):
+        return "Esport3"
+
     return s
+
+def clean_base_name(name):
+    return canonical_channel_name(name)
 
 def extract_hash(url_or_hash):
     u = url_or_hash.strip()
@@ -74,7 +180,7 @@ def load_markel_channels():
                 h = extract_hash(url)
                 if not h:
                     continue
-                base = clean_base_name(title)
+                base = canonical_channel_name(title)
                 if not base:
                     base = title
                 if base not in channels_by_base:
@@ -92,12 +198,59 @@ def load_markel_channels():
     return channels_by_base
 
 def load_peticiones_channels():
-    url = "https://raw.githubusercontent.com/Icastresana/lista1/main/peticiones"
+    urls = [
+        "https://raw.githubusercontent.com/Icastresana/lista1/main/peticiones",
+        "https://raw.githubusercontent.com/Icastresana/lista1/main/Probando"
+    ]
+    channels_by_base = OrderedDict()
+
+    for url in urls:
+        raw = fetch_url(url)
+        if not raw:
+            continue
+        current_title = ""
+        for line in raw.splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            if line.startswith("#EXTINF:"):
+                parts = line.split(",")
+                current_title = parts[-1].strip() if len(parts) > 1 else ""
+            elif not line.startswith("#"):
+                h = extract_hash(line)
+                if h and current_title:
+                    community = "Comunidad"
+                    cu = current_title.upper()
+                    if "ELCANO" in cu:
+                        community = "Elcano"
+                    elif "NEW LOOP" in cu:
+                        community = "New Loop"
+                    elif "NEW ERA" in cu:
+                        community = "New Era"
+                    elif "DIRECTOS" in cu:
+                        community = "Directos"
+
+                    base = canonical_channel_name(current_title)
+                    if not base:
+                        base = current_title
+                    if base not in channels_by_base:
+                        channels_by_base[base] = []
+                    if not any(x["streamId"] == h for x in channels_by_base[base]):
+                        channels_by_base[base].append({
+                            "name": f"{base} - Opción {len(channels_by_base[base]) + 1} [{community}]",
+                            "streamId": h,
+                            "type": "ACESTREAM",
+                            "source": community
+                        })
+                current_title = ""
+    return channels_by_base
+
+def load_direct_eventos():
+    url = "https://raw.githubusercontent.com/Icastresana/lista1/main/eventos.m3u"
     raw = fetch_url(url)
     if not raw:
-        return {}
-
-    channels_by_base = OrderedDict()
+        return []
+    eventos = []
     current_title = ""
     for line in raw.splitlines():
         line = line.strip()
@@ -109,31 +262,12 @@ def load_peticiones_channels():
         elif not line.startswith("#"):
             h = extract_hash(line)
             if h and current_title:
-                community = "Comunidad"
-                cu = current_title.upper()
-                if "ELCANO" in cu:
-                    community = "Elcano"
-                elif "NEW LOOP" in cu:
-                    community = "New Loop"
-                elif "NEW ERA" in cu:
-                    community = "New Era"
-                elif "DIRECTOS" in cu:
-                    community = "Directos"
-
-                base = clean_base_name(current_title)
-                if not base:
-                    base = current_title
-                if base not in channels_by_base:
-                    channels_by_base[base] = []
-                if not any(x["streamId"] == h for x in channels_by_base[base]):
-                    channels_by_base[base].append({
-                        "name": f"{base} - Opción {len(channels_by_base[base]) + 1} [{community}]",
-                        "streamId": h,
-                        "type": "ACESTREAM",
-                        "source": community
-                    })
+                eventos.append({
+                    "raw_title": current_title,
+                    "streamId": h
+                })
             current_title = ""
-    return channels_by_base
+    return eventos
 
 def load_arenavision():
     import urllib.parse
@@ -209,9 +343,9 @@ def normalize_sport(sport_raw):
     s = clean_channel_name(sport_raw)
     if any(k in s for k in ["f1", "formula", "moto", "motor", "superbike"]):
         return "MOTOR"
-    if any(k in s for k in ["baloncesto", "basket", "nba"]):
+    if any(k in s for k in ["baloncesto", "basket", "nba", "fiba", "acb", "euroliga"]):
         return "BALONCESTO"
-    if any(k in s for k in ["tenis", "tennis"]):
+    if any(k in s for k in ["tenis", "tennis", "us open", "wta", "atp", "grand slam"]):
         return "TENIS"
     if any(k in s for k in ["ciclismo", "cycling"]):
         return "CICLISMO"
@@ -227,95 +361,53 @@ def normalize_sport(sport_raw):
         return "FUTBOL"
     return sport_raw.strip().upper() if sport_raw.strip() else "DEPORTES"
 
+def channel_matches(target_canonical, base_canonical):
+    if target_canonical.lower() == base_canonical.lower():
+        return True
+    m1 = re.search(r'\b(\d+)\b', target_canonical)
+    m2 = re.search(r'\b(\d+)\b', base_canonical)
+    num1 = m1.group(1) if m1 else "1"
+    num2 = m2.group(1) if m2 else "1"
+    b1 = re.sub(r'\b\d+\b', '', target_canonical).strip().lower()
+    b2 = re.sub(r'\b\d+\b', '', base_canonical).strip().lower()
+    return b1 == b2 and num1 == num2
+
 def find_channels_for_event(marca_channel_str, unified_channels):
-    parts = re.split(r'[/,|+()]', marca_channel_str)
+    # Split on /, |, comma, or parentheses, but NOT '+' to prevent breaking 'M+' or 'Movistar Plus+'
+    parts = re.split(r'[/,|()]', marca_channel_str)
     matched = []
     seen_hashes = set()
 
     for raw_part in parts:
-        p = clean_channel_name(raw_part)
-        if not p:
+        raw_part = raw_part.strip()
+        if not raw_part:
             continue
 
-        target_keys = []
-        if p in ("gol", "gol play"):
-            target_keys.append("gol")
-        elif "f1" in p or "formula 1" in p:
-            target_keys.append("dazn f1")
-        elif "motogp" in p or "moto gp" in p:
-            target_keys.append("dazn motogp")
-        elif "superbike" in p:
-            target_keys.append("dazn 4")
-        elif "tennis channel" in p:
-            target_keys.append("tennis channel")
-        elif "teledeporte" in p or p == "tdp":
-            target_keys.append("teledeporte")
-        elif p in ("la 1", "tve 1"):
-            target_keys.append("la 1")
-        elif p in ("la 2", "tve 2"):
-            target_keys.append("la 2")
-        elif "primera federacion" in p or "1 rfef" in p or "rfef" in p:
-            target_keys.extend(["primera federacion", "rfef", "1 federacion"])
-        elif "hypermotion" in p:
-            m = re.search(r'\b([2-5])\b', p)
-            if m:
-                target_keys.append(f"laliga tv hypermotion {m.group(1)}")
-            else:
-                target_keys.append("laliga tv hypermotion")
-        elif "liga de campeones" in p or "champions" in p or "l de campeones" in p:
-            m = re.search(r'\b(\d+)\b', p)
-            if m:
-                target_keys.append(f"m l de campeones {m.group(1)}")
-            else:
-                target_keys.append("m l de campeones")
-        elif "laliga" in p:
-            m = re.search(r'\b([2-4])\b', p)
-            num = m.group(1) if m else ""
-            if "dazn" in p:
-                target_keys.append(f"dazn laliga {num}".strip())
-            else:
-                target_keys.append(f"m laliga {num}".strip())
-                target_keys.append(f"laliga tv {num}".strip())
-        elif "dazn" in p:
-            if "baloncesto" in p or "basket" in p:
-                m = re.search(r'\b([2-3])\b', p)
-                num = m.group(1) if m else ""
-                target_keys.append(f"dazn baloncesto {num}".strip())
-            else:
-                m = re.search(r'\b([1-4])\b', p)
-                target_keys.append(f"dazn {m.group(1)}" if m else "dazn 1")
-        elif "baloncesto" in p or "basket" in p:
-            m = re.search(r'\b([2-3])\b', p)
-            target_keys.append(f"m baloncesto {m.group(1)}" if m else "m baloncesto")
-        elif "deportes" in p:
-            m = re.search(r'\b([2-8])\b', p)
-            target_keys.append(f"m deportes {m.group(1)}" if m else "m deportes")
-        elif "vamos" in p:
-            m = re.search(r'\b([2-3])\b', p)
-            target_keys.append(f"m vamos {m.group(1)}" if m else "m vamos")
-        elif "movistar plus" in p or p == "movistar":
-            m = re.search(r'\b([2])\b', p)
-            target_keys.append("movistar plus 2" if m else "movistar plus")
-        elif "eurosport" in p:
-            m = re.search(r'\b([1-2])\b', p)
-            target_keys.append(f"eurosport {m.group(1)}" if m else "eurosport 1")
-        else:
-            for base_name in unified_channels.keys():
-                c_base = clean_channel_name(base_name)
-                if p == c_base or (len(p) > 3 and (p in c_base or c_base in p)):
-                    target_keys.append(c_base)
+        target_canon = canonical_channel_name(raw_part)
+        p_clean = clean_channel_name(raw_part)
+        m_num = re.search(r'\b(\d+)\b', p_clean)
+        target_num = m_num.group(1) if m_num else "1"
 
-        for target in target_keys:
-            target_clean = clean_channel_name(target)
-            if not target_clean:
-                continue
+        # 1. Match canonical
+        for base_name, ch_list in unified_channels.items():
+            if channel_matches(target_canon, base_name):
+                for ch in ch_list:
+                    if ch["streamId"] not in seen_hashes:
+                        seen_hashes.add(ch["streamId"])
+                        matched.append(ch)
+
+        # 2. Fallback fuzzy check only if no canonical match, AND channel numbers must match
+        if not matched and p_clean:
             for base_name, ch_list in unified_channels.items():
-                c_base = clean_channel_name(base_name)
-                if c_base == target_clean:
-                    for ch in ch_list:
-                        if ch["streamId"] not in seen_hashes:
-                            seen_hashes.add(ch["streamId"])
-                            matched.append(ch)
+                b_clean = clean_channel_name(base_name)
+                b_num_m = re.search(r'\b(\d+)\b', b_clean)
+                b_num = b_num_m.group(1) if b_num_m else "1"
+                if target_num == b_num:
+                    if b_clean == p_clean or (len(p_clean) > 4 and (p_clean in b_clean or b_clean in p_clean)):
+                        for ch in ch_list:
+                            if ch["streamId"] not in seen_hashes:
+                                seen_hashes.add(ch["streamId"])
+                                matched.append(ch)
 
     return matched
 
@@ -425,6 +517,9 @@ def generate_piñavision_agenda():
 
     print(f"Total bases unificadas: {len(unified_channels)}")
 
+    direct_eventos = load_direct_eventos()
+    print(f"Streams directos de eventos cargados: {len(direct_eventos)}")
+
     # Fetch Marca
     marca_html = fetch_url("https://www.marca.com/programacion-tv.html")
     if not marca_html:
@@ -433,6 +528,82 @@ def generate_piñavision_agenda():
     else:
         schedule_events = parse_marca_schedule(marca_html, unified_channels)
         print(f"Eventos emparejados con Marca: {len(schedule_events)}")
+
+    # Merge direct match streams from eventos.m3u into schedule events
+    merged_direct_count = 0
+    added_direct_count = 0
+    if direct_eventos:
+        for d_ev in direct_eventos:
+            raw_t = d_ev["raw_title"]
+            h = d_ev["streamId"]
+            ev_low = raw_t.lower()
+
+            hour_match = re.search(r'\b(\d{1,2}:\d{2})\b', raw_t)
+            ev_hour = hour_match.group(1) if hour_match else ""
+
+            matched_s = False
+            for s_ev in schedule_events:
+                if s_ev.get("date") not in ("Hoy", "Mañana"):
+                    continue
+                s_title = s_ev.get("title", "")
+                title_words = [w.lower() for w in re.findall(r'\b\w{4,}\b', s_title) if w.lower() not in ('club', 'futbol', 'fútbol', 'real', 'deportivo')]
+                word_matches = sum(1 for w in title_words if w in ev_low)
+
+                same_h = (s_ev.get("time", "") == ev_hour) if (s_ev.get("time") and ev_hour) else False
+                if word_matches >= 2 or (word_matches >= 1 and same_h):
+                    if not any(c["streamId"] == h for c in s_ev["channels"]):
+                        s_ev["channels"].append({
+                            "name": f"{s_title} - Opción Directa [Comunidad]",
+                            "streamId": h,
+                            "type": "ACESTREAM",
+                            "source": "Comunidad"
+                        })
+                        merged_direct_count += 1
+                    matched_s = True
+                    break
+
+            if not matched_s and ev_hour:
+                clean_t = re.sub(r'^\d{1,2}:\d{2}\s*', '', raw_t).strip()
+                parts = [p.strip() for p in clean_t.split(' - ') if p.strip()]
+                if len(parts) == 1:
+                    comp = "DEPORTES"
+                    title = clean_t
+                elif len(parts) == 2:
+                    comp = parts[0]
+                    title = parts[1]
+                else:
+                    comp = parts[0]
+                    title = " - ".join(parts[1:])
+
+                sport = normalize_sport(comp + " " + title)
+
+                existing_ev = next((x for x in schedule_events if x.get("title") == title and x.get("time") == ev_hour), None)
+                if existing_ev:
+                    if not any(c["streamId"] == h for c in existing_ev["channels"]):
+                        existing_ev["channels"].append({
+                            "name": f"{title} - Opción {len(existing_ev['channels']) + 1} [Directo]",
+                            "streamId": h,
+                            "type": "ACESTREAM",
+                            "source": "Directo"
+                        })
+                else:
+                    schedule_events.append({
+                        "id": f"pina_{len(schedule_events) + 1}",
+                        "title": title,
+                        "sport": sport,
+                        "competition": comp,
+                        "time": ev_hour,
+                        "date": "Hoy",
+                        "channels": [{
+                            "name": f"{title} - Opción 1 [Directo]",
+                            "streamId": h,
+                            "type": "ACESTREAM",
+                            "source": "Directo"
+                        }]
+                    })
+                    added_direct_count += 1
+
+        print(f"Eventos directos integrados: {merged_direct_count} enlaces vinculados a partidos existentes, {added_direct_count} añadidos como partidos nuevos.")
 
     # Setup dates for Madrid timezone
     from datetime import datetime, timedelta
