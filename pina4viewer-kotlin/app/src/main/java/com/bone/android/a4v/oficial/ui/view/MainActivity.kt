@@ -60,6 +60,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode(androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES)
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -384,10 +385,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         val channelNames = event.channels.map { it.name }.toTypedArray()
+        val adapter = ArrayAdapter(
+            this,
+            R.layout.item_dialog_channel,
+            R.id.tvChannelChoice,
+            channelNames
+        )
 
         AlertDialog.Builder(this)
             .setTitle("Canales disponibles")
-            .setItems(channelNames) { _, which ->
+            .setAdapter(adapter) { _, which ->
                 val selectedChannel = event.channels.getOrNull(which)
                 selectedChannel?.let { playChannel(it) }
             }
@@ -641,9 +648,16 @@ class MainActivity : AppCompatActivity() {
             "Voleibol"
         )
 
+        val adapter = ArrayAdapter(
+            this,
+            R.layout.item_dialog_channel,
+            R.id.tvChannelChoice,
+            sports
+        )
+
         AlertDialog.Builder(this)
             .setTitle("Seleccionar filtro de deporte:")
-            .setItems(sports) { _, which ->
+            .setAdapter(adapter) { _, which ->
                 val selected = if (which == 0) "" else sports[which].split(" ")[0]
                 viewModel.setSportFilter(selected)
             }
@@ -660,9 +674,16 @@ class MainActivity : AppCompatActivity() {
             "Hora Local del Dispositivo"
         )
 
+        val adapter = ArrayAdapter(
+            this,
+            R.layout.item_dialog_channel,
+            R.id.tvChannelChoice,
+            timezones
+        )
+
         AlertDialog.Builder(this)
             .setTitle("Configuración de Zona Horaria")
-            .setItems(timezones) { _, which ->
+            .setAdapter(adapter) { _, which ->
                 Toast.makeText(this, "Zona horaria fijada: ${timezones[which]}", Toast.LENGTH_SHORT).show()
             }
             .setNegativeButton("Cerrar", null)

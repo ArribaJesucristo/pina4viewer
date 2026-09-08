@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/tvDrawerItem"
+    android:id="@+id/tvChannelChoice"
     android:layout_width="match_parent"
-    android:layout_height="48dp"
+    android:layout_height="wrap_content"
+    android:minHeight="52dp"
     android:gravity="center_vertical"
     android:paddingHorizontal="20dp"
+    android:paddingVertical="12dp"
     android:textColor="@color/selector_dialog_item_text"
-    android:textSize="15sp"
+    android:textSize="16sp"
     android:textStyle="bold"
+    android:focusable="true"
     android:background="@drawable/selector_dialog_item_focus" />
 

@@ -20,7 +20,7 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@color/surface_dark"
             android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+            app:popupTheme="@style/Theme.Pina4Viewer.ToolbarPopup"
             app:layout_constraintTop_toTopOf="parent"
             app:title="">
 
@@ -297,7 +297,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="⚠️ Si al cargar un partido te sale cannot get transport file, es culpa de tebas no mia"
+                android:text="⚠️ Si al cargar un partido te sale cannot get transport file, enciende la vpn"
                 android:textColor="#FFA726"
                 android:textSize="10sp"
                 android:textStyle="bold"

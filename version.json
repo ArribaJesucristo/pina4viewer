@@ -1,9 +1,9 @@
 {
-  "versionCode": 2039,
-  "versionName": "8.3.9",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.3.9/pina4viewer-v8.3.9.apk",
+  "versionCode": 2040,
+  "versionName": "8.4.0",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.0/pina4viewer-v8.4.0.apk",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
   "psiphonUrl": "https://psiphon.ca/PsiphonAndroid.apk",
-  "changelog": "- Unificación masiva de enlaces (+350 streams de Probando y eventos directos)\n- Normalización canónica de canales (M+ Liga de Campeones, DAZN, LaLiga)\n- Mayor cantidad de enlaces alternativos por evento"
+  "changelog": "- Modo Oscuro nativo forzado para Fire TV y televisores\n- Selector de foco dorado (#FFD700) de alto contraste para mando de TV en menú, enlaces y filtros\n- Menú contextual oscuro con marco dorado redondeado\n- Actualizado aviso inferior: 'enciende la vpn'"
 }
