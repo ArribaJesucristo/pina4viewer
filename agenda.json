@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "09/09/2026 20:30",
+    "updatedAt": "09/09/2026 20:40",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -14,15 +14,15 @@
     "channels": [
       {
         "name": "M+ Baloncesto - Opción 1 [Markel]",
-        "streamId": "e3816fbc661fbc8b2b656aee9483d0a55a1608b6",
+        "streamId": "34b91125bd752462f1eca2d8d52f5f40fa761aa0",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "M+ Baloncesto - Opción 2 [Markel]",
-        "streamId": "34b91125bd752462f1eca2d8d52f5f40fa761aa0",
+        "name": "M+ Baloncesto - Opción 2 [Elcano]",
+        "streamId": "e3816fbc661fbc8b2b656aee9483d0a55a1608b6",
         "type": "ACESTREAM",
-        "source": "Markel"
+        "source": "Elcano"
       }
     ]
   },
@@ -53,16 +53,16 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 5 [Elcano]",
@@ -130,13 +130,13 @@
       },
       {
         "name": "M+ Liga de Campeones - Opción 8 [Markel]",
-        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
+        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones - Opción 9 [Markel]",
-        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
+        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -343,16 +343,16 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 5 [Elcano]",
@@ -436,13 +436,13 @@
       },
       {
         "name": "M+ Liga de Campeones - Opción 8 [Markel]",
-        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
+        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones - Opción 9 [Markel]",
-        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
+        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -587,10 +587,10 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Liga de Campeones 5 - Opción 1 [Elcano]",
+        "name": "M+ Liga de Campeones 5 - Opción 3 [Markel]",
         "streamId": "5620c0ce3dcbf14a6375cb2c2d681207f45eb97d",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones 5 - Opción 3 [Elcano]",
@@ -616,15 +616,21 @@
     "channels": [
       {
         "name": "M+ Liga de Campeones 6 - Opción 1 [Markel]",
-        "streamId": "373b2ff67490d1ed560a33156b34686923159874",
+        "streamId": "54e971e70ed1e79a073a3aae410aed7818799112",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "M+ Liga de Campeones 6 - Opción 2 [Elcano]",
+        "name": "M+ Liga de Campeones 6 - Opción 2 [Markel]",
         "streamId": "14bedc2ff054ae16c0fae99cfeb9dcda21ac68a0",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Liga de Campeones 6 - Opción 3 [Markel]",
+        "streamId": "373b2ff67490d1ed560a33156b34686923159874",
+        "type": "ACESTREAM",
+        "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones 6 - Opción 3 [Elcano]",
@@ -954,13 +960,13 @@
       },
       {
         "name": "M+ Liga de Campeones - Opción 8 [Markel]",
-        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
+        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones - Opción 9 [Markel]",
-        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
+        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -1000,15 +1006,15 @@
     "channels": [
       {
         "name": "M+ Baloncesto - Opción 1 [Markel]",
-        "streamId": "e3816fbc661fbc8b2b656aee9483d0a55a1608b6",
+        "streamId": "34b91125bd752462f1eca2d8d52f5f40fa761aa0",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "M+ Baloncesto - Opción 2 [Markel]",
-        "streamId": "34b91125bd752462f1eca2d8d52f5f40fa761aa0",
+        "name": "M+ Baloncesto - Opción 2 [Elcano]",
+        "streamId": "e3816fbc661fbc8b2b656aee9483d0a55a1608b6",
         "type": "ACESTREAM",
-        "source": "Markel"
+        "source": "Elcano"
       }
     ]
   },
@@ -1107,16 +1113,16 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 5 [Elcano]",
@@ -1217,16 +1223,16 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 5 [Elcano]",
@@ -1313,16 +1319,16 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 5 [Elcano]",
@@ -1390,21 +1396,21 @@
       },
       {
         "name": "M+ Liga de Campeones 2 - Opción 8 [Markel]",
-        "streamId": "74ab4e4ec7e2da001f473ca40893b7307b8029c5",
+        "streamId": "bb26037a253866d341778181eff5c8637240d615",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones 2 - Opción 9 [Markel]",
-        "streamId": "338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea",
+        "streamId": "74ab4e4ec7e2da001f473ca40893b7307b8029c5",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "M+ Liga de Campeones 2 - Opción 3 [Elcano]",
-        "streamId": "bb26037a253866d341778181eff5c8637240d615",
+        "name": "M+ Liga de Campeones 2 - Opción 10 [Markel]",
+        "streamId": "338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones 2 - Opción 6 [Elcano]",
@@ -1558,13 +1564,13 @@
       },
       {
         "name": "M+ Liga de Campeones - Opción 8 [Markel]",
-        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
+        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones - Opción 9 [Markel]",
-        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
+        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -1646,21 +1652,21 @@
       },
       {
         "name": "M+ Liga de Campeones 2 - Opción 8 [Markel]",
-        "streamId": "74ab4e4ec7e2da001f473ca40893b7307b8029c5",
+        "streamId": "bb26037a253866d341778181eff5c8637240d615",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones 2 - Opción 9 [Markel]",
-        "streamId": "338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea",
+        "streamId": "74ab4e4ec7e2da001f473ca40893b7307b8029c5",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "M+ Liga de Campeones 2 - Opción 3 [Elcano]",
-        "streamId": "bb26037a253866d341778181eff5c8637240d615",
+        "name": "M+ Liga de Campeones 2 - Opción 10 [Markel]",
+        "streamId": "338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones 2 - Opción 6 [Elcano]",
@@ -1767,10 +1773,10 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Liga de Campeones 5 - Opción 1 [Elcano]",
+        "name": "M+ Liga de Campeones 5 - Opción 3 [Markel]",
         "streamId": "5620c0ce3dcbf14a6375cb2c2d681207f45eb97d",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones 5 - Opción 3 [Elcano]",
@@ -2310,13 +2316,13 @@
       },
       {
         "name": "M+ Deportes 2 - Opción 6 [Markel]",
-        "streamId": "8cd8fd69c6755ec452e9e74b33a0d1a653452191",
+        "streamId": "3ee6a0b0e3cacea68107f61bf398f651d8159eed",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Deportes 2 - Opción 7 [Markel]",
-        "streamId": "3ee6a0b0e3cacea68107f61bf398f651d8159eed",
+        "streamId": "8cd8fd69c6755ec452e9e74b33a0d1a653452191",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2392,13 +2398,13 @@
       },
       {
         "name": "M+ Liga de Campeones - Opción 8 [Markel]",
-        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
+        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones - Opción 9 [Markel]",
-        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
+        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2559,16 +2565,16 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 5 [Elcano]",
@@ -2769,16 +2775,16 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 5 [Elcano]",
@@ -2995,16 +3001,16 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 5 [Elcano]",
@@ -3588,13 +3594,13 @@
       },
       {
         "name": "M+ LaLiga - Opción 2 [Markel]",
-        "streamId": "d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8",
+        "streamId": "a64e02a6d914f098cbe1b724ff4f7aef83419a4a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ LaLiga - Opción 3 [Markel]",
-        "streamId": "a64e02a6d914f098cbe1b724ff4f7aef83419a4a",
+        "streamId": "d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3788,13 +3794,13 @@
       },
       {
         "name": "M+ LaLiga - Opción 2 [Markel]",
-        "streamId": "d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8",
+        "streamId": "a64e02a6d914f098cbe1b724ff4f7aef83419a4a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ LaLiga - Opción 3 [Markel]",
-        "streamId": "a64e02a6d914f098cbe1b724ff4f7aef83419a4a",
+        "streamId": "d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4268,13 +4274,13 @@
       },
       {
         "name": "M+ LaLiga - Opción 2 [Markel]",
-        "streamId": "d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8",
+        "streamId": "a64e02a6d914f098cbe1b724ff4f7aef83419a4a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ LaLiga - Opción 3 [Markel]",
-        "streamId": "a64e02a6d914f098cbe1b724ff4f7aef83419a4a",
+        "streamId": "d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4524,13 +4530,13 @@
       },
       {
         "name": "M+ LaLiga - Opción 2 [Markel]",
-        "streamId": "d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8",
+        "streamId": "a64e02a6d914f098cbe1b724ff4f7aef83419a4a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ LaLiga - Opción 3 [Markel]",
-        "streamId": "a64e02a6d914f098cbe1b724ff4f7aef83419a4a",
+        "streamId": "d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4997,16 +5003,16 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 5 [Elcano]",
@@ -5663,6 +5669,12 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Deportes - Opción 5 [Markel]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Deportes - Opción 1 [New Loop]",
         "streamId": "acb510858f34c3c6fd5f79395b031abd6885c2b3",
         "type": "ACESTREAM",
@@ -5746,13 +5758,13 @@
       },
       {
         "name": "M+ Liga de Campeones - Opción 8 [Markel]",
-        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
+        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones - Opción 9 [Markel]",
-        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
+        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -5848,13 +5860,13 @@
       },
       {
         "name": "M+ LaLiga - Opción 2 [Markel]",
-        "streamId": "d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8",
+        "streamId": "a64e02a6d914f098cbe1b724ff4f7aef83419a4a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ LaLiga - Opción 3 [Markel]",
-        "streamId": "a64e02a6d914f098cbe1b724ff4f7aef83419a4a",
+        "streamId": "d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -7589,12 +7601,6 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
@@ -7684,13 +7690,13 @@
       },
       {
         "name": "M+ Liga de Campeones - Opción 8 [Markel]",
-        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
+        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones - Opción 9 [Markel]",
-        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
+        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -7808,12 +7814,18 @@
       },
       {
         "name": "M+ Liga de Campeones 2 - Opción 8 [Markel]",
-        "streamId": "74ab4e4ec7e2da001f473ca40893b7307b8029c5",
+        "streamId": "bb26037a253866d341778181eff5c8637240d615",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones 2 - Opción 9 [Markel]",
+        "streamId": "74ab4e4ec7e2da001f473ca40893b7307b8029c5",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Liga de Campeones 2 - Opción 10 [Markel]",
         "streamId": "338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -8053,6 +8065,12 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Liga de Campeones 5 - Opción 3 [Markel]",
+        "streamId": "5620c0ce3dcbf14a6375cb2c2d681207f45eb97d",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Liga de Campeones 5 - Opción 1 [Elcano]",
         "streamId": "5620c0ce3dcbf14a6375cb2c2d681207f45eb97d",
         "type": "ACESTREAM",
@@ -8088,6 +8106,18 @@
     "channels": [
       {
         "name": "M+ Liga de Campeones 6 - Opción 1 [Markel]",
+        "streamId": "54e971e70ed1e79a073a3aae410aed7818799112",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Liga de Campeones 6 - Opción 2 [Markel]",
+        "streamId": "14bedc2ff054ae16c0fae99cfeb9dcda21ac68a0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Liga de Campeones 6 - Opción 3 [Markel]",
         "streamId": "373b2ff67490d1ed560a33156b34686923159874",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -8260,12 +8290,6 @@
     "channels": [
       {
         "name": "M+ Baloncesto - Opción 1 [Markel]",
-        "streamId": "e3816fbc661fbc8b2b656aee9483d0a55a1608b6",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Baloncesto - Opción 2 [Markel]",
         "streamId": "34b91125bd752462f1eca2d8d52f5f40fa761aa0",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -8335,6 +8359,12 @@
       {
         "name": "M+ Deportes - Opción 4 [Markel]",
         "streamId": "cf5327fe9c962a29dfff3868f4349ff2b0b4662f",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 5 [Markel]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -8428,13 +8458,13 @@
       },
       {
         "name": "M+ Deportes 2 - Opción 6 [Markel]",
-        "streamId": "8cd8fd69c6755ec452e9e74b33a0d1a653452191",
+        "streamId": "3ee6a0b0e3cacea68107f61bf398f651d8159eed",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Deportes 2 - Opción 7 [Markel]",
-        "streamId": "3ee6a0b0e3cacea68107f61bf398f651d8159eed",
+        "streamId": "8cd8fd69c6755ec452e9e74b33a0d1a653452191",
         "type": "ACESTREAM",
         "source": "Markel"
       },
