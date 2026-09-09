@@ -2,6 +2,7 @@ import os
 import re
 import json
 import urllib.request
+import difflib
 from collections import OrderedDict
 from html import unescape
 
@@ -252,8 +253,7 @@ def load_peticiones_channels():
 
 def load_direct_eventos():
     urls = [
-        "https://raw.githubusercontent.com/Icastresana/lista1/main/eventos.m3u",
-        "https://raw.githubusercontent.com/rciptv2019/RCacediariosRC/main/RC%20EVENTOS%20DIARIOS"
+        "https://raw.githubusercontent.com/Icastresana/lista1/main/eventos.m3u"
     ]
     eventos = []
     seen_hashes = set()
@@ -334,7 +334,7 @@ def load_arenavision():
             if cols[4] and channels:
                 arena_events.append({
                     "title": cols[4].replace("-", " vs "),
-                    "sport": normalize_sport(cols[2]),
+                    "sport": normalize_sport(cols[2], cols[3]),
                     "competition": cols[3],
                     "time": cols[1].replace(" CET", "").strip(),
                     "date": cols[0],
@@ -370,7 +370,14 @@ NAME_TRANSLATIONS = {
     "switzerland": "suiza", "sweden": "suecia", "norway": "noruega",
     "denmark": "dinamarca", "austria": "austria", "croatia": "croacia",
     "poland": "polonia", "scotland": "escocia", "ireland": "irlanda",
-    "greece": "grecia", "japan": "japon", "brazil": "brasil"
+    "greece": "grecia", "japan": "japon", "brazil": "brasil",
+    # Team variations and aliases
+    "feyenord": "feyenoord",
+    "napoli": "napoles",
+    "barca": "barcelona",
+    "bayern munchen": "bayern", "bayern munich": "bayern",
+    "inter milan": "inter", "internazionale": "inter",
+    "seahawks": "seahawks", "patriots": "patriots"
 }
 
 COMP_WORDS = [
@@ -393,8 +400,11 @@ MESES = {
     'julio': 7, 'agosto': 8, 'septiembre': 9, 'octubre': 10, 'noviembre': 11, 'diciembre': 12
 }
 
-def normalize_sport(sport_raw):
-    s = clean_channel_name(sport_raw)
+def normalize_sport(sport_raw, comp_raw=""):
+    combined = f"{sport_raw} {comp_raw}".strip()
+    s = clean_channel_name(combined)
+    if any(k in s for k in ['nfl', 'american football', 'futbol americano', 'super bowl', 'patriots', 'seahawks', 'chiefs', '49ers']):
+        return 'FUTBOL AMERICANO'
     if any(k in s for k in ['f1', 'formula', 'moto', 'motor', 'superbike', 'motogp', 'nascar', 'indycar', 'rally', 'dakar']):
         return 'MOTOR'
     if any(k in s for k in ['baloncesto', 'basket', 'nba', 'fiba', 'acb', 'euroliga']):
@@ -411,9 +421,28 @@ def normalize_sport(sport_raw):
         return 'RUGBY'
     if any(k in s for k in ['balonmano', 'handball']):
         return 'BALONMANO'
-    if any(k in s for k in ['futbol', 'soccer', 'football', 'futsal', 'f sala', 'champions', 'uefa', 'laliga', 'europa league', 'conference', 'premier', 'bundesliga', 'serie a', 'copa del rey', 'youth league']):
+    if any(k in s for k in ['snooker', 'billar', 'pool', 'abierto de inglaterra', 'english open', 'uk championship']):
+        return 'SNOOKER'
+    if any(k in s for k in ['golf', 'pga', 'liv golf', 'ryder cup', 'masters golf', 'dp world']):
+        return 'GOLF'
+    if any(k in s for k in ['beisbol', 'baseball', 'mlb']):
+        return 'BEISBOL'
+    if any(k in s for k in ['hockey', 'nhl']):
+        return 'HOCKEY'
+    if any(k in s for k in [
+        'futbol', 'soccer', 'football', 'futsal', 'f sala', 'champions', 'uefa', 'laliga', 'europa league',
+        'conference', 'premier', 'bundesliga', 'serie a', 'copa del rey', 'youth league', 'conmebol', 'libertadores',
+        'sudamericana', 'rayo', 'cadiz', 'vallecano', 'barca', 'barcelona', 'sevilla', 'betis', 'valencia',
+        'athletic', 'celta', 'osasuna', 'espanyol', 'getafe', 'mallorca', 'alaves', 'villarreal', 'girona', 'leganes',
+        'valladolid', 'milan', 'juventus', 'arsenal', 'chelsea', 'liverpool', 'manchester', 'bayern', 'dortmund', 'psg',
+        'porto', 'benfica', 'sporting', 'boca', 'river', 'palmeiras', 'flamengo'
+    ]):
         return 'FUTBOL'
-    return sport_raw.strip().upper() if sport_raw.strip() else 'DEPORTES'
+    
+    clean_fallback = sport_raw.strip().upper()
+    if len(clean_fallback.split()) > 3 or len(clean_fallback) > 20:
+        return 'OTROS'
+    return clean_fallback if clean_fallback else 'OTROS'
 
 def clean_str(s):
     import unicodedata
@@ -437,8 +466,16 @@ def team_tokens(team_str):
 def is_same_team(t1, t2):
     c1 = clean_str(t1)
     c2 = clean_str(t2)
+    if not c1 or not c2:
+        return False
     if c1 == c2:
         return True
+
+    # High fuzzy similarity check
+    if len(c1) >= 4 and len(c2) >= 4:
+        if difflib.SequenceMatcher(None, c1, c2).ratio() >= 0.82:
+            return True
+
     tok1, dist1, mod1 = team_tokens(t1)
     tok2, dist2, mod2 = team_tokens(t2)
     if mod1 != mod2:
@@ -467,8 +504,12 @@ def is_same_team(t1, t2):
     if dist1 and dist2:
         if dist1 & dist2:
             return True
-        if any(d1 in d2 or d2 in d1 for d1 in dist1 for d2 in dist2 if len(d1) >= 4 and len(d2) >= 4):
-            return True
+        for d1 in dist1:
+            for d2 in dist2:
+                if d1 in d2 or d2 in d1:
+                    return True
+                if len(d1) >= 4 and len(d2) >= 4 and difflib.SequenceMatcher(None, d1, d2).ratio() >= 0.80:
+                    return True
         return False
     return tok1 == tok2
 
@@ -520,35 +561,76 @@ def is_same_event(ev1, ev2, today):
         diff = min(diff, 1440 - diff)
         if diff > 45:
             return False
-
-    sp1 = ev1.get('sport')
-    sp2 = ev2.get('sport')
-    if sp1 and sp2 and sp1 != "DEPORTES" and sp2 != "DEPORTES" and sp1 != sp2:
+    elif (m1 is None) != (m2 is None):
         return False
 
+    # 1. Share streamId hash check (live broadcasts sharing stream on the same day/time)
+    h1 = {c["streamId"] for c in ev1.get("channels", []) if c.get("streamId")}
+    h2 = {c["streamId"] for c in ev2.get("channels", []) if c.get("streamId")}
+    if h1 and h2 and (h1 & h2):
+        return True
+
+    # 2. Cycling stage check
+    t1_low = ev1.get('title', '').lower()
+    t2_low = ev2.get('title', '').lower()
+    if 'etapa' in t1_low or 'stage' in t1_low or 'etapa' in t2_low or 'stage' in t2_low:
+        m_st1 = re.search(r'\b(?:etapa|stage)\s*(\d+)\b', t1_low)
+        m_st2 = re.search(r'\b(?:etapa|stage)\s*(\d+)\b', t2_low)
+        if m_st1 and m_st2 and m_st1.group(1) == m_st2.group(1):
+            return True
+
+    # 3. Sport compatibility check
+    sp1 = ev1.get('sport')
+    sp2 = ev2.get('sport')
+    is_nfl1 = sp1 in ("NFL", "FUTBOL AMERICANO")
+    is_nfl2 = sp2 in ("NFL", "FUTBOL AMERICANO")
+    if is_nfl1 and is_nfl2:
+        pass
+    elif sp1 and sp2 and sp1 not in ("DEPORTES", "OTROS") and sp2 not in ("DEPORTES", "OTROS") and sp1 != sp2:
+        return False
+
+    # 4. Sides / Team matching
     sides1 = split_sides(ev1.get('title', ''))
     sides2 = split_sides(ev2.get('title', ''))
 
     if len(sides1) == 2 and len(sides2) == 2:
         match_direct = is_same_team(sides1[0], sides2[0]) and is_same_team(sides1[1], sides2[1])
         match_reversed = is_same_team(sides1[0], sides2[1]) and is_same_team(sides1[1], sides2[0])
-        return match_direct or match_reversed
+        if match_direct or match_reversed:
+            return True
+        if is_same_team(sides1[0], sides2[0]) or is_same_team(sides1[1], sides2[1]) or is_same_team(sides1[0], sides2[1]) or is_same_team(sides1[1], sides2[0]):
+            c1 = clean_str(ev1.get('competition', ''))
+            c2 = clean_str(ev2.get('competition', ''))
+            if c1 and c2 and (c1 in c2 or c2 in c1):
+                return True
     elif len(sides1) == 1 and len(sides2) == 1:
-        return clean_str(sides1[0]) == clean_str(sides2[0])
+        return is_same_team(sides1[0], sides2[0])
+    elif (len(sides1) == 2 and len(sides2) == 1) or (len(sides1) == 1 and len(sides2) == 2):
+        pair = sides1 if len(sides1) == 2 else sides2
+        single = sides2[0] if len(sides1) == 2 else sides1[0]
+        if is_same_team(pair[0], single) or is_same_team(pair[1], single):
+            return True
     return False
 
 def parse_direct_event(raw_title, default_date="Hoy"):
     m_hour = re.search(r'\b(\d{1,2}:\d{2})\b', raw_title)
     ev_hour = m_hour.group(1) if m_hour else ""
     
-    clean_t = re.sub(r'^\d{1,2}:\d{2}\s*', '', raw_title).strip()
+    # Strip hour pattern from clean_t before any colon split
+    clean_t = re.sub(r'\b\d{1,2}:\d{2}\b', '', raw_title)
+    clean_t = re.sub(r'\s+', ' ', clean_t).strip()
+    
     comp = ""
+    teams = clean_t
     if ":" in clean_t:
         parts = clean_t.split(":", 1)
-        comp = parts[0].strip()
-        teams = parts[1].strip()
-    else:
-        teams = clean_t
+        p0 = parts[0].strip()
+        p1 = parts[1].strip()
+        if p1 and len(p1) > 2 and not any(sep in p0.lower() for sep in [" vs ", " vs. ", " - "]):
+            comp = p0
+            teams = p1
+    
+    if not comp:
         for cw in COMP_WORDS:
             m_comp = re.match(r'^(' + cw + r')\s*[-–—:]\s*(.*)', teams, flags=re.IGNORECASE)
             if m_comp:
@@ -559,8 +641,9 @@ def parse_direct_event(raw_title, default_date="Hoy"):
     teams = re.sub(STAGE_PREFIXES, '', teams, flags=re.IGNORECASE).strip()
     teams = re.sub(r'\[.*?\]', '', teams).strip()
     teams = re.sub(r'\(.*?\)', '', teams).strip()
+    teams = re.sub(r'^[-–—:]+|[-–—:]+$', '', teams).strip()
     
-    sport = normalize_sport(comp + " " + teams)
+    sport = normalize_sport(comp + " " + teams, comp)
     return {
         "title": teams if teams else clean_t,
         "time": ev_hour,
@@ -679,8 +762,8 @@ def parse_marca_schedule(html_content, unified_channels):
                 events.append({
                     "id": f"pina_{event_counter}",
                     "title": raw_teams,
-                    "sport": normalize_sport(raw_sport),
-                    "competition": raw_comp if raw_comp else normalize_sport(raw_sport),
+                    "sport": normalize_sport(raw_sport, raw_comp),
+                    "competition": raw_comp if raw_comp else normalize_sport(raw_sport, raw_comp),
                     "time": raw_hour if raw_hour else "",
                     "date": day_label,
                     "channels": matched_channels
@@ -688,6 +771,55 @@ def parse_marca_schedule(html_content, unified_channels):
                 event_counter += 1
 
     return events
+
+def consolidate_events(events, today):
+    consolidated = []
+    merged_count = 0
+    for ev in events:
+        merged = False
+        for c_ev in consolidated:
+            if is_same_event(c_ev, ev, today):
+                existing_hashes = {ch["streamId"] for ch in c_ev.get("channels", []) if ch.get("streamId")}
+                for ch in ev.get("channels", []):
+                    h = ch.get("streamId")
+                    if h and h not in existing_hashes:
+                        c_ev["channels"].append(ch)
+                        existing_hashes.add(h)
+
+                # Title selection: avoid "00", favor clean casing over ALL_CAPS
+                t1 = c_ev.get("title", "").strip()
+                t2 = ev.get("title", "").strip()
+                if t1 in ("00", ""):
+                    c_ev["title"] = t2
+                elif t2 not in ("00", ""):
+                    if t1.isupper() and not t2.isupper():
+                        c_ev["title"] = t2
+                    elif not t1.isupper() and t2.isupper():
+                        pass
+                    elif len(t2) > len(t1) and not t2.isupper():
+                        c_ev["title"] = t2
+
+                # Sport selection: favor specific sports over DEPORTES/OTROS/generic
+                s1 = c_ev.get("sport", "").strip()
+                s2 = ev.get("sport", "").strip()
+                specific_sports = ("FUTBOL AMERICANO", "NFL", "CICLISMO", "BALONCESTO", "TENIS", "MOTOR", "SNOOKER", "GOLF", "PADEL", "BOXEO", "RUGBY", "BALONMANO", "BEISBOL", "HOCKEY")
+                if s1 in ("DEPORTES", "OTROS", "FUTBOL") and s2 in specific_sports:
+                    c_ev["sport"] = s2
+
+                # Competition selection: prefer non-empty and non-generic
+                comp1 = c_ev.get("competition", "").strip()
+                comp2 = ev.get("competition", "").strip()
+                if comp1 in ("", s1, "DEPORTES", "OTROS") and comp2 and comp2 not in ("DEPORTES", "OTROS"):
+                    c_ev["competition"] = comp2
+
+                merged = True
+                merged_count += 1
+                break
+        if not merged:
+            consolidated.append(ev)
+    if merged_count > 0:
+        print(f"Consolidación final: {merged_count} eventos duplicados fusionados con éxito.")
+    return consolidated
 
 def generate_piñavision_agenda():
     print("=== Generando agenda PIÑAVISION ===")
@@ -751,49 +883,7 @@ def generate_piñavision_agenda():
     today_str = today.strftime("%d/%m/%Y")
     tomorrow_str = (today + timedelta(days=1)).strftime("%d/%m/%Y")
 
-    # Merge direct match streams from eventos.m3u into schedule events
-    merged_direct_count = 0
-    added_direct_count = 0
-    if direct_eventos:
-        for d_ev in direct_eventos:
-            parsed_d = parse_direct_event(d_ev["raw_title"], default_date="Hoy")
-            h = d_ev["streamId"]
-
-            matched_s = False
-            for s_ev in schedule_events:
-                if is_same_event(s_ev, parsed_d, today):
-                    if not any(c["streamId"] == h for c in s_ev["channels"]):
-                        opt_num = sum(1 for c in s_ev["channels"] if "Directa" in c["name"]) + 1
-                        s_ev["channels"].append({
-                            "name": f"{s_ev['title']} - Opción Directa {opt_num} [Comunidad]",
-                            "streamId": h,
-                            "type": "ACESTREAM",
-                            "source": "Comunidad"
-                        })
-                        merged_direct_count += 1
-                    matched_s = True
-                    break
-
-            if not matched_s and parsed_d["time"]:
-                schedule_events.append({
-                    "id": f"pina_{len(schedule_events) + 1}",
-                    "title": parsed_d["title"],
-                    "sport": parsed_d["sport"],
-                    "competition": parsed_d["competition"],
-                    "time": parsed_d["time"],
-                    "date": "Hoy",
-                    "channels": [{
-                        "name": f"{parsed_d['title']} - Opción 1 [Directo]",
-                        "streamId": h,
-                        "type": "ACESTREAM",
-                        "source": "Directo"
-                    }]
-                })
-                added_direct_count += 1
-
-        print(f"Eventos directos integrados: {merged_direct_count} enlaces vinculados a partidos existentes, {added_direct_count} añadidos como partidos nuevos.")
-
-    # Filter ArenaVision events: discard past events, normalize dates to 'Hoy' / 'Mañana'
+    # 1. Integrate ArenaVision events (which have verified dates DD/MM/YYYY)
     filtered_arena_events = []
     if arena_events:
         for a_ev in arena_events:
@@ -838,6 +928,29 @@ def generate_piñavision_agenda():
 
         print(f"ArenaVision integrado: {merged_arena_count} emparejados con eventos existentes, {added_arena_count} añadidos como nuevos eventos (descartados {len(arena_events) - len(filtered_arena_events)} pasados).")
 
+    # 2. Enrich verified schedule events for 'Hoy' with direct streams (eventos.m3u)
+    # Undated streams from community m3u are ONLY attached to confirmed events to avoid reviving yesterday's matches
+    merged_direct_count = 0
+    if direct_eventos:
+        for d_ev in direct_eventos:
+            parsed_d = parse_direct_event(d_ev["raw_title"], default_date="Hoy")
+            h = d_ev["streamId"]
+
+            for s_ev in schedule_events:
+                if s_ev.get("date") == "Hoy" and is_same_event(s_ev, parsed_d, today):
+                    if not any(c["streamId"] == h for c in s_ev["channels"]):
+                        opt_num = sum(1 for c in s_ev["channels"] if "Directa" in c["name"]) + 1
+                        s_ev["channels"].append({
+                            "name": f"{s_ev['title']} - Opción Directa {opt_num} [Comunidad]",
+                            "streamId": h,
+                            "type": "ACESTREAM",
+                            "source": "Comunidad"
+                        })
+                        merged_direct_count += 1
+                    break
+
+        print(f"Eventos directos vinculados a partidos confirmados de hoy: {merged_direct_count} enlaces agregados.")
+
     # Filter out events from 'Hoy' that started more than 3 hours ago (Madrid time)
     now_minutes = now_madrid.hour * 60 + now_madrid.minute
     cutoff_minutes_today = now_minutes - 180  # 3 hours ago
@@ -859,6 +972,13 @@ def generate_piñavision_agenda():
             valid_schedule_events.append(ev)
         print(f"Purgados {purged_today_count} eventos de 'Hoy' que comenzaron hace más de 3 horas (anteriores a {cutoff_minutes_today // 60:02d}:{cutoff_minutes_today % 60:02d}).")
         schedule_events = valid_schedule_events
+
+    # Consolidate duplicate events across all integrated sources
+    schedule_events = consolidate_events(schedule_events, today)
+
+    # Re-assign clean IDs
+    for idx, ev in enumerate(schedule_events, 1):
+        ev["id"] = f"pina_{idx}"
 
     # Chronological sorting for all schedule events
     def get_event_sort_key(ev):
