@@ -79,7 +79,7 @@ class EventsRepository(
                         .header("User-Agent", "Apache-HttpClient/UNAVAILABLE (java 1.4)")
                         .build()
                 } else {
-                    val finalUrl = if (source.url.contains("githubusercontent") && forceRefresh) {
+                    val finalUrl = if (source.url.contains("githubusercontent")) {
                         "${source.url}?t=${System.currentTimeMillis()}"
                     } else {
                         source.url
