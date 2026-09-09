@@ -350,27 +350,224 @@ def clean_channel_name(s):
     s = re.sub(r'[^a-z0-9]', ' ', s)
     return re.sub(r'\s+', ' ', s).strip()
 
+# Dictionaries for sports matching and team disambiguation
+GENERIC_WORDS = {
+    'fc', 'cf', 'cd', 'ud', 'sd', 'rcd', 'sad', 'club', 'balompie', 'deportivo',
+    'sporting', 'racing', 'union', 'real', 'team', 'de', 'del', 'la', 'las', 'el',
+    'los', 'san', 'santa', 'st', 'afc', 'sc', 'ac'
+}
+
+MODIFIER_WORDS = {
+    'castilla', 'filial', 'juvenil', 'femenino', 'fem', 'women', 'basket', 'baloncesto', 'futsal', 'academy'
+}
+
+NAME_TRANSLATIONS = {
+    "turkey": "turquia", "asutralia": "australia", "belgium": "belgica",
+    "czech republic": "republica checa", "czech": "checa", "spain": "espana",
+    "germany": "alemania", "france": "francia", "italy": "italia",
+    "united states": "usa", "south korea": "corea", "stage": "etapa",
+    "netherlands": "holanda", "portugal": "portugal", "england": "inglaterra",
+    "switzerland": "suiza", "sweden": "suecia", "norway": "noruega",
+    "denmark": "dinamarca", "austria": "austria", "croatia": "croacia",
+    "poland": "polonia", "scotland": "escocia", "ireland": "irlanda",
+    "greece": "grecia", "japan": "japon", "brazil": "brasil"
+}
+
+COMP_WORDS = [
+    r'champions\s*(?:-\s*fase liga)?',
+    r'youth league\s*(?:-\s*fase liga)?',
+    r'europa league\s*(?:-\s*fase liga)?',
+    r'conference league\s*(?:-\s*fase liga)?',
+    r'laliga\s*(?:hypermotion)?',
+    r'primera federacion',
+    r'segunda federacion',
+    r'us open',
+    r'f1\b|formula 1\b',
+    r'motogp\b'
+]
+
+STAGE_PREFIXES = r'^(?:fase liga|fase de grupos|jornada \d+|ronda \d+|1/4 de final|1/8 de final|1/2 de final|primera ronda|segunda ronda|dia \d+)\s*[-–—:]*\s*'
+
+MESES = {
+    'enero': 1, 'febrero': 2, 'marzo': 3, 'abril': 4, 'mayo': 5, 'junio': 6,
+    'julio': 7, 'agosto': 8, 'septiembre': 9, 'octubre': 10, 'noviembre': 11, 'diciembre': 12
+}
+
 def normalize_sport(sport_raw):
     s = clean_channel_name(sport_raw)
-    if any(k in s for k in ["f1", "formula", "moto", "motor", "superbike"]):
-        return "MOTOR"
-    if any(k in s for k in ["baloncesto", "basket", "nba", "fiba", "acb", "euroliga"]):
-        return "BALONCESTO"
-    if any(k in s for k in ["tenis", "tennis", "us open", "wta", "atp", "grand slam"]):
-        return "TENIS"
-    if any(k in s for k in ["ciclismo", "cycling"]):
-        return "CICLISMO"
-    if "padel" in s:
-        return "PADEL"
-    if any(k in s for k in ["box", "mma", "ufc", "lucha"]):
-        return "BOXEO"
-    if "rugby" in s:
-        return "RUGBY"
-    if any(k in s for k in ["balonmano", "handball"]):
-        return "BALONMANO"
-    if any(k in s for k in ["futbol", "soccer", "football", "futsal", "f sala"]):
-        return "FUTBOL"
-    return sport_raw.strip().upper() if sport_raw.strip() else "DEPORTES"
+    if any(k in s for k in ['f1', 'formula', 'moto', 'motor', 'superbike', 'motogp', 'nascar', 'indycar', 'rally', 'dakar']):
+        return 'MOTOR'
+    if any(k in s for k in ['baloncesto', 'basket', 'nba', 'fiba', 'acb', 'euroliga']):
+        return 'BALONCESTO'
+    if any(k in s for k in ['tenis', 'tennis', 'us open', 'wta', 'atp', 'grand slam', 'roland garros', 'wimbledon', 'australian open', 'masters 1000']):
+        return 'TENIS'
+    if any(k in s for k in ['ciclismo', 'cycling', 'vuelta', 'giro', 'tour de francia']):
+        return 'CICLISMO'
+    if 'padel' in s:
+        return 'PADEL'
+    if any(k in s for k in ['box', 'mma', 'ufc', 'lucha']):
+        return 'BOXEO'
+    if 'rugby' in s:
+        return 'RUGBY'
+    if any(k in s for k in ['balonmano', 'handball']):
+        return 'BALONMANO'
+    if any(k in s for k in ['futbol', 'soccer', 'football', 'futsal', 'f sala', 'champions', 'uefa', 'laliga', 'europa league', 'conference', 'premier', 'bundesliga', 'serie a', 'copa del rey', 'youth league']):
+        return 'FUTBOL'
+    return sport_raw.strip().upper() if sport_raw.strip() else 'DEPORTES'
+
+def clean_str(s):
+    import unicodedata
+    s = unicodedata.normalize('NFKD', s).encode('ASCII', 'ignore').decode('ASCII').lower()
+    for k, v in NAME_TRANSLATIONS.items():
+        s = re.sub(r'\b' + re.escape(k) + r'\b', v, s)
+    s = re.sub(r'[^a-z0-9]', ' ', s)
+    return re.sub(r'\s+', ' ', s).strip()
+
+def team_tokens(team_str):
+    c = clean_str(team_str)
+    c = re.sub(r'\bat\b|\batl\b', 'atletico', c)
+    c = re.sub(r'\br\b', 'real', c)
+    c = re.sub(r'\bman\b', 'manchester', c)
+    words = c.split()
+    tokens = set(words)
+    distinctive = {w for w in words if w not in GENERIC_WORDS and len(w) > 2}
+    modifiers = {w for w in words if w in MODIFIER_WORDS}
+    return tokens, distinctive, modifiers
+
+def is_same_team(t1, t2):
+    c1 = clean_str(t1)
+    c2 = clean_str(t2)
+    if c1 == c2:
+        return True
+    tok1, dist1, mod1 = team_tokens(t1)
+    tok2, dist2, mod2 = team_tokens(t2)
+    if mod1 != mod2:
+        return False
+
+    # Check Manchester City vs Manchester United
+    if ('city' in tok1 and 'united' in tok2) or ('united' in tok1 and 'city' in tok2):
+        return False
+
+    # Check Real Madrid vs Atletico Madrid
+    is_real1 = 'real' in tok1
+    is_real2 = 'real' in tok2
+    is_atl1 = 'atletico' in tok1
+    is_atl2 = 'atletico' in tok2
+    if (is_real1 and is_atl2) or (is_real2 and is_atl1):
+        return False
+
+    # Check Inter vs AC Milan
+    is_inter1 = 'inter' in tok1 or 'internazionale' in tok1
+    is_inter2 = 'inter' in tok2 or 'internazionale' in tok2
+    is_acmilan1 = 'milan' in tok1 and not is_inter1
+    is_acmilan2 = 'milan' in tok2 and not is_inter2
+    if (is_inter1 and is_acmilan2) or (is_inter2 and is_acmilan1):
+        return False
+
+    if dist1 and dist2:
+        if dist1 & dist2:
+            return True
+        if any(d1 in d2 or d2 in d1 for d1 in dist1 for d2 in dist2 if len(d1) >= 4 and len(d2) >= 4):
+            return True
+        return False
+    return tok1 == tok2
+
+def split_sides(title):
+    parts = re.split(r'\s+(?:vs\.?|v\.?|[-–—])\s+', title.strip(), flags=re.IGNORECASE)
+    if len(parts) >= 2:
+        return [parts[0].strip(), ' - '.join(parts[1:]).strip()]
+    return [title.strip()]
+
+def parse_time_minutes(t_str):
+    if not t_str or ':' not in t_str:
+        return None
+    m = re.search(r'(\d{1,2}):(\d{2})', t_str)
+    if m:
+        return int(m.group(1)) * 60 + int(m.group(2))
+    return None
+
+def normalize_date_to_key(date_str, today):
+    from datetime import timedelta
+    if not date_str:
+        return ''
+    d_clean = date_str.strip().lower()
+    if 'hoy' in d_clean:
+        return today.strftime('%d/%m/%Y')
+    if 'mañana' in d_clean or 'manana' in d_clean:
+        return (today + timedelta(days=1)).strftime('%d/%m/%Y')
+    m = re.search(r'(\d{1,2})[/.-](\d{1,2})[/.-](\d{4})', date_str)
+    if m:
+        return f'{int(m.group(1)):02d}/{int(m.group(2)):02d}/{m.group(3)}'
+    m_sp = re.search(r'(\d{1,2})\s+de\s+([a-z]+)\s+de\s+(\d{4})', d_clean)
+    if m_sp:
+        day = int(m_sp.group(1))
+        mes_name = m_sp.group(2)
+        year = int(m_sp.group(3))
+        if mes_name in MESES:
+            return f'{day:02d}/{MESES[mes_name]:02d}/{year}'
+    return date_str.strip()
+
+def is_same_event(ev1, ev2, today):
+    d1 = normalize_date_to_key(ev1.get('date', ''), today)
+    d2 = normalize_date_to_key(ev2.get('date', ''), today)
+    if d1 and d2 and d1 != d2:
+        return False
+
+    m1 = parse_time_minutes(ev1.get('time', ''))
+    m2 = parse_time_minutes(ev2.get('time', ''))
+    if m1 is not None and m2 is not None:
+        diff = abs(m1 - m2)
+        diff = min(diff, 1440 - diff)
+        if diff > 45:
+            return False
+
+    sp1 = ev1.get('sport')
+    sp2 = ev2.get('sport')
+    if sp1 and sp2 and sp1 != "DEPORTES" and sp2 != "DEPORTES" and sp1 != sp2:
+        return False
+
+    sides1 = split_sides(ev1.get('title', ''))
+    sides2 = split_sides(ev2.get('title', ''))
+
+    if len(sides1) == 2 and len(sides2) == 2:
+        match_direct = is_same_team(sides1[0], sides2[0]) and is_same_team(sides1[1], sides2[1])
+        match_reversed = is_same_team(sides1[0], sides2[1]) and is_same_team(sides1[1], sides2[0])
+        return match_direct or match_reversed
+    elif len(sides1) == 1 and len(sides2) == 1:
+        return clean_str(sides1[0]) == clean_str(sides2[0])
+    return False
+
+def parse_direct_event(raw_title, default_date="Hoy"):
+    m_hour = re.search(r'\b(\d{1,2}:\d{2})\b', raw_title)
+    ev_hour = m_hour.group(1) if m_hour else ""
+    
+    clean_t = re.sub(r'^\d{1,2}:\d{2}\s*', '', raw_title).strip()
+    comp = ""
+    if ":" in clean_t:
+        parts = clean_t.split(":", 1)
+        comp = parts[0].strip()
+        teams = parts[1].strip()
+    else:
+        teams = clean_t
+        for cw in COMP_WORDS:
+            m_comp = re.match(r'^(' + cw + r')\s*[-–—:]\s*(.*)', teams, flags=re.IGNORECASE)
+            if m_comp:
+                comp = m_comp.group(1).strip()
+                teams = m_comp.group(2).strip()
+                break
+                
+    teams = re.sub(STAGE_PREFIXES, '', teams, flags=re.IGNORECASE).strip()
+    teams = re.sub(r'\[.*?\]', '', teams).strip()
+    teams = re.sub(r'\(.*?\)', '', teams).strip()
+    
+    sport = normalize_sport(comp + " " + teams)
+    return {
+        "title": teams if teams else clean_t,
+        "time": ev_hour,
+        "date": default_date,
+        "sport": sport,
+        "competition": comp if comp else sport
+    }
 
 def channel_matches(target_canonical, base_canonical):
     if target_canonical.lower() == base_canonical.lower():
@@ -540,83 +737,6 @@ def generate_piñavision_agenda():
         schedule_events = parse_marca_schedule(marca_html, unified_channels)
         print(f"Eventos emparejados con Marca: {len(schedule_events)}")
 
-    # Merge direct match streams from eventos.m3u into schedule events
-    merged_direct_count = 0
-    added_direct_count = 0
-    if direct_eventos:
-        for d_ev in direct_eventos:
-            raw_t = d_ev["raw_title"]
-            h = d_ev["streamId"]
-            ev_low = raw_t.lower()
-
-            hour_match = re.search(r'\b(\d{1,2}:\d{2})\b', raw_t)
-            ev_hour = hour_match.group(1) if hour_match else ""
-
-            matched_s = False
-            for s_ev in schedule_events:
-                if s_ev.get("date") not in ("Hoy", "Mañana"):
-                    continue
-                s_title = s_ev.get("title", "")
-                title_words = [w.lower() for w in re.findall(r'\b\w{4,}\b', s_title) if w.lower() not in ('club', 'futbol', 'fútbol', 'real', 'deportivo')]
-                word_matches = sum(1 for w in title_words if w in ev_low)
-
-                same_h = (s_ev.get("time", "") == ev_hour) if (s_ev.get("time") and ev_hour) else False
-                if word_matches >= 2 or (word_matches >= 1 and same_h):
-                    if not any(c["streamId"] == h for c in s_ev["channels"]):
-                        opt_num = sum(1 for c in s_ev["channels"] if "Directa" in c["name"]) + 1
-                        s_ev["channels"].append({
-                            "name": f"{s_title} - Opción Directa {opt_num} [Comunidad]",
-                            "streamId": h,
-                            "type": "ACESTREAM",
-                            "source": "Comunidad"
-                        })
-                        merged_direct_count += 1
-                    matched_s = True
-                    break
-
-            if not matched_s and ev_hour:
-                clean_t = re.sub(r'^\d{1,2}:\d{2}\s*', '', raw_t).strip()
-                parts = [p.strip() for p in clean_t.split(' - ') if p.strip()]
-                if len(parts) == 1:
-                    comp = "DEPORTES"
-                    title = clean_t
-                elif len(parts) == 2:
-                    comp = parts[0]
-                    title = parts[1]
-                else:
-                    comp = parts[0]
-                    title = " - ".join(parts[1:])
-
-                sport = normalize_sport(comp + " " + title)
-
-                existing_ev = next((x for x in schedule_events if x.get("title") == title and x.get("time") == ev_hour), None)
-                if existing_ev:
-                    if not any(c["streamId"] == h for c in existing_ev["channels"]):
-                        existing_ev["channels"].append({
-                            "name": f"{title} - Opción {len(existing_ev['channels']) + 1} [Directo]",
-                            "streamId": h,
-                            "type": "ACESTREAM",
-                            "source": "Directo"
-                        })
-                else:
-                    schedule_events.append({
-                        "id": f"pina_{len(schedule_events) + 1}",
-                        "title": title,
-                        "sport": sport,
-                        "competition": comp,
-                        "time": ev_hour,
-                        "date": "Hoy",
-                        "channels": [{
-                            "name": f"{title} - Opción 1 [Directo]",
-                            "streamId": h,
-                            "type": "ACESTREAM",
-                            "source": "Directo"
-                        }]
-                    })
-                    added_direct_count += 1
-
-        print(f"Eventos directos integrados: {merged_direct_count} enlaces vinculados a partidos existentes, {added_direct_count} añadidos como partidos nuevos.")
-
     # Setup dates for Madrid timezone
     from datetime import datetime, timedelta
     try:
@@ -631,19 +751,47 @@ def generate_piñavision_agenda():
     today_str = today.strftime("%d/%m/%Y")
     tomorrow_str = (today + timedelta(days=1)).strftime("%d/%m/%Y")
 
-    # Team translation dictionary for enhanced matching between English & Spanish listings
-    NAME_TRANSLATIONS = {
-        "turkey": "turquia", "asutralia": "australia", "belgium": "belgica",
-        "czech republic": "republica checa", "czech": "checa", "spain": "espana",
-        "germany": "alemania", "france": "francia", "italy": "italia",
-        "united states": "usa", "south korea": "corea", "stage": "etapa"
-    }
+    # Merge direct match streams from eventos.m3u into schedule events
+    merged_direct_count = 0
+    added_direct_count = 0
+    if direct_eventos:
+        for d_ev in direct_eventos:
+            parsed_d = parse_direct_event(d_ev["raw_title"], default_date="Hoy")
+            h = d_ev["streamId"]
 
-    def get_title_tokens(text):
-        clean = clean_channel_name(text)
-        for k, v in NAME_TRANSLATIONS.items():
-            clean = clean.replace(k, v)
-        return set([w for w in clean.split() if len(w) > 3 or w.isdigit()])
+            matched_s = False
+            for s_ev in schedule_events:
+                if is_same_event(s_ev, parsed_d, today):
+                    if not any(c["streamId"] == h for c in s_ev["channels"]):
+                        opt_num = sum(1 for c in s_ev["channels"] if "Directa" in c["name"]) + 1
+                        s_ev["channels"].append({
+                            "name": f"{s_ev['title']} - Opción Directa {opt_num} [Comunidad]",
+                            "streamId": h,
+                            "type": "ACESTREAM",
+                            "source": "Comunidad"
+                        })
+                        merged_direct_count += 1
+                    matched_s = True
+                    break
+
+            if not matched_s and parsed_d["time"]:
+                schedule_events.append({
+                    "id": f"pina_{len(schedule_events) + 1}",
+                    "title": parsed_d["title"],
+                    "sport": parsed_d["sport"],
+                    "competition": parsed_d["competition"],
+                    "time": parsed_d["time"],
+                    "date": "Hoy",
+                    "channels": [{
+                        "name": f"{parsed_d['title']} - Opción 1 [Directo]",
+                        "streamId": h,
+                        "type": "ACESTREAM",
+                        "source": "Directo"
+                    }]
+                })
+                added_direct_count += 1
+
+        print(f"Eventos directos integrados: {merged_direct_count} enlaces vinculados a partidos existentes, {added_direct_count} añadidos como partidos nuevos.")
 
     # Filter ArenaVision events: discard past events, normalize dates to 'Hoy' / 'Mañana'
     filtered_arena_events = []
@@ -672,19 +820,8 @@ def generate_piñavision_agenda():
         merged_arena_count = 0
         for a_ev in filtered_arena_events:
             matched = False
-            a_tokens = get_title_tokens(a_ev["title"])
-
             for s_ev in schedule_events:
-                # Merge only if same date!
-                if s_ev["date"] != a_ev["date"]:
-                    continue
-
-                s_tokens = get_title_tokens(s_ev["title"])
-                # Match if shares at least 2 tokens, or 1 long token (>4 chars) and same hour
-                has_token_match = len(a_tokens & s_tokens) >= 2 or any(len(w) >= 5 and w in s_tokens for w in a_tokens)
-                same_hour = s_ev.get("time", "").split(":")[0] == a_ev.get("time", "").split(":")[0] if s_ev.get("time") and a_ev.get("time") else False
-
-                if has_token_match or (len(a_tokens & s_tokens) >= 1 and same_hour):
+                if is_same_event(s_ev, a_ev, today):
                     existing_hashes = {c["streamId"] for c in s_ev["channels"]}
                     for ch in a_ev["channels"]:
                         if ch["streamId"] not in existing_hashes:
