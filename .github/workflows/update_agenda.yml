@@ -2,7 +2,8 @@ name: Actualizar Agenda PIÑAVISION
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    # Cada 20 minutos en minutos fuera de hora punta (7, 27, 47) para evitar saturación de colas en GitHub
+    - cron: '7,27,47 * * * *'
   workflow_dispatch:
 
 jobs:
