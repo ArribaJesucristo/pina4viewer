@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "10/09/2026 11:40",
+    "updatedAt": "10/09/2026 11:50",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -1449,6 +1449,48 @@
       {
         "name": "Teledeporte - Opción 6 [RCP]",
         "streamId": "5a272a468eaf25feb032e2c5d377c6276b2299c7",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "La 1 - Opción 1 [Markel]",
+        "streamId": "6a54f8fb00406c88f68ac3f3aabc7d084f9573d0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "La 1 - Opción 2 [Markel]",
+        "streamId": "7597d4feb3195079ffa606cf23a183d626ee40ba",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "La 1 - Opción 1 [New Loop]",
+        "streamId": "b55d1a3d7a5121af685668d5f5e7baeb3ebab70e",
+        "type": "ACESTREAM",
+        "source": "New Loop"
+      },
+      {
+        "name": "La 1 - Opción 2 [New Loop]",
+        "streamId": "9c079e1bbd01814c107e89187b8c24ba0ac306dd",
+        "type": "ACESTREAM",
+        "source": "New Loop"
+      },
+      {
+        "name": "La 1 - Opción 3 [RCP]",
+        "streamId": "6636a5c1055b5913ddcd0e87a5523f7d935350af",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "La 1 - Opción 4 [RCP]",
+        "streamId": "fd0a3f8874ba9bb0516b1e2b978827fdd6661842",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "La 1 - Opción 5 [RCP]",
+        "streamId": "b41d52a733be6f4709db3bdf33e260de2b67d27a",
         "type": "ACESTREAM",
         "source": "RCP"
       }
