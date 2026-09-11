@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "11/09/2026 16:50",
+    "updatedAt": "11/09/2026 17:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -2042,27 +2042,27 @@
     "channels": [
       {
         "name": "DAZN 3 - Opción 1 [Markel]",
-        "streamId": "908bc5e7ae52afc06e40793b6db749dba11a1780",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "DAZN 3 - Opción 2 [Markel]",
         "streamId": "85fd2f5f6a38fead496a8e8697c874f459f92bab",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "DAZN 3 - Opción 3 [Markel]",
+        "name": "DAZN 3 - Opción 2 [Markel]",
         "streamId": "98fba924421aa1e4bd28e74d74a2726d0459b594",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "DAZN 3 - Opción 4 [Markel]",
+        "name": "DAZN 3 - Opción 3 [Markel]",
         "streamId": "d1d9ec2361a6ac8edc0b2841866383768cc28df9",
         "type": "ACESTREAM",
         "source": "Markel"
+      },
+      {
+        "name": "DAZN 3 - Opción 3 [Elcano]",
+        "streamId": "908bc5e7ae52afc06e40793b6db749dba11a1780",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "DAZN 3 - Opción 4 [RCP]",
@@ -3708,13 +3708,13 @@
       },
       {
         "name": "M+ Liga de Campeones - Opción 8 [Markel]",
-        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
+        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones - Opción 9 [Markel]",
-        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
+        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -5768,27 +5768,27 @@
     "channels": [
       {
         "name": "DAZN 3 - Opción 1 [Markel]",
-        "streamId": "908bc5e7ae52afc06e40793b6db749dba11a1780",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "DAZN 3 - Opción 2 [Markel]",
         "streamId": "85fd2f5f6a38fead496a8e8697c874f459f92bab",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "DAZN 3 - Opción 3 [Markel]",
+        "name": "DAZN 3 - Opción 2 [Markel]",
         "streamId": "98fba924421aa1e4bd28e74d74a2726d0459b594",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "DAZN 3 - Opción 4 [Markel]",
+        "name": "DAZN 3 - Opción 3 [Markel]",
         "streamId": "d1d9ec2361a6ac8edc0b2841866383768cc28df9",
         "type": "ACESTREAM",
         "source": "Markel"
+      },
+      {
+        "name": "DAZN 3 - Opción 3 [Elcano]",
+        "streamId": "908bc5e7ae52afc06e40793b6db749dba11a1780",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "DAZN 3 - Opción 4 [RCP]",
@@ -6400,19 +6400,19 @@
     "channels": [
       {
         "name": "M+ LaLiga 2 - Opción 1 [Markel]",
-        "streamId": "b8eb9c9868d487402569bba2d97a8af113d033fe",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ LaLiga 2 - Opción 2 [Markel]",
         "streamId": "d16a9b50042cb9d6e648cae3b1472f655c4def61",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "M+ LaLiga 2 - Opción 3 [Markel]",
+        "name": "M+ LaLiga 2 - Opción 2 [Markel]",
         "streamId": "67966d205968de9cf95dcffe3b2ff6888b106634",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga 2 - Opción 3 [Markel]",
+        "streamId": "b8eb9c9868d487402569bba2d97a8af113d033fe",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -6586,13 +6586,13 @@
       },
       {
         "name": "DAZN F1 - Opción 10 [Markel]",
-        "streamId": "f16d68fa5ff64f3894a45062ca28e4e66f142c6a",
+        "streamId": "20086a76248efe8d5230c15d41c69bae8fa6381c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN F1 - Opción 11 [Markel]",
-        "streamId": "20086a76248efe8d5230c15d41c69bae8fa6381c",
+        "streamId": "f16d68fa5ff64f3894a45062ca28e4e66f142c6a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -6604,13 +6604,13 @@
       },
       {
         "name": "DAZN F1 - Opción 13 [Markel]",
-        "streamId": "02be332ebead0484a5354fa25e97b6833b8b129e",
+        "streamId": "0a81ba020d498aca1248e0591d8ffab99eb80bd4",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN F1 - Opción 14 [Markel]",
-        "streamId": "0a81ba020d498aca1248e0591d8ffab99eb80bd4",
+        "streamId": "02be332ebead0484a5354fa25e97b6833b8b129e",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -7648,24 +7648,18 @@
     "channels": [
       {
         "name": "DAZN 3 - Opción 1 [Markel]",
-        "streamId": "908bc5e7ae52afc06e40793b6db749dba11a1780",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "DAZN 3 - Opción 2 [Markel]",
         "streamId": "85fd2f5f6a38fead496a8e8697c874f459f92bab",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "DAZN 3 - Opción 3 [Markel]",
+        "name": "DAZN 3 - Opción 2 [Markel]",
         "streamId": "98fba924421aa1e4bd28e74d74a2726d0459b594",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "DAZN 3 - Opción 4 [Markel]",
+        "name": "DAZN 3 - Opción 3 [Markel]",
         "streamId": "d1d9ec2361a6ac8edc0b2841866383768cc28df9",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -8268,13 +8262,13 @@
       },
       {
         "name": "M+ Liga de Campeones - Opción 8 [Markel]",
-        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
+        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Liga de Campeones - Opción 9 [Markel]",
-        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
+        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -8392,18 +8386,12 @@
       },
       {
         "name": "M+ Liga de Campeones 2 - Opción 8 [Markel]",
-        "streamId": "8156912ae14f6174a19c8a4efcf36a06e847f632",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones 2 - Opción 9 [Markel]",
         "streamId": "74ab4e4ec7e2da001f473ca40893b7307b8029c5",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "M+ Liga de Campeones 2 - Opción 10 [Markel]",
+        "name": "M+ Liga de Campeones 2 - Opción 9 [Markel]",
         "streamId": "338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea",
         "type": "ACESTREAM",
         "source": "Markel"
