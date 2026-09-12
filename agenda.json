@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "12/09/2026 14:20",
+    "updatedAt": "12/09/2026 14:30",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -5073,6 +5073,100 @@
     ]
   },
   {
+    "id": "pina_66",
+    "title": "Atlético Madrileño - Murcia",
+    "sport": "TENIS",
+    "competition": "US OPEN",
+    "time": "20:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "Movistar Plus+ - Opción 1 [Markel]",
+        "streamId": "8c67cdb5ba81976662c3a67984a9545d9cfb0f70",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 2 [Markel]",
+        "streamId": "fa931cbc87dc9d66fdd30a9644e054b403960056",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 3 [Markel]",
+        "streamId": "c1b7f54af0de256d1ac0fcac4c130e62660089f4",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 4 [Markel]",
+        "streamId": "ed74406ccdb3c21941b919db6bffca7f1de015bb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 5 [Markel]",
+        "streamId": "1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 3 [Elcano]",
+        "streamId": "d23497596720b47b096ec0f850d6d26a19d1a336",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 4 [New Era]",
+        "streamId": "67121cbb722b88ce4489717e9a87a26f60184ec9",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 5 [RCP]",
+        "streamId": "f559b9fea692a86e1a1de41cd1aa667e3fa02775",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 6 [RCP]",
+        "streamId": "0e18315b703248bb01eab6b9d3f0cb2cd893601f",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 7 [RCP]",
+        "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "Primera Federación - Opción 1 [Markel]",
+        "streamId": "599a2fda91aa55703e2c5a51562d9dbf5d3d31d9",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "ArenaVision 67 (AV67)",
+        "streamId": "854ff9c607101791346111cd2366a392c3b8c351",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
+      },
+      {
+        "name": "ArenaVision 68 (AV68)",
+        "streamId": "3fbc1b7dc316f19b77e7f7cfc775a0af67adcc7f",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
+      },
+      {
+        "name": "ArenaVision 117 (AV117)",
+        "streamId": "7b742628b9f7e82902bdbc1ff92eba1988875cfc",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
+      }
+    ]
+  },
+  {
     "title": "FINAL",
     "sport": "BALONCESTO",
     "competition": "FIBA WORLDCUP",
@@ -5111,46 +5205,6 @@
       }
     ],
     "id": "pina_88"
-  },
-  {
-    "id": "pina_66",
-    "title": "Atlético Madrileño - Murcia",
-    "sport": "FUTBOL",
-    "competition": "1ª RFEF",
-    "time": "20:30",
-    "date": "Mañana",
-    "channels": [
-      {
-        "name": "Primera Federación - Opción 1 [Markel]",
-        "streamId": "599a2fda91aa55703e2c5a51562d9dbf5d3d31d9",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Movistar+ - Opción 1 [New Era]",
-        "streamId": "fa931cbc87dc9d66fdd30a9644e054b403960056",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "ArenaVision 67 (AV67)",
-        "streamId": "854ff9c607101791346111cd2366a392c3b8c351",
-        "type": "ACESTREAM",
-        "source": "ArenaVision"
-      },
-      {
-        "name": "ArenaVision 68 (AV68)",
-        "streamId": "3fbc1b7dc316f19b77e7f7cfc775a0af67adcc7f",
-        "type": "ACESTREAM",
-        "source": "ArenaVision"
-      },
-      {
-        "name": "ArenaVision 117 (AV117)",
-        "streamId": "7b742628b9f7e82902bdbc1ff92eba1988875cfc",
-        "type": "ACESTREAM",
-        "source": "ArenaVision"
-      }
-    ]
   },
   {
     "id": "pina_67",
