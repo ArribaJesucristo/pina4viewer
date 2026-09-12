@@ -6,6 +6,10 @@ on:
     - cron: '7,27,47 * * * *'
   workflow_dispatch:
 
+concurrency:
+  group: update-agenda
+  cancel-in-progress: true
+
 jobs:
   update-agenda:
     runs-on: ubuntu-latest
@@ -14,6 +18,8 @@ jobs:
     steps:
       - name: Checkout repositorio
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -28,4 +34,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add agenda.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(agenda): actualizar agenda PIÑAVISION [skip ci]" && git push)
+          if ! git diff --quiet || ! git diff --staged --quiet; then
+            git commit -m "chore(agenda): actualizar agenda PIÑAVISION [skip ci]"
+            git pull --rebase origin main || true
+            git push origin main
+          fi
