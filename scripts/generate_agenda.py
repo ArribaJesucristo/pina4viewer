@@ -868,6 +868,36 @@ def consolidate_events(events, today):
         print(f"Consolidación final: {merged_count} eventos duplicados fusionados con éxito.")
     return consolidated
 
+def load_previous_agenda(today):
+    if not os.path.exists(OUTPUT_FILE):
+        return []
+    try:
+        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if not isinstance(data, list):
+            return []
+        from datetime import datetime
+        prev_events = []
+        for ev in data:
+            if ev.get("_metadata") or ev.get("sport") == "DIRECTO 24/7" or ev.get("date") == "24/7":
+                continue
+            d = ev.get("date", "")
+            if d == "Hoy":
+                prev_events.append(ev)
+            elif re.match(r'^\d{2}/\d{2}/\d{4}$', d):
+                try:
+                    ev_d = datetime.strptime(d, "%d/%m/%Y").date()
+                    if ev_d == today:
+                        ev_copy = dict(ev)
+                        ev_copy["date"] = "Hoy"
+                        prev_events.append(ev_copy)
+                except Exception:
+                    pass
+        return prev_events
+    except Exception as e:
+        print(f"Aviso al cargar agenda previa: {e}")
+        return []
+
 def generate_piñavision_agenda():
     print("=== Generando agenda PIÑAVISION ===")
     markel = load_markel_channels()
@@ -929,6 +959,29 @@ def generate_piñavision_agenda():
     else:
         schedule_events = parse_marca_schedule(marca_html, unified_channels, today)
         print(f"Eventos emparejados con Marca: {len(schedule_events)}")
+
+    # Load and merge confirmed events from previous agenda (retention for events when Marca cycles past them)
+    prev_events = load_previous_agenda(today)
+    if prev_events:
+        retained_count = 0
+        enriched_count = 0
+        for prev_ev in prev_events:
+            matched = False
+            for s_ev in schedule_events:
+                if is_same_event(s_ev, prev_ev, today):
+                    existing_hashes = {c["streamId"] for c in s_ev.get("channels", []) if c.get("streamId")}
+                    for ch in prev_ev.get("channels", []):
+                        h = ch.get("streamId")
+                        if h and h not in existing_hashes:
+                            s_ev["channels"].append(ch)
+                            existing_hashes.add(h)
+                    matched = True
+                    enriched_count += 1
+                    break
+            if not matched:
+                schedule_events.append(prev_ev)
+                retained_count += 1
+        print(f"Persistencia acumulativa de agenda previa: {retained_count} eventos retenidos de Hoy, {enriched_count} enriquecidos.")
 
     # 1. Integrate ArenaVision events (which have verified dates DD/MM/YYYY)
     filtered_arena_events = []
