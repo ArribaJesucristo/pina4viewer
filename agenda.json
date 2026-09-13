@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "13/09/2026 18:10",
+    "updatedAt": "13/09/2026 18:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -695,6 +695,54 @@
     "date": "Hoy",
     "channels": [
       {
+        "name": "M+ LaLiga 2 - Opción 1 [Markel]",
+        "streamId": "d16a9b50042cb9d6e648cae3b1472f655c4def61",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga 2 - Opción 2 [Markel]",
+        "streamId": "67966d205968de9cf95dcffe3b2ff6888b106634",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga 2 - Opción 3 [Markel]",
+        "streamId": "b8eb9c9868d487402569bba2d97a8af113d033fe",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga 2 - Opción 2 [Elcano]",
+        "streamId": "448551642d9c7d0de53aa35d1ee41788909b6c0c",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "M+ LaLiga 2 - Opción 5 [Elcano]",
+        "streamId": "26029f72a4ca831d09deefe89534818db1d105bc",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "M+ LaLiga 2 - Opción 6 [Elcano]",
+        "streamId": "80126b240f3e4e004754fd8f8103e857ab2556a0",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "M+ LaLiga 2 - Opción 7 [RCP]",
+        "streamId": "91cf24543ac5a3dcd4a3557ce52de3f50ee6cb18",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga 2 - Opción 8 [RCP]",
+        "streamId": "37d42d2b5d2278e6bb5810329a5f220867b3cf0c",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
         "name": "M+ LaLiga - Opción 1 [Markel]",
         "streamId": "b3bdd6ef7f795c4f321a3ce5cf4907338f462929",
         "type": "ACESTREAM",
@@ -837,18 +885,6 @@
         "streamId": "e3249feb41ca1e68f38cf9bd9a196d6b3f873032",
         "type": "ACESTREAM",
         "source": "RCP"
-      },
-      {
-        "name": "ArenaVision 9 (AV9)",
-        "streamId": "448551642d9c7d0de53aa35d1ee41788909b6c0c",
-        "type": "ACESTREAM",
-        "source": "ArenaVision"
-      },
-      {
-        "name": "ArenaVision 10 (AV10)",
-        "streamId": "67966d205968de9cf95dcffe3b2ff6888b106634",
-        "type": "ACESTREAM",
-        "source": "ArenaVision"
       }
     ]
   },
