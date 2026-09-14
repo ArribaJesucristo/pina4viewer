@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/09/2026 02:40",
+    "updatedAt": "14/09/2026 02:50",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -3065,12 +3065,6 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 3 [Markel]",
-        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
@@ -3775,6 +3769,12 @@
       {
         "name": "M+ Deportes - Opción 5 [Markel]",
         "streamId": "cf5327fe9c962a29dfff3868f4349ff2b0b4662f",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 6 [Markel]",
+        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
