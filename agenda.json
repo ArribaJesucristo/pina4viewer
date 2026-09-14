@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/09/2026 12:40",
+    "updatedAt": "14/09/2026 12:50",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -298,6 +298,12 @@
       },
       {
         "name": "DAZN 1 - Opción 8 [Markel]",
+        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 9 [Markel]",
         "streamId": "78124d96a1a4601e7910f50e36a16e35efcfb398",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -305,12 +311,6 @@
       {
         "name": "DAZN 1 - Opción 3 [Elcano]",
         "streamId": "dddff67edfa7061f643ec5ae0be110169850363d",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "DAZN 1 - Opción 4 [Elcano]",
-        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
         "type": "ACESTREAM",
         "source": "Elcano"
       },
@@ -2296,6 +2296,12 @@
       },
       {
         "name": "DAZN 1 - Opción 8 [Markel]",
+        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 9 [Markel]",
         "streamId": "78124d96a1a4601e7910f50e36a16e35efcfb398",
         "type": "ACESTREAM",
         "source": "Markel"
