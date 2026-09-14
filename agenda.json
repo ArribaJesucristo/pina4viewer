@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/09/2026 04:50",
+    "updatedAt": "14/09/2026 05:00",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -2407,6 +2407,12 @@
       {
         "name": "DAZN 2 - Opción 6 [Markel]",
         "streamId": "2f9211669499f413dab1a490198afab2a9b4b57c",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 2 - Opción 7 [Markel]",
+        "streamId": "350bb4d726e2dd4dc4b2b17b59da783fdb07c11b",
         "type": "ACESTREAM",
         "source": "Markel"
       },
