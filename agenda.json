@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/09/2026 08:50",
+    "updatedAt": "14/09/2026 09:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -49,16 +49,16 @@
         "source": "Markel"
       },
       {
-        "name": "LaLiga TV Hypermotion - Opción 7 [Markel]",
-        "streamId": "4636ed75106cb00e9c70cc2029edf0a4df7ad73f",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "LaLiga TV Hypermotion - Opción 1 [New Loop]",
         "streamId": "60952921b847a9c560741b0d8048a2d8ad194a7f",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 2 [Elcano]",
+        "streamId": "4636ed75106cb00e9c70cc2029edf0a4df7ad73f",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "LaLiga TV Hypermotion - Opción 3 [Elcano]",
@@ -298,12 +298,6 @@
       },
       {
         "name": "DAZN 1 - Opción 8 [Markel]",
-        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "DAZN 1 - Opción 9 [Markel]",
         "streamId": "78124d96a1a4601e7910f50e36a16e35efcfb398",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -311,6 +305,12 @@
       {
         "name": "DAZN 1 - Opción 3 [Elcano]",
         "streamId": "dddff67edfa7061f643ec5ae0be110169850363d",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "DAZN 1 - Opción 4 [Elcano]",
+        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
         "type": "ACESTREAM",
         "source": "Elcano"
       },
@@ -2296,12 +2296,6 @@
       },
       {
         "name": "DAZN 1 - Opción 8 [Markel]",
-        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "DAZN 1 - Opción 9 [Markel]",
         "streamId": "78124d96a1a4601e7910f50e36a16e35efcfb398",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -2595,12 +2589,6 @@
       {
         "name": "LaLiga TV Hypermotion - Opción 6 [Markel]",
         "streamId": "232aaa6fff233be7c09221f56253bd921b127bb0",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "LaLiga TV Hypermotion - Opción 7 [Markel]",
-        "streamId": "4636ed75106cb00e9c70cc2029edf0a4df7ad73f",
         "type": "ACESTREAM",
         "source": "Markel"
       },
