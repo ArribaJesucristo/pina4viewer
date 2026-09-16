@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "16/09/2026 15:20",
+    "updatedAt": "16/09/2026 15:30",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -1210,7 +1210,7 @@
         "source": "Comunidad"
       }
     ],
-    "id": "pina_111"
+    "id": "pina_105"
   },
   {
     "title": "BAYER LEVERKUSEN vs CLEJE",
@@ -1260,9 +1260,21 @@
         "streamId": "5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2",
         "type": "ACESTREAM",
         "source": "Comunidad"
+      },
+      {
+        "name": "ArenaVision 41 (AV41)",
+        "streamId": "38f7b2044e549df2039ff26cefa6f9a60c854d5e",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
+      },
+      {
+        "name": "ArenaVision 36 (AV36)",
+        "streamId": "5b7f54b12e0f96ceba1299f44eac4b0f97403e4e",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
       }
     ],
-    "id": "pina_112"
+    "id": "pina_106"
   },
   {
     "title": "OLYMPIACOS vs JAGIELLONIA",
@@ -1308,7 +1320,7 @@
         "source": "Comunidad"
       }
     ],
-    "id": "pina_113"
+    "id": "pina_107"
   },
   {
     "title": "SIMULCAST",
@@ -1328,9 +1340,15 @@
         "streamId": "5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2",
         "type": "ACESTREAM",
         "source": "ArenaVision"
+      },
+      {
+        "name": "ArenaVision 61 (AV61)",
+        "streamId": "91ac4585368992720ec17ffa5b4389368c6dcac1",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
       }
     ],
-    "id": "pina_114"
+    "id": "pina_108"
   },
   {
     "id": "pina_7",
@@ -1749,7 +1767,7 @@
     ]
   },
   {
-    "id": "pina_105",
+    "id": "pina_109",
     "title": "Elche CF - Real Madrid",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1866,9 +1884,21 @@
         "streamId": "385abcf801b787eec6ed6624908758bb165c0a55",
         "type": "ACESTREAM",
         "source": "ArenaVision"
+      },
+      {
+        "name": "ArenaVision 80 (AV80)",
+        "streamId": "9c588ac92554746c489bc553773d959f6d2dfd8e",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
+      },
+      {
+        "name": "ArenaVision 81 (AV81)",
+        "streamId": "9c75f1d190c518cfe0f236415b8dccc1f676ef3b",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
       }
     ],
-    "id": "pina_115"
+    "id": "pina_110"
   },
   {
     "title": "SABALENKA vs RYBAKINA",
@@ -1920,10 +1950,10 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_106"
+    "id": "pina_111"
   },
   {
-    "id": "pina_107",
+    "id": "pina_112",
     "title": "Philadelphia Eagles - Washington Commanders",
     "sport": "FUTBOL AMERICANO",
     "competition": "JORNADA 1",
@@ -2024,7 +2054,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_108"
+    "id": "pina_113"
   },
   {
     "title": "SOUTH AFRICA vs NEW ZEALAND",
@@ -2070,7 +2100,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_109"
+    "id": "pina_114"
   },
   {
     "title": "PALMEIRAS vs SAO PAULO",
@@ -2104,7 +2134,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_110"
+    "id": "pina_115"
   },
   {
     "id": "pina_9",
@@ -2176,13 +2206,13 @@
       },
       {
         "name": "ArenaVision 41 (AV41)",
-        "streamId": "8156912ae14f6174a19c8a4efcf36a06e847f632",
+        "streamId": "38f7b2044e549df2039ff26cefa6f9a60c854d5e",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       },
       {
         "name": "ArenaVision 36 (AV36)",
-        "streamId": "74ab4e4ec7e2da001f473ca40893b7307b8029c5",
+        "streamId": "5b7f54b12e0f96ceba1299f44eac4b0f97403e4e",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -2581,6 +2611,18 @@
         "streamId": "931fd4c24398a24beb9b6ede856ca34339ff2c22",
         "type": "ACESTREAM",
         "source": "ArenaVision"
+      },
+      {
+        "name": "ArenaVision 21 (AV21)",
+        "streamId": "91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
+      },
+      {
+        "name": "ArenaVision 22 (AV22)",
+        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
       }
     ]
   },
@@ -2631,13 +2673,13 @@
     "channels": [
       {
         "name": "ArenaVision 41 (AV41)",
-        "streamId": "8156912ae14f6174a19c8a4efcf36a06e847f632",
+        "streamId": "38f7b2044e549df2039ff26cefa6f9a60c854d5e",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       },
       {
         "name": "ArenaVision 36 (AV36)",
-        "streamId": "74ab4e4ec7e2da001f473ca40893b7307b8029c5",
+        "streamId": "5b7f54b12e0f96ceba1299f44eac4b0f97403e4e",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -2653,7 +2695,7 @@
     "channels": [
       {
         "name": "ArenaVision 61 (AV61)",
-        "streamId": "64f01629d4a19e70efd9e6778c397282ba087547",
+        "streamId": "91ac4585368992720ec17ffa5b4389368c6dcac1",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       },
@@ -2736,7 +2778,7 @@
       },
       {
         "name": "ArenaVision 80 (AV80)",
-        "streamId": "7f9857c45764ef2c7cdfb619b89db3056a57a51f",
+        "streamId": "9c588ac92554746c489bc553773d959f6d2dfd8e",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       },
@@ -2748,7 +2790,7 @@
       },
       {
         "name": "ArenaVision 81 (AV81)",
-        "streamId": "385abcf801b787eec6ed6624908758bb165c0a55",
+        "streamId": "9c75f1d190c518cfe0f236415b8dccc1f676ef3b",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -11928,7 +11970,7 @@
     "channels": [
       {
         "name": "ArenaVision 15 (AV15)",
-        "streamId": "7e4f6eb38e0d5ef52b7f8b96eb80c1d8c87dad16",
+        "streamId": "26159ba451167e962f4f9236ab4c7626f7eb4e49",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -12216,7 +12258,7 @@
     "channels": [
       {
         "name": "ArenaVision 33 (AV33)",
-        "streamId": "48a589dbeab3544662fafd79888aada7d834cfe9",
+        "streamId": "313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -12264,7 +12306,7 @@
     "channels": [
       {
         "name": "ArenaVision 36 (AV36)",
-        "streamId": "74ab4e4ec7e2da001f473ca40893b7307b8029c5",
+        "streamId": "5b7f54b12e0f96ceba1299f44eac4b0f97403e4e",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -12344,7 +12386,7 @@
     "channels": [
       {
         "name": "ArenaVision 41 (AV41)",
-        "streamId": "8156912ae14f6174a19c8a4efcf36a06e847f632",
+        "streamId": "38f7b2044e549df2039ff26cefa6f9a60c854d5e",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -12664,7 +12706,7 @@
     "channels": [
       {
         "name": "ArenaVision 61 (AV61)",
-        "streamId": "64f01629d4a19e70efd9e6778c397282ba087547",
+        "streamId": "91ac4585368992720ec17ffa5b4389368c6dcac1",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -12968,7 +13010,7 @@
     "channels": [
       {
         "name": "ArenaVision 80 (AV80)",
-        "streamId": "7f9857c45764ef2c7cdfb619b89db3056a57a51f",
+        "streamId": "9c588ac92554746c489bc553773d959f6d2dfd8e",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -12984,7 +13026,7 @@
     "channels": [
       {
         "name": "ArenaVision 81 (AV81)",
-        "streamId": "385abcf801b787eec6ed6624908758bb165c0a55",
+        "streamId": "9c75f1d190c518cfe0f236415b8dccc1f676ef3b",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
