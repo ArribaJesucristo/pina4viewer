@@ -877,13 +877,30 @@ def load_previous_agenda(today):
         if not isinstance(data, list):
             return []
         from datetime import datetime
+
+        # Check metadata timestamp to see when the previous agenda was generated
+        meta_date = None
+        for item in data:
+            if item.get("_metadata") or "updatedAt" in item:
+                upd = item.get("updatedAt", "")
+                if upd and len(upd) >= 10:
+                    try:
+                        meta_date = datetime.strptime(upd[:10], "%d/%m/%Y").date()
+                    except Exception:
+                        pass
+                break
+
+        # If previous agenda is from a past date (yesterday or older), 'Hoy' in that file is NOT today!
+        is_same_day = (meta_date == today)
+
         prev_events = []
         for ev in data:
             if ev.get("_metadata") or ev.get("sport") == "DIRECTO 24/7" or ev.get("date") == "24/7":
                 continue
             d = ev.get("date", "")
             if d == "Hoy":
-                prev_events.append(ev)
+                if is_same_day:
+                    prev_events.append(ev)
             elif re.match(r'^\d{2}/\d{2}/\d{4}$', d):
                 try:
                     ev_d = datetime.strptime(d, "%d/%m/%Y").date()
@@ -950,6 +967,7 @@ def generate_piñavision_agenda():
     today = now_madrid.date()
     today_str = today.strftime("%d/%m/%Y")
     tomorrow_str = (today + timedelta(days=1)).strftime("%d/%m/%Y")
+    now_minutes = now_madrid.hour * 60 + now_madrid.minute
 
     # Fetch Marca
     marca_html = fetch_url("https://www.marca.com/programacion-tv.html")
@@ -960,13 +978,11 @@ def generate_piñavision_agenda():
         schedule_events = parse_marca_schedule(marca_html, unified_channels, today)
         print(f"Eventos emparejados con Marca: {len(schedule_events)}")
 
-    # Load and merge confirmed events from previous agenda (retention for events when Marca cycles past them)
+    # Enrich confirmed events with channels from previous agenda (retention of stream links)
     prev_events = load_previous_agenda(today)
     if prev_events:
-        retained_count = 0
         enriched_count = 0
         for prev_ev in prev_events:
-            matched = False
             for s_ev in schedule_events:
                 if is_same_event(s_ev, prev_ev, today):
                     existing_hashes = {c["streamId"] for c in s_ev.get("channels", []) if c.get("streamId")}
@@ -975,13 +991,9 @@ def generate_piñavision_agenda():
                         if h and h not in existing_hashes:
                             s_ev["channels"].append(ch)
                             existing_hashes.add(h)
-                    matched = True
                     enriched_count += 1
                     break
-            if not matched:
-                schedule_events.append(prev_ev)
-                retained_count += 1
-        print(f"Persistencia acumulativa de agenda previa: {retained_count} eventos retenidos de Hoy, {enriched_count} enriquecidos.")
+        print(f"Persistencia de canales de agenda previa: {enriched_count} eventos enriquecidos.")
 
     # 1. Integrate ArenaVision events (which have verified dates DD/MM/YYYY)
     filtered_arena_events = []
@@ -1012,9 +1024,9 @@ def generate_piñavision_agenda():
             matched = False
             for s_ev in schedule_events:
                 if is_same_event(s_ev, a_ev, today):
-                    existing_hashes = {c["streamId"] for c in s_ev["channels"]}
-                    for ch in a_ev["channels"]:
-                        if ch["streamId"] not in existing_hashes:
+                    existing_hashes = {c["streamId"] for c in s_ev.get("channels", []) if c.get("streamId")}
+                    for ch in a_ev.get("channels", []):
+                        if ch.get("streamId") and ch["streamId"] not in existing_hashes:
                             s_ev["channels"].append(ch)
                             existing_hashes.add(ch["streamId"])
                     matched = True

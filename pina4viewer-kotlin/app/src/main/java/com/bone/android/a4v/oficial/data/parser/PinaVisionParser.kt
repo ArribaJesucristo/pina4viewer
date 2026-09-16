@@ -55,6 +55,23 @@ object PinaVisionParser {
                         }
                     } catch (_: Exception) {
                     }
+                } else if (date.equals("Hoy", ignoreCase = true) && !lastParsedUpdatedAt.isNullOrBlank()) {
+                    try {
+                        val sdf = java.text.SimpleDateFormat("dd/MM/yyyy", java.util.Locale.getDefault())
+                        sdf.timeZone = java.util.TimeZone.getTimeZone("Europe/Madrid")
+                        val fileDateStr = lastParsedUpdatedAt!!.trim().split(" ")[0]
+                        val fileDate = sdf.parse(fileDateStr)
+                        val cal = java.util.Calendar.getInstance(java.util.TimeZone.getTimeZone("Europe/Madrid"))
+                        cal.set(java.util.Calendar.HOUR_OF_DAY, 0)
+                        cal.set(java.util.Calendar.MINUTE, 0)
+                        cal.set(java.util.Calendar.SECOND, 0)
+                        cal.set(java.util.Calendar.MILLISECOND, 0)
+                        if (fileDate != null && fileDate.before(cal.time)) {
+                            // The entire file's "Hoy" was yesterday or older
+                            continue
+                        }
+                    } catch (_: Exception) {
+                    }
                 }
 
                 val channelsArray = obj.optJSONArray("channels")
