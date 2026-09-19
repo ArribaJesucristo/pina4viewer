@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "19/09/2026 14:00",
+    "updatedAt": "19/09/2026 14:10",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -299,6 +299,18 @@
         "streamId": "4f945b0ba4206fa2676b61e9eaa465ac3dcc8122",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "Jornada 3 - Opción Directa 1 [Comunidad]",
+        "streamId": "882074140fca664e119a43294afa2fb4a64917ef",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Jornada 3 - Opción Directa 2 [Comunidad]",
+        "streamId": "597cca4ef375529aaca0608b43187d99d26ca714",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
       }
     ]
   },
