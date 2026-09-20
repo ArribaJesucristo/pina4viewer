@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/09/2026 18:10",
+    "updatedAt": "20/09/2026 18:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -351,6 +351,12 @@
       {
         "name": "ArenaVision 89 (AV89)",
         "streamId": "86f6e7e5e9c6e7e2ebefe8b4a8e0e9f4ebe7f2f3",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
+      },
+      {
+        "name": "ArenaVision 89 (AV89)",
+        "streamId": "d9a9b8bab699b8bdb4b0b7ebf7bfb6abb4b8adac",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -7796,7 +7802,7 @@
     "channels": [
       {
         "name": "ArenaVision 89 (AV89)",
-        "streamId": "bdcddcded2fddcd9d0d4d38f93dbd2cfd0dcc9c8",
+        "streamId": "d9a9b8bab699b8bdb4b0b7ebf7bfb6abb4b8adac",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
