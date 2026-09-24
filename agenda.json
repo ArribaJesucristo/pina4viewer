@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "24/09/2026 23:50",
+    "updatedAt": "25/09/2026 00:00",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -10,7 +10,7 @@
     "sport": "FUTBOL AMERICANO",
     "competition": "JORNADA 3",
     "time": "02:15",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "DAZN 2 - Opción 1 [Markel]",
@@ -73,7 +73,7 @@
     "sport": "MOTOR",
     "competition": "AZERBAIJAN GP",
     "time": "10:30",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "ArenaVision 51 (AV51)",
@@ -102,7 +102,7 @@
     "sport": "TENIS",
     "competition": "BILLIE JEAN KING CUP",
     "time": "11:00",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "Teledeporte - Opción 1 [Markel]",
@@ -153,7 +153,7 @@
     "sport": "CICLISMO",
     "competition": "CROATIA TOUR",
     "time": "14:00",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "ArenaVision 32 (AV32)",
@@ -166,6 +166,30 @@
         "streamId": "547ab7146a86d6119c9332c011669544720124e3",
         "type": "ACESTREAM",
         "source": "ArenaVision"
+      },
+      {
+        "name": "STAGE 4 - Opción Directa 1 [Comunidad]",
+        "streamId": "48a589dbeab3544662fafd79888aada7d834cfe9",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "STAGE 4 - Opción Directa 2 [Comunidad]",
+        "streamId": "8522af51ae7189b12effabbb448dcb707195ce1a",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "STAGE 4 - Opción Directa 3 [Comunidad]",
+        "streamId": "313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "STAGE 4 - Opción Directa 4 [Comunidad]",
+        "streamId": "62a5750be4d2218b1064f83afaac4770fd92350d",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
       }
     ],
     "id": "pina_65"
@@ -175,7 +199,7 @@
     "sport": "MOTOR",
     "competition": "AZERBAIJAN GP",
     "time": "14:00",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "ArenaVision 51 (AV51)",
@@ -203,7 +227,7 @@
     "sport": "TENIS",
     "competition": "LAVER CUP",
     "time": "14:00",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "ArenaVision 34 (AV34)",
@@ -226,7 +250,7 @@
     "sport": "BALONMANO",
     "competition": "MUNDIAL CLUBES",
     "time": "14:30",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "Esport3 - Opción 1 [Elcano]",
@@ -253,7 +277,7 @@
     "sport": "CICLISMO",
     "competition": "WORLD CHAMPIONSHIP",
     "time": "16:00",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "ArenaVision 32 (AV32)",
@@ -275,7 +299,7 @@
     "sport": "TENIS",
     "competition": "LAVER CUP",
     "time": "16:00",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "ArenaVision 34 (AV34)",
@@ -298,7 +322,7 @@
     "sport": "FUTBOL",
     "competition": "CLASIFICACIÓN EUROPEO SUB 21",
     "time": "17:30",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "Teledeporte - Opción 1 [Markel]",
@@ -350,7 +374,7 @@
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
     "time": "19:00",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "Primera Federación - Opción 1 [Markel]",
@@ -384,7 +408,7 @@
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
     "time": "19:00",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "M+ Baloncesto - Opción 1 [Markel]",
@@ -406,7 +430,7 @@
     "sport": "BALONMANO",
     "competition": "LIGA ASOBAL",
     "time": "19:00",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "Eurosport 2 - Opción 1 [Markel]",
@@ -469,7 +493,7 @@
     "sport": "BALONCESTO",
     "competition": "EUROLEAGUE",
     "time": "19:00",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "ArenaVision 114 (AV114)",
@@ -485,7 +509,7 @@
     "sport": "BALONCESTO",
     "competition": "EUROLEAGUE",
     "time": "19:45",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "ArenaVision 115 (AV115)",
@@ -502,7 +526,7 @@
     "sport": "GOLF",
     "competition": "PRESIDENTS CUP",
     "time": "20:00",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "M+ Golf - Opción 1 [Markel]",
@@ -553,7 +577,7 @@
     "sport": "TENIS",
     "competition": "LAVER CUP",
     "time": "20:00",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "ArenaVision 32 (AV32)",
@@ -576,7 +600,7 @@
     "sport": "TENIS",
     "competition": "LAVER CUP",
     "time": "20:15",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "Teledeporte - Opción 1 [Markel]",
@@ -628,7 +652,7 @@
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
     "time": "20:30",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "LaLiga TV Hypermotion - Opción 1 [Markel]",
@@ -686,7 +710,7 @@
     "sport": "FUTBOL",
     "competition": "LIGA PRIME (APERTURA)",
     "time": "20:30",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "Esport3 - Opción 1 [Elcano]",
@@ -713,7 +737,7 @@
     "sport": "BALONCESTO",
     "competition": "EUROLEAGUE",
     "time": "20:45",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "ArenaVision 114 (AV114)",
@@ -736,7 +760,7 @@
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
     "time": "21:15",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "Primera Federación - Opción 1 [Markel]",
@@ -770,7 +794,7 @@
     "sport": "TENIS",
     "competition": "LAVER CUP",
     "time": "21:30",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "Teledeporte - Opción 1 [Markel]",
@@ -821,7 +845,7 @@
     "sport": "TENIS",
     "competition": "LAVER CUP",
     "time": "22:00",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "ArenaVision 32 (AV32)",
@@ -844,7 +868,7 @@
     "sport": "FUTBOL",
     "competition": "LIGA F",
     "time": "12:00",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "Movistar Plus+ - Opción 1 [Markel]",
@@ -914,7 +938,7 @@
     "sport": "FUTBOL",
     "competition": "LIGA F",
     "time": "12:00",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "DAZN 2 - Opción 1 [Markel]",
@@ -978,7 +1002,7 @@
     "sport": "FUTBOL",
     "competition": "LIGA PRIME (APERTURA)",
     "time": "12:00",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "Teledeporte - Opción 1 [Markel]",
@@ -1030,7 +1054,7 @@
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
     "time": "13:00",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "Primera Federación - Opción 1 [Markel]",
@@ -1046,7 +1070,7 @@
     "sport": "MOTOR",
     "competition": "G.P. AZERBAIYÁN",
     "time": "13:00",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "DAZN F1 - Opción 1 [Markel]",
@@ -1224,7 +1248,7 @@
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
     "time": "14:00",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "LaLiga TV Hypermotion - Opción 1 [Markel]",
@@ -1282,7 +1306,7 @@
     "sport": "GOLF",
     "competition": "PRESIDENTS CUP",
     "time": "14:00",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "M+ Golf - Opción 1 [Markel]",
@@ -1334,7 +1358,7 @@
     "sport": "RUGBY",
     "competition": "PREMIERSHIP",
     "time": "16:00",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "M+ Deportes - Opción 1 [Markel]",
@@ -1404,7 +1428,7 @@
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
     "time": "16:15",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "LaLiga TV Hypermotion - Opción 1 [Markel]",
@@ -1462,7 +1486,7 @@
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
     "time": "16:30",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "Primera Federación - Opción 1 [Markel]",
@@ -1478,7 +1502,7 @@
     "sport": "FUTBOL",
     "competition": "LIGA F",
     "time": "16:30",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "DAZN 1 - Opción 1 [Markel]",
@@ -1554,7 +1578,7 @@
     "sport": "BALONCESTO",
     "competition": "SUPERCOPA FEMENINA",
     "time": "17:15",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "M+ Vamos 2 - Opción 1 [New Loop]",
@@ -1588,7 +1612,7 @@
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
     "time": "18:00",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "M+ Vamos - Opción 1 [Markel]",
@@ -1688,7 +1712,7 @@
     "sport": "FUTBOL",
     "competition": "LIGA F",
     "time": "18:30",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "M+ Vamos 3 - Opción 1 [Elcano]",
@@ -1710,7 +1734,7 @@
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
     "time": "18:30",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "LaLiga TV Hypermotion 2 - Opción 1 [Markel]",
@@ -1750,7 +1774,7 @@
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
     "time": "18:30",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "Gol Play - Opción 1 [Markel]",
@@ -1772,7 +1796,7 @@
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
     "time": "18:45",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "Primera Federación - Opción 1 [Markel]",
@@ -1788,7 +1812,7 @@
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
     "time": "19:30",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "DAZN Baloncesto 2 - Opción 1 [Markel]",
@@ -1810,7 +1834,7 @@
     "sport": "BALONCESTO",
     "competition": "SUPERCOPA FEMENINA",
     "time": "20:00",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "M+ Vamos 2 - Opción 1 [New Loop]",
@@ -1844,7 +1868,7 @@
     "sport": "BOXEO",
     "competition": "PESO PLUMA",
     "time": "20:00",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "DAZN 3 - Opción 1 [Markel]",
@@ -1878,7 +1902,7 @@
     "sport": "FUTBOL",
     "competition": "NATIONS LEAGUE",
     "time": "20:45",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "La 1 - Opción 1 [Markel]",
@@ -1942,7 +1966,7 @@
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
     "time": "21:00",
-    "date": "26/09/2026",
+    "date": "Mañana",
     "channels": [
       {
         "name": "DAZN Baloncesto 3 - Opción 1 [Markel]",
@@ -8906,7 +8930,7 @@
     "channels": [
       {
         "name": "ArenaVision 89 (AV89)",
-        "streamId": "5828393b3718393c3531366a763e372a35392c2d",
+        "streamId": "77071614183716131a1e1945591118051a160302",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
