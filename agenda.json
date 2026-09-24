@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "24/09/2026 08:10",
+    "updatedAt": "24/09/2026 08:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -299,10 +299,10 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Golf - Opción 6 [Markel]",
+        "name": "M+ Golf - Opción 3 [Elcano]",
         "streamId": "8121478d3d3e563ad6b98018bc1c0aeb2f6166eb",
         "type": "ACESTREAM",
-        "source": "Markel"
+        "source": "Elcano"
       },
       {
         "name": "M+ Golf - Opción 5 [RCP]",
@@ -1155,10 +1155,10 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Golf - Opción 6 [Markel]",
+        "name": "M+ Golf - Opción 3 [Elcano]",
         "streamId": "8121478d3d3e563ad6b98018bc1c0aeb2f6166eb",
         "type": "ACESTREAM",
-        "source": "Markel"
+        "source": "Elcano"
       },
       {
         "name": "M+ Golf - Opción 5 [RCP]",
@@ -1643,22 +1643,22 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN F1 - Opción 13 [Markel]",
-        "streamId": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "DAZN F1 - Opción 14 [Markel]",
-        "streamId": "02be332ebead0484a5354fa25e97b6833b8b129e",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "DAZN F1 - Opción 2 [New Loop]",
         "streamId": "30b05bc885d7da9d8b333f9a0345dc9bd7069af8",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "DAZN F1 - Opción 3 [Elcano]",
+        "streamId": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "DAZN F1 - Opción 4 [Elcano]",
+        "streamId": "02be332ebead0484a5354fa25e97b6833b8b129e",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "DAZN F1 - Opción 5 [Elcano]",
@@ -1849,10 +1849,10 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Golf - Opción 6 [Markel]",
+        "name": "M+ Golf - Opción 3 [Elcano]",
         "streamId": "8121478d3d3e563ad6b98018bc1c0aeb2f6166eb",
         "type": "ACESTREAM",
-        "source": "Markel"
+        "source": "Elcano"
       },
       {
         "name": "M+ Golf - Opción 5 [RCP]",
@@ -3171,10 +3171,10 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Golf - Opción 6 [Markel]",
+        "name": "M+ Golf - Opción 3 [Elcano]",
         "streamId": "8121478d3d3e563ad6b98018bc1c0aeb2f6166eb",
         "type": "ACESTREAM",
-        "source": "Markel"
+        "source": "Elcano"
       },
       {
         "name": "M+ Golf - Opción 5 [RCP]",
@@ -4113,18 +4113,6 @@
       {
         "name": "DAZN F1 - Opción 12 [Markel]",
         "streamId": "d65257bb934b73647374224fd62d836815804be2",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "DAZN F1 - Opción 13 [Markel]",
-        "streamId": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "DAZN F1 - Opción 14 [Markel]",
-        "streamId": "02be332ebead0484a5354fa25e97b6833b8b129e",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -5371,12 +5359,6 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Golf - Opción 6 [Markel]",
-        "streamId": "8121478d3d3e563ad6b98018bc1c0aeb2f6166eb",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "M+ Golf - Opción 1 [New Loop]",
         "streamId": "872608e734992db636eb79426802cd08f4029afb",
         "type": "ACESTREAM",
@@ -5419,12 +5401,6 @@
       {
         "name": "M+ Golf 2 - Opción 1 [Markel]",
         "streamId": "597cca4ef375529aaca0608b43187d99d26ca714",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Golf 2 - Opción 2 [Markel]",
-        "streamId": "882074140fca664e119a43294afa2fb4a64917ef",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -9330,7 +9306,7 @@
     "channels": [
       {
         "name": "ArenaVision 89 (AV89)",
-        "streamId": "502031333f1031343d393e627e363f223d312425",
+        "streamId": "bacadbd9d5fadbded7d3d48894dcd5c8d7dbcecf",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
