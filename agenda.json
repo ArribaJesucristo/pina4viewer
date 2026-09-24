@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "24/09/2026 09:10",
+    "updatedAt": "24/09/2026 09:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -299,10 +299,10 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Golf - Opción 3 [Elcano]",
+        "name": "M+ Golf - Opción 6 [Markel]",
         "streamId": "8121478d3d3e563ad6b98018bc1c0aeb2f6166eb",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "M+ Golf - Opción 5 [RCP]",
@@ -1155,10 +1155,10 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Golf - Opción 3 [Elcano]",
+        "name": "M+ Golf - Opción 6 [Markel]",
         "streamId": "8121478d3d3e563ad6b98018bc1c0aeb2f6166eb",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "M+ Golf - Opción 5 [RCP]",
@@ -1849,10 +1849,10 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Golf - Opción 3 [Elcano]",
+        "name": "M+ Golf - Opción 6 [Markel]",
         "streamId": "8121478d3d3e563ad6b98018bc1c0aeb2f6166eb",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "M+ Golf - Opción 5 [RCP]",
@@ -3171,10 +3171,10 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Golf - Opción 3 [Elcano]",
+        "name": "M+ Golf - Opción 6 [Markel]",
         "streamId": "8121478d3d3e563ad6b98018bc1c0aeb2f6166eb",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "M+ Golf - Opción 5 [RCP]",
@@ -5359,6 +5359,12 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Golf - Opción 6 [Markel]",
+        "streamId": "8121478d3d3e563ad6b98018bc1c0aeb2f6166eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Golf - Opción 1 [New Loop]",
         "streamId": "872608e734992db636eb79426802cd08f4029afb",
         "type": "ACESTREAM",
@@ -5401,6 +5407,12 @@
       {
         "name": "M+ Golf 2 - Opción 1 [Markel]",
         "streamId": "597cca4ef375529aaca0608b43187d99d26ca714",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Golf 2 - Opción 2 [Markel]",
+        "streamId": "882074140fca664e119a43294afa2fb4a64917ef",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -9306,7 +9318,7 @@
     "channels": [
       {
         "name": "ArenaVision 89 (AV89)",
-        "streamId": "4a3a2b29250a2b2e27232478642c2538272b3e3f",
+        "streamId": "3949585a5679585d5450570b175f564b54584d4c",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
