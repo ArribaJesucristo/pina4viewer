@@ -338,10 +338,14 @@ def load_arenavision():
                         "source": "ArenaVision"
                     })
             if cols[4] and channels:
+                sport_prefix = cols[2].strip()
+                comp_text = cols[3].strip()
+                if sport_prefix.upper() in ["F1", "MOTOGP"] and sport_prefix.upper() not in comp_text.upper():
+                    comp_text = f"{sport_prefix.upper()} - {comp_text}"
                 arena_events.append({
                     "title": cols[4].replace("-", " vs "),
                     "sport": normalize_sport(cols[2], cols[3]),
-                    "competition": cols[3],
+                    "competition": comp_text if comp_text else cols[3],
                     "time": cols[1].replace(" CET", "").strip(),
                     "date": cols[0],
                     "channels": channels
@@ -868,6 +872,66 @@ def consolidate_events(events, today):
         print(f"Consolidación final: {merged_count} eventos duplicados fusionados con éxito.")
     return consolidated
 
+def is_f1_event(ev):
+    sport = ev.get('sport', '').upper()
+    comp = ev.get('competition', '').upper()
+    title = ev.get('title', '').upper()
+    full = f"{sport} {comp} {title}"
+    if any(k in full for k in ["F1", "FORMULA 1", "FORMULA", "FRMULA 1", "FÓRMULA 1"]):
+        return True
+    if sport == "MOTOR":
+        f1_keywords = [
+            "AZERBAIJAN", "BAKU", "MONZA", "SINGAPORE", "SINGAPUR", "SILVERSTONE",
+            "SUZUKA", "INTERLAGOS", "AUSTIN", "LAS VEGAS", "ABU DHABI", "MELBOURNE",
+            "MONACO", "CATALUNYA", "MONTREAL", "RED BULL RING", "HUNGARORING",
+            "ZANDVOORT", "QATAR", "JEDDAH", "BAHRAIN", "SAKHIR", "SHANGHAI", "MIAMI",
+            "IMOLA", "SPA-FRANCORCHAMPS"
+        ]
+        if any(k in full for k in f1_keywords):
+            if not any(m in full for m in ["MOTOGP", "MOTO GP", "MOTO2", "MOTO3"]):
+                return True
+    return False
+
+def is_motogp_event(ev):
+    sport = ev.get('sport', '').upper()
+    comp = ev.get('competition', '').upper()
+    title = ev.get('title', '').upper()
+    full = f"{sport} {comp} {title}"
+    return any(k in full for k in ["MOTOGP", "MOTO GP", "MOTO2", "MOTO3", "SUPERBIKE"])
+
+def enrich_thematic_channels(events, unified_channels):
+    f1_channels = unified_channels.get("DAZN F1", [])
+    motogp_channels = unified_channels.get("DAZN MotoGP", [])
+
+    enriched_count = 0
+    for ev in events:
+        if is_f1_event(ev) and f1_channels:
+            existing_hashes = {c["streamId"] for c in ev.get("channels", []) if c.get("streamId")}
+            added = 0
+            for ch in f1_channels:
+                if ch.get("streamId") and ch["streamId"] not in existing_hashes:
+                    ev["channels"].append(ch)
+                    existing_hashes.add(ch["streamId"])
+                    added += 1
+            if added > 0:
+                enriched_count += 1
+                print(f"Enriquecido evento F1 '{ev.get('title')}' ({ev.get('competition')}) con {added} opciones de DAZN F1.")
+
+        elif is_motogp_event(ev) and motogp_channels:
+            existing_hashes = {c["streamId"] for c in ev.get("channels", []) if c.get("streamId")}
+            added = 0
+            for ch in motogp_channels:
+                if ch.get("streamId") and ch["streamId"] not in existing_hashes:
+                    ev["channels"].append(ch)
+                    existing_hashes.add(ch["streamId"])
+                    added += 1
+            if added > 0:
+                enriched_count += 1
+                print(f"Enriquecido evento MotoGP '{ev.get('title')}' ({ev.get('competition')}) con {added} opciones de DAZN MotoGP.")
+
+    if enriched_count > 0:
+        print(f"Enriquecimiento temático completado: {enriched_count} eventos complementados con canales 24/7 especializados.")
+
 def load_previous_agenda(today):
     if not os.path.exists(OUTPUT_FILE):
         return []
@@ -1087,6 +1151,9 @@ def generate_piñavision_agenda():
 
     # Consolidate duplicate events across all integrated sources
     schedule_events = consolidate_events(schedule_events, today)
+
+    # Enrich sports with dedicated 24/7 channels (e.g. F1 -> DAZN F1, MotoGP -> DAZN MotoGP)
+    enrich_thematic_channels(schedule_events, unified_channels)
 
     # Re-assign clean IDs
     for idx, ev in enumerate(schedule_events, 1):
