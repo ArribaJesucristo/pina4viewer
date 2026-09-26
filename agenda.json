@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/09/2026 01:10",
+    "updatedAt": "27/09/2026 01:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -399,20 +399,20 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN Baloncesto - Opción 1 [Elcano]",
+        "name": "DAZN Baloncesto - Opción 2 [Markel]",
+        "streamId": "9dd9cd78f0b08097a0ad290606dbbee999709fa5",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN Baloncesto - Opción 3 [Markel]",
         "streamId": "6fbd92735502bdebbf1ea58f4298e49759c0cf07",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "DAZN Baloncesto - Opción 2 [Elcano]",
         "streamId": "2cfbb2cb8923b15b0ef74aba69e8137b0fbbba2e",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "DAZN Baloncesto - Opción 3 [Elcano]",
-        "streamId": "9dd9cd78f0b08097a0ad290606dbbee999709fa5",
         "type": "ACESTREAM",
         "source": "Elcano"
       }
@@ -473,10 +473,10 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN Baloncesto 2 - Opción 1 [Elcano]",
+        "name": "DAZN Baloncesto 2 - Opción 2 [Markel]",
         "streamId": "853129258a5cb51f27829eddb934e58b45978344",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       }
     ]
   },
@@ -490,13 +490,13 @@
     "channels": [
       {
         "name": "DAZN Baloncesto 3 - Opción 1 [Markel]",
-        "streamId": "95125f755562c0ffcb44abd94e338bd65472afea",
+        "streamId": "13d68ecb392251a81489ce75be90388498ecfb91",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "DAZN Baloncesto 3 - Opción 1 [Elcano]",
-        "streamId": "13d68ecb392251a81489ce75be90388498ecfb91",
+        "name": "DAZN Baloncesto 3 - Opción 2 [Elcano]",
+        "streamId": "95125f755562c0ffcb44abd94e338bd65472afea",
         "type": "ACESTREAM",
         "source": "Elcano"
       }
@@ -957,20 +957,20 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN Baloncesto - Opción 1 [Elcano]",
+        "name": "DAZN Baloncesto - Opción 2 [Markel]",
+        "streamId": "9dd9cd78f0b08097a0ad290606dbbee999709fa5",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN Baloncesto - Opción 3 [Markel]",
         "streamId": "6fbd92735502bdebbf1ea58f4298e49759c0cf07",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "DAZN Baloncesto - Opción 2 [Elcano]",
         "streamId": "2cfbb2cb8923b15b0ef74aba69e8137b0fbbba2e",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "DAZN Baloncesto - Opción 3 [Elcano]",
-        "streamId": "9dd9cd78f0b08097a0ad290606dbbee999709fa5",
         "type": "ACESTREAM",
         "source": "Elcano"
       }
@@ -1215,10 +1215,10 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN Baloncesto 2 - Opción 1 [Elcano]",
+        "name": "DAZN Baloncesto 2 - Opción 2 [Markel]",
         "streamId": "853129258a5cb51f27829eddb934e58b45978344",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       }
     ]
   },
@@ -2739,6 +2739,18 @@
         "source": "Markel"
       },
       {
+        "name": "DAZN Baloncesto - Opción 2 [Markel]",
+        "streamId": "9dd9cd78f0b08097a0ad290606dbbee999709fa5",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN Baloncesto - Opción 3 [Markel]",
+        "streamId": "6fbd92735502bdebbf1ea58f4298e49759c0cf07",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "DAZN Baloncesto - Opción 1 [Elcano]",
         "streamId": "6fbd92735502bdebbf1ea58f4298e49759c0cf07",
         "type": "ACESTREAM",
@@ -2779,6 +2791,12 @@
         "source": "Markel"
       },
       {
+        "name": "DAZN Baloncesto 2 - Opción 2 [Markel]",
+        "streamId": "853129258a5cb51f27829eddb934e58b45978344",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "DAZN Baloncesto 2 - Opción 1 [Elcano]",
         "streamId": "853129258a5cb51f27829eddb934e58b45978344",
         "type": "ACESTREAM",
@@ -2802,7 +2820,7 @@
     "channels": [
       {
         "name": "DAZN Baloncesto 3 - Opción 1 [Markel]",
-        "streamId": "95125f755562c0ffcb44abd94e338bd65472afea",
+        "streamId": "13d68ecb392251a81489ce75be90388498ecfb91",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -7764,7 +7782,7 @@
     "channels": [
       {
         "name": "ArenaVision 89 (AV89)",
-        "streamId": "542435373b143530393d3a667a323b2639352021",
+        "streamId": "3a4a5b59557a5b5e57535408145c5548575b4e4f",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
