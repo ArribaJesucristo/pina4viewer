@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/09/2026 04:10",
+    "updatedAt": "27/09/2026 04:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -141,16 +141,16 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 5 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -649,16 +649,16 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 5 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -1137,16 +1137,16 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 5 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -1735,6 +1735,12 @@
       {
         "name": "M+ Deportes - Opción 3 [Markel]",
         "streamId": "cf5327fe9c962a29dfff3868f4349ff2b0b4662f",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 4 [Markel]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3935,12 +3941,6 @@
         "source": "Markel"
       },
       {
-        "name": "Teledeporte - Opción 5 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
@@ -4573,6 +4573,12 @@
       {
         "name": "M+ Deportes - Opción 3 [Markel]",
         "streamId": "cf5327fe9c962a29dfff3868f4349ff2b0b4662f",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 4 [Markel]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -7738,7 +7744,7 @@
     "channels": [
       {
         "name": "ArenaVision 89 (AV89)",
-        "streamId": "37475654587756535a5e5905195158455a564342",
+        "streamId": "027263616d4263666f6b6c302c646d706f637677",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
