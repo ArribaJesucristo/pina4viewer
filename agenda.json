@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "28/09/2026 03:10",
+    "updatedAt": "28/09/2026 03:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -513,12 +513,6 @@
         "source": "Markel"
       },
       {
-        "name": "LaLiga TV Hypermotion - Opción 6 [Markel]",
-        "streamId": "1f75d92098580443857caa95a719103cb83781b0",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "LaLiga TV Hypermotion - Opción 1 [New Loop]",
         "streamId": "60952921b847a9c560741b0d8048a2d8ad194a7f",
         "type": "ACESTREAM",
@@ -527,6 +521,12 @@
       {
         "name": "LaLiga TV Hypermotion - Opción 2 [Elcano]",
         "streamId": "4636ed75106cb00e9c70cc2029edf0a4df7ad73f",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 4 [Elcano]",
+        "streamId": "1f75d92098580443857caa95a719103cb83781b0",
         "type": "ACESTREAM",
         "source": "Elcano"
       },
@@ -1857,12 +1857,6 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN 2 - Opción 8 [Markel]",
-        "streamId": "01ce89b571b6c89bc19ccaafc913d483ac65c61d",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "DAZN 2 - Opción 1 [New Loop]",
         "streamId": "b0eabe0fdd02fdd165896236765a9b753a2ff516",
         "type": "ACESTREAM",
@@ -2045,12 +2039,6 @@
       {
         "name": "LaLiga TV Hypermotion - Opción 5 [Markel]",
         "streamId": "11ede21d726b3ac051a366960c6e89eec3c807b6",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "LaLiga TV Hypermotion - Opción 6 [Markel]",
-        "streamId": "1f75d92098580443857caa95a719103cb83781b0",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -6310,7 +6298,7 @@
     "channels": [
       {
         "name": "ArenaVision 89 (AV89)",
-        "streamId": "cbbbaaa8a48baaafa6a2a5f9e5ada4b9a6aabfbe",
+        "streamId": "bfcfdedcd0ffdedbd2d6d18d91d9d0cdd2decbca",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
