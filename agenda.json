@@ -1,90 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "28/09/2026 16:00",
+    "updatedAt": "28/09/2026 16:10",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "id": "pina_1",
-    "title": "Hurkacz - Shapovalov",
-    "sport": "TENIS",
-    "competition": "ATP CHENGDU",
-    "time": "13:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "M+ Deportes - Opción 1 [Markel]",
-        "streamId": "332d8fdeb9c51385230b8c9448e047ccc4a6355d",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Deportes - Opción 2 [Markel]",
-        "streamId": "af393f93814d03160d48d2730759593b7bea5b47",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Deportes - Opción 1 [New Loop]",
-        "streamId": "acb510858f34c3c6fd5f79395b031abd6885c2b3",
-        "type": "ACESTREAM",
-        "source": "New Loop"
-      },
-      {
-        "name": "M+ Deportes - Opción 2 [Elcano]",
-        "streamId": "cf5327fe9c962a29dfff3868f4349ff2b0b4662f",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Deportes - Opción 3 [Elcano]",
-        "streamId": "c6a824a81b36f6c3529826477caf2ad94b45776d",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Deportes - Opción 4 [Elcano]",
-        "streamId": "6e031aed136bf97d8667fcd5fc49c73256928281",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Deportes - Opción 5 [Elcano]",
-        "streamId": "7f8b4f57bf234510d3f607492508d68167d4b0ab",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Deportes - Opción 7 [Elcano]",
-        "streamId": "d00223931b1854163e24c5c22475015d7d45c112",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Deportes - Opción 8 [RCP]",
-        "streamId": "e5fa927d9a017f4523fdb62774a0aec457985bfa",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ Deportes - Opción 9 [RCP]",
-        "streamId": "8f75fa54b498ce6889068f56f7a343b72bbcfcc0",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ Deportes - Opción 4 [Markel]",
-        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Deportes - Opción 5 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      }
-    ]
   },
   {
     "title": "SEMIFINAL 2",
@@ -121,7 +39,7 @@
     "id": "pina_21"
   },
   {
-    "id": "pina_2",
+    "id": "pina_1",
     "title": "Medvedev - Safiullin",
     "sport": "TENIS",
     "competition": "ATP HANGZHOU",
@@ -191,7 +109,7 @@
     ]
   },
   {
-    "id": "pina_3",
+    "id": "pina_2",
     "title": "Rueda de Prensa Luis de la Fuente",
     "sport": "FUTBOL",
     "competition": "NATIONS LEAGUE",
@@ -243,7 +161,7 @@
     ]
   },
   {
-    "id": "pina_4",
+    "id": "pina_3",
     "title": "CD Leganés - CD Castellón",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -307,7 +225,7 @@
     ]
   },
   {
-    "id": "pina_5",
+    "id": "pina_4",
     "title": "Chicago Bears - Philadelphia Eagles",
     "sport": "FUTBOL AMERICANO",
     "competition": "JORNADA 3",
@@ -371,7 +289,7 @@
     ]
   },
   {
-    "id": "pina_6",
+    "id": "pina_5",
     "title": "Rueda de Prensa Sonia Bermúdez",
     "sport": "FUTBOL",
     "competition": "SELECCIÓN ESPAÑOLA FEMENINA",
@@ -423,7 +341,7 @@
     ]
   },
   {
-    "id": "pina_7",
+    "id": "pina_6",
     "title": "Medvedev - Rublev",
     "sport": "TENIS",
     "competition": "ATP HANGZHOU",
@@ -493,7 +411,7 @@
     ]
   },
   {
-    "id": "pina_8",
+    "id": "pina_7",
     "title": "Barcelona - Montada",
     "sport": "BALONMANO",
     "competition": "MUNDIAL DE CLUBES",
@@ -521,7 +439,7 @@
     ]
   },
   {
-    "id": "pina_9",
+    "id": "pina_8",
     "title": "Dubai - FC Barcelona",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
@@ -591,7 +509,7 @@
     ]
   },
   {
-    "id": "pina_10",
+    "id": "pina_9",
     "title": "Efes - Real Madrid",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
@@ -613,7 +531,7 @@
     ]
   },
   {
-    "id": "pina_11",
+    "id": "pina_10",
     "title": "Valencia Basket - Baskonia",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
@@ -683,7 +601,7 @@
     ]
   },
   {
-    "id": "pina_12",
+    "id": "pina_11",
     "title": "España - Croacia",
     "sport": "FUTBOL",
     "competition": "NATIONS LEAGUE",
@@ -735,7 +653,7 @@
     ]
   },
   {
-    "id": "pina_13",
+    "id": "pina_12",
     "title": "Minnesota Lynx - New York Liberty",
     "sport": "BALONCESTO",
     "competition": "PLAY OFF",
@@ -787,7 +705,7 @@
     ]
   },
   {
-    "id": "pina_14",
+    "id": "pina_13",
     "title": "PAOK - Kids & Us Manresa",
     "sport": "BALONCESTO",
     "competition": "EUROCUP",
@@ -857,7 +775,7 @@
     ]
   },
   {
-    "id": "pina_15",
+    "id": "pina_14",
     "title": "Flensburg - Granollers",
     "sport": "BALONMANO",
     "competition": "EUROPEAN LEAGUE",
@@ -885,7 +803,7 @@
     ]
   },
   {
-    "id": "pina_16",
+    "id": "pina_15",
     "title": "Bàsquet Girona - Emlak Konut",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA FEMENINA",
@@ -913,7 +831,7 @@
     ]
   },
   {
-    "id": "pina_17",
+    "id": "pina_16",
     "title": "Burgos - Cedevita",
     "sport": "BALONCESTO",
     "competition": "EUROCUP",
@@ -929,7 +847,7 @@
     ]
   },
   {
-    "id": "pina_18",
+    "id": "pina_17",
     "title": "La Laguna Tenerife - Turk Telekom",
     "sport": "BALONCESTO",
     "competition": "EUROCUP",
@@ -951,7 +869,7 @@
     ]
   },
   {
-    "id": "pina_19",
+    "id": "pina_18",
     "title": "Argentina – Bolivia",
     "sport": "FUTBOL",
     "competition": "AMISTOSO INTERNACIONAL",
@@ -1021,7 +939,7 @@
     ]
   },
   {
-    "id": "pina_20",
+    "id": "pina_19",
     "title": "Hapoel Tel Aviv - Real Madrid",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
@@ -1085,6 +1003,34 @@
       {
         "name": "M+ Vamos - Opción 6 [Elcano]",
         "streamId": "7a053fc56fc93f42ec656382408e647055110e3e",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      }
+    ]
+  },
+  {
+    "id": "pina_20",
+    "title": "Barcelona - Veszprem",
+    "sport": "BALONMANO",
+    "competition": "MUNDIAL DE CLUBES",
+    "time": "19:00",
+    "date": "01/10/2026",
+    "channels": [
+      {
+        "name": "Esport3 - Opción 1 [Elcano]",
+        "streamId": "8f59ce96e4c902ba2f5193af07546d7ff17fc3bc",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Esport3 - Opción 2 [Elcano]",
+        "streamId": "21bc11d195f5753c396e390c215952d21541d04d",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Esport3 - Opción 3 [Elcano]",
+        "streamId": "ed6524f8f73c30cf102fde66f2cb520f4b5842e3",
         "type": "ACESTREAM",
         "source": "Elcano"
       }
@@ -6514,7 +6460,7 @@
     "channels": [
       {
         "name": "ArenaVision 89 (AV89)",
-        "streamId": "f08091939fb091949d999ec2de969f829d918485",
+        "streamId": "a9d9c8cac6e9c8cdc4c0c79b87cfc6dbc4c8dddc",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
