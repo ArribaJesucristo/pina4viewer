@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "30/09/2026 08:10",
+    "updatedAt": "30/09/2026 08:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -200,25 +200,7 @@
       },
       {
         "name": "Teledeporte - Opción 2 [Markel]",
-        "streamId": "b0d1489c9f3239349665ad5ab423363f2b02e5ae",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 3 [Markel]",
         "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 5 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -227,6 +209,24 @@
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 3 [Elcano]",
+        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Teledeporte - Opción 5 [Elcano]",
+        "streamId": "b0d1489c9f3239349665ad5ab423363f2b02e5ae",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -312,25 +312,7 @@
       },
       {
         "name": "Teledeporte - Opción 2 [Markel]",
-        "streamId": "b0d1489c9f3239349665ad5ab423363f2b02e5ae",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 3 [Markel]",
         "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 5 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -339,6 +321,24 @@
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 3 [Elcano]",
+        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Teledeporte - Opción 5 [Elcano]",
+        "streamId": "b0d1489c9f3239349665ad5ab423363f2b02e5ae",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -363,10 +363,10 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Baloncesto - Opción 2 [Markel]",
+        "name": "M+ Baloncesto - Opción 1 [Elcano]",
         "streamId": "34b91125bd752462f1eca2d8d52f5f40fa761aa0",
         "type": "ACESTREAM",
-        "source": "Markel"
+        "source": "Elcano"
       }
     ]
   },
@@ -386,25 +386,7 @@
       },
       {
         "name": "Teledeporte - Opción 2 [Markel]",
-        "streamId": "b0d1489c9f3239349665ad5ab423363f2b02e5ae",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 3 [Markel]",
         "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 5 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -413,6 +395,24 @@
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 3 [Elcano]",
+        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Teledeporte - Opción 5 [Elcano]",
+        "streamId": "b0d1489c9f3239349665ad5ab423363f2b02e5ae",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -652,25 +652,7 @@
       },
       {
         "name": "Teledeporte - Opción 2 [Markel]",
-        "streamId": "b0d1489c9f3239349665ad5ab423363f2b02e5ae",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 3 [Markel]",
         "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 5 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -679,6 +661,24 @@
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 3 [Elcano]",
+        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Teledeporte - Opción 5 [Elcano]",
+        "streamId": "b0d1489c9f3239349665ad5ab423363f2b02e5ae",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -2648,25 +2648,7 @@
       },
       {
         "name": "Teledeporte - Opción 2 [Markel]",
-        "streamId": "b0d1489c9f3239349665ad5ab423363f2b02e5ae",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 3 [Markel]",
         "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 5 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2675,6 +2657,24 @@
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 3 [Elcano]",
+        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Teledeporte - Opción 4 [Elcano]",
+        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Teledeporte - Opción 5 [Elcano]",
+        "streamId": "b0d1489c9f3239349665ad5ab423363f2b02e5ae",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -4395,10 +4395,10 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Baloncesto - Opción 2 [Markel]",
+        "name": "M+ Baloncesto - Opción 1 [Elcano]",
         "streamId": "34b91125bd752462f1eca2d8d52f5f40fa761aa0",
         "type": "ACESTREAM",
-        "source": "Markel"
+        "source": "Elcano"
       }
     ]
   },
@@ -4957,10 +4957,10 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Baloncesto - Opción 2 [Markel]",
+        "name": "M+ Baloncesto - Opción 1 [Elcano]",
         "streamId": "34b91125bd752462f1eca2d8d52f5f40fa761aa0",
         "type": "ACESTREAM",
-        "source": "Markel"
+        "source": "Elcano"
       }
     ]
   },
@@ -7188,25 +7188,7 @@
       },
       {
         "name": "Teledeporte - Opción 2 [Markel]",
-        "streamId": "b0d1489c9f3239349665ad5ab423363f2b02e5ae",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 3 [Markel]",
         "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 4 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "Teledeporte - Opción 5 [Markel]",
-        "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -7785,12 +7767,6 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Baloncesto - Opción 2 [Markel]",
-        "streamId": "34b91125bd752462f1eca2d8d52f5f40fa761aa0",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "M+ Baloncesto - Opción 1 [Elcano]",
         "streamId": "34b91125bd752462f1eca2d8d52f5f40fa761aa0",
         "type": "ACESTREAM",
@@ -8017,12 +7993,6 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Deportes 3 - Opción 2 [Markel]",
-        "streamId": "84aed52c5deb78f58595d88250e7a2bd04dfd810",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "M+ Deportes 3 - Opción 1 [New Loop]",
         "streamId": "39fefdecfc953dcf6e7c589739bf486c2e605ed0",
         "type": "ACESTREAM",
@@ -8083,12 +8053,6 @@
       {
         "name": "M+ Deportes 4 - Opción 2 [Markel]",
         "streamId": "2a5d90651e212106434edea5bfbba1a843b7b97c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Deportes 4 - Opción 3 [Markel]",
-        "streamId": "7bede102385c65a545db531af476ef18c31f6258",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -11044,7 +11008,7 @@
     "channels": [
       {
         "name": "ArenaVision 89 (AV89)",
-        "streamId": "a8d8c9cbc7e8c9ccc5c1c69a86cec7dac5c9dcdd",
+        "streamId": "aedecfcdc1eecfcac3c7c09c80c8c1dcc3cfdadb",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
