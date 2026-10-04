@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "04/10/2026 07:10",
+    "updatedAt": "04/10/2026 07:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -344,12 +344,6 @@
       },
       {
         "name": "DAZN F1 - Opción 17 [Markel]",
-        "streamId": "20086a76248efe8d5230c15d41c69bae8fa6381c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "DAZN F1 - Opción 18 [Markel]",
         "streamId": "d719181097d256073844390b3e094fbcb1bceaa4",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -363,6 +357,12 @@
       {
         "name": "DAZN F1 - Opción 7 [Elcano]",
         "streamId": "895d08633bb22c2573281655cf3ca44de476cc73",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "DAZN F1 - Opción 9 [Elcano]",
+        "streamId": "20086a76248efe8d5230c15d41c69bae8fa6381c",
         "type": "ACESTREAM",
         "source": "Elcano"
       },
@@ -2918,12 +2918,6 @@
       },
       {
         "name": "DAZN F1 - Opción 17 [Markel]",
-        "streamId": "20086a76248efe8d5230c15d41c69bae8fa6381c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "DAZN F1 - Opción 18 [Markel]",
         "streamId": "d719181097d256073844390b3e094fbcb1bceaa4",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -5483,12 +5477,6 @@
       {
         "name": "M+ Deportes 6 - Opción 1 [Markel]",
         "streamId": "8f982a0d6e3196c12d0034142b65008321150f7c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Deportes 6 - Opción 2 [Markel]",
-        "streamId": "765f6a743bcfde948418aaf0de6e66de6a9fbaa6",
         "type": "ACESTREAM",
         "source": "Markel"
       },
