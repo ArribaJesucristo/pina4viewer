@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "04/10/2026 14:50",
+    "updatedAt": "04/10/2026 15:00",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -1491,6 +1491,18 @@
     "date": "Hoy",
     "channels": [
       {
+        "name": "M+ Vamos 3 - Opción 1 [Elcano]",
+        "streamId": "a9299052e9a16e5e2924e1fdd00b877c374f9e96",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "M+ Vamos 3 - Opción 2 [Elcano]",
+        "streamId": "837883625d40e1eb5566eefaf74811046491f53a",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
         "name": "Movistar Plus+ - Opción 1 [Markel]",
         "streamId": "8c67cdb5ba81976662c3a67984a9545d9cfb0f70",
         "type": "ACESTREAM",
@@ -1601,18 +1613,6 @@
     "date": "Hoy",
     "channels": [
       {
-        "name": "M+ Vamos 3 - Opción 1 [Elcano]",
-        "streamId": "a9299052e9a16e5e2924e1fdd00b877c374f9e96",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Vamos 3 - Opción 2 [Elcano]",
-        "streamId": "837883625d40e1eb5566eefaf74811046491f53a",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
         "name": "Movistar Plus+ - Opción 1 [Markel]",
         "streamId": "8c67cdb5ba81976662c3a67984a9545d9cfb0f70",
         "type": "ACESTREAM",
@@ -1637,10 +1637,10 @@
         "source": "Markel"
       },
       {
-        "name": "Movistar Plus+ - Opción 1 [Elcano]",
+        "name": "Movistar Plus+ - Opción 5 [Markel]",
         "streamId": "ed74406ccdb3c21941b919db6bffca7f1de015bb",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "Movistar Plus+ - Opción 3 [Elcano]",
@@ -1671,6 +1671,18 @@
         "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "M+ Vamos 3 - Opción 1 [Elcano]",
+        "streamId": "a9299052e9a16e5e2924e1fdd00b877c374f9e96",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "M+ Vamos 3 - Opción 2 [Elcano]",
+        "streamId": "837883625d40e1eb5566eefaf74811046491f53a",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       }
     ]
   },
