@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "04/10/2026 10:20",
+    "updatedAt": "04/10/2026 10:30",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -4866,6 +4866,28 @@
   },
   {
     "id": "85",
+    "title": "M+ Baloncesto 3",
+    "sport": "DIRECTO 24/7",
+    "competition": "CANALES DEPORTIVOS",
+    "time": "",
+    "date": "24/7",
+    "channels": [
+      {
+        "name": "M+ Baloncesto 3 - Opción 1 [Markel]",
+        "streamId": "7b0193004089d4d29821a5cdf17f407d0d192314",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Baloncesto 3 - Opción 1 [Elcano]",
+        "streamId": "7b0193004089d4d29821a5cdf17f407d0d192314",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      }
+    ]
+  },
+  {
+    "id": "86",
     "title": "M+ Deportes",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4959,7 +4981,7 @@
     ]
   },
   {
-    "id": "86",
+    "id": "87",
     "title": "M+ Deportes 2",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5047,7 +5069,7 @@
     ]
   },
   {
-    "id": "87",
+    "id": "88",
     "title": "M+ Deportes 3",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5117,7 +5139,7 @@
     ]
   },
   {
-    "id": "88",
+    "id": "89",
     "title": "M+ Deportes 4",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5175,7 +5197,7 @@
     ]
   },
   {
-    "id": "89",
+    "id": "90",
     "title": "M+ Deportes 5",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5227,7 +5249,7 @@
     ]
   },
   {
-    "id": "90",
+    "id": "91",
     "title": "M+ Deportes 6",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5273,7 +5295,7 @@
     ]
   },
   {
-    "id": "91",
+    "id": "92",
     "title": "M+ Deportes 7",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5319,7 +5341,7 @@
     ]
   },
   {
-    "id": "92",
+    "id": "93",
     "title": "Gol Play",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5341,7 +5363,7 @@
     ]
   },
   {
-    "id": "93",
+    "id": "94",
     "title": "M+ Acción",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5357,7 +5379,7 @@
     ]
   },
   {
-    "id": "94",
+    "id": "95",
     "title": "M+ Cine Español",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5373,7 +5395,7 @@
     ]
   },
   {
-    "id": "95",
+    "id": "96",
     "title": "M+ Clásicos",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5389,7 +5411,7 @@
     ]
   },
   {
-    "id": "96",
+    "id": "97",
     "title": "M+ Comedia",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5411,7 +5433,7 @@
     ]
   },
   {
-    "id": "97",
+    "id": "98",
     "title": "M+ Documentales",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5433,7 +5455,7 @@
     ]
   },
   {
-    "id": "98",
+    "id": "99",
     "title": "M+ Drama",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5449,7 +5471,7 @@
     ]
   },
   {
-    "id": "99",
+    "id": "100",
     "title": "M+ Estrenos",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5471,7 +5493,7 @@
     ]
   },
   {
-    "id": "100",
+    "id": "101",
     "title": "M+ Originales",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5493,7 +5515,7 @@
     ]
   },
   {
-    "id": "101",
+    "id": "102",
     "title": "M+ Hits",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5515,7 +5537,7 @@
     ]
   },
   {
-    "id": "102",
+    "id": "103",
     "title": "M+ Vamos 2",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5549,7 +5571,7 @@
     ]
   },
   {
-    "id": "103",
+    "id": "104",
     "title": "M+ Vamos 3",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5571,7 +5593,7 @@
     ]
   },
   {
-    "id": "104",
+    "id": "105",
     "title": "M+ Deportes 8",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5599,7 +5621,7 @@
     ]
   },
   {
-    "id": "105",
+    "id": "106",
     "title": "DAZN 1 Italia",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5615,7 +5637,7 @@
     ]
   },
   {
-    "id": "106",
+    "id": "107",
     "title": "Gol TV",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5631,7 +5653,7 @@
     ]
   },
   {
-    "id": "107",
+    "id": "108",
     "title": "Real Madrid TV",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5653,7 +5675,7 @@
     ]
   },
   {
-    "id": "108",
+    "id": "109",
     "title": "M+ CINE ESPAnOL",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5669,7 +5691,7 @@
     ]
   },
   {
-    "id": "109",
+    "id": "110",
     "title": "M+ COMEDIA",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5685,7 +5707,7 @@
     ]
   },
   {
-    "id": "110",
+    "id": "111",
     "title": "M+ DRAMA",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5701,7 +5723,7 @@
     ]
   },
   {
-    "id": "111",
+    "id": "112",
     "title": "M+ Indie",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5717,7 +5739,7 @@
     ]
   },
   {
-    "id": "112",
+    "id": "113",
     "title": "M+ Romance",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5733,7 +5755,7 @@
     ]
   },
   {
-    "id": "113",
+    "id": "114",
     "title": "M+ Wéstern",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5749,7 +5771,7 @@
     ]
   },
   {
-    "id": "114",
+    "id": "115",
     "title": "RFEF TV",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -5777,22 +5799,6 @@
       {
         "name": "RFEF TV - Opción 4 [Elcano]",
         "streamId": "7b742628b9f7e82902bdbc1ff92eba1988875cfc",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      }
-    ]
-  },
-  {
-    "id": "115",
-    "title": "M+ Baloncesto 3",
-    "sport": "DIRECTO 24/7",
-    "competition": "CANALES DEPORTIVOS",
-    "time": "",
-    "date": "24/7",
-    "channels": [
-      {
-        "name": "M+ Baloncesto 3 - Opción 1 [Elcano]",
-        "streamId": "7b0193004089d4d29821a5cdf17f407d0d192314",
         "type": "ACESTREAM",
         "source": "Elcano"
       }
