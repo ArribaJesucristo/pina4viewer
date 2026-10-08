@@ -86,7 +86,7 @@ object StreamLauncher {
         val uri = Uri.parse(uriString)
 
         val isAceInstalled = AceStreamInstallerHelper.isAceStreamInstalled(context)
-        val isWiseplayInstalled = isAppInstalled(context, PACKAGE_WISEPLAY)
+        val isWiseplayInstalled = WiseplayInstallerHelper.isWiseplayInstalled(context)
 
         // Si ni AceStream ni Wiseplay están instalados, abrir instalador directo en 1 clic
         if (!isAceInstalled && !isWiseplayInstalled) {

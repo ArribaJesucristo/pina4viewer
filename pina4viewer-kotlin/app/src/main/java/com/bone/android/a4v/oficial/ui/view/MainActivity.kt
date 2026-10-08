@@ -698,7 +698,7 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             R.id.menu_software -> {
-                showSoftwareDialog()
+                com.bone.android.a4v.oficial.util.WiseplayInstallerHelper.promptInstallDialog(this, force = true)
                 true
             }
             R.id.menu_vpn, R.id.menu_vpn_settings -> {

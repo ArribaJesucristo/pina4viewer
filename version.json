@@ -1,9 +1,11 @@
 {
-  "versionCode": 2043,
-  "versionName": "8.4.3",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.3/pina4viewer-v8.4.3.apk",
+  "versionCode": 2044,
+  "versionName": "8.4.4",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.4/pina4viewer-v8.4.4.apk",
   "acestreamAtvUrl": "https://download.acestream.media/products/android-tv/acestream-core/armv7/latest",
   "acestreamMobileUrl": "https://download.acestream.media/products/android-tv/acestream-core/armv7/latest",
+  "wiseplayTvUrl": "https://static.wiseplay.tv/files/wiseplay-tv-latest.apk",
+  "wiseplayMobileUrl": "https://static.wiseplay.tv/files/wiseplay-latest.apk",
   "psiphonUrl": "https://psiphon.ca/PsiphonAndroid.apk",
-  "changelog": "- Corregido el resaltado simultaneo en la lista de canales del dialogo\n- Foco dorado individual por elemento al navegar con el mando de TV (D-Pad)"
+  "changelog": "- Instalador directo de Wiseplay para Android TV y Fire TV sin pasar por tiendas\n- Integracion de reproduccion limpia en Wiseplay para esquivar bloqueos Prime de AceStream\n- Enlace directo a la web oficial y descarga automatica de la version mas reciente"
 }
