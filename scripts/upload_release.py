@@ -31,7 +31,7 @@ def main():
     with open("version.json", "r", encoding="utf-8") as f:
         vinfo = json.load(f)
     
-    version_name = vinfo.get("versionName", "8.4.4")
+    version_name = vinfo.get("versionName", "8.4.3")
     tag = f"v{version_name}"
     name = f"{tag}: Instalador oficial de Wiseplay y mejoras para Android TV y Fire TV"
     body = f"### Novedades en {tag}\n\n{vinfo.get('changelog', '')}"
