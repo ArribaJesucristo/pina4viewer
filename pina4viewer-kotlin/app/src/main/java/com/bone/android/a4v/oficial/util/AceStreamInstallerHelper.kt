@@ -29,7 +29,7 @@ object AceStreamInstallerHelper {
 
     // Default fallback direct download URLs (Ace Stream Pro is universal and auto-updates)
     private const val DEFAULT_ATV_URL = "https://download.acestream.media/products/android-tv/acestream-core/armv7/latest"
-    private const val DEFAULT_MOBILE_URL = "https://android.acestream.net/download/apk"
+    private const val DEFAULT_MOBILE_URL = "https://download.acestream.media/products/android-tv/acestream-core/armv7/latest"
 
     // Recognized AceStream package names
     val TV_PACKAGES = listOf(
