@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "10/10/2026 01:10",
+    "updatedAt": "10/10/2026 01:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -62,12 +62,6 @@
       },
       {
         "name": "M+ Vamos - Opción 9 [Markel]",
-        "streamId": "0cd11c1f51b84ebe9954496b3ef9b6aeccf7307c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Vamos - Opción 10 [Markel]",
         "streamId": "837883625d40e1eb5566eefaf74811046491f53a",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -95,6 +89,12 @@
         "streamId": "866a8af8faacf8fc9eb997ab5a68b4dfee4edc77",
         "type": "ACESTREAM",
         "source": "Elcano"
+      },
+      {
+        "name": "M+ Vamos - Opción 9 [Markel]",
+        "streamId": "0cd11c1f51b84ebe9954496b3ef9b6aeccf7307c",
+        "type": "ACESTREAM",
+        "source": "Markel"
       }
     ]
   },
@@ -634,12 +634,6 @@
       },
       {
         "name": "M+ Vamos - Opción 9 [Markel]",
-        "streamId": "0cd11c1f51b84ebe9954496b3ef9b6aeccf7307c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Vamos - Opción 10 [Markel]",
         "streamId": "837883625d40e1eb5566eefaf74811046491f53a",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -667,6 +661,12 @@
         "streamId": "866a8af8faacf8fc9eb997ab5a68b4dfee4edc77",
         "type": "ACESTREAM",
         "source": "Elcano"
+      },
+      {
+        "name": "M+ Vamos - Opción 9 [Markel]",
+        "streamId": "0cd11c1f51b84ebe9954496b3ef9b6aeccf7307c",
+        "type": "ACESTREAM",
+        "source": "Markel"
       }
     ]
   },
@@ -704,13 +704,13 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
-        "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
+        "streamId": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN MotoGP - Opción 6 [Markel]",
-        "streamId": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
+        "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -916,7 +916,7 @@
       },
       {
         "name": "DAZN F1 - Opción 12 [Markel]",
-        "streamId": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
+        "streamId": "02be332ebead0484a5354fa25e97b6833b8b129e",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -928,7 +928,7 @@
       },
       {
         "name": "DAZN F1 - Opción 14 [Markel]",
-        "streamId": "02be332ebead0484a5354fa25e97b6833b8b129e",
+        "streamId": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -1145,13 +1145,13 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
-        "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
+        "streamId": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN MotoGP - Opción 6 [Markel]",
-        "streamId": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
+        "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -1548,12 +1548,6 @@
       },
       {
         "name": "M+ Vamos - Opción 9 [Markel]",
-        "streamId": "0cd11c1f51b84ebe9954496b3ef9b6aeccf7307c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Vamos - Opción 10 [Markel]",
         "streamId": "837883625d40e1eb5566eefaf74811046491f53a",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -1581,6 +1575,12 @@
         "streamId": "866a8af8faacf8fc9eb997ab5a68b4dfee4edc77",
         "type": "ACESTREAM",
         "source": "Elcano"
+      },
+      {
+        "name": "M+ Vamos - Opción 9 [Markel]",
+        "streamId": "0cd11c1f51b84ebe9954496b3ef9b6aeccf7307c",
+        "type": "ACESTREAM",
+        "source": "Markel"
       },
       {
         "name": "ArenaVision 13 (AV13)",
@@ -1746,7 +1746,7 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN F1 - Opción 12 [Markel]",
+        "name": "DAZN F1 - Opción 14 [Markel]",
         "streamId": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -2453,13 +2453,13 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
-        "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
+        "streamId": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN MotoGP - Opción 6 [Markel]",
-        "streamId": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
+        "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3608,13 +3608,13 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
-        "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
+        "streamId": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN MotoGP - Opción 6 [Markel]",
-        "streamId": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
+        "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3684,13 +3684,13 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
-        "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
+        "streamId": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN MotoGP - Opción 6 [Markel]",
-        "streamId": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
+        "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3760,13 +3760,13 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
-        "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
+        "streamId": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN MotoGP - Opción 6 [Markel]",
-        "streamId": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
+        "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3860,12 +3860,6 @@
       },
       {
         "name": "M+ Vamos - Opción 9 [Markel]",
-        "streamId": "0cd11c1f51b84ebe9954496b3ef9b6aeccf7307c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Vamos - Opción 10 [Markel]",
         "streamId": "837883625d40e1eb5566eefaf74811046491f53a",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -4378,12 +4372,6 @@
       },
       {
         "name": "M+ Vamos - Opción 9 [Markel]",
-        "streamId": "0cd11c1f51b84ebe9954496b3ef9b6aeccf7307c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Vamos - Opción 10 [Markel]",
         "streamId": "837883625d40e1eb5566eefaf74811046491f53a",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -4490,7 +4478,7 @@
       },
       {
         "name": "DAZN F1 - Opción 12 [Markel]",
-        "streamId": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
+        "streamId": "02be332ebead0484a5354fa25e97b6833b8b129e",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4502,7 +4490,7 @@
       },
       {
         "name": "DAZN F1 - Opción 14 [Markel]",
-        "streamId": "02be332ebead0484a5354fa25e97b6833b8b129e",
+        "streamId": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4690,7 +4678,7 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN F1 - Opción 12 [Markel]",
+        "name": "DAZN F1 - Opción 14 [Markel]",
         "streamId": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -6380,24 +6368,12 @@
       },
       {
         "name": "M+ Deportes - Opción 3 [Markel]",
-        "streamId": "6e031aed136bf97d8667fcd5fc49c73256928281",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Deportes - Opción 4 [Markel]",
         "streamId": "7f8b4f57bf234510d3f607492508d68167d4b0ab",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "M+ Deportes - Opción 5 [Markel]",
-        "streamId": "c6a824a81b36f6c3529826477caf2ad94b45776d",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Deportes - Opción 6 [Markel]",
+        "name": "M+ Deportes - Opción 4 [Markel]",
         "streamId": "cf5327fe9c962a29dfff3868f4349ff2b0b4662f",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -6407,6 +6383,18 @@
         "streamId": "acb510858f34c3c6fd5f79395b031abd6885c2b3",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "M+ Deportes - Opción 3 [Elcano]",
+        "streamId": "c6a824a81b36f6c3529826477caf2ad94b45776d",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "M+ Deportes - Opción 4 [Elcano]",
+        "streamId": "6e031aed136bf97d8667fcd5fc49c73256928281",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "M+ Deportes - Opción 7 [Elcano]",
@@ -6618,12 +6606,6 @@
       },
       {
         "name": "M+ Vamos - Opción 9 [Markel]",
-        "streamId": "0cd11c1f51b84ebe9954496b3ef9b6aeccf7307c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Vamos - Opción 10 [Markel]",
         "streamId": "837883625d40e1eb5566eefaf74811046491f53a",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -7672,7 +7654,7 @@
       },
       {
         "name": "DAZN F1 - Opción 12 [Markel]",
-        "streamId": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
+        "streamId": "02be332ebead0484a5354fa25e97b6833b8b129e",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -7684,7 +7666,7 @@
       },
       {
         "name": "DAZN F1 - Opción 14 [Markel]",
-        "streamId": "02be332ebead0484a5354fa25e97b6833b8b129e",
+        "streamId": "f8b0eae8fda973cf426311541d1668aa592f0a8c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -7868,13 +7850,13 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
-        "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
+        "streamId": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN MotoGP - Opción 6 [Markel]",
-        "streamId": "c53bdb3be55d12c5188d25085f1bb16911c15cea",
+        "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -9114,12 +9096,6 @@
       },
       {
         "name": "M+ Vamos - Opción 9 [Markel]",
-        "streamId": "0cd11c1f51b84ebe9954496b3ef9b6aeccf7307c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Vamos - Opción 10 [Markel]",
         "streamId": "837883625d40e1eb5566eefaf74811046491f53a",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -9890,24 +9866,12 @@
       },
       {
         "name": "M+ Deportes - Opción 3 [Markel]",
-        "streamId": "6e031aed136bf97d8667fcd5fc49c73256928281",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Deportes - Opción 4 [Markel]",
         "streamId": "7f8b4f57bf234510d3f607492508d68167d4b0ab",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "M+ Deportes - Opción 5 [Markel]",
-        "streamId": "c6a824a81b36f6c3529826477caf2ad94b45776d",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Deportes - Opción 6 [Markel]",
+        "name": "M+ Deportes - Opción 4 [Markel]",
         "streamId": "cf5327fe9c962a29dfff3868f4349ff2b0b4662f",
         "type": "ACESTREAM",
         "source": "Markel"
