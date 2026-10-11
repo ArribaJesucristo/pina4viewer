@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "11/10/2026 16:10",
+    "updatedAt": "11/10/2026 16:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -457,6 +457,18 @@
       {
         "name": "Alemania (Finales) - Opción Directa 7 [Comunidad]",
         "streamId": "af393f93814d03160d48d2730759593b7bea5b47",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Alemania (Finales) - Opción Directa 8 [Comunidad]",
+        "streamId": "a4cbadd19442b800727be713270fa9c917cc8582",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Alemania (Finales) - Opción Directa 9 [Comunidad]",
+        "streamId": "43c549e5781f5a923b76f8f29cde122b5be164eb",
         "type": "ACESTREAM",
         "source": "Comunidad"
       }
@@ -1077,6 +1089,30 @@
         "streamId": "5a272a468eaf25feb032e2c5d377c6276b2299c7",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "Chartres-Tours (216.2 km) - Opción Directa 1 [Comunidad]",
+        "streamId": "48a589dbeab3544662fafd79888aada7d834cfe9",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Chartres-Tours (216.2 km) - Opción Directa 2 [Comunidad]",
+        "streamId": "8522af51ae7189b12effabbb448dcb707195ce1a",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Chartres-Tours (216.2 km) - Opción Directa 3 [Comunidad]",
+        "streamId": "313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Chartres-Tours (216.2 km) - Opción Directa 4 [Comunidad]",
+        "streamId": "62a5750be4d2218b1064f83afaac4770fd92350d",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
       }
     ]
   },
