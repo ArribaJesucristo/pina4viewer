@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "11/10/2026 21:10",
+    "updatedAt": "11/10/2026 21:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -329,10 +329,10 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN Baloncesto 3 - Opción 1 [Elcano]",
+        "name": "DAZN Baloncesto 3 - Opción 2 [Markel]",
         "streamId": "13d68ecb392251a81489ce75be90388498ecfb91",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       }
     ]
   },
@@ -2569,6 +2569,12 @@
       {
         "name": "DAZN Baloncesto 3 - Opción 1 [Markel]",
         "streamId": "95125f755562c0ffcb44abd94e338bd65472afea",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN Baloncesto 3 - Opción 2 [Markel]",
+        "streamId": "13d68ecb392251a81489ce75be90388498ecfb91",
         "type": "ACESTREAM",
         "source": "Markel"
       },
