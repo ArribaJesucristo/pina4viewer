@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "12/10/2026 10:50",
+    "updatedAt": "12/10/2026 11:00",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -20,27 +20,27 @@
       },
       {
         "name": "M+ Deportes 3 - Opción 2 [Markel]",
+        "streamId": "e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes 3 - Opción 3 [Markel]",
+        "streamId": "d448a45840bfd60678abb2a45dd6044c9c8d11f8",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes 3 - Opción 4 [Markel]",
         "streamId": "f4d9011721fad5098febbe4d7c078a582e176a01",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "M+ Deportes 3 - Opción 2 [Elcano]",
+        "name": "M+ Deportes 3 - Opción 5 [Markel]",
         "streamId": "84aed52c5deb78f58595d88250e7a2bd04dfd810",
         "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Deportes 3 - Opción 4 [Elcano]",
-        "streamId": "e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Deportes 3 - Opción 5 [Elcano]",
-        "streamId": "d448a45840bfd60678abb2a45dd6044c9c8d11f8",
-        "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "M+ Deportes 3 - Opción 6 [Elcano]",
@@ -3823,6 +3823,12 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Deportes 2 - Opción 7 [Markel]",
+        "streamId": "8cd8fd69c6755ec452e9e74b33a0d1a653452191",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Deportes 2 - Opción 1 [New Loop]",
         "streamId": "3afe1af18f8ff78e9946856911b00c67477052b5",
         "type": "ACESTREAM",
@@ -3888,7 +3894,25 @@
       },
       {
         "name": "M+ Deportes 3 - Opción 2 [Markel]",
+        "streamId": "e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes 3 - Opción 3 [Markel]",
+        "streamId": "d448a45840bfd60678abb2a45dd6044c9c8d11f8",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes 3 - Opción 4 [Markel]",
         "streamId": "f4d9011721fad5098febbe4d7c078a582e176a01",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes 3 - Opción 5 [Markel]",
+        "streamId": "84aed52c5deb78f58595d88250e7a2bd04dfd810",
         "type": "ACESTREAM",
         "source": "Markel"
       },
