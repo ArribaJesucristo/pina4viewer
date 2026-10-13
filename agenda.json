@@ -1,193 +1,11 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "13/10/2026 18:50",
+    "updatedAt": "13/10/2026 19:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
     "id": "pina_1",
-    "title": "At. Madrid - Manchester Utd.",
-    "sport": "FUTBOL",
-    "competition": "YOUTH LEAGUE",
-    "time": "16:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "M+ Liga de Campeones - Opción 1 [Markel]",
-        "streamId": "c16b4fab1f724c94cad92081cbb7fc7c6fe8a2cc",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones - Opción 2 [Markel]",
-        "streamId": "778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones - Opción 3 [Markel]",
-        "streamId": "afbf2a479c5a5072698139f0f556ef3e77a99bd0",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones - Opción 4 [Markel]",
-        "streamId": "afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones - Opción 5 [Markel]",
-        "streamId": "63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones - Opción 6 [Markel]",
-        "streamId": "91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones - Opción 7 [Markel]",
-        "streamId": "91af434b0bb521189286f8cbbab1aed39d7536fe",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones - Opción 8 [Markel]",
-        "streamId": "e572a5178ff72eed7d1d751a18b4b3419699f370",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones - Opción 4 [Elcano]",
-        "streamId": "97df5b7824948972d041d8ca2a4d29c90b641bc9",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Liga de Campeones - Opción 6 [Elcano]",
-        "streamId": "931fd4c24398a24beb9b6ede856ca34339ff2c22",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Liga de Campeones - Opción 7 [RCP]",
-        "streamId": "045718bad2ddb4f03b1a420754a97a23ad8b493b",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ Liga de Campeones - Opción 8 [RCP]",
-        "streamId": "2bac25f323be1de8208d6554337c2c8256bc32bc",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ Liga de Campeones - Opción 9 [RCP]",
-        "streamId": "444b51b2606cba9efb1b4ff56bf652cbc02a5f47",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      }
-    ]
-  },
-  {
-    "id": "pina_2",
-    "title": "Villarreal - Nápoles",
-    "sport": "FUTBOL",
-    "competition": "YOUTH LEAGUE",
-    "time": "16:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "M+ Liga de Campeones 2 - Opción 1 [Markel]",
-        "streamId": "c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones 2 - Opción 2 [Markel]",
-        "streamId": "4fc6d0331830ad8743abab2fe2473b63bdfbc49f",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones 2 - Opción 3 [Markel]",
-        "streamId": "498c56bd00f535e440c392de5af992421a31355c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones 2 - Opción 4 [Markel]",
-        "streamId": "4b18a3b32df5960ed950fa907f8d509b1ad2a188",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones 2 - Opción 5 [Markel]",
-        "streamId": "ea03cc51980996ba6f2da49e30eee1de8a66ae54",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones 2 - Opción 6 [Markel]",
-        "streamId": "8156912ae14f6174a19c8a4efcf36a06e847f632",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones 2 - Opción 7 [Markel]",
-        "streamId": "74ab4e4ec7e2da001f473ca40893b7307b8029c5",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones 2 - Opción 8 [Markel]",
-        "streamId": "338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Liga de Campeones 2 - Opción 3 [Elcano]",
-        "streamId": "bb26037a253866d341778181eff5c8637240d615",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Liga de Campeones 2 - Opción 5 [Elcano]",
-        "streamId": "38f7b2044e549df2039ff26cefa6f9a60c854d5e",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Liga de Campeones 2 - Opción 6 [Elcano]",
-        "streamId": "47188da7d2e4beaee82cff174f223fdd23f78fa6",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Liga de Campeones 2 - Opción 7 [RCP]",
-        "streamId": "dfffbcdd9c7e32d5dc88d268dee830ff2a0d3ab6",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ Liga de Campeones 2 - Opción 8 [RCP]",
-        "streamId": "2d584c7335ff44f97c3cf64947892ef30fde715c",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "ArenaVision 36 (AV36)",
-        "streamId": "5b7f54b12e0f96ceba1299f44eac4b0f97403e4e",
-        "type": "ACESTREAM",
-        "source": "ArenaVision"
-      }
-    ]
-  },
-  {
-    "id": "pina_3",
     "title": "Rueda de Prensa Mourinho (Roma)",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -239,7 +57,7 @@
     ]
   },
   {
-    "id": "pina_4",
+    "id": "pina_2",
     "title": "Bahcesehir - Kids & Us Manresa",
     "sport": "BALONCESTO",
     "competition": "EUROCUP",
@@ -345,7 +163,7 @@
     ]
   },
   {
-    "id": "pina_5",
+    "id": "pina_3",
     "title": "Lens - Sporting Portugal",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -439,7 +257,7 @@
     ]
   },
   {
-    "id": "pina_6",
+    "id": "pina_4",
     "title": "Sabah - Slavia Praga",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -503,7 +321,7 @@
     ]
   },
   {
-    "id": "pina_7",
+    "id": "pina_5",
     "title": "Milan - Real Madrid",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
@@ -543,7 +361,7 @@
     ]
   },
   {
-    "id": "pina_8",
+    "id": "pina_6",
     "title": "FC Barcelona - Maccabi Tel Aviv",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
@@ -565,7 +383,7 @@
     ]
   },
   {
-    "id": "pina_9",
+    "id": "pina_7",
     "title": "Baskonia - Dubai",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
@@ -587,7 +405,7 @@
     ]
   },
   {
-    "id": "pina_10",
+    "id": "pina_8",
     "title": "Galatasaray - Barcelona",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -669,7 +487,7 @@
     ]
   },
   {
-    "id": "pina_11",
+    "id": "pina_9",
     "title": "At. Madrid - Manchester Utd.",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -769,7 +587,7 @@
     ]
   },
   {
-    "id": "pina_12",
+    "id": "pina_10",
     "title": "Villarreal - Nápoles",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -833,7 +651,7 @@
     ]
   },
   {
-    "id": "pina_13",
+    "id": "pina_11",
     "title": "Arsenal - Lille",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -903,7 +721,7 @@
     ]
   },
   {
-    "id": "pina_14",
+    "id": "pina_12",
     "title": "Viking - Bayern Múnich",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -937,7 +755,7 @@
     ]
   },
   {
-    "id": "pina_15",
+    "id": "pina_13",
     "title": "Inter - Brujas",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -959,7 +777,7 @@
     ]
   },
   {
-    "id": "pina_16",
+    "id": "pina_14",
     "title": "Leipzig - PSV Eindhoven",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -981,7 +799,7 @@
     ]
   },
   {
-    "id": "pina_17",
+    "id": "pina_15",
     "title": "Valencia Basket - Olympiacos",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
@@ -1137,7 +955,7 @@
     "id": "pina_124"
   },
   {
-    "id": "pina_18",
+    "id": "pina_16",
     "title": "Estados Unidos - España",
     "sport": "FUTBOL",
     "competition": "AMISTOSO FEMENINO",
@@ -1189,7 +1007,7 @@
     ]
   },
   {
-    "id": "pina_19",
+    "id": "pina_17",
     "title": "Boca - Vasco de Gama",
     "sport": "FUTBOL",
     "competition": "COPA SUDAMERICANA",
@@ -1289,7 +1107,7 @@
     ]
   },
   {
-    "id": "pina_20",
+    "id": "pina_18",
     "title": "Van de Zandschulp - Jódar",
     "sport": "TENIS",
     "competition": "MASTERS SHANGHAI",
@@ -1359,7 +1177,7 @@
     ]
   },
   {
-    "id": "pina_21",
+    "id": "pina_19",
     "title": "Sesión Vespertina (Shanghai)",
     "sport": "CICLISMO",
     "competition": "CAMPEONATO DEL MUNDO EN PISTA",
@@ -1411,7 +1229,7 @@
     ]
   },
   {
-    "id": "pina_22",
+    "id": "pina_20",
     "title": "Roma - Real Madrid",
     "sport": "FUTBOL",
     "competition": "YOUTH LEAGUE",
@@ -1511,7 +1329,7 @@
     ]
   },
   {
-    "id": "pina_23",
+    "id": "pina_21",
     "title": "Betis - Oporto",
     "sport": "FUTBOL",
     "competition": "YOUTH LEAGUE",
@@ -1599,7 +1417,101 @@
     ]
   },
   {
-    "id": "pina_24",
+    "id": "pina_22",
+    "title": "Verona-Vicenza (167.0 km)",
+    "sport": "CICLISMO",
+    "competition": "GIRO DEL VENETO",
+    "time": "16:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "Eurosport 1 - Opción 1 [Markel]",
+        "streamId": "bae98f69fbf867550b4f73b4eb176dae84d7f909",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 1 - Opción 2 [Markel]",
+        "streamId": "714e14e6d6e27660fd25a75b57b0ac5580fe705d",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 1 - Opción 3 [Markel]",
+        "streamId": "62a5750be4d2218b1064f83afaac4770fd92350d",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 1 - Opción 4 [Markel]",
+        "streamId": "313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 1 - Opción 5 [Markel]",
+        "streamId": "b7975e28c67ed7c5831b097944761623bd52baf5",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 1 - Opción 6 [Markel]",
+        "streamId": "547ab7146a86d6119c9332c011669544720124e3",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 1 - Opción 7 [Markel]",
+        "streamId": "4a67d5f9f7aba0f9735813f0034380cd48424671",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 1 - Opción 8 [Markel]",
+        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 1 - Opción 9 [Markel]",
+        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 1 - Opción 1 [Elcano]",
+        "streamId": "48a589dbeab3544662fafd79888aada7d834cfe9",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Eurosport 1 - Opción 2 [Elcano]",
+        "streamId": "8522af51ae7189b12effabbb448dcb707195ce1a",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Eurosport 1 - Opción 6 [Comunidad]",
+        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Eurosport 1 - Opción 8 [Elcano]",
+        "streamId": "5e4cd48c79f991fcbee2de8b9d30c4b16de3b952",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Eurosport 1 - Opción 9 [RCP]",
+        "streamId": "c9ee7c95e7a2e9cd0e848b1f70848453652bebc2",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_23",
     "title": "LASK - Liverpool",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -1687,7 +1599,7 @@
     ]
   },
   {
-    "id": "pina_25",
+    "id": "pina_24",
     "title": "Feyenoord - Como",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -1751,7 +1663,7 @@
     ]
   },
   {
-    "id": "pina_26",
+    "id": "pina_25",
     "title": "BMA365 Bamberg Baskets - UCAM Murcia",
     "sport": "BALONCESTO",
     "competition": "CHAMPIONS LEAGUE",
@@ -1803,7 +1715,7 @@
     ]
   },
   {
-    "id": "pina_27",
+    "id": "pina_26",
     "title": "Zaragoza - Landes",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA FEMENINA",
@@ -1819,7 +1731,7 @@
     ]
   },
   {
-    "id": "pina_28",
+    "id": "pina_27",
     "title": "Valencia Basket - Fenerbahçe",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA FEMENINA",
@@ -1919,7 +1831,7 @@
     ]
   },
   {
-    "id": "pina_29",
+    "id": "pina_28",
     "title": "Burgos - Jerusalem",
     "sport": "BALONCESTO",
     "competition": "EUROCUP",
@@ -1941,7 +1853,7 @@
     ]
   },
   {
-    "id": "pina_30",
+    "id": "pina_29",
     "title": "Roma - Real Madrid",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -2029,7 +1941,7 @@
     ]
   },
   {
-    "id": "pina_31",
+    "id": "pina_30",
     "title": "Betis - Oporto",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -2117,7 +2029,7 @@
     ]
   },
   {
-    "id": "pina_32",
+    "id": "pina_31",
     "title": "Manchester City - PSG",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -2181,7 +2093,7 @@
     ]
   },
   {
-    "id": "pina_33",
+    "id": "pina_32",
     "title": "Aston Villa - Fenerbahçe",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -2221,7 +2133,7 @@
     ]
   },
   {
-    "id": "pina_34",
+    "id": "pina_33",
     "title": "Shakhtar - AEK Atenas",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -2255,7 +2167,7 @@
     ]
   },
   {
-    "id": "pina_35",
+    "id": "pina_34",
     "title": "Bodo/Glimt - Borussia Dortmund",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -2277,7 +2189,7 @@
     ]
   },
   {
-    "id": "pina_36",
+    "id": "pina_35",
     "title": "S. Bratislava - Stuttgart",
     "sport": "FUTBOL",
     "competition": "CHAMPIONS LEAGUE",
@@ -2299,7 +2211,7 @@
     ]
   },
   {
-    "id": "pina_37",
+    "id": "pina_36",
     "title": "Surne Bilbao - SK Slavia Praga ERA NBK",
     "sport": "BALONCESTO",
     "competition": "CHAMPIONS LEAGUE",
@@ -2351,7 +2263,7 @@
     ]
   },
   {
-    "id": "pina_38",
+    "id": "pina_37",
     "title": "La Laguna Tenerife - Maxima Roma",
     "sport": "BALONCESTO",
     "competition": "EUROCUP",
@@ -2373,7 +2285,7 @@
     ]
   },
   {
-    "id": "pina_39",
+    "id": "pina_38",
     "title": "At. Mineiro - Montevideo City",
     "sport": "FUTBOL",
     "competition": "COPA SUDAMERICANA",
@@ -2473,7 +2385,7 @@
     ]
   },
   {
-    "id": "pina_40",
+    "id": "pina_39",
     "title": "Fluminense - Palmeiras",
     "sport": "FUTBOL",
     "competition": "COPA LIBERTADORES",
@@ -2573,7 +2485,7 @@
     ]
   },
   {
-    "id": "pina_41",
+    "id": "pina_40",
     "title": "Union Saint-Gilloise - Real Sociedad",
     "sport": "FUTBOL",
     "competition": "EUROPA LEAGUE",
@@ -2661,7 +2573,7 @@
     ]
   },
   {
-    "id": "pina_42",
+    "id": "pina_41",
     "title": "Universitatea Craiova - Getafe",
     "sport": "FUTBOL",
     "competition": "CONFERENCE LEAGUE",
@@ -2749,7 +2661,7 @@
     ]
   },
   {
-    "id": "pina_43",
+    "id": "pina_42",
     "title": "Al Ahli - Al Nassr",
     "sport": "FUTBOL",
     "competition": "LIGA SAUDÍ",
@@ -2789,7 +2701,7 @@
     ]
   },
   {
-    "id": "pina_44",
+    "id": "pina_43",
     "title": "Valencia Basket - Maccabi Tel Aviv",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
@@ -2811,7 +2723,7 @@
     ]
   },
   {
-    "id": "pina_45",
+    "id": "pina_44",
     "title": "Celta - Juventus",
     "sport": "FUTBOL",
     "competition": "EUROPA LEAGUE",
@@ -2881,7 +2793,7 @@
     ]
   },
   {
-    "id": "pina_46",
+    "id": "pina_45",
     "title": "Real Madrid - ASVEL",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
@@ -2981,7 +2893,7 @@
     ]
   },
   {
-    "id": "pina_47",
+    "id": "pina_46",
     "title": "Denver Broncos - Seattle Seahawks",
     "sport": "FUTBOL AMERICANO",
     "competition": "JORNADA 6",
@@ -3051,7 +2963,7 @@
     ]
   },
   {
-    "id": "pina_48",
+    "id": "pina_47",
     "title": "Estudiantes de la Plata - Flamengo",
     "sport": "FUTBOL",
     "competition": "COPA LIBERTADORES",
@@ -3151,7 +3063,7 @@
     ]
   },
   {
-    "id": "pina_49",
+    "id": "pina_48",
     "title": "Milan (Cuartos de Final)",
     "sport": "PADEL",
     "competition": "PREMIER PADEL",
@@ -3251,7 +3163,7 @@
     ]
   },
   {
-    "id": "pina_50",
+    "id": "pina_49",
     "title": "Henan FC - Tianjin Jinmen Tiger",
     "sport": "FUTBOL",
     "competition": "SUPERLIGA CHINA",
@@ -3273,7 +3185,7 @@
     ]
   },
   {
-    "id": "pina_51",
+    "id": "pina_50",
     "title": "Al Riyadh - Al Hilal",
     "sport": "FUTBOL",
     "competition": "LIGA SAUDÍ",
@@ -3373,7 +3285,7 @@
     ]
   },
   {
-    "id": "pina_52",
+    "id": "pina_51",
     "title": "Cartagena - Europa",
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
@@ -3389,7 +3301,7 @@
     ]
   },
   {
-    "id": "pina_53",
+    "id": "pina_52",
     "title": "Ademar León - Villa de Aranda",
     "sport": "BALONMANO",
     "competition": "LIGA ASOBAL",
@@ -3459,7 +3371,7 @@
     ]
   },
   {
-    "id": "pina_54",
+    "id": "pina_53",
     "title": "Al Ittihad - Al Shabab",
     "sport": "FUTBOL",
     "competition": "LIGA SAUDÍ",
@@ -3559,7 +3471,7 @@
     ]
   },
   {
-    "id": "pina_55",
+    "id": "pina_54",
     "title": "CD Leganés - Córdoba CF",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -3617,7 +3529,7 @@
     ]
   },
   {
-    "id": "pina_56",
+    "id": "pina_55",
     "title": "FC Barcelona - Olympiacos",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
@@ -3687,7 +3599,7 @@
     ]
   },
   {
-    "id": "pina_57",
+    "id": "pina_56",
     "title": "Virtus - Baskonia",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
@@ -3709,7 +3621,7 @@
     ]
   },
   {
-    "id": "pina_58",
+    "id": "pina_57",
     "title": "RC Deportivo - Levante UD",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -3863,7 +3775,7 @@
     ]
   },
   {
-    "id": "pina_59",
+    "id": "pina_58",
     "title": "Alcorcón - Huesca",
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
@@ -3879,7 +3791,7 @@
     ]
   },
   {
-    "id": "pina_60",
+    "id": "pina_59",
     "title": "Australia - Nueva Zelanda",
     "sport": "RUGBY",
     "competition": "TEST MATCH",
@@ -3979,7 +3891,7 @@
     ]
   },
   {
-    "id": "pina_61",
+    "id": "pina_60",
     "title": "Logroño United - Granada",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -4019,7 +3931,7 @@
     ]
   },
   {
-    "id": "pina_62",
+    "id": "pina_61",
     "title": "Badalona Women - Costa Adeje Tenerife",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -4059,7 +3971,7 @@
     ]
   },
   {
-    "id": "pina_63",
+    "id": "pina_62",
     "title": "Racing Ferrol - Unionistas",
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
@@ -4075,7 +3987,7 @@
     ]
   },
   {
-    "id": "pina_64",
+    "id": "pina_63",
     "title": "Yunnan Yukun - Chongqing Tonglian Long",
     "sport": "FUTBOL",
     "competition": "SUPERLIGA CHINA",
@@ -4097,7 +4009,7 @@
     ]
   },
   {
-    "id": "pina_65",
+    "id": "pina_64",
     "title": "Espanyol - Atlético de Madrid",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -4221,7 +4133,7 @@
     ]
   },
   {
-    "id": "pina_66",
+    "id": "pina_65",
     "title": "Real Sociedad B - UD Almería",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -4279,7 +4191,7 @@
     ]
   },
   {
-    "id": "pina_67",
+    "id": "pina_66",
     "title": "Milan (Semifinales)",
     "sport": "PADEL",
     "competition": "PREMIER PADEL",
@@ -4379,7 +4291,7 @@
     ]
   },
   {
-    "id": "pina_68",
+    "id": "pina_67",
     "title": "Rialta Crat. Coruña - Cajasol Sevilla Cocos",
     "sport": "RUGBY",
     "competition": "LIGA IBERDROLA",
@@ -4419,7 +4331,7 @@
     ]
   },
   {
-    "id": "pina_69",
+    "id": "pina_68",
     "title": "Unión Berlín- Borussia Dortmund",
     "sport": "FUTBOL",
     "competition": "BUNDESLIGA",
@@ -4441,7 +4353,7 @@
     ]
   },
   {
-    "id": "pina_70",
+    "id": "pina_69",
     "title": "Circuito de Jerez",
     "sport": "MOTOR",
     "competition": "SUPERBIKE",
@@ -4553,7 +4465,7 @@
     ]
   },
   {
-    "id": "pina_71",
+    "id": "pina_70",
     "title": "Brentford - Liverpool",
     "sport": "FUTBOL",
     "competition": "PREMIER LEAGUE",
@@ -4623,7 +4535,7 @@
     ]
   },
   {
-    "id": "pina_72",
+    "id": "pina_71",
     "title": "Fulham - Hull City",
     "sport": "FUTBOL",
     "competition": "PREMIER LEAGUE",
@@ -4663,7 +4575,7 @@
     ]
   },
   {
-    "id": "pina_73",
+    "id": "pina_72",
     "title": "Poio Pescamar - Melilla CD Torreblanca",
     "sport": "FUTBOL",
     "competition": "PRIMERA IBERDROLA",
@@ -4715,7 +4627,7 @@
     ]
   },
   {
-    "id": "pina_74",
+    "id": "pina_73",
     "title": "Villarreal - Elche",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -4785,7 +4697,7 @@
     ]
   },
   {
-    "id": "pina_75",
+    "id": "pina_74",
     "title": "SD Eibar - RCD Mallorca",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -4807,7 +4719,7 @@
     ]
   },
   {
-    "id": "pina_76",
+    "id": "pina_75",
     "title": "Athletic - Valencia",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -4853,7 +4765,7 @@
     ]
   },
   {
-    "id": "pina_77",
+    "id": "pina_76",
     "title": "Barakaldo - Mirandés",
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
@@ -4869,7 +4781,7 @@
     ]
   },
   {
-    "id": "pina_78",
+    "id": "pina_77",
     "title": "Casademont Zaragoza - Durán Maquinaria Ensino",
     "sport": "BALONCESTO",
     "competition": "LIGA FEMENINA ENDESA",
@@ -4909,7 +4821,7 @@
     ]
   },
   {
-    "id": "pina_79",
+    "id": "pina_78",
     "title": "Manresa - Unicaja",
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
@@ -4973,6 +4885,76 @@
       {
         "name": "Movistar Plus+ - Opción 7 [RCP]",
         "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_79",
+    "title": "Horneo Alicante - Bidasoa",
+    "sport": "BALONMANO",
+    "competition": "LIGA ASOBAL",
+    "time": "18:00",
+    "date": "17/10/2026",
+    "channels": [
+      {
+        "name": "Eurosport 2 - Opción 1 [Markel]",
+        "streamId": "32fcf8e1513049ef9f90d08ba9040fe34b01d9fd",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 2 - Opción 2 [Markel]",
+        "streamId": "088aea0c1509c5324f5ec6b9b6ff17ef2c231420",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 2 - Opción 3 [Markel]",
+        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 2 - Opción 4 [Markel]",
+        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 2 - Opción 5 [Markel]",
+        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 2 - Opción 1 [Elcano]",
+        "streamId": "c6180a86440004748e2abe34d6f31eed8a218a3a",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Eurosport 2 - Opción 2 [Elcano]",
+        "streamId": "3ebcfc00921a4a9307dec97e078f8dc12eee27e7",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Eurosport 2 - Opción 3 [Elcano]",
+        "streamId": "7152d5f5fdb2184c88c2bb433d8b8f619cdc16b2",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Eurosport 2 - Opción 7 [Elcano]",
+        "streamId": "c373da9e901d414b7384e671112e64d5a2310c29",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Eurosport 2 - Opción 8 [RCP]",
+        "streamId": "d6622ca93e54e493a6910248f8fe1f03aa85bf01",
         "type": "ACESTREAM",
         "source": "RCP"
       }
