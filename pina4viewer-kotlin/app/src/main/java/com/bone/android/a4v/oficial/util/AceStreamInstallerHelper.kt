@@ -27,19 +27,19 @@ object AceStreamInstallerHelper {
 
     private const val VERSION_URL = "https://raw.githubusercontent.com/ArribaJesucristo/pina4viewer/main/version.json"
 
-    // Default fallback direct download URLs (Ace Stream Pro is universal and auto-updates)
-    private const val DEFAULT_ATV_URL = "https://android.acestream.net/download/apk"
+    // Default fallback direct download URLs (AceStream Media ATV for TV devices, Pro for mobile)
+    private const val DEFAULT_ATV_URL = "https://download.acestream.media/products/acestream-engine/android-tv/armv7/latest"
     private const val DEFAULT_MOBILE_URL = "https://android.acestream.net/download/apk"
 
-    // Recognized AceStream package names
+    // Recognized AceStream package names (prioritizing AceStream Media ATV on TV)
     val TV_PACKAGES = listOf(
+        "org.acestream.media.atv",
+        "org.acestream.media",
+        "org.acestream.core.atv",
         "org.acestream.node.web",
         "org.acestream.node",
-        "org.acestream.media.atv",
-        "org.acestream.core.atv",
         "org.acestream.core.web",
-        "org.acestream.core",
-        "org.acestream.media"
+        "org.acestream.core"
     )
 
     val MOBILE_PACKAGES = listOf(
@@ -92,6 +92,25 @@ object AceStreamInstallerHelper {
             }
         }
         return false
+    }
+
+    /**
+     * Returns the preferred installed AceStream package on the device,
+     * prioritizing Android TV packages (org.acestream.media.atv) on TV devices.
+     */
+    fun getPreferredAceStreamPackage(context: Context): String? {
+        val pm = context.packageManager
+        val isTv = isTvDevice(context)
+        val candidatePackages = if (isTv) TV_PACKAGES + MOBILE_PACKAGES else MOBILE_PACKAGES + TV_PACKAGES
+        for (pkg in candidatePackages) {
+            try {
+                pm.getPackageInfo(pkg, 0)
+                return pkg
+            } catch (_: Exception) {
+                // Not installed under this package name
+            }
+        }
+        return null
     }
 
     /**
@@ -182,7 +201,7 @@ object AceStreamInstallerHelper {
         isTv: Boolean = isTvDevice(activity),
         onInstalled: (() -> Unit)? = null
     ) {
-        val targetName = "AceStream Pro (${if (isTv) "Android TV" else "Móvil"})"
+        val targetName = if (isTv) "AceStream Media (Android TV)" else "AceStream Pro (Móvil)"
         val progressDialog = ProgressDialog(activity).apply {
             setTitle("Instalando reproductor deportivo")
             setMessage("Descargando $targetName...\nPor favor espera unos segundos.")
@@ -222,7 +241,7 @@ object AceStreamInstallerHelper {
                     val body = response.body ?: return@launch
                     val contentLength = body.contentLength()
                     val targetDir = activity.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS) ?: activity.cacheDir
-                    val apkFileName = "acestream_pro.apk"
+                    val apkFileName = if (isTv) "acestream_media_atv.apk" else "acestream_pro.apk"
                     val apkFile = File(targetDir, apkFileName)
 
                     body.byteStream().use { input ->

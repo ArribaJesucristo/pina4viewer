@@ -1,11 +1,11 @@
 {
-  "versionCode": 2043,
-  "versionName": "8.4.3",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.3/pina4viewer-v8.4.3.apk",
-  "acestreamAtvUrl": "https://android.acestream.net/download/apk",
+  "versionCode": 2044,
+  "versionName": "8.4.4",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.4/pina4viewer-v8.4.4.apk",
+  "acestreamAtvUrl": "https://download.acestream.media/products/acestream-engine/android-tv/armv7/latest",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
   "wiseplayTvUrl": "https://static.wiseplay.tv/files/wiseplay-tv-latest.apk",
   "wiseplayMobileUrl": "https://static.wiseplay.tv/files/wiseplay-latest.apk",
   "psiphonUrl": "https://psiphon.ca/PsiphonAndroid.apk",
-  "changelog": "- Corregido el resaltado simultaneo en la lista de canales del dialogo\n- Foco dorado individual por elemento al navegar con el mando de TV (D-Pad)"
+  "changelog": "- Priorizado AceStream Media ATV (v3.1.80) para Android TV y Fire TV\n- Descarga e instalacion en 1 clic de la version de TV libre de bloqueos de pago\n- Apertura directa a pantalla completa sin dialogo selector con el mando a distancia"
 }
