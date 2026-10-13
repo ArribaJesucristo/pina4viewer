@@ -31,8 +31,9 @@ object AceStreamInstallerHelper {
     private const val DEFAULT_ATV_URL = "https://download.acestream.media/products/acestream-engine/android-tv/armv7/latest"
     private const val DEFAULT_MOBILE_URL = "https://android.acestream.net/download/apk"
 
-    // Recognized AceStream package names (prioritizing AceStream Media ATV on TV)
+    // Recognized AceStream package names (prioritizing AceStream Media on TV)
     val TV_PACKAGES = listOf(
+        "org.acestream.media.web",
         "org.acestream.media.atv",
         "org.acestream.media",
         "org.acestream.core.atv",
