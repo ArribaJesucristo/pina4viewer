@@ -86,7 +86,7 @@ object StreamLauncher {
         val uri = Uri.parse(uriString)
 
         val isAceInstalled = AceStreamInstallerHelper.isAceStreamInstalled(context)
-        val isWiseplayInstalled = WiseplayInstallerHelper.isWiseplayInstalled(context)
+        val isWiseplayInstalled = isAppInstalled(context, PACKAGE_WISEPLAY)
 
         // Si ni AceStream ni Wiseplay están instalados, abrir instalador directo en 1 clic
         if (!isAceInstalled && !isWiseplayInstalled) {
@@ -95,24 +95,6 @@ object StreamLauncher {
                     launchAceStream(context, infoHashOrUrl)
                 }
                 return
-            }
-        }
-
-        val isTv = AceStreamInstallerHelper.isTvDevice(context)
-        val preferredPkg = AceStreamInstallerHelper.getPreferredAceStreamPackage(context)
-
-        // En Android TV / Fire TV, si hay un reproductor AceStream instalado (priorizando AceStream Media ATV),
-        // abrirlo directamente para evitar el selector del sistema y optimizar la experiencia con mando D-Pad
-        if (isTv && preferredPkg != null) {
-            val directIntent = Intent(Intent.ACTION_VIEW, uri).apply {
-                setPackage(preferredPkg)
-                flags = Intent.FLAG_ACTIVITY_NEW_TASK
-            }
-            try {
-                context.startActivity(directIntent)
-                return
-            } catch (_: Exception) {
-                // Si falla el intent directo, continuar con el flujo estándar de selector
             }
         }
 
