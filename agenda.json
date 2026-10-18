@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "18/10/2026 14:20",
+    "updatedAt": "18/10/2026 14:30",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -336,7 +336,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_44"
+    "id": "pina_47"
   },
   {
     "title": "6 HOURS OF BARCELONA vs RACE",
@@ -358,7 +358,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_45"
+    "id": "pina_48"
   },
   {
     "id": "pina_7",
@@ -396,7 +396,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_46"
+    "id": "pina_49"
   },
   {
     "id": "pina_8",
@@ -642,7 +642,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_47"
+    "id": "pina_50"
   },
   {
     "id": "pina_10",
@@ -1222,7 +1222,7 @@
         "source": "New Era"
       }
     ],
-    "id": "pina_48"
+    "id": "pina_51"
   },
   {
     "id": "pina_16",
@@ -1752,7 +1752,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_49"
+    "id": "pina_52"
   },
   {
     "title": "MILAN OPEN vs MEN FINAL",
@@ -1804,7 +1804,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_53"
   },
   {
     "id": "pina_23",
@@ -2936,15 +2936,28 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_51"
+    "id": "pina_54"
   },
   {
-    "title": "PACKERS vs COWBOYS",
+    "id": "pina_41",
+    "title": "Dallas Cowboys @ Green Bay Packers",
     "sport": "FUTBOL AMERICANO",
-    "competition": "USA NFL",
-    "time": "02:20",
+    "competition": "JORNADA 6",
+    "time": "02:15",
     "date": "Mañana",
     "channels": [
+      {
+        "name": "Cuatro - Opción 1 [Markel]",
+        "streamId": "8d66979e705a8b532b9243bbc0862c0f1c734ef0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "CUATRO - Opción 1 [RCP]",
+        "streamId": "e8eec35f4662be1af96963245bfa88fb7d0242c4",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
       {
         "name": "ArenaVision 19 (AV19)",
         "streamId": "d60b8c154828cb990b7bb1570764b215bd979e74",
@@ -2957,11 +2970,10 @@
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
-    ],
-    "id": "pina_52"
+    ]
   },
   {
-    "id": "pina_41",
+    "id": "pina_42",
     "title": "España - México",
     "sport": "FUTBOL",
     "competition": "CAMPEONATO DEL MUNDO SUB-17 FEMENINO",
@@ -3013,7 +3025,7 @@
     ]
   },
   {
-    "id": "pina_42",
+    "id": "pina_43",
     "title": "Al Fayha - Al Ahli",
     "sport": "FUTBOL",
     "competition": "LIGA SAUDÍ",
@@ -3053,7 +3065,7 @@
     ]
   },
   {
-    "id": "pina_43",
+    "id": "pina_44",
     "title": "Al Hilal - Al Hazem",
     "sport": "FUTBOL",
     "competition": "LIGA SAUDÍ",
@@ -3112,57 +3124,207 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_53"
+    "id": "pina_55"
   },
   {
-    "title": "TOTTENHAM vs CONVENTRY CITY",
+    "id": "pina_45",
+    "title": "Getafe - Rayo",
+    "sport": "FUTBOL",
+    "competition": "LALIGA EA SPORTS",
+    "time": "21:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "DAZN LaLiga - Opción 1 [Markel]",
+        "streamId": "19f28f60c908f987b1a03da078e63320d7bf29e8",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 2 [Markel]",
+        "streamId": "d1596a3988b84a4d2711fd380eb8a53256ad74ae",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 3 [Markel]",
+        "streamId": "71cb5e2567a8b39f5bdc4fa791992781b052f0bc",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 4 [Markel]",
+        "streamId": "cc108ae39f92c48f6c946763047bd1c9b7b7d889",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 5 [Markel]",
+        "streamId": "9c588ac92554746c489bc553773d959f6d2dfd8e",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 6 [Markel]",
+        "streamId": "9c75f1d190c518cfe0f236415b8dccc1f676ef3b",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 7 [Markel]",
+        "streamId": "303c31ee08b34b4ae3486decca2df98089e4e488",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 8 [Markel]",
+        "streamId": "244a6fd6428f6ad13034339cb382e01a0e779d9d",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 9 [Markel]",
+        "streamId": "dda5d2cace9bc4cb0918e62bc50d657d4a10496a",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 1 [New Loop]",
+        "streamId": "f43ef903dc750610978b47df47a0cb389413fe61",
+        "type": "ACESTREAM",
+        "source": "New Loop"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 3 [New Loop]",
+        "streamId": "55538acc9fd25a9ea6df5c842eb0327f87eac300",
+        "type": "ACESTREAM",
+        "source": "New Loop"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 7 [Elcano]",
+        "streamId": "7f9857c45764ef2c7cdfb619b89db3056a57a51f",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 8 [Elcano]",
+        "streamId": "eb4975702ceadca7ed74f8707e17a9f55569dbb9",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 9 [Elcano]",
+        "streamId": "385abcf801b787eec6ed6624908758bb165c0a55",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 10 [New Era]",
+        "streamId": "3097d7e7ff0fe414711ee067a841168b6f5671cb",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 11 [Elcano]",
+        "streamId": "a3bca895c58d3fc7d5e4259d3d5e3cf0291d1914",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 12 [RCP]",
+        "streamId": "7264961f63dc9dc6ef7acee7371f7a76b6a02061",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 13 [RCP]",
+        "streamId": "0b01aa547ffe11ce2042bfe443abafb3ea17e5ff",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 14 [RCP]",
+        "streamId": "05b9cb49947d3b78bbc66671c6e16ba0ae3b60b6",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_46",
+    "title": "Tottenham - Coventry City",
     "sport": "FUTBOL",
     "competition": "PREMIER LEAGUE",
     "time": "21:00",
     "date": "Mañana",
     "channels": [
       {
-        "name": "ArenaVision 17 (AV17)",
-        "streamId": "dddff67edfa7061f643ec5ae0be110169850363d",
+        "name": "DAZN 1 - Opción 1 [Markel]",
+        "streamId": "691739972eb3468cf16b25e84dafdeaa40dead6d",
         "type": "ACESTREAM",
-        "source": "ArenaVision"
+        "source": "Markel"
       },
       {
-        "name": "ArenaVision 18 (AV18)",
+        "name": "DAZN 1 - Opción 2 [Markel]",
+        "streamId": "50a8a13c474848d1efbd5586efdb5b6cdd173fa9",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 3 [Markel]",
+        "streamId": "4141892f5df7d6474bf0279895ce02b7336c9928",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 4 [Markel]",
         "streamId": "78124d96a1a4601e7910f50e36a16e35efcfb398",
         "type": "ACESTREAM",
-        "source": "ArenaVision"
-      }
-    ],
-    "id": "pina_54"
-  },
-  {
-    "title": "GETAFE vs RAYO VALLECANO",
-    "sport": "FUTBOL",
-    "competition": "SPANISH LEAGUE",
-    "time": "21:00",
-    "date": "Mañana",
-    "channels": [
-      {
-        "name": "ArenaVision 80 (AV80)",
-        "streamId": "9c588ac92554746c489bc553773d959f6d2dfd8e",
-        "type": "ACESTREAM",
-        "source": "ArenaVision"
+        "source": "Markel"
       },
       {
-        "name": "ArenaVision 89 (AV89)",
-        "streamId": "cc108ae39f92c48f6c946763047bd1c9b7b7d889",
+        "name": "DAZN 1 - Opción 5 [Markel]",
+        "streamId": "d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151",
         "type": "ACESTREAM",
-        "source": "ArenaVision"
+        "source": "Markel"
       },
       {
-        "name": "ArenaVision 81 (AV81)",
-        "streamId": "385abcf801b787eec6ed6624908758bb165c0a55",
+        "name": "DAZN 1 - Opción 6 [Markel]",
+        "streamId": "1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187",
         "type": "ACESTREAM",
-        "source": "ArenaVision"
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 3 [Elcano]",
+        "streamId": "dddff67edfa7061f643ec5ae0be110169850363d",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "DAZN 1 - Opción 4 [Elcano]",
+        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "DAZN 1 - Opción 5 [Elcano]",
+        "streamId": "a116ce3ff95c41c60e987e2b1aa247007f707884",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "DAZN 1 - Opción 6 [RCP]",
+        "streamId": "8b2e003ef51657196d2096aa84b9b21ae4bfb660",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN 1 - Opción 7 [RCP]",
+        "streamId": "47c6e8dadfba2b3bd013feecf4194ecceec428cd",
+        "type": "ACESTREAM",
+        "source": "RCP"
       }
-    ],
-    "id": "pina_55"
+    ]
   },
   {
     "id": "56",
