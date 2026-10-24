@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "24/10/2026 13:50",
+    "updatedAt": "24/10/2026 14:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -78,7 +78,7 @@
       },
       {
         "name": "Teledeporte - Opción 3 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -89,16 +89,16 @@
         "source": "Markel"
       },
       {
+        "name": "Teledeporte - Opción 5 [Markel]",
+        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
-      },
-      {
-        "name": "Teledeporte - Opción 2 [Elcano]",
-        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -305,10 +305,10 @@
         "source": "Markel"
       },
       {
-        "name": "Movistar Plus+ - Opción 3 [Elcano]",
+        "name": "Movistar Plus+ - Opción 6 [Markel]",
         "streamId": "d23497596720b47b096ec0f850d6d26a19d1a336",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "Movistar Plus+ - Opción 4 [New Era]",
@@ -716,7 +716,7 @@
       },
       {
         "name": "Teledeporte - Opción 3 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -727,16 +727,16 @@
         "source": "Markel"
       },
       {
+        "name": "Teledeporte - Opción 5 [Markel]",
+        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
-      },
-      {
-        "name": "Teledeporte - Opción 2 [Elcano]",
-        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -1008,15 +1008,15 @@
       },
       {
         "name": "DAZN 1 - Opción 8 [Markel]",
-        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
+        "streamId": "a116ce3ff95c41c60e987e2b1aa247007f707884",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "DAZN 1 - Opción 5 [Elcano]",
-        "streamId": "a116ce3ff95c41c60e987e2b1aa247007f707884",
+        "name": "DAZN 1 - Opción 9 [Markel]",
+        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "DAZN 1 - Opción 6 [RCP]",
@@ -1083,12 +1083,6 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Deportes - Opción 7 [Markel]",
-        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "M+ Deportes - Opción 1 [New Loop]",
         "streamId": "acb510858f34c3c6fd5f79395b031abd6885c2b3",
         "type": "ACESTREAM",
@@ -1111,6 +1105,12 @@
         "streamId": "8f75fa54b498ce6889068f56f7a343b72bbcfcc0",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "M+ Deportes - Opción 7 [Markel]",
+        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
+        "type": "ACESTREAM",
+        "source": "Markel"
       },
       {
         "name": "M+ Deportes - Opción 7 [Markel]",
@@ -1615,12 +1615,6 @@
         "source": "Markel"
       },
       {
-        "name": "M+ Deportes - Opción 7 [Markel]",
-        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
         "name": "M+ Deportes - Opción 1 [New Loop]",
         "streamId": "acb510858f34c3c6fd5f79395b031abd6885c2b3",
         "type": "ACESTREAM",
@@ -1643,6 +1637,12 @@
         "streamId": "8f75fa54b498ce6889068f56f7a343b72bbcfcc0",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "M+ Deportes - Opción 7 [Markel]",
+        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
+        "type": "ACESTREAM",
+        "source": "Markel"
       },
       {
         "name": "M+ Deportes - Opción 7 [Markel]",
@@ -1975,10 +1975,10 @@
         "source": "Markel"
       },
       {
-        "name": "Movistar Plus+ - Opción 3 [Elcano]",
+        "name": "Movistar Plus+ - Opción 6 [Markel]",
         "streamId": "d23497596720b47b096ec0f850d6d26a19d1a336",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "Movistar Plus+ - Opción 4 [New Era]",
@@ -2070,15 +2070,15 @@
       },
       {
         "name": "DAZN 1 - Opción 8 [Markel]",
-        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
+        "streamId": "a116ce3ff95c41c60e987e2b1aa247007f707884",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "DAZN 1 - Opción 5 [Elcano]",
-        "streamId": "a116ce3ff95c41c60e987e2b1aa247007f707884",
+        "name": "DAZN 1 - Opción 9 [Markel]",
+        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "DAZN 1 - Opción 6 [RCP]",
@@ -2122,7 +2122,7 @@
       },
       {
         "name": "Teledeporte - Opción 3 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2133,16 +2133,16 @@
         "source": "Markel"
       },
       {
+        "name": "Teledeporte - Opción 5 [Markel]",
+        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
-      },
-      {
-        "name": "Teledeporte - Opción 2 [Elcano]",
-        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -2534,7 +2534,7 @@
       },
       {
         "name": "Teledeporte - Opción 3 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2545,16 +2545,16 @@
         "source": "Markel"
       },
       {
+        "name": "Teledeporte - Opción 5 [Markel]",
+        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
-      },
-      {
-        "name": "Teledeporte - Opción 2 [Elcano]",
-        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -2615,10 +2615,10 @@
         "source": "Markel"
       },
       {
-        "name": "Movistar Plus+ - Opción 3 [Elcano]",
+        "name": "Movistar Plus+ - Opción 6 [Markel]",
         "streamId": "d23497596720b47b096ec0f850d6d26a19d1a336",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "Movistar Plus+ - Opción 4 [New Era]",
@@ -3406,6 +3406,18 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
+        "streamId": "ac33342ccf7d40d46174229085461d95000b9137",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN MotoGP - Opción 6 [Markel]",
+        "streamId": "20d4b3586bb822c3618cf8fb665a304869c5e1a5",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN MotoGP - Opción 7 [Markel]",
         "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -3417,20 +3429,8 @@
         "source": "Elcano"
       },
       {
-        "name": "DAZN MotoGP - Opción 4 [Elcano]",
-        "streamId": "20d4b3586bb822c3618cf8fb665a304869c5e1a5",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
         "name": "DAZN MotoGP - Opción 6 [Elcano]",
         "streamId": "129c707eb4854171d178a566f36d90b7f2b5e624",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "DAZN MotoGP - Opción 7 [Elcano]",
-        "streamId": "ac33342ccf7d40d46174229085461d95000b9137",
         "type": "ACESTREAM",
         "source": "Elcano"
       },
@@ -3670,6 +3670,18 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
+        "streamId": "ac33342ccf7d40d46174229085461d95000b9137",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN MotoGP - Opción 6 [Markel]",
+        "streamId": "20d4b3586bb822c3618cf8fb665a304869c5e1a5",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN MotoGP - Opción 7 [Markel]",
         "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -3681,20 +3693,8 @@
         "source": "Elcano"
       },
       {
-        "name": "DAZN MotoGP - Opción 4 [Elcano]",
-        "streamId": "20d4b3586bb822c3618cf8fb665a304869c5e1a5",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
         "name": "DAZN MotoGP - Opción 6 [Elcano]",
         "streamId": "129c707eb4854171d178a566f36d90b7f2b5e624",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "DAZN MotoGP - Opción 7 [Elcano]",
-        "streamId": "ac33342ccf7d40d46174229085461d95000b9137",
         "type": "ACESTREAM",
         "source": "Elcano"
       },
@@ -3734,7 +3734,7 @@
       },
       {
         "name": "Teledeporte - Opción 3 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3745,16 +3745,16 @@
         "source": "Markel"
       },
       {
+        "name": "Teledeporte - Opción 5 [Markel]",
+        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
-      },
-      {
-        "name": "Teledeporte - Opción 2 [Elcano]",
-        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -4033,10 +4033,10 @@
         "source": "Markel"
       },
       {
-        "name": "Movistar Plus+ - Opción 3 [Elcano]",
+        "name": "Movistar Plus+ - Opción 6 [Markel]",
         "streamId": "d23497596720b47b096ec0f850d6d26a19d1a336",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "Movistar Plus+ - Opción 4 [New Era]",
@@ -4210,7 +4210,7 @@
       },
       {
         "name": "Teledeporte - Opción 3 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4221,16 +4221,16 @@
         "source": "Markel"
       },
       {
+        "name": "Teledeporte - Opción 5 [Markel]",
+        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
-      },
-      {
-        "name": "Teledeporte - Opción 2 [Elcano]",
-        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -4538,7 +4538,7 @@
       },
       {
         "name": "Teledeporte - Opción 3 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4549,16 +4549,16 @@
         "source": "Markel"
       },
       {
+        "name": "Teledeporte - Opción 5 [Markel]",
+        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
-      },
-      {
-        "name": "Teledeporte - Opción 2 [Elcano]",
-        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -4620,15 +4620,15 @@
       },
       {
         "name": "DAZN 1 - Opción 8 [Markel]",
-        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
+        "streamId": "a116ce3ff95c41c60e987e2b1aa247007f707884",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "DAZN 1 - Opción 5 [Elcano]",
-        "streamId": "a116ce3ff95c41c60e987e2b1aa247007f707884",
+        "name": "DAZN 1 - Opción 9 [Markel]",
+        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "DAZN 1 - Opción 6 [RCP]",
@@ -4730,7 +4730,7 @@
       },
       {
         "name": "Teledeporte - Opción 3 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4741,16 +4741,16 @@
         "source": "Markel"
       },
       {
+        "name": "Teledeporte - Opción 5 [Markel]",
+        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "Teledeporte - Opción 1 [New Loop]",
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
-      },
-      {
-        "name": "Teledeporte - Opción 2 [Elcano]",
-        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
-        "type": "ACESTREAM",
-        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 6 [RCP]",
@@ -5226,15 +5226,15 @@
       },
       {
         "name": "DAZN 1 - Opción 8 [Markel]",
-        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
+        "streamId": "a116ce3ff95c41c60e987e2b1aa247007f707884",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "DAZN 1 - Opción 5 [Elcano]",
-        "streamId": "a116ce3ff95c41c60e987e2b1aa247007f707884",
+        "name": "DAZN 1 - Opción 9 [Markel]",
+        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "DAZN 1 - Opción 6 [RCP]",
@@ -5867,10 +5867,10 @@
         "source": "Markel"
       },
       {
-        "name": "Movistar Plus+ - Opción 3 [Elcano]",
+        "name": "Movistar Plus+ - Opción 6 [Markel]",
         "streamId": "d23497596720b47b096ec0f850d6d26a19d1a336",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "Movistar Plus+ - Opción 4 [New Era]",
@@ -6442,15 +6442,15 @@
       },
       {
         "name": "DAZN 1 - Opción 8 [Markel]",
-        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
+        "streamId": "a116ce3ff95c41c60e987e2b1aa247007f707884",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "DAZN 1 - Opción 5 [Elcano]",
-        "streamId": "a116ce3ff95c41c60e987e2b1aa247007f707884",
+        "name": "DAZN 1 - Opción 9 [Markel]",
+        "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "DAZN 1 - Opción 6 [RCP]",
@@ -7364,6 +7364,18 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
+        "streamId": "ac33342ccf7d40d46174229085461d95000b9137",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN MotoGP - Opción 6 [Markel]",
+        "streamId": "20d4b3586bb822c3618cf8fb665a304869c5e1a5",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN MotoGP - Opción 7 [Markel]",
         "streamId": "342ca6975a4884d81f9fec5c4085a47060bd2028",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -8038,6 +8050,12 @@
       },
       {
         "name": "DAZN 1 - Opción 8 [Markel]",
+        "streamId": "a116ce3ff95c41c60e987e2b1aa247007f707884",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 9 [Markel]",
         "streamId": "f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -8752,13 +8770,19 @@
       },
       {
         "name": "Teledeporte - Opción 3 [Markel]",
-        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
+        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "Teledeporte - Opción 4 [Markel]",
         "streamId": "77cf022557c56cdf8d8115f50e61f846ad72ee05",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Teledeporte - Opción 5 [Markel]",
+        "streamId": "3b50a1dca0977e3761d016edd79314ab797f74f6",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -9573,12 +9597,6 @@
       {
         "name": "M+ Deportes - Opción 6 [Markel]",
         "streamId": "cf5327fe9c962a29dfff3868f4349ff2b0b4662f",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Deportes - Opción 7 [Markel]",
-        "streamId": "b35b3eb8e22365bf3469efd6d1f3b82618a6e18a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
