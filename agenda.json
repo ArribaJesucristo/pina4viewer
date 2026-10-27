@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/10/2026 20:10",
+    "updatedAt": "27/10/2026 20:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -1137,6 +1137,12 @@
         "streamId": "88ff2590e28b14288ecb7a54ecad6ed427eb74b1",
         "type": "ACESTREAM",
         "source": "Markel"
+      },
+      {
+        "name": "ArenaVision 30 (AV30)",
+        "streamId": "7bd9d072b65919352bda907b472961641e6e2930",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
       }
     ]
   },
@@ -1827,6 +1833,12 @@
         "streamId": "2075cf1c981654a5772d8508ecce044375d9ba38",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "ArenaVision 30 (AV30)",
+        "streamId": "7bd9d072b65919352bda907b472961641e6e2930",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
       }
     ]
   },
@@ -2981,6 +2993,12 @@
         "streamId": "2075cf1c981654a5772d8508ecce044375d9ba38",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "ArenaVision 30 (AV30)",
+        "streamId": "7bd9d072b65919352bda907b472961641e6e2930",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
       }
     ]
   },
@@ -3679,6 +3697,18 @@
       {
         "name": "ArenaVision 12 (AV12)",
         "streamId": "931fd4c24398a24beb9b6ede856ca34339ff2c22",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
+      },
+      {
+        "name": "ArenaVision 30 (AV30)",
+        "streamId": "7bd9d072b65919352bda907b472961641e6e2930",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
+      },
+      {
+        "name": "ArenaVision 31 (AV31)",
+        "streamId": "7a8c26ece4d1ce106225a2bc66260f6a5b9be913",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
