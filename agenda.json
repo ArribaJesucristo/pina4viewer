@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "28/10/2026 11:10",
+    "updatedAt": "28/10/2026 11:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -79,6 +79,24 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Vamos - Opción 12 [Markel]",
+        "streamId": "d5a04834b3fbbec759bd7578338141194d6133eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 13 [Markel]",
+        "streamId": "8ac2ad3d86aee7bd9ae0f6c7a7962aa85299d523",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 14 [Markel]",
+        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Vamos - Opción 2 [Elcano]",
         "streamId": "e199624e4da4db4e1db346fd236da7b350fdbfda",
         "type": "ACESTREAM",
@@ -120,7 +138,7 @@
       },
       {
         "name": "Teledeporte - Opción 2 [Markel]",
-        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
+        "streamId": "7671b36e08cf90906caa01740f427d084f16f925",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -129,6 +147,12 @@
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 2 [Elcano]",
+        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 3 [Elcano]",
@@ -218,7 +242,13 @@
       },
       {
         "name": "Movistar Plus+ - Opción 5 [Markel]",
-        "streamId": "dc77ffac4ce00ca2c00243259370f777ba8aff4a",
+        "streamId": "a2f9ab273087b85de84212d92dd895f37052cf62",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 6 [Markel]",
+        "streamId": "3e6eca619bc177109d36c1714de74a597e7540ea",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -257,6 +287,12 @@
         "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 5 [Markel]",
+        "streamId": "dc77ffac4ce00ca2c00243259370f777ba8aff4a",
+        "type": "ACESTREAM",
+        "source": "Markel"
       },
       {
         "name": "Movistar Plus+ - Opción 1 [Elcano]",
@@ -432,7 +468,7 @@
       },
       {
         "name": "Teledeporte - Opción 2 [Markel]",
-        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
+        "streamId": "7671b36e08cf90906caa01740f427d084f16f925",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -441,6 +477,12 @@
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 2 [Elcano]",
+        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 3 [Elcano]",
@@ -485,6 +527,12 @@
       {
         "name": "M+ Baloncesto 2 - Opción 1 [Markel]",
         "streamId": "6b5cb144405a5ef1890ab0f4c22afaf924229cbb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Baloncesto 2 - Opción 2 [Markel]",
+        "streamId": "8177df89a64fd79d9a542443d2ad5111e04ae321",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -586,7 +634,13 @@
       },
       {
         "name": "Movistar Plus+ - Opción 5 [Markel]",
-        "streamId": "dc77ffac4ce00ca2c00243259370f777ba8aff4a",
+        "streamId": "a2f9ab273087b85de84212d92dd895f37052cf62",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 6 [Markel]",
+        "streamId": "3e6eca619bc177109d36c1714de74a597e7540ea",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -625,6 +679,12 @@
         "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 5 [Markel]",
+        "streamId": "dc77ffac4ce00ca2c00243259370f777ba8aff4a",
+        "type": "ACESTREAM",
+        "source": "Markel"
       },
       {
         "name": "Movistar Plus+ - Opción 1 [Elcano]",
@@ -704,13 +764,19 @@
       },
       {
         "name": "M+ LaLiga - Opción 7 [Markel]",
-        "streamId": "91173c7115b500d2eb684a2658e04af2c893a5eb",
+        "streamId": "f0caa9805cc64698dde2df1d96ed7ca46be5ea2c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ LaLiga - Opción 8 [Markel]",
-        "streamId": "07989660d07585fbb0c46f82cb2889ff21cc7ea1",
+        "streamId": "9564bbcd75b67dfb2bd13f5f4d285cbba477a06f",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 9 [Markel]",
+        "streamId": "cdf251af580d44a71302fb5634b734981a77f8b7",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -829,20 +895,20 @@
         "source": "RCP"
       },
       {
+        "name": "M+ LaLiga - Opción 7 [Markel]",
+        "streamId": "91173c7115b500d2eb684a2658e04af2c893a5eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 8 [Markel]",
+        "streamId": "07989660d07585fbb0c46f82cb2889ff21cc7ea1",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ LaLiga - Opción 2 [Elcano]",
         "streamId": "d81bbfd7828f5a647d99914aac0b06a9b814ff8e",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ LaLiga - Opción 6 [Elcano]",
-        "streamId": "f0caa9805cc64698dde2df1d96ed7ca46be5ea2c",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ LaLiga - Opción 7 [Elcano]",
-        "streamId": "9564bbcd75b67dfb2bd13f5f4d285cbba477a06f",
         "type": "ACESTREAM",
         "source": "Elcano"
       }
@@ -877,6 +943,12 @@
       {
         "name": "M+ LaLiga 2 - Opción 4 [Markel]",
         "streamId": "b8eb9c9868d487402569bba2d97a8af113d033fe",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga 2 - Opción 5 [Markel]",
+        "streamId": "aadffc9105dd11de902eb5fd3dfd8430d2cd9997",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -1011,6 +1083,24 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Vamos - Opción 12 [Markel]",
+        "streamId": "d5a04834b3fbbec759bd7578338141194d6133eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 13 [Markel]",
+        "streamId": "8ac2ad3d86aee7bd9ae0f6c7a7962aa85299d523",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 14 [Markel]",
+        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Vamos - Opción 2 [Elcano]",
         "streamId": "e199624e4da4db4e1db346fd236da7b350fdbfda",
         "type": "ACESTREAM",
@@ -1129,6 +1219,24 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Vamos - Opción 12 [Markel]",
+        "streamId": "d5a04834b3fbbec759bd7578338141194d6133eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 13 [Markel]",
+        "streamId": "8ac2ad3d86aee7bd9ae0f6c7a7962aa85299d523",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 14 [Markel]",
+        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Vamos - Opción 2 [Elcano]",
         "streamId": "e199624e4da4db4e1db346fd236da7b350fdbfda",
         "type": "ACESTREAM",
@@ -1194,9 +1302,15 @@
     "channels": [
       {
         "name": "DAZN Baloncesto 2 - Opción 1 [Markel]",
-        "streamId": "b6a78b5d0a8671f86a7dd27eb6cb02f5dc570927",
+        "streamId": "15f450f3c63541e14995c7163b867037920a4bbb",
         "type": "ACESTREAM",
         "source": "Markel"
+      },
+      {
+        "name": "DAZN Baloncesto 2 - Opción 1 [Elcano]",
+        "streamId": "b6a78b5d0a8671f86a7dd27eb6cb02f5dc570927",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "DAZN Baloncesto 2 - Opción 2 [Elcano]",
@@ -1223,6 +1337,12 @@
       {
         "name": "DAZN Baloncesto - Opción 2 [Markel]",
         "streamId": "4153dc48705b9293d82530f9d750c7917033e157",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN Baloncesto - Opción 3 [Markel]",
+        "streamId": "9bb868065ea84846ab5070fe37b55edc3657041c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -1305,6 +1425,24 @@
       {
         "name": "M+ Vamos - Opción 11 [Markel]",
         "streamId": "f75efb1ab987e9b207daccb9a3d49efa056bdd95",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 12 [Markel]",
+        "streamId": "d5a04834b3fbbec759bd7578338141194d6133eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 13 [Markel]",
+        "streamId": "8ac2ad3d86aee7bd9ae0f6c7a7962aa85299d523",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 14 [Markel]",
+        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -1451,6 +1589,12 @@
       {
         "name": "M+ LaLiga 2 - Opción 4 [Markel]",
         "streamId": "b8eb9c9868d487402569bba2d97a8af113d033fe",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga 2 - Opción 5 [Markel]",
+        "streamId": "aadffc9105dd11de902eb5fd3dfd8430d2cd9997",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -1636,7 +1780,7 @@
       },
       {
         "name": "Teledeporte - Opción 2 [Markel]",
-        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
+        "streamId": "7671b36e08cf90906caa01740f427d084f16f925",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -1645,6 +1789,12 @@
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 2 [Elcano]",
+        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 3 [Elcano]",
@@ -1781,6 +1931,24 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Vamos - Opción 12 [Markel]",
+        "streamId": "d5a04834b3fbbec759bd7578338141194d6133eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 13 [Markel]",
+        "streamId": "8ac2ad3d86aee7bd9ae0f6c7a7962aa85299d523",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 14 [Markel]",
+        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Vamos - Opción 2 [Elcano]",
         "streamId": "e199624e4da4db4e1db346fd236da7b350fdbfda",
         "type": "ACESTREAM",
@@ -1858,13 +2026,19 @@
       },
       {
         "name": "M+ LaLiga - Opción 7 [Markel]",
-        "streamId": "91173c7115b500d2eb684a2658e04af2c893a5eb",
+        "streamId": "f0caa9805cc64698dde2df1d96ed7ca46be5ea2c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ LaLiga - Opción 8 [Markel]",
-        "streamId": "07989660d07585fbb0c46f82cb2889ff21cc7ea1",
+        "streamId": "9564bbcd75b67dfb2bd13f5f4d285cbba477a06f",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 9 [Markel]",
+        "streamId": "cdf251af580d44a71302fb5634b734981a77f8b7",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2031,6 +2205,12 @@
       {
         "name": "M+ LaLiga 2 - Opción 4 [Markel]",
         "streamId": "b8eb9c9868d487402569bba2d97a8af113d033fe",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga 2 - Opción 5 [Markel]",
+        "streamId": "aadffc9105dd11de902eb5fd3dfd8430d2cd9997",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2206,7 +2386,7 @@
       },
       {
         "name": "Teledeporte - Opción 2 [Markel]",
-        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
+        "streamId": "7671b36e08cf90906caa01740f427d084f16f925",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2215,6 +2395,12 @@
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 2 [Elcano]",
+        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 3 [Elcano]",
@@ -2317,6 +2503,24 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Vamos - Opción 12 [Markel]",
+        "streamId": "d5a04834b3fbbec759bd7578338141194d6133eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 13 [Markel]",
+        "streamId": "8ac2ad3d86aee7bd9ae0f6c7a7962aa85299d523",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 14 [Markel]",
+        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Vamos - Opción 2 [Elcano]",
         "streamId": "e199624e4da4db4e1db346fd236da7b350fdbfda",
         "type": "ACESTREAM",
@@ -2334,9 +2538,15 @@
     "channels": [
       {
         "name": "DAZN Baloncesto 2 - Opción 1 [Markel]",
-        "streamId": "b6a78b5d0a8671f86a7dd27eb6cb02f5dc570927",
+        "streamId": "15f450f3c63541e14995c7163b867037920a4bbb",
         "type": "ACESTREAM",
         "source": "Markel"
+      },
+      {
+        "name": "DAZN Baloncesto 2 - Opción 1 [Elcano]",
+        "streamId": "b6a78b5d0a8671f86a7dd27eb6cb02f5dc570927",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "DAZN Baloncesto 2 - Opción 2 [Elcano]",
@@ -2399,6 +2609,12 @@
       {
         "name": "DAZN 2 - Opción 8 [Markel]",
         "streamId": "2f9211669499f413dab1a490198afab2a9b4b57c",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 2 - Opción 9 [Markel]",
+        "streamId": "7d50ecf899b83e263e40f5a77e689570454c2b01",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2497,6 +2713,24 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Vamos - Opción 12 [Markel]",
+        "streamId": "d5a04834b3fbbec759bd7578338141194d6133eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 13 [Markel]",
+        "streamId": "8ac2ad3d86aee7bd9ae0f6c7a7962aa85299d523",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 14 [Markel]",
+        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Vamos - Opción 2 [Elcano]",
         "streamId": "e199624e4da4db4e1db346fd236da7b350fdbfda",
         "type": "ACESTREAM",
@@ -2521,6 +2755,12 @@
       {
         "name": "DAZN Baloncesto - Opción 2 [Markel]",
         "streamId": "4153dc48705b9293d82530f9d750c7917033e157",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN Baloncesto - Opción 3 [Markel]",
+        "streamId": "9bb868065ea84846ab5070fe37b55edc3657041c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2607,6 +2847,24 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Vamos - Opción 12 [Markel]",
+        "streamId": "d5a04834b3fbbec759bd7578338141194d6133eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 13 [Markel]",
+        "streamId": "8ac2ad3d86aee7bd9ae0f6c7a7962aa85299d523",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 14 [Markel]",
+        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Vamos - Opción 2 [Elcano]",
         "streamId": "e199624e4da4db4e1db346fd236da7b350fdbfda",
         "type": "ACESTREAM",
@@ -2624,9 +2882,15 @@
     "channels": [
       {
         "name": "DAZN Baloncesto 2 - Opción 1 [Markel]",
-        "streamId": "b6a78b5d0a8671f86a7dd27eb6cb02f5dc570927",
+        "streamId": "15f450f3c63541e14995c7163b867037920a4bbb",
         "type": "ACESTREAM",
         "source": "Markel"
+      },
+      {
+        "name": "DAZN Baloncesto 2 - Opción 1 [Elcano]",
+        "streamId": "b6a78b5d0a8671f86a7dd27eb6cb02f5dc570927",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "DAZN Baloncesto 2 - Opción 2 [Elcano]",
@@ -2647,6 +2911,12 @@
       {
         "name": "M+ Baloncesto 2 - Opción 1 [Markel]",
         "streamId": "6b5cb144405a5ef1890ab0f4c22afaf924229cbb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Baloncesto 2 - Opción 2 [Markel]",
+        "streamId": "8177df89a64fd79d9a542443d2ad5111e04ae321",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2692,7 +2962,13 @@
       },
       {
         "name": "Movistar Plus+ - Opción 5 [Markel]",
-        "streamId": "dc77ffac4ce00ca2c00243259370f777ba8aff4a",
+        "streamId": "a2f9ab273087b85de84212d92dd895f37052cf62",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 6 [Markel]",
+        "streamId": "3e6eca619bc177109d36c1714de74a597e7540ea",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2809,6 +3085,12 @@
         "source": "Markel"
       },
       {
+        "name": "Eurosport 2 - Opción 9 [Markel]",
+        "streamId": "02e0e0c70c297b19b56c2fc4bb5475b235440561",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "Eurosport 2 - Opción 3 [Elcano]",
         "streamId": "7bb7ccb4732d16a2a35037e0e838670cf6a002d6",
         "type": "ACESTREAM",
@@ -2874,13 +3156,19 @@
       },
       {
         "name": "M+ LaLiga - Opción 7 [Markel]",
-        "streamId": "91173c7115b500d2eb684a2658e04af2c893a5eb",
+        "streamId": "f0caa9805cc64698dde2df1d96ed7ca46be5ea2c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ LaLiga - Opción 8 [Markel]",
-        "streamId": "07989660d07585fbb0c46f82cb2889ff21cc7ea1",
+        "streamId": "9564bbcd75b67dfb2bd13f5f4d285cbba477a06f",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 9 [Markel]",
+        "streamId": "cdf251af580d44a71302fb5634b734981a77f8b7",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3050,7 +3338,7 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
-        "streamId": "544272dfe8ab7d382f5aeba21506bcd54d6c9f17",
+        "streamId": "e7c8af33b6b067113121d816cbc8a816618a47a4",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3114,7 +3402,7 @@
       },
       {
         "name": "Teledeporte - Opción 2 [Markel]",
-        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
+        "streamId": "7671b36e08cf90906caa01740f427d084f16f925",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3123,6 +3411,12 @@
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 2 [Elcano]",
+        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 3 [Elcano]",
@@ -3225,6 +3519,24 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Vamos - Opción 12 [Markel]",
+        "streamId": "d5a04834b3fbbec759bd7578338141194d6133eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 13 [Markel]",
+        "streamId": "8ac2ad3d86aee7bd9ae0f6c7a7962aa85299d523",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 14 [Markel]",
+        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Vamos - Opción 2 [Elcano]",
         "streamId": "e199624e4da4db4e1db346fd236da7b350fdbfda",
         "type": "ACESTREAM",
@@ -3254,7 +3566,7 @@
       },
       {
         "name": "DAZN 3 - Opción 3 [Markel]",
-        "streamId": "4fa0b9ddca1ece3e77567085a4eb6671a069cd10",
+        "streamId": "0d09cf43ff4705e7e563c4d84d989d326e29ffb4",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3294,7 +3606,7 @@
       },
       {
         "name": "Teledeporte - Opción 2 [Markel]",
-        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
+        "streamId": "7671b36e08cf90906caa01740f427d084f16f925",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3303,6 +3615,12 @@
         "streamId": "4048be88f84250719e864868e537612f389df48e",
         "type": "ACESTREAM",
         "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 2 [Elcano]",
+        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "Teledeporte - Opción 3 [Elcano]",
@@ -3387,10 +3705,16 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN 1 - Opción 2 [Elcano]",
+        "name": "DAZN 1 - Opción 9 [Markel]",
+        "streamId": "50f2ea82589f0a513dd55ba9ca5e4310e4a8c2a2",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 10 [Markel]",
         "streamId": "d0e36bd86630f96233d7457a617fea99ee54f06a",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "DAZN 1 - Opción 3 [Elcano]",
@@ -3464,13 +3788,19 @@
       },
       {
         "name": "M+ LaLiga - Opción 7 [Markel]",
-        "streamId": "91173c7115b500d2eb684a2658e04af2c893a5eb",
+        "streamId": "f0caa9805cc64698dde2df1d96ed7ca46be5ea2c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ LaLiga - Opción 8 [Markel]",
-        "streamId": "07989660d07585fbb0c46f82cb2889ff21cc7ea1",
+        "streamId": "9564bbcd75b67dfb2bd13f5f4d285cbba477a06f",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 9 [Markel]",
+        "streamId": "cdf251af580d44a71302fb5634b734981a77f8b7",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3641,6 +3971,18 @@
         "source": "Markel"
       },
       {
+        "name": "LaLiga TV Hypermotion - Opción 8 [Markel]",
+        "streamId": "3adbdea9630e8eb7814741852235febedf4c4195",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 9 [Markel]",
+        "streamId": "313d24ff312db3aa6709b8a7df66625fbd92f8ba",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "LaLiga TV Hypermotion - Opción 5 [New Era]",
         "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
         "type": "ACESTREAM",
@@ -3719,6 +4061,24 @@
       {
         "name": "M+ Vamos - Opción 11 [Markel]",
         "streamId": "f75efb1ab987e9b207daccb9a3d49efa056bdd95",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 12 [Markel]",
+        "streamId": "d5a04834b3fbbec759bd7578338141194d6133eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 13 [Markel]",
+        "streamId": "8ac2ad3d86aee7bd9ae0f6c7a7962aa85299d523",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 14 [Markel]",
+        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3804,7 +4164,13 @@
       },
       {
         "name": "Movistar Plus+ - Opción 5 [Markel]",
-        "streamId": "dc77ffac4ce00ca2c00243259370f777ba8aff4a",
+        "streamId": "a2f9ab273087b85de84212d92dd895f37052cf62",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 6 [Markel]",
+        "streamId": "3e6eca619bc177109d36c1714de74a597e7540ea",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3903,10 +4269,16 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN 1 - Opción 2 [Elcano]",
+        "name": "DAZN 1 - Opción 9 [Markel]",
+        "streamId": "50f2ea82589f0a513dd55ba9ca5e4310e4a8c2a2",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 10 [Markel]",
         "streamId": "d0e36bd86630f96233d7457a617fea99ee54f06a",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "DAZN 1 - Opción 3 [Elcano]",
@@ -3946,7 +4318,7 @@
       },
       {
         "name": "DAZN 3 - Opción 3 [Markel]",
-        "streamId": "4fa0b9ddca1ece3e77567085a4eb6671a069cd10",
+        "streamId": "0d09cf43ff4705e7e563c4d84d989d326e29ffb4",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4027,6 +4399,12 @@
         "source": "Markel"
       },
       {
+        "name": "DAZN 2 - Opción 9 [Markel]",
+        "streamId": "7d50ecf899b83e263e40f5a77e689570454c2b01",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "DAZN 2 - Opción 4 [Elcano]",
         "streamId": "eff7c84667c69e18353d8c97ab956915e2403feb",
         "type": "ACESTREAM",
@@ -4091,6 +4469,12 @@
       {
         "name": "DAZN LaLiga 2 - Opción 2 [Markel]",
         "streamId": "db26cad444717c262dddb5ea37301ee779d4f5b9",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN LaLiga 2 - Opción 3 [Markel]",
+        "streamId": "2c7509111c5a8ee7842e2af72d4285d4a2ad1cd8",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4185,6 +4569,18 @@
       {
         "name": "LaLiga TV Hypermotion - Opción 7 [Markel]",
         "streamId": "6a85e6175f5c94c000e3d94c60e81625fc38d7a0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 8 [Markel]",
+        "streamId": "3adbdea9630e8eb7814741852235febedf4c4195",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 9 [Markel]",
+        "streamId": "313d24ff312db3aa6709b8a7df66625fbd92f8ba",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4286,7 +4682,13 @@
       },
       {
         "name": "Movistar Plus+ - Opción 5 [Markel]",
-        "streamId": "dc77ffac4ce00ca2c00243259370f777ba8aff4a",
+        "streamId": "a2f9ab273087b85de84212d92dd895f37052cf62",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 6 [Markel]",
+        "streamId": "3e6eca619bc177109d36c1714de74a597e7540ea",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4361,10 +4763,10 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN 4 - Opción 3 [Elcano]",
+        "name": "DAZN 4 - Opción 5 [Markel]",
         "streamId": "3313b734a8b64f993d682125bf657c1d0ebe0cf3",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "DAZN 4 - Opción 4 [RCP]",
@@ -4451,6 +4853,12 @@
         "source": "Markel"
       },
       {
+        "name": "DAZN Baloncesto - Opción 3 [Markel]",
+        "streamId": "9bb868065ea84846ab5070fe37b55edc3657041c",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "DAZN Baloncesto - Opción 1 [Elcano]",
         "streamId": "cf33a899a25cd62b6b1cc68c5352b766c700d4ae",
         "type": "ACESTREAM",
@@ -4529,6 +4937,12 @@
       {
         "name": "DAZN LaLiga - Opción 11 [Markel]",
         "streamId": "dda5d2cace9bc4cb0918e62bc50d657d4a10496a",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 12 [Markel]",
+        "streamId": "521743597320cfd3687c673cf92b6e9906158b09",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4655,10 +5069,16 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN 1 - Opción 2 [Elcano]",
+        "name": "DAZN 1 - Opción 9 [Markel]",
+        "streamId": "50f2ea82589f0a513dd55ba9ca5e4310e4a8c2a2",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 10 [Markel]",
         "streamId": "d0e36bd86630f96233d7457a617fea99ee54f06a",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "DAZN 1 - Opción 3 [Elcano]",
@@ -4785,6 +5205,12 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Baloncesto 2 - Opción 2 [Markel]",
+        "streamId": "8177df89a64fd79d9a542443d2ad5111e04ae321",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Baloncesto 2 - Opción 1 [Elcano]",
         "streamId": "9e9718238c65e52a96ee6169dbe38157851e4f69",
         "type": "ACESTREAM",
@@ -4824,9 +5250,15 @@
     "channels": [
       {
         "name": "DAZN Baloncesto 2 - Opción 1 [Markel]",
-        "streamId": "b6a78b5d0a8671f86a7dd27eb6cb02f5dc570927",
+        "streamId": "15f450f3c63541e14995c7163b867037920a4bbb",
         "type": "ACESTREAM",
         "source": "Markel"
+      },
+      {
+        "name": "DAZN Baloncesto 2 - Opción 1 [Elcano]",
+        "streamId": "b6a78b5d0a8671f86a7dd27eb6cb02f5dc570927",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "DAZN Baloncesto 2 - Opción 2 [Elcano]",
@@ -4870,7 +5302,13 @@
       },
       {
         "name": "Movistar Plus+ - Opción 5 [Markel]",
-        "streamId": "dc77ffac4ce00ca2c00243259370f777ba8aff4a",
+        "streamId": "a2f9ab273087b85de84212d92dd895f37052cf62",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 6 [Markel]",
+        "streamId": "3e6eca619bc177109d36c1714de74a597e7540ea",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4963,6 +5401,18 @@
         "source": "Markel"
       },
       {
+        "name": "LaLiga TV Hypermotion - Opción 8 [Markel]",
+        "streamId": "3adbdea9630e8eb7814741852235febedf4c4195",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 9 [Markel]",
+        "streamId": "313d24ff312db3aa6709b8a7df66625fbd92f8ba",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "LaLiga TV Hypermotion - Opción 5 [New Era]",
         "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
         "type": "ACESTREAM",
@@ -5027,10 +5477,16 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN 1 - Opción 2 [Elcano]",
+        "name": "DAZN 1 - Opción 9 [Markel]",
+        "streamId": "50f2ea82589f0a513dd55ba9ca5e4310e4a8c2a2",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 10 [Markel]",
         "streamId": "d0e36bd86630f96233d7457a617fea99ee54f06a",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "DAZN 1 - Opción 3 [Elcano]",
@@ -5145,6 +5601,24 @@
       {
         "name": "M+ Vamos - Opción 11 [Markel]",
         "streamId": "f75efb1ab987e9b207daccb9a3d49efa056bdd95",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 12 [Markel]",
+        "streamId": "d5a04834b3fbbec759bd7578338141194d6133eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 13 [Markel]",
+        "streamId": "8ac2ad3d86aee7bd9ae0f6c7a7962aa85299d523",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 14 [Markel]",
+        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -5284,7 +5758,7 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
-        "streamId": "544272dfe8ab7d382f5aeba21506bcd54d6c9f17",
+        "streamId": "e7c8af33b6b067113121d816cbc8a816618a47a4",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -5366,7 +5840,7 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
-        "streamId": "544272dfe8ab7d382f5aeba21506bcd54d6c9f17",
+        "streamId": "e7c8af33b6b067113121d816cbc8a816618a47a4",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -5448,7 +5922,7 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
-        "streamId": "544272dfe8ab7d382f5aeba21506bcd54d6c9f17",
+        "streamId": "e7c8af33b6b067113121d816cbc8a816618a47a4",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -5571,6 +6045,24 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Vamos - Opción 12 [Markel]",
+        "streamId": "d5a04834b3fbbec759bd7578338141194d6133eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 13 [Markel]",
+        "streamId": "8ac2ad3d86aee7bd9ae0f6c7a7962aa85299d523",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 14 [Markel]",
+        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Vamos - Opción 2 [Elcano]",
         "streamId": "e199624e4da4db4e1db346fd236da7b350fdbfda",
         "type": "ACESTREAM",
@@ -5655,6 +6147,12 @@
         "source": "Markel"
       },
       {
+        "name": "DAZN Baloncesto - Opción 3 [Markel]",
+        "streamId": "9bb868065ea84846ab5070fe37b55edc3657041c",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "DAZN Baloncesto - Opción 1 [Elcano]",
         "streamId": "cf33a899a25cd62b6b1cc68c5352b766c700d4ae",
         "type": "ACESTREAM",
@@ -5672,9 +6170,15 @@
     "channels": [
       {
         "name": "DAZN Baloncesto 2 - Opción 1 [Markel]",
-        "streamId": "b6a78b5d0a8671f86a7dd27eb6cb02f5dc570927",
+        "streamId": "15f450f3c63541e14995c7163b867037920a4bbb",
         "type": "ACESTREAM",
         "source": "Markel"
+      },
+      {
+        "name": "DAZN Baloncesto 2 - Opción 1 [Elcano]",
+        "streamId": "b6a78b5d0a8671f86a7dd27eb6cb02f5dc570927",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "DAZN Baloncesto 2 - Opción 2 [Elcano]",
@@ -5723,6 +6227,12 @@
       {
         "name": "M+ Baloncesto 2 - Opción 1 [Markel]",
         "streamId": "6b5cb144405a5ef1890ab0f4c22afaf924229cbb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Baloncesto 2 - Opción 2 [Markel]",
+        "streamId": "8177df89a64fd79d9a542443d2ad5111e04ae321",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -5813,10 +6323,16 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN 1 - Opción 2 [Elcano]",
+        "name": "DAZN 1 - Opción 9 [Markel]",
+        "streamId": "50f2ea82589f0a513dd55ba9ca5e4310e4a8c2a2",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 10 [Markel]",
         "streamId": "d0e36bd86630f96233d7457a617fea99ee54f06a",
         "type": "ACESTREAM",
-        "source": "Elcano"
+        "source": "Markel"
       },
       {
         "name": "DAZN 1 - Opción 3 [Elcano]",
@@ -5889,6 +6405,12 @@
       {
         "name": "DAZN LaLiga 2 - Opción 2 [Markel]",
         "streamId": "db26cad444717c262dddb5ea37301ee779d4f5b9",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN LaLiga 2 - Opción 3 [Markel]",
+        "streamId": "2c7509111c5a8ee7842e2af72d4285d4a2ad1cd8",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -5987,6 +6509,18 @@
         "source": "Markel"
       },
       {
+        "name": "LaLiga TV Hypermotion - Opción 8 [Markel]",
+        "streamId": "3adbdea9630e8eb7814741852235febedf4c4195",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 9 [Markel]",
+        "streamId": "313d24ff312db3aa6709b8a7df66625fbd92f8ba",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "LaLiga TV Hypermotion - Opción 5 [New Era]",
         "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
         "type": "ACESTREAM",
@@ -6065,6 +6599,12 @@
       {
         "name": "Eurosport 1 - Opción 11 [Markel]",
         "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 1 - Opción 12 [Markel]",
+        "streamId": "b7596d5f4acda92e0869461255045b570f6f163b",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -6163,6 +6703,12 @@
         "source": "Markel"
       },
       {
+        "name": "DAZN LaLiga - Opción 12 [Markel]",
+        "streamId": "521743597320cfd3687c673cf92b6e9906158b09",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "DAZN LaLiga - Opción 6 [Elcano]",
         "streamId": "eb4975702ceadca7ed74f8707e17a9f55569dbb9",
         "type": "ACESTREAM",
@@ -6253,6 +6799,18 @@
       {
         "name": "LaLiga TV Hypermotion - Opción 7 [Markel]",
         "streamId": "6a85e6175f5c94c000e3d94c60e81625fc38d7a0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 8 [Markel]",
+        "streamId": "3adbdea9630e8eb7814741852235febedf4c4195",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 9 [Markel]",
+        "streamId": "313d24ff312db3aa6709b8a7df66625fbd92f8ba",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -6354,7 +6912,13 @@
       },
       {
         "name": "Movistar Plus+ - Opción 5 [Markel]",
-        "streamId": "dc77ffac4ce00ca2c00243259370f777ba8aff4a",
+        "streamId": "a2f9ab273087b85de84212d92dd895f37052cf62",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 6 [Markel]",
+        "streamId": "3e6eca619bc177109d36c1714de74a597e7540ea",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -6406,9 +6970,15 @@
     "channels": [
       {
         "name": "DAZN Baloncesto 2 - Opción 1 [Markel]",
-        "streamId": "b6a78b5d0a8671f86a7dd27eb6cb02f5dc570927",
+        "streamId": "15f450f3c63541e14995c7163b867037920a4bbb",
         "type": "ACESTREAM",
         "source": "Markel"
+      },
+      {
+        "name": "DAZN Baloncesto 2 - Opción 1 [Elcano]",
+        "streamId": "b6a78b5d0a8671f86a7dd27eb6cb02f5dc570927",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "DAZN Baloncesto 2 - Opción 2 [Elcano]",
@@ -6464,13 +7034,19 @@
       },
       {
         "name": "M+ LaLiga - Opción 7 [Markel]",
-        "streamId": "91173c7115b500d2eb684a2658e04af2c893a5eb",
+        "streamId": "f0caa9805cc64698dde2df1d96ed7ca46be5ea2c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ LaLiga - Opción 8 [Markel]",
-        "streamId": "07989660d07585fbb0c46f82cb2889ff21cc7ea1",
+        "streamId": "9564bbcd75b67dfb2bd13f5f4d285cbba477a06f",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 9 [Markel]",
+        "streamId": "cdf251af580d44a71302fb5634b734981a77f8b7",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -6641,6 +7217,18 @@
         "source": "Markel"
       },
       {
+        "name": "LaLiga TV Hypermotion - Opción 8 [Markel]",
+        "streamId": "3adbdea9630e8eb7814741852235febedf4c4195",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 9 [Markel]",
+        "streamId": "313d24ff312db3aa6709b8a7df66625fbd92f8ba",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "LaLiga TV Hypermotion - Opción 5 [New Era]",
         "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
         "type": "ACESTREAM",
@@ -6735,6 +7323,24 @@
       {
         "name": "M+ Vamos - Opción 11 [Markel]",
         "streamId": "f75efb1ab987e9b207daccb9a3d49efa056bdd95",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 12 [Markel]",
+        "streamId": "d5a04834b3fbbec759bd7578338141194d6133eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 13 [Markel]",
+        "streamId": "8ac2ad3d86aee7bd9ae0f6c7a7962aa85299d523",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 14 [Markel]",
+        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -6865,6 +7471,12 @@
         "source": "Markel"
       },
       {
+        "name": "Eurosport 2 - Opción 9 [Markel]",
+        "streamId": "02e0e0c70c297b19b56c2fc4bb5475b235440561",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "Eurosport 2 - Opción 3 [Elcano]",
         "streamId": "7bb7ccb4732d16a2a35037e0e838670cf6a002d6",
         "type": "ACESTREAM",
@@ -6906,7 +7518,7 @@
       },
       {
         "name": "DAZN 3 - Opción 3 [Markel]",
-        "streamId": "4fa0b9ddca1ece3e77567085a4eb6671a069cd10",
+        "streamId": "0d09cf43ff4705e7e563c4d84d989d326e29ffb4",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -7033,6 +7645,12 @@
         "source": "Markel"
       },
       {
+        "name": "DAZN LaLiga - Opción 12 [Markel]",
+        "streamId": "521743597320cfd3687c673cf92b6e9906158b09",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "DAZN LaLiga - Opción 6 [Elcano]",
         "streamId": "eb4975702ceadca7ed74f8707e17a9f55569dbb9",
         "type": "ACESTREAM",
@@ -7127,6 +7745,18 @@
         "source": "Markel"
       },
       {
+        "name": "LaLiga TV Hypermotion - Opción 8 [Markel]",
+        "streamId": "3adbdea9630e8eb7814741852235febedf4c4195",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 9 [Markel]",
+        "streamId": "313d24ff312db3aa6709b8a7df66625fbd92f8ba",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "LaLiga TV Hypermotion - Opción 5 [New Era]",
         "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
         "type": "ACESTREAM",
@@ -7190,21 +7820,33 @@
       },
       {
         "name": "M+ Deportes - Opción 6 [Markel]",
-        "streamId": "fe262fe80790667a96a78da6ab4b676e4e8e0c6a",
+        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Deportes - Opción 7 [Markel]",
-        "streamId": "25a358e8bde07d0ce157aac52618876da1279ab7",
+        "streamId": "fe262fe80790667a96a78da6ab4b676e4e8e0c6a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Deportes - Opción 8 [Markel]",
-        "streamId": "c75686322ba523fce444a6b7991145920d985166",
+        "streamId": "25a358e8bde07d0ce157aac52618876da1279ab7",
         "type": "ACESTREAM",
         "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 9 [Markel]",
+        "streamId": "c730c0e0d0bb0270bf5a1e6b5f0436f6c1436728",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 3 [Elcano]",
+        "streamId": "c75686322ba523fce444a6b7991145920d985166",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "M+ Deportes - Opción 6 [Elcano]",
@@ -7338,9 +7980,27 @@
       },
       {
         "name": "DAZN F1 - Opción 18 [Markel]",
-        "streamId": "c7a7f98530056489d455bf73041e11a3e0397943",
+        "streamId": "9fd1ee3962f1d8f157c974a1c9f6f03a6ebe6b42",
         "type": "ACESTREAM",
         "source": "Markel"
+      },
+      {
+        "name": "DAZN F1 - Opción 19 [Markel]",
+        "streamId": "93ec58b796e86b864a0d70f4ca1e95cee8892973",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN F1 - Opción 20 [Markel]",
+        "streamId": "7c95f5bf1a768053fa2d41b1b7f6d5afdcc7f88a",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN F1 - Opción 4 [Elcano]",
+        "streamId": "c7a7f98530056489d455bf73041e11a3e0397943",
+        "type": "ACESTREAM",
+        "source": "Elcano"
       },
       {
         "name": "DAZN F1 - Opción 8 [New Era]",
@@ -7444,13 +8104,19 @@
       },
       {
         "name": "M+ LaLiga - Opción 7 [Markel]",
-        "streamId": "91173c7115b500d2eb684a2658e04af2c893a5eb",
+        "streamId": "f0caa9805cc64698dde2df1d96ed7ca46be5ea2c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ LaLiga - Opción 8 [Markel]",
-        "streamId": "07989660d07585fbb0c46f82cb2889ff21cc7ea1",
+        "streamId": "9564bbcd75b67dfb2bd13f5f4d285cbba477a06f",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 9 [Markel]",
+        "streamId": "cdf251af580d44a71302fb5634b734981a77f8b7",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -7623,6 +8289,12 @@
       {
         "name": "M+ LaLiga 2 - Opción 4 [Markel]",
         "streamId": "b8eb9c9868d487402569bba2d97a8af113d033fe",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga 2 - Opción 5 [Markel]",
+        "streamId": "aadffc9105dd11de902eb5fd3dfd8430d2cd9997",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -7892,7 +8564,19 @@
       },
       {
         "name": "DAZN F1 - Opción 18 [Markel]",
-        "streamId": "c7a7f98530056489d455bf73041e11a3e0397943",
+        "streamId": "9fd1ee3962f1d8f157c974a1c9f6f03a6ebe6b42",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN F1 - Opción 19 [Markel]",
+        "streamId": "93ec58b796e86b864a0d70f4ca1e95cee8892973",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN F1 - Opción 20 [Markel]",
+        "streamId": "7c95f5bf1a768053fa2d41b1b7f6d5afdcc7f88a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -8028,7 +8712,7 @@
       },
       {
         "name": "DAZN MotoGP - Opción 5 [Markel]",
-        "streamId": "544272dfe8ab7d382f5aeba21506bcd54d6c9f17",
+        "streamId": "e7c8af33b6b067113121d816cbc8a816618a47a4",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -8109,6 +8793,12 @@
         "source": "Markel"
       },
       {
+        "name": "DAZN Baloncesto - Opción 3 [Markel]",
+        "streamId": "9bb868065ea84846ab5070fe37b55edc3657041c",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "DAZN Baloncesto - Opción 1 [Elcano]",
         "streamId": "cf33a899a25cd62b6b1cc68c5352b766c700d4ae",
         "type": "ACESTREAM",
@@ -8138,7 +8828,7 @@
     "channels": [
       {
         "name": "DAZN Baloncesto 2 - Opción 1 [Markel]",
-        "streamId": "b6a78b5d0a8671f86a7dd27eb6cb02f5dc570927",
+        "streamId": "15f450f3c63541e14995c7163b867037920a4bbb",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -8259,6 +8949,12 @@
         "source": "Markel"
       },
       {
+        "name": "Eurosport 1 - Opción 12 [Markel]",
+        "streamId": "b7596d5f4acda92e0869461255045b570f6f163b",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "Eurosport 1 - Opción 1 [Elcano]",
         "streamId": "9c825219b69291e2a103404bdfd63c3d7a6c9f66",
         "type": "ACESTREAM",
@@ -8367,6 +9063,12 @@
       {
         "name": "Eurosport 2 - Opción 8 [Markel]",
         "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Eurosport 2 - Opción 9 [Markel]",
+        "streamId": "02e0e0c70c297b19b56c2fc4bb5475b235440561",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -8495,6 +9197,12 @@
         "source": "Markel"
       },
       {
+        "name": "DAZN LaLiga - Opción 12 [Markel]",
+        "streamId": "521743597320cfd3687c673cf92b6e9906158b09",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "DAZN LaLiga - Opción 1 [New Loop]",
         "streamId": "dda5d2cace9bc4cb0918e62bc50d657d4a10496a",
         "type": "ACESTREAM",
@@ -8585,6 +9293,12 @@
       {
         "name": "DAZN LaLiga 2 - Opción 2 [Markel]",
         "streamId": "db26cad444717c262dddb5ea37301ee779d4f5b9",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN LaLiga 2 - Opción 3 [Markel]",
+        "streamId": "2c7509111c5a8ee7842e2af72d4285d4a2ad1cd8",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -8701,6 +9415,18 @@
         "source": "Markel"
       },
       {
+        "name": "DAZN 1 - Opción 9 [Markel]",
+        "streamId": "50f2ea82589f0a513dd55ba9ca5e4310e4a8c2a2",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 10 [Markel]",
+        "streamId": "d0e36bd86630f96233d7457a617fea99ee54f06a",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "DAZN 1 - Opción 1 [New Loop]",
         "streamId": "d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151",
         "type": "ACESTREAM",
@@ -8801,6 +9527,12 @@
         "source": "Markel"
       },
       {
+        "name": "DAZN 2 - Opción 9 [Markel]",
+        "streamId": "7d50ecf899b83e263e40f5a77e689570454c2b01",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "DAZN 2 - Opción 1 [New Loop]",
         "streamId": "b0eabe0fdd02fdd165896236765a9b753a2ff516",
         "type": "ACESTREAM",
@@ -8866,7 +9598,7 @@
       },
       {
         "name": "DAZN 3 - Opción 3 [Markel]",
-        "streamId": "4fa0b9ddca1ece3e77567085a4eb6671a069cd10",
+        "streamId": "0d09cf43ff4705e7e563c4d84d989d326e29ffb4",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -8925,6 +9657,12 @@
       {
         "name": "DAZN 4 - Opción 4 [Markel]",
         "streamId": "7e90956539f4e1318a63f3960e4f75c7c7c5a3b8",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 4 - Opción 5 [Markel]",
+        "streamId": "3313b734a8b64f993d682125bf657c1d0ebe0cf3",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -9005,6 +9743,18 @@
         "source": "Markel"
       },
       {
+        "name": "LaLiga TV Hypermotion - Opción 8 [Markel]",
+        "streamId": "3adbdea9630e8eb7814741852235febedf4c4195",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 9 [Markel]",
+        "streamId": "313d24ff312db3aa6709b8a7df66625fbd92f8ba",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "LaLiga TV Hypermotion - Opción 1 [Elcano]",
         "streamId": "9b252f58fa062ad479621045565072fa2c5cedf5",
         "type": "ACESTREAM",
@@ -9063,6 +9813,18 @@
         "source": "Markel"
       },
       {
+        "name": "LaLiga TV Hypermotion 2 - Opción 4 [Markel]",
+        "streamId": "b4eb5c7e9a879db4c4d089d726c35440af70a525",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion 2 - Opción 5 [Markel]",
+        "streamId": "6b91b9cf8b9f70edbf72e9888b4de79f0556633e",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "LaLiga TV Hypermotion 2 - Opción 1 [Elcano]",
         "streamId": "a794108ea5f110aa307ccf3cbb95140098153fef",
         "type": "ACESTREAM",
@@ -9111,6 +9873,18 @@
       {
         "name": "LaLiga TV Hypermotion 3 - Opción 2 [Markel]",
         "streamId": "dd6c7559c271ddc13dae0dca2acccaeaff7e8bad",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion 3 - Opción 3 [Markel]",
+        "streamId": "fe09e7593af755b6956256cd21aac75313c8a4e4",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion 3 - Opción 4 [Markel]",
+        "streamId": "6e32bc573432f15e4c443e96a6d50a2bd4ce1ba9",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -9217,6 +9991,18 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Golf - Opción 7 [Markel]",
+        "streamId": "7f411bec773950b69bb46a62b338245c3a8054d7",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Golf - Opción 8 [Markel]",
+        "streamId": "feeca95525a4b9891091cc0c585b6c4e218ba734",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Golf - Opción 1 [New Loop]",
         "streamId": "872608e734992db636eb79426802cd08f4029afb",
         "type": "ACESTREAM",
@@ -9265,6 +10051,12 @@
       {
         "name": "M+ Golf 2 - Opción 2 [Markel]",
         "streamId": "d8cac298fc607123cde5315d6091d7b83b63f817",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Golf 2 - Opción 3 [Markel]",
+        "streamId": "fc92de3bf2f7748bd418b942de9e982bbb3400f6",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -9363,6 +10155,24 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Vamos - Opción 12 [Markel]",
+        "streamId": "d5a04834b3fbbec759bd7578338141194d6133eb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 13 [Markel]",
+        "streamId": "8ac2ad3d86aee7bd9ae0f6c7a7962aa85299d523",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Vamos - Opción 14 [Markel]",
+        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Vamos - Opción 1 [Elcano]",
         "streamId": "a67d8015538d3c3f4ca4d2a06c9014c3085281da",
         "type": "ACESTREAM",
@@ -9410,7 +10220,7 @@
       },
       {
         "name": "Teledeporte - Opción 2 [Markel]",
-        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
+        "streamId": "7671b36e08cf90906caa01740f427d084f16f925",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -10173,6 +10983,12 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Baloncesto 2 - Opción 2 [Markel]",
+        "streamId": "8177df89a64fd79d9a542443d2ad5111e04ae321",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Baloncesto 2 - Opción 1 [Elcano]",
         "streamId": "9e9718238c65e52a96ee6169dbe38157851e4f69",
         "type": "ACESTREAM",
@@ -10242,19 +11058,25 @@
       },
       {
         "name": "M+ Deportes - Opción 6 [Markel]",
-        "streamId": "fe262fe80790667a96a78da6ab4b676e4e8e0c6a",
+        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Deportes - Opción 7 [Markel]",
-        "streamId": "25a358e8bde07d0ce157aac52618876da1279ab7",
+        "streamId": "fe262fe80790667a96a78da6ab4b676e4e8e0c6a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "M+ Deportes - Opción 8 [Markel]",
-        "streamId": "c75686322ba523fce444a6b7991145920d985166",
+        "streamId": "25a358e8bde07d0ce157aac52618876da1279ab7",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 9 [Markel]",
+        "streamId": "c730c0e0d0bb0270bf5a1e6b5f0436f6c1436728",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -10359,6 +11181,12 @@
         "source": "Markel"
       },
       {
+        "name": "M+ Deportes 2 - Opción 8 [Markel]",
+        "streamId": "5353bf7cc8b92aaf7ce19c7f6cb7c3547326f025",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
         "name": "M+ Deportes 2 - Opción 1 [New Loop]",
         "streamId": "3afe1af18f8ff78e9946856911b00c67477052b5",
         "type": "ACESTREAM",
@@ -10437,6 +11265,12 @@
       {
         "name": "M+ Deportes 3 - Opción 4 [Markel]",
         "streamId": "39fefdecfc953dcf6e7c589739bf486c2e605ed0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes 3 - Opción 5 [Markel]",
+        "streamId": "d02690eb19acc9451d3a6397f5144bd20466382a",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -10581,12 +11415,6 @@
       {
         "name": "M+ Deportes 6 - Opción 2 [Markel]",
         "streamId": "8f982a0d6e3196c12d0034142b65008321150f7c",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Deportes 6 - Opción 3 [Markel]",
-        "streamId": "1cbac447969a43107b42481f7cac3d4183e890af",
         "type": "ACESTREAM",
         "source": "Markel"
       },
