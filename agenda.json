@@ -1,30 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "30/10/2026 20:50",
+    "updatedAt": "30/10/2026 21:01",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "KUWAIT MAJOR vs MEN SEMIFINAL",
-    "sport": "PADEL",
-    "competition": "PREMIER PADDLE",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "ArenaVision 46 (AV46)",
-        "streamId": "84aed52c5deb78f58595d88250e7a2bd04dfd810",
-        "type": "ACESTREAM",
-        "source": "ArenaVision"
-      },
-      {
-        "name": "ArenaVision 56 (AV56)",
-        "streamId": "f4d9011721fad5098febbe4d7c078a582e176a01",
-        "type": "ACESTREAM",
-        "source": "ArenaVision"
-      }
-    ],
-    "id": "pina_85"
   },
   {
     "title": "ANADOLU vs PANTAHINAKOS",
@@ -3280,6 +3258,106 @@
   },
   {
     "id": "pina_27",
+    "title": "Lehecka - Struff",
+    "sport": "TENIS",
+    "competition": "ATP BASILEA",
+    "time": "17:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "M+ Deportes - Opción 1 [Markel]",
+        "streamId": "332d8fdeb9c51385230b8c9448e047ccc4a6355d",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 2 [Markel]",
+        "streamId": "af393f93814d03160d48d2730759593b7bea5b47",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 3 [Markel]",
+        "streamId": "3e1dba7d70192fee5925f798d7bc78b8a65ce80c",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 4 [Markel]",
+        "streamId": "3d44884484303f51879f93ddaff6e4c267df2e3e",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 5 [Markel]",
+        "streamId": "8e22b547768ad2455e2015591ed2b06434d7415e",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 6 [Markel]",
+        "streamId": "26f3db95b4261c7d7e83b68b75f513d84b03e876",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 7 [Markel]",
+        "streamId": "fe262fe80790667a96a78da6ab4b676e4e8e0c6a",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 8 [Markel]",
+        "streamId": "25a358e8bde07d0ce157aac52618876da1279ab7",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 9 [Markel]",
+        "streamId": "b7f8d2c56969cec129a275308c3750dffffee3a8",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 10 [Markel]",
+        "streamId": "dbb418eeb96d891ae3aa7ef84feb58eed5b8b722",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 11 [Markel]",
+        "streamId": "c730c0e0d0bb0270bf5a1e6b5f0436f6c1436728",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 12 [Markel]",
+        "streamId": "f6b5d72663225d9369ebb48f5ff4735606672dc5",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ Deportes - Opción 2 [Elcano]",
+        "streamId": "d00223931b1854163e24c5c22475015d7d45c112",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "M+ Deportes - Opción 3 [RCP]",
+        "streamId": "e5fa927d9a017f4523fdb62774a0aec457985bfa",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ Deportes - Opción 4 [RCP]",
+        "streamId": "8f75fa54b498ce6889068f56f7a343b72bbcfcc0",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_28",
     "title": "Inversus Gernika Bizkaia - Movistar Estudiantes",
     "sport": "BALONCESTO",
     "competition": "LIGA FEMENINA ENDESA",
@@ -3393,7 +3471,7 @@
     "id": "pina_100"
   },
   {
-    "id": "pina_28",
+    "id": "pina_29",
     "title": "Udinese - Roma",
     "sport": "FUTBOL",
     "competition": "SERIE A",
@@ -3493,7 +3571,7 @@
     ]
   },
   {
-    "id": "pina_29",
+    "id": "pina_30",
     "title": "Madrid CFF - Deportivo",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -3539,7 +3617,7 @@
     ]
   },
   {
-    "id": "pina_30",
+    "id": "pina_31",
     "title": "Cadí La Seu - Durán Maquinaria Ensino",
     "sport": "BALONCESTO",
     "competition": "LIGA FEMENINA ENDESA",
@@ -3585,7 +3663,7 @@
     ]
   },
   {
-    "id": "pina_31",
+    "id": "pina_32",
     "title": "Basket Zaragoza - Bàsquet Girona",
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
@@ -3645,7 +3723,7 @@
     "id": "pina_102"
   },
   {
-    "id": "pina_32",
+    "id": "pina_33",
     "title": "Betis - Málaga",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -3781,7 +3859,7 @@
     ]
   },
   {
-    "id": "pina_33",
+    "id": "pina_34",
     "title": "RC Celta Fortuna - Córdoba CF",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -3815,7 +3893,7 @@
     ]
   },
   {
-    "id": "pina_34",
+    "id": "pina_35",
     "title": "Tottenham - Crystal Palace",
     "sport": "FUTBOL",
     "competition": "PREMIER LEAGUE",
@@ -3915,7 +3993,7 @@
     ]
   },
   {
-    "id": "pina_35",
+    "id": "pina_36",
     "title": "Northampton Saints - Gloucester",
     "sport": "RUGBY",
     "competition": "PREMIERSHIP",
@@ -4193,7 +4271,7 @@
     "id": "pina_103"
   },
   {
-    "id": "pina_36",
+    "id": "pina_37",
     "title": "Real Madrid Castilla - Cartagena",
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
@@ -4233,7 +4311,7 @@
     ]
   },
   {
-    "id": "pina_37",
+    "id": "pina_38",
     "title": "Impulso 360 Estepona - Spar Girona",
     "sport": "BALONCESTO",
     "competition": "LIGA FEMENINA ENDESA",
@@ -4261,7 +4339,7 @@
     ]
   },
   {
-    "id": "pina_38",
+    "id": "pina_39",
     "title": "Kutxabank Araski - Azulmarino Mallorca",
     "sport": "BALONCESTO",
     "competition": "LIGA FEMENINA ENDESA",
@@ -4311,7 +4389,7 @@
     "id": "pina_104"
   },
   {
-    "id": "pina_39",
+    "id": "pina_40",
     "title": "UCAM Murcia - Força Lleida",
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
@@ -4333,7 +4411,7 @@
     ]
   },
   {
-    "id": "pina_40",
+    "id": "pina_41",
     "title": "Ceremonia Apertura (Dakar)",
     "sport": "JJ.OO.",
     "competition": "JUEGOS OLÍMPICOS DE LA JUVENTUD",
@@ -4379,7 +4457,7 @@
     ]
   },
   {
-    "id": "pina_41",
+    "id": "pina_42",
     "title": "FC Barcelona - Deportivo Alavés",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -4491,7 +4569,7 @@
     ]
   },
   {
-    "id": "pina_42",
+    "id": "pina_43",
     "title": "Albacete BP - CE Sabadell",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -4585,7 +4663,7 @@
     ]
   },
   {
-    "id": "pina_43",
+    "id": "pina_44",
     "title": "Aston Villa - Fulham",
     "sport": "FUTBOL",
     "competition": "PREMIER LEAGUE",
@@ -4685,7 +4763,7 @@
     ]
   },
   {
-    "id": "pina_44",
+    "id": "pina_45",
     "title": "Zaragoza - Villarreal B",
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
@@ -4725,7 +4803,7 @@
     ]
   },
   {
-    "id": "pina_45",
+    "id": "pina_46",
     "title": "Leyma Coruña - La Laguna Tenerife",
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
@@ -4855,7 +4933,7 @@
     ]
   },
   {
-    "id": "pina_46",
+    "id": "pina_47",
     "title": "Vélez - San Lorenzo",
     "sport": "FUTBOL",
     "competition": "CLAUSURA",
@@ -4955,7 +5033,7 @@
     ]
   },
   {
-    "id": "pina_47",
+    "id": "pina_48",
     "title": "Atlanta Dream - Golden State Valkyries",
     "sport": "BALONCESTO",
     "competition": "PLAY OFF FINAL",
@@ -5023,7 +5101,7 @@
     "id": "pina_105"
   },
   {
-    "id": "pina_48",
+    "id": "pina_49",
     "title": "Moto3 (Sepang)",
     "sport": "MOTOR",
     "competition": "G.P. MALASIA",
@@ -5129,7 +5207,7 @@
     ]
   },
   {
-    "id": "pina_49",
+    "id": "pina_50",
     "title": "Moto2 (Sepang)",
     "sport": "MOTOR",
     "competition": "G.P. MALASIA",
@@ -5235,7 +5313,7 @@
     ]
   },
   {
-    "id": "pina_50",
+    "id": "pina_51",
     "title": "MotoGP (Sepang)",
     "sport": "MOTOR",
     "competition": "G.P. MALASIA",
@@ -5341,7 +5419,7 @@
     ]
   },
   {
-    "id": "pina_51",
+    "id": "pina_52",
     "title": "BM Morvedre - Club Balonmano Elche",
     "sport": "BALONMANO",
     "competition": "LIGA GUERRERAS IBERDROLA",
@@ -5387,7 +5465,7 @@
     ]
   },
   {
-    "id": "pina_52",
+    "id": "pina_53",
     "title": "VRAC Quesos Entrepinares - Vulcanizados Álvarez El Salvador",
     "sport": "RUGBY",
     "competition": "DIVISIÓN DE HONOR",
@@ -5487,7 +5565,7 @@
     ]
   },
   {
-    "id": "pina_53",
+    "id": "pina_54",
     "title": "Antequera - Murcia",
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
@@ -5527,7 +5605,7 @@
     ]
   },
   {
-    "id": "pina_54",
+    "id": "pina_55",
     "title": "Deportivo Alavés - Real Sociedad",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -5567,7 +5645,7 @@
     ]
   },
   {
-    "id": "pina_55",
+    "id": "pina_56",
     "title": "Joventut - Bilbao Basket",
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
@@ -5595,7 +5673,7 @@
     ]
   },
   {
-    "id": "pina_56",
+    "id": "pina_57",
     "title": "Monbus Obradoiro - Río Breogán",
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
@@ -5623,7 +5701,7 @@
     ]
   },
   {
-    "id": "pina_57",
+    "id": "pina_58",
     "title": "Hozono Global Jairis - Meins Avenida",
     "sport": "BALONCESTO",
     "competition": "LIGA FEMENINA ENDESA",
@@ -5661,7 +5739,7 @@
     "id": "pina_106"
   },
   {
-    "id": "pina_58",
+    "id": "pina_59",
     "title": "Valencia Basket - Celta Femxa Zorka",
     "sport": "BALONCESTO",
     "competition": "LIGA FEMENINA ENDESA",
@@ -5689,7 +5767,7 @@
     ]
   },
   {
-    "id": "pina_59",
+    "id": "pina_60",
     "title": "Casademont Zaragoza - Innova TSN Leganés",
     "sport": "BALONCESTO",
     "competition": "LIGA FEMENINA ENDESA",
@@ -5705,7 +5783,7 @@
     ]
   },
   {
-    "id": "pina_60",
+    "id": "pina_61",
     "title": "FC Badalona - Barcelona",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -5763,7 +5841,7 @@
     ]
   },
   {
-    "id": "pina_61",
+    "id": "pina_62",
     "title": "Real Madrid - Recoletas Salud San Pablo Burgos",
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
@@ -5791,7 +5869,7 @@
     ]
   },
   {
-    "id": "pina_62",
+    "id": "pina_63",
     "title": "Getafe - Sevilla",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -5867,7 +5945,7 @@
     ]
   },
   {
-    "id": "pina_63",
+    "id": "pina_64",
     "title": "CD Eldense - Granada CF",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -6023,7 +6101,7 @@
     "id": "pina_108"
   },
   {
-    "id": "pina_64",
+    "id": "pina_65",
     "title": "Nueva York",
     "sport": "ATLETISMO",
     "competition": "MARATÓN",
@@ -6127,7 +6205,7 @@
     "id": "pina_109"
   },
   {
-    "id": "pina_65",
+    "id": "pina_66",
     "title": "Racing - Real Madrid",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -6245,7 +6323,7 @@
     ]
   },
   {
-    "id": "pina_66",
+    "id": "pina_67",
     "title": "Ceuta FC - Real Sporting",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -6377,7 +6455,7 @@
     "id": "pina_111"
   },
   {
-    "id": "pina_67",
+    "id": "pina_68",
     "title": "UD Ourense - Cultural",
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
@@ -6417,7 +6495,7 @@
     ]
   },
   {
-    "id": "pina_68",
+    "id": "pina_69",
     "title": "Baskonia - Kids&Us Manresa",
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
@@ -6457,7 +6535,7 @@
     ]
   },
   {
-    "id": "pina_69",
+    "id": "pina_70",
     "title": "Liverpool - Arsenal",
     "sport": "FUTBOL",
     "competition": "PREMIER LEAGUE",
@@ -6569,7 +6647,7 @@
     ]
   },
   {
-    "id": "pina_70",
+    "id": "pina_71",
     "title": "MoraBanc Andorra - Valencia Basket",
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
@@ -6607,7 +6685,7 @@
     "id": "pina_112"
   },
   {
-    "id": "pina_71",
+    "id": "pina_72",
     "title": "Elche CF - Valencia CF",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -6797,7 +6875,7 @@
     ]
   },
   {
-    "id": "pina_72",
+    "id": "pina_73",
     "title": "Burgos - CD Castellón",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -6891,7 +6969,7 @@
     ]
   },
   {
-    "id": "pina_73",
+    "id": "pina_74",
     "title": "Lugo - Mérida",
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
@@ -6931,7 +7009,7 @@
     ]
   },
   {
-    "id": "pina_74",
+    "id": "pina_75",
     "title": "Boca Juniors - River Plate",
     "sport": "FUTBOL",
     "competition": "CLAUSURA",
@@ -7061,7 +7139,7 @@
     ]
   },
   {
-    "id": "pina_75",
+    "id": "pina_76",
     "title": "Unicaja Málaga - Barça",
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
@@ -7089,7 +7167,7 @@
     ]
   },
   {
-    "id": "pina_76",
+    "id": "pina_77",
     "title": "Granollers - Barcelona",
     "sport": "BALONMANO",
     "competition": "LIGA ASOBAL",
@@ -7189,7 +7267,7 @@
     ]
   },
   {
-    "id": "pina_77",
+    "id": "pina_78",
     "title": "Baltimore Ravens @ Buffalo Bills",
     "sport": "FUTBOL AMERICANO",
     "competition": "JORNADA 8",
@@ -7257,7 +7335,7 @@
     "id": "pina_113"
   },
   {
-    "id": "pina_78",
+    "id": "pina_79",
     "title": "Palmeiras - Vasco Da Gama",
     "sport": "FUTBOL",
     "competition": "COPA DE BRASIL",
@@ -7279,7 +7357,7 @@
     ]
   },
   {
-    "id": "pina_79",
+    "id": "pina_80",
     "title": "Athletic - Real Sociedad",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -7415,7 +7493,7 @@
     ]
   },
   {
-    "id": "pina_80",
+    "id": "pina_81",
     "title": "CD Tenerife - FC Andorra",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -7509,7 +7587,7 @@
     ]
   },
   {
-    "id": "pina_81",
+    "id": "pina_82",
     "title": "Extremadura - Unionistas",
     "sport": "FUTBOL",
     "competition": "1ª RFEF",
@@ -7549,7 +7627,7 @@
     ]
   },
   {
-    "id": "pina_82",
+    "id": "pina_83",
     "title": "Section Paloise - Stade Toulousain",
     "sport": "RUGBY",
     "competition": "TOP 14",
@@ -7649,7 +7727,7 @@
     ]
   },
   {
-    "id": "pina_83",
+    "id": "pina_84",
     "title": "Autodromo Hermanos Rodriguez",
     "sport": "MOTOR",
     "competition": "G.P. MÉXICO",
@@ -8089,7 +8167,7 @@
     "id": "pina_114"
   },
   {
-    "id": "pina_84",
+    "id": "pina_85",
     "title": "Los Angeles Chargers @ Los Angeles Rams",
     "sport": "FUTBOL AMERICANO",
     "competition": "JORNADA 8",
