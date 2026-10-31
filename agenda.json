@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "31/10/2026 21:50",
+    "updatedAt": "31/10/2026 22:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -2552,19 +2552,19 @@
       },
       {
         "name": "M+ LaLiga - Opción 8 [Markel]",
-        "streamId": "9564bbcd75b67dfb2bd13f5f4d285cbba477a06f",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ LaLiga - Opción 9 [Markel]",
         "streamId": "995574ee5c2015c5a897ea414e9fe71c9ea9f4af",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "M+ LaLiga - Opción 10 [Markel]",
+        "name": "M+ LaLiga - Opción 9 [Markel]",
         "streamId": "cdf251af580d44a71302fb5634b734981a77f8b7",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 10 [Markel]",
+        "streamId": "4e844ef8ef9f2f6dbdd3bd2c3b11a3f773a318a6",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2577,12 +2577,6 @@
       {
         "name": "M+ LaLiga - Opción 12 [Markel]",
         "streamId": "f360890431ea544545be7594a7eb91d53a59b433",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ LaLiga - Opción 13 [Markel]",
-        "streamId": "4e844ef8ef9f2f6dbdd3bd2c3b11a3f773a318a6",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2675,6 +2669,12 @@
         "streamId": "e3249feb41ca1e68f38cf9bd9a196d6b3f873032",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "ArenaVision 90 (AV90)",
+        "streamId": "9564bbcd75b67dfb2bd13f5f4d285cbba477a06f",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
       },
       {
         "name": "ArenaVision 91 (AV91)",
@@ -3606,13 +3606,13 @@
       },
       {
         "name": "DAZN F1 - Opción 18 [Markel]",
-        "streamId": "d1de4fdafe1dd2cd8450f5549371a2751769b359",
+        "streamId": "17d501f81473ec4feeae7aabd92727b4601d5b1f",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN F1 - Opción 19 [Markel]",
-        "streamId": "17d501f81473ec4feeae7aabd92727b4601d5b1f",
+        "streamId": "d1de4fdafe1dd2cd8450f5549371a2751769b359",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3630,7 +3630,7 @@
       },
       {
         "name": "DAZN F1 - Opción 22 [Markel]",
-        "streamId": "fda238ea130b77531b0054e5c95b565787550cc6",
+        "streamId": "7fea3db2b4733a1a4ed0cab3f5588fee945e6a6d",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3642,7 +3642,7 @@
       },
       {
         "name": "DAZN F1 - Opción 24 [Markel]",
-        "streamId": "7fea3db2b4733a1a4ed0cab3f5588fee945e6a6d",
+        "streamId": "fda238ea130b77531b0054e5c95b565787550cc6",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3836,20 +3836,20 @@
         "source": "Markel"
       },
       {
-        "name": "DAZN F1 - Opción 19 [Markel]",
+        "name": "DAZN F1 - Opción 18 [Markel]",
         "streamId": "17d501f81473ec4feeae7aabd92727b4601d5b1f",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "DAZN F1 - Opción 22 [Markel]",
-        "streamId": "fda238ea130b77531b0054e5c95b565787550cc6",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN F1 - Opción 23 [Markel]",
         "streamId": "99ca5724cb4af82a5f63ea37c5b754e47a38559d",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN F1 - Opción 24 [Markel]",
+        "streamId": "fda238ea130b77531b0054e5c95b565787550cc6",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4284,19 +4284,19 @@
       },
       {
         "name": "M+ LaLiga - Opción 8 [Markel]",
-        "streamId": "9564bbcd75b67dfb2bd13f5f4d285cbba477a06f",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ LaLiga - Opción 9 [Markel]",
         "streamId": "995574ee5c2015c5a897ea414e9fe71c9ea9f4af",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
-        "name": "M+ LaLiga - Opción 10 [Markel]",
+        "name": "M+ LaLiga - Opción 9 [Markel]",
         "streamId": "cdf251af580d44a71302fb5634b734981a77f8b7",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 10 [Markel]",
+        "streamId": "4e844ef8ef9f2f6dbdd3bd2c3b11a3f773a318a6",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4309,12 +4309,6 @@
       {
         "name": "M+ LaLiga - Opción 12 [Markel]",
         "streamId": "f360890431ea544545be7594a7eb91d53a59b433",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ LaLiga - Opción 13 [Markel]",
-        "streamId": "4e844ef8ef9f2f6dbdd3bd2c3b11a3f773a318a6",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4702,13 +4696,13 @@
       },
       {
         "name": "DAZN F1 - Opción 18 [Markel]",
-        "streamId": "d1de4fdafe1dd2cd8450f5549371a2751769b359",
+        "streamId": "17d501f81473ec4feeae7aabd92727b4601d5b1f",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN F1 - Opción 19 [Markel]",
-        "streamId": "17d501f81473ec4feeae7aabd92727b4601d5b1f",
+        "streamId": "d1de4fdafe1dd2cd8450f5549371a2751769b359",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4726,7 +4720,7 @@
       },
       {
         "name": "DAZN F1 - Opción 22 [Markel]",
-        "streamId": "fda238ea130b77531b0054e5c95b565787550cc6",
+        "streamId": "7fea3db2b4733a1a4ed0cab3f5588fee945e6a6d",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -4738,7 +4732,7 @@
       },
       {
         "name": "DAZN F1 - Opción 24 [Markel]",
-        "streamId": "7fea3db2b4733a1a4ed0cab3f5588fee945e6a6d",
+        "streamId": "fda238ea130b77531b0054e5c95b565787550cc6",
         "type": "ACESTREAM",
         "source": "Markel"
       },
