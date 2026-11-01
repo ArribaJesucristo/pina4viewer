@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "01/11/2026 14:11",
+    "updatedAt": "01/11/2026 14:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -318,7 +318,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_36"
+    "id": "pina_42"
   },
   {
     "id": "pina_7",
@@ -758,7 +758,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_37"
+    "id": "pina_43"
   },
   {
     "title": "FINAL",
@@ -792,7 +792,7 @@
         "source": "Comunidad"
       }
     ],
-    "id": "pina_38"
+    "id": "pina_44"
   },
   {
     "id": "pina_14",
@@ -1038,7 +1038,7 @@
         "source": "Comunidad"
       }
     ],
-    "id": "pina_39"
+    "id": "pina_45"
   },
   {
     "id": "pina_16",
@@ -1308,7 +1308,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_40"
+    "id": "pina_46"
   },
   {
     "title": "CEUTA vs SPORTING GIJON",
@@ -1330,7 +1330,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_41"
+    "id": "pina_47"
   },
   {
     "id": "pina_18",
@@ -1572,7 +1572,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_42"
+    "id": "pina_48"
   },
   {
     "id": "pina_22",
@@ -2288,7 +2288,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_43"
+    "id": "pina_49"
   },
   {
     "id": "pina_29",
@@ -2872,13 +2872,13 @@
       },
       {
         "name": "DAZN F1 - Opción 24 [Markel]",
-        "streamId": "bde2ac5ffed80b519662cc740b173999d831f44c",
+        "streamId": "83546ce8634122c7431e46eac761976cd7b26f52",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN F1 - Opción 25 [Markel]",
-        "streamId": "83546ce8634122c7431e46eac761976cd7b26f52",
+        "streamId": "bde2ac5ffed80b519662cc740b173999d831f44c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3151,13 +3151,13 @@
       },
       {
         "name": "DAZN F1 - Opción 24 [Markel]",
-        "streamId": "bde2ac5ffed80b519662cc740b173999d831f44c",
+        "streamId": "83546ce8634122c7431e46eac761976cd7b26f52",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN F1 - Opción 25 [Markel]",
-        "streamId": "83546ce8634122c7431e46eac761976cd7b26f52",
+        "streamId": "bde2ac5ffed80b519662cc740b173999d831f44c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -3216,7 +3216,7 @@
         "source": "RCP"
       }
     ],
-    "id": "pina_44"
+    "id": "pina_50"
   },
   {
     "id": "pina_35",
@@ -3325,12 +3325,37 @@
     ]
   },
   {
-    "title": "COMMANDERS vs EAGLES",
+    "id": "pina_36",
+    "title": "Washington Commanders - Philadelphia Eagles",
     "sport": "FUTBOL AMERICANO",
-    "competition": "USA NFL",
-    "time": "02:20",
+    "competition": "JORNADA 8",
+    "time": "02:15",
     "date": "Mañana",
     "channels": [
+      {
+        "name": "Cuatro - Opción 1 [Markel]",
+        "streamId": "8d66979e705a8b532b9243bbc0862c0f1c734ef0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Cuatro - Opción 2 [Markel]",
+        "streamId": "9083f6411d8c6f41546d01f8fbeefb812e8ae1a9",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "Cuatro - Opción 3 [Markel]",
+        "streamId": "3bb2619ca89d24d9cdcd112e658b6be7c12c08a3",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "CUATRO - Opción 1 [RCP]",
+        "streamId": "e8eec35f4662be1af96963245bfa88fb7d0242c4",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
       {
         "name": "ArenaVision 19 (AV19)",
         "streamId": "7d50ecf899b83e263e40f5a77e689570454c2b01",
@@ -3343,16 +3368,94 @@
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
-    ],
-    "id": "pina_45"
+    ]
   },
   {
-    "title": "REAL OVIEDO vs LAS PALMAS",
+    "id": "pina_37",
+    "title": "Real Oviedo - UD Las Palmas",
     "sport": "FUTBOL",
-    "competition": "SPANISH LEAGUE 2",
+    "competition": "LALIGA HYPERMOTION",
     "time": "16:15",
     "date": "Mañana",
     "channels": [
+      {
+        "name": "LaLiga TV Hypermotion - Opción 1 [Markel]",
+        "streamId": "ee8ce83c44dc9b1e331672e2a0166e2830b00040",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 2 [Markel]",
+        "streamId": "fc129b39c253b887563c3f0dce5fca7e699c3047",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 3 [Markel]",
+        "streamId": "f823ad18e0676b11271879afc489a9d4c73b7837",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 4 [Markel]",
+        "streamId": "17e5b028c32fc7fd7d2e3f000050a229de5099b2",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 5 [Markel]",
+        "streamId": "9b252f58fa062ad479621045565072fa2c5cedf5",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 6 [Markel]",
+        "streamId": "f645eb255ca1d5f5a3012b84d3edad73e36b2e49",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 7 [Markel]",
+        "streamId": "6a85e6175f5c94c000e3d94c60e81625fc38d7a0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 8 [Markel]",
+        "streamId": "dfe4449fc3e0c867eb9be2f50d8efdb9a699410c",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 9 [Markel]",
+        "streamId": "687fffbe3b0a30dd3bc874932871be1fe6f0329b",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 10 [Markel]",
+        "streamId": "313d24ff312db3aa6709b8a7df66625fbd92f8ba",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 11 [Markel]",
+        "streamId": "55859c0d880b2e022661b345590a1eb65639c564",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 12 [Markel]",
+        "streamId": "777cf19ea202d4cbb51106085fd50e0e0f1e10b0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 1 [New Era]",
+        "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
       {
         "name": "ArenaVision 85 (AV85)",
         "streamId": "4b8859ee95a812e851dd35e3f5a4912a65ed89c0",
@@ -3365,8 +3468,7 @@
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
-    ],
-    "id": "pina_46"
+    ]
   },
   {
     "title": "REAL JAEN vs ALGECIRAS",
@@ -3400,15 +3502,94 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_47"
+    "id": "pina_51"
   },
   {
-    "title": "REAL VALLADOLID vs LEGANES",
+    "id": "pina_38",
+    "title": "Real Valladolid CF - CD Leganés",
     "sport": "FUTBOL",
-    "competition": "SPANISH LEAGUE 2",
+    "competition": "LALIGA HYPERMOTION",
     "time": "18:30",
     "date": "Mañana",
     "channels": [
+      {
+        "name": "LaLiga TV Hypermotion - Opción 1 [Markel]",
+        "streamId": "ee8ce83c44dc9b1e331672e2a0166e2830b00040",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 2 [Markel]",
+        "streamId": "fc129b39c253b887563c3f0dce5fca7e699c3047",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 3 [Markel]",
+        "streamId": "f823ad18e0676b11271879afc489a9d4c73b7837",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 4 [Markel]",
+        "streamId": "17e5b028c32fc7fd7d2e3f000050a229de5099b2",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 5 [Markel]",
+        "streamId": "9b252f58fa062ad479621045565072fa2c5cedf5",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 6 [Markel]",
+        "streamId": "f645eb255ca1d5f5a3012b84d3edad73e36b2e49",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 7 [Markel]",
+        "streamId": "6a85e6175f5c94c000e3d94c60e81625fc38d7a0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 8 [Markel]",
+        "streamId": "dfe4449fc3e0c867eb9be2f50d8efdb9a699410c",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 9 [Markel]",
+        "streamId": "687fffbe3b0a30dd3bc874932871be1fe6f0329b",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 10 [Markel]",
+        "streamId": "313d24ff312db3aa6709b8a7df66625fbd92f8ba",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 11 [Markel]",
+        "streamId": "55859c0d880b2e022661b345590a1eb65639c564",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 12 [Markel]",
+        "streamId": "777cf19ea202d4cbb51106085fd50e0e0f1e10b0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 1 [New Era]",
+        "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
       {
         "name": "ArenaVision 85 (AV85)",
         "streamId": "4b8859ee95a812e851dd35e3f5a4912a65ed89c0",
@@ -3421,8 +3602,7 @@
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
-    ],
-    "id": "pina_48"
+    ]
   },
   {
     "title": "TENERIFE vs ATHLETIC CLUB",
@@ -3444,7 +3624,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_49"
+    "id": "pina_52"
   },
   {
     "title": "HUESCA vs NASTIC",
@@ -3478,37 +3658,172 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_53"
   },
   {
-    "title": "NEWCASTLE vs EVERTON",
+    "id": "pina_39",
+    "title": "RC Deportivo - CA Osasuna",
     "sport": "FUTBOL",
-    "competition": "PREMIER LEAGUE",
+    "competition": "LALIGA EA SPORTS",
     "time": "21:00",
     "date": "Mañana",
     "channels": [
       {
-        "name": "ArenaVision 17 (AV17)",
-        "streamId": "c7a65e6b23e9d1173ed08c441896faaa6901fa22",
+        "name": "M+ LaLiga - Opción 1 [Markel]",
+        "streamId": "b3bdd6ef7f795c4f321a3ce5cf4907338f462929",
         "type": "ACESTREAM",
-        "source": "ArenaVision"
+        "source": "Markel"
       },
       {
-        "name": "ArenaVision 18 (AV18)",
-        "streamId": "526c2b9ae19695aa8dc4da574fe2728e31168d01",
+        "name": "M+ LaLiga - Opción 2 [Markel]",
+        "streamId": "623f9ce3c4adfcd9771da41a6cc433632cf2c680",
         "type": "ACESTREAM",
-        "source": "ArenaVision"
-      }
-    ],
-    "id": "pina_51"
-  },
-  {
-    "title": "DEPORTIVO vs OSASUNA",
-    "sport": "FUTBOL",
-    "competition": "SPANISH LEAGUE",
-    "time": "21:00",
-    "date": "Mañana",
-    "channels": [
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 3 [Markel]",
+        "streamId": "2816e0c7e4f6a19a0cc9d1c363936a186ab89771",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 4 [Markel]",
+        "streamId": "2772b75c3bc7cfe214514a7745f63024620f3a29",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 5 [Markel]",
+        "streamId": "f9e9258cb14ede2f9369be4cba395ffe3e04e4fb",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 6 [Markel]",
+        "streamId": "31c19ffb3472c289c5bbbbc174449c8ed0d19e38",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 7 [Markel]",
+        "streamId": "177ac4dd6463d063a87b36734eb3b99af9a696f0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 8 [Markel]",
+        "streamId": "d1e8c4dcc0f0a63ba43108685e6e56bf728f69a3",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 9 [Markel]",
+        "streamId": "d81bbfd7828f5a647d99914aac0b06a9b814ff8e",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 10 [Markel]",
+        "streamId": "0627f19a7dcfdd91eea1e6b0c2b417dea0740c6d",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 11 [Markel]",
+        "streamId": "bc48b6351bc47674990e15b8253960dd3ad775fa",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "M+ LaLiga - Opción 2 [New Era]",
+        "streamId": "0b5f802f2de6488b4023d0f05195486e19d81ed7",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "M+ LaLiga - Opción 3 [Elcano]",
+        "streamId": "8286183314d367940409b760bbf887f3fb923f60",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "M+ LaLiga - Opción 4 [Elcano]",
+        "streamId": "f031f5728b32f6089dda28edebe990cf198108d8",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "M+ LaLiga - Opción 5 [RCP]",
+        "streamId": "1e0214a06000e6f4847dd30cdc2fb839527be862",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 6 [RCP]",
+        "streamId": "d47addf5e467cbf102ba759600303c21efb1deeb",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 7 [RCP]",
+        "streamId": "684e5c085484e8ea79858713eeb7a3668baca29e",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 8 [RCP]",
+        "streamId": "c22bfcc2a70b2a3f447d9b30c52e617946b03888",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 9 [RCP]",
+        "streamId": "5c668adaf86ed6af2488e28d9f3a4e3b0e909664",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 10 [RCP]",
+        "streamId": "7791ba828c0226d8f54cef1611889d29fb333247",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 11 [RCP]",
+        "streamId": "ae84b2cc45ebf1148cc36ee5f801f26a04a2ac2c",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 12 [RCP]",
+        "streamId": "cf6249379184d88a61f9db617341c6b6e6abb342",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 13 [RCP]",
+        "streamId": "d9cf1776ec4443e88aab3ca4b57647b00b4e439e",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 14 [RCP]",
+        "streamId": "1104426e14b649eb23fee16698768544285de478",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 15 [RCP]",
+        "streamId": "ed2a15319345fb0739590faf88d8be4cb1663bf3",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 16 [RCP]",
+        "streamId": "e3249feb41ca1e68f38cf9bd9a196d6b3f873032",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
       {
         "name": "ArenaVision 7 (AV7)",
         "streamId": "4e844ef8ef9f2f6dbdd3bd2c3b11a3f773a318a6",
@@ -3533,16 +3848,94 @@
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
-    ],
-    "id": "pina_52"
+    ]
   },
   {
-    "title": "MALLORCA vs CADIZ",
+    "id": "pina_40",
+    "title": "RCD Mallorca - Cádiz CF",
     "sport": "FUTBOL",
-    "competition": "SPANISH LEAGUE 2",
+    "competition": "LALIGA HYPERMOTION",
     "time": "21:00",
     "date": "Mañana",
     "channels": [
+      {
+        "name": "LaLiga TV Hypermotion - Opción 1 [Markel]",
+        "streamId": "ee8ce83c44dc9b1e331672e2a0166e2830b00040",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 2 [Markel]",
+        "streamId": "fc129b39c253b887563c3f0dce5fca7e699c3047",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 3 [Markel]",
+        "streamId": "f823ad18e0676b11271879afc489a9d4c73b7837",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 4 [Markel]",
+        "streamId": "17e5b028c32fc7fd7d2e3f000050a229de5099b2",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 5 [Markel]",
+        "streamId": "9b252f58fa062ad479621045565072fa2c5cedf5",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 6 [Markel]",
+        "streamId": "f645eb255ca1d5f5a3012b84d3edad73e36b2e49",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 7 [Markel]",
+        "streamId": "6a85e6175f5c94c000e3d94c60e81625fc38d7a0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 8 [Markel]",
+        "streamId": "dfe4449fc3e0c867eb9be2f50d8efdb9a699410c",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 9 [Markel]",
+        "streamId": "687fffbe3b0a30dd3bc874932871be1fe6f0329b",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 10 [Markel]",
+        "streamId": "313d24ff312db3aa6709b8a7df66625fbd92f8ba",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 11 [Markel]",
+        "streamId": "55859c0d880b2e022661b345590a1eb65639c564",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 12 [Markel]",
+        "streamId": "777cf19ea202d4cbb51106085fd50e0e0f1e10b0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "LaLiga TV Hypermotion - Opción 1 [New Era]",
+        "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
       {
         "name": "ArenaVision 85 (AV85)",
         "streamId": "4b8859ee95a812e851dd35e3f5a4912a65ed89c0",
@@ -3555,8 +3948,107 @@
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
-    ],
-    "id": "pina_53"
+    ]
+  },
+  {
+    "id": "pina_41",
+    "title": "Newcastle - Everton",
+    "sport": "FUTBOL",
+    "competition": "PREMIER LEAGUE",
+    "time": "21:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "DAZN 1 - Opción 1 [Markel]",
+        "streamId": "691739972eb3468cf16b25e84dafdeaa40dead6d",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 2 [Markel]",
+        "streamId": "50a8a13c474848d1efbd5586efdb5b6cdd173fa9",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 3 [Markel]",
+        "streamId": "4141892f5df7d6474bf0279895ce02b7336c9928",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 4 [Markel]",
+        "streamId": "c1e44ff2f8e093f0e4365791026fb95a9b22ab96",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 5 [Markel]",
+        "streamId": "7063fb3baac2aa226050e475fbf0df461041bd4c",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 6 [Markel]",
+        "streamId": "0560234787945a17522e284c4c22bb4df29f33b0",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 7 [Markel]",
+        "streamId": "d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 8 [Markel]",
+        "streamId": "1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 9 [Markel]",
+        "streamId": "f1e46c75a44366e8f227403f7b03c284a25329e3",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 10 [Markel]",
+        "streamId": "e928a31229fd8e10a8d578fce114e8d2647f8290",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 11 [Markel]",
+        "streamId": "d8a5236d919db30f6c17385250fc213016ed9f4a",
+        "type": "ACESTREAM",
+        "source": "Markel"
+      },
+      {
+        "name": "DAZN 1 - Opción 2 [RCP]",
+        "streamId": "8b2e003ef51657196d2096aa84b9b21ae4bfb660",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN 1 - Opción 3 [RCP]",
+        "streamId": "47c6e8dadfba2b3bd013feecf4194ecceec428cd",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "ArenaVision 17 (AV17)",
+        "streamId": "c7a65e6b23e9d1173ed08c441896faaa6901fa22",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
+      },
+      {
+        "name": "ArenaVision 18 (AV18)",
+        "streamId": "526c2b9ae19695aa8dc4da574fe2728e31168d01",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
+      }
+    ]
   },
   {
     "id": "54",
@@ -4040,13 +4532,13 @@
       },
       {
         "name": "DAZN F1 - Opción 24 [Markel]",
-        "streamId": "bde2ac5ffed80b519662cc740b173999d831f44c",
+        "streamId": "83546ce8634122c7431e46eac761976cd7b26f52",
         "type": "ACESTREAM",
         "source": "Markel"
       },
       {
         "name": "DAZN F1 - Opción 25 [Markel]",
-        "streamId": "83546ce8634122c7431e46eac761976cd7b26f52",
+        "streamId": "bde2ac5ffed80b519662cc740b173999d831f44c",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -6160,12 +6652,6 @@
       },
       {
         "name": "M+ Deportes 2 - Opción 10 [Markel]",
-        "streamId": "b7dc0f01c05f73359121abe8659a91cdb61dcdf2",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Deportes 2 - Opción 11 [Markel]",
         "streamId": "c69460c4a4bc4d597b92c50b39e712b94289ff23",
         "type": "ACESTREAM",
         "source": "Markel"
