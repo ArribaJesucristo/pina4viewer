@@ -17,8 +17,8 @@ object VpnHelper {
 
     const val PACKAGE_CLOUDFLARE_WARP = "com.cloudflare.onedotonedotonedotone"
 
-    val PSIPHON = VpnApp("Psiphon", "com.psiphon3", "https://psiphon.ca/PsiphonAndroid.apk")
-    val PSIPHON_PLAY = VpnApp("Psiphon", "com.psiphon3.subscription", "https://psiphon.ca/PsiphonAndroid.apk")
+    val PSIPHON = VpnApp("Psiphon", "com.psiphon3", "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.3/psiphon-classic-tv.apk")
+    val PSIPHON_PLAY = VpnApp("Psiphon", "com.psiphon3.subscription", "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.3/psiphon-classic-tv.apk")
     val PROTON_VPN = VpnApp("Proton VPN", "ch.protonvpn.android", "https://protonvpn.com/download-android")
 
     val KNOWN_VPN_APPS = listOf(

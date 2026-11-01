@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit
 object VpnInstallerHelper {
 
     private const val VERSION_URL = "https://raw.githubusercontent.com/ArribaJesucristo/pina4viewer/main/version.json"
-    private const val DEFAULT_PSIPHON_URL = "https://psiphon.ca/PsiphonAndroid.apk"
+    private const val DEFAULT_PSIPHON_URL = "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.3/psiphon-classic-tv.apk"
 
     const val PSIPHON_PACKAGE = "com.psiphon3"
     const val PSIPHON_PACKAGE_PLAY = "com.psiphon3.subscription"
