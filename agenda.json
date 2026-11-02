@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "02/11/2026 02:10",
+    "updatedAt": "02/11/2026 02:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -864,12 +864,6 @@
       },
       {
         "name": "DAZN 1 - Opción 10 [Markel]",
-        "streamId": "e928a31229fd8e10a8d578fce114e8d2647f8290",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "DAZN 1 - Opción 11 [Markel]",
         "streamId": "d8a5236d919db30f6c17385250fc213016ed9f4a",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -885,6 +879,12 @@
         "streamId": "47c6e8dadfba2b3bd013feecf4194ecceec428cd",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "DAZN 1 - Opción 10 [Markel]",
+        "streamId": "e928a31229fd8e10a8d578fce114e8d2647f8290",
+        "type": "ACESTREAM",
+        "source": "Markel"
       },
       {
         "name": "ArenaVision 17 (AV17)",
@@ -1352,7 +1352,7 @@
       },
       {
         "name": "DAZN F1 - Opción 19 [Markel]",
-        "streamId": "7e0340e7a4d46d634f8bc6d21d756e1e784a93ed",
+        "streamId": "ee7ef102b126f3111beb2b03aff7564cb6bb0f45",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -1364,7 +1364,7 @@
       },
       {
         "name": "DAZN F1 - Opción 21 [Markel]",
-        "streamId": "ee7ef102b126f3111beb2b03aff7564cb6bb0f45",
+        "streamId": "7e0340e7a4d46d634f8bc6d21d756e1e784a93ed",
         "type": "ACESTREAM",
         "source": "Markel"
       },
@@ -2054,12 +2054,6 @@
       },
       {
         "name": "DAZN 1 - Opción 10 [Markel]",
-        "streamId": "e928a31229fd8e10a8d578fce114e8d2647f8290",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "DAZN 1 - Opción 11 [Markel]",
         "streamId": "d8a5236d919db30f6c17385250fc213016ed9f4a",
         "type": "ACESTREAM",
         "source": "Markel"
@@ -3390,12 +3384,6 @@
       },
       {
         "name": "M+ Deportes - Opción 10 [Markel]",
-        "streamId": "612de17db7dbe35652afc420b86a2f38c897a8b7",
-        "type": "ACESTREAM",
-        "source": "Markel"
-      },
-      {
-        "name": "M+ Deportes - Opción 11 [Markel]",
         "streamId": "c31507550f3b0dd47d242b7af1cb95aa63af4697",
         "type": "ACESTREAM",
         "source": "Markel"
