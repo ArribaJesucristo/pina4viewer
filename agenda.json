@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "03/11/2026 13:30",
+    "updatedAt": "03/11/2026 13:40",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -189,7 +189,7 @@
     "channels": [
       {
         "name": "ArenaVision 5 (AV5)",
-        "streamId": "3ce95bc9d6fc63676d828bb2cfc7a1f1854fd259",
+        "streamId": "77290ae42871331705d95f8ac4eb597412f6008c",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       },
@@ -1075,7 +1075,7 @@
     "channels": [
       {
         "name": "ArenaVision 5 (AV5)",
-        "streamId": "3ce95bc9d6fc63676d828bb2cfc7a1f1854fd259",
+        "streamId": "77290ae42871331705d95f8ac4eb597412f6008c",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       },
@@ -1785,6 +1785,18 @@
       {
         "name": "ArenaVision 55 (AV55)",
         "streamId": "fd2aea1aa8fcddebfda1644118c6806230a1d539",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
+      },
+      {
+        "name": "ArenaVision 15 (AV15)",
+        "streamId": "81beeabdc46e0aa59165f513e5c3a8e65e6bd1a9",
+        "type": "ACESTREAM",
+        "source": "ArenaVision"
+      },
+      {
+        "name": "ArenaVision 16 (AV16)",
+        "streamId": "eae4f313851a829e416ac4c8c4b8d962343e18f7",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -12530,7 +12542,7 @@
     "channels": [
       {
         "name": "ArenaVision 5 (AV5)",
-        "streamId": "3ce95bc9d6fc63676d828bb2cfc7a1f1854fd259",
+        "streamId": "77290ae42871331705d95f8ac4eb597412f6008c",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -12658,7 +12670,7 @@
     "channels": [
       {
         "name": "ArenaVision 13 (AV13)",
-        "streamId": "b7f8d2c56969cec129a275308c3750dffffee3a8",
+        "streamId": "9e94de396fbebe7a4e67a7ca3bae2b7183a671c4",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -12690,7 +12702,7 @@
     "channels": [
       {
         "name": "ArenaVision 15 (AV15)",
-        "streamId": "08d26b5d9bf456ae21e968f0f85375925ff510e3",
+        "streamId": "81beeabdc46e0aa59165f513e5c3a8e65e6bd1a9",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -12706,7 +12718,7 @@
     "channels": [
       {
         "name": "ArenaVision 16 (AV16)",
-        "streamId": "1df7ce7d3912f2bff730f14df8beaeb2d73c49b4",
+        "streamId": "eae4f313851a829e416ac4c8c4b8d962343e18f7",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -14034,7 +14046,7 @@
     "channels": [
       {
         "name": "ArenaVision 99 (AV99)",
-        "streamId": "a2f9ab273087b85de84212d92dd895f37052cf62",
+        "streamId": "42b45039548159e5e9900672a488e73a94838bc8",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
@@ -14050,7 +14062,7 @@
     "channels": [
       {
         "name": "ArenaVision 100 (AV100)",
-        "streamId": "7ef0de1c6dba381b6c504fb6f683d95e4ff60115",
+        "streamId": "3fc7a941ed2c1459dfd55f74ed72640e946f213d",
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
