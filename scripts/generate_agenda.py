@@ -165,44 +165,8 @@ def extract_hash(url_or_hash):
     return ""
 
 def load_markel_channels():
-    urls = [
-        "https://www.markellinks.app/assets/links.json",
-        "https://raw.githubusercontent.com/Icastresana/lista1/main/links.json"
-    ]
-    raw = ""
-    for u in urls:
-        raw = fetch_url(u)
-        if raw.strip().startswith("[") or raw.strip().startswith("{"):
-            break
-    if not raw:
-        return {}
-
-    channels_by_base = OrderedDict()
-    try:
-        data = json.loads(raw)
-        if isinstance(data, list):
-            for item in data:
-                title = item.get("title", "").strip()
-                url = item.get("url", "").strip()
-                h = extract_hash(url)
-                if not h:
-                    continue
-                base = canonical_channel_name(title)
-                if not base:
-                    base = title
-                if base not in channels_by_base:
-                    channels_by_base[base] = []
-                # Check if hash already in base
-                if not any(x["streamId"] == h for x in channels_by_base[base]):
-                    channels_by_base[base].append({
-                        "name": f"{base} - Opción {len(channels_by_base[base]) + 1} [Markel]",
-                        "streamId": h,
-                        "type": "ACESTREAM",
-                        "source": "Markel"
-                    })
-    except Exception as e:
-        print(f"Error parsing Markel: {e}")
-    return channels_by_base
+    # Canales de Markel desactivados por peticion: la mayoria de enlaces se encuentran caidos/offline
+    return OrderedDict()
 
 def load_peticiones_channels():
     sources = [
@@ -342,9 +306,17 @@ def load_arenavision():
                 comp_text = cols[3].strip()
                 if sport_prefix.upper() in ["F1", "MOTOGP"] and sport_prefix.upper() not in comp_text.upper():
                     comp_text = f"{sport_prefix.upper()} - {comp_text}"
+                norm_sp = normalize_sport(cols[2], cols[3])
+                title_val = cols[4].strip()
+                if norm_sp not in ("MOTOR", "CICLISMO"):
+                    if ' - ' in title_val:
+                        title_val = title_val.replace(' - ', ' vs ')
+                    elif '-' in title_val and len(title_val.split('-')) == 2:
+                        p1, p2 = title_val.split('-', 1)
+                        title_val = f"{p1.strip()} vs {p2.strip()}"
                 arena_events.append({
-                    "title": cols[4].replace("-", " vs "),
-                    "sport": normalize_sport(cols[2], cols[3]),
+                    "title": title_val,
+                    "sport": norm_sp,
                     "competition": comp_text if comp_text else cols[3],
                     "time": cols[1].replace(" CET", "").strip(),
                     "date": cols[0],
@@ -381,14 +353,112 @@ NAME_TRANSLATIONS = {
     "denmark": "dinamarca", "austria": "austria", "croatia": "croacia",
     "poland": "polonia", "scotland": "escocia", "ireland": "irlanda",
     "greece": "grecia", "japan": "japon", "brazil": "brasil",
+    "vienna": "viena", "tokyo": "tokio", "rome": "roma", "munich": "munich",
+    "london": "londres",
     # Team variations and aliases
     "feyenord": "feyenoord",
     "napoli": "napoles",
     "barca": "barcelona",
     "bayern munchen": "bayern", "bayern munich": "bayern",
     "inter milan": "inter", "internazionale": "inter",
-    "seahawks": "seahawks", "patriots": "patriots"
+    "seahawks": "seahawks", "patriots": "patriots",
+    "racing santander": "racing santander",
+    "sporting gijon": "sporting gijon",
+    "real sporting": "sporting gijon",
+    "deportivo la coruna": "deportivo la coruna",
+    "rc deportivo": "deportivo la coruna",
+    "morabanc andorra": "andorra",
+    "valencia basket": "valencia",
+    "athletic club": "athletic",
+    "atletico madrid": "atletico madrid"
 }
+
+TENNIS_STOPWORDS = {
+    'atp', 'wta', 'itf', 'tournament', 'torneo', 'open', 'abierto',
+    'masters', '1000', '500', '250', 'grand', 'slam', 'cup', 'copa',
+    'de', 'del', 'la', 'el', 'tennis', 'tenis', 'championship',
+    'championships', 'men', 'women', 'singles', 'doubles', 'final',
+    'finals', 'semifinal', 'semifinales', 'cuartos', 'octavos', 'ronda',
+    'round', 'vs', 'v'
+}
+
+TENNIS_STAGE_KEYWORDS = {
+    'final', 'finals', 'semifinal', 'semifinales', 'semis', 'cuartos',
+    'cuartos de final', '1/4', '1/2', 'octavos', 'octavos de final',
+    'ronda', 'round', 'primera ronda', 'segunda ronda', 'tercera ronda',
+    'previas', 'qualy', 'clasificacion', 'pista central', 'centre court',
+    'court 1', 'pista 1', 'jornada', 'directo', 'tournament'
+}
+
+def split_sides(title):
+    t = title.strip()
+    parts = re.split(r'\s+(?:vs\.?|v\.?|[-–—])\s+', t, flags=re.IGNORECASE)
+    if len(parts) >= 2:
+        return [parts[0].strip(), ' - '.join(parts[1:]).strip()]
+    parts_vs = re.split(r'\s+(?:vs\.?|v\.?)\s+', t, flags=re.IGNORECASE)
+    if len(parts_vs) >= 2:
+        return [parts_vs[0].strip(), ' - '.join(parts_vs[1:]).strip()]
+    if '-' in t:
+        sub = t.split('-')
+        if len(sub) == 2:
+            return [sub[0].strip(), sub[1].strip()]
+    return [t]
+
+def is_generic_stage_title(title, comp=""):
+    c = clean_str(title)
+    if not c or c in ('00', ''):
+        return True
+    words = c.split()
+    if any(k in words for k in ['final', 'finals', 'semifinal', 'semifinales', 'semis', 'cuartos', 'octavos', 'carrera', 'race', 'ronda', 'round']):
+        return True
+    if all(w in TENNIS_STOPWORDS or w in TENNIS_STAGE_KEYWORDS or w in GENERIC_WORDS for w in words):
+        return True
+    title_tokens = {w for w in words if w not in TENNIS_STOPWORDS and len(w) > 2}
+    if not title_tokens:
+        return True
+    if comp:
+        comp_tokens = {w for w in clean_str(comp).split() if w not in TENNIS_STOPWORDS and len(w) > 2}
+        if title_tokens.issubset(comp_tokens):
+            return True
+    return False
+
+def tennis_tournament_tokens(comp_str, title_str=""):
+    comp_clean = clean_str(comp_str)
+    tokens = {w for w in comp_clean.split() if w not in TENNIS_STOPWORDS and len(w) > 2}
+    if not tokens and title_str and len(split_sides(title_str)) == 1:
+        title_clean = clean_str(title_str)
+        tokens = {w for w in title_clean.split() if w not in TENNIS_STOPWORDS and w not in TENNIS_STAGE_KEYWORDS and len(w) > 2}
+    return tokens
+
+def normalize_competition(comp_str, sport=""):
+    c = clean_str(comp_str)
+    if not c:
+        return ""
+    if any(k in c for k in ["spanish league 2", "laliga hypermotion", "segunda division", "segunda", "laliga 2"]):
+        return "laliga hypermotion"
+    if any(k in c for k in ["spanish league", "laliga ea sports", "laliga", "primera division", "la liga"]) and sport != "BALONCESTO":
+        return "laliga"
+    if any(k in c for k in ["premier league", "english premier league", "epl"]):
+        return "premier league"
+    if any(k in c for k in ["champions league", "uefa champions league"]):
+        return "champions league"
+    if any(k in c for k in ["europa league", "uefa europa league"]):
+        return "europa league"
+    if any(k in c for k in ["conference league"]):
+        return "conference league"
+    if any(k in c for k in ["copa del rey", "spanish cup"]):
+        return "copa del rey"
+    if any(k in c for k in ["liga endesa", "acb", "spanish league"]) and sport == "BALONCESTO":
+        return "acb"
+    if any(k in c for k in ["euroliga", "euroleague"]):
+        return "euroliga"
+    if any(k in c for k in ["eurocup"]):
+        return "eurocup"
+    if any(k in c for k in ["nba"]):
+        return "nba"
+    if any(k in c for k in ["mexico gp", "g p mexico", "gp mexico", "gran premio de mexico"]):
+        return "mexico gp"
+    return c
 
 COMP_WORDS = [
     r'champions\s*(?:-\s*fase liga)?',
@@ -398,12 +468,23 @@ COMP_WORDS = [
     r'laliga\s*(?:hypermotion)?',
     r'primera federacion',
     r'segunda federacion',
+    r'copa del rey',
+    r'eurocup',
+    r'euroliga',
+    r'wta\s*(?:torneo\s+de\s+[a-z\s]+)?',
+    r'atp\s*(?:torneo\s+de\s+[a-z\s]+|masters\s+[a-z\s]+)?',
+    r'masters\s+[a-z\s]+',
     r'us open',
+    r'australian open',
+    r'roland garros',
+    r'wimbledon',
+    r'international championship',
+    r'dp world tour championship',
     r'f1\b|formula 1\b',
     r'motogp\b'
 ]
 
-STAGE_PREFIXES = r'^(?:fase liga|fase de grupos|jornada \d+|ronda \d+|1/4 de final|1/8 de final|1/2 de final|primera ronda|segunda ronda|dia \d+)\s*[-–—:]*\s*'
+STAGE_PREFIXES = r'^(?:fase liga|fase de grupos|liga regular|jornada \d+|\d+[\xaa\xba]?\s*ronda|1/4 de final|1/8 de final|1/2 de final|semifinales?|cuartos|octavos|primera ronda|segunda ronda|dia \d+)\s*[-–—:]*\s*'
 
 MESES = {
     'enero': 1, 'febrero': 2, 'marzo': 3, 'abril': 4, 'mayo': 5, 'junio': 6,
@@ -417,7 +498,7 @@ def normalize_sport(sport_raw, comp_raw=""):
         return 'FUTBOL AMERICANO'
     if any(k in s for k in ['f1', 'formula', 'moto', 'motor', 'superbike', 'motogp', 'nascar', 'indycar', 'rally', 'dakar']):
         return 'MOTOR'
-    if any(k in s for k in ['baloncesto', 'basket', 'nba', 'fiba', 'acb', 'euroliga']):
+    if any(k in s for k in ['baloncesto', 'basket', 'nba', 'fiba', 'acb', 'euroliga', 'eurocup']):
         return 'BALONCESTO'
     if any(k in s for k in ['tenis', 'tennis', 'us open', 'wta', 'atp', 'grand slam', 'roland garros', 'wimbledon', 'australian open', 'masters 1000']):
         return 'TENIS'
@@ -431,7 +512,7 @@ def normalize_sport(sport_raw, comp_raw=""):
         return 'RUGBY'
     if any(k in s for k in ['balonmano', 'handball']):
         return 'BALONMANO'
-    if any(k in s for k in ['snooker', 'billar', 'pool', 'abierto de inglaterra', 'english open', 'uk championship']):
+    if any(k in s for k in ['snooker', 'billar', 'pool', 'abierto de inglaterra', 'english open', 'uk championship', 'international championship']):
         return 'SNOOKER'
     if any(k in s for k in ['golf', 'pga', 'liv golf', 'ryder cup', 'masters golf', 'dp world']):
         return 'GOLF'
@@ -462,7 +543,7 @@ def clean_str(s):
     s = re.sub(r'[^a-z0-9]', ' ', s)
     return re.sub(r'\s+', ' ', s).strip()
 
-def team_tokens(team_str):
+def team_tokens(team_str, sport=""):
     c = clean_str(team_str)
     c = re.sub(r'\bat\b|\batl\b', 'atletico', c)
     c = re.sub(r'\br\b', 'real', c)
@@ -470,10 +551,15 @@ def team_tokens(team_str):
     words = c.split()
     tokens = set(words)
     distinctive = {w for w in words if w not in GENERIC_WORDS and len(w) > 2}
+    if not distinctive:
+        distinctive = {w for w in words if len(w) > 2}
     modifiers = {w for w in words if w in MODIFIER_WORDS}
+    if sport == "BALONCESTO":
+        modifiers.discard("basket")
+        modifiers.discard("baloncesto")
     return tokens, distinctive, modifiers
 
-def is_same_team(t1, t2):
+def is_same_team(t1, t2, sport=""):
     c1 = clean_str(t1)
     c2 = clean_str(t2)
     if not c1 or not c2:
@@ -481,13 +567,20 @@ def is_same_team(t1, t2):
     if c1 == c2:
         return True
 
+    # Racing Santander short name alias check
+    if ('racing' in c1.split() and 'santander' in c2.split()) or ('racing' in c2.split() and 'santander' in c1.split()):
+        return True
+    # Sporting Gijon short name alias check
+    if ('sporting' in c1.split() and 'gijon' in c2.split()) or ('sporting' in c2.split() and 'gijon' in c1.split()):
+        return True
+
     # High fuzzy similarity check
     if len(c1) >= 4 and len(c2) >= 4:
         if difflib.SequenceMatcher(None, c1, c2).ratio() >= 0.82:
             return True
 
-    tok1, dist1, mod1 = team_tokens(t1)
-    tok2, dist2, mod2 = team_tokens(t2)
+    tok1, dist1, mod1 = team_tokens(t1, sport)
+    tok2, dist2, mod2 = team_tokens(t2, sport)
     if mod1 != mod2:
         return False
 
@@ -522,12 +615,6 @@ def is_same_team(t1, t2):
                     return True
         return False
     return tok1 == tok2
-
-def split_sides(title):
-    parts = re.split(r'\s+(?:vs\.?|v\.?|[-–—])\s+', title.strip(), flags=re.IGNORECASE)
-    if len(parts) >= 2:
-        return [parts[0].strip(), ' - '.join(parts[1:]).strip()]
-    return [title.strip()]
 
 def parse_time_minutes(t_str):
     if not t_str or ':' not in t_str:
@@ -564,16 +651,6 @@ def is_same_event(ev1, ev2, today):
     if d1 and d2 and d1 != d2:
         return False
 
-    m1 = parse_time_minutes(ev1.get('time', ''))
-    m2 = parse_time_minutes(ev2.get('time', ''))
-    if m1 is not None and m2 is not None:
-        diff = abs(m1 - m2)
-        diff = min(diff, 1440 - diff)
-        if diff > 45:
-            return False
-    elif (m1 is None) != (m2 is None):
-        return False
-
     # 1. Sport compatibility check FIRST!
     sp1 = ev1.get('sport')
     sp2 = ev2.get('sport')
@@ -584,6 +661,16 @@ def is_same_event(ev1, ev2, today):
     elif sp1 and sp2 and sp1 not in ("DEPORTES", "OTROS") and sp2 not in ("DEPORTES", "OTROS") and sp1 != sp2:
         return False
 
+    m1 = parse_time_minutes(ev1.get('time', ''))
+    m2 = parse_time_minutes(ev2.get('time', ''))
+    diff = None
+    if m1 is not None and m2 is not None:
+        raw_diff = abs(m1 - m2)
+        diff = min(raw_diff, 1440 - raw_diff)
+
+    sides1 = split_sides(ev1.get('title', ''))
+    sides2 = split_sides(ev2.get('title', ''))
+
     # 2. Cycling stage check
     t1_low = ev1.get('title', '').lower()
     t2_low = ev2.get('title', '').lower()
@@ -593,38 +680,74 @@ def is_same_event(ev1, ev2, today):
         if m_st1 and m_st2 and m_st1.group(1) == m_st2.group(1):
             return True
 
-    # 3. Sides / Team matching
-    sides1 = split_sides(ev1.get('title', ''))
-    sides2 = split_sides(ev2.get('title', ''))
-
+    # 3. Exact 2-player / 2-team match
     if len(sides1) == 2 and len(sides2) == 2:
-        match_direct = is_same_team(sides1[0], sides2[0]) and is_same_team(sides1[1], sides2[1])
-        match_reversed = is_same_team(sides1[0], sides2[1]) and is_same_team(sides1[1], sides2[0])
+        match_direct = is_same_team(sides1[0], sides2[0], sp1) and is_same_team(sides1[1], sides2[1], sp1)
+        match_reversed = is_same_team(sides1[0], sides2[1], sp1) and is_same_team(sides1[1], sides2[0], sp1)
         if match_direct or match_reversed:
-            return True
-        if is_same_team(sides1[0], sides2[0]) or is_same_team(sides1[1], sides2[1]) or is_same_team(sides1[0], sides2[1]) or is_same_team(sides1[1], sides2[0]):
-            c1 = clean_str(ev1.get('competition', ''))
-            c2 = clean_str(ev2.get('competition', ''))
-            if c1 and c2 and (c1 in c2 or c2 in c1):
+            # Same 2 teams/players on the same date: generous tolerance (up to 3 hours for timezones / TV slot shifts / tennis delays)
+            if diff is None or diff <= 180:
                 return True
-        # Both events specify 2 distinct teams and they don't match: they are different matches
+            return False
+
+        # In tennis, if both events have 2 players that don't match, they are different matches
+        if sp1 == "TENIS" and sp2 == "TENIS":
+            return False
+
+        # One team matches + competition matches (e.g. Racing - Real Madrid vs Real Madrid with competition)
+        if is_same_team(sides1[0], sides2[0], sp1) or is_same_team(sides1[1], sides2[1], sp1) or is_same_team(sides1[0], sides2[1], sp1) or is_same_team(sides1[1], sides2[0], sp1):
+            c1 = normalize_competition(ev1.get('competition', ''), sp1)
+            c2 = normalize_competition(ev2.get('competition', ''), sp2)
+            if c1 and c2 and (c1 == c2 or c1 in c2 or c2 in c1):
+                if diff is None or diff <= 60:
+                    return True
+        # Both specify 2 teams and neither pair matches -> different matches!
         return False
-    elif len(sides1) == 1 and len(sides2) == 1:
-        if is_same_team(sides1[0], sides2[0]):
+
+    # 4. Tennis Tournament & Stage Matching (when at least one event does not have 2 explicit players)
+    if sp1 == "TENIS" and sp2 == "TENIS":
+        tourn1 = tennis_tournament_tokens(ev1.get('competition', ''), ev1.get('title', ''))
+        tourn2 = tennis_tournament_tokens(ev2.get('competition', ''), ev2.get('title', ''))
+        if tourn1 & tourn2:
+            gen1 = is_generic_stage_title(ev1.get('title', ''), ev1.get('competition', ''))
+            gen2 = is_generic_stage_title(ev2.get('title', ''), ev2.get('competition', ''))
+            if gen1 or gen2:
+                combined_text = clean_str(ev1.get('title', '') + ' ' + ev2.get('title', '')).split()
+                is_final = any(k in combined_text for k in ['final', 'finals']) and not any(k in combined_text for k in ['semifinal', 'semifinales', 'cuartos', 'octavos'])
+                max_tennis_diff = 150 if is_final else 75
+                if diff is None or diff <= max_tennis_diff:
+                    return True
+
+    # 5. F1 / Motorsport Check
+    if is_f1_event(ev1) and is_f1_event(ev2):
+        if diff is None or diff <= 120:
+            return True
+
+    # 6. Share streamId hash check (only if sports are compatible and neither event has contradictory team pairs)
+    h1 = {c["streamId"] for c in ev1.get("channels", []) if c.get("streamId")}
+    h2 = {c["streamId"] for c in ev2.get("channels", []) if c.get("streamId")}
+    if h1 and h2 and (h1 & h2):
+        if len(sides1) == 2 and len(sides2) == 2:
+            if not (is_same_team(sides1[0], sides2[0], sp1) or is_same_team(sides1[1], sides2[1], sp1) or
+                    is_same_team(sides1[0], sides2[1], sp1) or is_same_team(sides1[1], sides2[0], sp1)):
+                return False
+        if diff is None or diff <= 180:
+            return True
+
+    # 7. Single team / partial match (with time tolerance <= 45 min)
+    if diff is not None and diff > 45:
+        return False
+    if (m1 is None) != (m2 is None):
+        return False
+
+    if len(sides1) == 1 and len(sides2) == 1:
+        if is_same_team(sides1[0], sides2[0], sp1):
             return True
     elif (len(sides1) == 2 and len(sides2) == 1) or (len(sides1) == 1 and len(sides2) == 2):
         pair = sides1 if len(sides1) == 2 else sides2
         single = sides2[0] if len(sides1) == 2 else sides1[0]
-        if is_same_team(pair[0], single) or is_same_team(pair[1], single):
+        if is_same_team(pair[0], single, sp1) or is_same_team(pair[1], single, sp1):
             return True
-
-    # 4. Share streamId hash check (only if sports are compatible and neither event has contradictory team pairs)
-    h1 = {c["streamId"] for c in ev1.get("channels", []) if c.get("streamId")}
-    h2 = {c["streamId"] for c in ev2.get("channels", []) if c.get("streamId")}
-    if h1 and h2 and (h1 & h2):
-        if len(sides1) >= 2 or len(sides2) >= 2:
-            return False
-        return True
 
     return False
 
@@ -653,6 +776,12 @@ def parse_direct_event(raw_title, default_date="Hoy"):
                 comp = m_comp.group(1).strip()
                 teams = m_comp.group(2).strip()
                 break
+
+    if not comp and ' - ' in teams:
+        dash_parts = teams.split(' - ')
+        if len(dash_parts) >= 3:
+            comp = dash_parts[0].strip()
+            teams = ' - '.join(dash_parts[1:]).strip()
                 
     teams = re.sub(STAGE_PREFIXES, '', teams, flags=re.IGNORECASE).strip()
     teams = re.sub(r'\[.*?\]', '', teams).strip()
@@ -837,13 +966,22 @@ def consolidate_events(events, today):
                         c_ev["channels"].append(ch)
                         existing_hashes.add(h)
 
-                # Title selection: avoid "00", favor clean casing over ALL_CAPS
+                # Title selection: avoid "00", favor clean casing over ALL_CAPS, and prefer specific match over generic stage
                 t1 = c_ev.get("title", "").strip()
                 t2 = ev.get("title", "").strip()
+                comp1 = c_ev.get("competition", "").strip()
+                comp2 = ev.get("competition", "").strip()
                 if t1 in ("00", ""):
                     c_ev["title"] = t2
                 elif t2 not in ("00", ""):
-                    if t1.isupper() and not t2.isupper():
+                    gen1 = is_generic_stage_title(t1, comp1)
+                    gen2 = is_generic_stage_title(t2, comp2)
+                    if gen1 and not gen2:
+                        c_ev["title"] = t2
+                        c_ev["time"] = ev.get("time") or c_ev.get("time")
+                    elif not gen1 and gen2:
+                        pass
+                    elif t1.isupper() and not t2.isupper():
                         c_ev["title"] = t2
                     elif not t1.isupper() and t2.isupper():
                         pass
@@ -860,7 +998,8 @@ def consolidate_events(events, today):
                 # Competition selection: prefer non-empty and non-generic
                 comp1 = c_ev.get("competition", "").strip()
                 comp2 = ev.get("competition", "").strip()
-                if comp1 in ("", s1, "DEPORTES", "OTROS") and comp2 and comp2 not in ("DEPORTES", "OTROS"):
+                generic_comps = ("", s1, "DEPORTES", "OTROS", "SPANISH LEAGUE", "SPANISH LEAGUE 2", "BASILEA TOURNAMENT", "VIENNA TOURNAMENT")
+                if comp1 in generic_comps and comp2 and comp2 not in ("DEPORTES", "OTROS"):
                     c_ev["competition"] = comp2
 
                 merged = True
@@ -885,7 +1024,8 @@ def is_f1_event(ev):
             "SUZUKA", "INTERLAGOS", "AUSTIN", "LAS VEGAS", "ABU DHABI", "MELBOURNE",
             "MONACO", "CATALUNYA", "MONTREAL", "RED BULL RING", "HUNGARORING",
             "ZANDVOORT", "QATAR", "JEDDAH", "BAHRAIN", "SAKHIR", "SHANGHAI", "MIAMI",
-            "IMOLA", "SPA-FRANCORCHAMPS"
+            "IMOLA", "SPA-FRANCORCHAMPS", "MEXICO", "MÉXICO", "HERMANOS RODRIGUEZ",
+            "SAO PAULO", "LUSAIL", "YAS MARINA"
         ]
         if any(k in full for k in f1_keywords):
             if not any(m in full for m in ["MOTOGP", "MOTO GP", "MOTO2", "MOTO3"]):
@@ -962,14 +1102,23 @@ def load_previous_agenda(today):
             if ev.get("_metadata") or ev.get("sport") == "DIRECTO 24/7" or ev.get("date") == "24/7":
                 continue
             d = ev.get("date", "")
+            # Descartar canales de Markel persistidos de agendas previas
+            cleaned_channels = [
+                ch for ch in ev.get("channels", [])
+                if ch.get("source") != "Markel" and "[markel]" not in ch.get("name", "").lower()
+            ]
+            if not cleaned_channels:
+                continue
+            ev_copy = dict(ev)
+            ev_copy["channels"] = cleaned_channels
+
             if d == "Hoy":
                 if is_same_day:
-                    prev_events.append(ev)
+                    prev_events.append(ev_copy)
             elif re.match(r'^\d{2}/\d{2}/\d{4}$', d):
                 try:
                     ev_d = datetime.strptime(d, "%d/%m/%Y").date()
                     if ev_d == today:
-                        ev_copy = dict(ev)
                         ev_copy["date"] = "Hoy"
                         prev_events.append(ev_copy)
                 except Exception:
@@ -982,7 +1131,10 @@ def load_previous_agenda(today):
 def generate_piñavision_agenda():
     print("=== Generando agenda PIÑAVISION ===")
     markel = load_markel_channels()
-    print(f"Canales Markel cargados: {len(markel)} bases")
+    if markel:
+        print(f"Canales Markel cargados: {len(markel)} bases")
+    else:
+        print("Fuente Markel desactivada (canales caídos/inestables eliminados).")
 
     peticiones = load_peticiones_channels()
     print(f"Canales Peticiones cargados: {len(peticiones)} bases")
@@ -1093,6 +1245,22 @@ def generate_piñavision_agenda():
                         if ch.get("streamId") and ch["streamId"] not in existing_hashes:
                             s_ev["channels"].append(ch)
                             existing_hashes.add(ch["streamId"])
+                    t_s = s_ev.get("title", "").strip()
+                    t_a = a_ev.get("title", "").strip()
+                    comp_s = s_ev.get("competition", "").strip()
+                    comp_a = a_ev.get("competition", "").strip()
+                    gen_s = is_generic_stage_title(t_s, comp_s)
+                    gen_a = is_generic_stage_title(t_a, comp_a)
+                    if gen_s and not gen_a:
+                        s_ev["title"] = t_a
+                        s_ev["time"] = a_ev.get("time") or s_ev.get("time")
+                    elif not gen_s and gen_a:
+                        pass
+                    elif t_s.isupper() and not t_a.isupper():
+                        s_ev["title"] = t_a
+
+                    if comp_s in ("", s_ev.get("sport", ""), "DEPORTES", "OTROS") and comp_a and comp_a not in ("DEPORTES", "OTROS"):
+                        s_ev["competition"] = comp_a
                     matched = True
                     merged_arena_count += 1
                     break
