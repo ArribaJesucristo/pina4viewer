@@ -1,24 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "05/11/2026 17:21",
+    "updatedAt": "05/11/2026 17:31",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Metallurg Mg vs Neftekhimik",
-    "sport": "HOCKEY",
-    "competition": "KHL",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_79"
   },
   {
     "title": "Belarus Championship",
@@ -34,23 +18,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_80"
-  },
-  {
-    "title": "Metallurg Mg vs Neftekhimik",
-    "sport": "KHL",
-    "competition": "KHL",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_83"
+    "id": "pina_79"
   },
   {
     "title": "Russia U20 vs Russia U18",
@@ -66,7 +34,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_81"
+    "id": "pina_80"
   },
   {
     "title": "Volga Ulyanovsk vs Chertanovo",
@@ -88,11 +56,11 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_82"
+    "id": "pina_81"
   },
   {
     "title": "Shanghai Dragons vs Dynamo Msk",
-    "sport": "KHL",
+    "sport": "HOCKEY",
     "competition": "KHL",
     "time": "17:30",
     "date": "Hoy",
@@ -110,11 +78,11 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_84"
+    "id": "pina_82"
   },
   {
     "title": "Radomka Radom (W) vs Bielsko-Biala (W)",
-    "sport": "POLAND. WOMEN. MP",
+    "sport": "OTROS",
     "competition": "Poland. Women. MP",
     "time": "17:30",
     "date": "Hoy",
@@ -122,6 +90,28 @@
       {
         "name": "[LiveTV] Polish Opción 1",
         "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_83"
+  },
+  {
+    "title": "Shanghai Dragons vs Dynamo Msk",
+    "sport": "KHL",
+    "competition": "KHL",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -165,6 +155,40 @@
       }
     ],
     "id": "pina_62"
+  },
+  {
+    "title": "Superprestige Middelkerke",
+    "sport": "CYCLO-CROSS",
+    "competition": "Cyclo-Cross",
+    "time": "18:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 2",
+        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 3",
+        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "Superprestige Middelkerke - Opción Directa 1 [Comunidad]",
+        "streamId": "62a5750be4d2218b1064f83afaac4770fd92350d",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      }
+    ],
+    "id": "pina_84"
   },
   {
     "id": "pina_1",
