@@ -300,5 +300,25 @@ class TestAgendaPipeline(unittest.TestCase):
         self.assertTrue(is_same_event(ev_tennis_marca, ev_tennis_livetv, self.today),
                         "LiveTV tennis full names must match Marca last names")
 
+
+    def test_direct_m3u_and_tdt_integration(self):
+        from scripts.generate_agenda import load_direct_eventos, load_tdt_sports_channels
+        # Verify direct events M3U contains multiple sources
+        direct_events = load_direct_eventos()
+        self.assertGreater(len(direct_events), 0, "Direct events M3U must load events")
+        # Verify every direct event has valid streamId and raw_title
+        for ev in direct_events:
+            self.assertTrue(ev.get("raw_title"), "Direct event must have a title")
+            self.assertTrue(ev.get("streamId"), "Direct event must have a streamId")
+
+        # Verify TDT sports channels extraction
+        tdt_channels = load_tdt_sports_channels()
+        self.assertIsInstance(tdt_channels, dict)
+        if tdt_channels:
+            for base, chs in tdt_channels.items():
+                for c in chs:
+                    self.assertEqual(c["type"], "DIRECT")
+                    self.assertTrue(c["streamId"].startswith("http"))
+
 if __name__ == "__main__":
     unittest.main()

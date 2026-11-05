@@ -221,9 +221,46 @@ def load_peticiones_channels():
                 current_title = ""
     return channels_by_base
 
+
+def load_tdt_sports_channels():
+    """
+    Carga canales deportivos en abierto de TDTChannels (Teledeporte, Gol Play, Esport3, Real Madrid TV).
+    """
+    url = "https://www.tdtchannels.com/lists/tv.m3u"
+    raw = fetch_url(url, timeout=8)
+    if not raw:
+        return OrderedDict()
+    channels_by_base = OrderedDict()
+    current_name = ""
+    for line in raw.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        if line.startswith("#EXTINF:"):
+            m = re.search(r',([^,]+)$', line)
+            current_name = m.group(1).strip() if m else ""
+        elif not line.startswith("#") and (line.startswith("http://") or line.startswith("https://")):
+            low = current_name.lower()
+            if any(k in low for k in ['teledeporte', 'gol play', 'esport3', 'real madrid tv']):
+                base = canonical_channel_name(current_name)
+                if not base:
+                    base = current_name
+                if base not in channels_by_base:
+                    channels_by_base[base] = []
+                if not any(x["streamId"] == line for x in channels_by_base[base]):
+                    channels_by_base[base].append({
+                        "name": f"{base} [TDT Oficial]",
+                        "streamId": line,
+                        "type": "DIRECT",
+                        "source": "TDTChannels"
+                    })
+            current_name = ""
+    return channels_by_base
+
 def load_direct_eventos():
     urls = [
-        "https://raw.githubusercontent.com/Icastresana/lista1/main/eventos.m3u"
+        "https://raw.githubusercontent.com/Icastresana/lista1/main/eventos.m3u",
+        "https://raw.githubusercontent.com/rciptv2019/RCacediariosRC/main/RC%20EVENTOS%20DIARIOS"
     ]
     eventos = []
     seen_hashes = set()
@@ -1291,6 +1328,9 @@ def generate_piñavision_agenda():
     peticiones = load_peticiones_channels()
     print(f"Canales Peticiones cargados: {len(peticiones)} bases")
 
+    tdt_sports = load_tdt_sports_channels()
+    print(f"Canales TDT en abierto cargados: {len(tdt_sports)} bases")
+
     arena_streams, arena_events = load_arenavision()
 
     # Add ArenaVision streams to unified channels so they can be viewed in 24/7 TV too
@@ -1306,7 +1346,7 @@ def generate_piñavision_agenda():
 
     # Unify channels by base name
     unified_channels = OrderedDict()
-    all_bases = list(OrderedDict.fromkeys(list(markel.keys()) + list(peticiones.keys()) + list(arenavision_channels.keys())))
+    all_bases = list(OrderedDict.fromkeys(list(markel.keys()) + list(peticiones.keys()) + list(arenavision_channels.keys()) + list(tdt_sports.keys())))
 
     for b in all_bases:
         unified_channels[b] = []
@@ -1316,6 +1356,8 @@ def generate_piñavision_agenda():
             unified_channels[b].extend(peticiones[b])
         if b in arenavision_channels:
             unified_channels[b].extend(arenavision_channels[b])
+        if b in tdt_sports:
+            unified_channels[b].extend(tdt_sports[b])
 
     print(f"Total bases unificadas: {len(unified_channels)}")
 

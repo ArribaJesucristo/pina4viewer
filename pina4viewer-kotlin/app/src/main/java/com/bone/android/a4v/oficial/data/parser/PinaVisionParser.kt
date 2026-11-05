@@ -82,10 +82,10 @@ object PinaVisionParser {
                         val name = chObj.optString("name", "")
                         val streamId = chObj.optString("streamId", "")
                         val typeStr = chObj.optString("type", "ACESTREAM")
-                        val streamType = if (typeStr.equals("SOPCAST", ignoreCase = true)) {
-                            StreamType.SOPCAST
-                        } else {
-                            StreamType.ACESTREAM
+                        val streamType = when {
+                            typeStr.equals("SOPCAST", ignoreCase = true) -> StreamType.SOPCAST
+                            typeStr.equals("DIRECT", ignoreCase = true) || streamId.startsWith("http://", ignoreCase = true) || streamId.startsWith("https://", ignoreCase = true) -> StreamType.DIRECT
+                            else -> StreamType.ACESTREAM
                         }
                         if (name.isNotEmpty() && streamId.isNotEmpty()) {
                             channels.add(ChannelItem(name = name, streamId = streamId, type = streamType))

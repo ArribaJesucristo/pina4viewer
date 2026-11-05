@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "05/11/2026 08:21",
+    "updatedAt": "05/11/2026 08:23",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -18,7 +18,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_84"
+    "id": "pina_83"
   },
   {
     "title": "Abu Dhabi Championships",
@@ -86,7 +86,7 @@
         "source": "Comunidad"
       }
     ],
-    "id": "pina_83"
+    "id": "pina_84"
   },
   {
     "id": "pina_1",
@@ -1483,6 +1483,18 @@
         "streamId": "5a272a468eaf25feb032e2c5d377c6276b2299c7",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "Teledeporte [TDT Oficial]",
+        "streamId": "https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main.m3u8",
+        "type": "DIRECT",
+        "source": "TDTChannels"
+      },
+      {
+        "name": "Teledeporte [TDT Oficial]",
+        "streamId": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15601&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]",
+        "type": "DIRECT",
+        "source": "TDTChannels"
       }
     ]
   },
@@ -3793,6 +3805,18 @@
         "streamId": "5a272a468eaf25feb032e2c5d377c6276b2299c7",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "Teledeporte [TDT Oficial]",
+        "streamId": "https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main.m3u8",
+        "type": "DIRECT",
+        "source": "TDTChannels"
+      },
+      {
+        "name": "Teledeporte [TDT Oficial]",
+        "streamId": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15601&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]",
+        "type": "DIRECT",
+        "source": "TDTChannels"
       }
     ]
   },
@@ -7397,6 +7421,38 @@
         "streamId": "4af480f65d5d09eea5b546a79ace5b55979c7685",
         "type": "ACESTREAM",
         "source": "ArenaVision"
+      }
+    ]
+  },
+  {
+    "id": "332",
+    "title": "Real Madrid TV",
+    "sport": "DIRECTO 24/7",
+    "competition": "CANALES DEPORTIVOS",
+    "time": "",
+    "date": "24/7",
+    "channels": [
+      {
+        "name": "Real Madrid TV [TDT Oficial]",
+        "streamId": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8",
+        "type": "DIRECT",
+        "source": "TDTChannels"
+      }
+    ]
+  },
+  {
+    "id": "333",
+    "title": "Real Madrid TV EN",
+    "sport": "DIRECTO 24/7",
+    "competition": "CANALES DEPORTIVOS",
+    "time": "",
+    "date": "24/7",
+    "channels": [
+      {
+        "name": "Real Madrid TV EN [TDT Oficial]",
+        "streamId": "https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/master.m3u8",
+        "type": "DIRECT",
+        "source": "TDTChannels"
       }
     ]
   }
