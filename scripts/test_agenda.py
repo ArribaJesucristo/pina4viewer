@@ -254,5 +254,51 @@ class TestAgendaPipeline(unittest.TestCase):
                 self.assertNotEqual(ch.get("source"), "Markel", f"Event {ev.get('id')} has Markel source")
                 self.assertNotIn("[markel]", ch.get("name", "").lower(), f"Event {ev.get('id')} has Markel name")
 
+
+    def test_livetv_events_parsing_and_merging(self):
+        ev_marca = {
+            "title": "Real Madrid - Milan",
+            "sport": "FUTBOL",
+            "competition": "CHAMPIONS LEAGUE",
+            "time": "21:00",
+            "date": "Hoy",
+            "channels": []
+        }
+        ev_livetv = {
+            "title": "Real Madrid vs AC Milan",
+            "sport": "FUTBOL",
+            "competition": "Champions League",
+            "time": "21:00",
+            "date": "Hoy",
+            "channels": [{
+                "name": "[LiveTV] English 8000kbps",
+                "streamId": "5f966c123759de46dff29c379266b7a403452033",
+                "type": "ACESTREAM",
+                "source": "LiveTV"
+            }]
+        }
+        self.assertTrue(is_same_event(ev_marca, ev_livetv, self.today),
+                        "LiveTV match must merge with Marca equivalent")
+
+        # Tennis match matching
+        ev_tennis_marca = {
+            "title": "Michelsen - Alcaraz",
+            "sport": "TENIS",
+            "competition": "MASTERS PARÍS",
+            "time": "19:00",
+            "date": "Hoy",
+            "channels": []
+        }
+        ev_tennis_livetv = {
+            "title": "Alex Michelsen vs Carlos Alcaraz",
+            "sport": "TENIS",
+            "competition": "ATP. Paris",
+            "time": "19:00",
+            "date": "Hoy",
+            "channels": []
+        }
+        self.assertTrue(is_same_event(ev_tennis_marca, ev_tennis_livetv, self.today),
+                        "LiveTV tennis full names must match Marca last names")
+
 if __name__ == "__main__":
     unittest.main()

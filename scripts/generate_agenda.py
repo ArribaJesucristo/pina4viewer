@@ -326,6 +326,158 @@ def load_arenavision():
     print(f"ArenaVision cargado: {len(streams_map)} streams, {len(arena_events)} eventos de agenda.")
     return streams_map, arena_events
 
+def load_livetv_events(today):
+    """
+    Scraper para LiveTV (livetv.sx y sus mirrors).
+    Extrae la lista de eventos del día y busca en paralelo los enlaces AceStream activos
+    (acestream://...) en sus fichas técnicas, categorizando idioma y bitrate.
+    """
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    base_domains = ['livetv.sx', 'liveru.sx', 'livetv842.me']
+    html = ""
+    used_domain = ""
+    for domain in base_domains:
+        url = f"https://{domain}/enx/allupcoming/"
+        try:
+            html = fetch_url(url, timeout=6)
+            if html and "/enx/eventinfo/" in html:
+                used_domain = domain
+                break
+        except Exception:
+            continue
+
+    if not html:
+        print("Aviso: No se pudo conectar a los mirrors de LiveTV.")
+        return []
+
+    blocks = re.findall(r'<table[^>]*>.*?/enx/eventinfo/\d+[^"]*.*?</table>', html, re.DOTALL | re.IGNORECASE)
+    if not blocks:
+        return []
+
+    today_day = str(today.day)
+    today_month_name = today.strftime("%B")  # e.g. November
+
+    candidates = []
+    seen_links = set()
+    for b in blocks:
+        link_m = re.search(r'href="(/enx/eventinfo/\d+[^"]*)"[^>]*>(.*?)</a>', b, re.DOTALL | re.IGNORECASE)
+        if not link_m:
+            continue
+        link = link_m.group(1)
+        if link in seen_links:
+            continue
+        seen_links.add(link)
+
+        title_raw = link_m.group(2)
+        title = re.sub(r'&ndash;', 'vs', title_raw).strip()
+        title = re.sub(r'<[^>]+>', '', title).strip()
+        title = re.sub(r'\s+', ' ', title)
+
+        icon_m = re.search(r'<img[^>]*src="[^"]*/img/icons/[^"]*"[^>]*alt="([^"]*)"', b, re.IGNORECASE)
+        if not icon_m:
+            icon_m = re.search(r'<img[^>]*alt="([^"]*)"[^>]*src="[^"]*/img/icons/[^"]*"', b, re.IGNORECASE)
+        sport_alt = icon_m.group(1).strip() if icon_m else ""
+
+        desc_m = re.search(r'<span class="evdesc">(.*?)</span>', b, re.DOTALL | re.IGNORECASE)
+        desc = re.sub(r'<[^>]+>', ' ', desc_m.group(1)).strip() if desc_m else ""
+        desc = re.sub(r'\s+', ' ', desc)
+
+        # Date filter: check if event is for today
+        is_today = False
+        if today_month_name.lower() in desc.lower() and today_day in desc:
+            is_today = True
+        elif 'today' in desc.lower() or 'at ' in desc.lower():
+            is_today = True
+        elif not any(m in desc.lower() for m in ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']):
+            is_today = True
+
+        if not is_today:
+            continue
+
+        time_m = re.search(r'(\d{1,2}:\d{2})', desc)
+        time_str = time_m.group(1) if time_m else ""
+        if len(time_str) == 4 and time_str[1] == ':':
+            time_str = '0' + time_str
+
+        # Extract competition text if available in parentheses
+        comp_m = re.search(r'\(([^)]+)\)', desc)
+        comp_text = comp_m.group(1).strip() if comp_m else sport_alt
+
+        candidates.append({
+            'link': f"https://{used_domain}{link}",
+            'title': title,
+            'sport_alt': sport_alt,
+            'comp_text': comp_text,
+            'time': time_str,
+        })
+
+    def check_event(cand):
+        try:
+            ev_html = fetch_url(cand['link'], timeout=6)
+            if not ev_html:
+                return None
+            rows = re.findall(r'<tr[^>]*>.*?</tr>', ev_html, re.DOTALL)
+            channels = []
+            seen_hashes = set()
+            for row in rows:
+                if 'acestream://' in row or "show_webplayer('acestream'" in row:
+                    hash_m = re.search(r'acestream://([a-fA-F0-9]{40})', row)
+                    if not hash_m:
+                        hash_m = re.search(r"show_webplayer\('acestream',\s*'([a-fA-F0-9]{40})'", row)
+                    if not hash_m:
+                        continue
+                    h = hash_m.group(1).lower()
+                    if h in seen_hashes:
+                        continue
+                    seen_hashes.add(h)
+
+                    lang_m = re.search(r'title="([^"]+)"\s+width=16\s+src="[^"]*/linkflag/', row)
+                    lang = lang_m.group(1) if lang_m else ""
+
+                    bitrate_m = re.search(r'class="bitrate"[^>]*>([^<]+)</td>', row)
+                    bitrate = bitrate_m.group(1).strip() if bitrate_m else ""
+
+                    name_parts = ["[LiveTV]"]
+                    if lang:
+                        name_parts.append(lang)
+                    if bitrate:
+                        name_parts.append(bitrate)
+                    else:
+                        name_parts.append(f"Opción {len(channels) + 1}")
+
+                    channels.append({
+                        "name": " ".join(name_parts),
+                        "streamId": h,
+                        "type": "ACESTREAM",
+                        "source": "LiveTV"
+                    })
+
+            if channels:
+                norm_sport = normalize_sport(cand['sport_alt'], cand['comp_text'])
+                return {
+                    "title": cand['title'],
+                    "sport": norm_sport,
+                    "competition": cand['comp_text'] if cand['comp_text'] else cand['sport_alt'],
+                    "time": cand['time'],
+                    "date": "Hoy",
+                    "channels": channels
+                }
+        except Exception:
+            return None
+        return None
+
+    livetv_events = []
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = [executor.submit(check_event, c) for c in candidates]
+        for f in as_completed(futures):
+            res = f.result()
+            if res:
+                livetv_events.append(res)
+
+    print(f"LiveTV cargado: {len(livetv_events)} eventos con enlaces AceStream.")
+    return livetv_events
+
+
 def clean_channel_name(s):
     import unicodedata
     s = unicodedata.normalize('NFKD', s).encode('ASCII', 'ignore').decode('ASCII').lower()
@@ -1271,6 +1423,32 @@ def generate_piñavision_agenda():
                 added_arena_count += 1
 
         print(f"ArenaVision integrado: {merged_arena_count} emparejados con eventos existentes, {added_arena_count} añadidos como nuevos eventos (descartados {len(arena_events) - len(filtered_arena_events)} pasados).")
+
+    # 2. Integrate LiveTV events
+    livetv_events = load_livetv_events(today)
+    if livetv_events:
+        added_livetv_count = 0
+        merged_livetv_count = 0
+        for l_ev in livetv_events:
+            matched = False
+            for s_ev in schedule_events:
+                if is_same_event(s_ev, l_ev, today):
+                    existing_hashes = {c["streamId"] for c in s_ev.get("channels", []) if c.get("streamId")}
+                    for ch in l_ev.get("channels", []):
+                        if ch.get("streamId") and ch["streamId"] not in existing_hashes:
+                            s_ev["channels"].append(ch)
+                            existing_hashes.add(ch["streamId"])
+                    matched = True
+                    merged_livetv_count += 1
+                    break
+
+            if not matched:
+                l_ev["id"] = f"pina_{len(schedule_events) + 1}"
+                schedule_events.append(l_ev)
+                added_livetv_count += 1
+
+        print(f"LiveTV integrado: {merged_livetv_count} emparejados con eventos existentes, {added_livetv_count} añadidos como nuevos eventos.")
+
 
     # 2. Enrich verified schedule events for 'Hoy' with direct streams (eventos.m3u)
     # Undated streams from community m3u are ONLY attached to confirmed events to avoid reviving yesterday's matches
