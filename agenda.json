@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "05/11/2026 22:01",
+    "updatedAt": "05/11/2026 22:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -101,15 +101,37 @@
     "id": "pina_80"
   },
   {
-    "title": "Tourcoing vs Sete",
-    "sport": "OTROS",
-    "competition": "France. Ligue A",
+    "title": "ASVEL vs Bayern Munich",
+    "sport": "EUROLEAGUE",
+    "competition": "Euroleague",
     "time": "20:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] French Opción 1",
-        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 2",
+        "streamId": "1fb794b1503c5955b75ea0106ee6360b80d78849",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_85"
+  },
+  {
+    "title": "Projekt Warszawa vs Slepsk Suwalki",
+    "sport": "OTROS",
+    "competition": "Poland. PlusLiga",
+    "time": "20:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -131,22 +153,6 @@
       }
     ],
     "id": "pina_82"
-  },
-  {
-    "title": "Projekt Warszawa vs Slepsk Suwalki",
-    "sport": "OTROS",
-    "competition": "Poland. PlusLiga",
-    "time": "20:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish Opción 1",
-        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_83"
   },
   {
     "title": "Milan vs Valencia",
@@ -381,6 +387,28 @@
     "id": "pina_72"
   },
   {
+    "title": "Benfica vs Lech Poznan",
+    "sport": "FUTBOL",
+    "competition": "Europa League",
+    "time": "21:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_73"
+  },
+  {
     "title": "Celtic vs Besiktas",
     "sport": "FUTBOL",
     "competition": "Europa League",
@@ -412,57 +440,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_73"
-  },
-  {
-    "title": "Benfica vs Lech Poznan",
-    "sport": "FUTBOL",
-    "competition": "Europa League",
-    "time": "21:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
     "id": "pina_74"
-  },
-  {
-    "title": "Sunderland vs Dinamo Zagreb",
-    "sport": "FUTBOL",
-    "competition": "Europa League",
-    "time": "21:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "350b2044f1c9e87e18d8fbda1bcc456c22cf9296",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_75"
   },
   {
     "title": "AZ vs Juventus",
@@ -492,6 +470,34 @@
       {
         "name": "[LiveTV] Dutch Opción 4",
         "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_75"
+  },
+  {
+    "title": "Sunderland vs Dinamo Zagreb",
+    "sport": "FUTBOL",
+    "competition": "Europa League",
+    "time": "21:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "350b2044f1c9e87e18d8fbda1bcc456c22cf9296",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -562,7 +568,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_84"
+    "id": "pina_83"
   },
   {
     "title": "Porto (W) vs Asterix (W)",
@@ -578,7 +584,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_85"
+    "id": "pina_84"
   },
   {
     "title": "Mackenzie (W) vs Minas (W)",
