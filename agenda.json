@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "06/11/2026 18:31",
+    "updatedAt": "06/11/2026 18:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -118,24 +118,6 @@
         "streamId": "dc149729d6b4be6ae8199eae450611d1d06e5149",
         "type": "ACESTREAM",
         "source": "ArenaVision"
-      },
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "14407b00d454cb7dc0d70aa26e8bbc554f457f00",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German 8000kbps",
-        "streamId": "b04372b9543d763bd2dbd2a1842d9723fd080076",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
       },
       {
         "name": "DAZN F1 - Opción 1 [New Loop]",
@@ -499,28 +481,6 @@
     "id": "pina_115"
   },
   {
-    "title": "Bayern Munich (W) vs Werder Bremen (W)",
-    "sport": "FUTBOL",
-    "competition": "Germany. Women. Bundesliga",
-    "time": "18:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "897e73c9d578848f596585314ecb9ae067c0e229",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_116"
-  },
-  {
     "title": "Eintracht (W) vs Wolfsburg (W)",
     "sport": "FUTBOL",
     "competition": "Germany. Women. Bundesliga",
@@ -536,6 +496,28 @@
       {
         "name": "[LiveTV] German Opción 2",
         "streamId": "12ea555d431dbe51fc8e4ca745aec09fe22a4865",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_116"
+  },
+  {
+    "title": "Bayern Munich (W) vs Werder Bremen (W)",
+    "sport": "FUTBOL",
+    "competition": "Germany. Women. Bundesliga",
+    "time": "18:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "897e73c9d578848f596585314ecb9ae067c0e229",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
