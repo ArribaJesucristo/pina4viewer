@@ -1,8 +1,36 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "06/11/2026 09:40",
+    "updatedAt": "06/11/2026 09:51",
     "timezone": "Madrid,Paris,Bruselas"
+  },
+  {
+    "title": "Abu Dhabi Championships",
+    "sport": "GOLF",
+    "competition": "DP World Tour",
+    "time": "07:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 2",
+        "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 3",
+        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_12"
   },
   {
     "title": "International Championship, China",
@@ -32,34 +60,6 @@
       {
         "name": "[LiveTV] German Opción 4",
         "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_12"
-  },
-  {
-    "title": "Abu Dhabi Championships",
-    "sport": "GOLF",
-    "competition": "DP World Tour",
-    "time": "07:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Dutch Opción 2",
-        "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Dutch Opción 3",
-        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -202,7 +202,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_20"
+    "id": "pina_19"
   },
   {
     "title": "World Championships",
@@ -224,7 +224,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_19"
+    "id": "pina_20"
   },
   {
     "title": "FREE 1",
