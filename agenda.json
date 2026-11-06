@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "06/11/2026 04:40",
+    "updatedAt": "06/11/2026 04:50",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -85,6 +85,22 @@
     "id": "pina_60"
   },
   {
+    "title": "Toto Japan Classic",
+    "sport": "GOLF",
+    "competition": "LPGA Tour",
+    "time": "03:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "d317a003e8047da2c36a2a2bb2289578c9a3b79c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_71"
+  },
+  {
     "title": "Phoenix vs Orlando",
     "sport": "BALONCESTO",
     "competition": "NBA",
@@ -100,22 +116,6 @@
       {
         "name": "[LiveTV] French 8000kbps",
         "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_71"
-  },
-  {
-    "title": "Toto Japan Classic",
-    "sport": "GOLF",
-    "competition": "LPGA Tour",
-    "time": "03:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "d317a003e8047da2c36a2a2bb2289578c9a3b79c",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
