@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "06/11/2026 14:01",
+    "updatedAt": "06/11/2026 14:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -253,6 +253,22 @@
     ]
   },
   {
+    "title": "ONE Friday Fights 177",
+    "sport": "ONE FIGHT NIGHT",
+    "competition": "ONE Fight Night",
+    "time": "14:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_72"
+  },
+  {
     "title": "World Championships",
     "sport": "SAMBO",
     "competition": "Sambo",
@@ -285,22 +301,6 @@
       },
       {
         "name": "[LiveTV] Russian Opción 5",
-        "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_72"
-  },
-  {
-    "title": "ONE Friday Fights 177",
-    "sport": "ONE FIGHT NIGHT",
-    "competition": "ONE Fight Night",
-    "time": "14:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
         "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
         "type": "ACESTREAM",
         "source": "LiveTV"
