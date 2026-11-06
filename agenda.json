@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "06/11/2026 15:11",
+    "updatedAt": "06/11/2026 15:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -141,6 +141,22 @@
     ]
   },
   {
+    "title": "ONE Friday Fights 177",
+    "sport": "BOXEO",
+    "competition": "ONE Fight Night",
+    "time": "14:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_64"
+  },
+  {
     "title": "World Championships",
     "sport": "COMBAT SPORT. SAMBO",
     "competition": "Sambo",
@@ -173,22 +189,6 @@
       },
       {
         "name": "[LiveTV] Russian Opción 5",
-        "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_64"
-  },
-  {
-    "title": "ONE Friday Fights 177",
-    "sport": "BOXEO",
-    "competition": "ONE Fight Night",
-    "time": "14:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
         "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
         "type": "ACESTREAM",
         "source": "LiveTV"
@@ -1633,20 +1633,8 @@
     "date": "08/11/2026",
     "channels": [
       {
-        "name": "DAZN 1 - Opción 1 [New Loop]",
-        "streamId": "d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151",
-        "type": "ACESTREAM",
-        "source": "New Loop"
-      },
-      {
-        "name": "DAZN 1 - Opción 2 [RCP]",
-        "streamId": "8b2e003ef51657196d2096aa84b9b21ae4bfb660",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "DAZN 1 - Opción 3 [RCP]",
-        "streamId": "47c6e8dadfba2b3bd013feecf4194ecceec428cd",
+        "name": "CUATRO - Opción 1 [RCP]",
+        "streamId": "e8eec35f4662be1af96963245bfa88fb7d0242c4",
         "type": "ACESTREAM",
         "source": "RCP"
       }
