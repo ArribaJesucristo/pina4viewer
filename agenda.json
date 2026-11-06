@@ -1,47 +1,65 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "06/11/2026 05:50",
+    "updatedAt": "06/11/2026 06:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
-    "title": "SUNS vs MAGIC",
-    "sport": "BALONCESTO",
-    "competition": "USA NBA",
-    "time": "03:00",
+    "title": "Abu Dhabi Championships",
+    "sport": "GOLF",
+    "competition": "DP World Tour",
+    "time": "07:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "ArenaVision 160 (AV160)",
-        "streamId": "8698d62f3b2a35aabb599c420b06945ea006400b",
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
         "type": "ACESTREAM",
-        "source": "ArenaVision"
+        "source": "LiveTV"
       },
       {
-        "name": "ArenaVision 161 (AV161)",
-        "streamId": "2eedcbcc7173d3622804609460687d3e5a19e1ff",
+        "name": "[LiveTV] Dutch Opción 2",
+        "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
         "type": "ACESTREAM",
-        "source": "ArenaVision"
+        "source": "LiveTV"
       },
       {
-        "name": "ArenaVision 162 (AV162)",
-        "streamId": "0d8baa9c49a73dc9310adeec38d2c2df03271180",
+        "name": "[LiveTV] Dutch Opción 3",
+        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
         "type": "ACESTREAM",
-        "source": "ArenaVision"
+        "source": "LiveTV"
       }
     ],
-    "id": "pina_59"
+    "id": "pina_69"
   },
   {
-    "title": "Toto Japan Classic",
-    "sport": "GOLF",
-    "competition": "LPGA Tour",
-    "time": "03:00",
+    "title": "International Championship, China",
+    "sport": "SNOOKER",
+    "competition": "Snooker",
+    "time": "07:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "d317a003e8047da2c36a2a2bb2289578c9a3b79c",
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "5f966c123759de46dff29c379266b7a403452033",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 3",
+        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 4",
+        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -176,7 +194,7 @@
         "source": "New Era"
       }
     ],
-    "id": "pina_60"
+    "id": "pina_59"
   },
   {
     "id": "pina_4",
@@ -304,7 +322,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_61"
+    "id": "pina_60"
   },
   {
     "title": "FREE 1",
@@ -404,7 +422,7 @@
         "source": "RCP"
       }
     ],
-    "id": "pina_62"
+    "id": "pina_61"
   },
   {
     "title": "FREE",
@@ -462,7 +480,7 @@
         "source": "New Era"
       }
     ],
-    "id": "pina_63"
+    "id": "pina_62"
   },
   {
     "id": "pina_8",
@@ -546,7 +564,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_63"
   },
   {
     "id": "pina_10",
@@ -680,7 +698,7 @@
         "source": "RCP"
       }
     ],
-    "id": "pina_65"
+    "id": "pina_64"
   },
   {
     "title": "VIRTUS BOLOGNA vs DUBAI",
@@ -702,7 +720,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_65"
   },
   {
     "title": "CASTELLON vs EIBAR",
@@ -724,7 +742,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_67"
+    "id": "pina_66"
   },
   {
     "title": "PARTIZAN vs MACCABI",
@@ -746,7 +764,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_68"
+    "id": "pina_67"
   },
   {
     "id": "pina_11",
@@ -944,7 +962,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_69"
+    "id": "pina_68"
   },
   {
     "id": "pina_16",
