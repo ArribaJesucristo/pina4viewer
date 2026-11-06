@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "06/11/2026 01:11",
+    "updatedAt": "06/11/2026 01:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -61,6 +61,30 @@
         "streamId": "704c3c92aafbcf3234c88a4be5fd98fcbd238d85",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Portuguese 8000kbps",
+        "streamId": "36cad67fed5a739757a9db844a551aa845a8d51b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 4",
+        "streamId": "79f10c6c6168e42bfc606f3f7b9e5f3ca79dedab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
