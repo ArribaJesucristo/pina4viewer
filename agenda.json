@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 02:21",
+    "updatedAt": "07/11/2026 02:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -37,22 +37,6 @@
     "id": "pina_87"
   },
   {
-    "title": "New Zealand vs India",
-    "sport": "ODI",
-    "competition": "ODI",
-    "time": "03:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_89"
-  },
-  {
     "title": "Toto Japan Classic",
     "sport": "GOLF",
     "competition": "LPGA Tour",
@@ -66,7 +50,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_90"
+    "id": "pina_89"
+  },
+  {
+    "title": "New Zealand vs India",
+    "sport": "ODI",
+    "competition": "ODI",
+    "time": "03:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_91"
   },
   {
     "title": "One FC",
@@ -110,7 +110,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_91"
+    "id": "pina_90"
   },
   {
     "id": "pina_1",
