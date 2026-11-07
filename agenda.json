@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 07:51",
+    "updatedAt": "07/11/2026 08:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -19,22 +19,6 @@
       }
     ],
     "id": "pina_87"
-  },
-  {
-    "title": "Auckland vs Wellington Phoenix",
-    "sport": "FUTBOL",
-    "competition": "Australia. A-League",
-    "time": "06:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_88"
   },
   {
     "title": "North Melbourne (W) vs Carlton Blues (W)",
@@ -120,7 +104,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_90"
+    "id": "pina_88"
   },
   {
     "title": "Brisbane Roar (W) vs Melbourne Victory (W)",
@@ -136,7 +120,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_91"
+    "id": "pina_90"
   },
   {
     "title": "New Zealand (W) vs Samoa (W)",
@@ -158,7 +142,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_92"
+    "id": "pina_91"
   },
   {
     "id": "pina_1",
@@ -183,8 +167,30 @@
     ]
   },
   {
+    "title": "Abu Dhabi Championships",
+    "sport": "GOLF",
+    "competition": "DP World Tour",
+    "time": "08:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 2",
+        "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_92"
+  },
+  {
     "title": "Taifun vs JHC Dynamo Msk",
-    "sport": "RUSSIA. MHL",
+    "sport": "HOCKEY",
     "competition": "Russia. MHL",
     "time": "08:00",
     "date": "Hoy",
@@ -205,21 +211,21 @@
     "id": "pina_93"
   },
   {
-    "title": "Abu Dhabi Championships",
-    "sport": "GOLF",
-    "competition": "DP World Tour",
+    "title": "Taifun vs JHC Dynamo Msk",
+    "sport": "RUSSIA. MHL",
+    "competition": "Russia. MHL",
     "time": "08:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Dutch Opción 2",
-        "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
