@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "08/11/2026 00:41",
+    "updatedAt": "08/11/2026 00:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -1901,22 +1901,6 @@
     ]
   },
   {
-    "title": "Indiana vs Denver",
-    "sport": "BALONCESTO",
-    "competition": "NBA",
-    "time": "23:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] French 8000kbps",
-        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_48"
-  },
-  {
     "title": "Seattle Kraken vs Rangers",
     "sport": "HOCKEY",
     "competition": "NHL",
@@ -1926,6 +1910,22 @@
       {
         "name": "[LiveTV] English 8000kbps",
         "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_48"
+  },
+  {
+    "title": "Indiana vs Denver",
+    "sport": "BALONCESTO",
+    "competition": "NBA",
+    "time": "23:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
