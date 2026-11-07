@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 21:11",
+    "updatedAt": "07/11/2026 21:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -376,7 +376,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_78"
+    "id": "pina_79"
   },
   {
     "title": "UNIONISTA vs ZAMORA",
@@ -478,6 +478,24 @@
         "source": "ArenaVision"
       },
       {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "14407b00d454cb7dc0d70aa26e8bbc554f457f00",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German 8000kbps",
+        "streamId": "b04372b9543d763bd2dbd2a1842d9723fd080076",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
         "name": "DAZN F1 - Opción 1 [New Loop]",
         "streamId": "d65257bb934b73647374224fd62d836815804be2",
         "type": "ACESTREAM",
@@ -566,7 +584,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_69"
+    "id": "pina_70"
   },
   {
     "title": "GIRONA vs BILBAO",
@@ -637,22 +655,6 @@
     ]
   },
   {
-    "title": "Pau vs Nantes",
-    "sport": "FUTBOL",
-    "competition": "France. Ligue 2",
-    "time": "20:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] French Opción 1",
-        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_70"
-  },
-  {
     "title": "Saint-Etienne vs Laval",
     "sport": "FUTBOL",
     "competition": "France. Ligue 2",
@@ -669,6 +671,22 @@
     "id": "pina_71"
   },
   {
+    "title": "Pau vs Nantes",
+    "sport": "FUTBOL",
+    "competition": "France. Ligue 2",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] French Opción 1",
+        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_72"
+  },
+  {
     "title": "Bare Knuckle",
     "sport": "BOXEO",
     "competition": "Bare-knuckle boxing",
@@ -682,7 +700,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_72"
+    "id": "pina_73"
   },
   {
     "title": "Widzew Lodz vs Pogon Szczecin",
@@ -698,7 +716,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_73"
+    "id": "pina_74"
   },
   {
     "title": "Hertha Berlin vs Wolfsburg",
@@ -714,7 +732,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_74"
+    "id": "pina_75"
   },
   {
     "title": "Bydgoszcz (W) vs Wroclaw (W)",
@@ -730,7 +748,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_75"
+    "id": "pina_76"
   },
   {
     "title": "Roma vs Sassuolo",
@@ -1022,7 +1040,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_76"
+    "id": "pina_77"
   },
   {
     "title": "St Mirren vs Rangers",
@@ -1056,7 +1074,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_77"
+    "id": "pina_78"
   },
   {
     "title": "Peterborough United vs Reading",
@@ -1084,7 +1102,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_79"
+    "id": "pina_80"
   },
   {
     "title": "PSG vs Troyes",
@@ -1128,7 +1146,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_80"
+    "id": "pina_81"
   },
   {
     "title": "BOCA JUNIORS vs DEFENSA Y JUSTICIA",
@@ -1178,7 +1196,7 @@
   },
   {
     "title": "Sporting vs Moreirense",
-    "sport": "OTROS",
+    "sport": "FUTBOL",
     "competition": "Portugal. Primeira Liga",
     "time": "21:30",
     "date": "Hoy",
@@ -1208,7 +1226,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_81"
+    "id": "pina_69"
   },
   {
     "title": "CORTES ACOSTA vs WALKER",
