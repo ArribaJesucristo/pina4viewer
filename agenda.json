@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 11:11",
+    "updatedAt": "07/11/2026 11:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -19,40 +19,6 @@
       }
     ],
     "id": "pina_86"
-  },
-  {
-    "title": "Cup of China",
-    "sport": "OTROS",
-    "competition": "Figure Skating",
-    "time": "09:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 3",
-        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 4",
-        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_87"
   },
   {
     "title": "Melbourne City vs Western Sydney",
@@ -74,7 +40,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_88"
+    "id": "pina_87"
   },
   {
     "title": "Lokomotiv M (W) vs Spartak M (W)",
@@ -90,7 +56,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_89"
+    "id": "pina_88"
   },
   {
     "title": "New Zealand vs Tonga",
@@ -112,7 +78,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_91"
+    "id": "pina_90"
   },
   {
     "title": "New Zealand vs Tonga",
@@ -134,7 +100,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_95"
+    "id": "pina_94"
   },
   {
     "title": "Qatar Grand Prix",
@@ -174,7 +140,7 @@
         "source": "New Era"
       }
     ],
-    "id": "pina_90"
+    "id": "pina_89"
   },
   {
     "id": "pina_1",
@@ -224,7 +190,41 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_92"
+    "id": "pina_91"
+  },
+  {
+    "title": "Cup of China",
+    "sport": "FIGURE SKATING",
+    "competition": "Figure Skating",
+    "time": "11:40",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 3",
+        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 4",
+        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_95"
   },
   {
     "id": "pina_2",
@@ -394,7 +394,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_93"
+    "id": "pina_92"
   },
   {
     "title": "Dynamo Ural vs Zenit",
@@ -410,7 +410,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_94"
+    "id": "pina_93"
   },
   {
     "id": "pina_4",
