@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 06:31",
+    "updatedAt": "07/11/2026 06:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -107,6 +107,28 @@
     "id": "pina_91"
   },
   {
+    "title": "World Championships",
+    "sport": "TRAMPOLINING",
+    "competition": "Trampolining",
+    "time": "07:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_94"
+  },
+  {
     "title": "International Championship, China",
     "sport": "SNOOKER",
     "competition": "Snooker",
@@ -134,28 +156,6 @@
       {
         "name": "[LiveTV] German Opción 4",
         "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_93"
-  },
-  {
-    "title": "World Championships",
-    "sport": "TRAMPOLINING",
-    "competition": "Trampolining",
-    "time": "07:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -200,7 +200,7 @@
         "source": "Comunidad"
       }
     ],
-    "id": "pina_94"
+    "id": "pina_93"
   },
   {
     "id": "pina_1",
