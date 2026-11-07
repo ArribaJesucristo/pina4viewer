@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 08:02",
+    "updatedAt": "07/11/2026 08:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -19,22 +19,6 @@
       }
     ],
     "id": "pina_87"
-  },
-  {
-    "title": "North Melbourne (W) vs Carlton Blues (W)",
-    "sport": "OTROS",
-    "competition": "Australia. Women. AFL",
-    "time": "06:05",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_89"
   },
   {
     "title": "International Championship, China",
@@ -120,7 +104,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_90"
+    "id": "pina_89"
   },
   {
     "title": "New Zealand (W) vs Samoa (W)",
@@ -142,7 +126,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_91"
+    "id": "pina_90"
   },
   {
     "id": "pina_1",
@@ -186,7 +170,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_92"
+    "id": "pina_91"
   },
   {
     "title": "Taifun vs JHC Dynamo Msk",
@@ -208,7 +192,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_93"
+    "id": "pina_92"
   },
   {
     "title": "Taifun vs JHC Dynamo Msk",
@@ -226,6 +210,22 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_93"
+  },
+  {
+    "title": "Brisbane (W) vs Hobart (W)",
+    "sport": "OTROS",
+    "competition": "Australia. Women. WBBL",
+    "time": "09:10",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "6d95e4b0893e155cc674b84e0763150c445d3ddd",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
