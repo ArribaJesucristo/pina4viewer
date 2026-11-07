@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 13:01",
+    "updatedAt": "07/11/2026 13:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -385,22 +385,6 @@
     "id": "pina_102"
   },
   {
-    "title": "Korona Kielce vs Radomiak",
-    "sport": "FUTBOL",
-    "competition": "Poland. Ekstraklasa",
-    "time": "12:15",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish Opción 1",
-        "streamId": "3e87464ed8c42ed14464461ea08860a3040a8944",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_95"
-  },
-  {
     "title": "Znicz Pruszkow vs Podhale",
     "sport": "FUTBOL",
     "competition": "Poland. II Liga",
@@ -410,6 +394,22 @@
       {
         "name": "[LiveTV] Polish 8000kbps",
         "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_95"
+  },
+  {
+    "title": "Korona Kielce vs Radomiak",
+    "sport": "FUTBOL",
+    "competition": "Poland. Ekstraklasa",
+    "time": "12:15",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "3e87464ed8c42ed14464461ea08860a3040a8944",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
