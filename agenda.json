@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 19:22",
+    "updatedAt": "07/11/2026 19:32",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -215,28 +215,6 @@
     "id": "pina_75"
   },
   {
-    "title": "Vitebsk vs Dinamo Minsk",
-    "sport": "FUTBOL",
-    "competition": "Belarus. Vysheyshaya Liga",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_76"
-  },
-  {
     "title": "MANRESA vs OBRADOIRO",
     "sport": "BALONCESTO",
     "competition": "SPANISH LEAGUE",
@@ -259,22 +237,6 @@
     "id": "pina_43"
   },
   {
-    "title": "Brest Bretagne (W) vs Bucharest (W)",
-    "sport": "BALONMANO",
-    "competition": "Women. Champions League",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] French Opción 1",
-        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_69"
-  },
-  {
     "title": "Parma vs Bologna",
     "sport": "FUTBOL",
     "competition": "Italy. Serie A",
@@ -290,6 +252,22 @@
       {
         "name": "[LiveTV] Russian 8000kbps",
         "streamId": "b28db77c5084da7993395d77df96c30bb134f0a9",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_69"
+  },
+  {
+    "title": "Brest Bretagne (W) vs Bucharest (W)",
+    "sport": "BALONMANO",
+    "competition": "Women. Champions League",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] French Opción 1",
+        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -310,7 +288,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_77"
+    "id": "pina_76"
   },
   {
     "title": "Kansas City (W) vs Angel City (W)",
@@ -332,7 +310,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_78"
+    "id": "pina_77"
   },
   {
     "title": "Brest Bretagne (W) vs Bucharest (W)",
@@ -802,7 +780,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_73"
+    "id": "pina_72"
   },
   {
     "title": "Aberdeen vs Hibernian",
@@ -824,7 +802,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_79"
+    "id": "pina_78"
   },
   {
     "title": "F1-CLASSIFICATION",
@@ -958,7 +936,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_72"
+    "id": "pina_73"
   },
   {
     "title": "Chris Billam-Smith vs Cheavan Clarke",
@@ -980,7 +958,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_80"
+    "id": "pina_79"
   },
   {
     "title": "Germany (W) vs Austria (W)",
@@ -996,7 +974,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_81"
+    "id": "pina_80"
   },
   {
     "title": "Auxerre vs Paris",
@@ -1081,6 +1059,22 @@
         "source": "ArenaVision"
       }
     ]
+  },
+  {
+    "title": "Saint-Etienne vs Laval",
+    "sport": "FUTBOL",
+    "competition": "France. Ligue 2",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_81"
   },
   {
     "title": "Bare Knuckle",
