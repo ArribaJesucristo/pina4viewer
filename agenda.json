@@ -1,28 +1,16 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 09:11",
+    "updatedAt": "07/11/2026 09:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
-    "title": "World Championships",
-    "sport": "OTROS",
-    "competition": "Trampolining",
+    "title": "International Championship, China",
+    "sport": "SNOOKER",
+    "competition": "Snooker",
     "time": "07:00",
     "date": "Hoy",
     "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
       {
         "name": "[LiveTV] English 8000kbps",
         "streamId": "5f966c123759de46dff29c379266b7a403452033",
@@ -48,10 +36,16 @@
         "source": "LiveTV"
       },
       {
-        "name": "World Championships - Opción Directa 1 [Comunidad]",
-        "streamId": "3230cdca852a10325222e3c546e499e31d547a90",
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
         "type": "ACESTREAM",
-        "source": "Comunidad"
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ],
     "id": "pina_87"
@@ -184,7 +178,7 @@
   },
   {
     "title": "Cup of China",
-    "sport": "FIGURE SKATING",
+    "sport": "OTROS",
     "competition": "Figure Skating",
     "time": "09:30",
     "date": "Hoy",
