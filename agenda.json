@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 16:22",
+    "updatedAt": "07/11/2026 16:32",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -421,22 +421,6 @@
     "id": "pina_90"
   },
   {
-    "title": "Toulouse vs Clermont",
-    "sport": "FRANCE. TOP 14",
-    "competition": "France. Top 14",
-    "time": "14:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_98"
-  },
-  {
     "title": "Slask vs Piast Gliwice",
     "sport": "FUTBOL",
     "competition": "Poland. Ekstraklasa",
@@ -493,22 +477,6 @@
     ]
   },
   {
-    "title": "Torino vs Lecce",
-    "sport": "FUTBOL",
-    "competition": "Italy. Serie A",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "b28db77c5084da7993395d77df96c30bb134f0a9",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_84"
-  },
-  {
     "title": "Cagliari vs Frosinone",
     "sport": "FUTBOL",
     "competition": "Italy. Serie A",
@@ -524,6 +492,22 @@
       {
         "name": "[LiveTV] Russian 8000kbps",
         "streamId": "b6baa046075d82da300fc1b16de96067a8b9540e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_83"
+  },
+  {
+    "title": "Torino vs Lecce",
+    "sport": "FUTBOL",
+    "competition": "Italy. Serie A",
+    "time": "15:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "b28db77c5084da7993395d77df96c30bb134f0a9",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -585,46 +569,6 @@
     "id": "pina_94"
   },
   {
-    "title": "European Championship",
-    "sport": "CICLISMO",
-    "competition": "European Championship",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 4",
-        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 5",
-        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_95"
-  },
-  {
     "title": "Russia U20 vs Kazakhstan U20",
     "sport": "HOCKEY",
     "competition": "Friendly Match. National Teams",
@@ -638,23 +582,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_96"
-  },
-  {
-    "title": "Leksand vs Mora",
-    "sport": "SWEDEN. ALLSVENSKAN",
-    "competition": "Sweden. Allsvenskan",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_99"
+    "id": "pina_95"
   },
   {
     "title": "Torpedo NN vs Dynamo Msk",
@@ -672,6 +600,22 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_99"
+  },
+  {
+    "title": "Leksand vs Mora",
+    "sport": "SWEDEN. ALLSVENSKAN",
+    "competition": "Sweden. Allsvenskan",
+    "time": "15:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -832,7 +776,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_83"
+    "id": "pina_84"
   },
   {
     "title": "Mainz 05 vs Bayern Munich",
@@ -1244,7 +1188,39 @@
         "source": "LiveTV"
       }
     ],
+    "id": "pina_96"
+  },
+  {
+    "title": "Preussen Muenster vs Duisburg",
+    "sport": "FUTBOL",
+    "competition": "Germany. 3 Bundesliga",
+    "time": "16:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "ac839cda9709255c21a98af455731f037e77a9e4",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
     "id": "pina_97"
+  },
+  {
+    "title": "Den Bosch vs Jong Utrecht",
+    "sport": "FUTBOL",
+    "competition": "Netherlands. Eerste Divisie",
+    "time": "16:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Dutch Opción 1",
+        "streamId": "79f10c6c6168e42bfc606f3f7b9e5f3ca79dedab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_98"
   },
   {
     "id": "pina_11",
