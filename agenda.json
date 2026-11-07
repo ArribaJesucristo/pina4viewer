@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 22:11",
+    "updatedAt": "07/11/2026 22:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -379,6 +379,22 @@
     "id": "pina_35"
   },
   {
+    "title": "Excelsior vs Go Ahead Eagles",
+    "sport": "FUTBOL",
+    "competition": "Netherlands. Eredivisie",
+    "time": "21:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Dutch Opción 1",
+        "streamId": "79f10c6c6168e42bfc606f3f7b9e5f3ca79dedab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_57"
+  },
+  {
     "title": "Peterborough United vs Reading",
     "sport": "FUTBOL",
     "competition": "England. FA Cup",
@@ -404,23 +420,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_57"
-  },
-  {
-    "title": "Excelsior vs Go Ahead Eagles",
-    "sport": "FUTBOL",
-    "competition": "Netherlands. Eredivisie",
-    "time": "21:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Dutch Opción 1",
-        "streamId": "79f10c6c6168e42bfc606f3f7b9e5f3ca79dedab",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_59"
+    "id": "pina_58"
   },
   {
     "title": "World Wide Technology Championship",
@@ -538,7 +538,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_58"
+    "id": "pina_59"
   },
   {
     "title": "PSG vs Troyes",
