@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 19:02",
+    "updatedAt": "07/11/2026 19:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -170,7 +170,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_43"
+    "id": "pina_44"
   },
   {
     "id": "pina_3",
@@ -333,22 +333,6 @@
     "id": "pina_76"
   },
   {
-    "title": "Gornik Zabrze vs Wieczysta",
-    "sport": "FUTBOL",
-    "competition": "Poland. Ekstraklasa",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish Opción 1",
-        "streamId": "3e87464ed8c42ed14464461ea08860a3040a8944",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_77"
-  },
-  {
     "title": "Vitebsk vs Dinamo Minsk",
     "sport": "FUTBOL",
     "competition": "Belarus. Vysheyshaya Liga",
@@ -364,6 +348,22 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_77"
+  },
+  {
+    "title": "Gornik Zabrze vs Wieczysta",
+    "sport": "FUTBOL",
+    "competition": "Poland. Ekstraklasa",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "3e87464ed8c42ed14464461ea08860a3040a8944",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -390,23 +390,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_44"
-  },
-  {
-    "title": "Brest Bretagne (W) vs Bucharest (W)",
-    "sport": "BALONMANO",
-    "competition": "Women. Champions League",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] French Opción 1",
-        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_71"
+    "id": "pina_45"
   },
   {
     "title": "Parma vs Bologna",
@@ -429,6 +413,22 @@
       }
     ],
     "id": "pina_72"
+  },
+  {
+    "title": "Brest Bretagne (W) vs Bucharest (W)",
+    "sport": "BALONMANO",
+    "competition": "Women. Champions League",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] French Opción 1",
+        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_73"
   },
   {
     "title": "CHKS Chelm vs Norwid Czestochowa",
@@ -832,7 +832,7 @@
         "source": "Comunidad"
       }
     ],
-    "id": "pina_45"
+    "id": "pina_46"
   },
   {
     "title": "AL AHLI vs AL TAAWOUN",
@@ -854,7 +854,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_46"
+    "id": "pina_47"
   },
   {
     "title": "Altrincham vs Notts County",
@@ -870,7 +870,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_73"
+    "id": "pina_71"
   },
   {
     "title": "Altrincham vs Notts County",
@@ -920,7 +920,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_47"
+    "id": "pina_48"
   },
   {
     "title": "Den Haag vs Sparta Rotterdam",
@@ -1076,7 +1076,7 @@
         "source": "RCP"
       }
     ],
-    "id": "pina_48"
+    "id": "pina_49"
   },
   {
     "title": "Auxerre vs Paris",
@@ -1174,7 +1174,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_49"
+    "id": "pina_50"
   },
   {
     "id": "pina_10",
@@ -1414,7 +1414,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_51"
   },
   {
     "title": "BOCA JUNIORS vs DEFENSA Y JUSTICIA",
@@ -1460,7 +1460,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_51"
+    "id": "pina_52"
   },
   {
     "title": "CORTES ACOSTA vs WALKER",
@@ -1482,7 +1482,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_52"
+    "id": "pina_53"
   },
   {
     "id": "pina_14",
@@ -1706,7 +1706,7 @@
         "source": "RCP"
       }
     ],
-    "id": "pina_53"
+    "id": "pina_54"
   },
   {
     "id": "pina_18",
@@ -1814,7 +1814,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_54"
+    "id": "pina_55"
   },
   {
     "title": "CE EUROPA vs ATLETICO MADRILEÑO",
@@ -1848,7 +1848,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_55"
+    "id": "pina_56"
   },
   {
     "id": "pina_20",
@@ -1938,7 +1938,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_56"
+    "id": "pina_57"
   },
   {
     "id": "pina_22",
@@ -2159,12 +2159,37 @@
     ]
   },
   {
-    "title": "FINAL",
+    "id": "pina_27",
+    "title": "Shelton - Alcaraz",
     "sport": "TENIS",
-    "competition": "PARIS MASTERS",
+    "competition": "MASTERS PARÍS",
     "time": "15:00",
     "date": "Mañana",
     "channels": [
+      {
+        "name": "Movistar Plus+ - Opción 1 [New Era]",
+        "streamId": "67121cbb722b88ce4489717e9a87a26f60184ec9",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 2 [RCP]",
+        "streamId": "f559b9fea692a86e1a1de41cd1aa667e3fa02775",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 3 [RCP]",
+        "streamId": "0e18315b703248bb01eab6b9d3f0cb2cd893601f",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 4 [RCP]",
+        "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
       {
         "name": "ArenaVision 5 (AV5)",
         "streamId": "1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41",
@@ -2201,11 +2226,10 @@
         "type": "ACESTREAM",
         "source": "ArenaVision"
       }
-    ],
-    "id": "pina_57"
+    ]
   },
   {
-    "id": "pina_27",
+    "id": "pina_28",
     "title": "Cincinnati Bengals @ Atlanta Falcons",
     "sport": "FUTBOL AMERICANO",
     "competition": "JORNADA 9",
@@ -2233,7 +2257,7 @@
     ]
   },
   {
-    "id": "pina_28",
+    "id": "pina_29",
     "title": "Barcelona - Madrid CFF",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -2307,7 +2331,7 @@
     "id": "pina_58"
   },
   {
-    "id": "pina_29",
+    "id": "pina_30",
     "title": "Real Sociedad - Rayo Vallecano",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -2437,7 +2461,7 @@
     ]
   },
   {
-    "id": "pina_30",
+    "id": "pina_31",
     "title": "Girona FC - UD Almería",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -2465,7 +2489,7 @@
     ]
   },
   {
-    "id": "pina_31",
+    "id": "pina_32",
     "title": "Manchester Utd. - Aston Villa",
     "sport": "FUTBOL",
     "competition": "PREMIER LEAGUE",
@@ -2541,7 +2565,7 @@
     ]
   },
   {
-    "id": "pina_32",
+    "id": "pina_33",
     "title": "Autodromo Jose Carlos Pace",
     "sport": "MOTOR",
     "competition": "G.P. BRASIL",
@@ -2617,7 +2641,7 @@
     ]
   },
   {
-    "id": "pina_33",
+    "id": "pina_34",
     "title": "España - Portugal",
     "sport": "BALONCESTO",
     "competition": "EHF EUROCUP MASCULINA",
@@ -2785,7 +2809,7 @@
     "id": "pina_60"
   },
   {
-    "id": "pina_34",
+    "id": "pina_35",
     "title": "Celta - Levante",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -2861,7 +2885,7 @@
     ]
   },
   {
-    "id": "pina_35",
+    "id": "pina_36",
     "title": "Villarreal - Getafe",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -2925,7 +2949,7 @@
     ]
   },
   {
-    "id": "pina_36",
+    "id": "pina_37",
     "title": "Real Sporting - Real Valladolid CF",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -2953,7 +2977,7 @@
     ]
   },
   {
-    "id": "pina_37",
+    "id": "pina_38",
     "title": "UD Las Palmas - CD Eldense",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -2987,7 +3011,7 @@
     ]
   },
   {
-    "id": "pina_38",
+    "id": "pina_39",
     "title": "Kansas City Chiefs - New York Jets",
     "sport": "FUTBOL AMERICANO",
     "competition": "JORNADA 9",
@@ -3099,7 +3123,7 @@
     "id": "pina_63"
   },
   {
-    "id": "pina_39",
+    "id": "pina_40",
     "title": "Fiorentina - Juventus",
     "sport": "FUTBOL",
     "competition": "SERIE A",
@@ -3163,7 +3187,7 @@
     ]
   },
   {
-    "id": "pina_40",
+    "id": "pina_41",
     "title": "Atlético Madrid - Barcelona",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -3293,7 +3317,7 @@
     ]
   },
   {
-    "id": "pina_41",
+    "id": "pina_42",
     "title": "Stade Rochelais - Aviron Bayonnais",
     "sport": "RUGBY",
     "competition": "TOP 14",
@@ -3351,7 +3375,7 @@
     ]
   },
   {
-    "id": "pina_42",
+    "id": "pina_43",
     "title": "New England Patriots - Green Bay Packers",
     "sport": "FUTBOL AMERICANO",
     "competition": "JORNADA 9",
