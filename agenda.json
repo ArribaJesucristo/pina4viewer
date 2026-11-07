@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 09:01",
+    "updatedAt": "07/11/2026 09:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -57,62 +57,6 @@
     "id": "pina_87"
   },
   {
-    "title": "Brisbane Roar (W) vs Melbourne Victory (W)",
-    "sport": "FUTBOL",
-    "competition": "Australia. Women. A-League",
-    "time": "07:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_88"
-  },
-  {
-    "title": "Cup of China",
-    "sport": "OTROS",
-    "competition": "Figure Skating",
-    "time": "07:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 3",
-        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 4",
-        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 4",
-        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_90"
-  },
-  {
     "title": "New Zealand (W) vs Samoa (W)",
     "sport": "RUGBY",
     "competition": "Women. World Championship",
@@ -132,7 +76,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_89"
+    "id": "pina_88"
   },
   {
     "id": "pina_1",
@@ -176,7 +120,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_91"
+    "id": "pina_89"
   },
   {
     "title": "Taifun vs JHC Dynamo Msk",
@@ -198,7 +142,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_92"
+    "id": "pina_90"
   },
   {
     "title": "Taifun vs JHC Dynamo Msk",
@@ -232,6 +176,62 @@
       {
         "name": "[LiveTV] English Opción 1",
         "streamId": "6d95e4b0893e155cc674b84e0763150c445d3ddd",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_91"
+  },
+  {
+    "title": "Cup of China",
+    "sport": "FIGURE SKATING",
+    "competition": "Figure Skating",
+    "time": "09:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 3",
+        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 4",
+        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_92"
+  },
+  {
+    "title": "New Zealand vs Tonga",
+    "sport": "WORLD CUP",
+    "competition": "World Cup",
+    "time": "10:05",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "e61b6538df35e5016635dfa2b3073f5b82ee4c2b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
