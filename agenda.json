@@ -1,28 +1,16 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 09:31",
+    "updatedAt": "07/11/2026 09:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
-    "title": "World Championships",
-    "sport": "OTROS",
-    "competition": "Trampolining",
+    "title": "International Championship, China",
+    "sport": "SNOOKER",
+    "competition": "Snooker",
     "time": "07:00",
     "date": "Hoy",
     "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
       {
         "name": "[LiveTV] English 8000kbps",
         "streamId": "5f966c123759de46dff29c379266b7a403452033",
@@ -48,35 +36,19 @@
         "source": "LiveTV"
       },
       {
-        "name": "World Championships - Opción Directa 1 [Comunidad]",
-        "streamId": "3230cdca852a10325222e3c546e499e31d547a90",
-        "type": "ACESTREAM",
-        "source": "Comunidad"
-      }
-    ],
-    "id": "pina_87"
-  },
-  {
-    "title": "New Zealand (W) vs Samoa (W)",
-    "sport": "RUGBY",
-    "competition": "Women. World Championship",
-    "time": "07:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "e61b6538df35e5016635dfa2b3073f5b82ee4c2b",
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_88"
+    "id": "pina_87"
   },
   {
     "id": "pina_1",
@@ -120,7 +92,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_89"
+    "id": "pina_88"
   },
   {
     "title": "Taifun vs JHC Dynamo Msk",
@@ -142,7 +114,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_90"
+    "id": "pina_89"
   },
   {
     "title": "Taifun vs JHC Dynamo Msk",
@@ -180,7 +152,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_91"
+    "id": "pina_90"
   },
   {
     "title": "Cup of China",
@@ -210,6 +182,28 @@
       {
         "name": "[LiveTV] Polish Opción 4",
         "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_91"
+  },
+  {
+    "title": "Melbourne City vs Western Sydney",
+    "sport": "FUTBOL",
+    "competition": "Australia. A-League",
+    "time": "09:40",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 2",
+        "streamId": "5e94200ae8b1d95cb559fb150e5993d92e15d4e7",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
