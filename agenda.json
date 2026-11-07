@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 11:41",
+    "updatedAt": "07/11/2026 11:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -19,44 +19,6 @@
       }
     ],
     "id": "pina_86"
-  },
-  {
-    "title": "Melbourne City vs Western Sydney",
-    "sport": "FUTBOL",
-    "competition": "Australia. A-League",
-    "time": "09:40",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 2",
-        "streamId": "5e94200ae8b1d95cb559fb150e5993d92e15d4e7",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_87"
-  },
-  {
-    "title": "Lokomotiv M (W) vs Spartak M (W)",
-    "sport": "FUTBOL",
-    "competition": "Russia. Women. Premier League",
-    "time": "09:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b7c5f21b435d79c823e47572655a9c157a3ba12",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_88"
   },
   {
     "title": "New Zealand vs Tonga",
@@ -78,7 +40,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_90"
+    "id": "pina_89"
   },
   {
     "title": "New Zealand vs Tonga",
@@ -140,7 +102,7 @@
         "source": "New Era"
       }
     ],
-    "id": "pina_89"
+    "id": "pina_88"
   },
   {
     "id": "pina_1",
@@ -190,7 +152,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_91"
+    "id": "pina_90"
   },
   {
     "title": "Cup of China",
@@ -220,6 +182,28 @@
       {
         "name": "[LiveTV] Polish Opción 4",
         "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_91"
+  },
+  {
+    "title": "Perth Glory vs Newcastle Jets",
+    "sport": "FUTBOL",
+    "competition": "Australia. A-League",
+    "time": "11:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 2",
+        "streamId": "5e94200ae8b1d95cb559fb150e5993d92e15d4e7",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -373,6 +357,22 @@
       }
     ],
     "id": "pina_54"
+  },
+  {
+    "title": "Fakel vs Dynamo M",
+    "sport": "FUTBOL",
+    "competition": "Russia. Premier League",
+    "time": "12:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "4b7c5f21b435d79c823e47572655a9c157a3ba12",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_87"
   },
   {
     "title": "Avangard vs Sibir",
