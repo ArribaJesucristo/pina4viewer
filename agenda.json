@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "07/11/2026 12:21",
+    "updatedAt": "07/11/2026 12:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -416,7 +416,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_97"
+    "id": "pina_98"
   },
   {
     "title": "Korona Kielce vs Radomiak",
@@ -448,7 +448,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_96"
+    "id": "pina_97"
   },
   {
     "title": "International Championship, China",
@@ -482,7 +482,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_98"
+    "id": "pina_96"
   },
   {
     "id": "pina_4",
@@ -589,6 +589,24 @@
         "streamId": "49545d05f95846e93fd8f08da320be866995c550",
         "type": "ACESTREAM",
         "source": "ArenaVision"
+      },
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Portuguese 8000kbps",
+        "streamId": "36cad67fed5a739757a9db844a551aa845a8d51b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "42fe2ce3ef6b92653a74d85b6e98c2ba0abee707",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
