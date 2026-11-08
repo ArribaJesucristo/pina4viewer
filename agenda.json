@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "08/11/2026 19:21",
+    "updatedAt": "08/11/2026 19:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -139,28 +139,6 @@
     ]
   },
   {
-    "title": "Freiburg vs Union Berlin",
-    "sport": "FUTBOL",
-    "competition": "Germany. Bundesliga",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "458a0ddd7d193f6d2750cd14d03a47f47a808e09",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 2",
-        "streamId": "12ea555d431dbe51fc8e4ca745aec09fe22a4865",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_27"
-  },
-  {
     "title": "Legia Warsaw vs Rakow",
     "sport": "FUTBOL",
     "competition": "Poland. Ekstraklasa",
@@ -174,7 +152,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_32"
+    "id": "pina_31"
   },
   {
     "id": "pina_3",
@@ -372,7 +350,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_29"
+    "id": "pina_28"
   },
   {
     "title": "Viktoria Plzen vs Sparta Prague",
@@ -394,7 +372,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_33"
+    "id": "pina_32"
   },
   {
     "title": "Slepsk Suwalki vs Trefl Gdansk",
@@ -410,7 +388,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_34"
+    "id": "pina_33"
   },
   {
     "title": "CULTURAL LEONESA vs PONFERRADINA",
@@ -466,7 +444,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_28"
+    "id": "pina_27"
   },
   {
     "title": "Oldham Athletic vs Sheffield Wednesday",
@@ -488,7 +466,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_39"
+    "id": "pina_38"
   },
   {
     "id": "pina_5",
@@ -730,7 +708,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_35"
+    "id": "pina_34"
   },
   {
     "title": "Baltika vs Dynamo Makhachkala",
@@ -746,7 +724,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_36"
+    "id": "pina_35"
   },
   {
     "id": "pina_8",
@@ -858,7 +836,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_30"
+    "id": "pina_29"
   },
   {
     "title": "Miami Dolphins vs Detroit Lions",
@@ -880,7 +858,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_37"
+    "id": "pina_36"
   },
   {
     "title": "Romania vs Poland",
@@ -896,7 +874,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_38"
+    "id": "pina_37"
   },
   {
     "title": "Romania vs Poland",
@@ -934,7 +912,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_31"
+    "id": "pina_30"
   },
   {
     "title": "Utrecht vs NEC",
@@ -950,7 +928,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_40"
+    "id": "pina_39"
   },
   {
     "title": "REAL MURCIA vs ALGECIRAS",
@@ -985,6 +963,22 @@
       }
     ],
     "id": "pina_21"
+  },
+  {
+    "title": "Barkom-Kazhany vs Projekt Warszawa",
+    "sport": "POLAND. PLUSLIGA",
+    "competition": "Poland. PlusLiga",
+    "time": "20:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_40"
   },
   {
     "id": "pina_9",
