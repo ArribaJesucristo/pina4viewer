@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "08/11/2026 09:51",
+    "updatedAt": "08/11/2026 10:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -62,6 +62,22 @@
         "source": "LiveTV"
       }
     ],
+    "id": "pina_48"
+  },
+  {
+    "title": "Strongest Cup",
+    "sport": "OTROS",
+    "competition": "Rhythmic Gymnastics",
+    "time": "08:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
     "id": "pina_47"
   },
   {
@@ -78,7 +94,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_48"
+    "id": "pina_49"
   },
   {
     "title": "Taifun vs JHC Dynamo Msk",
@@ -90,22 +106,6 @@
       {
         "name": "[LiveTV] Russian Opción 1",
         "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_49"
-  },
-  {
-    "title": "Strongest Cup",
-    "sport": "OTROS",
-    "competition": "Rhythmic Gymnastics",
-    "time": "08:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
