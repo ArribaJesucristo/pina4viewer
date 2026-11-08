@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "08/11/2026 00:51",
+    "updatedAt": "08/11/2026 01:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -48,6 +48,18 @@
       {
         "name": "[LiveTV] Russian Opción 3",
         "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
