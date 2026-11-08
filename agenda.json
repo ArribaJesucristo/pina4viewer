@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "08/11/2026 09:00",
+    "updatedAt": "08/11/2026 09:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -103,22 +103,6 @@
     "id": "pina_49"
   },
   {
-    "title": "Taifun vs JHC Dynamo Msk",
-    "sport": "HOCKEY",
-    "competition": "Russia. MHL",
-    "time": "08:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_50"
-  },
-  {
     "title": "Strongest Cup",
     "sport": "OTROS",
     "competition": "Rhythmic Gymnastics",
@@ -132,7 +116,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_51"
+    "id": "pina_50"
   },
   {
     "title": "Amur vs Barys",
@@ -144,6 +128,22 @@
       {
         "name": "[LiveTV] Russian Opción 1",
         "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_51"
+  },
+  {
+    "title": "Taifun vs JHC Dynamo Msk",
+    "sport": "HOCKEY",
+    "competition": "Russia. MHL",
+    "time": "08:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -164,7 +164,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_54"
+    "id": "pina_55"
   },
   {
     "id": "pina_2",
@@ -218,7 +218,7 @@
   },
   {
     "title": "World Championships",
-    "sport": "TRAMPOLINING",
+    "sport": "OTROS",
     "competition": "Trampolining",
     "time": "09:00",
     "date": "Hoy",
@@ -236,7 +236,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_55"
+    "id": "pina_54"
   },
   {
     "id": "pina_3",
