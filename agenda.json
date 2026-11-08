@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "08/11/2026 12:11",
+    "updatedAt": "08/11/2026 12:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -57,22 +57,6 @@
     ]
   },
   {
-    "title": "Australia vs Samoa",
-    "sport": "RUGBY",
-    "competition": "World Cup",
-    "time": "10:05",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "e61b6538df35e5016635dfa2b3073f5b82ee4c2b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_47"
-  },
-  {
     "title": "6 Hours of Monza",
     "sport": "RACING. WEC",
     "competition": "WEC",
@@ -104,7 +88,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_46"
+    "id": "pina_47"
   },
   {
     "title": "6 HOURS OF MONZA-RACE",
@@ -500,7 +484,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_45"
+    "id": "pina_46"
   },
   {
     "title": "Vitesse vs De Graafschap",
@@ -516,7 +500,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_54"
+    "id": "pina_52"
+  },
+  {
+    "title": "Polonia Bytom vs Lechia Gdansk",
+    "sport": "FUTBOL",
+    "competition": "Poland. I Liga",
+    "time": "12:15",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_53"
   },
   {
     "id": "pina_4",
@@ -596,7 +596,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_52"
+    "id": "pina_45"
   },
   {
     "id": "pina_5",
@@ -650,7 +650,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_53"
+    "id": "pina_54"
   },
   {
     "id": "pina_6",
