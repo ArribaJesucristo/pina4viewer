@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "08/11/2026 21:41",
+    "updatedAt": "08/11/2026 21:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -80,7 +80,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_16"
+    "id": "pina_17"
   },
   {
     "title": "Utrecht vs NEC",
@@ -96,23 +96,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_17"
-  },
-  {
-    "title": "Stal Mielec vs Ruch Chorzow",
-    "sport": "FUTBOL",
-    "competition": "Poland. I Liga",
-    "time": "20:15",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_22"
+    "id": "pina_16"
   },
   {
     "title": "Lech Poznan vs Zaglebie Lubin",
@@ -124,6 +108,22 @@
       {
         "name": "[LiveTV] Polish Opción 1",
         "streamId": "3e87464ed8c42ed14464461ea08860a3040a8944",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_21"
+  },
+  {
+    "title": "Stal Mielec vs Ruch Chorzow",
+    "sport": "FUTBOL",
+    "competition": "Poland. I Liga",
+    "time": "20:15",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -420,7 +420,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_21"
+    "id": "pina_22"
   },
   {
     "title": "Washington Spirit (W) vs Portland Thorns (W)",
@@ -495,28 +495,6 @@
     "id": "pina_10"
   },
   {
-    "title": "Chicago vs Philadelphia",
-    "sport": "BALONCESTO",
-    "competition": "NBA",
-    "time": "21:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_19"
-  },
-  {
     "title": "Estrela vs Benfica",
     "sport": "FUTBOL",
     "competition": "Portugal. Primeira Liga",
@@ -544,6 +522,28 @@
       {
         "name": "[LiveTV] German Opción 4",
         "streamId": "5e94200ae8b1d95cb559fb150e5993d92e15d4e7",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_19"
+  },
+  {
+    "title": "Chicago vs Philadelphia",
+    "sport": "BALONCESTO",
+    "competition": "NBA",
+    "time": "21:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
