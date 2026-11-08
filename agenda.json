@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "08/11/2026 13:41",
+    "updatedAt": "08/11/2026 13:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -298,7 +298,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_54"
+    "id": "pina_55"
   },
   {
     "title": "Heerenveen vs Feyenoord",
@@ -813,22 +813,6 @@
     ]
   },
   {
-    "title": "German Championship",
-    "sport": "FUTBOL",
-    "competition": "Germany. Bundesliga",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_55"
-  },
-  {
     "title": "World Championships",
     "sport": "SAMBO",
     "competition": "Sambo",
@@ -838,6 +822,22 @@
       {
         "name": "[LiveTV] Russian Opción 1",
         "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_54"
+  },
+  {
+    "title": "German Championship",
+    "sport": "FUTBOL",
+    "competition": "Germany. Bundesliga",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
