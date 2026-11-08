@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "08/11/2026 13:21",
+    "updatedAt": "08/11/2026 13:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -125,22 +125,6 @@
       }
     ],
     "id": "pina_26"
-  },
-  {
-    "title": "Latvia vs Austria",
-    "sport": "HOCKEY",
-    "competition": "Deutschland Cup",
-    "time": "11:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "0dfa37340ca0300a41f7a78bd3a0f024c3296974",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_48"
   },
   {
     "id": "pina_1",
@@ -304,7 +288,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_46"
+    "id": "pina_45"
   },
   {
     "title": "Traktor vs Avtomobilist",
@@ -326,7 +310,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_49"
+    "id": "pina_48"
   },
   {
     "title": "Traktor vs Avtomobilist",
@@ -348,7 +332,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_54"
+    "id": "pina_55"
   },
   {
     "title": "Heerenveen vs Feyenoord",
@@ -394,7 +378,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_45"
+    "id": "pina_44"
   },
   {
     "title": "Polonia Bytom vs Lechia Gdansk",
@@ -410,7 +394,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_51"
+    "id": "pina_49"
   },
   {
     "id": "pina_3",
@@ -490,7 +474,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_43"
+    "id": "pina_46"
   },
   {
     "title": "Arka Gdynia vs Legia",
@@ -560,7 +544,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_44"
+    "id": "pina_43"
   },
   {
     "title": "Liverpool (W) vs Arsenal (W)",
@@ -582,7 +566,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_52"
+    "id": "pina_51"
   },
   {
     "title": "Magdeburg vs St Pauli",
@@ -598,11 +582,11 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_53"
+    "id": "pina_52"
   },
   {
     "title": "Strongest Cup",
-    "sport": "RHYTHMIC GYMNASTICS",
+    "sport": "OTROS",
     "competition": "Rhythmic Gymnastics",
     "time": "13:30",
     "date": "Hoy",
@@ -614,7 +598,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_57"
+    "id": "pina_53"
+  },
+  {
+    "title": "CSKA Moscow vs Zenit",
+    "sport": "BALONCESTO",
+    "competition": "VTB United League",
+    "time": "13:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_54"
   },
   {
     "id": "pina_5",
@@ -860,7 +860,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_55"
+    "id": "pina_56"
   },
   {
     "title": "World Championships",
@@ -876,7 +876,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_56"
+    "id": "pina_57"
   },
   {
     "id": "pina_7",
