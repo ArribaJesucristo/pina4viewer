@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "08/11/2026 02:01",
+    "updatedAt": "08/11/2026 02:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -27,10 +27,26 @@
     "id": "pina_30"
   },
   {
-    "title": "UFC Fight Night",
+    "title": "Volei Bauru (W) vs Pinheiros (W)",
+    "sport": "OTROS",
+    "competition": "Brazil. Women. Superliga",
+    "time": "01:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_48"
+  },
+  {
+    "title": "Gabriel Bonfim vs Sean Brady",
     "sport": "BOXEO",
     "competition": "UFC",
-    "time": "00:00",
+    "time": "02:00",
     "date": "Hoy",
     "channels": [
       {
@@ -46,12 +62,6 @@
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Russian Opción 3",
-        "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
         "name": "[LiveTV] Russian 8000kbps",
         "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
         "type": "ACESTREAM",
@@ -62,20 +72,10 @@
         "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
         "type": "ACESTREAM",
         "source": "LiveTV"
-      }
-    ],
-    "id": "pina_48"
-  },
-  {
-    "title": "Volei Bauru (W) vs Pinheiros (W)",
-    "sport": "OTROS",
-    "competition": "Brazil. Women. Superliga",
-    "time": "01:00",
-    "date": "Hoy",
-    "channels": [
+      },
       {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "name": "[LiveTV] Russian Opción 5",
+        "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -96,7 +96,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_51"
   },
   {
     "title": "Toto Japan Classic",
@@ -112,7 +112,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_51"
+    "id": "pina_50"
   },
   {
     "id": "pina_1",
