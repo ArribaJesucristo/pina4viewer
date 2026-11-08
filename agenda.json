@@ -1,48 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "08/11/2026 04:51",
+    "updatedAt": "08/11/2026 05:01",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Gabriel Bonfim vs Sean Brady",
-    "sport": "BOXEO",
-    "competition": "UFC",
-    "time": "02:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 5",
-        "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_49"
   },
   {
     "title": "Golden State vs Orlando",
@@ -90,7 +50,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_49"
   },
   {
     "id": "pina_1",
@@ -134,6 +94,22 @@
   },
   {
     "title": "Macarthur vs Brisbane Roar",
+    "sport": "FUTBOL",
+    "competition": "Australia. A-League",
+    "time": "05:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_50"
+  },
+  {
+    "title": "Macarthur vs Brisbane Roar",
     "sport": "AUSTRALIA. A-LEAGUE",
     "competition": "Australia. A-League",
     "time": "05:00",
@@ -147,28 +123,6 @@
       }
     ],
     "id": "pina_51"
-  },
-  {
-    "title": "World Championships",
-    "sport": "TRAMPOLINING",
-    "competition": "Trampolining",
-    "time": "05:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_53"
   },
   {
     "title": "V8 Supercars Championship",
@@ -185,6 +139,40 @@
       }
     ],
     "id": "pina_52"
+  },
+  {
+    "title": "Cup of China",
+    "sport": "FIGURE SKATING",
+    "competition": "Figure Skating",
+    "time": "06:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 3",
+        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 4",
+        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_53"
   },
   {
     "id": "pina_2",
