@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "09/11/2026 22:50",
+    "updatedAt": "09/11/2026 23:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -73,22 +73,6 @@
     ]
   },
   {
-    "title": "UNI Opole (W) vs Sokol Mogilno (W)",
-    "sport": "OTROS",
-    "competition": "Poland. Women. MP",
-    "time": "20:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_46"
-  },
-  {
     "title": "Plymouth Parkway vs Berkhamsted",
     "sport": "FUTBOL",
     "competition": "England. FA Cup",
@@ -98,6 +82,22 @@
       {
         "name": "[LiveTV] English Opción 1",
         "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_47"
+  },
+  {
+    "title": "UNI Opole (W) vs Sokol Mogilno (W)",
+    "sport": "OTROS",
+    "competition": "Poland. Women. MP",
+    "time": "20:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -196,7 +196,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_47"
+    "id": "pina_46"
   },
   {
     "id": "pina_3",
