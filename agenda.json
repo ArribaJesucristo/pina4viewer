@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "09/11/2026 20:31",
+    "updatedAt": "09/11/2026 20:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -78,7 +78,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_51"
   },
   {
     "title": "Champion of Champions",
@@ -100,7 +100,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_51"
+    "id": "pina_50"
   },
   {
     "id": "pina_1",
@@ -137,6 +137,12 @@
       {
         "name": "[LiveTV] Russian 8000kbps",
         "streamId": "ffbf8c687c788d9a1a7c651e24802ee773ff3f04",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "016d48fb89bb9505ab3f883db1bfb3a7c0a3eccc",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
