@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "09/11/2026 17:11",
+    "updatedAt": "09/11/2026 17:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -40,7 +40,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_48"
+    "id": "pina_49"
   },
   {
     "title": "Lokomotiv Orsha vs Mogilev",
@@ -62,7 +62,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_51"
+    "id": "pina_52"
   },
   {
     "title": "Bangla Tigers vs Royal Champs",
@@ -78,7 +78,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_49"
+    "id": "pina_50"
+  },
+  {
+    "title": "Olsztyn vs LKPS Lublin",
+    "sport": "OTROS",
+    "competition": "Poland. PlusLiga",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_48"
   },
   {
     "title": "Veles vs KamAZ",
@@ -94,7 +110,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_51"
   },
   {
     "title": "SKA vs Spartak M",
@@ -112,22 +128,6 @@
       {
         "name": "[LiveTV] Russian Opción 1",
         "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_52"
-  },
-  {
-    "title": "Olsztyn vs LKPS Lublin",
-    "sport": "POLAND. PLUSLIGA",
-    "competition": "Poland. PlusLiga",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
