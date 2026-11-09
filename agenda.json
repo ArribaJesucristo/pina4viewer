@@ -1,42 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "10/11/2026 00:10",
+    "updatedAt": "10/11/2026 00:20",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Stefani (W) / Dabrowski (W) vs Mertens (W) / Zhang (W)",
-    "sport": "TENIS",
-    "competition": "WTA Finals. Doubles",
-    "time": "00:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "42fe2ce3ef6b92653a74d85b6e98c2ba0abee707",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 3",
-        "streamId": "6390b1ab967a25777ea2dde1d41b7400cc0601d3",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] French Opción 4",
-        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_45"
   },
   {
     "title": "Detroit vs Washington",
@@ -64,7 +30,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_46"
+    "id": "pina_45"
   },
   {
     "title": "Renata vs SESI Bauru",
@@ -76,6 +42,40 @@
       {
         "name": "[LiveTV] Russian Opción 1",
         "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_46"
+  },
+  {
+    "title": "Stefani (W) / Dabrowski (W) vs Mertens (W) / Zhang (W)",
+    "sport": "TENIS",
+    "competition": "WTA Finals. Doubles",
+    "time": "01:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "42fe2ce3ef6b92653a74d85b6e98c2ba0abee707",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 3",
+        "streamId": "6390b1ab967a25777ea2dde1d41b7400cc0601d3",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] French Opción 4",
+        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
