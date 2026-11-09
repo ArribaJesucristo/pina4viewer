@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "09/11/2026 19:21",
+    "updatedAt": "09/11/2026 19:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -18,39 +18,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_48"
-  },
-  {
-    "title": "Olsztyn vs LKPS Lublin",
-    "sport": "OTROS",
-    "competition": "Poland. PlusLiga",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
     "id": "pina_47"
-  },
-  {
-    "title": "Veles vs KamAZ",
-    "sport": "FUTBOL",
-    "competition": "Russia. First League",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b7c5f21b435d79c823e47572655a9c157a3ba12",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_49"
   },
   {
     "title": "SKA vs Spartak M",
@@ -72,23 +40,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_48"
   },
   {
-    "title": "Veles vs KamAZ",
-    "sport": "RUSSIA. FIRST LEAGUE",
-    "competition": "Russia. First League",
+    "title": "Olsztyn vs LKPS Lublin",
+    "sport": "OTROS",
+    "competition": "Poland. PlusLiga",
     "time": "17:30",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b7c5f21b435d79c823e47572655a9c157a3ba12",
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_55"
+    "id": "pina_49"
   },
   {
     "title": "SKA vs Spartak M",
@@ -110,7 +78,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_56"
+    "id": "pina_55"
   },
   {
     "title": "Cologne (W) vs RB Leipzig (W)",
@@ -132,7 +100,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_51"
+    "id": "pina_50"
   },
   {
     "title": "ATLETICO DE MADRID vs BADALONA",
@@ -176,7 +144,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_52"
+    "id": "pina_51"
   },
   {
     "title": "German Championship",
@@ -192,7 +160,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_53"
+    "id": "pina_52"
   },
   {
     "title": "Austria (W) vs USA (W)",
@@ -208,7 +176,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_54"
+    "id": "pina_53"
   },
   {
     "title": "Champion of Champions",
@@ -230,7 +198,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_57"
+    "id": "pina_56"
   },
   {
     "id": "pina_1",
@@ -257,6 +225,18 @@
         "streamId": "a19cada553b895e719796741d9d86785c986fce0",
         "type": "ACESTREAM",
         "source": "ArenaVision"
+      },
+      {
+        "name": "[LiveTV] Portuguese 8000kbps",
+        "streamId": "36cad67fed5a739757a9db844a551aa845a8d51b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "ffbf8c687c788d9a1a7c651e24802ee773ff3f04",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
@@ -281,6 +261,38 @@
         "source": "Elcano"
       }
     ]
+  },
+  {
+    "title": "Plymouth Parkway vs Berkhamsted",
+    "sport": "ENGLAND. FA CUP",
+    "competition": "England. FA Cup",
+    "time": "20:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_54"
+  },
+  {
+    "title": "UNI Opole (W) vs Sokol Mogilno (W)",
+    "sport": "POLAND. WOMEN. MP",
+    "competition": "Poland. Women. MP",
+    "time": "20:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_57"
   },
   {
     "title": "DEPORTIVO ABANCA vs VALENCIA",
