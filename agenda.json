@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "09/11/2026 18:21",
+    "updatedAt": "09/11/2026 18:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -201,22 +201,6 @@
     "id": "pina_45"
   },
   {
-    "title": "German Championship",
-    "sport": "FUTBOL",
-    "competition": "Germany. Bundesliga",
-    "time": "19:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_54"
-  },
-  {
     "title": "Ultimate Pool",
     "sport": "SNOOKER",
     "competition": "Pool",
@@ -226,6 +210,22 @@
       {
         "name": "[LiveTV] English 8000kbps",
         "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_54"
+  },
+  {
+    "title": "German Championship",
+    "sport": "FUTBOL",
+    "competition": "Germany. Bundesliga",
+    "time": "19:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
