@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "10/11/2026 19:11",
+    "updatedAt": "10/11/2026 19:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -94,23 +94,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
-  },
-  {
-    "title": "KooKoo vs Eisbaeren Berlin",
-    "sport": "HOCKEY",
-    "competition": "Champions League",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_72"
+    "id": "pina_67"
   },
   {
     "title": "Neftekhimik vs Salavat Yulaev",
@@ -134,6 +118,22 @@
       {
         "name": "[LiveTV] Russian Opción 3",
         "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_72"
+  },
+  {
+    "title": "KooKoo vs Eisbaeren Berlin",
+    "sport": "HOCKEY",
+    "competition": "Champions League",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -198,7 +198,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_67"
+    "id": "pina_68"
   },
   {
     "title": "Hapoel Holon vs Rasta Vechta",
@@ -214,7 +214,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_83"
+    "id": "pina_81"
   },
   {
     "title": "Real Madrid (W) vs Paris (W)",
@@ -230,7 +230,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_68"
+    "id": "pina_66"
   },
   {
     "id": "pina_1",
@@ -530,7 +530,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_82"
+    "id": "pina_85"
   },
   {
     "id": "pina_3",
@@ -583,6 +583,38 @@
     "id": "pina_77"
   },
   {
+    "title": "Rostock vs Cedevita Olimpija",
+    "sport": "BALONCESTO",
+    "competition": "Eurocup",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_82"
+  },
+  {
+    "title": "Bilbao vs Alba Berlin",
+    "sport": "FUTBOL",
+    "competition": "Champions League",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_83"
+  },
+  {
     "title": "Belarus vs Kazakhstan",
     "sport": "OTROS",
     "competition": "World Cup. Qualification",
@@ -602,39 +634,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_81"
-  },
-  {
-    "title": "Rostock vs Cedevita Olimpija",
-    "sport": "BALONCESTO",
-    "competition": "Eurocup",
-    "time": "20:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
     "id": "pina_84"
-  },
-  {
-    "title": "Bilbao vs Alba Berlin",
-    "sport": "FUTBOL",
-    "competition": "Champions League",
-    "time": "20:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_85"
   },
   {
     "id": "pina_4",
