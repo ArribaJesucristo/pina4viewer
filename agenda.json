@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "10/11/2026 17:31",
+    "updatedAt": "10/11/2026 17:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -245,22 +245,6 @@
     "id": "pina_75"
   },
   {
-    "title": "KooKoo vs Eisbaeren Berlin",
-    "sport": "FUTBOL",
-    "competition": "Champions League",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_77"
-  },
-  {
     "title": "Neftekhimik vs Salavat Yulaev",
     "sport": "KHL",
     "competition": "KHL",
@@ -282,6 +266,22 @@
       {
         "name": "[LiveTV] Russian Opción 3",
         "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_77"
+  },
+  {
+    "title": "KooKoo vs Eisbaeren Berlin",
+    "sport": "FUTBOL",
+    "competition": "Champions League",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
