@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "10/11/2026 21:31",
+    "updatedAt": "10/11/2026 21:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -107,22 +107,6 @@
     "id": "pina_66"
   },
   {
-    "title": "Rostock vs Cedevita Olimpija",
-    "sport": "BALONCESTO",
-    "competition": "Eurocup",
-    "time": "20:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_64"
-  },
-  {
     "title": "Bilbao vs Alba Berlin",
     "sport": "BALONCESTO",
     "competition": "Champions League",
@@ -132,6 +116,22 @@
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_64"
+  },
+  {
+    "title": "Rostock vs Cedevita Olimpija",
+    "sport": "BALONCESTO",
+    "competition": "Eurocup",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
