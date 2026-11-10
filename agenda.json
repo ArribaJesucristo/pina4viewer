@@ -1,24 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "10/11/2026 17:41",
+    "updatedAt": "10/11/2026 17:51",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Yas Lions vs Bangla Tigers",
-    "sport": "OTROS",
-    "competition": "UAE. T10 League",
-    "time": "14:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_67"
   },
   {
     "id": "pina_1",
@@ -55,6 +39,28 @@
     ]
   },
   {
+    "title": "Russia vs Vietnam",
+    "sport": "FUTBOL",
+    "competition": "Friendly Match",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "762e1d11f7d07029f316c6f61b8ef73289c6673c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_68"
+  },
+  {
     "title": "MBA vs Avtodor",
     "sport": "BALONCESTO",
     "competition": "VTB United League",
@@ -71,21 +77,15 @@
     "id": "pina_69"
   },
   {
-    "title": "Russia vs Vietnam",
-    "sport": "FUTBOL",
-    "competition": "Friendly Match",
+    "title": "Delhi Bulls vs Emirates Eagles",
+    "sport": "OTROS",
+    "competition": "UAE. T10 League",
     "time": "17:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "762e1d11f7d07029f316c6f61b8ef73289c6673c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -107,22 +107,6 @@
       }
     ],
     "id": "pina_71"
-  },
-  {
-    "title": "Delhi Bulls vs Emirates Eagles",
-    "sport": "OTROS",
-    "competition": "UAE. T10 League",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_72"
   },
   {
     "title": "MBA vs Avtodor",
@@ -198,7 +182,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_68"
+    "id": "pina_67"
   },
   {
     "title": "Neftekhimik vs Salavat Yulaev",
@@ -226,7 +210,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_74"
+    "id": "pina_72"
   },
   {
     "title": "KooKoo vs Eisbaeren Berlin",
@@ -242,7 +226,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_75"
+    "id": "pina_74"
+  },
+  {
+    "title": "KooKoo vs Eisbaeren Berlin",
+    "sport": "FUTBOL",
+    "competition": "Champions League",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_77"
   },
   {
     "title": "Neftekhimik vs Salavat Yulaev",
@@ -270,22 +270,6 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_77"
-  },
-  {
-    "title": "KooKoo vs Eisbaeren Berlin",
-    "sport": "FUTBOL",
-    "competition": "Champions League",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
     "id": "pina_78"
   },
   {
@@ -303,6 +287,22 @@
       }
     ],
     "id": "pina_80"
+  },
+  {
+    "title": "Real Madrid (W) vs Paris (W)",
+    "sport": "FUTBOL",
+    "competition": "Women. Champions League",
+    "time": "18:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_75"
   },
   {
     "id": "pina_2",
