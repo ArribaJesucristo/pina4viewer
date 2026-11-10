@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "10/11/2026 18:01",
+    "updatedAt": "10/11/2026 18:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -39,22 +39,6 @@
     ]
   },
   {
-    "title": "MBA vs Avtodor",
-    "sport": "BALONCESTO",
-    "competition": "VTB United League",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b129146077c1e357e4ab341448b9fb629f939dc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_68"
-  },
-  {
     "title": "Russia vs Vietnam",
     "sport": "FUTBOL",
     "competition": "Friendly Match",
@@ -70,6 +54,22 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_68"
+  },
+  {
+    "title": "MBA vs Avtodor",
+    "sport": "BALONCESTO",
+    "competition": "VTB United League",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "4b129146077c1e357e4ab341448b9fb629f939dc",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -144,7 +144,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_72"
+    "id": "pina_74"
   },
   {
     "title": "Dinamo Mn vs Avangard",
@@ -185,6 +185,22 @@
     "id": "pina_67"
   },
   {
+    "title": "KooKoo vs Eisbaeren Berlin",
+    "sport": "HOCKEY",
+    "competition": "Champions League",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_72"
+  },
+  {
     "title": "Neftekhimik vs Salavat Yulaev",
     "sport": "HOCKEY",
     "competition": "KHL",
@@ -211,22 +227,6 @@
       }
     ],
     "id": "pina_73"
-  },
-  {
-    "title": "KooKoo vs Eisbaeren Berlin",
-    "sport": "HOCKEY",
-    "competition": "Champions League",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_74"
   },
   {
     "title": "KooKoo vs Eisbaeren Berlin",
