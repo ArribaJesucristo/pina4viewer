@@ -1,8 +1,24 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "10/11/2026 02:20",
+    "updatedAt": "10/11/2026 02:31",
     "timezone": "Madrid,Paris,Bruselas"
+  },
+  {
+    "title": "Renata vs SESI Bauru",
+    "sport": "OTROS",
+    "competition": "Brazil. Superliga",
+    "time": "01:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_43"
   },
   {
     "title": "Detroit vs Washington",
@@ -26,22 +42,6 @@
       {
         "name": "[LiveTV] Russian 8000kbps",
         "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_43"
-  },
-  {
-    "title": "Renata vs SESI Bauru",
-    "sport": "OTROS",
-    "competition": "Brazil. Superliga",
-    "time": "01:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
