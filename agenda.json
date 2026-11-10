@@ -1,40 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "10/11/2026 19:51",
+    "updatedAt": "10/11/2026 20:01",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Delhi Bulls vs Emirates Eagles",
-    "sport": "OTROS",
-    "competition": "UAE. T10 League",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_69"
-  },
-  {
-    "title": "Super League",
-    "sport": "DARTS. PDC",
-    "competition": "PDC",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "1950633a3723cb52b17c764125decc04445bd5ff",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_70"
   },
   {
     "title": "Neftekhimik vs Salavat Yulaev",
@@ -62,7 +30,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_71"
+    "id": "pina_69"
   },
   {
     "title": "Katowice vs CHKS Chelm",
@@ -78,7 +46,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_72"
+    "id": "pina_70"
   },
   {
     "title": "Neftekhimik vs Salavat Yulaev",
@@ -106,7 +74,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_78"
+    "id": "pina_77"
   },
   {
     "title": "Hapoel Holon vs Rasta Vechta",
@@ -138,7 +106,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_79"
+    "id": "pina_78"
   },
   {
     "title": "Real Madrid (W) vs Paris (W)",
@@ -154,7 +122,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_67"
+    "id": "pina_68"
   },
   {
     "id": "pina_1",
@@ -400,7 +368,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_73"
+    "id": "pina_71"
   },
   {
     "title": "Hartberg vs Kaposvar",
@@ -416,7 +384,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_74"
+    "id": "pina_72"
   },
   {
     "title": "Champion of Champions",
@@ -438,7 +406,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_75"
+    "id": "pina_73"
   },
   {
     "id": "pina_3",
@@ -494,7 +462,45 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_68"
+    "id": "pina_67"
+  },
+  {
+    "title": "Belarus vs Kazakhstan",
+    "sport": "FUTBOL",
+    "competition": "World Cup. Qualification",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_74"
+  },
+  {
+    "title": "Leicester City U-21 vs Walsall",
+    "sport": "FUTBOL",
+    "competition": "England. EFL Trophy",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "d317a003e8047da2c36a2a2bb2289578c9a3b79c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_75"
   },
   {
     "title": "Leicester City U-21 vs Walsall",
@@ -513,28 +519,6 @@
     "id": "pina_76"
   },
   {
-    "title": "Belarus vs Kazakhstan",
-    "sport": "OTROS",
-    "competition": "World Cup. Qualification",
-    "time": "20:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_77"
-  },
-  {
     "title": "Bilbao vs Alba Berlin",
     "sport": "FUTBOL",
     "competition": "Champions League",
@@ -548,7 +532,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_80"
+    "id": "pina_79"
   },
   {
     "id": "pina_4",
@@ -729,6 +713,40 @@
         "source": "ArenaVision"
       }
     ]
+  },
+  {
+    "title": "Marta Kostyuk (W) vs Jessica Pegula (W)",
+    "sport": "TENIS",
+    "competition": "WTA Finals",
+    "time": "21:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "42fe2ce3ef6b92653a74d85b6e98c2ba0abee707",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 3",
+        "streamId": "6390b1ab967a25777ea2dde1d41b7400cc0601d3",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] French Opción 4",
+        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_80"
   },
   {
     "title": "76ERS vs CELTICS",
