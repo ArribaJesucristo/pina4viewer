@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "11/11/2026 18:21",
+    "updatedAt": "11/11/2026 18:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -99,12 +99,18 @@
     ]
   },
   {
-    "title": "SKA vs Dynamo Msk",
+    "title": "CSKA vs Torpedo NN",
     "sport": "HOCKEY",
     "competition": "KHL",
     "time": "17:30",
     "date": "Hoy",
     "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
       {
         "name": "[LiveTV] Russian 8000kbps",
         "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
@@ -126,12 +132,6 @@
       {
         "name": "[LiveTV] Russian Opción 4",
         "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -177,6 +177,28 @@
     "id": "pina_70"
   },
   {
+    "title": "Saipa vs Dynamo Pardubice",
+    "sport": "FUTBOL",
+    "competition": "Champions League",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Ukrainian Opción 2",
+        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_74"
+  },
+  {
     "title": "SKA vs Dynamo Msk",
     "sport": "KHL",
     "competition": "KHL",
@@ -210,28 +232,6 @@
       {
         "name": "[LiveTV] Russian 8000kbps",
         "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_74"
-  },
-  {
-    "title": "Saipa vs Dynamo Pardubice",
-    "sport": "FUTBOL",
-    "competition": "Champions League",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Ukrainian Opción 2",
-        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
