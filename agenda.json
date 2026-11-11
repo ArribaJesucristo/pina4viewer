@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "11/11/2026 18:11",
+    "updatedAt": "11/11/2026 18:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -24,7 +24,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_65"
   },
   {
     "title": "Super League",
@@ -40,7 +40,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_67"
+    "id": "pina_66"
   },
   {
     "title": "Arabian Aces vs Yas Lions",
@@ -56,7 +56,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_68"
+    "id": "pina_67"
   },
   {
     "id": "pina_1",
@@ -99,22 +99,6 @@
     ]
   },
   {
-    "title": "Norwid Czestochowa vs Barkom-Kazhany",
-    "sport": "OTROS",
-    "competition": "Poland. PlusLiga",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_65"
-  },
-  {
     "title": "SKA vs Dynamo Msk",
     "sport": "HOCKEY",
     "competition": "KHL",
@@ -152,7 +136,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_69"
+    "id": "pina_68"
   },
   {
     "title": "Saipa vs Dynamo Pardubice",
@@ -174,29 +158,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_70"
+    "id": "pina_69"
   },
   {
-    "title": "Saipa vs Dynamo Pardubice",
-    "sport": "FUTBOL",
-    "competition": "Champions League",
+    "title": "Norwid Czestochowa vs Barkom-Kazhany",
+    "sport": "OTROS",
+    "competition": "Poland. PlusLiga",
     "time": "17:30",
     "date": "Hoy",
     "channels": [
       {
         "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Ukrainian Opción 2",
-        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_74"
+    "id": "pina_70"
   },
   {
     "title": "SKA vs Dynamo Msk",
@@ -232,6 +210,28 @@
       {
         "name": "[LiveTV] Russian 8000kbps",
         "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_74"
+  },
+  {
+    "title": "Saipa vs Dynamo Pardubice",
+    "sport": "FUTBOL",
+    "competition": "Champions League",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Ukrainian Opción 2",
+        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
