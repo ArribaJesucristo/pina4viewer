@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "11/11/2026 16:01",
+    "updatedAt": "11/11/2026 16:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -71,22 +71,6 @@
     "id": "pina_65"
   },
   {
-    "title": "Arabian Aces vs Yas Lions",
-    "sport": "UAE. T10 LEAGUE",
-    "competition": "UAE. T10 League",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_66"
-  },
-  {
     "title": "Super League",
     "sport": "PDC",
     "competition": "PDC",
@@ -96,6 +80,22 @@
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "1950633a3723cb52b17c764125decc04445bd5ff",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_66"
+  },
+  {
+    "title": "Arabian Aces vs Yas Lions",
+    "sport": "UAE. T10 LEAGUE",
+    "competition": "UAE. T10 League",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
