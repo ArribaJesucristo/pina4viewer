@@ -1,30 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "11/11/2026 16:41",
+    "updatedAt": "11/11/2026 16:56",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Champion of Champions",
-    "sport": "SNOOKER",
-    "competition": "Snooker",
-    "time": "13:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish Opción 1",
-        "streamId": "5f595b1bbade5e7c915d99f90645f4c30d4ba540",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Czech Opción 2",
-        "streamId": "fd572fdeeaaff430ab2775e3bae1620295660ebd",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_65"
   },
   {
     "title": "Royal Champs vs Delhi Bulls",
@@ -36,6 +14,28 @@
       {
         "name": "[LiveTV] English 8000kbps",
         "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_65"
+  },
+  {
+    "title": "Lokomotiv Orsha vs Mogilev",
+    "sport": "HOCKEY",
+    "competition": "Belarus. Extraleague",
+    "time": "16:55",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
