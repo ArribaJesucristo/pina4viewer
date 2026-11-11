@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "11/11/2026 20:21",
+    "updatedAt": "11/11/2026 20:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -178,7 +178,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_70"
+    "id": "pina_71"
   },
   {
     "id": "pina_3",
@@ -216,7 +216,7 @@
   },
   {
     "title": "Kedzierzyn-Kozle vs Resovia Rzeszow",
-    "sport": "POLAND. PLUSLIGA",
+    "sport": "OTROS",
     "competition": "Poland. PlusLiga",
     "time": "20:30",
     "date": "Hoy",
@@ -228,7 +228,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_71"
+    "id": "pina_69"
   },
   {
     "title": "PARIS vs FENERBAHCE",
@@ -242,6 +242,18 @@
         "streamId": "e9c285968edade2d0ce4cdcaa32bbe5f97716fb5",
         "type": "ACESTREAM",
         "source": "ArenaVision"
+      },
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ],
     "id": "pina_50"
@@ -276,7 +288,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_69"
+    "id": "pina_70"
   },
   {
     "title": "WTA Tour Championships",
