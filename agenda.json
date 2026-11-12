@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "12/11/2026 21:01",
+    "updatedAt": "12/11/2026 21:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -207,22 +207,6 @@
     "id": "pina_109"
   },
   {
-    "title": "Super League",
-    "sport": "DARTS. PDC",
-    "competition": "PDC",
-    "time": "19:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "1950633a3723cb52b17c764125decc04445bd5ff",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_104"
-  },
-  {
     "title": "Champion of Champions",
     "sport": "SNOOKER",
     "competition": "Snooker",
@@ -242,23 +226,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_106"
+    "id": "pina_104"
   },
   {
-    "title": "Chaumont vs Toulouse",
-    "sport": "OTROS",
-    "competition": "France. Ligue A",
-    "time": "20:00",
+    "title": "Super League",
+    "sport": "DARTS. PDC",
+    "competition": "PDC",
+    "time": "19:45",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] French 8000kbps",
-        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "1950633a3723cb52b17c764125decc04445bd5ff",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_96"
+    "id": "pina_105"
   },
   {
     "title": "Skyliners vs Maxima Roma",
@@ -270,6 +254,22 @@
       {
         "name": "[LiveTV] Ukrainian Opción 1",
         "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_96"
+  },
+  {
+    "title": "Chaumont vs Toulouse",
+    "sport": "OTROS",
+    "competition": "France. Ligue A",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -314,23 +314,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_105"
-  },
-  {
-    "title": "Cameroon CMR vs Namibia NAM",
-    "sport": "FUTBOL",
-    "competition": "Qualification",
-    "time": "20:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Spanish Opción 1",
-        "streamId": "e8e459656f964f601ad4bcda8b81a43ba41c68f9",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_107"
+    "id": "pina_106"
   },
   {
     "title": "Ivory Coast CIV vs Gambia GMB",
@@ -342,6 +326,22 @@
       {
         "name": "[LiveTV] French 8000kbps",
         "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_107"
+  },
+  {
+    "title": "Cameroon CMR vs Namibia NAM",
+    "sport": "FUTBOL",
+    "competition": "Qualification",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Spanish Opción 1",
+        "streamId": "e8e459656f964f601ad4bcda8b81a43ba41c68f9",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
