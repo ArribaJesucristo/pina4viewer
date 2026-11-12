@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "12/11/2026 18:11",
+    "updatedAt": "12/11/2026 18:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -185,6 +185,28 @@
     ]
   },
   {
+    "title": "Armenia ARM vs Cyprus CYP",
+    "sport": "FUTBOL",
+    "competition": "UEFA Nations League",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "016d48fb89bb9505ab3f883db1bfb3a7c0a3eccc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_95"
+  },
+  {
     "title": "Seattle Kraken vs Carolina",
     "sport": "HOCKEY",
     "competition": "NHL",
@@ -198,7 +220,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_95"
+    "id": "pina_96"
   },
   {
     "title": "Turkey TUR vs Belgium BEL",
@@ -240,28 +262,6 @@
       {
         "name": "[LiveTV] Dutch Opción 6",
         "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_96"
-  },
-  {
-    "title": "Armenia ARM vs Cyprus CYP",
-    "sport": "FUTBOL",
-    "competition": "UEFA Nations League",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "016d48fb89bb9505ab3f883db1bfb3a7c0a3eccc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
