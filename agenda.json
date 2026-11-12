@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "12/11/2026 07:01",
+    "updatedAt": "12/11/2026 07:10",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -18,7 +18,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_57"
+    "id": "pina_56"
   },
   {
     "title": "DP World Tour Championship",
@@ -44,6 +44,22 @@
         "streamId": "872608e734992db636eb79426802cd08f4029afb",
         "type": "ACESTREAM",
         "source": "Comunidad"
+      }
+    ],
+    "id": "pina_57"
+  },
+  {
+    "title": "Melbourne Renegades (W) vs Sydney Sixers (W)",
+    "sport": "OTROS",
+    "competition": "Australia. Women. WBBL",
+    "time": "08:10",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "6d95e4b0893e155cc674b84e0763150c445d3ddd",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ],
     "id": "pina_58"
@@ -377,40 +393,6 @@
       }
     ],
     "id": "pina_48"
-  },
-  {
-    "title": "WTA Tour Championships",
-    "sport": "TENIS",
-    "competition": "WTA Finals",
-    "time": "21:10",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "42fe2ce3ef6b92653a74d85b6e98c2ba0abee707",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 3",
-        "streamId": "6390b1ab967a25777ea2dde1d41b7400cc0601d3",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] French Opción 4",
-        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_56"
   },
   {
     "title": "76ERS vs RAPTORS",
