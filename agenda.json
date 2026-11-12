@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "12/11/2026 19:11",
+    "updatedAt": "12/11/2026 19:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -67,22 +67,6 @@
     "id": "pina_101"
   },
   {
-    "title": "CSKA Moscow vs SKIF Krasnodar",
-    "sport": "BALONMANO",
-    "competition": "Russia. Super League",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_102"
-  },
-  {
     "title": "Radomka Radom (W) vs Chemik Police (W)",
     "sport": "OTROS",
     "competition": "Poland. Women. MP",
@@ -92,6 +76,22 @@
       {
         "name": "[LiveTV] Polish 8000kbps",
         "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_102"
+  },
+  {
+    "title": "CSKA Moscow vs SKIF Krasnodar",
+    "sport": "BALONMANO",
+    "competition": "Russia. Super League",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -114,22 +114,6 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_105"
-  },
-  {
-    "title": "CSKA Moscow vs SKIF Krasnodar",
-    "sport": "RUSSIA. SUPER LEAGUE",
-    "competition": "Russia. Super League",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -171,6 +155,22 @@
     ]
   },
   {
+    "title": "Seattle Kraken vs Carolina",
+    "sport": "HOCKEY",
+    "competition": "NHL",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_96"
+  },
+  {
     "title": "Armenia ARM vs Cyprus CYP",
     "sport": "FUTBOL",
     "competition": "UEFA Nations League",
@@ -190,7 +190,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_96"
+    "id": "pina_98"
   },
   {
     "title": "Turkey TUR vs Belgium BEL",
@@ -232,22 +232,6 @@
       {
         "name": "[LiveTV] Dutch Opción 6",
         "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_98"
-  },
-  {
-    "title": "Seattle Kraken vs Carolina",
-    "sport": "HOCKEY",
-    "competition": "NHL",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -454,7 +438,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_106"
+    "id": "pina_108"
   },
   {
     "title": "Super League",
@@ -470,7 +454,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_109"
+    "id": "pina_104"
   },
   {
     "title": "Champion of Champions",
@@ -492,7 +476,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_110"
+    "id": "pina_106"
   },
   {
     "title": "Chaumont vs Toulouse",
@@ -508,7 +492,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_104"
+    "id": "pina_105"
   },
   {
     "title": "Skyliners vs Maxima Roma",
@@ -524,7 +508,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_108"
+    "id": "pina_109"
   },
   {
     "title": "MACCABI vs HAPOEL",
@@ -557,6 +541,22 @@
       }
     ],
     "id": "pina_53"
+  },
+  {
+    "title": "Olympiacos vs Dubai",
+    "sport": "EUROLEAGUE",
+    "competition": "Euroleague",
+    "time": "20:15",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_110"
   },
   {
     "id": "pina_4",
