@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "12/11/2026 19:21",
+    "updatedAt": "12/11/2026 19:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -42,7 +42,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_100"
+    "id": "pina_96"
   },
   {
     "title": "Spartak M vs Amur",
@@ -83,22 +83,6 @@
     "id": "pina_102"
   },
   {
-    "title": "CSKA Moscow vs SKIF Krasnodar",
-    "sport": "BALONMANO",
-    "competition": "Russia. Super League",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_103"
-  },
-  {
     "title": "Spartak M vs Amur",
     "sport": "KHL",
     "competition": "KHL",
@@ -118,7 +102,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_107"
+    "id": "pina_105"
   },
   {
     "id": "pina_1",
@@ -168,7 +152,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_96"
+    "id": "pina_98"
   },
   {
     "title": "Armenia ARM vs Cyprus CYP",
@@ -190,7 +174,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_98"
+    "id": "pina_99"
   },
   {
     "title": "Turkey TUR vs Belgium BEL",
@@ -236,7 +220,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_99"
+    "id": "pina_100"
   },
   {
     "title": "Barcelona (W) vs Arsenal (W)",
@@ -426,6 +410,22 @@
   },
   {
     "title": "Iserlohn Roosters vs Adler Mannheim",
+    "sport": "HOCKEY",
+    "competition": "Germany. DEL",
+    "time": "19:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_103"
+  },
+  {
+    "title": "Iserlohn Roosters vs Adler Mannheim",
     "sport": "GERMANY. DEL",
     "competition": "Germany. DEL",
     "time": "19:30",
@@ -438,7 +438,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_108"
+    "id": "pina_106"
   },
   {
     "title": "Super League",
@@ -454,7 +454,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_104"
+    "id": "pina_107"
   },
   {
     "title": "Champion of Champions",
@@ -476,7 +476,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_106"
+    "id": "pina_108"
   },
   {
     "title": "Chaumont vs Toulouse",
@@ -492,7 +492,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_105"
+    "id": "pina_104"
   },
   {
     "title": "Skyliners vs Maxima Roma",
