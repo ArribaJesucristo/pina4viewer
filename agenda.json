@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "12/11/2026 21:11",
+    "updatedAt": "12/11/2026 21:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -188,7 +188,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_103"
+    "id": "pina_104"
   },
   {
     "title": "Iserlohn Roosters vs Adler Mannheim",
@@ -226,7 +226,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_104"
+    "id": "pina_103"
   },
   {
     "title": "Super League",
@@ -258,7 +258,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_96"
+    "id": "pina_95"
   },
   {
     "title": "Chaumont vs Toulouse",
@@ -274,7 +274,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_97"
+    "id": "pina_96"
   },
   {
     "title": "Austin Championship",
@@ -317,22 +317,6 @@
     "id": "pina_106"
   },
   {
-    "title": "Ivory Coast CIV vs Gambia GMB",
-    "sport": "FUTBOL",
-    "competition": "Qualification",
-    "time": "20:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] French 8000kbps",
-        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_107"
-  },
-  {
     "title": "Cameroon CMR vs Namibia NAM",
     "sport": "FUTBOL",
     "competition": "Qualification",
@@ -342,6 +326,22 @@
       {
         "name": "[LiveTV] Spanish Opción 1",
         "streamId": "e8e459656f964f601ad4bcda8b81a43ba41c68f9",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_107"
+  },
+  {
+    "title": "Ivory Coast CIV vs Gambia GMB",
+    "sport": "FUTBOL",
+    "competition": "Qualification",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -542,7 +542,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_95"
+    "id": "pina_97"
   },
   {
     "title": "England ENG vs Croatia CRO",
