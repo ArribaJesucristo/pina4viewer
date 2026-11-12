@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "12/11/2026 17:51",
+    "updatedAt": "12/11/2026 18:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -59,6 +59,38 @@
     "id": "pina_100"
   },
   {
+    "title": "CSKA Moscow vs SKIF Krasnodar",
+    "sport": "BALONMANO",
+    "competition": "Russia. Super League",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_101"
+  },
+  {
+    "title": "Radomka Radom (W) vs Chemik Police (W)",
+    "sport": "OTROS",
+    "competition": "Poland. Women. MP",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_102"
+  },
+  {
     "title": "Spartak M vs Amur",
     "sport": "HOCKEY",
     "competition": "KHL",
@@ -74,38 +106,6 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_101"
-  },
-  {
-    "title": "CSKA Moscow vs SKIF Krasnodar",
-    "sport": "BALONMANO",
-    "competition": "Russia. Super League",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_102"
-  },
-  {
-    "title": "Radomka Radom (W) vs Chemik Police (W)",
-    "sport": "OTROS",
-    "competition": "Poland. Women. MP",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -185,15 +185,45 @@
     ]
   },
   {
-    "title": "Seattle Kraken vs Carolina",
-    "sport": "HOCKEY",
-    "competition": "NHL",
+    "title": "Turkey TUR vs Belgium BEL",
+    "sport": "FUTBOL",
+    "competition": "UEFA Nations League",
     "time": "18:00",
     "date": "Hoy",
     "channels": [
       {
         "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
+        "streamId": "c9c062941fbecb16ce29437f346ea7177d720898",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "016d48fb89bb9505ab3f883db1bfb3a7c0a3eccc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 4",
+        "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 5",
+        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 6",
+        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -223,45 +253,15 @@
     "id": "pina_96"
   },
   {
-    "title": "Turkey TUR vs Belgium BEL",
-    "sport": "FUTBOL",
-    "competition": "UEFA Nations League",
+    "title": "Seattle Kraken vs Carolina",
+    "sport": "HOCKEY",
+    "competition": "NHL",
     "time": "18:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "016d48fb89bb9505ab3f883db1bfb3a7c0a3eccc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
         "name": "[LiveTV] English 8000kbps",
-        "streamId": "c9c062941fbecb16ce29437f346ea7177d720898",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Dutch Opción 4",
-        "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 5",
-        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Dutch Opción 6",
-        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
+        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -387,6 +387,18 @@
         "streamId": "0b5f802f2de6488b4023d0f05195486e19d81ed7",
         "type": "ACESTREAM",
         "source": "Comunidad"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "ffbf8c687c788d9a1a7c651e24802ee773ff3f04",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
