@@ -1,36 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "12/11/2026 06:51",
+    "updatedAt": "12/11/2026 07:01",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "BLAZERS vs THUNDERS",
-    "sport": "BALONCESTO",
-    "competition": "USA NBA",
-    "time": "04:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "ArenaVision 160 (AV160)",
-        "streamId": "8698d62f3b2a35aabb599c420b06945ea006400b",
-        "type": "ACESTREAM",
-        "source": "ArenaVision"
-      },
-      {
-        "name": "ArenaVision 161 (AV161)",
-        "streamId": "2eedcbcc7173d3622804609460687d3e5a19e1ff",
-        "type": "ACESTREAM",
-        "source": "ArenaVision"
-      },
-      {
-        "name": "ArenaVision 162 (AV162)",
-        "streamId": "0d8baa9c49a73dc9310adeec38d2c2df03271180",
-        "type": "ACESTREAM",
-        "source": "ArenaVision"
-      }
-    ],
-    "id": "pina_46"
   },
   {
     "title": "Melbourne Stars (W) vs Brisbane (W)",
@@ -44,6 +16,34 @@
         "streamId": "6d95e4b0893e155cc674b84e0763150c445d3ddd",
         "type": "ACESTREAM",
         "source": "LiveTV"
+      }
+    ],
+    "id": "pina_57"
+  },
+  {
+    "title": "DP World Tour Championship",
+    "sport": "GOLF",
+    "competition": "DP World Tour",
+    "time": "08:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 2",
+        "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "DP World Tour Championship - Opción Directa 1 [Comunidad]",
+        "streamId": "872608e734992db636eb79426802cd08f4029afb",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
       }
     ],
     "id": "pina_58"
@@ -224,7 +224,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_47"
+    "id": "pina_46"
   },
   {
     "title": "OLYMPIACOS vs DUBAI",
@@ -240,7 +240,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_48"
+    "id": "pina_47"
   },
   {
     "id": "pina_4",
@@ -376,7 +376,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_49"
+    "id": "pina_48"
   },
   {
     "title": "WTA Tour Championships",
@@ -410,7 +410,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_57"
+    "id": "pina_56"
   },
   {
     "title": "76ERS vs RAPTORS",
@@ -432,7 +432,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_49"
   },
   {
     "id": "pina_7",
@@ -606,7 +606,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_51"
+    "id": "pina_50"
   },
   {
     "title": "DUBAI OPEN vs MEN QUARTERS",
@@ -640,7 +640,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_52"
+    "id": "pina_51"
   },
   {
     "title": "ANADOLU vs VIRTUS",
@@ -656,7 +656,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_53"
+    "id": "pina_52"
   },
   {
     "id": "pina_9",
@@ -776,7 +776,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_54"
+    "id": "pina_53"
   },
   {
     "id": "pina_11",
@@ -878,7 +878,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_55"
+    "id": "pina_54"
   },
   {
     "id": "pina_13",
@@ -1110,7 +1110,7 @@
         "source": "ArenaVision"
       }
     ],
-    "id": "pina_56"
+    "id": "pina_55"
   },
   {
     "id": "pina_16",
