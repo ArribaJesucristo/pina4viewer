@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "13/11/2026 00:31",
+    "updatedAt": "13/11/2026 00:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -27,22 +27,6 @@
     "id": "pina_46"
   },
   {
-    "title": "Philadelphia vs Toronto",
-    "sport": "BALONCESTO",
-    "competition": "NBA",
-    "time": "01:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_88"
-  },
-  {
     "title": "Washington vs Detroit",
     "sport": "BALONCESTO",
     "competition": "NBA",
@@ -52,6 +36,22 @@
       {
         "name": "[LiveTV] Ukrainian Opción 1",
         "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_88"
+  },
+  {
+    "title": "Philadelphia vs Toronto",
+    "sport": "BALONCESTO",
+    "competition": "NBA",
+    "time": "01:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
