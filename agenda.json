@@ -1,92 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "12/11/2026 19:51",
+    "updatedAt": "12/11/2026 20:01",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Annika Driven by Gainbridge",
-    "sport": "GOLF",
-    "competition": "LPGA Tour",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 3",
-        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 4",
-        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Dutch Opción 5",
-        "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_102"
-  },
-  {
-    "title": "Spartak M vs Amur",
-    "sport": "HOCKEY",
-    "competition": "KHL",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_103"
-  },
-  {
-    "title": "Spartak M vs Amur",
-    "sport": "KHL",
-    "competition": "KHL",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_109"
   },
   {
     "id": "pina_1",
@@ -136,75 +52,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_96"
-  },
-  {
-    "title": "Armenia ARM vs Cyprus CYP",
-    "sport": "FUTBOL",
-    "competition": "UEFA Nations League",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "016d48fb89bb9505ab3f883db1bfb3a7c0a3eccc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_97"
-  },
-  {
-    "title": "Turkey TUR vs Belgium BEL",
-    "sport": "FUTBOL",
-    "competition": "UEFA Nations League",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "c9c062941fbecb16ce29437f346ea7177d720898",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "016d48fb89bb9505ab3f883db1bfb3a7c0a3eccc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Dutch Opción 4",
-        "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 5",
-        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Dutch Opción 6",
-        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_100"
+    "id": "pina_99"
   },
   {
     "title": "Barcelona (W) vs Arsenal (W)",
@@ -406,7 +254,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_104"
+    "id": "pina_102"
   },
   {
     "title": "Iserlohn Roosters vs Adler Mannheim",
@@ -444,7 +292,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_105"
+    "id": "pina_100"
   },
   {
     "title": "Super League",
@@ -460,7 +308,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_106"
+    "id": "pina_101"
   },
   {
     "title": "Skyliners vs Maxima Roma",
@@ -476,7 +324,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_99"
+    "id": "pina_96"
   },
   {
     "title": "Chaumont vs Toulouse",
@@ -492,7 +340,79 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_101"
+    "id": "pina_97"
+  },
+  {
+    "title": "Austin Championship",
+    "sport": "GOLF",
+    "competition": "PGA Tour",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 3",
+        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 4",
+        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 5",
+        "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_103"
+  },
+  {
+    "title": "Cameroon CMR vs Namibia NAM",
+    "sport": "FUTBOL",
+    "competition": "Qualification",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Spanish Opción 1",
+        "streamId": "e8e459656f964f601ad4bcda8b81a43ba41c68f9",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_104"
+  },
+  {
+    "title": "Ivory Coast CIV vs Gambia GMB",
+    "sport": "FUTBOL",
+    "competition": "Qualification",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_105"
   },
   {
     "title": "MACCABI vs HAPOEL",
@@ -522,6 +442,12 @@
         "streamId": "1aedb9d609bbfec87c2614d126a384a1f0ae136f",
         "type": "ACESTREAM",
         "source": "ArenaVision"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ],
     "id": "pina_53"
@@ -676,7 +602,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_107"
+    "id": "pina_106"
   },
   {
     "title": "Italy ITA vs France FRA",
@@ -710,6 +636,22 @@
         "source": "LiveTV"
       }
     ],
+    "id": "pina_107"
+  },
+  {
+    "title": "Simulcast",
+    "sport": "FUTBOL",
+    "competition": "UEFA Nations League",
+    "time": "20:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Dutch Opción 1",
+        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
     "id": "pina_108"
   },
   {
@@ -727,6 +669,22 @@
       }
     ],
     "id": "pina_54"
+  },
+  {
+    "title": "Benfica (W) vs Austria Vienna (W)",
+    "sport": "FUTBOL",
+    "competition": "Women. Champions League",
+    "time": "21:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "0dfa37340ca0300a41f7a78bd3a0f024c3296974",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_109"
   },
   {
     "title": "76ERS vs RAPTORS",
