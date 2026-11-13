@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "13/11/2026 12:41",
+    "updatedAt": "13/11/2026 12:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -39,28 +39,6 @@
     ]
   },
   {
-    "title": "Champion Series, Abu Dhabi",
-    "sport": "WORLD TOUR",
-    "competition": "World Tour",
-    "time": "13:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Ukrainian Opción 2",
-        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_44"
-  },
-  {
     "title": "Kuzbass Kemerovo vs Dynamo Ural",
     "sport": "RUSSIA. SUPER LEAGUE",
     "competition": "Russia. Super League",
@@ -76,6 +54,28 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_44"
+  },
+  {
+    "title": "Champion Series, Abu Dhabi",
+    "sport": "WORLD TOUR",
+    "competition": "World Tour",
+    "time": "13:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Ukrainian Opción 2",
+        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
