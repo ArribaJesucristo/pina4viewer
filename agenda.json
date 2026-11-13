@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "13/11/2026 14:21",
+    "updatedAt": "13/11/2026 14:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -71,42 +71,8 @@
     "id": "pina_44"
   },
   {
-    "title": "World Championships, Istanbul",
-    "sport": "POWERLIFTING",
-    "competition": "Powerlifting",
-    "time": "14:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 3",
-        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 4",
-        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_45"
-  },
-  {
     "title": "ONE Friday Fights 178",
-    "sport": "ONE FIGHT NIGHT",
+    "sport": "BOXEO",
     "competition": "ONE Fight Night",
     "time": "14:30",
     "date": "Hoy",
@@ -132,6 +98,40 @@
       {
         "name": "[LiveTV] Russian Opción 4",
         "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_45"
+  },
+  {
+    "title": "World Championships, Istanbul",
+    "sport": "OTROS",
+    "competition": "Powerlifting",
+    "time": "14:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 3",
+        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 4",
+        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
