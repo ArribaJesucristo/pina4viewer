@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "13/11/2026 21:11",
+    "updatedAt": "13/11/2026 21:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -107,44 +107,6 @@
     "id": "pina_54"
   },
   {
-    "title": "Krefeld Pinguine vs Nuernberg",
-    "sport": "HOCKEY",
-    "competition": "Germany. DEL",
-    "time": "19:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "14317c55fadc80ef2b7fb42b3d53e8ccb3b52cd8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "ac839cda9709255c21a98af455731f037e77a9e4",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_55"
-  },
-  {
-    "title": "Ingolstadt vs Straubing Tigers",
-    "sport": "HOCKEY",
-    "competition": "Germany. DEL",
-    "time": "19:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "428b92f3c71cd3cbf66ef6193808b39d16a52730",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_56"
-  },
-  {
     "title": "Grizzlys Wolfsburg vs Eisbaeren Berlin",
     "sport": "HOCKEY",
     "competition": "Germany. DEL",
@@ -158,7 +120,29 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_57"
+    "id": "pina_55"
+  },
+  {
+    "title": "Loeven Frankfurt vs Fischtown Pinguins",
+    "sport": "HOCKEY",
+    "competition": "Germany. DEL",
+    "time": "19:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "ac839cda9709255c21a98af455731f037e77a9e4",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "14317c55fadc80ef2b7fb42b3d53e8ccb3b52cd8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_56"
   },
   {
     "title": "Simulcast",
@@ -170,6 +154,22 @@
       {
         "name": "[LiveTV] English Opción 1",
         "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_57"
+  },
+  {
+    "title": "Ingolstadt vs Straubing Tigers",
+    "sport": "HOCKEY",
+    "competition": "Germany. DEL",
+    "time": "19:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "428b92f3c71cd3cbf66ef6193808b39d16a52730",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -193,6 +193,22 @@
     "id": "pina_59"
   },
   {
+    "title": "Schwenninger vs Koelner Haie",
+    "sport": "GERMANY. DEL",
+    "competition": "Germany. DEL",
+    "time": "19:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "1fb794b1503c5955b75ea0106ee6360b80d78849",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_67"
+  },
+  {
     "title": "Krefeld Pinguine vs Nuernberg",
     "sport": "GERMANY. DEL",
     "competition": "Germany. DEL",
@@ -212,39 +228,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_67"
-  },
-  {
-    "title": "Schwenninger vs Koelner Haie",
-    "sport": "GERMANY. DEL",
-    "competition": "Germany. DEL",
-    "time": "19:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "1fb794b1503c5955b75ea0106ee6360b80d78849",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
     "id": "pina_68"
-  },
-  {
-    "title": "Grizzlys Wolfsburg vs Eisbaeren Berlin",
-    "sport": "GERMANY. DEL",
-    "competition": "Germany. DEL",
-    "time": "19:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_69"
   },
   {
     "title": "Augsburg vs RB Munich",
@@ -260,7 +244,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_70"
+    "id": "pina_69"
   },
   {
     "title": "Ingolstadt vs Straubing Tigers",
@@ -272,6 +256,22 @@
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "428b92f3c71cd3cbf66ef6193808b39d16a52730",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_70"
+  },
+  {
+    "title": "Grizzlys Wolfsburg vs Eisbaeren Berlin",
+    "sport": "GERMANY. DEL",
+    "competition": "Germany. DEL",
+    "time": "19:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -655,6 +655,34 @@
     "id": "pina_49"
   },
   {
+    "title": "Slovenia SVN vs Switzerland SUI",
+    "sport": "FUTBOL",
+    "competition": "UEFA Nations League",
+    "time": "20:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "3147c586346aee00c005d1caa55204d38678c95f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "350b2044f1c9e87e18d8fbda1bcc456c22cf9296",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 3",
+        "streamId": "12ea555d431dbe51fc8e4ca745aec09fe22a4865",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_51"
+  },
+  {
     "title": "Netherlands NED vs Greece GRE",
     "sport": "FUTBOL",
     "competition": "UEFA Nations League",
@@ -686,7 +714,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_51"
+    "id": "pina_52"
   },
   {
     "title": "Scotland SCO vs North Macedonia MKD",
@@ -698,34 +726,6 @@
       {
         "name": "[LiveTV] Russian 8000kbps",
         "streamId": "8442b5c7c99e5af57c2c40c1e28153072968988a",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_52"
-  },
-  {
-    "title": "Slovenia SVN vs Switzerland SUI",
-    "sport": "FUTBOL",
-    "competition": "UEFA Nations League",
-    "time": "20:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "3147c586346aee00c005d1caa55204d38678c95f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "350b2044f1c9e87e18d8fbda1bcc456c22cf9296",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 3",
-        "streamId": "12ea555d431dbe51fc8e4ca745aec09fe22a4865",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
