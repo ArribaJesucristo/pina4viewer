@@ -1,9 +1,10 @@
 {
-  "versionCode": 2043,
-  "versionName": "8.4.3",
-  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.3/pina4viewer-v8.4.3.apk",
+  "versionCode": 2050,
+  "versionName": "8.5.0",
+  "apkUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.5.0/pina4viewer-v8.5.0.apk",
+  "apkSha256": "4354e5513591782bac3cc8757b3421da6c9e3c3f71dbe21e2cf41723a92a417b",
   "acestreamAtvUrl": "https://android.acestream.net/download/apk",
   "acestreamMobileUrl": "https://android.acestream.net/download/apk",
   "psiphonUrl": "https://github.com/ArribaJesucristo/pina4viewer/releases/download/v8.4.3/psiphon-classic-tv.apk",
-  "changelog": "- Corregido el resaltado simultaneo en la lista de canales del dialogo\n- Foco dorado individual por elemento al navegar con el mando de TV (D-Pad)"
+  "changelog": "- Foco dorado visible en todos los dialogos, botones y menus para Android TV y Fire TV (D-Pad)\n- Apertura directa de Proton VPN (prioritaria) o Psiphon desde el boton VPN sin pop-ups intermedios\n- Verificacion SHA-256 en actualizaciones OTA y politica HTTPS estricta\n- Correcciones de clasificacion deportiva y enlaces TDT en la agenda"
 }
