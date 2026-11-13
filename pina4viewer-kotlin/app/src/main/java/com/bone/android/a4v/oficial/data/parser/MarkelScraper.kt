@@ -421,9 +421,8 @@ object MarkelScraper {
                 time = "Directo",
                 date = "Hoy",
                 channels = listOf(
-                    ChannelItem("M+ LaLiga - Opción 1", "d4ff041287a43e3114d411d671c4b4e92e21f33y", StreamType.ACESTREAM),
-                    ChannelItem("M+ LaLiga - Opción 2", "b3bdd6ef7f795c4f321a3ce5cf4907338f462929", StreamType.ACESTREAM),
-                    ChannelItem("M+ LaLiga - Opción 3", "f863873de9f7b2996dde19a0657dd89835af3007", StreamType.ACESTREAM)
+                    ChannelItem("M+ LaLiga - Opción 1", "b3bdd6ef7f795c4f321a3ce5cf4907338f462929", StreamType.ACESTREAM),
+                    ChannelItem("M+ LaLiga - Opción 2", "f863873de9f7b2996dde19a0657dd89835af3007", StreamType.ACESTREAM)
                 )
             ),
             EventItem(

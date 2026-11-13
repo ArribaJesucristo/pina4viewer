@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="4dp"
         android:max="100"
-        android:progressDrawable="@color/gold_primary"
+        android:progressTint="@color/gold_primary"
+        android:progressBackgroundTint="#333333"
         android:visibility="gone"
         app:layout_constraintTop_toTopOf="parent" />
 

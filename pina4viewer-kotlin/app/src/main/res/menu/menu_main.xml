@@ -10,6 +10,12 @@
         app:showAsAction="always" />
 
     <item
+        android:id="@+id/menu_refresh"
+        android:orderInCategory="2"
+        android:title="🔄 Actualizar Agenda"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/menu_vpn_settings"
         android:orderInCategory="2"
         android:title="🛡️ Estado y Configuración de VPN"

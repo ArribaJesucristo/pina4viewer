@@ -9,42 +9,78 @@ import urllib.parse
 def get_token():
     env_token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     if env_token:
-        return env_token
+        return env_token.strip()
     try:
-        url = subprocess.check_output(["git", "config", "remote.origin.url"], text=True).strip()
-        match = re.search(r"ghp_[a-zA-Z0-9]+", url)
-        if match:
-            return match.group(0)
+        token = subprocess.check_output(
+            ["gh", "auth", "token"],
+            text=True,
+            stderr=subprocess.DEVNULL
+        ).strip()
+        if token:
+            return token
     except Exception:
         pass
     return ""
 
-def main():
-    token = get_token()
-    if not token:
-        print("Error: No se encontró token de GitHub.")
-        sys.exit(1)
 
+def compute_sha256(file_path):
+    import hashlib
+    h = hashlib.sha256()
+    with open(file_path, "rb") as f:
+        for chunk in iter(lambda: f.read(65536), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def main():
+    dry_run = "--dry-run" in sys.argv[1:]
     repo = "ArribaJesucristo/pina4viewer"
-    
+
     # Leer versión actual desde version.json
     with open("version.json", "r", encoding="utf-8") as f:
         vinfo = json.load(f)
-    
+
     version_name = vinfo.get("versionName", "8.4.3")
     tag = f"v{version_name}"
-    name = f"{tag}: Instalador oficial de Wiseplay y mejoras para Android TV y Fire TV"
-    body = f"### Novedades en {tag}\n\n{vinfo.get('changelog', '')}"
+    changelog = vinfo.get("changelog", "")
+    summary_line = next(
+        (line.lstrip("-•* ").strip() for line in changelog.splitlines() if line.strip()),
+        "Actualización OTA"
+    )
+    name = f"{tag}: {summary_line}"
+    body = f"### Novedades en {tag}\n\n{changelog}"
     apk_path = os.path.abspath(f"pina4viewer-{tag}.apk")
-    
+
     if not os.path.exists(apk_path):
         # Fallback al build folder
-        fallback = os.path.abspath(r"pina4viewer-kotlin\app\build\outputs\apk\release\app-release.apk")
+        fallback = os.path.abspath(
+            os.path.join("pina4viewer-kotlin", "app", "build", "outputs", "apk", "release", "app-release.apk")
+        )
         if os.path.exists(fallback):
             apk_path = fallback
         else:
             print(f"Error: No se encontró el APK {apk_path}")
             sys.exit(1)
+
+    apk_sha256 = compute_sha256(apk_path)
+    print(f"APK seleccionado: {apk_path}")
+    print(f"SHA-256: {apk_sha256}")
+
+    if dry_run:
+        print("Modo --dry-run activo: omitiendo creación de release en GitHub.")
+        return
+
+    token = get_token()
+    if not token:
+        print("Error: Define GITHUB_TOKEN / GH_TOKEN o inicia sesión con 'gh auth login'.")
+        sys.exit(1)
+
+    if vinfo.get("apkSha256") != apk_sha256:
+        vinfo["apkSha256"] = apk_sha256
+        with open("version.json", "w", encoding="utf-8") as f:
+            json.dump(vinfo, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+        print("Actualizado apkSha256 en version.json.")
 
     print(f"1. Creando release {tag}...")
     release_data = json.dumps({

@@ -5,8 +5,9 @@
     android:layout_height="48dp"
     android:gravity="center_vertical"
     android:paddingHorizontal="20dp"
+    android:duplicateParentState="true"
     android:textColor="@color/selector_dialog_item_text"
     android:textSize="15sp"
     android:textStyle="bold"
-    android:background="@drawable/selector_dialog_item_focus" />
+    android:background="@android:color/transparent" />
 

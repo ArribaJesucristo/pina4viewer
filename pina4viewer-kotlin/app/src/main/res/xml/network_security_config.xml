@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Bloque 2 Security: exigir HTTPS por defecto en toda la aplicación -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- Excepciones mínimas necesarias: fuente legacy HTTP de arena4viewer y loopback local de AceStream -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">arena4viewer.in</domain>
+        <domain includeSubdomains="false">localhost</domain>
+        <domain includeSubdomains="false">127.0.0.1</domain>
+    </domain-config>
+</network-security-config>

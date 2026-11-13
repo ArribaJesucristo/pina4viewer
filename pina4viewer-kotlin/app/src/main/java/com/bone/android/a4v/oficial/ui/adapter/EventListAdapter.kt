@@ -1,5 +1,6 @@
 package com.bone.android.a4v.oficial.ui.adapter
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,10 +29,9 @@ class EventListAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(event: EventItem) {
-            // Sport Icon
+            binding.root.tag = event.id
             binding.ivSportIcon.setImageResource(event.getSportIconRes())
 
-            // Sport & Competition Header
             val header = buildString {
                 if (event.sport.isNotBlank()) append(event.sport.uppercase())
                 if (event.competition.isNotBlank()) {
@@ -43,13 +43,9 @@ class EventListAdapter(
             binding.tvSportCompetition.text = header
             binding.tvSportCompetition.visibility = if (header.isNotBlank()) View.VISIBLE else View.GONE
 
-            // Match Title
             binding.tvTitle.text = event.title
-
-            // Channels text hidden on cards for a clean, compact view
             binding.tvChannels.visibility = View.GONE
 
-            // Date and Time
             val dt = listOfNotNull(
                 event.date.takeIf { it.isNotBlank() },
                 event.time.takeIf { it.isNotBlank() }
@@ -57,7 +53,12 @@ class EventListAdapter(
             binding.tvDateTime.text = dt
             binding.tvDateTime.visibility = if (dt.isNotBlank()) View.VISIBLE else View.GONE
 
-            // Click handling
+            val isLiveHighlight = event.time.equals("Directo", ignoreCase = true) ||
+                event.date.equals("24/7", ignoreCase = true)
+            binding.tvDateTime.setTextColor(
+                if (isLiveHighlight) Color.parseColor("#00E676") else Color.parseColor("#E0E0E0")
+            )
+
             binding.cardRoot.setOnClickListener {
                 if (event.channels.size == 1) {
                     onChannelClick(event.channels.first())
@@ -66,16 +67,13 @@ class EventListAdapter(
                 }
             }
 
-            // TV remote focus setup
             binding.cardRoot.isFocusable = true
             binding.cardRoot.isClickable = true
-            binding.cardRoot.setOnKeyListener { _, keyCode, event ->
-                if (event.action == android.view.KeyEvent.ACTION_DOWN && keyCode == android.view.KeyEvent.KEYCODE_DPAD_UP && bindingAdapterPosition == 0) {
-                    binding.root.rootView.findViewById<android.view.View>(com.bone.android.a4v.oficial.R.id.etSearch)?.requestFocus()
-                    true
-                } else {
-                    false
-                }
+            binding.cardRoot.onFocusChangeListener = View.OnFocusChangeListener { view, hasFocus ->
+                val scale = if (hasFocus) 1.015f else 1.0f
+                view.animate().cancel()
+                view.animate().scaleX(scale).scaleY(scale).setDuration(100).start()
+                view.elevation = if (hasFocus) 10f else 2f
             }
         }
     }

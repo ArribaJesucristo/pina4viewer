@@ -320,5 +320,82 @@ class TestAgendaPipeline(unittest.TestCase):
                     self.assertEqual(c["type"], "DIRECT")
                     self.assertTrue(c["streamId"].startswith("http"))
 
+    def test_sport_normalization_word_boundaries(self):
+        from scripts.generate_agenda import normalize_sport
+        self.assertEqual(
+            normalize_sport("Triatlón", "WORLD CHAMPIONSHIP SERIES"),
+            "TRIATLON"
+        )
+        self.assertEqual(
+            normalize_sport("", "World Championship Series Sprint (Abu Dhabi)"),
+            "TRIATLON"
+        )
+        # 'pool' must NOT steal 'Liverpool' matches as SNOOKER
+        self.assertEqual(normalize_sport("", "Liverpool - Arsenal"), "FUTBOL")
+        # 'champions' with spaces/words keeps working for UEFA Champions League
+        self.assertEqual(normalize_sport("Fútbol", "Champions League"), "FUTBOL")
+        self.assertEqual(normalize_sport("Padel", "Premier Paddle"), "PADEL")
+
+    def test_tdt_macro_placeholder_filtering(self):
+        from scripts.generate_agenda import is_valid_direct_stream_url, parse_tdt_sports_m3u
+        self.assertFalse(is_valid_direct_stream_url("https://stream.ads.ottera.tv/playlist.m3u8?lmt=[LMT]&did=[DEVICE_ID]"))
+        self.assertFalse(is_valid_direct_stream_url("https://example.com/live.m3u8?ip=[IP]&ua=[UA]"))
+        self.assertTrue(is_valid_direct_stream_url("https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main_dvr.m3u8"))
+
+        sample_m3u = "\n".join([
+            "#EXTM3U",
+            "#EXTINF:-1,Real Madrid TV",
+            "https://stream.ads.ottera.tv/playlist.m3u8?lmt=[LMT]&did=[DEVICE_ID]",
+            "#EXTINF:-1,Teledeporte",
+            "https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main_dvr.m3u8",
+        ])
+        parsed = parse_tdt_sports_m3u(sample_m3u)
+        self.assertNotIn("Real Madrid TV", parsed)
+        self.assertIn("Teledeporte", parsed)
+
+    def test_previous_agenda_midnight_rollover(self):
+        import json
+        import tempfile
+        from datetime import timedelta
+        from unittest.mock import patch
+        from scripts import generate_agenda as ga
+
+        yesterday = self.today - timedelta(days=1)
+        payload = [
+            {"_metadata": True, "updatedAt": f"{yesterday.strftime('%d/%m/%Y')} 23:47", "timezone": "Madrid,Paris,Bruselas"},
+            {
+                "id": "1",
+                "title": "Real Madrid - Barcelona",
+                "sport": "FUTBOL",
+                "competition": "LaLiga",
+                "time": "21:00",
+                "date": "Hoy",
+                "channels": [{"name": "M+ LaLiga", "streamId": "1234567890abcdef1234567890abcdef12345678", "type": "ACESTREAM", "source": "ArenaVision"}]
+            },
+            {
+                "id": "2",
+                "title": "Betis - Sevilla",
+                "sport": "FUTBOL",
+                "competition": "LaLiga",
+                "time": "20:00",
+                "date": "Mañana",
+                "channels": [{"name": "DAZN", "streamId": "abcdef1234567890abcdef1234567890abcdef12", "type": "ACESTREAM", "source": "ArenaVision"}]
+            }
+        ]
+        with tempfile.NamedTemporaryFile("w", suffix=".json", encoding="utf-8", delete=False) as tf:
+            json.dump(payload, tf, ensure_ascii=False)
+            temp_path = tf.name
+        try:
+            with patch.object(ga, "OUTPUT_FILE", temp_path):
+                loaded = ga.load_previous_agenda(self.today)
+            titles = {ev["title"]: ev for ev in loaded}
+            self.assertNotIn("Real Madrid - Barcelona", titles)
+            self.assertIn("Betis - Sevilla", titles)
+            self.assertEqual(titles["Betis - Sevilla"]["date"], "Hoy")
+        finally:
+            if os.path.exists(temp_path):
+                os.remove(temp_path)
+
+
 if __name__ == "__main__":
     unittest.main()

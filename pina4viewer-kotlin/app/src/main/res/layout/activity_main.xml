@@ -9,9 +9,15 @@
 
     <!-- Main Content -->
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainContentContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background_dark">
+        android:background="@color/background_dark"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingHorizontal="@dimen/screen_padding_horizontal"
+        android:paddingTop="@dimen/screen_padding_top"
+        android:paddingBottom="@dimen/screen_padding_bottom">
 
         <!-- Toolbar / Action Bar with Centered Logo -->
         <androidx.appcompat.widget.Toolbar
@@ -19,6 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/surface_dark"
+            android:clipChildren="false"
+            android:clipToPadding="false"
             android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
             app:popupTheme="@style/Theme.Pina4Viewer.ToolbarPopup"
             app:layout_constraintTop_toTopOf="parent"
@@ -35,17 +43,17 @@
 
         </androidx.appcompat.widget.Toolbar>
 
-        <!-- User Count Text -->
+        <!-- Event Status Banner -->
         <TextView
             android:id="@+id/tvUserCount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:paddingTop="2dp"
-            android:paddingBottom="2dp"
-            android:text="Hay 2013357 descargas"
-            android:textColor="@color/text_primary"
-            android:textSize="12sp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Cargando programación deportiva..."
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/status_banner_text_size"
             android:textStyle="bold|italic"
             app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
@@ -53,8 +61,8 @@
         <RadioGroup
             android:id="@+id/radioGroupSources"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
-            android:layout_marginHorizontal="6dp"
+            android:layout_height="@dimen/source_tab_height"
+            android:layout_marginHorizontal="@dimen/control_horizontal_margin"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@id/tvUserCount">
 
@@ -69,7 +77,7 @@
                 android:gravity="center"
                 android:text="🍍 PIÑAVISION"
                 android:textColor="@color/radio_text_color"
-                android:textSize="12sp"
+                android:textSize="@dimen/source_tab_text_size"
                 android:textStyle="bold|italic"
                 android:nextFocusDown="@+id/etSearch" />
 
@@ -84,7 +92,7 @@
                 android:gravity="center"
                 android:text="📺 24/7 TV"
                 android:textColor="@color/radio_text_color"
-                android:textSize="12sp"
+                android:textSize="@dimen/source_tab_text_size"
                 android:textStyle="bold|italic"
                 android:nextFocusDown="@+id/etSearch" />
 
@@ -99,7 +107,7 @@
                 android:gravity="center"
                 android:text="⚡ CAIDO"
                 android:textColor="@color/radio_text_color"
-                android:textSize="12sp"
+                android:textSize="@dimen/source_tab_text_size"
                 android:textStyle="bold|italic"
                 android:nextFocusDown="@+id/etSearch" />
         </RadioGroup>
@@ -108,19 +116,19 @@
         <EditText
             android:id="@+id/etSearch"
             android:layout_width="match_parent"
-            android:layout_height="38dp"
-            android:layout_marginHorizontal="6dp"
+            android:layout_height="@dimen/search_box_height"
+            android:layout_marginHorizontal="@dimen/control_horizontal_margin"
             android:layout_marginTop="4dp"
             android:background="@drawable/search_input_bg"
             android:hint="🔍 Buscar evento o canal..."
-            android:imeOptions="actionSearch"
+            android:imeOptions="actionSearch|flagNoExtractUi"
             android:inputType="text"
-            android:paddingHorizontal="12dp"
+            android:paddingHorizontal="14dp"
             android:singleLine="true"
             android:textColor="@color/text_primary"
             android:textColorHint="@color/text_hint"
-            android:textSize="13sp"
-            android:nextFocusUp="@id/radioGroupSources"
+            android:textSize="@dimen/search_box_text_size"
+            android:nextFocusUp="@id/rbPina"
             android:nextFocusDown="@id/chipSportAll"
             app:layout_constraintTop_toBottomOf="@id/radioGroupSources" />
 
@@ -129,8 +137,8 @@
             android:id="@+id/scrollSportChips"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="6dp"
-            android:layout_marginTop="3dp"
+            android:layout_marginHorizontal="@dimen/control_horizontal_margin"
+            android:layout_marginTop="4dp"
             android:scrollbars="none"
             android:overScrollMode="never"
             app:layout_constraintTop_toBottomOf="@id/etSearch">
@@ -138,7 +146,7 @@
             <RadioGroup
                 android:id="@+id/radioGroupSports"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="@dimen/chip_bar_height"
                 android:orientation="horizontal">
 
                 <RadioButton
@@ -151,7 +159,7 @@
                     android:gravity="center"
                     android:text="🏆 Todos"
                     android:textColor="@color/radio_text_color"
-                    android:textSize="11sp"
+                    android:textSize="@dimen/chip_text_size"
                     android:textStyle="bold"
                     android:checked="true"
                     android:nextFocusUp="@+id/etSearch"
@@ -168,7 +176,7 @@
                     android:gravity="center"
                     android:text="⚽ Fútbol"
                     android:textColor="@color/radio_text_color"
-                    android:textSize="11sp"
+                    android:textSize="@dimen/chip_text_size"
                     android:textStyle="bold"
                     android:nextFocusUp="@+id/etSearch"
                     android:nextFocusDown="@+id/recyclerViewEvents" />
@@ -184,7 +192,7 @@
                     android:gravity="center"
                     android:text="🎾 Tenis / Pádel"
                     android:textColor="@color/radio_text_color"
-                    android:textSize="11sp"
+                    android:textSize="@dimen/chip_text_size"
                     android:textStyle="bold"
                     android:nextFocusUp="@+id/etSearch"
                     android:nextFocusDown="@+id/recyclerViewEvents" />
@@ -200,7 +208,7 @@
                     android:gravity="center"
                     android:text="🏎️ Motor"
                     android:textColor="@color/radio_text_color"
-                    android:textSize="11sp"
+                    android:textSize="@dimen/chip_text_size"
                     android:textStyle="bold"
                     android:nextFocusUp="@+id/etSearch"
                     android:nextFocusDown="@+id/recyclerViewEvents" />
@@ -216,7 +224,7 @@
                     android:gravity="center"
                     android:text="🏀 Basket"
                     android:textColor="@color/radio_text_color"
-                    android:textSize="11sp"
+                    android:textSize="@dimen/chip_text_size"
                     android:textStyle="bold"
                     android:nextFocusUp="@+id/etSearch"
                     android:nextFocusDown="@+id/recyclerViewEvents" />
@@ -232,7 +240,7 @@
                     android:gravity="center"
                     android:text="🥊 Otros"
                     android:textColor="@color/radio_text_color"
-                    android:textSize="11sp"
+                    android:textSize="@dimen/chip_text_size"
                     android:textStyle="bold"
                     android:nextFocusUp="@+id/etSearch"
                     android:nextFocusDown="@+id/recyclerViewEvents" />
@@ -246,6 +254,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="4dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
             android:descendantFocusability="afterDescendants"
             app:layout_constraintBottom_toTopOf="@id/layoutFooter"
             app:layout_constraintTop_toBottomOf="@id/scrollSportChips">
@@ -253,17 +263,21 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
                 android:descendantFocusability="afterDescendants">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerViewEvents"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:clipChildren="false"
                     android:clipToPadding="false"
                     android:paddingVertical="4dp"
-                    android:focusable="true"
+                    android:focusable="false"
                     android:descendantFocusability="afterDescendants"
-                    android:nextFocusUp="@id/etSearch"
+                    android:nextFocusUp="@id/chipSportAll"
+                    android:nextFocusDown="@id/tvFooterWarning"
                     tools:listitem="@layout/item_event" />
 
                 <TextView
@@ -275,7 +289,7 @@
                     android:padding="24dp"
                     android:text="@string/empty_events"
                     android:textColor="@color/text_secondary"
-                    android:textSize="14sp"
+                    android:textSize="@dimen/card_title_text_size"
                     android:visibility="gone" />
             </FrameLayout>
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
@@ -297,12 +311,17 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="⚠️ Si al cargar un partido te sale cannot get transport file, enciende la vpn"
+                android:background="@drawable/selector_dialog_item_focus"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="6dp"
+                android:text="⚠️ Si al cargar un partido te sale cannot get transport file, enciende la vpn (pulsa aquí para ayuda)"
                 android:textColor="#FFA726"
-                android:textSize="10sp"
+                android:textSize="@dimen/footer_text_size"
                 android:textStyle="bold"
                 android:maxLines="2"
                 android:ellipsize="end"
+                android:nextFocusUp="@id/recyclerViewEvents"
                 android:layout_marginEnd="8dp" />
 
             <TextView
@@ -312,7 +331,7 @@
                 android:gravity="end"
                 android:text="Actualizado:\n--/-- --:--"
                 android:textColor="@color/text_secondary"
-                android:textSize="10sp"
+                android:textSize="@dimen/footer_text_size"
                 android:textStyle="bold|italic" />
         </LinearLayout>
 
@@ -363,8 +382,13 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:clipToPadding="false"
             android:divider="@color/divider_color"
-            android:dividerHeight="1dp" />
+            android:dividerHeight="1dp"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@drawable/selector_dialog_item_focus"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
 
     </LinearLayout>
 

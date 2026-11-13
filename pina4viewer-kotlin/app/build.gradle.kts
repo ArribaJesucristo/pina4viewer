@@ -17,10 +17,39 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    val releaseKeystorePath = System.getenv("KEYSTORE_FILE")
+        ?: (project.findProperty("KEYSTORE_FILE") as? String)
+    val releaseKeystoreFile = releaseKeystorePath?.let { file(it) }?.takeIf { it.exists() }
+    val releaseStorePassword = System.getenv("KEYSTORE_PASSWORD")
+        ?: (project.findProperty("KEYSTORE_PASSWORD") as? String)
+    val releaseKeyAlias = System.getenv("KEY_ALIAS")
+        ?: (project.findProperty("KEY_ALIAS") as? String)
+    val releaseKeyPassword = System.getenv("KEY_PASSWORD")
+        ?: (project.findProperty("KEY_PASSWORD") as? String)
+    val hasReleaseSigning = releaseKeystoreFile != null &&
+        !releaseStorePassword.isNullOrBlank() &&
+        !releaseKeyAlias.isNullOrBlank() &&
+        !releaseKeyPassword.isNullOrBlank()
+
+    if (hasReleaseSigning) {
+        signingConfigs {
+            create("release") {
+                storeFile = releaseKeystoreFile
+                storePassword = releaseStorePassword
+                keyAlias = releaseKeyAlias
+                keyPassword = releaseKeyPassword
+            }
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = if (hasReleaseSigning) {
+                signingConfigs.getByName("release")
+            } else {
+                signingConfigs.getByName("debug")
+            }
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -60,5 +89,8 @@ dependencies {
 
     // Network & Parsing
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
+
+    // Unit Testing
+    testImplementation("junit:junit:4.13.2")
 }
 

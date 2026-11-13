@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Márgenes seguros de overscan y escala tipográfica para visión a 3m en Android TV / Fire TV -->
+    <dimen name="screen_padding_horizontal">24dp</dimen>
+    <dimen name="screen_padding_top">12dp</dimen>
+    <dimen name="screen_padding_bottom">12dp</dimen>
+    <dimen name="control_horizontal_margin">0dp</dimen>
+    <dimen name="source_tab_height">44dp</dimen>
+    <dimen name="source_tab_text_size">14sp</dimen>
+    <dimen name="search_box_height">44dp</dimen>
+    <dimen name="search_box_text_size">15sp</dimen>
+    <dimen name="chip_bar_height">40dp</dimen>
+    <dimen name="chip_text_size">13sp</dimen>
+    <dimen name="card_horizontal_margin">4dp</dimen>
+    <dimen name="card_sport_text_size">13sp</dimen>
+    <dimen name="card_title_text_size">17sp</dimen>
+    <dimen name="card_time_text_size">14sp</dimen>
+    <dimen name="card_icon_size">44dp</dimen>
+    <dimen name="footer_text_size">13sp</dimen>
+    <dimen name="status_banner_text_size">14sp</dimen>
+</resources>

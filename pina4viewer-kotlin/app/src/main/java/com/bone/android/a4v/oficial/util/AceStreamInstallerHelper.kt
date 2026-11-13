@@ -1,37 +1,26 @@
 package com.bone.android.a4v.oficial.util
 
 import android.app.Activity
-import android.app.ProgressDialog
 import android.app.UiModeManager
 import android.content.Context
-import android.content.Intent
 import android.content.pm.PackageManager
 import android.content.res.Configuration
-import android.net.Uri
-import android.os.Environment
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import androidx.core.content.FileProvider
-import kotlinx.coroutines.CoroutineScope
+import com.bone.android.a4v.oficial.ui.view.TvDialogHelper
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.json.JSONObject
-import java.io.File
-import java.io.FileOutputStream
 import java.util.concurrent.TimeUnit
 
 object AceStreamInstallerHelper {
 
     private const val VERSION_URL = "https://raw.githubusercontent.com/ArribaJesucristo/pina4viewer/main/version.json"
 
-    // Default fallback direct download URLs (Ace Stream Pro is universal and auto-updates)
     private const val DEFAULT_ATV_URL = "https://android.acestream.net/download/apk"
     private const val DEFAULT_MOBILE_URL = "https://android.acestream.net/download/apk"
 
-    // Recognized AceStream package names
     val TV_PACKAGES = listOf(
         "org.acestream.node.web",
         "org.acestream.node",
@@ -55,12 +44,9 @@ object AceStreamInstallerHelper {
         .connectTimeout(10, TimeUnit.SECONDS)
         .readTimeout(30, TimeUnit.SECONDS)
         .followRedirects(true)
-        .followSslRedirects(true)
+        .followSslRedirects(false)
         .build()
 
-    /**
-     * Determines whether the current device is an Android TV / Fire TV Stick or a Mobile / Tablet.
-     */
     fun isTvDevice(context: Context): Boolean {
         val uiModeManager = context.getSystemService(Context.UI_MODE_SERVICE) as? UiModeManager
         val isTvMode = uiModeManager?.currentModeType == Configuration.UI_MODE_TYPE_TELEVISION
@@ -69,9 +55,6 @@ object AceStreamInstallerHelper {
         return isTvMode || hasLeanback || hasTvFeature
     }
 
-    /**
-     * Checks if any AceStream engine or player is installed on the device.
-     */
     fun isAceStreamInstalled(context: Context): Boolean {
         val pm = context.packageManager
         val allPackages = TV_PACKAGES + MOBILE_PACKAGES
@@ -80,16 +63,11 @@ object AceStreamInstallerHelper {
                 pm.getPackageInfo(pkg, 0)
                 return true
             } catch (_: Exception) {
-                // Not installed under this package name
             }
         }
         return false
     }
 
-    /**
-     * Prompts the user with a simple, grandmother-friendly dialog to install AceStream.
-     * On positive click, downloads the appropriate APK and launches Android's package installer.
-     */
     fun promptInstallDialog(
         activity: Activity,
         force: Boolean = false,
@@ -110,152 +88,61 @@ object AceStreamInstallerHelper {
             "Para ver este canal se necesita el reproductor deportivo.\n\nSolo se instala una vez ($deviceDesc).\n\n¿Deseas instalarlo ahora?"
         }
 
-        AlertDialog.Builder(activity)
-            .setTitle(title)
-            .setMessage(message)
-            .setPositiveButton("Instalar Ahora") { _, _ ->
-                startDownloadAndInstall(activity, isTv, onInstalled)
-            }
-            .setNegativeButton("Cancelar", null)
-            .show()
-    }
-
-    /**
-     * Resolves the download URL from version.json or defaults to GitHub Release assets.
-     */
-    private suspend fun resolveDownloadUrl(isTv: Boolean): String = withContext(Dispatchers.IO) {
-        try {
-            val request = Request.Builder()
-                .url(VERSION_URL)
-                .header("Cache-Control", "no-cache")
-                .build()
-
-            client.newCall(request).execute().use { response ->
-                if (response.isSuccessful) {
-                    val body = response.body?.string()
-                    if (!body.isNullOrEmpty()) {
-                        val json = JSONObject(body)
-                        val urlKey = if (isTv) "acestreamAtvUrl" else "acestreamMobileUrl"
-                        val remoteUrl = json.optString(urlKey, "")
-                        if (remoteUrl.isNotBlank() && remoteUrl.startsWith("http")) {
-                            return@withContext remoteUrl
-                        }
-                    }
+        TvDialogHelper.show(
+            activity,
+            AlertDialog.Builder(activity)
+                .setTitle(title)
+                .setMessage(message)
+                .setPositiveButton("Instalar Ahora") { _, _ ->
+                    startDownloadAndInstall(activity, isTv, onInstalled)
                 }
-            }
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
-
-        if (isTv) DEFAULT_ATV_URL else DEFAULT_MOBILE_URL
+                .setNegativeButton("Cancelar", null),
+            preferPositiveFocus = true
+        )
     }
 
-    /**
-     * Downloads the APK file displaying a horizontal progress dialog, then opens the Android installer.
-     */
+    private suspend fun resolveDownloadSpec(isTv: Boolean): ApkDownloadManager.RemoteApkSpec = withContext(Dispatchers.IO) {
+        val urlKey = if (isTv) "acestreamAtvUrl" else "acestreamMobileUrl"
+        val shaKey = if (isTv) "acestreamAtvSha256" else "acestreamMobileSha256"
+        val fallbackUrl = if (isTv) DEFAULT_ATV_URL else DEFAULT_MOBILE_URL
+        ApkDownloadManager.fetchRemoteApkSpec(
+            client = client,
+            manifestUrl = VERSION_URL,
+            urlKey = urlKey,
+            shaKey = shaKey
+        ) ?: ApkDownloadManager.RemoteApkSpec(fallbackUrl)
+    }
+
     fun startDownloadAndInstall(
         activity: Activity,
         isTv: Boolean = isTvDevice(activity),
         onInstalled: (() -> Unit)? = null
     ) {
-        val progressDialog = ProgressDialog(activity).apply {
-            setTitle("Instalando reproductor deportivo")
-            setMessage("Descargando AceStream Pro (${if (isTv) "Android TV" else "Móvil"})...\nPor favor espera unos segundos.")
-            isIndeterminate = false
-            setProgressStyle(ProgressDialog.STYLE_HORIZONTAL)
-            max = 100
-            setCancelable(false)
-            show()
-        }
-
-        CoroutineScope(Dispatchers.IO).launch {
-            try {
-                val downloadUrl = resolveDownloadUrl(isTv)
-
-                val request = Request.Builder()
-                    .url(downloadUrl)
-                    .header("User-Agent", "Pina4Viewer/${UpdateHelper.getAppVersionName(activity)}")
-                    .build()
-
-                client.newCall(request).execute().use { response ->
-                    if (!response.isSuccessful) {
-                        withContext(Dispatchers.Main) {
-                            progressDialog.dismiss()
-                            val errorMsg = when (response.code) {
-                                404 -> "El archivo APK aún no está disponible en el servidor (404).\nSube el APK a GitHub Releases o actualiza version.json."
-                                else -> "Error en el servidor al descargar: Código ${response.code}"
-                            }
-                            AlertDialog.Builder(activity)
-                                .setTitle("Aviso de Descarga")
-                                .setMessage(errorMsg)
-                                .setPositiveButton("Aceptar", null)
-                                .show()
-                        }
-                        return@launch
-                    }
-
-                    val body = response.body ?: return@launch
-                    val contentLength = body.contentLength()
-                    val targetDir = activity.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS) ?: activity.cacheDir
-                    val apkFileName = "acestream_pro.apk"
-                    val apkFile = File(targetDir, apkFileName)
-
-                    body.byteStream().use { input ->
-                        FileOutputStream(apkFile).use { output ->
-                            val buffer = ByteArray(8192)
-                            var bytesRead: Int
-                            var totalRead = 0L
-
-                            while (input.read(buffer).also { bytesRead = it } != -1) {
-                                output.write(buffer, 0, bytesRead)
-                                totalRead += bytesRead
-                                if (contentLength > 0) {
-                                    val progress = ((totalRead * 100) / contentLength).toInt()
-                                    withContext(Dispatchers.Main) {
-                                        progressDialog.progress = progress
-                                    }
-                                }
-                            }
-                            output.flush()
-                        }
-                    }
-
-                    withContext(Dispatchers.Main) {
-                        progressDialog.dismiss()
-                        installApk(activity, apkFile)
-                        onInstalled?.invoke()
-                    }
+        val verName = UpdateHelper.getAppVersionName(activity)
+        ApkDownloadManager.downloadSpecAndInstall(
+            activity = activity,
+            client = client,
+            title = "Instalando reproductor deportivo",
+            initialMessage = "Descargando AceStream Pro (${if (isTv) "Android TV" else "Móvil"})...\nPor favor espera unos segundos.",
+            apkFileName = "acestream_pro.apk",
+            userAgent = "Pina4Viewer/$verName",
+            specProvider = { resolveDownloadSpec(isTv) },
+            onErrorFallback = { act, code, err ->
+                val errorMsg = when (code) {
+                    404 -> "El archivo APK aún no está disponible en el servidor (404)."
+                    null -> "Error durante la descarga: ${err?.localizedMessage ?: "desconocido"}"
+                    else -> "Error en el servidor al descargar: Código $code"
                 }
-            } catch (e: Exception) {
-                e.printStackTrace()
-                withContext(Dispatchers.Main) {
-                    progressDialog.dismiss()
-                    Toast.makeText(activity, "Error durante la descarga: ${e.localizedMessage}", Toast.LENGTH_LONG).show()
-                }
-            }
-        }
-    }
-
-    /**
-     * Launches the Android system package installer via FileProvider.
-     */
-    private fun installApk(activity: Activity, apkFile: File) {
-        try {
-            val contentUri = FileProvider.getUriForFile(
-                activity,
-                "${activity.packageName}.fileprovider",
-                apkFile
-            )
-
-            val intent = Intent(Intent.ACTION_VIEW).apply {
-                setDataAndType(contentUri, "application/vnd.android.package-archive")
-                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_GRANT_READ_URI_PERMISSION
-            }
-            activity.startActivity(intent)
-        } catch (e: Exception) {
-            e.printStackTrace()
-            Toast.makeText(activity, "No se pudo abrir el instalador: ${e.localizedMessage}", Toast.LENGTH_LONG).show()
-        }
+                TvDialogHelper.show(
+                    act,
+                    AlertDialog.Builder(act)
+                        .setTitle("Aviso de Descarga")
+                        .setMessage(errorMsg)
+                        .setPositiveButton("Aceptar", null),
+                    preferPositiveFocus = true
+                )
+            },
+            onInstallLaunched = onInstalled
+        )
     }
 }
-

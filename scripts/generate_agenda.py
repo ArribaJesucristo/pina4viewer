@@ -222,6 +222,16 @@ def load_peticiones_channels():
     return channels_by_base
 
 
+def is_valid_direct_stream_url(url):
+    """Valida que una URL de stream directo no contenga placeholders SSAI/macros sin resolver."""
+    if not url or not (url.startswith("http://") or url.startswith("https://")):
+        return False
+    # Filtra plantillas publicitarias como [LMT], [DEVICE_ID], [IP], [UA], [IFA_TYPE], [APP_BUNDLE]
+    if re.search(r'\[[A-Z0-9_]{2,}\]', url) or any(ch.isspace() for ch in url):
+        return False
+    return True
+
+
 def load_tdt_sports_channels():
     """
     Carga canales deportivos en abierto de TDTChannels (Teledeporte, Gol Play, Esport3, Real Madrid TV).
@@ -230,6 +240,11 @@ def load_tdt_sports_channels():
     raw = fetch_url(url, timeout=8)
     if not raw:
         return OrderedDict()
+    return parse_tdt_sports_m3u(raw)
+
+
+def parse_tdt_sports_m3u(raw):
+    """Extrae canales deportivos válidos de un listado M3U de TDTChannels descartando URLs con macros."""
     channels_by_base = OrderedDict()
     current_name = ""
     for line in raw.splitlines():
@@ -240,6 +255,9 @@ def load_tdt_sports_channels():
             m = re.search(r',([^,]+)$', line)
             current_name = m.group(1).strip() if m else ""
         elif not line.startswith("#") and (line.startswith("http://") or line.startswith("https://")):
+            if not is_valid_direct_stream_url(line):
+                current_name = ""
+                continue
             low = current_name.lower()
             if any(k in low for k in ['teledeporte', 'gol play', 'esport3', 'real madrid tv']):
                 base = canonical_channel_name(current_name)
@@ -680,36 +698,43 @@ MESES = {
     'julio': 7, 'agosto': 8, 'septiembre': 9, 'octubre': 10, 'noviembre': 11, 'diciembre': 12
 }
 
+def _contains_keyword(text, keywords):
+    """Comprueba coincidencias de palabras/frases completas para evitar falsos positivos por subcadena."""
+    return any(re.search(r'(?<!\w)' + re.escape(kw) + r'(?!\w)', text) for kw in keywords)
+
+
 def normalize_sport(sport_raw, comp_raw=""):
     combined = f"{sport_raw} {comp_raw}".strip()
     s = clean_channel_name(combined)
-    if any(k in s for k in ['nfl', 'american football', 'futbol americano', 'super bowl', 'patriots', 'seahawks', 'chiefs', '49ers']):
+    if _contains_keyword(s, ['triatlon', 'triathlon', 'world championship series', 'ironman', 'duatlon']):
+        return 'TRIATLON'
+    if _contains_keyword(s, ['nfl', 'american football', 'futbol americano', 'super bowl', 'patriots', 'seahawks', 'chiefs', '49ers']):
         return 'FUTBOL AMERICANO'
-    if any(k in s for k in ['f1', 'formula', 'moto', 'motor', 'superbike', 'motogp', 'nascar', 'indycar', 'rally', 'dakar']):
+    if _contains_keyword(s, ['f1', 'formula 1', 'formula', 'moto', 'motor', 'superbike', 'motogp', 'moto2', 'moto3', 'nascar', 'indycar', 'rally', 'dakar']):
         return 'MOTOR'
-    if any(k in s for k in ['baloncesto', 'basket', 'nba', 'fiba', 'acb', 'euroliga', 'eurocup']):
+    if _contains_keyword(s, ['baloncesto', 'basket', 'basketball', 'nba', 'fiba', 'acb', 'euroliga', 'eurocup']):
         return 'BALONCESTO'
-    if any(k in s for k in ['tenis', 'tennis', 'us open', 'wta', 'atp', 'grand slam', 'roland garros', 'wimbledon', 'australian open', 'masters 1000']):
+    if _contains_keyword(s, ['tenis', 'tennis', 'us open', 'wta', 'atp', 'grand slam', 'roland garros', 'wimbledon', 'australian open', 'masters 1000']):
         return 'TENIS'
-    if any(k in s for k in ['ciclismo', 'cycling', 'vuelta', 'giro', 'tour de francia']):
+    if _contains_keyword(s, ['ciclismo', 'cycling', 'vuelta', 'giro', 'tour de francia', 'tour de france']):
         return 'CICLISMO'
-    if any(k in s for k in ['padel', 'paddle']):
+    if _contains_keyword(s, ['padel', 'paddle']):
         return 'PADEL'
-    if any(k in s for k in ['box', 'mma', 'ufc', 'lucha']):
+    if _contains_keyword(s, ['boxeo', 'boxing', 'box', 'mma', 'ufc', 'lucha']):
         return 'BOXEO'
-    if 'rugby' in s:
+    if _contains_keyword(s, ['rugby']):
         return 'RUGBY'
-    if any(k in s for k in ['balonmano', 'handball']):
+    if _contains_keyword(s, ['balonmano', 'handball']):
         return 'BALONMANO'
-    if any(k in s for k in ['snooker', 'billar', 'pool', 'abierto de inglaterra', 'english open', 'uk championship', 'international championship']):
+    if _contains_keyword(s, ['snooker', 'billar', 'pool', 'abierto de inglaterra', 'english open', 'uk championship', 'international championship']):
         return 'SNOOKER'
-    if any(k in s for k in ['golf', 'pga', 'liv golf', 'ryder cup', 'masters golf', 'dp world']):
+    if _contains_keyword(s, ['golf', 'pga', 'liv golf', 'ryder cup', 'masters golf', 'dp world']):
         return 'GOLF'
-    if any(k in s for k in ['beisbol', 'baseball', 'mlb']):
+    if _contains_keyword(s, ['beisbol', 'baseball', 'mlb']):
         return 'BEISBOL'
-    if any(k in s for k in ['hockey', 'nhl']):
+    if _contains_keyword(s, ['hockey', 'nhl']):
         return 'HOCKEY'
-    if any(k in s for k in [
+    if _contains_keyword(s, [
         'futbol', 'soccer', 'football', 'futsal', 'f sala', 'champions', 'uefa', 'laliga', 'europa league',
         'conference', 'premier league', 'bundesliga', 'serie a', 'copa del rey', 'youth league', 'conmebol', 'libertadores',
         'sudamericana', 'rayo', 'cadiz', 'vallecano', 'barca', 'barcelona', 'sevilla', 'betis', 'valencia',
@@ -1283,8 +1308,23 @@ def load_previous_agenda(today):
                         pass
                 break
 
-        # If previous agenda is from a past date (yesterday or older), 'Hoy' in that file is NOT today!
+        from datetime import datetime, timedelta
+
+        # Check metadata timestamp to see when the previous agenda was generated
+        meta_date = None
+        for item in data:
+            if item.get("_metadata") or "updatedAt" in item:
+                upd = item.get("updatedAt", "")
+                if upd and len(upd) >= 10:
+                    try:
+                        meta_date = datetime.strptime(upd[:10], "%d/%m/%Y").date()
+                    except Exception:
+                        pass
+                    break
+
+        # If previous agenda is from today, keep 'Hoy'; if from yesterday, promote 'Mañana' -> 'Hoy'
         is_same_day = (meta_date == today)
+        is_yesterday = (meta_date == (today - timedelta(days=1)))
 
         prev_events = []
         for ev in data:
@@ -1304,6 +1344,10 @@ def load_previous_agenda(today):
             if d == "Hoy":
                 if is_same_day:
                     prev_events.append(ev_copy)
+            elif d in ("Mañana", "Manana"):
+                if is_yesterday:
+                    ev_copy["date"] = "Hoy"
+                    prev_events.append(ev_copy)
             elif re.match(r'^\d{2}/\d{2}/\d{4}$', d):
                 try:
                     ev_d = datetime.strptime(d, "%d/%m/%Y").date()
@@ -1316,6 +1360,24 @@ def load_previous_agenda(today):
     except Exception as e:
         print(f"Aviso al cargar agenda previa: {e}")
         return []
+
+def get_madrid_now():
+    """Devuelve datetime aware en Europe/Madrid usando ZoneInfo con fallback CET/CEST automático."""
+    from datetime import datetime, timezone, timedelta
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo("Europe/Madrid"))
+    except Exception:
+        now_utc = datetime.now(timezone.utc)
+        year = now_utc.year
+        # Último domingo de marzo a las 01:00 UTC -> último domingo de octubre a las 01:00 UTC
+        mar_31 = datetime(year, 3, 31, 1, 0, tzinfo=timezone.utc)
+        dst_start = mar_31 - timedelta(days=(mar_31.weekday() + 1) % 7)
+        oct_31 = datetime(year, 10, 31, 1, 0, tzinfo=timezone.utc)
+        dst_end = oct_31 - timedelta(days=(oct_31.weekday() + 1) % 7)
+        offset_hours = 2 if dst_start <= now_utc < dst_end else 1
+        return now_utc.astimezone(timezone(timedelta(hours=offset_hours)))
+
 
 def generate_piñavision_agenda():
     print("=== Generando agenda PIÑAVISION ===")
@@ -1365,15 +1427,8 @@ def generate_piñavision_agenda():
     print(f"Streams directos de eventos cargados: {len(direct_eventos)}")
 
     # Setup dates for Madrid timezone
-    from datetime import datetime, timedelta
-    try:
-        from zoneinfo import ZoneInfo
-        madrid_tz = ZoneInfo("Europe/Madrid")
-    except Exception:
-        import datetime as dt
-        madrid_tz = dt.timezone(dt.timedelta(hours=2))
-
-    now_madrid = datetime.now(madrid_tz)
+    from datetime import timedelta
+    now_madrid = get_madrid_now()
     today = now_madrid.date()
     today_str = today.strftime("%d/%m/%Y")
     tomorrow_str = (today + timedelta(days=1)).strftime("%d/%m/%Y")
@@ -1602,15 +1657,7 @@ def generate_piñavision_agenda():
     print(f"Total eventos generados: {len(total_agenda)} (Eventos: {len(schedule_events)}, Canales 24/7: {len(channels_247)})")
 
     if total_agenda:
-        from datetime import datetime
-        try:
-            from zoneinfo import ZoneInfo
-            madrid_tz = ZoneInfo("Europe/Madrid")
-        except Exception:
-            import datetime as dt
-            madrid_tz = dt.timezone(dt.timedelta(hours=2))
-
-        now_madrid = datetime.now(madrid_tz)
+        now_madrid = get_madrid_now()
         updated_str = now_madrid.strftime("%d/%m/%Y %H:%M")
 
         metadata_item = {

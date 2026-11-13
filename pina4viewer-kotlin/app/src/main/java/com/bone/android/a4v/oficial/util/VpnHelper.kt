@@ -87,6 +87,33 @@ object VpnHelper {
         }
     }
 
+    /**
+     * Resuelve la app VPN preferida según el orden de prioridad en [KNOWN_VPN_APPS]
+     * (Proton VPN tiene prioridad sobre Psiphon y otras VPNs).
+     */
+    fun resolvePreferredVpnApp(installedPackages: Collection<String>): VpnApp? {
+        return KNOWN_VPN_APPS.firstOrNull { it.packageName in installedPackages }
+    }
+
+    /**
+     * Abre directamente la VPN prioritaria instalada (Proton si existe, si no Psiphon/otra)
+     * tanto para activarla como para desactivarla sin diálogos intermedios.
+     * Si no hay ninguna VPN de la lista instalada pero hay una VPN activa, abre Ajustes VPN.
+     * Devuelve `false` solo cuando no hay ninguna VPN instalada ni activa.
+     */
+    fun openVpnAppOrSettings(context: Context): Boolean {
+        val installedVpn = getInstalledVpnApp(context)
+        if (installedVpn != null) {
+            launchVpnApp(context, installedVpn)
+            return true
+        }
+        if (isVpnActive(context)) {
+            openSystemVpnSettings(context)
+            return true
+        }
+        return false
+    }
+
     fun getInstalledVpnApp(context: Context): VpnApp? {
         val pm = context.packageManager
         for (vpn in KNOWN_VPN_APPS) {
@@ -102,10 +129,15 @@ object VpnHelper {
     fun launchVpnApp(context: Context, vpn: VpnApp) {
         val pm = context.packageManager
         val intent = pm.getLaunchIntentForPackage(vpn.packageName)
+            ?: pm.getLeanbackLaunchIntentForPackage(vpn.packageName)
         if (intent != null) {
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             Toast.makeText(context, "🚀 Abriendo ${vpn.name}...", Toast.LENGTH_SHORT).show()
-            context.startActivity(intent)
+            try {
+                context.startActivity(intent)
+            } catch (_: Exception) {
+                openSystemVpnSettings(context)
+            }
         } else {
             val storeIntent = Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=${vpn.packageName}")).apply {
                 flags = Intent.FLAG_ACTIVITY_NEW_TASK
@@ -130,7 +162,7 @@ object VpnHelper {
                 caps.hasTransport(NetworkCapabilities.TRANSPORT_VPN)
             } else {
                 @Suppress("DEPRECATION")
-                val networks = cm.allNetworks ?: return false
+                val networks = cm.allNetworks
                 for (network in networks) {
                     val caps = cm.getNetworkCapabilities(network)
                     if (caps != null && caps.hasTransport(NetworkCapabilities.TRANSPORT_VPN)) {
