@@ -1,42 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "13/11/2026 17:11",
+    "updatedAt": "13/11/2026 17:21",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "ONE Friday Fights 178",
-    "sport": "BOXEO",
-    "competition": "ONE Fight Night",
-    "time": "14:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 3",
-        "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 4",
-        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_47"
   },
   {
     "title": "World Championships, Istanbul",
@@ -66,6 +32,40 @@
       {
         "name": "[LiveTV] Polish Opción 4",
         "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_47"
+  },
+  {
+    "title": "ONE Friday Fights 178",
+    "sport": "BOXEO",
+    "competition": "ONE Fight Night",
+    "time": "14:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 3",
+        "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 4",
+        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -132,7 +132,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_51"
   },
   {
     "id": "pina_2",
@@ -176,23 +176,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_49"
-  },
-  {
-    "title": "Torpedo NN vs Lada Tl",
-    "sport": "HOCKEY",
-    "competition": "KHL",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_51"
+    "id": "pina_50"
   },
   {
     "title": "Annika Driven by Gainbridge",
@@ -211,6 +195,22 @@
     "id": "pina_52"
   },
   {
+    "title": "Torpedo NN vs Lada Tl",
+    "sport": "HOCKEY",
+    "competition": "KHL",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_53"
+  },
+  {
     "title": "Severstal vs Traktor",
     "sport": "KHL",
     "competition": "KHL",
@@ -224,7 +224,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_54"
+    "id": "pina_55"
   },
   {
     "title": "Torpedo NN vs Lada Tl",
@@ -240,7 +240,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_55"
+    "id": "pina_56"
+  },
+  {
+    "title": "Projekt Warszawa vs CHKS Chelm",
+    "sport": "OTROS",
+    "competition": "Poland. PlusLiga",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_49"
   },
   {
     "title": "SKA vs Dinamo Mn",
@@ -268,7 +284,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_56"
+    "id": "pina_57"
   },
   {
     "title": "Grand Prix of Zagreb",
@@ -280,22 +296,6 @@
       {
         "name": "[LiveTV] Russian Opción 1",
         "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_57"
-  },
-  {
-    "title": "Projekt Warszawa vs CHKS Chelm",
-    "sport": "POLAND. PLUSLIGA",
-    "competition": "Poland. PlusLiga",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -316,7 +316,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_53"
+    "id": "pina_54"
   },
   {
     "id": "pina_3",
