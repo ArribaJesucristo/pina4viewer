@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/11/2026 20:32",
+    "updatedAt": "14/11/2026 20:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -140,7 +140,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_43"
+    "id": "pina_42"
   },
   {
     "title": "BC Andorra vs Tenerife",
@@ -356,7 +356,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_32"
+    "id": "pina_33"
   },
   {
     "title": "Real Madrid (W) vs Badalona (W)",
@@ -391,15 +391,39 @@
     "id": "pina_30"
   },
   {
-    "title": "Sweden SWE vs Bosnia and Herzegovina BIH",
+    "title": "Northern Ireland NIR vs Ukraine UKR",
     "sport": "FUTBOL",
     "competition": "UEFA Nations League",
     "time": "20:45",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Turkish Opción 1",
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "bc99becb2a74f8f455d6dbaa3bd85c6c7e938a6c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "3147c586346aee00c005d1caa55204d38678c95f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "8442b5c7c99e5af57c2c40c1e28153072968988a",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Turkish Opción 2",
         "streamId": "b2de6896bde31180ac213fce395c437fa3b2a892",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "350b2044f1c9e87e18d8fbda1bcc456c22cf9296",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
@@ -414,12 +438,6 @@
         "streamId": "c9d6412050226de0968cea19a383b50dc1966363",
         "type": "ACESTREAM",
         "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "3147c586346aee00c005d1caa55204d38678c95f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
       }
     ],
     "id": "pina_31"
@@ -432,31 +450,37 @@
     "date": "Hoy",
     "channels": [
       {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "016d48fb89bb9505ab3f883db1bfb3a7c0a3eccc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
         "name": "[LiveTV] English 8000kbps",
         "streamId": "cba8d369eac629b577750edb90370cd1c5fb03b7",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Dutch Opción 2",
+        "name": "[LiveTV] Dutch Opción 3",
         "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] German Opción 3",
+        "name": "[LiveTV] German Opción 4",
         "streamId": "897e73c9d578848f596585314ecb9ae067c0e229",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Polish Opción 4",
+        "name": "[LiveTV] Polish Opción 5",
         "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_33"
+    "id": "pina_32"
   },
   {
     "title": "Romania ROU vs Poland POL",
@@ -466,7 +490,13 @@
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Polish Opción 1",
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "aca05dc506242324c1727525d0535ceda24f8dea",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 2",
         "streamId": "35575a31d76f6c5f5e9e6364dacfdeca3b85f2ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
@@ -543,6 +573,22 @@
     ]
   },
   {
+    "title": "Cage Warriors",
+    "sport": "CAGE WARRIORS",
+    "competition": "Cage Warriors",
+    "time": "21:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "9e7fe279f421b734a8af9e68320955fd16f80b4b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_41"
+  },
+  {
     "title": "Jessica Pegula (W) vs Mirra Andreeva (W)",
     "sport": "TENIS",
     "competition": "WTA. Finals. Fort Worth",
@@ -574,23 +620,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_41"
-  },
-  {
-    "title": "Cage Warriors",
-    "sport": "CAGE WARRIORS",
-    "competition": "Cage Warriors",
-    "time": "21:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish Opción 1",
-        "streamId": "9e7fe279f421b734a8af9e68320955fd16f80b4b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_42"
+    "id": "pina_43"
   },
   {
     "id": "pina_9",
