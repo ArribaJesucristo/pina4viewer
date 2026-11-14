@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/11/2026 16:02",
+    "updatedAt": "14/11/2026 16:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -90,7 +90,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_45"
+    "id": "pina_52"
   },
   {
     "title": "Volga Ulyanovsk vs Torpedo M",
@@ -166,7 +166,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_48"
+    "id": "pina_49"
   },
   {
     "title": "Arabian Aces vs Emirates Eagles",
@@ -276,7 +276,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_49"
+    "id": "pina_50"
   },
   {
     "title": "Superprestige Nil",
@@ -342,7 +342,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_51"
   },
   {
     "title": "Stockport vs Reading",
@@ -425,15 +425,31 @@
     ]
   },
   {
-    "title": "Spain vs Chile",
-    "sport": "NATIONS CUP",
-    "competition": "Nations Cup",
+    "title": "Galatasaray vs Fenerbahce",
+    "sport": "TURKEY. EFELER LIGI",
+    "competition": "Turkey. Efeler Ligi",
     "time": "17:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Spanish Opción 1",
-        "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "4b129146077c1e357e4ab341448b9fb629f939dc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_45"
+  },
+  {
+    "title": "Yas Lions vs Delhi Bulls",
+    "sport": "UAE. T10 LEAGUE",
+    "competition": "UAE. T10 League",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -476,34 +492,18 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_51"
+    "id": "pina_48"
   },
   {
-    "title": "Galatasaray vs Fenerbahce",
-    "sport": "TURKEY. EFELER LIGI",
-    "competition": "Turkey. Efeler Ligi",
+    "title": "Spain vs Chile",
+    "sport": "NATIONS CUP",
+    "competition": "Nations Cup",
     "time": "17:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b129146077c1e357e4ab341448b9fb629f939dc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_52"
-  },
-  {
-    "title": "Yas Lions vs Delhi Bulls",
-    "sport": "UAE. T10 LEAGUE",
-    "competition": "UAE. T10 League",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
+        "name": "[LiveTV] Spanish Opción 1",
+        "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
