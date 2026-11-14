@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/11/2026 15:02",
+    "updatedAt": "14/11/2026 15:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -300,7 +300,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_46"
+    "id": "pina_47"
   },
   {
     "title": "Arabian Aces vs Emirates Eagles",
@@ -342,13 +342,25 @@
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Dutch Opción 1",
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "016d48fb89bb9505ab3f883db1bfb3a7c0a3eccc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 3",
         "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Polish Opción 2",
+        "name": "[LiveTV] Polish Opción 4",
         "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
         "type": "ACESTREAM",
         "source": "LiveTV"
@@ -398,7 +410,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_47"
+    "id": "pina_46"
   },
   {
     "title": "Superprestige Nil",
