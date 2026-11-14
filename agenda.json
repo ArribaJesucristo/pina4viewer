@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/11/2026 08:11",
+    "updatedAt": "14/11/2026 08:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -21,15 +21,15 @@
     "id": "pina_39"
   },
   {
-    "title": "Geelong Cats (W) vs Sydney Swans (W)",
-    "sport": "OTROS",
-    "competition": "Australia. Women. AFL",
-    "time": "06:05",
+    "title": "Central Coast Mariners (W) vs Perth Glory (W)",
+    "sport": "FUTBOL",
+    "competition": "Australia. Women. A-League",
+    "time": "07:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -71,22 +71,6 @@
     "id": "pina_41"
   },
   {
-    "title": "Central Coast Mariners (W) vs Perth Glory (W)",
-    "sport": "FUTBOL",
-    "competition": "Australia. Women. A-League",
-    "time": "07:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_42"
-  },
-  {
     "title": "DP World Tour Championship",
     "sport": "GOLF",
     "competition": "DP World Tour",
@@ -106,7 +90,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_43"
+    "id": "pina_42"
   },
   {
     "title": "Amurskie Tigry vs SKA-1946",
@@ -128,7 +112,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_44"
+    "id": "pina_43"
   },
   {
     "title": "Amurskie Tigry vs SKA-1946",
@@ -150,7 +134,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_45"
+    "id": "pina_44"
   },
   {
     "title": "Perth (W) vs Adelaide (W)",
@@ -162,6 +146,22 @@
       {
         "name": "[LiveTV] English Opción 1",
         "streamId": "6d95e4b0893e155cc674b84e0763150c445d3ddd",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_45"
+  },
+  {
+    "title": "Carlton Blues (W) vs Hawthorn (W)",
+    "sport": "OTROS",
+    "competition": "Australia. Women. AFL",
+    "time": "09:15",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
