@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/11/2026 21:11",
+    "updatedAt": "14/11/2026 21:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -340,18 +340,6 @@
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "3147c586346aee00c005d1caa55204d38678c95f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "bc99becb2a74f8f455d6dbaa3bd85c6c7e938a6c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
         "name": "[LiveTV] Russian 8000kbps",
         "streamId": "8442b5c7c99e5af57c2c40c1e28153072968988a",
         "type": "ACESTREAM",
@@ -360,6 +348,18 @@
       {
         "name": "[LiveTV] Turkish Opción 2",
         "streamId": "b2de6896bde31180ac213fce395c437fa3b2a892",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "3147c586346aee00c005d1caa55204d38678c95f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "bc99becb2a74f8f455d6dbaa3bd85c6c7e938a6c",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
