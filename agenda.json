@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/11/2026 08:01",
+    "updatedAt": "14/11/2026 08:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -21,22 +21,6 @@
     "id": "pina_39"
   },
   {
-    "title": "Grand Prix Everett",
-    "sport": "OTROS",
-    "competition": "Figure Skating",
-    "time": "06:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_40"
-  },
-  {
     "title": "Geelong Cats (W) vs Sydney Swans (W)",
     "sport": "OTROS",
     "competition": "Australia. Women. AFL",
@@ -50,7 +34,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_41"
+    "id": "pina_40"
   },
   {
     "title": "World Tour, Dubai",
@@ -84,7 +68,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_42"
+    "id": "pina_41"
   },
   {
     "title": "Central Coast Mariners (W) vs Perth Glory (W)",
@@ -100,7 +84,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_43"
+    "id": "pina_42"
   },
   {
     "title": "DP World Tour Championship",
@@ -122,7 +106,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_44"
+    "id": "pina_43"
   },
   {
     "title": "Amurskie Tigry vs SKA-1946",
@@ -144,7 +128,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_45"
+    "id": "pina_44"
   },
   {
     "title": "Amurskie Tigry vs SKA-1946",
@@ -162,6 +146,22 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_45"
+  },
+  {
+    "title": "Perth (W) vs Adelaide (W)",
+    "sport": "OTROS",
+    "competition": "Australia. Women. WBBL",
+    "time": "09:10",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "6d95e4b0893e155cc674b84e0763150c445d3ddd",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -395,6 +395,12 @@
         "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
         "type": "ACESTREAM",
         "source": "New Era"
+      },
+      {
+        "name": "Dubai (Semifinales) - Opción Directa 1 [Comunidad]",
+        "streamId": "af393f93814d03160d48d2730759593b7bea5b47",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
       }
     ]
   },
@@ -655,6 +661,12 @@
         "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "Joventut - Basket Zaragoza - Opción Directa 1 [Comunidad]",
+        "streamId": "fa931cbc87dc9d66fdd30a9644e054b403960056",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
       }
     ]
   },
