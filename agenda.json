@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/11/2026 12:02",
+    "updatedAt": "14/11/2026 12:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -95,28 +95,6 @@
     ]
   },
   {
-    "title": "Yenisey vs Uralmash",
-    "sport": "BALONCESTO",
-    "competition": "VTB United League",
-    "time": "10:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "762e1d11f7d07029f316c6f61b8ef73289c6673c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_41"
-  },
-  {
     "title": "World Cup, Beijing",
     "sport": "OTROS",
     "competition": "Speed skating",
@@ -130,7 +108,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_42"
+    "id": "pina_41"
   },
   {
     "id": "pina_3",
@@ -196,7 +174,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_43"
+    "id": "pina_42"
   },
   {
     "title": "Petkim Spor vs Turk Telekom",
@@ -212,7 +190,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_49"
+    "id": "pina_50"
   },
   {
     "id": "pina_4",
@@ -290,7 +268,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_44"
+    "id": "pina_43"
   },
   {
     "title": "LKS Lodz (W) vs UNI Opole (W)",
@@ -306,7 +284,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_45"
+    "id": "pina_44"
   },
   {
     "title": "Hoffenheim (W) vs Freiburg (W)",
@@ -316,19 +294,19 @@
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] English Opción 1",
+        "name": "[LiveTV] German Opción 1",
         "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] English Opción 2",
+        "name": "[LiveTV] German Opción 2",
         "streamId": "897e73c9d578848f596585314ecb9ae067c0e229",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_46"
+    "id": "pina_45"
   },
   {
     "title": "Neftekhimik vs Avangard",
@@ -388,7 +366,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_51"
   },
   {
     "title": "World Cup, Levi",
@@ -422,7 +400,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_51"
+    "id": "pina_46"
   },
   {
     "id": "pina_6",
@@ -513,6 +491,22 @@
         "source": "Comunidad"
       }
     ]
+  },
+  {
+    "title": "Champion Series, Abu Dhabi",
+    "sport": "WORLD TOUR",
+    "competition": "World Tour",
+    "time": "13:10",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_49"
   },
   {
     "id": "pina_9",
