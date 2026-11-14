@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/11/2026 14:31",
+    "updatedAt": "14/11/2026 14:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -102,7 +102,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_49"
+    "id": "pina_50"
   },
   {
     "title": "AZS Krakow (W) vs UKS Lodz (W)",
@@ -424,7 +424,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_48"
+    "id": "pina_52"
   },
   {
     "title": "Volga Ulyanovsk vs Torpedo M",
@@ -472,7 +472,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_49"
   },
   {
     "title": "Arabian Aces vs Emirates Eagles",
@@ -513,6 +513,22 @@
     "id": "pina_47"
   },
   {
+    "title": "Skra Belchatow vs Olsztyn",
+    "sport": "POLAND. PLUSLIGA",
+    "competition": "Poland. PlusLiga",
+    "time": "15:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_48"
+  },
+  {
     "title": "Lokomotiv vs Shanghai Dragons",
     "sport": "KHL",
     "competition": "KHL",
@@ -533,22 +549,6 @@
       }
     ],
     "id": "pina_51"
-  },
-  {
-    "title": "Skra Belchatow vs Olsztyn",
-    "sport": "POLAND. PLUSLIGA",
-    "competition": "Poland. PlusLiga",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_52"
   },
   {
     "title": "Superprestige Nil",
