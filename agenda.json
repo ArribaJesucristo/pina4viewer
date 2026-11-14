@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/11/2026 18:32",
+    "updatedAt": "14/11/2026 18:42",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -253,34 +253,6 @@
     ]
   },
   {
-    "title": "Georgia GEO vs Hungary HUN",
-    "sport": "FUTBOL",
-    "competition": "UEFA Nations League",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "016d48fb89bb9505ab3f883db1bfb3a7c0a3eccc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_31"
-  },
-  {
     "title": "Norway NOR vs Wales WAL",
     "sport": "FUTBOL",
     "competition": "UEFA Nations League",
@@ -314,6 +286,34 @@
       {
         "name": "[LiveTV] Dutch Opción 5",
         "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_30"
+  },
+  {
+    "title": "Georgia GEO vs Hungary HUN",
+    "sport": "FUTBOL",
+    "competition": "UEFA Nations League",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "016d48fb89bb9505ab3f883db1bfb3a7c0a3eccc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -470,7 +470,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_30"
+    "id": "pina_31"
   },
   {
     "title": "Fleetwood Town vs Tranmere Rovers",
