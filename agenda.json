@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/11/2026 18:02",
+    "updatedAt": "14/11/2026 18:12",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -269,22 +269,6 @@
     ]
   },
   {
-    "title": "Slepsk Suwalki vs Kedzierzyn-Kozle",
-    "sport": "OTROS",
-    "competition": "Poland. PlusLiga",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_30"
-  },
-  {
     "title": "Georgia GEO vs Hungary HUN",
     "sport": "FUTBOL",
     "competition": "UEFA Nations League",
@@ -310,7 +294,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_31"
+    "id": "pina_30"
   },
   {
     "title": "Norway NOR vs Wales WAL",
@@ -346,6 +330,22 @@
       {
         "name": "[LiveTV] Dutch Opción 5",
         "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_31"
+  },
+  {
+    "title": "Slepsk Suwalki vs Kedzierzyn-Kozle",
+    "sport": "OTROS",
+    "competition": "Poland. PlusLiga",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
