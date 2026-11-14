@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "14/11/2026 10:01",
+    "updatedAt": "14/11/2026 10:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -155,6 +155,22 @@
     ]
   },
   {
+    "title": "World Cup, Beijing",
+    "sport": "OTROS",
+    "competition": "Speed skating",
+    "time": "10:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_43"
+  },
+  {
     "title": "Yenisey vs Uralmash",
     "sport": "BALONCESTO",
     "competition": "VTB United League",
@@ -170,22 +186,6 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_43"
-  },
-  {
-    "title": "World Cup, Beijing",
-    "sport": "OTROS",
-    "competition": "Speed skating",
-    "time": "10:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish Opción 1",
-        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
