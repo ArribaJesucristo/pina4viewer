@@ -1,33 +1,11 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "15/11/2026 12:31",
+    "updatedAt": "15/11/2026 12:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
     "id": "pina_1",
-    "title": "Jornada 4",
-    "sport": "GOLF",
-    "competition": "CHAMPIONSHIP DUBAI",
-    "time": "09:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "M+ Golf - Opción 1 [New Loop]",
-        "streamId": "872608e734992db636eb79426802cd08f4029afb",
-        "type": "ACESTREAM",
-        "source": "New Loop"
-      },
-      {
-        "name": "M+ Golf - Opción 2 [RCP]",
-        "streamId": "4f945b0ba4206fa2676b61e9eaa465ac3dcc8122",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      }
-    ]
-  },
-  {
-    "id": "pina_2",
     "title": "Eslalon Masculino (Levi)",
     "sport": "ESQUÍ",
     "competition": "COPA DEL MUNDO",
@@ -98,7 +76,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_20"
+    "id": "pina_19"
   },
   {
     "title": "Sibir vs Dynamo Msk",
@@ -120,10 +98,10 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_28"
+    "id": "pina_27"
   },
   {
-    "id": "pina_3",
+    "id": "pina_2",
     "title": "Real Sociedad - Athletic Bilbao",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -170,7 +148,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_19"
+    "id": "pina_17"
   },
   {
     "title": "Grand Prix",
@@ -186,7 +164,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_21"
+    "id": "pina_20"
   },
   {
     "title": "Madrid (W) vs Logrono (W)",
@@ -202,7 +180,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_22"
+    "id": "pina_21"
   },
   {
     "title": "Den Haag (W) vs De Graafschap (W)",
@@ -218,7 +196,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_24"
+    "id": "pina_23"
   },
   {
     "title": "Malaga vs Girona",
@@ -256,7 +234,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_23"
+    "id": "pina_22"
   },
   {
     "title": "Royal Champs vs Arabian Aces",
@@ -272,7 +250,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_25"
+    "id": "pina_24"
   },
   {
     "title": "Ufa vs Spartak Kostroma",
@@ -294,7 +272,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_26"
+    "id": "pina_25"
   },
   {
     "title": "World Cup, Levi",
@@ -350,10 +328,44 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_27"
+    "id": "pina_26"
   },
   {
-    "id": "pina_4",
+    "title": "X2O Badkamers Trophy",
+    "sport": "CYCLO-CROSS",
+    "competition": "Cyclo-Cross",
+    "time": "13:40",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "5f966c123759de46dff29c379266b7a403452033",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 3",
+        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 4",
+        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_28"
+  },
+  {
+    "id": "pina_3",
     "title": "CD Tenerife - Ceuta FC",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -369,7 +381,7 @@
     ]
   },
   {
-    "id": "pina_5",
+    "id": "pina_4",
     "title": "Zverev - Jodar",
     "sport": "TENIS",
     "competition": "ATP FINALS",
@@ -415,7 +427,7 @@
     ]
   },
   {
-    "id": "pina_6",
+    "id": "pina_5",
     "title": "Internacional Carrera Masculina (Soria)",
     "sport": "CROSS",
     "competition": "CAMPO A TRAVÉS",
@@ -449,7 +461,7 @@
     ]
   },
   {
-    "id": "pina_7",
+    "id": "pina_6",
     "title": "Dubai (Finales)",
     "sport": "PADEL",
     "competition": "PREMIER PADEL",
@@ -471,7 +483,7 @@
     ]
   },
   {
-    "id": "pina_8",
+    "id": "pina_7",
     "title": "Detroit Lions - New England Patriots",
     "sport": "FUTBOL AMERICANO",
     "competition": "JORNADA 10",
@@ -493,7 +505,7 @@
     ]
   },
   {
-    "id": "pina_9",
+    "id": "pina_8",
     "title": "Escocia - Australia",
     "sport": "RUGBY",
     "competition": "NATIONS CHAMPIONSHIP",
@@ -521,7 +533,7 @@
     ]
   },
   {
-    "id": "pina_10",
+    "id": "pina_9",
     "title": "Valencia - Granada",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -549,7 +561,7 @@
     ]
   },
   {
-    "id": "pina_11",
+    "id": "pina_10",
     "title": "SD Eibar - Cádiz CF",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -565,7 +577,7 @@
     ]
   },
   {
-    "id": "pina_12",
+    "id": "pina_11",
     "title": "CD Eldense - CE Sabadell",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -587,7 +599,7 @@
     ]
   },
   {
-    "id": "pina_13",
+    "id": "pina_12",
     "title": "Baskonia - Real Madrid",
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
@@ -621,7 +633,7 @@
     ]
   },
   {
-    "id": "pina_14",
+    "id": "pina_13",
     "title": "Green Bay Packers - Minnesota Vikings",
     "sport": "FUTBOL AMERICANO",
     "competition": "JORNADA 10",
@@ -643,7 +655,7 @@
     ]
   },
   {
-    "id": "pina_15",
+    "id": "pina_14",
     "title": "Shelton - Fils",
     "sport": "TENIS",
     "competition": "ATP FINALS",
@@ -671,7 +683,7 @@
     ]
   },
   {
-    "id": "pina_16",
+    "id": "pina_15",
     "title": "España - Inglaterra",
     "sport": "FUTBOL",
     "competition": "NATIONS LEAGUE",
@@ -705,7 +717,7 @@
     ]
   },
   {
-    "id": "pina_17",
+    "id": "pina_16",
     "title": "Los Angeles Rams @ Arizona Cardinals",
     "sport": "FUTBOL AMERICANO",
     "competition": "JORNADA 10",
