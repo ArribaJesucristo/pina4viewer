@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "15/11/2026 15:31",
+    "updatedAt": "15/11/2026 15:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -169,28 +169,6 @@
     "id": "pina_23"
   },
   {
-    "title": "RB Munich vs Krefeld Pinguine",
-    "sport": "HOCKEY",
-    "competition": "Germany. DEL",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_24"
-  },
-  {
     "title": "German Championship",
     "sport": "TENIS",
     "competition": "Germany. Bundesliga",
@@ -204,23 +182,29 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_25"
+    "id": "pina_24"
   },
   {
-    "title": "Leicester Tigers vs Saracens",
-    "sport": "RUGBY",
-    "competition": "England. Premiership Rugby Cup",
+    "title": "Fischtown Pinguins vs Augsburg",
+    "sport": "HOCKEY",
+    "competition": "Germany. DEL",
     "time": "14:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_26"
+    "id": "pina_25"
   },
   {
     "title": "Grand Slam",
@@ -256,6 +240,22 @@
       {
         "name": "[LiveTV] Polish Opción 5",
         "streamId": "5f595b1bbade5e7c915d99f90645f4c30d4ba540",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_26"
+  },
+  {
+    "title": "Leicester Tigers vs Saracens",
+    "sport": "RUGBY",
+    "competition": "England. Premiership Rugby Cup",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -314,7 +314,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_30"
+    "id": "pina_29"
   },
   {
     "id": "pina_4",
@@ -339,22 +339,6 @@
     ]
   },
   {
-    "title": "LKPS Lublin vs Resovia Rzeszow",
-    "sport": "OTROS",
-    "competition": "Poland. PlusLiga",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_20"
-  },
-  {
     "title": "Cyprus CYP vs Montenegro MNE",
     "sport": "FUTBOL",
     "competition": "UEFA Nations League",
@@ -376,6 +360,22 @@
       {
         "name": "[LiveTV] Dutch Opción 3",
         "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_20"
+  },
+  {
+    "title": "LKPS Lublin vs Resovia Rzeszow",
+    "sport": "OTROS",
+    "competition": "Poland. PlusLiga",
+    "time": "15:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -408,7 +408,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_29"
+    "id": "pina_30"
   },
   {
     "title": "SKA vs Traktor",
@@ -489,22 +489,6 @@
     "id": "pina_33"
   },
   {
-    "title": "West Ham United (W) vs Charlton Athletic (W)",
-    "sport": "FUTBOL",
-    "competition": "England. Women. Super League",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "8dbe2d515e9131fa311353537736f8c94be9b26d",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_34"
-  },
-  {
     "title": "Aston Villa (W) vs Birmingham City (W)",
     "sport": "FUTBOL",
     "competition": "England. Women. Super League",
@@ -520,6 +504,22 @@
       {
         "name": "[LiveTV] English Opción 2",
         "streamId": "e61b6538df35e5016635dfa2b3073f5b82ee4c2b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_34"
+  },
+  {
+    "title": "West Ham United (W) vs Charlton Athletic (W)",
+    "sport": "FUTBOL",
+    "competition": "England. Women. Super League",
+    "time": "15:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "8dbe2d515e9131fa311353537736f8c94be9b26d",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -549,22 +549,6 @@
     "id": "pina_36"
   },
   {
-    "title": "SKA vs Traktor",
-    "sport": "KHL",
-    "competition": "KHL",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_38"
-  },
-  {
     "title": "Torpedo NN vs Dinamo Mn",
     "sport": "KHL",
     "competition": "KHL",
@@ -586,6 +570,22 @@
       {
         "name": "[LiveTV] Russian Opción 3",
         "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_38"
+  },
+  {
+    "title": "SKA vs Traktor",
+    "sport": "KHL",
+    "competition": "KHL",
+    "time": "15:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
