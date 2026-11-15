@@ -1,30 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "15/11/2026 13:41",
+    "updatedAt": "15/11/2026 13:51",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Sibir vs Dynamo Msk",
-    "sport": "HOCKEY",
-    "competition": "KHL",
-    "time": "11:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_18"
   },
   {
     "id": "pina_1",
@@ -74,7 +52,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_17"
+    "id": "pina_16"
   },
   {
     "title": "Grand Prix",
@@ -90,7 +68,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_19"
+    "id": "pina_18"
   },
   {
     "title": "Madrid (W) vs Logrono (W)",
@@ -106,7 +84,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_20"
+    "id": "pina_19"
   },
   {
     "title": "Den Haag (W) vs De Graafschap (W)",
@@ -122,7 +100,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_22"
+    "id": "pina_21"
   },
   {
     "title": "Malaga vs Girona",
@@ -138,7 +116,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_16"
+    "id": "pina_17"
   },
   {
     "title": "Ufa vs Spartak Kostroma",
@@ -160,7 +138,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_21"
+    "id": "pina_20"
   },
   {
     "title": "Royal Champs vs Arabian Aces",
@@ -176,7 +154,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_23"
+    "id": "pina_22"
   },
   {
     "title": "Ufa vs Spartak Kostroma",
@@ -198,7 +176,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_27"
+    "id": "pina_26"
   },
   {
     "title": "Lokomotiv Nowosibirsk vs Yenisey",
@@ -220,7 +198,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_24"
+    "id": "pina_23"
   },
   {
     "title": "Celtic (W) vs Rangers (W)",
@@ -236,7 +214,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_25"
+    "id": "pina_24"
   },
   {
     "title": "X2O Badkamers Trophy",
@@ -270,7 +248,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_26"
+    "id": "pina_25"
   },
   {
     "id": "pina_2",
@@ -388,7 +366,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_28"
+    "id": "pina_27"
   },
   {
     "title": "Leicester Tigers vs Saracens",
@@ -451,6 +429,40 @@
     "id": "pina_31"
   },
   {
+    "title": "World Championships, Istanbul",
+    "sport": "POWERLIFTING",
+    "competition": "Powerlifting",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 3",
+        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 4",
+        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_32"
+  },
+  {
     "title": "Grand Slam",
     "sport": "PDC",
     "competition": "PDC",
@@ -488,41 +500,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_32"
+    "id": "pina_33"
   },
   {
-    "title": "World Championships, Istanbul",
-    "sport": "POWERLIFTING",
-    "competition": "Powerlifting",
-    "time": "14:00",
+    "title": "Emirates Eagles vs Delhi Bulls",
+    "sport": "UAE. T10 LEAGUE",
+    "competition": "UAE. T10 League",
+    "time": "14:45",
     "date": "Hoy",
     "channels": [
       {
         "name": "[LiveTV] English 8000kbps",
-        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 3",
-        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 4",
-        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
+        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_33"
+    "id": "pina_28"
   },
   {
     "id": "pina_5",
