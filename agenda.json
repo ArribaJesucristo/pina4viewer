@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "15/11/2026 14:31",
+    "updatedAt": "15/11/2026 14:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -39,44 +39,6 @@
     ]
   },
   {
-    "title": "Ufa vs Spartak Kostroma",
-    "sport": "FUTBOL",
-    "competition": "Russia. First League",
-    "time": "12:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b7c5f21b435d79c823e47572655a9c157a3ba12",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_16"
-  },
-  {
-    "title": "Malaga vs Girona",
-    "sport": "BALONCESTO",
-    "competition": "Spain. ACB League",
-    "time": "12:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish Opción 1",
-        "streamId": "35575a31d76f6c5f5e9e6364dacfdeca3b85f2ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_17"
-  },
-  {
     "title": "Royal Champs vs Arabian Aces",
     "sport": "OTROS",
     "competition": "UAE. T10 League",
@@ -90,29 +52,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_18"
-  },
-  {
-    "title": "Ufa vs Spartak Kostroma",
-    "sport": "RUSSIA. FIRST LEAGUE",
-    "competition": "Russia. First League",
-    "time": "12:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b7c5f21b435d79c823e47572655a9c157a3ba12",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_29"
+    "id": "pina_19"
   },
   {
     "title": "Lokomotiv Nowosibirsk vs Yenisey",
@@ -134,7 +74,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_19"
+    "id": "pina_20"
   },
   {
     "title": "Celtic (W) vs Rangers (W)",
@@ -150,7 +90,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_20"
+    "id": "pina_21"
   },
   {
     "title": "X2O Badkamers Trophy",
@@ -184,7 +124,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_21"
+    "id": "pina_22"
   },
   {
     "id": "pina_2",
@@ -296,7 +236,29 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_22"
+    "id": "pina_23"
+  },
+  {
+    "title": "RB Munich vs Krefeld Pinguine",
+    "sport": "HOCKEY",
+    "competition": "Germany. DEL",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_24"
   },
   {
     "title": "Champion of Champions",
@@ -348,29 +310,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_23"
-  },
-  {
-    "title": "RB Munich vs Krefeld Pinguine",
-    "sport": "HOCKEY",
-    "competition": "Germany. DEL",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_24"
+    "id": "pina_25"
   },
   {
     "title": "German Championship",
@@ -386,7 +326,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_25"
+    "id": "pina_26"
   },
   {
     "title": "Grand Slam",
@@ -426,7 +366,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_26"
+    "id": "pina_27"
   },
   {
     "title": "Leicester Tigers vs Saracens",
@@ -442,10 +382,10 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_27"
+    "id": "pina_28"
   },
   {
-    "title": "RB Munich vs Krefeld Pinguine",
+    "title": "Fischtown Pinguins vs Augsburg",
     "sport": "GERMANY. DEL",
     "competition": "Germany. DEL",
     "time": "14:00",
@@ -453,18 +393,18 @@
     "channels": [
       {
         "name": "[LiveTV] German Opción 1",
-        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
         "name": "[LiveTV] German Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_32"
+    "id": "pina_33"
   },
   {
     "title": "MVV Maastricht vs Vitesse",
@@ -480,7 +420,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_28"
+    "id": "pina_29"
   },
   {
     "title": "Emirates Eagles vs Delhi Bulls",
@@ -496,7 +436,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_31"
+    "id": "pina_36"
   },
   {
     "id": "pina_5",
@@ -549,50 +489,6 @@
     "id": "pina_30"
   },
   {
-    "title": "SKA vs Traktor",
-    "sport": "KHL",
-    "competition": "KHL",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_33"
-  },
-  {
-    "title": "Torpedo NN vs Dinamo Mn",
-    "sport": "KHL",
-    "competition": "KHL",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 3",
-        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_34"
-  },
-  {
     "title": "LKPS Lublin vs Resovia Rzeszow",
     "sport": "POLAND. PLUSLIGA",
     "competition": "Poland. PlusLiga",
@@ -606,7 +502,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_35"
+    "id": "pina_31"
   },
   {
     "title": "X2O Badkamers Trophy",
@@ -640,7 +536,51 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_36"
+    "id": "pina_32"
+  },
+  {
+    "title": "Torpedo NN vs Dinamo Mn",
+    "sport": "KHL",
+    "competition": "KHL",
+    "time": "15:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 3",
+        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_34"
+  },
+  {
+    "title": "SKA vs Traktor",
+    "sport": "KHL",
+    "competition": "KHL",
+    "time": "15:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_35"
   },
   {
     "id": "pina_6",
@@ -905,6 +845,78 @@
       {
         "name": "DAZN 1 - Opción 3 [RCP]",
         "streamId": "47c6e8dadfba2b3bd013feecf4194ecceec428cd",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_16",
+    "title": "Pittsburgh Steelers - Cincinnati Bengals",
+    "sport": "FUTBOL AMERICANO",
+    "competition": "JORNADA 10",
+    "time": "02:15",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "CUATRO - Opción 1 [RCP]",
+        "streamId": "e8eec35f4662be1af96963245bfa88fb7d0242c4",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_17",
+    "title": "Alcaraz - Tiafoe",
+    "sport": "TENIS",
+    "competition": "ATP FINALS",
+    "time": "14:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "Movistar Plus+ - Opción 1 [New Era]",
+        "streamId": "67121cbb722b88ce4489717e9a87a26f60184ec9",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 2 [RCP]",
+        "streamId": "f559b9fea692a86e1a1de41cd1aa667e3fa02775",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 3 [RCP]",
+        "streamId": "0e18315b703248bb01eab6b9d3f0cb2cd893601f",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 4 [RCP]",
+        "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_18",
+    "title": "Alemania - Países Bajos",
+    "sport": "FUTBOL",
+    "competition": "NATIONS LEAGUE",
+    "time": "20:45",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "Teledeporte - Opción 1 [New Loop]",
+        "streamId": "4048be88f84250719e864868e537612f389df48e",
+        "type": "ACESTREAM",
+        "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 2 [RCP]",
+        "streamId": "5a272a468eaf25feb032e2c5d377c6276b2299c7",
         "type": "ACESTREAM",
         "source": "RCP"
       }
