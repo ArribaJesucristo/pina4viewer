@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "15/11/2026 21:21",
+    "updatedAt": "15/11/2026 21:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -161,17 +161,29 @@
     "id": "pina_14"
   },
   {
-    "title": "Eisbaeren Berlin vs Schwenninger",
-    "sport": "HOCKEY",
-    "competition": "Germany. DEL",
-    "time": "19:00",
+    "title": "Champion of Champions",
+    "sport": "SNOOKER",
+    "competition": "Snooker",
+    "time": "20:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "cc7b8c39f70aa342248d02c8ab55bafdb4116ed7",
         "type": "ACESTREAM",
         "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Czech Opción 2",
+        "streamId": "fd572fdeeaaff430ab2775e3bae1620295660ebd",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "Champion of Champions - Opción Directa 1 [Comunidad]",
+        "streamId": "872608e734992db636eb79426802cd08f4029afb",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
       }
     ],
     "id": "pina_19"
@@ -206,37 +218,9 @@
         "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
         "type": "ACESTREAM",
         "source": "LiveTV"
-      },
-      {
-        "name": "Austin Championship - Opción Directa 1 [Comunidad]",
-        "streamId": "872608e734992db636eb79426802cd08f4029afb",
-        "type": "ACESTREAM",
-        "source": "Comunidad"
       }
     ],
     "id": "pina_20"
-  },
-  {
-    "title": "Champion of Champions",
-    "sport": "SNOOKER",
-    "competition": "Snooker",
-    "time": "20:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "cc7b8c39f70aa342248d02c8ab55bafdb4116ed7",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Czech Opción 2",
-        "streamId": "fd572fdeeaaff430ab2775e3bae1620295660ebd",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_21"
   },
   {
     "title": "Grand Slam",
@@ -276,7 +260,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_22"
+    "id": "pina_21"
   },
   {
     "id": "pina_5",
@@ -472,7 +456,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_23"
+    "id": "pina_22"
   },
   {
     "title": "Elina Svitolina (W) vs Mirra Andreeva (W)",
@@ -506,7 +490,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_24"
+    "id": "pina_23"
   },
   {
     "title": "Phoenix vs LA Lakers",
@@ -518,22 +502,6 @@
       {
         "name": "[LiveTV] Ukrainian Opción 1",
         "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_27"
-  },
-  {
-    "title": "Las Vegas Raiders vs Seattle Seahawks",
-    "sport": "FUTBOL AMERICANO",
-    "competition": "USA. NFL",
-    "time": "22:05",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "d317a003e8047da2c36a2a2bb2289578c9a3b79c",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -562,6 +530,22 @@
       {
         "name": "[LiveTV] German Opción 3",
         "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_24"
+  },
+  {
+    "title": "Las Vegas Raiders vs Seattle Seahawks",
+    "sport": "FUTBOL AMERICANO",
+    "competition": "USA. NFL",
+    "time": "22:05",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "d317a003e8047da2c36a2a2bb2289578c9a3b79c",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -595,6 +579,28 @@
         "source": "RCP"
       }
     ]
+  },
+  {
+    "title": "Dallas Cowboys vs San Francisco 49ers",
+    "sport": "FUTBOL AMERICANO",
+    "competition": "USA. NFL",
+    "time": "22:25",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Portuguese 8000kbps",
+        "streamId": "36cad67fed5a739757a9db844a551aa845a8d51b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_27"
   },
   {
     "id": "pina_8",
