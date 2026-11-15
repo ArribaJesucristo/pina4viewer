@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "15/11/2026 20:51",
+    "updatedAt": "15/11/2026 20:53",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -145,6 +145,22 @@
     ]
   },
   {
+    "title": "Cleveland Browns vs Houston Texans",
+    "sport": "FUTBOL AMERICANO",
+    "competition": "USA. NFL",
+    "time": "19:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "d317a003e8047da2c36a2a2bb2289578c9a3b79c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_14"
+  },
+  {
     "title": "Philadelphia vs Indiana",
     "sport": "BALONCESTO",
     "competition": "NBA",
@@ -166,22 +182,6 @@
       {
         "name": "[LiveTV] Dutch Opción 3",
         "streamId": "79f10c6c6168e42bfc606f3f7b9e5f3ca79dedab",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_14"
-  },
-  {
-    "title": "Cleveland Browns vs Houston Texans",
-    "sport": "FUTBOL AMERICANO",
-    "competition": "USA. NFL",
-    "time": "19:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "d317a003e8047da2c36a2a2bb2289578c9a3b79c",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -476,20 +476,20 @@
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
         "name": "[LiveTV] English 8000kbps",
         "streamId": "cba8d369eac629b577750edb90370cd1c5fb03b7",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] English Opción 3",
+        "name": "[LiveTV] English Opción 2",
         "streamId": "12ea555d431dbe51fc8e4ca745aec09fe22a4865",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
