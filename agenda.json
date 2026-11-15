@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "15/11/2026 16:12",
+    "updatedAt": "15/11/2026 16:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -101,6 +101,28 @@
     ]
   },
   {
+    "title": "RB Munich vs Krefeld Pinguine",
+    "sport": "HOCKEY",
+    "competition": "Germany. DEL",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_23"
+  },
+  {
     "title": "Champion of Champions",
     "sport": "SNOOKER",
     "competition": "Snooker",
@@ -150,7 +172,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_23"
+    "id": "pina_24"
   },
   {
     "title": "German Championship",
@@ -162,28 +184,6 @@
       {
         "name": "[LiveTV] Russian Opción 1",
         "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_24"
-  },
-  {
-    "title": "RB Munich vs Krefeld Pinguine",
-    "sport": "HOCKEY",
-    "competition": "Germany. DEL",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -332,7 +332,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_21"
+    "id": "pina_20"
   },
   {
     "title": "LKPS Lublin vs Resovia Rzeszow",
@@ -348,7 +348,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_22"
+    "id": "pina_21"
   },
   {
     "title": "Zenit vs Trabzonspor",
@@ -423,40 +423,6 @@
     "id": "pina_31"
   },
   {
-    "title": "X2O Badkamers Trophy",
-    "sport": "CICLISMO",
-    "competition": "Cyclo-Cross",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "5f966c123759de46dff29c379266b7a403452033",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 3",
-        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 4",
-        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_32"
-  },
-  {
     "title": "Aston Villa (W) vs Birmingham City (W)",
     "sport": "FUTBOL",
     "competition": "England. Women. Super League",
@@ -476,7 +442,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_33"
+    "id": "pina_32"
   },
   {
     "title": "West Ham United (W) vs Charlton Athletic (W)",
@@ -492,7 +458,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_34"
+    "id": "pina_33"
   },
   {
     "title": "GKS Tychy vs Rekord Bielsko-Biala",
@@ -514,7 +480,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_35"
+    "id": "pina_34"
   },
   {
     "title": "Torpedo NN vs Dinamo Mn",
@@ -642,7 +608,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_20"
+    "id": "pina_22"
   },
   {
     "title": "Sevilla (W) vs Atletico Madrid (W)",
@@ -658,7 +624,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_36"
+    "id": "pina_35"
   },
   {
     "title": "RB Leipzig (W) vs Eintracht (W)",
@@ -674,7 +640,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_37"
+    "id": "pina_36"
   },
   {
     "title": "Nuremberg (W) vs Cologne (W)",
@@ -696,7 +662,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_38"
+    "id": "pina_37"
   },
   {
     "title": "Besiktas vs Bursaspor",
@@ -737,6 +703,22 @@
     "id": "pina_40"
   },
   {
+    "title": "Granada vs Las Palmas",
+    "sport": "FUTBOL",
+    "competition": "Spain. Segunda Division",
+    "time": "16:15",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "ffbf8c687c788d9a1a7c651e24802ee773ff3f04",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_38"
+  },
+  {
     "title": "Straubing Tigers vs Loeven Frankfurt",
     "sport": "GERMANY. DEL",
     "competition": "Germany. DEL",
@@ -753,22 +735,6 @@
     "id": "pina_44"
   },
   {
-    "title": "Nuernberg vs Iserlohn Roosters",
-    "sport": "GERMANY. DEL",
-    "competition": "Germany. DEL",
-    "time": "16:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "14317c55fadc80ef2b7fb42b3d53e8ccb3b52cd8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_45"
-  },
-  {
     "title": "Koelner Haie vs Grizzlys Wolfsburg",
     "sport": "GERMANY. DEL",
     "competition": "Germany. DEL",
@@ -778,6 +744,22 @@
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "428b92f3c71cd3cbf66ef6193808b39d16a52730",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_45"
+  },
+  {
+    "title": "Nuernberg vs Iserlohn Roosters",
+    "sport": "GERMANY. DEL",
+    "competition": "Germany. DEL",
+    "time": "16:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "14317c55fadc80ef2b7fb42b3d53e8ccb3b52cd8",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
