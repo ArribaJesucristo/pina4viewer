@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "15/11/2026 06:21",
+    "updatedAt": "15/11/2026 06:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -18,7 +18,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_19"
+    "id": "pina_21"
   },
   {
     "title": "Grand Prix Everett",
@@ -34,7 +34,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_20"
+    "id": "pina_19"
   },
   {
     "id": "pina_1",
@@ -73,31 +73,10 @@
         "streamId": "d6622ca93e54e493a6910248f8fe1f03aa85bf01",
         "type": "ACESTREAM",
         "source": "RCP"
-      }
-    ]
-  },
-  {
-    "title": "Saitama Criterium",
-    "sport": "NATIONAL EVENT",
-    "competition": "National Event",
-    "time": "06:40",
-    "date": "Hoy",
-    "channels": [
+      },
       {
         "name": "[LiveTV] English 8000kbps",
         "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 3",
-        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
@@ -107,8 +86,29 @@
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
+    ]
+  },
+  {
+    "title": "DP World Tour Championship",
+    "sport": "GOLF",
+    "competition": "DP World Tour",
+    "time": "07:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 2",
+        "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
     ],
-    "id": "pina_21"
+    "id": "pina_20"
   },
   {
     "id": "pina_2",
