@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "15/11/2026 13:21",
+    "updatedAt": "15/11/2026 13:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -46,7 +46,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_29"
+    "id": "pina_30"
   },
   {
     "id": "pina_1",
@@ -96,7 +96,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_17"
+    "id": "pina_16"
   },
   {
     "title": "Grand Prix",
@@ -160,7 +160,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_16"
+    "id": "pina_17"
   },
   {
     "title": "Ufa vs Spartak Kostroma",
@@ -292,7 +292,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_33"
+    "id": "pina_27"
   },
   {
     "id": "pina_2",
@@ -391,40 +391,6 @@
     ]
   },
   {
-    "title": "World Championships, Istanbul",
-    "sport": "POWERLIFTING",
-    "competition": "Powerlifting",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 3",
-        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 4",
-        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_27"
-  },
-  {
     "title": "Grand Slam",
     "sport": "PDC",
     "competition": "PDC",
@@ -465,6 +431,40 @@
     "id": "pina_28"
   },
   {
+    "title": "World Championships, Istanbul",
+    "sport": "POWERLIFTING",
+    "competition": "Powerlifting",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 3",
+        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 4",
+        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_29"
+  },
+  {
     "title": "RB Munich vs Krefeld Pinguine",
     "sport": "GERMANY. DEL",
     "competition": "Germany. DEL",
@@ -480,22 +480,6 @@
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_30"
-  },
-  {
-    "title": "Leicester Tigers vs Saracens",
-    "sport": "RUGBY",
-    "competition": "England. Premiership Rugby Cup",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -517,6 +501,22 @@
       }
     ],
     "id": "pina_32"
+  },
+  {
+    "title": "Leicester Tigers vs Saracens",
+    "sport": "RUGBY",
+    "competition": "England. Premiership Rugby Cup",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_33"
   },
   {
     "title": "Champion of Champions",
