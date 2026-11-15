@@ -1,24 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "15/11/2026 06:51",
+    "updatedAt": "15/11/2026 07:01",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Los Angeles vs Calgary",
-    "sport": "HOCKEY",
-    "competition": "NHL",
-    "time": "04:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_19"
   },
   {
     "title": "Grand Prix Everett",
@@ -34,7 +18,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_20"
+    "id": "pina_19"
   },
   {
     "id": "pina_1",
@@ -104,6 +88,28 @@
       {
         "name": "[LiveTV] Dutch Opción 2",
         "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_20"
+  },
+  {
+    "title": "Taifun vs JHC Dynamo SPb",
+    "sport": "RUSSIA. MHL",
+    "competition": "Russia. MHL",
+    "time": "08:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
