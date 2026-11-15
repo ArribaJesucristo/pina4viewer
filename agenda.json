@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "15/11/2026 16:02",
+    "updatedAt": "15/11/2026 16:12",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -101,37 +101,27 @@
     ]
   },
   {
-    "title": "Fischtown Pinguins vs Augsburg",
-    "sport": "HOCKEY",
-    "competition": "Germany. DEL",
+    "title": "Champion of Champions",
+    "sport": "SNOOKER",
+    "competition": "Snooker",
     "time": "14:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "cc7b8c39f70aa342248d02c8ab55bafdb4116ed7",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
+        "name": "[LiveTV] Polish Opción 2",
+        "streamId": "6390b1ab967a25777ea2dde1d41b7400cc0601d3",
         "type": "ACESTREAM",
         "source": "LiveTV"
-      }
-    ],
-    "id": "pina_23"
-  },
-  {
-    "title": "German Championship",
-    "sport": "TENIS",
-    "competition": "Germany. Bundesliga",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
+      },
       {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "name": "[LiveTV] Czech Opción 3",
+        "streamId": "fd572fdeeaaff430ab2775e3bae1620295660ebd",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
@@ -160,51 +150,45 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_24"
+    "id": "pina_23"
   },
   {
-    "title": "Champion of Champions",
-    "sport": "SNOOKER",
-    "competition": "Snooker",
+    "title": "German Championship",
+    "sport": "TENIS",
+    "competition": "Germany. Bundesliga",
     "time": "14:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "cc7b8c39f70aa342248d02c8ab55bafdb4116ed7",
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_24"
+  },
+  {
+    "title": "RB Munich vs Krefeld Pinguine",
+    "sport": "HOCKEY",
+    "competition": "Germany. DEL",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Polish Opción 2",
-        "streamId": "6390b1ab967a25777ea2dde1d41b7400cc0601d3",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Czech Opción 3",
-        "streamId": "fd572fdeeaaff430ab2775e3bae1620295660ebd",
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
     "id": "pina_25"
-  },
-  {
-    "title": "Leicester Tigers vs Saracens",
-    "sport": "RUGBY",
-    "competition": "England. Premiership Rugby Cup",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_26"
   },
   {
     "title": "Grand Slam",
@@ -244,7 +228,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_27"
+    "id": "pina_26"
   },
   {
     "title": "RB Munich vs Krefeld Pinguine",
@@ -266,7 +250,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_40"
+    "id": "pina_41"
   },
   {
     "title": "MVV Maastricht vs Vitesse",
@@ -282,7 +266,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_28"
+    "id": "pina_27"
   },
   {
     "title": "Emirates Eagles vs Delhi Bulls",
@@ -298,7 +282,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_29"
+    "id": "pina_28"
   },
   {
     "id": "pina_4",
@@ -323,22 +307,6 @@
     ]
   },
   {
-    "title": "LKPS Lublin vs Resovia Rzeszow",
-    "sport": "OTROS",
-    "competition": "Poland. PlusLiga",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_20"
-  },
-  {
     "title": "Cyprus CYP vs Montenegro MNE",
     "sport": "FUTBOL",
     "competition": "UEFA Nations League",
@@ -360,6 +328,22 @@
       {
         "name": "[LiveTV] Dutch Opción 3",
         "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_21"
+  },
+  {
+    "title": "LKPS Lublin vs Resovia Rzeszow",
+    "sport": "OTROS",
+    "competition": "Poland. PlusLiga",
+    "time": "15:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -392,7 +376,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_30"
+    "id": "pina_29"
   },
   {
     "title": "SKA vs Traktor",
@@ -408,7 +392,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_31"
+    "id": "pina_30"
   },
   {
     "title": "Torpedo NN vs Dinamo Mn",
@@ -436,7 +420,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_32"
+    "id": "pina_31"
   },
   {
     "title": "X2O Badkamers Trophy",
@@ -470,7 +454,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_33"
+    "id": "pina_32"
   },
   {
     "title": "Aston Villa (W) vs Birmingham City (W)",
@@ -492,7 +476,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_34"
+    "id": "pina_33"
   },
   {
     "title": "West Ham United (W) vs Charlton Athletic (W)",
@@ -508,7 +492,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_35"
+    "id": "pina_34"
   },
   {
     "title": "GKS Tychy vs Rekord Bielsko-Biala",
@@ -530,7 +514,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_36"
+    "id": "pina_35"
   },
   {
     "title": "Torpedo NN vs Dinamo Mn",
@@ -558,7 +542,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_41"
+    "id": "pina_42"
   },
   {
     "title": "SKA vs Traktor",
@@ -574,7 +558,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_42"
+    "id": "pina_43"
   },
   {
     "id": "pina_5",
@@ -629,6 +613,18 @@
         "streamId": "ecf2096f9f612a70638d644fb621472a3ddaeb20",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "75a56863b6fe0407ad4305b4d7ee5643c3923565",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Czech Opción 2",
+        "streamId": "fd572fdeeaaff430ab2775e3bae1620295660ebd",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
@@ -646,7 +642,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_21"
+    "id": "pina_20"
   },
   {
     "title": "Sevilla (W) vs Atletico Madrid (W)",
@@ -662,7 +658,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_37"
+    "id": "pina_36"
   },
   {
     "title": "RB Leipzig (W) vs Eintracht (W)",
@@ -678,7 +674,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_38"
+    "id": "pina_37"
   },
   {
     "title": "Nuremberg (W) vs Cologne (W)",
@@ -700,7 +696,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_39"
+    "id": "pina_38"
   },
   {
     "title": "Besiktas vs Bursaspor",
@@ -716,7 +712,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_47"
+    "id": "pina_49"
   },
   {
     "title": "Scotland vs Australia",
@@ -738,7 +734,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_40"
   },
   {
     "title": "Straubing Tigers vs Loeven Frankfurt",
@@ -754,7 +750,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_43"
+    "id": "pina_44"
   },
   {
     "title": "Nuernberg vs Iserlohn Roosters",
@@ -766,22 +762,6 @@
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "14317c55fadc80ef2b7fb42b3d53e8ccb3b52cd8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_44"
-  },
-  {
-    "title": "Adler Mannheim vs Ingolstadt",
-    "sport": "GERMANY. DEL",
-    "competition": "Germany. DEL",
-    "time": "16:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -805,6 +785,60 @@
     "id": "pina_46"
   },
   {
+    "title": "Adler Mannheim vs Ingolstadt",
+    "sport": "GERMANY. DEL",
+    "competition": "Germany. DEL",
+    "time": "16:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_47"
+  },
+  {
+    "title": "Bangla Tigers vs Yas Lions",
+    "sport": "UAE. T10 LEAGUE",
+    "competition": "UAE. T10 League",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_39"
+  },
+  {
+    "title": "Grand Prix of Zagreb",
+    "sport": "JUDO",
+    "competition": "Judo",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_48"
+  },
+  {
     "title": "Barcelona vs Obradoiro",
     "sport": "BALONCESTO",
     "competition": "Spain. ACB League",
@@ -824,40 +858,18 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_48"
+    "id": "pina_50"
   },
   {
-    "title": "Bangla Tigers vs Yas Lions",
-    "sport": "UAE. T10 LEAGUE",
-    "competition": "UAE. T10 League",
-    "time": "17:00",
+    "title": "Polish Boxing League",
+    "sport": "BOXEO",
+    "competition": "Boxing",
+    "time": "17:05",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_49"
-  },
-  {
-    "title": "Grand Prix of Zagreb",
-    "sport": "JUDO",
-    "competition": "Judo",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
