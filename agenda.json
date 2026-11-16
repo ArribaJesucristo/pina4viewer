@@ -1,24 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "16/11/2026 18:11",
+    "updatedAt": "16/11/2026 18:21",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "CAR CAF vs Benin BEN",
-    "sport": "FUTBOL",
-    "competition": "Qualification",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Spanish Opción 1",
-        "streamId": "e8e459656f964f601ad4bcda8b81a43ba41c68f9",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_60"
   },
   {
     "title": "Emirates Eagles vs Royal Champs",
@@ -34,18 +18,46 @@
         "source": "LiveTV"
       }
     ],
+    "id": "pina_60"
+  },
+  {
+    "title": "CAR CAF vs Benin BEN",
+    "sport": "FUTBOL",
+    "competition": "Qualification",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Spanish Opción 1",
+        "streamId": "e8e459656f964f601ad4bcda8b81a43ba41c68f9",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
     "id": "pina_61"
   },
   {
-    "title": "Sokol Mogilno (W) vs Bydgoszcz (W)",
-    "sport": "OTROS",
-    "competition": "Poland. Women. MP",
+    "title": "CSKA vs Amur",
+    "sport": "HOCKEY",
+    "competition": "KHL",
     "time": "17:30",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 3",
+        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -75,27 +87,15 @@
     "id": "pina_64"
   },
   {
-    "title": "CSKA vs Amur",
-    "sport": "HOCKEY",
-    "competition": "KHL",
+    "title": "Sokol Mogilno (W) vs Bydgoszcz (W)",
+    "sport": "OTROS",
+    "competition": "Poland. Women. MP",
     "time": "17:30",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 3",
-        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -153,22 +153,6 @@
     "id": "pina_69"
   },
   {
-    "title": "Lithuania LTU vs Liechtenstein LIE",
-    "sport": "FUTBOL",
-    "competition": "UEFA Nations League",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "8442b5c7c99e5af57c2c40c1e28153072968988a",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_57"
-  },
-  {
     "title": "Iceland ISL vs Luxembourg LUX",
     "sport": "FUTBOL",
     "competition": "UEFA Nations League",
@@ -184,6 +168,22 @@
       {
         "name": "[LiveTV] Russian 8000kbps",
         "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_57"
+  },
+  {
+    "title": "Lithuania LTU vs Liechtenstein LIE",
+    "sport": "FUTBOL",
+    "competition": "UEFA Nations League",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "8442b5c7c99e5af57c2c40c1e28153072968988a",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -272,7 +272,7 @@
     "title": "Harrison / Skupski vs Krawietz / Puetz",
     "sport": "TENIS",
     "competition": "ATP Finals. Turin. Doubles",
-    "time": "18:00",
+    "time": "18:10",
     "date": "Hoy",
     "channels": [
       {
