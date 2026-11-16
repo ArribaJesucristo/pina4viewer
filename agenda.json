@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "16/11/2026 20:41",
+    "updatedAt": "16/11/2026 20:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -18,29 +18,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
-  },
-  {
-    "title": "Harrison / Skupski vs Krawietz / Puetz",
-    "sport": "TENIS",
-    "competition": "ATP Finals. Turin. Doubles",
-    "time": "18:10",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "42fe2ce3ef6b92653a74d85b6e98c2ba0abee707",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_67"
+    "id": "pina_62"
   },
   {
     "title": "Andorra AND vs Azerbaijan AZE",
@@ -56,7 +34,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_65"
+    "id": "pina_66"
   },
   {
     "title": "Grand Slam",
@@ -84,7 +62,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_67"
   },
   {
     "id": "pina_1",
@@ -155,6 +133,80 @@
     ]
   },
   {
+    "title": "Switzerland SUI vs Scotland SCO",
+    "sport": "FUTBOL",
+    "competition": "UEFA Nations League",
+    "time": "20:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "8442b5c7c99e5af57c2c40c1e28153072968988a",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "12ea555d431dbe51fc8e4ca745aec09fe22a4865",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "3147c586346aee00c005d1caa55204d38678c95f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_63"
+  },
+  {
+    "title": "Greece GRE vs Serbia SRB",
+    "sport": "FUTBOL",
+    "competition": "UEFA Nations League",
+    "time": "20:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "cba8d369eac629b577750edb90370cd1c5fb03b7",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 4",
+        "streamId": "897e73c9d578848f596585314ecb9ae067c0e229",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Turkish Opción 5",
+        "streamId": "b2de6896bde31180ac213fce395c437fa3b2a892",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 6",
+        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_64"
+  },
+  {
     "title": "Germany GER vs Netherlands NED",
     "sport": "FUTBOL",
     "competition": "UEFA Nations League",
@@ -180,69 +232,7 @@
         "source": "Comunidad"
       }
     ],
-    "id": "pina_62"
-  },
-  {
-    "title": "Switzerland SUI vs Scotland SCO",
-    "sport": "FUTBOL",
-    "competition": "UEFA Nations League",
-    "time": "20:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "12ea555d431dbe51fc8e4ca745aec09fe22a4865",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "3147c586346aee00c005d1caa55204d38678c95f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_63"
-  },
-  {
-    "title": "Greece GRE vs Serbia SRB",
-    "sport": "FUTBOL",
-    "competition": "UEFA Nations League",
-    "time": "20:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "cba8d369eac629b577750edb90370cd1c5fb03b7",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 3",
-        "streamId": "897e73c9d578848f596585314ecb9ae067c0e229",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Turkish Opción 4",
-        "streamId": "b2de6896bde31180ac213fce395c437fa3b2a892",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Dutch Opción 5",
-        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_64"
+    "id": "pina_65"
   },
   {
     "id": "pina_3",
@@ -523,7 +513,7 @@
     ]
   },
   {
-    "id": "pina_43",
+    "id": "pina_44",
     "title": "Las Vegas",
     "sport": "MOTOR",
     "competition": "G.P. ESTADOS UNIDOS",
@@ -600,6 +590,52 @@
   },
   {
     "id": "pina_23",
+    "title": "Eslalon femenino (Gurgl)",
+    "sport": "ESQUÍ",
+    "competition": "COPA DEL MUNDO",
+    "time": "10:15",
+    "date": "21/11/2026",
+    "channels": [
+      {
+        "name": "Eurosport 1 - Opción 1 [New Era]",
+        "streamId": "62a5750be4d2218b1064f83afaac4770fd92350d",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "Eurosport 1 - Opción 2 [Comunidad]",
+        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Eurosport 1 - Opción 3 [Comunidad]",
+        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Eurosport 1 - Opción 4 [Comunidad]",
+        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Eurosport 1 - Opción 5 [Elcano]",
+        "streamId": "5e4cd48c79f991fcbee2de8b9d30c4b16de3b952",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Eurosport 1 - Opción 6 [RCP]",
+        "streamId": "c9ee7c95e7a2e9cd0e848b1f70848453652bebc2",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_24",
     "title": "FC Badalona Women - Deportivo Abanca",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -627,7 +663,7 @@
     ]
   },
   {
-    "id": "pina_24",
+    "id": "pina_25",
     "title": "Dubai (Jornada 1)",
     "sport": "VELA",
     "competition": "SAILGP",
@@ -661,7 +697,7 @@
     ]
   },
   {
-    "id": "pina_44",
+    "id": "pina_45",
     "title": "Granada - Real Madrid CF",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -677,7 +713,7 @@
     ]
   },
   {
-    "id": "pina_45",
+    "id": "pina_46",
     "title": "Dubai (Jornada 2)",
     "sport": "VELA",
     "competition": "SAILGP",
@@ -711,7 +747,7 @@
     ]
   },
   {
-    "id": "pina_46",
+    "id": "pina_47",
     "title": "MotoGP (Algarve)",
     "sport": "MOTOS",
     "competition": "G.P. PORTUGAL",
@@ -733,7 +769,7 @@
     ]
   },
   {
-    "id": "pina_25",
+    "id": "pina_26",
     "title": "Viña Albali Valdepeñas - Noia Portus Apostoli",
     "sport": "FUTBOL",
     "competition": "LIGA PRIME (APERTURA)",
@@ -761,7 +797,7 @@
     ]
   },
   {
-    "id": "pina_26",
+    "id": "pina_27",
     "title": "Deportivo Alavés - RC Deportivo",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -873,7 +909,7 @@
     ]
   },
   {
-    "id": "pina_27",
+    "id": "pina_28",
     "title": "CE Sabadell - Granada CF",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -889,7 +925,7 @@
     ]
   },
   {
-    "id": "pina_47",
+    "id": "pina_48",
     "title": "Barcelona - Villarreal",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -929,7 +965,7 @@
     ]
   },
   {
-    "id": "pina_48",
+    "id": "pina_49",
     "title": "Córdoba CF - Real Oviedo",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -945,7 +981,7 @@
     ]
   },
   {
-    "id": "pina_28",
+    "id": "pina_29",
     "title": "Inglaterra - Nueva Zelanda",
     "sport": "RUGBY",
     "competition": "NATIONS CHAMPIONSHIP",
@@ -961,7 +997,7 @@
     ]
   },
   {
-    "id": "pina_49",
+    "id": "pina_50",
     "title": "Moto3 (Algarve)",
     "sport": "MOTOS",
     "competition": "G.P. PORTUGAL",
@@ -983,7 +1019,7 @@
     ]
   },
   {
-    "id": "pina_29",
+    "id": "pina_30",
     "title": "Aston Villa - Sunderland",
     "sport": "FUTBOL",
     "competition": "PREMIER LEAGUE",
@@ -1011,7 +1047,7 @@
     ]
   },
   {
-    "id": "pina_30",
+    "id": "pina_31",
     "title": "MotoGP (Sprint)",
     "sport": "MOTOS",
     "competition": "G.P. PORTUGAL",
@@ -1033,7 +1069,7 @@
     ]
   },
   {
-    "id": "pina_31",
+    "id": "pina_32",
     "title": "Rayo - Valencia",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1079,7 +1115,7 @@
     ]
   },
   {
-    "id": "pina_32",
+    "id": "pina_33",
     "title": "Real Sociedad B - Cádiz CF",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1095,7 +1131,7 @@
     ]
   },
   {
-    "id": "pina_50",
+    "id": "pina_51",
     "title": "R. Racing Club - Real Sociedad",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1207,7 +1243,7 @@
     ]
   },
   {
-    "id": "pina_51",
+    "id": "pina_52",
     "title": "Real Sporting - UD Las Palmas",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1223,7 +1259,7 @@
     ]
   },
   {
-    "id": "pina_52",
+    "id": "pina_53",
     "title": "Costa Adeje Tenerife - Madrid CFF",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -1251,7 +1287,7 @@
     ]
   },
   {
-    "id": "pina_33",
+    "id": "pina_34",
     "title": "Irlanda - Sudáfrica",
     "sport": "RUGBY",
     "competition": "NATIONS CHAMPIONSHIP",
@@ -1285,7 +1321,7 @@
     ]
   },
   {
-    "id": "pina_53",
+    "id": "pina_54",
     "title": "Liverpool - Manchester Utd.",
     "sport": "FUTBOL",
     "competition": "PREMIER LEAGUE",
@@ -1335,7 +1371,7 @@
     ]
   },
   {
-    "id": "pina_34",
+    "id": "pina_35",
     "title": "Parma - Roma",
     "sport": "FUTBOL",
     "competition": "SERIE A",
@@ -1351,7 +1387,7 @@
     ]
   },
   {
-    "id": "pina_35",
+    "id": "pina_36",
     "title": "San Pablo Burgos - Unicaja",
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
@@ -1417,7 +1453,7 @@
     ]
   },
   {
-    "id": "pina_36",
+    "id": "pina_37",
     "title": "Sevilla - Betis",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1457,7 +1493,7 @@
     ]
   },
   {
-    "id": "pina_37",
+    "id": "pina_38",
     "title": "CD Castellón - CD Eldense",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1473,7 +1509,7 @@
     ]
   },
   {
-    "id": "pina_54",
+    "id": "pina_55",
     "title": "Osasuna - Málaga",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1513,7 +1549,7 @@
     ]
   },
   {
-    "id": "pina_55",
+    "id": "pina_56",
     "title": "Girona FC - SD Eibar",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1529,7 +1565,7 @@
     ]
   },
   {
-    "id": "pina_56",
+    "id": "pina_57",
     "title": "RC Celta Fortuna - Real Valladolid CF",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1551,7 +1587,7 @@
     ]
   },
   {
-    "id": "pina_57",
+    "id": "pina_58",
     "title": "Barcelona - Athletic Bilbao",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -1579,7 +1615,7 @@
     ]
   },
   {
-    "id": "pina_38",
+    "id": "pina_39",
     "title": "Bidasoa - Barcelona",
     "sport": "BALONMANO",
     "competition": "LIGA ASOBAL",
@@ -1709,7 +1745,7 @@
     ]
   },
   {
-    "id": "pina_39",
+    "id": "pina_40",
     "title": "Palmeiras - Flamengo",
     "sport": "FUTBOL",
     "competition": "BRASILEIRAO",
@@ -1853,7 +1889,7 @@
     ]
   },
   {
-    "id": "pina_40",
+    "id": "pina_41",
     "title": "Real Madrid - Celta",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1887,7 +1923,7 @@
     ]
   },
   {
-    "id": "pina_41",
+    "id": "pina_42",
     "title": "CD Tenerife - RCD Mallorca",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1903,7 +1939,7 @@
     ]
   },
   {
-    "id": "pina_58",
+    "id": "pina_59",
     "title": "Getafe CF - Atlético de Madrid",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -2015,7 +2051,7 @@
     ]
   },
   {
-    "id": "pina_59",
+    "id": "pina_60",
     "title": "Burgos - Albacete BP",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -2031,7 +2067,7 @@
     ]
   },
   {
-    "id": "pina_60",
+    "id": "pina_61",
     "title": "River - Lanus",
     "sport": "FUTBOL",
     "competition": "CLAUSURA",
@@ -2047,7 +2083,7 @@
     ]
   },
   {
-    "id": "pina_42",
+    "id": "pina_43",
     "title": "Boca Juniors - Atlético Mineiro",
     "sport": "FUTBOL",
     "competition": "COPA SUDAMERICANA",
