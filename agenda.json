@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "16/11/2026 17:10",
+    "updatedAt": "16/11/2026 17:13",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -187,6 +187,22 @@
     "id": "pina_52"
   },
   {
+    "title": "Sokol Mogilno (W) vs Bydgoszcz (W)",
+    "sport": "POLAND. WOMEN. MP",
+    "competition": "Poland. Women. MP",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_53"
+  },
+  {
     "title": "CSKA vs Amur",
     "sport": "KHL",
     "competition": "KHL",
@@ -208,22 +224,6 @@
       {
         "name": "[LiveTV] Russian Opción 3",
         "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_53"
-  },
-  {
-    "title": "Sokol Mogilno (W) vs Bydgoszcz (W)",
-    "sport": "POLAND. WOMEN. MP",
-    "competition": "Poland. Women. MP",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
