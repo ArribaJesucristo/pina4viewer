@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "17/11/2026 14:31",
+    "updatedAt": "17/11/2026 14:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -159,22 +159,6 @@
     "id": "pina_61"
   },
   {
-    "title": "Ethiopia ETH vs Mozambique MOZ",
-    "sport": "FUTBOL",
-    "competition": "Qualification",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Spanish Opción 1",
-        "streamId": "e8e459656f964f601ad4bcda8b81a43ba41c68f9",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_62"
-  },
-  {
     "title": "Malawi MWI vs Egypt EGY",
     "sport": "FUTBOL",
     "competition": "Qualification",
@@ -184,6 +168,22 @@
       {
         "name": "[LiveTV] French 8000kbps",
         "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_62"
+  },
+  {
+    "title": "Ethiopia ETH vs Mozambique MOZ",
+    "sport": "FUTBOL",
+    "competition": "Qualification",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Spanish Opción 1",
+        "streamId": "e8e459656f964f601ad4bcda8b81a43ba41c68f9",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
