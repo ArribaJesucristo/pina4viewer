@@ -1,24 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "17/11/2026 21:21",
+    "updatedAt": "17/11/2026 21:31",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Zalgiris vs Bayern Munich",
-    "sport": "BALONCESTO",
-    "competition": "Euroleague",
-    "time": "19:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "428b92f3c71cd3cbf66ef6193808b39d16a52730",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_62"
   },
   {
     "id": "pina_1",
@@ -160,7 +144,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_82"
+    "id": "pina_81"
   },
   {
     "id": "pina_2",
@@ -244,6 +228,22 @@
         "source": "LiveTV"
       }
     ],
+    "id": "pina_62"
+  },
+  {
+    "title": "Simulcast",
+    "sport": "BALONCESTO",
+    "competition": "Euroleague",
+    "time": "20:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "ac839cda9709255c21a98af455731f037e77a9e4",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
     "id": "pina_76"
   },
   {
@@ -263,22 +263,6 @@
     "id": "pina_77"
   },
   {
-    "title": "Simulcast",
-    "sport": "BALONCESTO",
-    "competition": "Euroleague",
-    "time": "20:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "ac839cda9709255c21a98af455731f037e77a9e4",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_78"
-  },
-  {
     "title": "Baskonia vs Hapoel T-A",
     "sport": "EUROLEAGUE",
     "competition": "Euroleague",
@@ -288,6 +272,22 @@
       {
         "name": "[LiveTV] English Opción 1",
         "streamId": "86495fe134ff065d5217497babe6be33f81d37d1",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_82"
+  },
+  {
+    "title": "Milan vs Crvena Zvezda",
+    "sport": "EUROLEAGUE",
+    "competition": "Euroleague",
+    "time": "20:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "6058a4c0f2569bd81c687aa7dfb48b8a9569fb29",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -321,22 +321,6 @@
       }
     ],
     "id": "pina_84"
-  },
-  {
-    "title": "Milan vs Crvena Zvezda",
-    "sport": "EUROLEAGUE",
-    "competition": "Euroleague",
-    "time": "20:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "6058a4c0f2569bd81c687aa7dfb48b8a9569fb29",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_85"
   },
   {
     "title": "Poland POL vs Sweden SWE",
@@ -377,6 +361,38 @@
     "id": "pina_65"
   },
   {
+    "title": "Israel ISR vs Austria AUT",
+    "sport": "FUTBOL",
+    "competition": "UEFA Nations League",
+    "time": "20:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German 8000kbps",
+        "streamId": "c9d6412050226de0968cea19a383b50dc1966363",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_66"
+  },
+  {
+    "title": "Ukraine UKR vs Georgia GEO",
+    "sport": "FUTBOL",
+    "competition": "UEFA Nations League",
+    "time": "20:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "aca05dc506242324c1727525d0535ceda24f8dea",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_67"
+  },
+  {
     "title": "Ireland IRL vs Kosovo KOS",
     "sport": "FUTBOL",
     "competition": "UEFA Nations League",
@@ -398,38 +414,6 @@
       {
         "name": "[LiveTV] Russian 8000kbps",
         "streamId": "bc99becb2a74f8f455d6dbaa3bd85c6c7e938a6c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_66"
-  },
-  {
-    "title": "Israel ISR vs Austria AUT",
-    "sport": "FUTBOL",
-    "competition": "UEFA Nations League",
-    "time": "20:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German 8000kbps",
-        "streamId": "c9d6412050226de0968cea19a383b50dc1966363",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_67"
-  },
-  {
-    "title": "Ukraine UKR vs Georgia GEO",
-    "sport": "FUTBOL",
-    "competition": "UEFA Nations League",
-    "time": "20:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "aca05dc506242324c1727525d0535ceda24f8dea",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -536,7 +520,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_79"
+    "id": "pina_78"
   },
   {
     "title": "Logrono La Rioja vs Wybrzeze Gdansk",
@@ -552,7 +536,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_81"
+    "id": "pina_86"
   },
   {
     "id": "pina_4",
@@ -612,7 +596,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_80"
+    "id": "pina_79"
   },
   {
     "title": "Virtus Bologna vs Panathinaikos",
@@ -628,7 +612,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_86"
+    "id": "pina_85"
+  },
+  {
+    "title": "Fluminense (W) vs Minas (W)",
+    "sport": "OTROS",
+    "competition": "Brazil. Women. Superliga",
+    "time": "22:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_80"
   },
   {
     "id": "pina_5",
