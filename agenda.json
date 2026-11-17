@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "17/11/2026 17:31",
+    "updatedAt": "17/11/2026 17:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -131,22 +131,6 @@
     "id": "pina_66"
   },
   {
-    "title": "Libya LBY vs Tunisia TUN",
-    "sport": "FUTBOL",
-    "competition": "Qualification",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] French 8000kbps",
-        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_67"
-  },
-  {
     "title": "Togo TGO vs Algeria ALG",
     "sport": "FUTBOL",
     "competition": "Qualification",
@@ -166,23 +150,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_68"
+    "id": "pina_67"
   },
   {
-    "title": "Delhi Bulls vs Royal Champs",
-    "sport": "OTROS",
-    "competition": "UAE. T10 League",
+    "title": "Libya LBY vs Tunisia TUN",
+    "sport": "FUTBOL",
+    "competition": "Qualification",
     "time": "17:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_69"
+    "id": "pina_68"
   },
   {
     "title": "Gambia GMB vs Ivory Coast CIV",
@@ -194,6 +178,22 @@
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "897e73c9d578848f596585314ecb9ae067c0e229",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_69"
+  },
+  {
+    "title": "Delhi Bulls vs Royal Champs",
+    "sport": "OTROS",
+    "competition": "UAE. T10 League",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
