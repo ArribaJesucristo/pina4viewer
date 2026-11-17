@@ -1,24 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "17/11/2026 17:41",
+    "updatedAt": "17/11/2026 17:51",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Yas Lions vs Arabian Aces",
-    "sport": "OTROS",
-    "competition": "UAE. T10 League",
-    "time": "14:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_62"
   },
   {
     "title": "Lada Tl vs Metallurg Mg",
@@ -40,7 +24,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_65"
   },
   {
     "title": "Lada Tl vs Metallurg Mg",
@@ -62,7 +46,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_73"
+    "id": "pina_74"
   },
   {
     "title": "Dubai vs Anadolu Efes",
@@ -112,22 +96,6 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_65"
-  },
-  {
-    "title": "Poland (W) vs Turkey (W)",
-    "sport": "BALONCESTO",
-    "competition": "Qualification",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
     "id": "pina_66"
   },
   {
@@ -153,6 +121,22 @@
     "id": "pina_67"
   },
   {
+    "title": "Poland (W) vs Turkey (W)",
+    "sport": "BALONCESTO",
+    "competition": "Qualification",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_68"
+  },
+  {
     "title": "Libya LBY vs Tunisia TUN",
     "sport": "FUTBOL",
     "competition": "Qualification",
@@ -162,22 +146,6 @@
       {
         "name": "[LiveTV] French 8000kbps",
         "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_68"
-  },
-  {
-    "title": "Gambia GMB vs Ivory Coast CIV",
-    "sport": "FUTBOL",
-    "competition": "Qualification",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "897e73c9d578848f596585314ecb9ae067c0e229",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -199,6 +167,22 @@
       }
     ],
     "id": "pina_70"
+  },
+  {
+    "title": "Gambia GMB vs Ivory Coast CIV",
+    "sport": "FUTBOL",
+    "competition": "Qualification",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "897e73c9d578848f596585314ecb9ae067c0e229",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_71"
   },
   {
     "title": "Neftekhimik vs Dinamo Mn",
@@ -226,7 +210,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_74"
+    "id": "pina_75"
   },
   {
     "title": "Dubai vs Anadolu Efes",
@@ -248,7 +232,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_76"
+    "id": "pina_77"
   },
   {
     "title": "Plzen vs Davos",
@@ -264,7 +248,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_71"
+    "id": "pina_72"
   },
   {
     "title": "Plzen vs Davos",
@@ -280,7 +264,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_75"
+    "id": "pina_76"
   },
   {
     "id": "pina_1",
@@ -309,6 +293,38 @@
         "source": "TDTChannels"
       }
     ]
+  },
+  {
+    "title": "Balkan vs Ulm",
+    "sport": "BALONCESTO",
+    "competition": "Eurocup",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_62"
+  },
+  {
+    "title": "Maccabi T-A vs Olympiacos",
+    "sport": "BALONCESTO",
+    "competition": "Euroleague",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_64"
   },
   {
     "title": "Olivetti / Arribage vs Luz / Matos",
@@ -342,23 +358,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_72"
-  },
-  {
-    "title": "Balkan vs Ulm",
-    "sport": "BALONCESTO",
-    "competition": "Eurocup",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_77"
+    "id": "pina_73"
   },
   {
     "title": "Maccabi T-A vs Olympiacos",
