@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "17/11/2026 18:41",
+    "updatedAt": "17/11/2026 18:44",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -24,7 +24,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_65"
   },
   {
     "title": "Neftekhimik vs Dinamo Mn",
@@ -55,15 +55,15 @@
     "id": "pina_66"
   },
   {
-    "title": "Poland (W) vs Turkey (W)",
-    "sport": "BALONCESTO",
+    "title": "Libya LBY vs Tunisia TUN",
+    "sport": "FUTBOL",
     "competition": "Qualification",
     "time": "17:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -93,15 +93,15 @@
     "id": "pina_68"
   },
   {
-    "title": "Libya LBY vs Tunisia TUN",
-    "sport": "FUTBOL",
+    "title": "Poland (W) vs Turkey (W)",
+    "sport": "BALONCESTO",
     "competition": "Qualification",
     "time": "17:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] French 8000kbps",
-        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -251,6 +251,22 @@
     ]
   },
   {
+    "title": "Maccabi T-A vs Olympiacos",
+    "sport": "BALONCESTO",
+    "competition": "Euroleague",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_62"
+  },
+  {
     "title": "Balkan vs Ulm",
     "sport": "BALONCESTO",
     "competition": "Eurocup",
@@ -265,22 +281,6 @@
       }
     ],
     "id": "pina_63"
-  },
-  {
-    "title": "Maccabi T-A vs Olympiacos",
-    "sport": "BALONCESTO",
-    "competition": "Euroleague",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_65"
   },
   {
     "title": "Maccabi T-A vs Olympiacos",
@@ -346,7 +346,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_62"
+    "id": "pina_64"
   },
   {
     "title": "Netherlands U-21 vs Denmark U-21",
