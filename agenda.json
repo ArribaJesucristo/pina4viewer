@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "17/11/2026 20:31",
+    "updatedAt": "17/11/2026 20:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -33,54 +33,20 @@
     ]
   },
   {
-    "title": "Olivetti / Arribage vs Luz / Matos",
-    "sport": "TENIS",
-    "competition": "ATP Finals. Turin. Doubles",
-    "time": "18:10",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "42fe2ce3ef6b92653a74d85b6e98c2ba0abee707",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Dutch Opción 4",
-        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_70"
-  },
-  {
-    "title": "Bnei Herzliya vs Bonn",
+    "title": "Zalgiris vs Bayern Munich",
     "sport": "BALONCESTO",
-    "competition": "Champions League",
-    "time": "18:30",
+    "competition": "Euroleague",
+    "time": "19:00",
     "date": "Hoy",
     "channels": [
       {
         "name": "[LiveTV] German Opción 1",
-        "streamId": "1fb794b1503c5955b75ea0106ee6360b80d78849",
+        "streamId": "428b92f3c71cd3cbf66ef6193808b39d16a52730",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_71"
+    "id": "pina_64"
   },
   {
     "title": "Fenerbahce vs ASVEL",
@@ -108,23 +74,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_72"
-  },
-  {
-    "title": "Zalgiris vs Bayern Munich",
-    "sport": "BALONCESTO",
-    "competition": "Euroleague",
-    "time": "19:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "428b92f3c71cd3cbf66ef6193808b39d16a52730",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_73"
+    "id": "pina_65"
   },
   {
     "title": "Fenerbahce vs ASVEL",
@@ -199,20 +149,20 @@
     ]
   },
   {
-    "title": "Roma vs Bahcesehir Koleji",
+    "title": "Antwerp Giants vs Salon Vilpas",
     "sport": "BALONCESTO",
-    "competition": "Eurocup",
+    "competition": "Champions League",
     "time": "20:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Ukrainian Opción 1",
-        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "4b129146077c1e357e4ab341448b9fb629f939dc",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_74"
+    "id": "pina_63"
   },
   {
     "title": "Rostock vs Hapoel Jerusalem",
@@ -228,7 +178,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_75"
+    "id": "pina_73"
+  },
+  {
+    "title": "Roma vs Bahcesehir Koleji",
+    "sport": "BALONCESTO",
+    "competition": "Eurocup",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Ukrainian Opción 1",
+        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_74"
   },
   {
     "title": "Grand Slam",
@@ -262,23 +228,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_76"
-  },
-  {
-    "title": "Antwerp Giants vs Salon Vilpas",
-    "sport": "BALONCESTO",
-    "competition": "Champions League",
-    "time": "20:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b129146077c1e357e4ab341448b9fb629f939dc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_77"
+    "id": "pina_75"
   },
   {
     "title": "Mauritania MRT vs Burkina Faso BFA",
@@ -294,7 +244,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_78"
+    "id": "pina_76"
   },
   {
     "title": "Antwerp Giants vs Salon Vilpas",
@@ -397,22 +347,6 @@
     "id": "pina_62"
   },
   {
-    "title": "Milan vs Crvena Zvezda",
-    "sport": "BALONCESTO",
-    "competition": "Euroleague",
-    "time": "20:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "6058a4c0f2569bd81c687aa7dfb48b8a9569fb29",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_63"
-  },
-  {
     "title": "Baskonia vs Hapoel T-A",
     "sport": "BALONCESTO",
     "competition": "Euroleague",
@@ -426,7 +360,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_77"
+  },
+  {
+    "title": "Milan vs Crvena Zvezda",
+    "sport": "BALONCESTO",
+    "competition": "Euroleague",
+    "time": "20:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "6058a4c0f2569bd81c687aa7dfb48b8a9569fb29",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_78"
   },
   {
     "title": "Baskonia vs Hapoel T-A",
@@ -480,13 +430,19 @@
     "date": "Hoy",
     "channels": [
       {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "350b2044f1c9e87e18d8fbda1bcc456c22cf9296",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
         "name": "[LiveTV] Polish 8000kbps",
         "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_65"
+    "id": "pina_66"
   },
   {
     "title": "Simulcast",
@@ -502,7 +458,35 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_67"
+  },
+  {
+    "title": "Ireland IRL vs Kosovo KOS",
+    "sport": "FUTBOL",
+    "competition": "UEFA Nations League",
+    "time": "20:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "8442b5c7c99e5af57c2c40c1e28153072968988a",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "bc99becb2a74f8f455d6dbaa3bd85c6c7e938a6c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "cba8d369eac629b577750edb90370cd1c5fb03b7",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_68"
   },
   {
     "title": "Israel ISR vs Austria AUT",
@@ -518,18 +502,80 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_67"
+    "id": "pina_69"
   },
   {
-    "title": "Hungary HUN vs Northern Ireland NIR",
+    "title": "Ukraine UKR vs Georgia GEO",
     "sport": "FUTBOL",
     "competition": "UEFA Nations League",
     "time": "20:45",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "cba8d369eac629b577750edb90370cd1c5fb03b7",
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "aca05dc506242324c1727525d0535ceda24f8dea",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_70"
+  },
+  {
+    "title": "Wales WAL vs Portugal POR",
+    "sport": "FUTBOL",
+    "competition": "UEFA Nations League",
+    "time": "20:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "016d48fb89bb9505ab3f883db1bfb3a7c0a3eccc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 3",
+        "streamId": "12ea555d431dbe51fc8e4ca745aec09fe22a4865",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "3147c586346aee00c005d1caa55204d38678c95f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Turkish Opción 5",
+        "streamId": "b2de6896bde31180ac213fce395c437fa3b2a892",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_71"
+  },
+  {
+    "title": "Denmark DEN vs Norway NOR",
+    "sport": "FUTBOL",
+    "competition": "UEFA Nations League",
+    "time": "20:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "016d48fb89bb9505ab3f883db1bfb3a7c0a3eccc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
@@ -546,47 +592,19 @@
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Dutch Opción 3",
+        "name": "[LiveTV] Dutch Opción 5",
         "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] German Opción 4",
+        "name": "[LiveTV] German Opción 6",
         "streamId": "897e73c9d578848f596585314ecb9ae067c0e229",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_68"
-  },
-  {
-    "title": "Wales WAL vs Portugal POR",
-    "sport": "FUTBOL",
-    "competition": "UEFA Nations League",
-    "time": "20:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "12ea555d431dbe51fc8e4ca745aec09fe22a4865",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "3147c586346aee00c005d1caa55204d38678c95f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Turkish Opción 3",
-        "streamId": "b2de6896bde31180ac213fce395c437fa3b2a892",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_69"
+    "id": "pina_72"
   },
   {
     "title": "Logrono La Rioja vs Wybrzeze Gdansk",
