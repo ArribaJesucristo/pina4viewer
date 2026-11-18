@@ -1,30 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "18/11/2026 15:21",
+    "updatedAt": "18/11/2026 15:31",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Lokomotiv Nowosibirsk vs Dynamo M",
-    "sport": "OTROS",
-    "competition": "Russia. Super League",
-    "time": "13:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "762e1d11f7d07029f316c6f61b8ef73289c6673c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_60"
   },
   {
     "id": "pina_1",
@@ -92,7 +70,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
+    "id": "pina_60"
   },
   {
     "title": "Stalnye Lisy vs Loko-76",
@@ -108,7 +86,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_62"
+    "id": "pina_61"
   },
   {
     "title": "Avangard vs Admiral",
@@ -146,7 +124,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_63"
+    "id": "pina_62"
   },
   {
     "title": "Salavat Yulaev vs Barys",
@@ -162,7 +140,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_63"
   },
   {
     "title": "Salavat Yulaev vs Barys",
@@ -179,6 +157,28 @@
       }
     ],
     "id": "pina_66"
+  },
+  {
+    "title": "Uralmash vs Lokomotiv Kuban",
+    "sport": "BALONCESTO",
+    "competition": "VTB United League",
+    "time": "15:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "762e1d11f7d07029f316c6f61b8ef73289c6673c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_64"
   },
   {
     "id": "pina_2",
