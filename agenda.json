@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "18/11/2026 16:31",
+    "updatedAt": "18/11/2026 16:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -108,7 +108,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_67"
+    "id": "pina_66"
   },
   {
     "title": "Delhi Bulls vs Bangla Tigers",
@@ -156,7 +156,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_67"
   },
   {
     "title": "Uralmash vs Lokomotiv Kuban",
@@ -181,22 +181,6 @@
     "id": "pina_64"
   },
   {
-    "title": "Emirates Eagles vs Yas Lions",
-    "sport": "UAE. T10 LEAGUE",
-    "competition": "UAE. T10 League",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_65"
-  },
-  {
     "title": "BCh vs Stolica",
     "sport": "OTROS",
     "competition": "Belarus. Championship",
@@ -210,7 +194,39 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_70"
+    "id": "pina_65"
+  },
+  {
+    "title": "Emirates Eagles vs Yas Lions",
+    "sport": "UAE. T10 LEAGUE",
+    "competition": "UAE. T10 League",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_71"
+  },
+  {
+    "title": "CSKA vs Lokomotiv",
+    "sport": "KHL",
+    "competition": "KHL",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_68"
   },
   {
     "title": "Shanghai Dragons vs Amur",
@@ -232,22 +248,6 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_68"
-  },
-  {
-    "title": "CSKA vs Lokomotiv",
-    "sport": "KHL",
-    "competition": "KHL",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
     "id": "pina_69"
   },
   {
@@ -264,7 +264,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_71"
+    "id": "pina_70"
   },
   {
     "id": "pina_2",
