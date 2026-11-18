@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "18/11/2026 19:11",
+    "updatedAt": "18/11/2026 19:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -18,7 +18,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
+    "id": "pina_62"
   },
   {
     "title": "Shanghai Dragons vs Amur",
@@ -40,7 +40,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_62"
+    "id": "pina_63"
   },
   {
     "title": "MBA vs Samara",
@@ -56,7 +56,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_63"
+    "id": "pina_64"
   },
   {
     "title": "Trefl Gdansk vs Warta Zawiercie",
@@ -72,7 +72,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_65"
   },
   {
     "title": "CSKA vs Lokomotiv",
@@ -172,7 +172,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_65"
+    "id": "pina_66"
   },
   {
     "title": "Mountfield vs Kometa Brno",
@@ -188,7 +188,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_67"
   },
   {
     "title": "Lokomotiv K (W) vs Dinamo M (W)",
@@ -210,7 +210,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_67"
+    "id": "pina_68"
   },
   {
     "title": "Dynamo Pardubice vs Saipa",
@@ -286,7 +286,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_68"
+    "id": "pina_69"
   },
   {
     "id": "pina_3",
@@ -333,22 +333,6 @@
     "id": "pina_60"
   },
   {
-    "title": "Eisbaeren Berlin vs KooKoo",
-    "sport": "HOCKEY",
-    "competition": "Champions League",
-    "time": "19:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_69"
-  },
-  {
     "title": "Skyliners vs Venezia",
     "sport": "BALONCESTO",
     "competition": "Eurocup",
@@ -358,6 +342,22 @@
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_61"
+  },
+  {
+    "title": "Eisbaeren Berlin vs KooKoo",
+    "sport": "HOCKEY",
+    "competition": "Champions League",
+    "time": "19:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
