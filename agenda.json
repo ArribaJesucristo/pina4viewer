@@ -1,24 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "18/11/2026 18:01",
+    "updatedAt": "18/11/2026 18:11",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "BCh vs Stolica",
-    "sport": "FUTBOL",
-    "competition": "Belarus. Championship",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_61"
   },
   {
     "title": "Emirates Eagles vs Yas Lions",
@@ -30,6 +14,22 @@
       {
         "name": "[LiveTV] English 8000kbps",
         "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_61"
+  },
+  {
+    "title": "BCh vs Stolica",
+    "sport": "FUTBOL",
+    "competition": "Belarus. Championship",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -53,22 +53,6 @@
     "id": "pina_60"
   },
   {
-    "title": "CSKA vs Lokomotiv",
-    "sport": "HOCKEY",
-    "competition": "KHL",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_63"
-  },
-  {
     "title": "Shanghai Dragons vs Amur",
     "sport": "HOCKEY",
     "competition": "KHL",
@@ -84,6 +68,22 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_63"
+  },
+  {
+    "title": "CSKA vs Lokomotiv",
+    "sport": "HOCKEY",
+    "competition": "KHL",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -142,7 +142,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_71"
+    "id": "pina_72"
   },
   {
     "id": "pina_1",
@@ -258,7 +258,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_72"
+    "id": "pina_71"
   },
   {
     "title": "Besiktas vs Real Madrid",
