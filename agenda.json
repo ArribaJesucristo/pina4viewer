@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "18/11/2026 22:21",
+    "updatedAt": "18/11/2026 22:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -36,22 +36,6 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_59"
-  },
-  {
-    "title": "Malaga vs Pardubice",
-    "sport": "BALONCESTO",
-    "competition": "Champions League",
-    "time": "20:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b129146077c1e357e4ab341448b9fb629f939dc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
     "id": "pina_55"
   },
   {
@@ -68,11 +52,11 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_58"
+    "id": "pina_56"
   },
   {
     "title": "Malaga vs Pardubice",
-    "sport": "FUTBOL",
+    "sport": "BALONCESTO",
     "competition": "Champions League",
     "time": "20:30",
     "date": "Hoy",
@@ -84,7 +68,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_62"
+    "id": "pina_59"
   },
   {
     "title": "Wisla Plock vs Veszprem",
@@ -116,7 +100,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_60"
+    "id": "pina_61"
   },
   {
     "title": "Chelsea (W) vs PSG (W)",
@@ -132,7 +116,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_56"
+    "id": "pina_58"
+  },
+  {
+    "title": "Barueri (W) vs Brasilia Volei (W)",
+    "sport": "OTROS",
+    "competition": "Brazil. Women. Superliga",
+    "time": "22:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_60"
   },
   {
     "title": "New Zealand vs India",
@@ -148,7 +148,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
+    "id": "pina_62"
   },
   {
     "id": "pina_1",
