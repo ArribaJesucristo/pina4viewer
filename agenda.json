@@ -1,19 +1,25 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "18/11/2026 07:50",
+    "updatedAt": "18/11/2026 08:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
-    "title": "LA Lakers vs Charlotte",
-    "sport": "BALONCESTO",
-    "competition": "NBA",
-    "time": "05:00",
+    "title": "South Africa vs Bangladesh",
+    "sport": "CRICKET. TEST",
+    "competition": "Test",
+    "time": "09:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "d317a003e8047da2c36a2a2bb2289578c9a3b79c",
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "6d95e4b0893e155cc674b84e0763150c445d3ddd",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
