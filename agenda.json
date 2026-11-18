@@ -1,24 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "18/11/2026 17:41",
+    "updatedAt": "18/11/2026 17:51",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Delhi Bulls vs Bangla Tigers",
-    "sport": "OTROS",
-    "competition": "UAE. T10 League",
-    "time": "14:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_60"
   },
   {
     "title": "BCh vs Stolica",
@@ -34,7 +18,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_62"
+    "id": "pina_61"
   },
   {
     "title": "Emirates Eagles vs Yas Lions",
@@ -50,7 +34,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_63"
+    "id": "pina_62"
   },
   {
     "title": "Trefl Gdansk vs Warta Zawiercie",
@@ -66,23 +50,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
-  },
-  {
-    "title": "CSKA vs Lokomotiv",
-    "sport": "HOCKEY",
-    "competition": "KHL",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_64"
+    "id": "pina_60"
   },
   {
     "title": "Shanghai Dragons vs Amur",
@@ -104,7 +72,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_65"
+    "id": "pina_63"
+  },
+  {
+    "title": "CSKA vs Lokomotiv",
+    "sport": "HOCKEY",
+    "competition": "KHL",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_64"
   },
   {
     "title": "MBA vs Samara",
@@ -120,7 +104,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_65"
   },
   {
     "title": "CSKA vs Lokomotiv",
@@ -191,6 +175,18 @@
         "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
@@ -275,6 +271,22 @@
         "source": "Comunidad"
       }
     ]
+  },
+  {
+    "title": "Real Madrid (W) vs Inter (W)",
+    "sport": "FUTBOL",
+    "competition": "Women. Champions League",
+    "time": "18:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Ukrainian Opción 1",
+        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_66"
   },
   {
     "id": "pina_3",
