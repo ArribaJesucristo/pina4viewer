@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "18/11/2026 16:41",
+    "updatedAt": "18/11/2026 16:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -70,22 +70,6 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_60"
-  },
-  {
-    "title": "Stalnye Lisy vs Loko-76",
-    "sport": "HOCKEY",
-    "competition": "Russia. MHL",
-    "time": "14:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
     "id": "pina_61"
   },
   {
@@ -108,7 +92,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_67"
   },
   {
     "title": "Delhi Bulls vs Bangla Tigers",
@@ -140,7 +124,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_63"
+    "id": "pina_64"
   },
   {
     "title": "Salavat Yulaev vs Barys",
@@ -156,7 +140,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_67"
+    "id": "pina_66"
   },
   {
     "title": "Uralmash vs Lokomotiv Kuban",
@@ -178,7 +162,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_63"
   },
   {
     "title": "BCh vs Stolica",
@@ -514,6 +498,34 @@
   },
   {
     "id": "pina_11",
+    "title": "Zverev - Fils",
+    "sport": "TENIS",
+    "competition": "ATP FINALS",
+    "time": "20:30",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "M+ Deportes 2 - Opción 1 [New Loop]",
+        "streamId": "3afe1af18f8ff78e9946856911b00c67477052b5",
+        "type": "ACESTREAM",
+        "source": "New Loop"
+      },
+      {
+        "name": "M+ Deportes 2 - Opción 2 [Elcano]",
+        "streamId": "e6f06d697f66a8fa606c4d61236c24b0d604d917",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "M+ Deportes 2 - Opción 3 [RCP]",
+        "streamId": "f4cbec08c5a2f3bdbb7a0b8693a3936cd93ae2b5",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_12",
     "title": "Valencia Basket - Virtus",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
@@ -529,7 +541,7 @@
     ]
   },
   {
-    "id": "pina_12",
+    "id": "pina_13",
     "title": "Vasco Gama - Internacional",
     "sport": "FUTBOL",
     "competition": "BRASILEIRAO",
@@ -545,7 +557,7 @@
     ]
   },
   {
-    "id": "pina_20",
+    "id": "pina_21",
     "title": "Amari Jones vs DeAundre Pettus",
     "sport": "BOXEO",
     "competition": "PESO MEDIANO",
@@ -573,7 +585,7 @@
     ]
   },
   {
-    "id": "pina_13",
+    "id": "pina_14",
     "title": "Indianapolis Colts - Houston Texans",
     "sport": "FUTBOL AMERICANO",
     "competition": "JORNADA 11",
@@ -601,7 +613,7 @@
     ]
   },
   {
-    "id": "pina_42",
+    "id": "pina_43",
     "title": "Las Vegas",
     "sport": "MOTOR",
     "competition": "G.P. ESTADOS UNIDOS",
@@ -677,7 +689,7 @@
     ]
   },
   {
-    "id": "pina_21",
+    "id": "pina_22",
     "title": "Eslalon femenino (Gurgl)",
     "sport": "ESQUÍ",
     "competition": "COPA DEL MUNDO",
@@ -723,7 +735,7 @@
     ]
   },
   {
-    "id": "pina_43",
+    "id": "pina_44",
     "title": "Eslalon masculino (Gurgl)",
     "sport": "ESQUÍ",
     "competition": "COPA DEL MUNDO",
@@ -769,7 +781,7 @@
     ]
   },
   {
-    "id": "pina_22",
+    "id": "pina_23",
     "title": "FC Badalona Women - Deportivo Abanca",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -797,7 +809,7 @@
     ]
   },
   {
-    "id": "pina_23",
+    "id": "pina_24",
     "title": "Dubai (Jornada 1)",
     "sport": "VELA",
     "competition": "SAILGP",
@@ -831,7 +843,7 @@
     ]
   },
   {
-    "id": "pina_44",
+    "id": "pina_45",
     "title": "Granada - Real Madrid CF",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -847,7 +859,7 @@
     ]
   },
   {
-    "id": "pina_45",
+    "id": "pina_46",
     "title": "Dubai (Jornada 2)",
     "sport": "VELA",
     "competition": "SAILGP",
@@ -881,7 +893,7 @@
     ]
   },
   {
-    "id": "pina_46",
+    "id": "pina_47",
     "title": "MotoGP (Algarve)",
     "sport": "MOTOS",
     "competition": "G.P. PORTUGAL",
@@ -903,7 +915,7 @@
     ]
   },
   {
-    "id": "pina_24",
+    "id": "pina_25",
     "title": "Viña Albali Valdepeñas - Noia Portus Apostoli",
     "sport": "FUTBOL",
     "competition": "LIGA PRIME (APERTURA)",
@@ -931,7 +943,7 @@
     ]
   },
   {
-    "id": "pina_25",
+    "id": "pina_26",
     "title": "Deportivo Alavés - RC Deportivo",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1043,7 +1055,7 @@
     ]
   },
   {
-    "id": "pina_26",
+    "id": "pina_27",
     "title": "CE Sabadell - Granada CF",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1059,7 +1071,7 @@
     ]
   },
   {
-    "id": "pina_47",
+    "id": "pina_48",
     "title": "Barcelona - Villarreal",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1099,7 +1111,7 @@
     ]
   },
   {
-    "id": "pina_48",
+    "id": "pina_49",
     "title": "Córdoba CF - Real Oviedo",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1115,7 +1127,7 @@
     ]
   },
   {
-    "id": "pina_14",
+    "id": "pina_15",
     "title": "España - China",
     "sport": "FUTBOL",
     "competition": "MUNDIAL SUB-17",
@@ -1143,7 +1155,7 @@
     ]
   },
   {
-    "id": "pina_27",
+    "id": "pina_28",
     "title": "Inglaterra - Nueva Zelanda",
     "sport": "RUGBY",
     "competition": "NATIONS CHAMPIONSHIP",
@@ -1159,7 +1171,7 @@
     ]
   },
   {
-    "id": "pina_49",
+    "id": "pina_50",
     "title": "Moto3 (Algarve)",
     "sport": "MOTOS",
     "competition": "G.P. PORTUGAL",
@@ -1181,7 +1193,7 @@
     ]
   },
   {
-    "id": "pina_28",
+    "id": "pina_29",
     "title": "Aston Villa - Sunderland",
     "sport": "FUTBOL",
     "competition": "PREMIER LEAGUE",
@@ -1209,7 +1221,7 @@
     ]
   },
   {
-    "id": "pina_29",
+    "id": "pina_30",
     "title": "MotoGP (Sprint)",
     "sport": "MOTOS",
     "competition": "G.P. PORTUGAL",
@@ -1231,7 +1243,7 @@
     ]
   },
   {
-    "id": "pina_30",
+    "id": "pina_31",
     "title": "Rayo - Valencia",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1277,7 +1289,7 @@
     ]
   },
   {
-    "id": "pina_31",
+    "id": "pina_32",
     "title": "Real Sociedad B - Cádiz CF",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1293,7 +1305,7 @@
     ]
   },
   {
-    "id": "pina_50",
+    "id": "pina_51",
     "title": "R. Racing Club - Real Sociedad",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1405,7 +1417,7 @@
     ]
   },
   {
-    "id": "pina_51",
+    "id": "pina_52",
     "title": "Real Sporting - UD Las Palmas",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1421,7 +1433,7 @@
     ]
   },
   {
-    "id": "pina_52",
+    "id": "pina_53",
     "title": "Costa Adeje Tenerife - Madrid CFF",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -1449,7 +1461,7 @@
     ]
   },
   {
-    "id": "pina_32",
+    "id": "pina_33",
     "title": "Irlanda - Sudáfrica",
     "sport": "RUGBY",
     "competition": "NATIONS CHAMPIONSHIP",
@@ -1483,7 +1495,7 @@
     ]
   },
   {
-    "id": "pina_53",
+    "id": "pina_54",
     "title": "Liverpool - Manchester Utd.",
     "sport": "FUTBOL",
     "competition": "PREMIER LEAGUE",
@@ -1499,7 +1511,7 @@
     ]
   },
   {
-    "id": "pina_33",
+    "id": "pina_34",
     "title": "Parma - Roma",
     "sport": "FUTBOL",
     "competition": "SERIE A",
@@ -1515,7 +1527,7 @@
     ]
   },
   {
-    "id": "pina_34",
+    "id": "pina_35",
     "title": "San Pablo Burgos - Unicaja",
     "sport": "BALONCESTO",
     "competition": "LIGA ENDESA",
@@ -1549,7 +1561,7 @@
     ]
   },
   {
-    "id": "pina_15",
+    "id": "pina_16",
     "title": "Al Ahli - Al Nassr",
     "sport": "FUTBOL",
     "competition": "LIGA SAUDÍ",
@@ -1565,7 +1577,7 @@
     ]
   },
   {
-    "id": "pina_35",
+    "id": "pina_36",
     "title": "Sevilla - Betis",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1605,7 +1617,7 @@
     ]
   },
   {
-    "id": "pina_36",
+    "id": "pina_37",
     "title": "CD Castellón - CD Eldense",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1621,7 +1633,7 @@
     ]
   },
   {
-    "id": "pina_54",
+    "id": "pina_55",
     "title": "Osasuna - Málaga",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1661,7 +1673,7 @@
     ]
   },
   {
-    "id": "pina_55",
+    "id": "pina_56",
     "title": "RC Celta Fortuna - Real Valladolid CF",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1683,7 +1695,7 @@
     ]
   },
   {
-    "id": "pina_56",
+    "id": "pina_57",
     "title": "Barcelona - Athletic Bilbao",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -1711,7 +1723,7 @@
     ]
   },
   {
-    "id": "pina_37",
+    "id": "pina_38",
     "title": "Bidasoa - Barcelona",
     "sport": "BALONMANO",
     "competition": "LIGA ASOBAL",
@@ -1751,7 +1763,7 @@
     ]
   },
   {
-    "id": "pina_16",
+    "id": "pina_17",
     "title": "Olympiacos - Real Madrid",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
@@ -1785,7 +1797,7 @@
     ]
   },
   {
-    "id": "pina_17",
+    "id": "pina_18",
     "title": "FC Andorra - CD Leganés",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1801,7 +1813,7 @@
     ]
   },
   {
-    "id": "pina_18",
+    "id": "pina_19",
     "title": "Ciudad Real - Torrelavega",
     "sport": "BALONMANO",
     "competition": "LIGA ASOBAL",
@@ -1841,7 +1853,7 @@
     ]
   },
   {
-    "id": "pina_38",
+    "id": "pina_39",
     "title": "Palmeiras - Flamengo",
     "sport": "FUTBOL",
     "competition": "BRASILEIRAO",
@@ -1857,7 +1869,7 @@
     ]
   },
   {
-    "id": "pina_19",
+    "id": "pina_20",
     "title": "Athletic Club - RCD Espanyol",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1969,7 +1981,7 @@
     ]
   },
   {
-    "id": "pina_39",
+    "id": "pina_40",
     "title": "Real Madrid - Celta",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -2003,7 +2015,7 @@
     ]
   },
   {
-    "id": "pina_40",
+    "id": "pina_41",
     "title": "CD Tenerife - RCD Mallorca",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -2019,7 +2031,7 @@
     ]
   },
   {
-    "id": "pina_57",
+    "id": "pina_58",
     "title": "Getafe CF - Atlético de Madrid",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -2131,7 +2143,7 @@
     ]
   },
   {
-    "id": "pina_58",
+    "id": "pina_59",
     "title": "Burgos - Albacete BP",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -2147,7 +2159,7 @@
     ]
   },
   {
-    "id": "pina_59",
+    "id": "pina_60",
     "title": "River - Lanus",
     "sport": "FUTBOL",
     "competition": "CLAUSURA",
@@ -2163,7 +2175,7 @@
     ]
   },
   {
-    "id": "pina_41",
+    "id": "pina_42",
     "title": "Boca Juniors - Atlético Mineiro",
     "sport": "FUTBOL",
     "competition": "COPA SUDAMERICANA",
