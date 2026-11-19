@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "19/11/2026 18:31",
+    "updatedAt": "19/11/2026 18:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -159,6 +159,28 @@
     "id": "pina_61"
   },
   {
+    "title": "Neftekhimik vs SKA",
+    "sport": "KHL",
+    "competition": "KHL",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_65"
+  },
+  {
     "title": "Ak Bars vs Spartak M",
     "sport": "KHL",
     "competition": "KHL",
@@ -180,28 +202,6 @@
       {
         "name": "[LiveTV] Russian Opción 3",
         "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_65"
-  },
-  {
-    "title": "Neftekhimik vs SKA",
-    "sport": "KHL",
-    "competition": "KHL",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -278,7 +278,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_54"
+    "id": "pina_53"
   },
   {
     "title": "Heliovaara / Patten vs Olivetti / Arribage",
@@ -331,22 +331,6 @@
     "id": "pina_69"
   },
   {
-    "title": "Vive Kielce vs Barcelona",
-    "sport": "BALONMANO",
-    "competition": "EHF Champions League",
-    "time": "18:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] French 8000kbps",
-        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_53"
-  },
-  {
     "title": "Austria Vienna (W) vs Bayern Munich (W)",
     "sport": "FUTBOL",
     "competition": "Women. Champions League",
@@ -362,6 +346,22 @@
       {
         "name": "[LiveTV] Ukrainian Opción 2",
         "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_54"
+  },
+  {
+    "title": "Vive Kielce vs Barcelona",
+    "sport": "BALONMANO",
+    "competition": "EHF Champions League",
+    "time": "18:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
