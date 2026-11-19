@@ -1,100 +1,16 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "19/11/2026 23:51",
+    "updatedAt": "20/11/2026 00:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
     "id": "pina_1",
-    "title": "Valencia Basket - Virtus",
-    "sport": "BALONCESTO",
-    "competition": "EUROLIGA",
-    "time": "21:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "M+ Vamos - Opción 1 [New Era]",
-        "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "Valencia Basket - Virtus - Opción Directa 1 [Comunidad]",
-        "streamId": "f35418bcdbdf47c2d88adef411e9ed15cb2ccc38",
-        "type": "ACESTREAM",
-        "source": "Comunidad"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 3",
-        "streamId": "ac839cda9709255c21a98af455731f037e77a9e4",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ]
-  },
-  {
-    "id": "pina_2",
-    "title": "Vasco Gama - Internacional",
-    "sport": "FUTBOL",
-    "competition": "BRASILEIRAO",
-    "time": "23:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "M+ Vamos - Opción 1 [New Era]",
-        "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "b6baa046075d82da300fc1b16de96067a8b9540e",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Ukrainian Opción 2",
-        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 3",
-        "streamId": "5e94200ae8b1d95cb559fb150e5993d92e15d4e7",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ]
-  },
-  {
-    "title": "Osasco (W) vs Pinheiros (W)",
-    "sport": "OTROS",
-    "competition": "Brazil. Women. Superliga",
-    "time": "23:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_50"
-  },
-  {
-    "id": "pina_3",
     "title": "Indianapolis Colts - Houston Texans",
     "sport": "FUTBOL AMERICANO",
     "competition": "JORNADA 11",
     "time": "02:15",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "DAZN 2 - Opción 1 [New Loop]",
@@ -117,12 +33,12 @@
     ]
   },
   {
-    "id": "pina_4",
+    "id": "pina_2",
     "title": "España - China",
     "sport": "FUTBOL",
-    "competition": "MUNDIAL SUB-17",
-    "time": "15:00",
-    "date": "Mañana",
+    "competition": "NATIONS LEAGUE",
+    "time": "12:00",
+    "date": "Hoy",
     "channels": [
       {
         "name": "Teledeporte - Opción 1 [New Loop]",
@@ -145,12 +61,28 @@
     ]
   },
   {
-    "id": "pina_5",
+    "title": "Emirates Eagles vs Bangla Tigers",
+    "sport": "OTROS",
+    "competition": "UAE. T10 League",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "4903ca695edb64bc72ae29eb85a5333ba0139537",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_48"
+  },
+  {
+    "id": "pina_3",
     "title": "Al Ahli - Al Nassr",
     "sport": "FUTBOL",
     "competition": "LIGA SAUDÍ",
     "time": "18:30",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "M+ Vamos - Opción 1 [New Era]",
@@ -161,12 +93,12 @@
     ]
   },
   {
-    "id": "pina_6",
+    "id": "pina_4",
     "title": "Olympiacos - Real Madrid",
     "sport": "BALONCESTO",
     "competition": "EUROLIGA",
     "time": "20:15",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "Movistar Plus+ - Opción 1 [New Era]",
@@ -195,12 +127,12 @@
     ]
   },
   {
-    "id": "pina_7",
+    "id": "pina_5",
     "title": "FC Andorra - CD Leganés",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
     "time": "20:30",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "LaLiga TV Hypermotion - Opción 1 [New Era]",
@@ -211,12 +143,12 @@
     ]
   },
   {
-    "id": "pina_8",
+    "id": "pina_6",
     "title": "Ciudad Real - Torrelavega",
     "sport": "BALONMANO",
     "competition": "LIGA ASOBAL",
     "time": "20:30",
-    "date": "Mañana",
+    "date": "Hoy",
     "channels": [
       {
         "name": "Eurosport 2 - Opción 1 [New Era]",
@@ -251,11 +183,331 @@
     ]
   },
   {
-    "id": "pina_9",
+    "id": "pina_7",
     "title": "Athletic Club - RCD Espanyol",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
     "time": "21:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "M+ LaLiga - Opción 1 [New Loop]",
+        "streamId": "cc9b7f5fe416069a2110da0909b0f915043c468b",
+        "type": "ACESTREAM",
+        "source": "New Loop"
+      },
+      {
+        "name": "M+ LaLiga - Opción 2 [New Loop]",
+        "streamId": "31c19ffb3472c289c5bbbbc174449c8ed0d19e38",
+        "type": "ACESTREAM",
+        "source": "New Loop"
+      },
+      {
+        "name": "M+ LaLiga - Opción 3 [New Era]",
+        "streamId": "0b5f802f2de6488b4023d0f05195486e19d81ed7",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "M+ LaLiga - Opción 4 [Elcano]",
+        "streamId": "8286183314d367940409b760bbf887f3fb923f60",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "M+ LaLiga - Opción 5 [Elcano]",
+        "streamId": "f031f5728b32f6089dda28edebe990cf198108d8",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "M+ LaLiga - Opción 6 [RCP]",
+        "streamId": "1e0214a06000e6f4847dd30cdc2fb839527be862",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 7 [RCP]",
+        "streamId": "d47addf5e467cbf102ba759600303c21efb1deeb",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 8 [RCP]",
+        "streamId": "684e5c085484e8ea79858713eeb7a3668baca29e",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 9 [RCP]",
+        "streamId": "c22bfcc2a70b2a3f447d9b30c52e617946b03888",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 10 [RCP]",
+        "streamId": "5c668adaf86ed6af2488e28d9f3a4e3b0e909664",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 11 [RCP]",
+        "streamId": "7791ba828c0226d8f54cef1611889d29fb333247",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 12 [RCP]",
+        "streamId": "ae84b2cc45ebf1148cc36ee5f801f26a04a2ac2c",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 13 [RCP]",
+        "streamId": "cf6249379184d88a61f9db617341c6b6e6abb342",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 14 [RCP]",
+        "streamId": "d9cf1776ec4443e88aab3ca4b57647b00b4e439e",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 15 [RCP]",
+        "streamId": "1104426e14b649eb23fee16698768544285de478",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 16 [RCP]",
+        "streamId": "ed2a15319345fb0739590faf88d8be4cb1663bf3",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ LaLiga - Opción 17 [RCP]",
+        "streamId": "e3249feb41ca1e68f38cf9bd9a196d6b3f873032",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "title": "Vasco de Gama vs Inter-RS",
+    "sport": "FUTBOL",
+    "competition": "Brazil. Serie A",
+    "time": "23:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "b6baa046075d82da300fc1b16de96067a8b9540e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Ukrainian Opción 2",
+        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 3",
+        "streamId": "5e94200ae8b1d95cb559fb150e5993d92e15d4e7",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_49"
+  },
+  {
+    "title": "Osasco (W) vs Pinheiros (W)",
+    "sport": "OTROS",
+    "competition": "Brazil. Women. Superliga",
+    "time": "23:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_50"
+  },
+  {
+    "id": "pina_8",
+    "title": "Amari Jones vs DeAundre Pettus",
+    "sport": "BOXEO",
+    "competition": "PESO MEDIANO",
+    "time": "02:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "DAZN 2 - Opción 1 [New Loop]",
+        "streamId": "b0eabe0fdd02fdd165896236765a9b753a2ff516",
+        "type": "ACESTREAM",
+        "source": "New Loop"
+      },
+      {
+        "name": "DAZN 2 - Opción 2 [RCP]",
+        "streamId": "3f68c1aa02094e253fd8446c0c307089cecf2a1e",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN 2 - Opción 3 [RCP]",
+        "streamId": "704c3c92aafbcf3234c88a4be5fd98fcbd238d85",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_9",
+    "title": "Eslalon femenino (Gurgl)",
+    "sport": "ESQUÍ",
+    "competition": "COPA DEL MUNDO",
+    "time": "10:15",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "Eurosport 1 - Opción 1 [New Era]",
+        "streamId": "62a5750be4d2218b1064f83afaac4770fd92350d",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "Eurosport 1 - Opción 2 [Comunidad]",
+        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Eurosport 1 - Opción 3 [Comunidad]",
+        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Eurosport 1 - Opción 4 [Comunidad]",
+        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Eurosport 1 - Opción 5 [Elcano]",
+        "streamId": "5e4cd48c79f991fcbee2de8b9d30c4b16de3b952",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Eurosport 1 - Opción 6 [RCP]",
+        "streamId": "c9ee7c95e7a2e9cd0e848b1f70848453652bebc2",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_10",
+    "title": "FC Badalona Women - Deportivo Abanca",
+    "sport": "FUTBOL",
+    "competition": "LIGA F",
+    "time": "12:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "DAZN 2 - Opción 1 [New Loop]",
+        "streamId": "b0eabe0fdd02fdd165896236765a9b753a2ff516",
+        "type": "ACESTREAM",
+        "source": "New Loop"
+      },
+      {
+        "name": "DAZN 2 - Opción 2 [RCP]",
+        "streamId": "3f68c1aa02094e253fd8446c0c307089cecf2a1e",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN 2 - Opción 3 [RCP]",
+        "streamId": "704c3c92aafbcf3234c88a4be5fd98fcbd238d85",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_11",
+    "title": "Dubai (Jornada 1)",
+    "sport": "VELA",
+    "competition": "SAILGP",
+    "time": "12:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "M+ Deportes - Opción 1 [New Era]",
+        "streamId": "af393f93814d03160d48d2730759593b7bea5b47",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "M+ Deportes - Opción 2 [Elcano]",
+        "streamId": "d00223931b1854163e24c5c22475015d7d45c112",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "M+ Deportes - Opción 3 [RCP]",
+        "streamId": "e5fa927d9a017f4523fdb62774a0aec457985bfa",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ Deportes - Opción 4 [RCP]",
+        "streamId": "8f75fa54b498ce6889068f56f7a343b72bbcfcc0",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_12",
+    "title": "Viña Albali Valdepeñas - Noia Portus Apostoli",
+    "sport": "FUTBOL",
+    "competition": "LIGA PRIME (APERTURA)",
+    "time": "13:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "Teledeporte - Opción 1 [New Loop]",
+        "streamId": "4048be88f84250719e864868e537612f389df48e",
+        "type": "ACESTREAM",
+        "source": "New Loop"
+      },
+      {
+        "name": "Teledeporte - Opción 2 [RCP]",
+        "streamId": "5a272a468eaf25feb032e2c5d377c6276b2299c7",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "Teledeporte [TDT Oficial]",
+        "streamId": "https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main.m3u8",
+        "type": "DIRECT",
+        "source": "TDTChannels"
+      }
+    ]
+  },
+  {
+    "id": "pina_13",
+    "title": "Deportivo Alavés - RC Deportivo",
+    "sport": "FUTBOL",
+    "competition": "LALIGA EA SPORTS",
+    "time": "14:00",
     "date": "Mañana",
     "channels": [
       {
@@ -363,12 +615,44 @@
     ]
   },
   {
-    "id": "pina_10",
-    "title": "Amari Jones vs DeAundre Pettus",
-    "sport": "BOXEO",
-    "competition": "PESO MEDIANO",
-    "time": "02:00",
-    "date": "21/11/2026",
+    "id": "pina_14",
+    "title": "CE Sabadell - Granada CF",
+    "sport": "FUTBOL",
+    "competition": "LALIGA HYPERMOTION",
+    "time": "14:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "LaLiga TV Hypermotion - Opción 1 [New Era]",
+        "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      }
+    ]
+  },
+  {
+    "id": "pina_15",
+    "title": "Inglaterra - Nueva Zelanda",
+    "sport": "RUGBY",
+    "competition": "NATIONS CHAMPIONSHIP",
+    "time": "15:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "M+ Vamos - Opción 1 [New Era]",
+        "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      }
+    ]
+  },
+  {
+    "id": "pina_16",
+    "title": "Aston Villa - Sunderland",
+    "sport": "FUTBOL",
+    "competition": "PREMIER LEAGUE",
+    "time": "16:00",
+    "date": "Mañana",
     "channels": [
       {
         "name": "DAZN 2 - Opción 1 [New Loop]",
@@ -391,7 +675,353 @@
     ]
   },
   {
-    "id": "pina_32",
+    "id": "pina_17",
+    "title": "MotoGP (Sprint)",
+    "sport": "MOTOS",
+    "competition": "G.P. PORTUGAL",
+    "time": "16:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "DAZN MotoGP - Opción 1 [New Era]",
+        "streamId": "30bfcdcc472367415184132bf9d8f46a0a4e8b32",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "DAZN MotoGP - Opción 2 [New Era]",
+        "streamId": "2a05a020dfe97aaa0665bb7551022868b2a88b36",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      }
+    ]
+  },
+  {
+    "id": "pina_18",
+    "title": "Rayo - Valencia",
+    "sport": "FUTBOL",
+    "competition": "LALIGA EA SPORTS",
+    "time": "16:15",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "DAZN LaLiga 2 - Opción 1 [Elcano]",
+        "streamId": "02b9307c5c97c86914cc5939d6bbeb5b4ec60b47",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "DAZN LaLiga 2 - Opción 2 [Elcano]",
+        "streamId": "e33e666c393ef04ebe99a9b92135d2e0b48c4d10",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "DAZN LaLiga 2 - Opción 3 [RCP]",
+        "streamId": "d83a3242e10ecffc31a16a02890de199a65dd8d9",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN LaLiga 2 - Opción 4 [RCP]",
+        "streamId": "1124d4366348b76a755710c8d0d5728e39d0095c",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN LaLiga 2 - Opción 5 [RCP]",
+        "streamId": "37d42d2b5d2278e6bb5810329a5f220867b3cf0c",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN LaLiga 2 - Opción 6 [RCP]",
+        "streamId": "91cf24543ac5a3dcd4a3557ce52de3f50ee6cb18",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_19",
+    "title": "Real Sociedad B - Cádiz CF",
+    "sport": "FUTBOL",
+    "competition": "LALIGA HYPERMOTION",
+    "time": "16:15",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "LaLiga TV Hypermotion - Opción 1 [New Era]",
+        "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      }
+    ]
+  },
+  {
+    "id": "pina_20",
+    "title": "Irlanda - Sudáfrica",
+    "sport": "RUGBY",
+    "competition": "NATIONS CHAMPIONSHIP",
+    "time": "17:30",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "M+ Deportes - Opción 1 [New Era]",
+        "streamId": "af393f93814d03160d48d2730759593b7bea5b47",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "M+ Deportes - Opción 2 [Elcano]",
+        "streamId": "d00223931b1854163e24c5c22475015d7d45c112",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "M+ Deportes - Opción 3 [RCP]",
+        "streamId": "e5fa927d9a017f4523fdb62774a0aec457985bfa",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "M+ Deportes - Opción 4 [RCP]",
+        "streamId": "8f75fa54b498ce6889068f56f7a343b72bbcfcc0",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_21",
+    "title": "Parma - Roma",
+    "sport": "FUTBOL",
+    "competition": "SERIE A",
+    "time": "18:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "M+ Vamos - Opción 1 [New Era]",
+        "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      }
+    ]
+  },
+  {
+    "id": "pina_22",
+    "title": "San Pablo Burgos - Unicaja",
+    "sport": "BALONCESTO",
+    "competition": "LIGA ENDESA",
+    "time": "18:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "Movistar Plus+ - Opción 1 [New Era]",
+        "streamId": "67121cbb722b88ce4489717e9a87a26f60184ec9",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 2 [RCP]",
+        "streamId": "f559b9fea692a86e1a1de41cd1aa667e3fa02775",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 3 [RCP]",
+        "streamId": "0e18315b703248bb01eab6b9d3f0cb2cd893601f",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 4 [RCP]",
+        "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_23",
+    "title": "Sevilla - Betis",
+    "sport": "FUTBOL",
+    "competition": "LALIGA EA SPORTS",
+    "time": "18:30",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "DAZN LaLiga - Opción 1 [New Era]",
+        "streamId": "3097d7e7ff0fe414711ee067a841168b6f5671cb",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 2 [Elcano]",
+        "streamId": "a3bca895c58d3fc7d5e4259d3d5e3cf0291d1914",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 3 [RCP]",
+        "streamId": "7264961f63dc9dc6ef7acee7371f7a76b6a02061",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 4 [RCP]",
+        "streamId": "0b01aa547ffe11ce2042bfe443abafb3ea17e5ff",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN LaLiga - Opción 5 [RCP]",
+        "streamId": "05b9cb49947d3b78bbc66671c6e16ba0ae3b60b6",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_24",
+    "title": "CD Castellón - CD Eldense",
+    "sport": "FUTBOL",
+    "competition": "LALIGA HYPERMOTION",
+    "time": "18:30",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "LaLiga TV Hypermotion - Opción 1 [New Era]",
+        "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      }
+    ]
+  },
+  {
+    "id": "pina_25",
+    "title": "Bidasoa - Barcelona",
+    "sport": "BALONMANO",
+    "competition": "LIGA ASOBAL",
+    "time": "20:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "Eurosport 2 - Opción 1 [New Era]",
+        "streamId": "32fcf8e1513049ef9f90d08ba9040fe34b01d9fd",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "Eurosport 2 - Opción 2 [Comunidad]",
+        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Eurosport 2 - Opción 3 [Comunidad]",
+        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Eurosport 2 - Opción 4 [Elcano]",
+        "streamId": "c373da9e901d414b7384e671112e64d5a2310c29",
+        "type": "ACESTREAM",
+        "source": "Elcano"
+      },
+      {
+        "name": "Eurosport 2 - Opción 5 [RCP]",
+        "streamId": "d6622ca93e54e493a6910248f8fe1f03aa85bf01",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_26",
+    "title": "Palmeiras - Flamengo",
+    "sport": "FUTBOL",
+    "competition": "BRASILEIRAO",
+    "time": "20:30",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "M+ Vamos - Opción 1 [New Era]",
+        "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      }
+    ]
+  },
+  {
+    "id": "pina_27",
+    "title": "Real Madrid - Celta",
+    "sport": "FUTBOL",
+    "competition": "LALIGA EA SPORTS",
+    "time": "21:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "Movistar Plus+ - Opción 1 [New Era]",
+        "streamId": "67121cbb722b88ce4489717e9a87a26f60184ec9",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 2 [RCP]",
+        "streamId": "f559b9fea692a86e1a1de41cd1aa667e3fa02775",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 3 [RCP]",
+        "streamId": "0e18315b703248bb01eab6b9d3f0cb2cd893601f",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "Movistar Plus+ - Opción 4 [RCP]",
+        "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
+    "id": "pina_28",
+    "title": "CD Tenerife - RCD Mallorca",
+    "sport": "FUTBOL",
+    "competition": "LALIGA HYPERMOTION",
+    "time": "21:00",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "LaLiga TV Hypermotion - Opción 1 [New Era]",
+        "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      }
+    ]
+  },
+  {
+    "id": "pina_29",
+    "title": "Boca Juniors - Atlético Mineiro",
+    "sport": "FUTBOL",
+    "competition": "COPA SUDAMERICANA",
+    "time": "23:15",
+    "date": "Mañana",
+    "channels": [
+      {
+        "name": "M+ Vamos - Opción 1 [New Era]",
+        "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      }
+    ]
+  },
+  {
+    "id": "pina_30",
     "title": "Las Vegas",
     "sport": "MOTOR",
     "competition": "G.P. ESTADOS UNIDOS",
@@ -467,53 +1097,7 @@
     ]
   },
   {
-    "id": "pina_11",
-    "title": "Eslalon femenino (Gurgl)",
-    "sport": "ESQUÍ",
-    "competition": "COPA DEL MUNDO",
-    "time": "10:15",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "Eurosport 1 - Opción 1 [New Era]",
-        "streamId": "62a5750be4d2218b1064f83afaac4770fd92350d",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "Eurosport 1 - Opción 2 [Comunidad]",
-        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
-        "type": "ACESTREAM",
-        "source": "Comunidad"
-      },
-      {
-        "name": "Eurosport 1 - Opción 3 [Comunidad]",
-        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
-        "type": "ACESTREAM",
-        "source": "Comunidad"
-      },
-      {
-        "name": "Eurosport 1 - Opción 4 [Comunidad]",
-        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
-        "type": "ACESTREAM",
-        "source": "Comunidad"
-      },
-      {
-        "name": "Eurosport 1 - Opción 5 [Elcano]",
-        "streamId": "5e4cd48c79f991fcbee2de8b9d30c4b16de3b952",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "Eurosport 1 - Opción 6 [RCP]",
-        "streamId": "c9ee7c95e7a2e9cd0e848b1f70848453652bebc2",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      }
-    ]
-  },
-  {
-    "id": "pina_33",
+    "id": "pina_31",
     "title": "Eslalon masculino (Gurgl)",
     "sport": "ESQUÍ",
     "competition": "COPA DEL MUNDO",
@@ -559,69 +1143,7 @@
     ]
   },
   {
-    "id": "pina_12",
-    "title": "FC Badalona Women - Deportivo Abanca",
-    "sport": "FUTBOL",
-    "competition": "LIGA F",
-    "time": "12:00",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "DAZN 2 - Opción 1 [New Loop]",
-        "streamId": "b0eabe0fdd02fdd165896236765a9b753a2ff516",
-        "type": "ACESTREAM",
-        "source": "New Loop"
-      },
-      {
-        "name": "DAZN 2 - Opción 2 [RCP]",
-        "streamId": "3f68c1aa02094e253fd8446c0c307089cecf2a1e",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "DAZN 2 - Opción 3 [RCP]",
-        "streamId": "704c3c92aafbcf3234c88a4be5fd98fcbd238d85",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      }
-    ]
-  },
-  {
-    "id": "pina_13",
-    "title": "Dubai (Jornada 1)",
-    "sport": "VELA",
-    "competition": "SAILGP",
-    "time": "12:00",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "M+ Deportes - Opción 1 [New Era]",
-        "streamId": "af393f93814d03160d48d2730759593b7bea5b47",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "M+ Deportes - Opción 2 [Elcano]",
-        "streamId": "d00223931b1854163e24c5c22475015d7d45c112",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Deportes - Opción 3 [RCP]",
-        "streamId": "e5fa927d9a017f4523fdb62774a0aec457985bfa",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ Deportes - Opción 4 [RCP]",
-        "streamId": "8f75fa54b498ce6889068f56f7a343b72bbcfcc0",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      }
-    ]
-  },
-  {
-    "id": "pina_34",
+    "id": "pina_32",
     "title": "Granada - Real Madrid CF",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -637,7 +1159,7 @@
     ]
   },
   {
-    "id": "pina_35",
+    "id": "pina_33",
     "title": "Dubai (Jornada 2)",
     "sport": "VELA",
     "competition": "SAILGP",
@@ -671,7 +1193,7 @@
     ]
   },
   {
-    "id": "pina_36",
+    "id": "pina_34",
     "title": "MotoGP (Algarve)",
     "sport": "MOTOS",
     "competition": "G.P. PORTUGAL",
@@ -693,163 +1215,7 @@
     ]
   },
   {
-    "id": "pina_14",
-    "title": "Viña Albali Valdepeñas - Noia Portus Apostoli",
-    "sport": "FUTBOL",
-    "competition": "LIGA PRIME (APERTURA)",
-    "time": "13:00",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "Teledeporte - Opción 1 [New Loop]",
-        "streamId": "4048be88f84250719e864868e537612f389df48e",
-        "type": "ACESTREAM",
-        "source": "New Loop"
-      },
-      {
-        "name": "Teledeporte - Opción 2 [RCP]",
-        "streamId": "5a272a468eaf25feb032e2c5d377c6276b2299c7",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "Teledeporte [TDT Oficial]",
-        "streamId": "https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main.m3u8",
-        "type": "DIRECT",
-        "source": "TDTChannels"
-      }
-    ]
-  },
-  {
-    "id": "pina_15",
-    "title": "Deportivo Alavés - RC Deportivo",
-    "sport": "FUTBOL",
-    "competition": "LALIGA EA SPORTS",
-    "time": "14:00",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "M+ LaLiga - Opción 1 [New Loop]",
-        "streamId": "cc9b7f5fe416069a2110da0909b0f915043c468b",
-        "type": "ACESTREAM",
-        "source": "New Loop"
-      },
-      {
-        "name": "M+ LaLiga - Opción 2 [New Loop]",
-        "streamId": "31c19ffb3472c289c5bbbbc174449c8ed0d19e38",
-        "type": "ACESTREAM",
-        "source": "New Loop"
-      },
-      {
-        "name": "M+ LaLiga - Opción 3 [New Era]",
-        "streamId": "0b5f802f2de6488b4023d0f05195486e19d81ed7",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "M+ LaLiga - Opción 4 [Elcano]",
-        "streamId": "8286183314d367940409b760bbf887f3fb923f60",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ LaLiga - Opción 5 [Elcano]",
-        "streamId": "f031f5728b32f6089dda28edebe990cf198108d8",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ LaLiga - Opción 6 [RCP]",
-        "streamId": "1e0214a06000e6f4847dd30cdc2fb839527be862",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ LaLiga - Opción 7 [RCP]",
-        "streamId": "d47addf5e467cbf102ba759600303c21efb1deeb",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ LaLiga - Opción 8 [RCP]",
-        "streamId": "684e5c085484e8ea79858713eeb7a3668baca29e",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ LaLiga - Opción 9 [RCP]",
-        "streamId": "c22bfcc2a70b2a3f447d9b30c52e617946b03888",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ LaLiga - Opción 10 [RCP]",
-        "streamId": "5c668adaf86ed6af2488e28d9f3a4e3b0e909664",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ LaLiga - Opción 11 [RCP]",
-        "streamId": "7791ba828c0226d8f54cef1611889d29fb333247",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ LaLiga - Opción 12 [RCP]",
-        "streamId": "ae84b2cc45ebf1148cc36ee5f801f26a04a2ac2c",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ LaLiga - Opción 13 [RCP]",
-        "streamId": "cf6249379184d88a61f9db617341c6b6e6abb342",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ LaLiga - Opción 14 [RCP]",
-        "streamId": "d9cf1776ec4443e88aab3ca4b57647b00b4e439e",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ LaLiga - Opción 15 [RCP]",
-        "streamId": "1104426e14b649eb23fee16698768544285de478",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ LaLiga - Opción 16 [RCP]",
-        "streamId": "ed2a15319345fb0739590faf88d8be4cb1663bf3",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ LaLiga - Opción 17 [RCP]",
-        "streamId": "e3249feb41ca1e68f38cf9bd9a196d6b3f873032",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      }
-    ]
-  },
-  {
-    "id": "pina_16",
-    "title": "CE Sabadell - Granada CF",
-    "sport": "FUTBOL",
-    "competition": "LALIGA HYPERMOTION",
-    "time": "14:00",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "LaLiga TV Hypermotion - Opción 1 [New Era]",
-        "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      }
-    ]
-  },
-  {
-    "id": "pina_37",
+    "id": "pina_35",
     "title": "Barcelona - Villarreal",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -889,7 +1255,7 @@
     ]
   },
   {
-    "id": "pina_38",
+    "id": "pina_36",
     "title": "Córdoba CF - Real Oviedo",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -905,23 +1271,7 @@
     ]
   },
   {
-    "id": "pina_17",
-    "title": "Inglaterra - Nueva Zelanda",
-    "sport": "RUGBY",
-    "competition": "NATIONS CHAMPIONSHIP",
-    "time": "15:00",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "M+ Vamos - Opción 1 [New Era]",
-        "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      }
-    ]
-  },
-  {
-    "id": "pina_39",
+    "id": "pina_37",
     "title": "Moto3 (Algarve)",
     "sport": "MOTOS",
     "competition": "G.P. PORTUGAL",
@@ -943,119 +1293,7 @@
     ]
   },
   {
-    "id": "pina_18",
-    "title": "Aston Villa - Sunderland",
-    "sport": "FUTBOL",
-    "competition": "PREMIER LEAGUE",
-    "time": "16:00",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "DAZN 2 - Opción 1 [New Loop]",
-        "streamId": "b0eabe0fdd02fdd165896236765a9b753a2ff516",
-        "type": "ACESTREAM",
-        "source": "New Loop"
-      },
-      {
-        "name": "DAZN 2 - Opción 2 [RCP]",
-        "streamId": "3f68c1aa02094e253fd8446c0c307089cecf2a1e",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "DAZN 2 - Opción 3 [RCP]",
-        "streamId": "704c3c92aafbcf3234c88a4be5fd98fcbd238d85",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      }
-    ]
-  },
-  {
-    "id": "pina_19",
-    "title": "MotoGP (Sprint)",
-    "sport": "MOTOS",
-    "competition": "G.P. PORTUGAL",
-    "time": "16:00",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "DAZN MotoGP - Opción 1 [New Era]",
-        "streamId": "30bfcdcc472367415184132bf9d8f46a0a4e8b32",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "DAZN MotoGP - Opción 2 [New Era]",
-        "streamId": "2a05a020dfe97aaa0665bb7551022868b2a88b36",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      }
-    ]
-  },
-  {
-    "id": "pina_20",
-    "title": "Rayo - Valencia",
-    "sport": "FUTBOL",
-    "competition": "LALIGA EA SPORTS",
-    "time": "16:15",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "DAZN LaLiga 2 - Opción 1 [Elcano]",
-        "streamId": "02b9307c5c97c86914cc5939d6bbeb5b4ec60b47",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "DAZN LaLiga 2 - Opción 2 [Elcano]",
-        "streamId": "e33e666c393ef04ebe99a9b92135d2e0b48c4d10",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "DAZN LaLiga 2 - Opción 3 [RCP]",
-        "streamId": "d83a3242e10ecffc31a16a02890de199a65dd8d9",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "DAZN LaLiga 2 - Opción 4 [RCP]",
-        "streamId": "1124d4366348b76a755710c8d0d5728e39d0095c",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "DAZN LaLiga 2 - Opción 5 [RCP]",
-        "streamId": "37d42d2b5d2278e6bb5810329a5f220867b3cf0c",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "DAZN LaLiga 2 - Opción 6 [RCP]",
-        "streamId": "91cf24543ac5a3dcd4a3557ce52de3f50ee6cb18",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      }
-    ]
-  },
-  {
-    "id": "pina_21",
-    "title": "Real Sociedad B - Cádiz CF",
-    "sport": "FUTBOL",
-    "competition": "LALIGA HYPERMOTION",
-    "time": "16:15",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "LaLiga TV Hypermotion - Opción 1 [New Era]",
-        "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      }
-    ]
-  },
-  {
-    "id": "pina_40",
+    "id": "pina_38",
     "title": "R. Racing Club - Real Sociedad",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1167,7 +1405,7 @@
     ]
   },
   {
-    "id": "pina_41",
+    "id": "pina_39",
     "title": "Real Sporting - UD Las Palmas",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1183,7 +1421,7 @@
     ]
   },
   {
-    "id": "pina_42",
+    "id": "pina_40",
     "title": "Costa Adeje Tenerife - Madrid CFF",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -1211,41 +1449,7 @@
     ]
   },
   {
-    "id": "pina_22",
-    "title": "Irlanda - Sudáfrica",
-    "sport": "RUGBY",
-    "competition": "NATIONS CHAMPIONSHIP",
-    "time": "17:30",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "M+ Deportes - Opción 1 [New Era]",
-        "streamId": "af393f93814d03160d48d2730759593b7bea5b47",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "M+ Deportes - Opción 2 [Elcano]",
-        "streamId": "d00223931b1854163e24c5c22475015d7d45c112",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "M+ Deportes - Opción 3 [RCP]",
-        "streamId": "e5fa927d9a017f4523fdb62774a0aec457985bfa",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "M+ Deportes - Opción 4 [RCP]",
-        "streamId": "8f75fa54b498ce6889068f56f7a343b72bbcfcc0",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      }
-    ]
-  },
-  {
-    "id": "pina_43",
+    "id": "pina_41",
     "title": "Liverpool - Manchester Utd.",
     "sport": "FUTBOL",
     "competition": "PREMIER LEAGUE",
@@ -1261,113 +1465,7 @@
     ]
   },
   {
-    "id": "pina_23",
-    "title": "Parma - Roma",
-    "sport": "FUTBOL",
-    "competition": "SERIE A",
-    "time": "18:00",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "M+ Vamos - Opción 1 [New Era]",
-        "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      }
-    ]
-  },
-  {
-    "id": "pina_24",
-    "title": "San Pablo Burgos - Unicaja",
-    "sport": "BALONCESTO",
-    "competition": "LIGA ENDESA",
-    "time": "18:00",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "Movistar Plus+ - Opción 1 [New Era]",
-        "streamId": "67121cbb722b88ce4489717e9a87a26f60184ec9",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "Movistar Plus+ - Opción 2 [RCP]",
-        "streamId": "f559b9fea692a86e1a1de41cd1aa667e3fa02775",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "Movistar Plus+ - Opción 3 [RCP]",
-        "streamId": "0e18315b703248bb01eab6b9d3f0cb2cd893601f",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "Movistar Plus+ - Opción 4 [RCP]",
-        "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      }
-    ]
-  },
-  {
-    "id": "pina_25",
-    "title": "Sevilla - Betis",
-    "sport": "FUTBOL",
-    "competition": "LALIGA EA SPORTS",
-    "time": "18:30",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "DAZN LaLiga - Opción 1 [New Era]",
-        "streamId": "3097d7e7ff0fe414711ee067a841168b6f5671cb",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "DAZN LaLiga - Opción 2 [Elcano]",
-        "streamId": "a3bca895c58d3fc7d5e4259d3d5e3cf0291d1914",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "DAZN LaLiga - Opción 3 [RCP]",
-        "streamId": "7264961f63dc9dc6ef7acee7371f7a76b6a02061",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "DAZN LaLiga - Opción 4 [RCP]",
-        "streamId": "0b01aa547ffe11ce2042bfe443abafb3ea17e5ff",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "DAZN LaLiga - Opción 5 [RCP]",
-        "streamId": "05b9cb49947d3b78bbc66671c6e16ba0ae3b60b6",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      }
-    ]
-  },
-  {
-    "id": "pina_26",
-    "title": "CD Castellón - CD Eldense",
-    "sport": "FUTBOL",
-    "competition": "LALIGA HYPERMOTION",
-    "time": "18:30",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "LaLiga TV Hypermotion - Opción 1 [New Era]",
-        "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      }
-    ]
-  },
-  {
-    "id": "pina_44",
+    "id": "pina_42",
     "title": "Osasuna - Málaga",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1407,7 +1505,7 @@
     ]
   },
   {
-    "id": "pina_45",
+    "id": "pina_43",
     "title": "RC Celta Fortuna - Real Valladolid CF",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1429,7 +1527,7 @@
     ]
   },
   {
-    "id": "pina_46",
+    "id": "pina_44",
     "title": "Barcelona - Athletic Bilbao",
     "sport": "FUTBOL",
     "competition": "LIGA F",
@@ -1457,113 +1555,7 @@
     ]
   },
   {
-    "id": "pina_27",
-    "title": "Bidasoa - Barcelona",
-    "sport": "BALONMANO",
-    "competition": "LIGA ASOBAL",
-    "time": "20:00",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "Eurosport 2 - Opción 1 [New Era]",
-        "streamId": "32fcf8e1513049ef9f90d08ba9040fe34b01d9fd",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "Eurosport 2 - Opción 2 [Comunidad]",
-        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
-        "type": "ACESTREAM",
-        "source": "Comunidad"
-      },
-      {
-        "name": "Eurosport 2 - Opción 3 [Comunidad]",
-        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
-        "type": "ACESTREAM",
-        "source": "Comunidad"
-      },
-      {
-        "name": "Eurosport 2 - Opción 4 [Elcano]",
-        "streamId": "c373da9e901d414b7384e671112e64d5a2310c29",
-        "type": "ACESTREAM",
-        "source": "Elcano"
-      },
-      {
-        "name": "Eurosport 2 - Opción 5 [RCP]",
-        "streamId": "d6622ca93e54e493a6910248f8fe1f03aa85bf01",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      }
-    ]
-  },
-  {
-    "id": "pina_28",
-    "title": "Palmeiras - Flamengo",
-    "sport": "FUTBOL",
-    "competition": "BRASILEIRAO",
-    "time": "20:30",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "M+ Vamos - Opción 1 [New Era]",
-        "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      }
-    ]
-  },
-  {
-    "id": "pina_29",
-    "title": "Real Madrid - Celta",
-    "sport": "FUTBOL",
-    "competition": "LALIGA EA SPORTS",
-    "time": "21:00",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "Movistar Plus+ - Opción 1 [New Era]",
-        "streamId": "67121cbb722b88ce4489717e9a87a26f60184ec9",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "Movistar Plus+ - Opción 2 [RCP]",
-        "streamId": "f559b9fea692a86e1a1de41cd1aa667e3fa02775",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "Movistar Plus+ - Opción 3 [RCP]",
-        "streamId": "0e18315b703248bb01eab6b9d3f0cb2cd893601f",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "Movistar Plus+ - Opción 4 [RCP]",
-        "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      }
-    ]
-  },
-  {
-    "id": "pina_30",
-    "title": "CD Tenerife - RCD Mallorca",
-    "sport": "FUTBOL",
-    "competition": "LALIGA HYPERMOTION",
-    "time": "21:00",
-    "date": "21/11/2026",
-    "channels": [
-      {
-        "name": "LaLiga TV Hypermotion - Opción 1 [New Era]",
-        "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      }
-    ]
-  },
-  {
-    "id": "pina_47",
+    "id": "pina_45",
     "title": "Getafe CF - Atlético de Madrid",
     "sport": "FUTBOL",
     "competition": "LALIGA EA SPORTS",
@@ -1675,7 +1667,7 @@
     ]
   },
   {
-    "id": "pina_48",
+    "id": "pina_46",
     "title": "Burgos - Albacete BP",
     "sport": "FUTBOL",
     "competition": "LALIGA HYPERMOTION",
@@ -1691,28 +1683,12 @@
     ]
   },
   {
-    "id": "pina_49",
+    "id": "pina_47",
     "title": "River - Lanus",
     "sport": "FUTBOL",
     "competition": "CLAUSURA",
     "time": "23:00",
     "date": "22/11/2026",
-    "channels": [
-      {
-        "name": "M+ Vamos - Opción 1 [New Era]",
-        "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      }
-    ]
-  },
-  {
-    "id": "pina_31",
-    "title": "Boca Juniors - Atlético Mineiro",
-    "sport": "FUTBOL",
-    "competition": "COPA SUDAMERICANA",
-    "time": "23:15",
-    "date": "21/11/2026",
     "channels": [
       {
         "name": "M+ Vamos - Opción 1 [New Era]",
