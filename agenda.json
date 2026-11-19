@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "19/11/2026 19:11",
+    "updatedAt": "19/11/2026 19:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -68,7 +68,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_55"
+    "id": "pina_53"
   },
   {
     "title": "Neftekhimik vs SKA",
@@ -243,26 +243,10 @@
     "id": "pina_63"
   },
   {
-    "title": "Maccabi T-A vs Dubai",
-    "sport": "BALONCESTO",
-    "competition": "Euroleague",
-    "time": "18:15",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_57"
-  },
-  {
     "title": "Heliovaara / Patten vs Olivetti / Arribage",
     "sport": "TENIS",
     "competition": "ATP Finals. Turin. Doubles",
-    "time": "18:15",
+    "time": "18:10",
     "date": "Hoy",
     "channels": [
       {
@@ -294,6 +278,22 @@
   },
   {
     "title": "Maccabi T-A vs Dubai",
+    "sport": "BALONCESTO",
+    "competition": "Euroleague",
+    "time": "18:15",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_54"
+  },
+  {
+    "title": "Maccabi T-A vs Dubai",
     "sport": "EUROLEAGUE",
     "competition": "Euroleague",
     "time": "18:15",
@@ -322,7 +322,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_53"
+    "id": "pina_56"
   },
   {
     "title": "Austria Vienna (W) vs Bayern Munich (W)",
@@ -344,7 +344,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_56"
+    "id": "pina_57"
   },
   {
     "title": "Vive Kielce vs Barcelona",
@@ -410,7 +410,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_54"
+    "id": "pina_55"
   },
   {
     "title": "Farjestad vs Frolunda",
@@ -464,7 +464,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_73"
+    "id": "pina_72"
   },
   {
     "title": "Krefeld Pinguine vs Straubing Tigers",
@@ -512,7 +512,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_72"
+    "id": "pina_73"
   },
   {
     "title": "Grand Slam",
