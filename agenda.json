@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "19/11/2026 14:01",
+    "updatedAt": "19/11/2026 14:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -83,22 +83,6 @@
     ]
   },
   {
-    "title": "France U-17 vs Haiti U-17",
-    "sport": "FUTBOL",
-    "competition": "U17 World Cup",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "cba8d369eac629b577750edb90370cd1c5fb03b7",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_56"
-  },
-  {
     "title": "ACA Young Eagles",
     "sport": "BOXEO",
     "competition": "ACA",
@@ -108,6 +92,22 @@
       {
         "name": "[LiveTV] Russian Opción 1",
         "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_56"
+  },
+  {
+    "title": "France U-17 vs Haiti U-17",
+    "sport": "FUTBOL",
+    "competition": "U17 World Cup",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "cba8d369eac629b577750edb90370cd1c5fb03b7",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -128,7 +128,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_60"
+    "id": "pina_61"
   },
   {
     "title": "Royal Champs vs Yas Lions",
@@ -144,7 +144,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_59"
+    "id": "pina_58"
   },
   {
     "title": "Metallurg Mg vs Traktor",
@@ -178,7 +178,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_58"
+    "id": "pina_59"
   },
   {
     "title": "Khilasedichi vs ACH Volley",
@@ -194,7 +194,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
+    "id": "pina_60"
   },
   {
     "id": "pina_2",
