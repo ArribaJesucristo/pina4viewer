@@ -1,68 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "19/11/2026 17:51",
+    "updatedAt": "19/11/2026 18:01",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Sinara vs Novaya Generatsiya",
-    "sport": "FUTBOL",
-    "competition": "Russia. Super League",
-    "time": "16:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "762e1d11f7d07029f316c6f61b8ef73289c6673c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_55"
-  },
-  {
-    "title": "Mozambique U-17 vs Denmark U-17",
-    "sport": "FUTBOL",
-    "competition": "U17 World Cup",
-    "time": "16:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "cba8d369eac629b577750edb90370cd1c5fb03b7",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_56"
-  },
-  {
-    "title": "Sinara vs Novaya Generatsiya",
-    "sport": "RUSSIA. SUPER LEAGUE",
-    "competition": "Russia. Super League",
-    "time": "16:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "762e1d11f7d07029f316c6f61b8ef73289c6673c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_64"
   },
   {
     "id": "pina_1",
@@ -118,7 +58,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_57"
+    "id": "pina_56"
   },
   {
     "title": "Emirates Eagles vs Bangla Tigers",
@@ -134,7 +74,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_58"
+    "id": "pina_57"
   },
   {
     "title": "Norwid Czestochowa vs Projekt Warszawa",
@@ -150,7 +90,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_53"
+    "id": "pina_54"
   },
   {
     "title": "Neftekhimik vs SKA",
@@ -172,7 +112,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_59"
+    "id": "pina_58"
   },
   {
     "title": "Ak Bars vs Spartak M",
@@ -200,7 +140,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_60"
+    "id": "pina_59"
   },
   {
     "title": "Ceske Budejovice vs Sparta Praha",
@@ -216,7 +156,35 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
+    "id": "pina_60"
+  },
+  {
+    "title": "Ak Bars vs Spartak M",
+    "sport": "KHL",
+    "competition": "KHL",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 3",
+        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_64"
   },
   {
     "title": "Neftekhimik vs SKA",
@@ -241,34 +209,6 @@
     "id": "pina_65"
   },
   {
-    "title": "Ak Bars vs Spartak M",
-    "sport": "KHL",
-    "competition": "KHL",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 3",
-        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_66"
-  },
-  {
     "title": "Barkom-Kazhany vs Kedzierzyn-Kozle",
     "sport": "OTROS",
     "competition": "Poland. PlusLiga",
@@ -282,23 +222,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_54"
-  },
-  {
-    "title": "Kaposvar vs Mladost",
-    "sport": "FUTBOL",
-    "competition": "Champions League Qualifying",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b129146077c1e357e4ab341448b9fb629f939dc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_63"
+    "id": "pina_55"
   },
   {
     "title": "RSM Classic",
@@ -338,7 +262,23 @@
         "source": "Comunidad"
       }
     ],
-    "id": "pina_70"
+    "id": "pina_61"
+  },
+  {
+    "title": "Kaposvar vs Mladost",
+    "sport": "FUTBOL",
+    "competition": "Champions League Qualifying",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "4b129146077c1e357e4ab341448b9fb629f939dc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_62"
   },
   {
     "title": "Heliovaara / Patten vs Olivetti / Arribage",
@@ -372,7 +312,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_68"
+    "id": "pina_69"
+  },
+  {
+    "title": "Maccabi T-A vs Dubai",
+    "sport": "BALONCESTO",
+    "competition": "Euroleague",
+    "time": "18:15",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_53"
   },
   {
     "title": "Maccabi T-A vs Dubai",
@@ -410,7 +366,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_62"
+    "id": "pina_63"
   },
   {
     "title": "Vive Kielce vs Barcelona",
@@ -426,7 +382,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_69"
+    "id": "pina_70"
   },
   {
     "id": "pina_2",
@@ -455,6 +411,44 @@
         "source": "TDTChannels"
       }
     ]
+  },
+  {
+    "title": "Farjestad vs Frolunda",
+    "sport": "SWEDEN. SHL",
+    "competition": "Sweden. SHL",
+    "time": "19:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "e61b6538df35e5016635dfa2b3073f5b82ee4c2b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_66"
+  },
+  {
+    "title": "Zalgiris vs Panathinaikos",
+    "sport": "EUROLEAGUE",
+    "competition": "Euroleague",
+    "time": "19:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_68"
   },
   {
     "id": "pina_3",
