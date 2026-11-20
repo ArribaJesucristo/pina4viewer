@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/11/2026 21:41",
+    "updatedAt": "20/11/2026 21:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -62,7 +62,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_79"
+    "id": "pina_78"
   },
   {
     "title": "Martyna Kubka (W) vs Caijsa Hennemann (W)",
@@ -389,6 +389,22 @@
     "id": "pina_68"
   },
   {
+    "title": "Miedz Legnica vs LKS Lodz",
+    "sport": "FUTBOL",
+    "competition": "Poland. I Liga",
+    "time": "20:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_69"
+  },
+  {
     "title": "Super Cup, Verona",
     "sport": "FUTBOL",
     "competition": "Global Champions Tour",
@@ -416,22 +432,6 @@
       {
         "name": "[LiveTV] German Opción 4",
         "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_69"
-  },
-  {
-    "title": "Miedz Legnica vs LKS Lodz",
-    "sport": "FUTBOL",
-    "competition": "Poland. I Liga",
-    "time": "20:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -808,7 +808,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_60"
+    "id": "pina_59"
   },
   {
     "title": "Barnsley vs Sheffield Wednesday",
@@ -852,7 +852,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_59"
+    "id": "pina_60"
   },
   {
     "title": "Porto vs Paredes",
@@ -890,7 +890,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_78"
+    "id": "pina_79"
   },
   {
     "id": "pina_8",
