@@ -1,40 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/11/2026 01:11",
+    "updatedAt": "20/11/2026 01:21",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Sao Paolo vs Fluminense",
-    "sport": "FUTBOL",
-    "competition": "Brazil. Serie A",
-    "time": "01:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "b6baa046075d82da300fc1b16de96067a8b9540e",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_61"
-  },
-  {
-    "title": "Tampa Bay vs Edmonton",
-    "sport": "HOCKEY",
-    "competition": "NHL",
-    "time": "01:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_62"
   },
   {
     "title": "United States Grand Prix",
@@ -128,7 +96,55 @@
         "source": "RCP"
       }
     ],
-    "id": "pina_65"
+    "id": "pina_60"
+  },
+  {
+    "title": "Tampa Bay vs Edmonton",
+    "sport": "HOCKEY",
+    "competition": "NHL",
+    "time": "01:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_61"
+  },
+  {
+    "title": "Sao Paolo vs Fluminense",
+    "sport": "FUTBOL",
+    "competition": "Brazil. Serie A",
+    "time": "01:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "b6baa046075d82da300fc1b16de96067a8b9540e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_62"
+  },
+  {
+    "title": "Memphis vs Golden State",
+    "sport": "BALONCESTO",
+    "competition": "NBA",
+    "time": "02:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Ukrainian Opción 1",
+        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_64"
   },
   {
     "title": "San Antonio vs LA Clippers",
@@ -150,23 +166,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_63"
-  },
-  {
-    "title": "Memphis vs Golden State",
-    "sport": "BALONCESTO",
-    "competition": "NBA",
-    "time": "02:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Ukrainian Opción 1",
-        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_64"
+    "id": "pina_65"
   },
   {
     "id": "pina_1",
@@ -193,6 +193,24 @@
         "streamId": "704c3c92aafbcf3234c88a4be5fd98fcbd238d85",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "d317a003e8047da2c36a2a2bb2289578c9a3b79c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 3",
+        "streamId": "79f10c6c6168e42bfc606f3f7b9e5f3ca79dedab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
@@ -602,7 +620,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_60"
+    "id": "pina_63"
   },
   {
     "id": "pina_12",
