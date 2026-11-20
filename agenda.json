@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/11/2026 19:11",
+    "updatedAt": "20/11/2026 19:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -136,29 +136,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_78"
-  },
-  {
-    "title": "KPRF vs Tyumen",
-    "sport": "RUSSIA. SUPER LEAGUE",
-    "competition": "Russia. Super League",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "762e1d11f7d07029f316c6f61b8ef73289c6673c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_80"
+    "id": "pina_79"
   },
   {
     "title": "RSM Classic",
@@ -488,7 +466,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_79"
+    "id": "pina_80"
   },
   {
     "title": "Simulcast",
@@ -520,7 +498,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_77"
+    "id": "pina_78"
   },
   {
     "id": "pina_3",
@@ -555,6 +533,34 @@
         "source": "RCP"
       }
     ]
+  },
+  {
+    "title": "Grand Slam",
+    "sport": "PDC",
+    "competition": "PDC",
+    "time": "20:15",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "d317a003e8047da2c36a2a2bb2289578c9a3b79c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 2",
+        "streamId": "1950633a3723cb52b17c764125decc04445bd5ff",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 3",
+        "streamId": "5f595b1bbade5e7c915d99f90645f4c30d4ba540",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_77"
   },
   {
     "id": "pina_4",
