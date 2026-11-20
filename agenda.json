@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/11/2026 01:01",
+    "updatedAt": "20/11/2026 01:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -131,22 +131,6 @@
     "id": "pina_65"
   },
   {
-    "title": "Memphis vs Golden State",
-    "sport": "BALONCESTO",
-    "competition": "NBA",
-    "time": "02:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Ukrainian Opción 1",
-        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_63"
-  },
-  {
     "title": "San Antonio vs LA Clippers",
     "sport": "BALONCESTO",
     "competition": "NBA",
@@ -162,6 +146,22 @@
       {
         "name": "[LiveTV] French 8000kbps",
         "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_63"
+  },
+  {
+    "title": "Memphis vs Golden State",
+    "sport": "BALONCESTO",
+    "competition": "NBA",
+    "time": "02:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Ukrainian Opción 1",
+        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
