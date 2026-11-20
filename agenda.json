@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/11/2026 11:01",
+    "updatedAt": "20/11/2026 11:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -40,7 +40,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_60"
+    "id": "pina_61"
   },
   {
     "title": "Western Sydney vs Adelaide United",
@@ -72,12 +72,6 @@
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Czech Opción 1",
-        "streamId": "fd572fdeeaaff430ab2775e3bae1620295660ebd",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
         "name": "[LiveTV] English 8000kbps",
         "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
         "type": "ACESTREAM",
@@ -90,8 +84,14 @@
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Dutch Opción 4",
+        "name": "[LiveTV] Dutch Opción 3",
         "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Czech Opción 4",
+        "streamId": "fd572fdeeaaff430ab2775e3bae1620295660ebd",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
@@ -130,7 +130,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
+    "id": "pina_60"
   },
   {
     "title": "Amurskie Tigry vs Akademiya SKA",
