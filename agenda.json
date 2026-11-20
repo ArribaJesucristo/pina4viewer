@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/11/2026 10:51",
+    "updatedAt": "20/11/2026 11:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -72,6 +72,12 @@
     "date": "Hoy",
     "channels": [
       {
+        "name": "[LiveTV] Czech Opción 1",
+        "streamId": "fd572fdeeaaff430ab2775e3bae1620295660ebd",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
         "name": "[LiveTV] English 8000kbps",
         "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
         "type": "ACESTREAM",
@@ -84,7 +90,7 @@
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Dutch Opción 3",
+        "name": "[LiveTV] Dutch Opción 4",
         "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
         "type": "ACESTREAM",
         "source": "LiveTV"
