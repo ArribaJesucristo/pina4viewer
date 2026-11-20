@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/11/2026 21:02",
+    "updatedAt": "20/11/2026 21:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -99,22 +99,6 @@
     "id": "pina_79"
   },
   {
-    "title": "Rhys Edwards vs Lee MacGregor",
-    "sport": "BOXEO",
-    "competition": "Boxing",
-    "time": "20:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "cc7b8c39f70aa342248d02c8ab55bafdb4116ed7",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_62"
-  },
-  {
     "title": "Martyna Kubka (W) vs Caijsa Hennemann (W)",
     "sport": "TENIS",
     "competition": "Billie Jean King Cup",
@@ -124,6 +108,22 @@
       {
         "name": "[LiveTV] Polish Opción 1",
         "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_62"
+  },
+  {
+    "title": "Rhys Edwards vs Lee MacGregor",
+    "sport": "BOXEO",
+    "competition": "Boxing",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "cc7b8c39f70aa342248d02c8ab55bafdb4116ed7",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -648,7 +648,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_77"
+    "id": "pina_76"
   },
   {
     "id": "pina_8",
@@ -864,7 +864,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_76"
+    "id": "pina_78"
   },
   {
     "title": "Porto vs Paredes",
@@ -908,7 +908,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_78"
+    "id": "pina_77"
   },
   {
     "id": "pina_9",
