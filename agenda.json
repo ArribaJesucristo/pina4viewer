@@ -1,12 +1,12 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "21/11/2026 00:20",
+    "updatedAt": "21/11/2026 00:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
     "title": "Praia Clube vs Guarulhos",
-    "sport": "BRAZIL. SUPERLIGA",
+    "sport": "OTROS",
     "competition": "Brazil. Superliga",
     "time": "01:00",
     "date": "Hoy",
@@ -16,6 +16,70 @@
         "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
         "type": "ACESTREAM",
         "source": "LiveTV"
+      }
+    ],
+    "id": "pina_53"
+  },
+  {
+    "title": "United States Grand Prix",
+    "sport": "MOTOR",
+    "competition": "Formula 1",
+    "time": "01:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "14407b00d454cb7dc0d70aa26e8bbc554f457f00",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German 8000kbps",
+        "streamId": "b04372b9543d763bd2dbd2a1842d9723fd080076",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "DAZN F1 - Opción 1 [New Loop]",
+        "streamId": "d65257bb934b73647374224fd62d836815804be2",
+        "type": "ACESTREAM",
+        "source": "New Loop"
+      },
+      {
+        "name": "DAZN F1 - Opción 2 [New Era]",
+        "streamId": "c21d60fa884b24f3cedcb1110b84ac2bcb0c2d19",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "DAZN F1 - Opción 3 [New Era]",
+        "streamId": "ee4646aae30d862e0d9d453998a344a60aaa7cde",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "DAZN F1 - Opción 4 [RCP]",
+        "streamId": "60cf60019aeef9af6183dd05af1b89e25594ac14",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN F1 - Opción 5 [RCP]",
+        "streamId": "4fc3417ae1f5cfd8c7ab8e4ebdb9ba88d486caf2",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN F1 - Opción 6 [RCP]",
+        "streamId": "a52bf7c28df63995ad427c32ebf1e517445720bb",
+        "type": "ACESTREAM",
+        "source": "RCP"
       }
     ],
     "id": "pina_54"
@@ -827,28 +891,6 @@
         "source": "New Era"
       }
     ]
-  },
-  {
-    "title": "Porto vs Paredes",
-    "sport": "PORTUGAL. CUP",
-    "competition": "Portugal. Cup",
-    "time": "21:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b129146077c1e357e4ab341448b9fb629f939dc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Ukrainian Opción 2",
-        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_53"
   },
   {
     "title": "Goias vs Montes Claros",
