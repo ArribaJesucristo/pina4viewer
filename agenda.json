@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/11/2026 04:21",
+    "updatedAt": "20/11/2026 04:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -25,22 +25,6 @@
       }
     ],
     "id": "pina_59"
-  },
-  {
-    "title": "Memphis vs Golden State",
-    "sport": "BALONCESTO",
-    "competition": "NBA",
-    "time": "02:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Ukrainian Opción 1",
-        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_60"
   },
   {
     "id": "pina_1",
@@ -178,6 +162,22 @@
         "streamId": "a52bf7c28df63995ad427c32ebf1e517445720bb",
         "type": "ACESTREAM",
         "source": "RCP"
+      }
+    ],
+    "id": "pina_60"
+  },
+  {
+    "title": "FIA TCR World Tour",
+    "sport": "TCR",
+    "competition": "TCR",
+    "time": "05:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ],
     "id": "pina_61"
