@@ -1,30 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/11/2026 18:11",
+    "updatedAt": "20/11/2026 18:21",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Metallurg-Zhlobin vs Gomel",
-    "sport": "HOCKEY",
-    "competition": "Belarus. Extraleague",
-    "time": "15:55",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_61"
   },
   {
     "title": "Poland (W) vs Sweden (W)",
@@ -46,7 +24,7 @@
     "title": "Gina Feistel (W) vs Kajsa Rinaldo-Persson (W)",
     "sport": "TENIS",
     "competition": "Billie Jean King Cup",
-    "time": "17:00",
+    "time": "17:20",
     "date": "Hoy",
     "channels": [
       {
@@ -72,7 +50,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_59"
+    "id": "pina_60"
   },
   {
     "title": "Olsztyn vs Katowice",
@@ -88,7 +66,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_60"
+    "id": "pina_61"
   },
   {
     "title": "Shanghai Dragons vs CSKA",
@@ -183,6 +161,22 @@
     "id": "pina_76"
   },
   {
+    "title": "Piast Gliwice vs Korona Kielce",
+    "sport": "FUTBOL",
+    "competition": "Poland. Ekstraklasa",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "3e87464ed8c42ed14464461ea08860a3040a8944",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_67"
+  },
+  {
     "title": "RSM Classic",
     "sport": "GOLF",
     "competition": "PGA Tour",
@@ -224,22 +218,6 @@
         "streamId": "872608e734992db636eb79426802cd08f4029afb",
         "type": "ACESTREAM",
         "source": "Comunidad"
-      }
-    ],
-    "id": "pina_67"
-  },
-  {
-    "title": "Piast Gliwice vs Korona Kielce",
-    "sport": "FUTBOL",
-    "competition": "Poland. Ekstraklasa",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish Opción 1",
-        "streamId": "3e87464ed8c42ed14464461ea08860a3040a8944",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
       }
     ],
     "id": "pina_68"
@@ -289,10 +267,32 @@
     "id": "pina_70"
   },
   {
+    "title": "Dinamo-Molodechno vs Vitebsk",
+    "sport": "HOCKEY",
+    "competition": "Belarus. Extraleague",
+    "time": "18:10",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_71"
+  },
+  {
     "title": "Bolelli / Vavassori vs Krawietz / Puetz",
     "sport": "TENIS",
     "competition": "ATP Finals. Turin. Doubles",
-    "time": "18:00",
+    "time": "18:10",
     "date": "Hoy",
     "channels": [
       {
@@ -314,29 +314,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_71"
-  },
-  {
-    "title": "Dinamo-Molodechno vs Vitebsk",
-    "sport": "HOCKEY",
-    "competition": "Belarus. Extraleague",
-    "time": "18:10",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_72"
+    "id": "pina_73"
   },
   {
     "id": "pina_1",
@@ -361,20 +339,20 @@
     ]
   },
   {
-    "title": "Martyna Kubka (W) vs Caijsa Hennemann (W)",
-    "sport": "TENIS",
-    "competition": "Billie Jean King Cup",
+    "title": "Anadolu Efes vs ASVEL",
+    "sport": "BALONCESTO",
+    "competition": "Euroleague",
     "time": "18:30",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Polish Opción 1",
-        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
+        "name": "[LiveTV] French Opción 1",
+        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_73"
+    "id": "pina_59"
   },
   {
     "title": "Darmstadt vs Heidenheim",
@@ -396,7 +374,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_74"
+    "id": "pina_72"
   },
   {
     "title": "Anadolu Efes vs ASVEL",
@@ -413,6 +391,22 @@
       }
     ],
     "id": "pina_77"
+  },
+  {
+    "title": "Martyna Kubka (W) vs Caijsa Hennemann (W)",
+    "sport": "OTROS",
+    "competition": "Billie Jean King Cup",
+    "time": "18:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_74"
   },
   {
     "id": "pina_2",
