@@ -1,42 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/11/2026 18:01",
+    "updatedAt": "20/11/2026 18:11",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "World Cup, Lillehammer",
-    "sport": "OTROS",
-    "competition": "Ski Jumping",
-    "time": "15:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 3",
-        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 4",
-        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_62"
   },
   {
     "title": "Metallurg-Zhlobin vs Gomel",
@@ -61,40 +27,6 @@
     "id": "pina_61"
   },
   {
-    "title": "Finlandia Trophy",
-    "sport": "OTROS",
-    "competition": "Figure Skating",
-    "time": "16:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 3",
-        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Dutch Opción 4",
-        "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_63"
-  },
-  {
     "title": "Poland (W) vs Sweden (W)",
     "sport": "TENIS",
     "competition": "Billie Jean King Cup",
@@ -108,7 +40,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_62"
   },
   {
     "title": "Gina Feistel (W) vs Kajsa Rinaldo-Persson (W)",
@@ -124,23 +56,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_65"
-  },
-  {
-    "title": "Olsztyn vs Katowice",
-    "sport": "OTROS",
-    "competition": "Poland. PlusLiga",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_59"
+    "id": "pina_63"
   },
   {
     "title": "Rostov vs Krylia Sovetov",
@@ -152,6 +68,22 @@
       {
         "name": "[LiveTV] Russian 8000kbps",
         "streamId": "4b7c5f21b435d79c823e47572655a9c157a3ba12",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_59"
+  },
+  {
+    "title": "Olsztyn vs Katowice",
+    "sport": "OTROS",
+    "competition": "Poland. PlusLiga",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -172,7 +104,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_64"
+  },
+  {
+    "title": "Plzen vs Dynamo Pardubice",
+    "sport": "HOCKEY",
+    "competition": "Czech Republic. Extraliga",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_65"
   },
   {
     "title": "KPRF vs Tyumen",
@@ -194,23 +142,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_67"
-  },
-  {
-    "title": "Plzen vs Dynamo Pardubice",
-    "sport": "HOCKEY",
-    "competition": "Czech Republic. Extraliga",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_68"
+    "id": "pina_66"
   },
   {
     "title": "Shanghai Dragons vs CSKA",
@@ -251,6 +183,52 @@
     "id": "pina_76"
   },
   {
+    "title": "RSM Classic",
+    "sport": "GOLF",
+    "competition": "PGA Tour",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 3",
+        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 4",
+        "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "RSM Classic - Opción Directa 1 [Comunidad]",
+        "streamId": "1735ff3141fa3820090fad58dc548a1390accae9",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "RSM Classic - Opción Directa 2 [Comunidad]",
+        "streamId": "872608e734992db636eb79426802cd08f4029afb",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      }
+    ],
+    "id": "pina_67"
+  },
+  {
     "title": "Piast Gliwice vs Korona Kielce",
     "sport": "FUTBOL",
     "competition": "Poland. Ekstraklasa",
@@ -264,7 +242,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_69"
+    "id": "pina_68"
   },
   {
     "title": "Igdir vs Umraniyespor",
@@ -276,6 +254,34 @@
       {
         "name": "[LiveTV] Turkish Opción 1",
         "streamId": "48bee10b883f17c7186d60f1e8022dca0ba41a05",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_69"
+  },
+  {
+    "title": "Finlandia Trophy",
+    "sport": "OTROS",
+    "competition": "Figure Skating",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 2",
+        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 3",
+        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -355,6 +361,22 @@
     ]
   },
   {
+    "title": "Martyna Kubka (W) vs Caijsa Hennemann (W)",
+    "sport": "TENIS",
+    "competition": "Billie Jean King Cup",
+    "time": "18:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_73"
+  },
+  {
     "title": "Darmstadt vs Heidenheim",
     "sport": "FUTBOL",
     "competition": "Germany. 2 Bundesliga",
@@ -370,22 +392,6 @@
       {
         "name": "[LiveTV] Polish 8000kbps",
         "streamId": "b146ee4b6e16c9df58e27bd02ffd6cea840ff212",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_73"
-  },
-  {
-    "title": "Martyna Kubka (W) vs Caijsa Hennemann (W)",
-    "sport": "OTROS",
-    "competition": "Billie Jean King Cup",
-    "time": "18:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish Opción 1",
-        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
