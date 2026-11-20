@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/11/2026 17:01",
+    "updatedAt": "20/11/2026 17:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -219,22 +219,6 @@
     "id": "pina_69"
   },
   {
-    "title": "Olsztyn vs Katowice",
-    "sport": "POLAND. PLUSLIGA",
-    "competition": "Poland. PlusLiga",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_70"
-  },
-  {
     "title": "KPRF vs Tyumen",
     "sport": "RUSSIA. SUPER LEAGUE",
     "competition": "Russia. Super League",
@@ -250,6 +234,22 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "762e1d11f7d07029f316c6f61b8ef73289c6673c",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_70"
+  },
+  {
+    "title": "Olsztyn vs Katowice",
+    "sport": "POLAND. PLUSLIGA",
+    "competition": "Poland. PlusLiga",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
