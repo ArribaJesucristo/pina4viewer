@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/11/2026 17:41",
+    "updatedAt": "20/11/2026 17:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -219,6 +219,22 @@
     "id": "pina_68"
   },
   {
+    "title": "Plzen vs Dynamo Pardubice",
+    "sport": "HOCKEY",
+    "competition": "Czech Republic. Extraliga",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_69"
+  },
+  {
     "title": "KPRF vs Tyumen",
     "sport": "FUTBOL",
     "competition": "Russia. Super League",
@@ -234,22 +250,6 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "762e1d11f7d07029f316c6f61b8ef73289c6673c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_69"
-  },
-  {
-    "title": "Plzen vs Dynamo Pardubice",
-    "sport": "HOCKEY",
-    "competition": "Czech Republic. Extraliga",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
