@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/11/2026 17:11",
+    "updatedAt": "20/11/2026 17:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -18,7 +18,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_60"
+    "id": "pina_62"
   },
   {
     "id": "pina_1",
@@ -80,7 +80,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
+    "id": "pina_63"
   },
   {
     "title": "Metallurg-Zhlobin vs Gomel",
@@ -102,7 +102,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_62"
+    "id": "pina_64"
   },
   {
     "title": "Italy U-17 vs Jamaica U-17",
@@ -118,7 +118,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_63"
+    "id": "pina_65"
   },
   {
     "title": "Finlandia Trophy",
@@ -152,7 +152,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_66"
   },
   {
     "title": "Poland (W) vs Sweden (W)",
@@ -168,7 +168,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_65"
+    "id": "pina_67"
   },
   {
     "title": "Gina Feistel (W) vs Kajsa Rinaldo-Persson (W)",
@@ -184,7 +184,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_68"
+  },
+  {
+    "title": "Olsztyn vs Katowice",
+    "sport": "OTROS",
+    "competition": "Poland. PlusLiga",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_60"
   },
   {
     "title": "Rostov vs Krylia Sovetov",
@@ -200,7 +216,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_67"
+    "id": "pina_61"
   },
   {
     "title": "Shanghai Dragons vs CSKA",
@@ -216,7 +232,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_69"
+    "id": "pina_70"
   },
   {
     "title": "KPRF vs Tyumen",
@@ -234,22 +250,6 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "762e1d11f7d07029f316c6f61b8ef73289c6673c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_70"
-  },
-  {
-    "title": "Olsztyn vs Katowice",
-    "sport": "POLAND. PLUSLIGA",
-    "competition": "Poland. PlusLiga",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -282,7 +282,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_68"
+    "id": "pina_69"
   },
   {
     "id": "pina_2",
