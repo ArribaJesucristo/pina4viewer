@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "20/11/2026 11:51",
+    "updatedAt": "20/11/2026 12:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -19,50 +19,6 @@
       }
     ],
     "id": "pina_58"
-  },
-  {
-    "title": "Western Sydney vs Adelaide United",
-    "sport": "FUTBOL",
-    "competition": "Australia. A-League",
-    "time": "09:40",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 2",
-        "streamId": "5e94200ae8b1d95cb559fb150e5993d92e15d4e7",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_60"
-  },
-  {
-    "title": "Western Sydney vs Adelaide United",
-    "sport": "AUSTRALIA. A-LEAGUE",
-    "competition": "Australia. A-League",
-    "time": "09:40",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 2",
-        "streamId": "5e94200ae8b1d95cb559fb150e5993d92e15d4e7",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_62"
   },
   {
     "title": "Portuguese Grand Prix",
@@ -130,7 +86,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
+    "id": "pina_60"
   },
   {
     "title": "Harrison / Skupski vs Granollers / Zeballos",
@@ -158,7 +114,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_63"
+    "id": "pina_61"
   },
   {
     "id": "pina_1",
@@ -204,6 +160,56 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "ef9c77bd94783448b8edb552109f5f15b2bd82d1",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_62"
+  },
+  {
+    "title": "World Junior Championships",
+    "sport": "JUDO",
+    "competition": "Judo",
+    "time": "13:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_63"
+  },
+  {
+    "title": "Finlandia Trophy",
+    "sport": "FIGURE SKATING",
+    "competition": "Figure Skating",
+    "time": "13:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 3",
+        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 4",
+        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
