@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "21/11/2026 12:31",
+    "updatedAt": "21/11/2026 12:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -151,34 +151,6 @@
     "id": "pina_67"
   },
   {
-    "title": "Finlandia Trophy",
-    "sport": "OTROS",
-    "competition": "Figure Skating",
-    "time": "11:15",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 3",
-        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_52"
-  },
-  {
     "title": "Genclerbirligi vs Gaziantep",
     "sport": "FUTBOL",
     "competition": "Turkey. Super League",
@@ -192,7 +164,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_53"
+    "id": "pina_52"
   },
   {
     "title": "Nizhnyi Novgorod vs Torpedo M",
@@ -208,7 +180,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_54"
+    "id": "pina_53"
   },
   {
     "id": "pina_2",
@@ -273,6 +245,28 @@
     ]
   },
   {
+    "title": "Neftekhimik vs Spartak M",
+    "sport": "HOCKEY",
+    "competition": "KHL",
+    "time": "12:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_54"
+  },
+  {
     "title": "Dnepr Mogilyov vs Vitebsk",
     "sport": "FUTBOL",
     "competition": "Belarus. Vysheyshaya Liga",
@@ -295,21 +289,15 @@
     "id": "pina_55"
   },
   {
-    "title": "Neftekhimik vs Spartak M",
-    "sport": "HOCKEY",
-    "competition": "KHL",
+    "title": "Badalona (W) vs Deportivo de La Coruna (W)",
+    "sport": "FUTBOL",
+    "competition": "Spain. Women. Primera Division",
     "time": "12:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "name": "[LiveTV] Spanish 8000kbps",
+        "streamId": "b0eabe0fdd02fdd165896236765a9b753a2ff516",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -333,22 +321,6 @@
     "id": "pina_57"
   },
   {
-    "title": "Badalona (W) vs Deportivo de La Coruna (W)",
-    "sport": "FUTBOL",
-    "competition": "Spain. Women. Primera Division",
-    "time": "12:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Spanish 8000kbps",
-        "streamId": "b0eabe0fdd02fdd165896236765a9b753a2ff516",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_58"
-  },
-  {
     "title": "Eintracht (W) vs Hamburg (W)",
     "sport": "FUTBOL",
     "competition": "Germany. Women. Bundesliga",
@@ -368,7 +340,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_59"
+    "id": "pina_58"
   },
   {
     "title": "Grand Prix Dubai",
@@ -384,7 +356,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_60"
+    "id": "pina_59"
   },
   {
     "title": "Neftekhimik vs Spartak M",
@@ -406,7 +378,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_65"
+    "id": "pina_66"
   },
   {
     "title": "Arevalo Gonzalez / Pavic vs Harrison / Skupski",
@@ -428,7 +400,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
+    "id": "pina_60"
   },
   {
     "title": "MBA vs Zenit",
@@ -450,7 +422,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_62"
+    "id": "pina_61"
   },
   {
     "id": "pina_4",
@@ -481,6 +453,34 @@
     ]
   },
   {
+    "title": "Finlandia Trophy",
+    "sport": "FIGURE SKATING",
+    "competition": "Figure Skating",
+    "time": "13:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 3",
+        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_63"
+  },
+  {
     "title": "World Junior Championships",
     "sport": "JUDO",
     "competition": "Judo",
@@ -500,7 +500,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_65"
   },
   {
     "title": "World Cup, Gurgl",
@@ -534,7 +534,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_64"
   },
   {
     "id": "pina_5",
@@ -608,7 +608,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_63"
+    "id": "pina_62"
   },
   {
     "id": "pina_6",
