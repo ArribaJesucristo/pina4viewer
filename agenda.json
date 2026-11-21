@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "21/11/2026 05:11",
+    "updatedAt": "21/11/2026 05:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -31,28 +31,6 @@
       }
     ],
     "id": "pina_53"
-  },
-  {
-    "title": "North Melbourne (W) vs Sydney Swans (W)",
-    "sport": "OTROS",
-    "competition": "Australia. Women. AFL",
-    "time": "03:05",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "5f966c123759de46dff29c379266b7a403452033",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "cba8d369eac629b577750edb90370cd1c5fb03b7",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_54"
   },
   {
     "id": "pina_1",
@@ -194,7 +172,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_56"
+    "id": "pina_54"
   },
   {
     "title": "Auckland vs Melbourne Victory",
@@ -216,7 +194,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_57"
+    "id": "pina_56"
   },
   {
     "title": "Sydney Sixers (W) vs Perth (W)",
@@ -248,7 +226,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_59"
+    "id": "pina_58"
   },
   {
     "title": "Melbourne Demons (W) vs Carlton Blues (W)",
@@ -264,7 +242,29 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_58"
+    "id": "pina_57"
+  },
+  {
+    "title": "FIA TCR World Tour",
+    "sport": "TCR",
+    "competition": "TCR",
+    "time": "06:15",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_59"
   },
   {
     "id": "pina_2",
