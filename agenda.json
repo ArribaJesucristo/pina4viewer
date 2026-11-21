@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "21/11/2026 15:32",
+    "updatedAt": "21/11/2026 15:42",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -335,22 +335,6 @@
     "id": "pina_56"
   },
   {
-    "title": "Simulcast",
-    "sport": "FUTBOL",
-    "competition": "Germany. 3 Bundesliga",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_57"
-  },
-  {
     "title": "Verl vs RW Essen",
     "sport": "FUTBOL",
     "competition": "Germany. 3 Bundesliga",
@@ -364,7 +348,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_58"
+    "id": "pina_57"
   },
   {
     "title": "Regensburg vs Wuerzburg",
@@ -376,6 +360,22 @@
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_58"
+  },
+  {
+    "title": "Simulcast",
+    "sport": "FUTBOL",
+    "competition": "Germany. 3 Bundesliga",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -655,46 +655,6 @@
     ]
   },
   {
-    "title": "Como vs Cagliari",
-    "sport": "FUTBOL",
-    "competition": "Italy. Serie A",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "54a4a28882d3cae1ca19de5d4b022ebea40351f9",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "b6baa046075d82da300fc1b16de96067a8b9540e",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Azerbaijani Opción 3",
-        "streamId": "367f1bb1d5e85bbffcc14bd8b7297da7f4fa2e51",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Dutch Opción 4",
-        "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Portuguese Opción 5",
-        "streamId": "d8adc12780ce2ec8a3f5afda63606382a480e85c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_46"
-  },
-  {
     "title": "Resovia Rzeszow vs Skra Belchatow",
     "sport": "OTROS",
     "competition": "Poland. PlusLiga",
@@ -708,7 +668,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_47"
+    "id": "pina_46"
   },
   {
     "title": "Lazio vs Lecce",
@@ -744,6 +704,46 @@
       {
         "name": "[LiveTV] Azerbaijani Opción 5",
         "streamId": "367f1bb1d5e85bbffcc14bd8b7297da7f4fa2e51",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_47"
+  },
+  {
+    "title": "Como vs Cagliari",
+    "sport": "FUTBOL",
+    "competition": "Italy. Serie A",
+    "time": "15:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "54a4a28882d3cae1ca19de5d4b022ebea40351f9",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "b6baa046075d82da300fc1b16de96067a8b9540e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Azerbaijani Opción 3",
+        "streamId": "367f1bb1d5e85bbffcc14bd8b7297da7f4fa2e51",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 4",
+        "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Portuguese Opción 5",
+        "streamId": "d8adc12780ce2ec8a3f5afda63606382a480e85c",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -808,7 +808,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_75"
+    "id": "pina_73"
   },
   {
     "title": "England vs New Zealand",
@@ -830,7 +830,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_76"
+    "id": "pina_74"
   },
   {
     "title": "Borussia M vs Dortmund",
@@ -840,14 +840,14 @@
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "bc99becb2a74f8f455d6dbaa3bd85c6c7e938a6c",
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "14407b00d454cb7dc0d70aa26e8bbc554f457f00",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "14407b00d454cb7dc0d70aa26e8bbc554f457f00",
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "bc99becb2a74f8f455d6dbaa3bd85c6c7e938a6c",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
@@ -905,22 +905,6 @@
     "id": "pina_51"
   },
   {
-    "title": "UK Championship",
-    "sport": "SNOOKER",
-    "competition": "Snooker",
-    "time": "15:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "5f966c123759de46dff29c379266b7a403452033",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_71"
-  },
-  {
     "title": "Dominican Republic U17 vs Montenegro U17",
     "sport": "FUTBOL",
     "competition": "U17 World Cup",
@@ -934,7 +918,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_72"
+    "id": "pina_71"
   },
   {
     "id": "pina_7",
@@ -1092,7 +1076,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_73"
+    "id": "pina_72"
   },
   {
     "id": "pina_11",
@@ -1206,7 +1190,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_74"
+    "id": "pina_76"
+  },
+  {
+    "title": "Ireland vs South Africa",
+    "sport": "NATIONS CHAMPIONSHIP",
+    "competition": "Nations Championship",
+    "time": "16:40",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Spanish Opción 1",
+        "streamId": "acb510858f34c3c6fd5f79395b031abd6885c2b3",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_75"
   },
   {
     "id": "pina_13",
