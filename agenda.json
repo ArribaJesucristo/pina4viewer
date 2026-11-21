@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "21/11/2026 17:12",
+    "updatedAt": "21/11/2026 17:18",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -164,29 +164,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
-  },
-  {
-    "title": "England vs New Zealand",
-    "sport": "NATIONS CHAMPIONSHIP",
-    "competition": "Nations Championship",
-    "time": "15:10",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Spanish Opción 1",
-        "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Spanish Opción 2",
-        "streamId": "acb510858f34c3c6fd5f79395b031abd6885c2b3",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_63"
+    "id": "pina_62"
   },
   {
     "title": "Simulcast",
@@ -236,7 +214,7 @@
         "source": "Comunidad"
       }
     ],
-    "id": "pina_44"
+    "id": "pina_43"
   },
   {
     "title": "Rubin vs Zenit",
@@ -444,7 +422,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_43"
+    "id": "pina_44"
   },
   {
     "id": "pina_7",
@@ -611,22 +589,6 @@
     "id": "pina_52"
   },
   {
-    "title": "Eindhoven vs RKC Waalwijk",
-    "sport": "FUTBOL",
-    "competition": "Netherlands. Eerste Divisie",
-    "time": "16:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Dutch Opción 1",
-        "streamId": "79f10c6c6168e42bfc606f3f7b9e5f3ca79dedab",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_53"
-  },
-  {
     "title": "Alemannia vs Waldhof",
     "sport": "FUTBOL",
     "competition": "Germany. 3 Bundesliga",
@@ -636,6 +598,22 @@
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "ac839cda9709255c21a98af455731f037e77a9e4",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_53"
+  },
+  {
+    "title": "Eindhoven vs RKC Waalwijk",
+    "sport": "FUTBOL",
+    "competition": "Netherlands. Eerste Divisie",
+    "time": "16:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Dutch Opción 1",
+        "streamId": "79f10c6c6168e42bfc606f3f7b9e5f3ca79dedab",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -769,6 +747,34 @@
       }
     ],
     "id": "pina_59"
+  },
+  {
+    "title": "Nice vs PSG",
+    "sport": "FUTBOL",
+    "competition": "France. Ligue 1",
+    "time": "17:15",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "aca05dc506242324c1727525d0535ceda24f8dea",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "54a4a28882d3cae1ca19de5d4b022ebea40351f9",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Turkish Opción 3",
+        "streamId": "7683cd0cbacf55fa8b39c363219ffba1bc47cf9d",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_60"
   },
   {
     "id": "pina_9",
@@ -908,7 +914,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_60"
+    "id": "pina_61"
   },
   {
     "title": "HV71 vs Vaxjoe",
@@ -924,7 +930,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_62"
+    "id": "pina_63"
   },
   {
     "id": "pina_12",
