@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "22/11/2026 18:41",
+    "updatedAt": "22/11/2026 18:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -157,22 +157,6 @@
     ]
   },
   {
-    "title": "UK Championship",
-    "sport": "SNOOKER",
-    "competition": "Snooker",
-    "time": "16:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_23"
-  },
-  {
     "title": "Schwenninger vs Augsburg",
     "sport": "HOCKEY",
     "competition": "Germany. DEL",
@@ -186,7 +170,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_24"
+    "id": "pina_23"
   },
   {
     "title": "Adler Mannheim vs Koelner Haie",
@@ -198,6 +182,22 @@
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "428b92f3c71cd3cbf66ef6193808b39d16a52730",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_24"
+  },
+  {
+    "title": "UK Championship",
+    "sport": "SNOOKER",
+    "competition": "Snooker",
+    "time": "16:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -235,22 +235,6 @@
       }
     ],
     "id": "pina_40"
-  },
-  {
-    "title": "Go Ahead Eagles vs Fortuna Sittard",
-    "sport": "FUTBOL",
-    "competition": "Netherlands. Eredivisie",
-    "time": "16:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Dutch 8000kbps",
-        "streamId": "3e0ba6867173f345d482d80c771f1a5dc3b37e63",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_20"
   },
   {
     "id": "pina_3",
@@ -300,7 +284,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_19"
+    "id": "pina_18"
   },
   {
     "title": "Rodina vs Lokomotiv M",
@@ -317,22 +301,6 @@
       }
     ],
     "id": "pina_26"
-  },
-  {
-    "title": "Bursaspor vs Sivasspor",
-    "sport": "FUTBOL",
-    "competition": "Turkey. 1 Lig",
-    "time": "17:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Turkish Opción 1",
-        "streamId": "48bee10b883f17c7186d60f1e8022dca0ba41a05",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_27"
   },
   {
     "title": "Trabzonspor vs Eyupspor",
@@ -360,6 +328,22 @@
         "source": "LiveTV"
       }
     ],
+    "id": "pina_27"
+  },
+  {
+    "title": "Bursaspor vs Sivasspor",
+    "sport": "FUTBOL",
+    "competition": "Turkey. 1 Lig",
+    "time": "17:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Turkish Opción 1",
+        "streamId": "48bee10b883f17c7186d60f1e8022dca0ba41a05",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
     "id": "pina_28"
   },
   {
@@ -376,7 +360,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_46"
+    "id": "pina_45"
   },
   {
     "title": "Lorient vs Rennes",
@@ -398,7 +382,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_18"
+    "id": "pina_21"
   },
   {
     "title": "Lorient vs Rennes",
@@ -512,7 +496,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_21"
+    "id": "pina_19"
   },
   {
     "title": "Wisla Plock vs Legia Warsaw",
@@ -702,7 +686,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_22"
+    "id": "pina_20"
   },
   {
     "title": "Iserlohn Roosters vs Loeven Frankfurt",
@@ -861,6 +845,28 @@
     ]
   },
   {
+    "title": "Real Madrid vs Joventut",
+    "sport": "BALONCESTO",
+    "competition": "Spain. ACB League",
+    "time": "19:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "35575a31d76f6c5f5e9e6364dacfdeca3b85f2ee",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Ukrainian Opción 2",
+        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_22"
+  },
+  {
     "title": "Kansas City Chiefs vs Arizona Cardinals",
     "sport": "FUTBOL AMERICANO",
     "competition": "USA. NFL",
@@ -955,26 +961,38 @@
     "id": "pina_43"
   },
   {
-    "title": "Real Madrid vs Joventut",
-    "sport": "BALONCESTO",
-    "competition": "Spain. ACB League",
-    "time": "19:00",
+    "title": "Grand Slam",
+    "sport": "PDC",
+    "competition": "PDC",
+    "time": "19:45",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Polish Opción 1",
-        "streamId": "35575a31d76f6c5f5e9e6364dacfdeca3b85f2ee",
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Ukrainian Opción 2",
-        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "12ea555d431dbe51fc8e4ca745aec09fe22a4865",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 3",
+        "streamId": "1950633a3723cb52b17c764125decc04445bd5ff",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 4",
+        "streamId": "5f595b1bbade5e7c915d99f90645f4c30d4ba540",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_45"
+    "id": "pina_46"
   },
   {
     "id": "pina_8",
