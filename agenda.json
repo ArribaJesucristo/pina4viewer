@@ -1,86 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "22/11/2026 21:51",
+    "updatedAt": "22/11/2026 22:01",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Kansas City Chiefs vs Arizona Cardinals",
-    "sport": "FUTBOL AMERICANO",
-    "competition": "USA. NFL",
-    "time": "19:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] French 8000kbps",
-        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_7"
-  },
-  {
-    "title": "Detroit Lions vs Tampa Bay Buccaneers",
-    "sport": "FUTBOL AMERICANO",
-    "competition": "USA. NFL",
-    "time": "19:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "d317a003e8047da2c36a2a2bb2289578c9a3b79c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_8"
-  },
-  {
-    "title": "RSM Classic",
-    "sport": "GOLF",
-    "competition": "PGA Tour",
-    "time": "19:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 3",
-        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Dutch Opción 4",
-        "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "RSM Classic - Opción Directa 1 [Comunidad]",
-        "streamId": "1735ff3141fa3820090fad58dc548a1390accae9",
-        "type": "ACESTREAM",
-        "source": "Comunidad"
-      },
-      {
-        "name": "RSM Classic - Opción Directa 2 [Comunidad]",
-        "streamId": "872608e734992db636eb79426802cd08f4029afb",
-        "type": "ACESTREAM",
-        "source": "Comunidad"
-      }
-    ],
-    "id": "pina_14"
   },
   {
     "title": "Grand Slam",
@@ -114,7 +36,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_15"
+    "id": "pina_12"
   },
   {
     "title": "UK Championship",
@@ -130,7 +52,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_16"
+    "id": "pina_13"
   },
   {
     "title": "Sparta GM vs Spala",
@@ -146,7 +68,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_17"
+    "id": "pina_14"
   },
   {
     "title": "Atalanta vs Inter",
@@ -192,7 +114,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_9"
+    "id": "pina_7"
   },
   {
     "title": "Marseille vs Le Mans",
@@ -214,7 +136,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_13"
+    "id": "pina_8"
   },
   {
     "title": "Marseille vs Le Mans",
@@ -236,7 +158,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_18"
+    "id": "pina_15"
   },
   {
     "title": "Getafe vs Atletico Madrid",
@@ -300,7 +222,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_12"
+    "id": "pina_11"
   },
   {
     "title": "Atlanta vs Detroit",
@@ -322,7 +244,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_11"
+    "id": "pina_9"
   },
   {
     "title": "Torreense vs Benfica",
@@ -354,7 +276,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_19"
+    "id": "pina_16"
   },
   {
     "title": "New York Giants vs Jacksonville Jaguars",
@@ -376,7 +298,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_21"
+    "id": "pina_20"
   },
   {
     "title": "Denver Broncos vs Las Vegas Raiders",
@@ -392,7 +314,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_22"
+    "id": "pina_21"
   },
   {
     "title": "Fluminense vs Mirassol",
@@ -408,7 +330,61 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_20"
+    "id": "pina_17"
+  },
+  {
+    "title": "River Plate vs Lanus",
+    "sport": "OTROS",
+    "competition": "Argentina. Liga Profesional",
+    "time": "23:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "5e94200ae8b1d95cb559fb150e5993d92e15d4e7",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Spanish Opción 2",
+        "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_18"
+  },
+  {
+    "title": "New Zealand vs India",
+    "sport": "ODI",
+    "competition": "ODI",
+    "time": "23:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_19"
+  },
+  {
+    "title": "Tampa Bay vs Buffalo",
+    "sport": "HOCKEY",
+    "competition": "NHL",
+    "time": "23:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Dutch 8000kbps",
+        "streamId": "3e0ba6867173f345d482d80c771f1a5dc3b37e63",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_22"
   },
   {
     "id": "pina_1",
