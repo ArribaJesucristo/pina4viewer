@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "22/11/2026 20:21",
+    "updatedAt": "22/11/2026 20:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -109,22 +109,6 @@
     ]
   },
   {
-    "title": "Iserlohn Roosters vs Loeven Frankfurt",
-    "sport": "HOCKEY",
-    "competition": "Germany. DEL",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_18"
-  },
-  {
     "id": "pina_3",
     "title": "Osasuna - Málaga",
     "sport": "FUTBOL",
@@ -189,22 +173,6 @@
     ]
   },
   {
-    "title": "Mainz 05 (W) vs Nuremberg (W)",
-    "sport": "FUTBOL",
-    "competition": "Germany. Women. Bundesliga",
-    "time": "18:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "11c5823d4196a90b509f03df1fe78e13cfbbb175",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_19"
-  },
-  {
     "id": "pina_4",
     "title": "Barcelona - Athletic Bilbao",
     "sport": "FUTBOL",
@@ -255,22 +223,6 @@
     "id": "pina_15"
   },
   {
-    "title": "Kansas City Chiefs vs Arizona Cardinals",
-    "sport": "FUTBOL AMERICANO",
-    "competition": "USA. NFL",
-    "time": "19:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] French 8000kbps",
-        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_16"
-  },
-  {
     "title": "Real Madrid vs Joventut",
     "sport": "BALONCESTO",
     "competition": "Spain. ACB League",
@@ -290,7 +242,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_17"
+    "id": "pina_16"
   },
   {
     "title": "RSM Classic",
@@ -334,6 +286,22 @@
         "streamId": "872608e734992db636eb79426802cd08f4029afb",
         "type": "ACESTREAM",
         "source": "Comunidad"
+      }
+    ],
+    "id": "pina_19"
+  },
+  {
+    "title": "Kansas City Chiefs vs Arizona Cardinals",
+    "sport": "FUTBOL AMERICANO",
+    "competition": "USA. NFL",
+    "time": "19:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ],
     "id": "pina_20"
@@ -421,22 +389,6 @@
     "id": "pina_23"
   },
   {
-    "title": "Sparta GM vs Spala",
-    "sport": "POLAND. I LIGA",
-    "competition": "Poland. I Liga",
-    "time": "20:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_26"
-  },
-  {
     "title": "UK Championship",
     "sport": "SNOOKER",
     "competition": "Snooker",
@@ -450,29 +402,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_28"
+    "id": "pina_24"
   },
   {
-    "title": "Marseille vs Le Mans",
-    "sport": "FRANCE. LIGUE 1",
-    "competition": "France. Ligue 1",
-    "time": "20:45",
+    "title": "Sparta GM vs Spala",
+    "sport": "OTROS",
+    "competition": "Poland. I Liga",
+    "time": "20:30",
     "date": "Hoy",
     "channels": [
       {
         "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "54a4a28882d3cae1ca19de5d4b022ebea40351f9",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Turkish Opción 2",
-        "streamId": "ed81c333815247536edfcdb2755147e8c4144d62",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_24"
+    "id": "pina_25"
   },
   {
     "title": "Atalanta vs Inter",
@@ -518,7 +464,51 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_25"
+    "id": "pina_17"
+  },
+  {
+    "title": "Marseille vs Le Mans",
+    "sport": "FUTBOL",
+    "competition": "France. Ligue 1",
+    "time": "20:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "54a4a28882d3cae1ca19de5d4b022ebea40351f9",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Turkish Opción 2",
+        "streamId": "ed81c333815247536edfcdb2755147e8c4144d62",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_18"
+  },
+  {
+    "title": "Marseille vs Le Mans",
+    "sport": "FRANCE. LIGUE 1",
+    "competition": "France. Ligue 1",
+    "time": "20:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "54a4a28882d3cae1ca19de5d4b022ebea40351f9",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Turkish Opción 2",
+        "streamId": "ed81c333815247536edfcdb2755147e8c4144d62",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_26"
   },
   {
     "id": "pina_5",
@@ -689,6 +679,28 @@
         "source": "New Era"
       }
     ]
+  },
+  {
+    "title": "Atlanta vs Detroit",
+    "sport": "BALONCESTO",
+    "competition": "NBA",
+    "time": "21:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Ukrainian Opción 2",
+        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_28"
   },
   {
     "id": "pina_7",
