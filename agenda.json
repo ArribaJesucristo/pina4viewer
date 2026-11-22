@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "22/11/2026 13:01",
+    "updatedAt": "22/11/2026 13:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -250,7 +250,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_31"
+    "id": "pina_30"
   },
   {
     "title": "Real Sociedad (W) vs Sevilla (W)",
@@ -382,7 +382,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_30"
+    "id": "pina_31"
   },
   {
     "title": "Barys vs Dinamo Mn",
@@ -554,7 +554,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_41"
+    "id": "pina_46"
   },
   {
     "title": "World Cup, Gurgl",
@@ -588,7 +588,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_46"
+    "id": "pina_48"
   },
   {
     "title": "X2O Badkamers Trophy",
@@ -628,7 +628,7 @@
         "source": "Comunidad"
       }
     ],
-    "id": "pina_47"
+    "id": "pina_41"
   },
   {
     "title": "Super Cup, Verona",
@@ -644,7 +644,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_48"
+    "id": "pina_47"
   },
   {
     "id": "pina_6",
@@ -779,22 +779,6 @@
     "id": "pina_43"
   },
   {
-    "title": "Nuernberg vs Fischtown Pinguins",
-    "sport": "GERMANY. DEL",
-    "competition": "Germany. DEL",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "1fb794b1503c5955b75ea0106ee6360b80d78849",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_44"
-  },
-  {
     "title": "Ingolstadt vs RB Munich",
     "sport": "GERMANY. DEL",
     "competition": "Germany. DEL",
@@ -804,6 +788,22 @@
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_44"
+  },
+  {
+    "title": "Nuernberg vs Fischtown Pinguins",
+    "sport": "GERMANY. DEL",
+    "competition": "Germany. DEL",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "1fb794b1503c5955b75ea0106ee6360b80d78849",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
