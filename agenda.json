@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "22/11/2026 17:21",
+    "updatedAt": "22/11/2026 17:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -75,50 +75,6 @@
     ]
   },
   {
-    "title": "Torpedo NN vs Avtomobilist",
-    "sport": "HOCKEY",
-    "competition": "KHL",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_28"
-  },
-  {
-    "title": "Torpedo NN vs Avtomobilist",
-    "sport": "KHL",
-    "competition": "KHL",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_42"
-  },
-  {
     "id": "pina_2",
     "title": "Moto3 (Algarve)",
     "sport": "MOTOS",
@@ -141,6 +97,22 @@
     ]
   },
   {
+    "title": "German Championship",
+    "sport": "TENIS",
+    "competition": "Germany. Bundesliga",
+    "time": "15:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_27"
+  },
+  {
     "title": "Augsburg vs Mainz 05",
     "sport": "FUTBOL",
     "competition": "Germany. Bundesliga",
@@ -160,39 +132,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_21"
-  },
-  {
-    "title": "German Championship",
-    "sport": "TENIS",
-    "competition": "Germany. Bundesliga",
-    "time": "15:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_29"
-  },
-  {
-    "title": "South Korea U-17 vs New Caledonia U-17",
-    "sport": "FUTBOL",
-    "competition": "U17 World Cup",
-    "time": "15:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "cba8d369eac629b577750edb90370cd1c5fb03b7",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_30"
+    "id": "pina_28"
   },
   {
     "title": "Arsenal (W) vs West Ham United (W)",
@@ -232,7 +172,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_31"
+    "id": "pina_29"
   },
   {
     "title": "Galatasaray vs Petkim Spor",
@@ -270,7 +210,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_32"
+    "id": "pina_30"
   },
   {
     "title": "Harlequins (W) vs Bristol (W)",
@@ -286,7 +226,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_33"
+    "id": "pina_31"
   },
   {
     "title": "Galatasaray vs Petkim Spor",
@@ -308,7 +248,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_49"
+    "id": "pina_47"
   },
   {
     "id": "pina_3",
@@ -476,7 +416,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_22"
+    "id": "pina_21"
   },
   {
     "title": "Saarbruecken vs Wehen",
@@ -492,7 +432,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_34"
+    "id": "pina_32"
   },
   {
     "title": "Schwenninger vs Augsburg",
@@ -508,7 +448,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_35"
+    "id": "pina_33"
   },
   {
     "title": "UK Championship",
@@ -524,7 +464,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_36"
+    "id": "pina_34"
   },
   {
     "title": "Adler Mannheim vs Koelner Haie",
@@ -540,7 +480,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_37"
+    "id": "pina_35"
   },
   {
     "title": "Schwenninger vs Augsburg",
@@ -588,7 +528,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_47"
+    "id": "pina_48"
   },
   {
     "title": "Go Ahead Eagles vs Fortuna Sittard",
@@ -604,7 +544,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_23"
+    "id": "pina_22"
   },
   {
     "id": "pina_5",
@@ -654,7 +594,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_24"
+    "id": "pina_23"
   },
   {
     "title": "Toulouse vs Montpellier",
@@ -670,7 +610,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_27"
+    "id": "pina_26"
   },
   {
     "title": "Trabzonspor vs Eyupspor",
@@ -698,7 +638,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_38"
+    "id": "pina_36"
   },
   {
     "title": "Bursaspor vs Sivasspor",
@@ -714,7 +654,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_39"
+    "id": "pina_37"
   },
   {
     "title": "Toulouse vs Montpellier",
@@ -730,7 +670,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_48"
+    "id": "pina_49"
   },
   {
     "title": "Lorient vs Rennes",
@@ -752,7 +692,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_26"
+    "id": "pina_24"
   },
   {
     "title": "Lorient vs Rennes",
@@ -774,7 +714,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_40"
+    "id": "pina_41"
   },
   {
     "id": "pina_6",
@@ -831,6 +771,12 @@
         "streamId": "ed81c333815247536edfcdb2755147e8c4144d62",
         "type": "ACESTREAM",
         "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "350b2044f1c9e87e18d8fbda1bcc456c22cf9296",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
@@ -861,6 +807,72 @@
       }
     ],
     "id": "pina_25"
+  },
+  {
+    "title": "Wisla Plock vs Legia Warsaw",
+    "sport": "FUTBOL",
+    "competition": "Poland. Ekstraklasa",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "3e87464ed8c42ed14464461ea08860a3040a8944",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 2",
+        "streamId": "5e94200ae8b1d95cb559fb150e5993d92e15d4e7",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_38"
+  },
+  {
+    "title": "Stal Ostrow vs Arka Gdynia",
+    "sport": "BALONCESTO",
+    "competition": "Poland. PLK",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_39"
+  },
+  {
+    "title": "Dynamo Msk vs CSKA",
+    "sport": "HOCKEY",
+    "competition": "KHL",
+    "time": "17:46",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 3",
+        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_40"
   },
   {
     "title": "Dynamo Msk vs CSKA",
@@ -968,7 +980,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_41"
+    "id": "pina_42"
   },
   {
     "title": "Iserlohn Roosters vs Loeven Frankfurt",
@@ -1017,6 +1029,36 @@
         "streamId": "05b9cb49947d3b78bbc66671c6e16ba0ae3b60b6",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "75a56863b6fe0407ad4305b4d7ee5643c3923565",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "3e1f6de8444abb15efeadb97952d6324e5b6ed9f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Portuguese 8000kbps",
+        "streamId": "d08013df6e437a1fdf1e0c34f573fdf6a40c7fce",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "ffbf8c687c788d9a1a7c651e24802ee773ff3f04",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 5",
+        "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
