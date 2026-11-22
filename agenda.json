@@ -1,30 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "22/11/2026 12:11",
+    "updatedAt": "22/11/2026 12:21",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Melbourne Renegades (W) vs Melbourne Stars (W)",
-    "sport": "OTROS",
-    "competition": "Australia. Women. WBBL",
-    "time": "09:10",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "6d95e4b0893e155cc674b84e0763150c445d3ddd",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "d317a003e8047da2c36a2a2bb2289578c9a3b79c",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_30"
   },
   {
     "id": "pina_1",
@@ -358,7 +336,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_28"
+    "id": "pina_30"
+  },
+  {
+    "title": "Rakow vs Widzew Lodz",
+    "sport": "FUTBOL",
+    "competition": "Poland. Ekstraklasa",
+    "time": "12:15",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "3e87464ed8c42ed14464461ea08860a3040a8944",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_36"
   },
   {
     "title": "Juventus vs Venezia",
@@ -398,7 +392,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_37"
+    "id": "pina_28"
   },
   {
     "title": "Barys vs Dinamo Mn",
@@ -454,7 +448,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_36"
+    "id": "pina_37"
   },
   {
     "title": "World Junior Championships",
