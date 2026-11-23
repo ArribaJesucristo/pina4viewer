@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "23/11/2026 22:01",
+    "updatedAt": "23/11/2026 22:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -135,22 +135,6 @@
     "id": "pina_64"
   },
   {
-    "title": "Nantes vs Grenoble",
-    "sport": "FUTBOL",
-    "competition": "France. Ligue 2",
-    "time": "20:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] French 8000kbps",
-        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_66"
-  },
-  {
     "title": "Sochaux vs Dunkerque",
     "sport": "FUTBOL",
     "competition": "France. Ligue 2",
@@ -160,6 +144,22 @@
       {
         "name": "[LiveTV] French 8000kbps",
         "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_66"
+  },
+  {
+    "title": "Nantes vs Grenoble",
+    "sport": "FUTBOL",
+    "competition": "France. Ligue 2",
+    "time": "20:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
