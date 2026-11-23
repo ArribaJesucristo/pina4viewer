@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "23/11/2026 18:21",
+    "updatedAt": "23/11/2026 18:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -43,22 +43,6 @@
     "id": "pina_65"
   },
   {
-    "title": "Bodrumspor vs Vanspor",
-    "sport": "FUTBOL",
-    "competition": "Turkey. 1 Lig",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Turkish Opción 1",
-        "streamId": "48bee10b883f17c7186d60f1e8022dca0ba41a05",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_66"
-  },
-  {
     "title": "Basaksehir vs Corum",
     "sport": "FUTBOL",
     "competition": "Turkey. Super League",
@@ -68,6 +52,22 @@
       {
         "name": "[LiveTV] Turkish Opción 1",
         "streamId": "118416583faa3fb4f03800173429b6b844b43a52",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_66"
+  },
+  {
+    "title": "Bodrumspor vs Vanspor",
+    "sport": "FUTBOL",
+    "competition": "Turkey. 1 Lig",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Turkish Opción 1",
+        "streamId": "48bee10b883f17c7186d60f1e8022dca0ba41a05",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -88,7 +88,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_68"
+    "id": "pina_69"
   },
   {
     "title": "Basaksehir vs Corum",
@@ -120,7 +120,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_69"
+    "id": "pina_68"
   },
   {
     "title": "Ultimate Pool",
