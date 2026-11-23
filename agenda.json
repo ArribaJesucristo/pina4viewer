@@ -1,24 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "23/11/2026 19:31",
+    "updatedAt": "23/11/2026 19:41",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Basaksehir vs Corum",
-    "sport": "FUTBOL",
-    "competition": "Turkey. Super League",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Turkish Opción 1",
-        "streamId": "118416583faa3fb4f03800173429b6b844b43a52",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_64"
   },
   {
     "title": "Bodrumspor vs Vanspor",
@@ -30,6 +14,22 @@
       {
         "name": "[LiveTV] Turkish Opción 1",
         "streamId": "48bee10b883f17c7186d60f1e8022dca0ba41a05",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_65"
+  },
+  {
+    "title": "Basaksehir vs Corum",
+    "sport": "FUTBOL",
+    "competition": "Turkey. Super League",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Turkish Opción 1",
+        "streamId": "118416583faa3fb4f03800173429b6b844b43a52",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -50,7 +50,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_68"
+    "id": "pina_67"
   },
   {
     "title": "Basaksehir vs Corum",
@@ -82,23 +82,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_67"
-  },
-  {
-    "title": "Ultimate Pool",
-    "sport": "SNOOKER",
-    "competition": "Pool",
-    "time": "19:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_69"
+    "id": "pina_68"
   },
   {
     "title": "Wieczysta vs Motor",
@@ -110,6 +94,22 @@
       {
         "name": "[LiveTV] Polish Opción 1",
         "streamId": "3e87464ed8c42ed14464461ea08860a3040a8944",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_69"
+  },
+  {
+    "title": "Ultimate Pool",
+    "sport": "SNOOKER",
+    "competition": "Pool",
+    "time": "19:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -152,7 +152,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_65"
+    "id": "pina_64"
   },
   {
     "id": "pina_1",
