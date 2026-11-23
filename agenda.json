@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "23/11/2026 21:31",
+    "updatedAt": "23/11/2026 21:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -118,7 +118,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_65"
+    "id": "pina_66"
   },
   {
     "title": "Monza vs Fiorentina",
@@ -164,10 +164,10 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_65"
   },
   {
-    "title": "Nantes vs Grenoble",
+    "title": "Sochaux vs Dunkerque",
     "sport": "FUTBOL",
     "competition": "France. Ligue 2",
     "time": "20:45",
@@ -175,7 +175,7 @@
     "channels": [
       {
         "name": "[LiveTV] French 8000kbps",
-        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
+        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -183,7 +183,7 @@
     "id": "pina_68"
   },
   {
-    "title": "Sochaux vs Dunkerque",
+    "title": "Nantes vs Grenoble",
     "sport": "FUTBOL",
     "competition": "France. Ligue 2",
     "time": "20:45",
@@ -191,28 +191,12 @@
     "channels": [
       {
         "name": "[LiveTV] French 8000kbps",
-        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
+        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
     "id": "pina_69"
-  },
-  {
-    "title": "Sochaux vs Dunkerque",
-    "sport": "FRANCE. LIGUE 2",
-    "competition": "France. Ligue 2",
-    "time": "20:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] French 8000kbps",
-        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_70"
   },
   {
     "title": "Nantes vs Grenoble",
@@ -224,6 +208,22 @@
       {
         "name": "[LiveTV] French 8000kbps",
         "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_70"
+  },
+  {
+    "title": "Sochaux vs Dunkerque",
+    "sport": "FRANCE. LIGUE 2",
+    "competition": "France. Ligue 2",
+    "time": "20:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
