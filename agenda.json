@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "23/11/2026 08:01",
+    "updatedAt": "23/11/2026 08:10",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -18,7 +18,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_7"
+    "id": "pina_6"
   },
   {
     "title": "South Africa vs Bangladesh",
@@ -34,7 +34,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_9"
+    "id": "pina_8"
   },
   {
     "id": "pina_1",
@@ -61,6 +61,12 @@
         "streamId": "https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main.m3u8",
         "type": "DIRECT",
         "source": "TDTChannels"
+      },
+      {
+        "name": "Sorteo 2ª Eliminatoria - Opción Directa 1 [Comunidad]",
+        "streamId": "fa931cbc87dc9d66fdd30a9644e054b403960056",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
       }
     ]
   },
@@ -105,6 +111,24 @@
         "streamId": "135c420f704d717b8913b2a66b2722fd6b2c127c",
         "type": "ACESTREAM",
         "source": "New Era"
+      },
+      {
+        "name": "Ceuta FC - UD Almería - Opción Directa 1 [Comunidad]",
+        "streamId": "568ac81baafba91dc9a28a7554a1dd790fdf0c0d",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Ceuta FC - UD Almería - Opción Directa 2 [Comunidad]",
+        "streamId": "dae7d1251f069516cc0a9c8f15f6639d2a17df1e",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Ceuta FC - UD Almería - Opción Directa 3 [Comunidad]",
+        "streamId": "b6baa046075d82da300fc1b16de96067a8b9540e",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
       }
     ]
   },
@@ -139,6 +163,48 @@
         "streamId": "05b9cb49947d3b78bbc66671c6e16ba0ae3b60b6",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "Levante - Elche - Opción Directa 1 [Comunidad]",
+        "streamId": "dda5d2cace9bc4cb0918e62bc50d657d4a10496a",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Levante - Elche - Opción Directa 2 [Comunidad]",
+        "streamId": "f43ef903dc750610978b47df47a0cb389413fe61",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Levante - Elche - Opción Directa 3 [Comunidad]",
+        "streamId": "75a56863b6fe0407ad4305b4d7ee5643c3923565",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Levante - Elche - Opción Directa 4 [Comunidad]",
+        "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Levante - Elche - Opción Directa 5 [Comunidad]",
+        "streamId": "897e73c9d578848f596585314ecb9ae067c0e229",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Levante - Elche - Opción Directa 6 [Comunidad]",
+        "streamId": "d08013df6e437a1fdf1e0c34f573fdf6a40c7fce",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Levante - Elche - Opción Directa 7 [Comunidad]",
+        "streamId": "ffbf8c687c788d9a1a7c651e24802ee773ff3f04",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
       }
     ]
   },
@@ -167,6 +233,36 @@
         "streamId": "47c6e8dadfba2b3bd013feecf4194ecceec428cd",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "Brentford - Everton - Opción Directa 1 [Comunidad]",
+        "streamId": "ec5eabe0144ccfffc337e1d6708e2afb81d0638e",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Brentford - Everton - Opción Directa 2 [Comunidad]",
+        "streamId": "d317a003e8047da2c36a2a2bb2289578c9a3b79c",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Brentford - Everton - Opción Directa 3 [Comunidad]",
+        "streamId": "ed81c333815247536edfcdb2755147e8c4144d62",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Brentford - Everton - Opción Directa 4 [Comunidad]",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Brentford - Everton - Opción Directa 5 [Comunidad]",
+        "streamId": "36cad67fed5a739757a9db844a551aa845a8d51b",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
       }
     ]
   },
@@ -184,7 +280,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_6"
+    "id": "pina_7"
   },
   {
     "title": "New Zealand vs India",
@@ -200,7 +296,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_8"
+    "id": "pina_9"
   },
   {
     "id": "10",
