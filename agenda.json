@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "24/11/2026 17:11",
+    "updatedAt": "24/11/2026 17:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -74,7 +74,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_83"
+    "id": "pina_84"
   },
   {
     "title": "Salavat Yulaev vs Neftekhimik",
@@ -90,7 +90,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_84"
+    "id": "pina_85"
   },
   {
     "title": "Gulf Giants vs MI Emirates",
@@ -106,7 +106,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_80"
+    "id": "pina_81"
   },
   {
     "id": "pina_1",
@@ -184,7 +184,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_81"
+    "id": "pina_82"
   },
   {
     "id": "pina_3",
@@ -268,7 +268,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_82"
+    "id": "pina_83"
+  },
+  {
+    "title": "Trefl Gdansk vs Norwid Czestochowa",
+    "sport": "OTROS",
+    "competition": "Poland. PlusLiga",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_80"
   },
   {
     "title": "Dynamo Msk vs Avtomobilist",
@@ -290,23 +306,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_85"
-  },
-  {
-    "title": "Trefl Gdansk vs Norwid Czestochowa",
-    "sport": "POLAND. PLUSLIGA",
-    "competition": "Poland. PlusLiga",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_87"
+    "id": "pina_86"
   },
   {
     "title": "Besiktas vs Paris",
@@ -334,7 +334,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_86"
+    "id": "pina_87"
   },
   {
     "id": "pina_4",
