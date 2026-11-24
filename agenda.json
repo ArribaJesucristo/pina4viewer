@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "24/11/2026 21:21",
+    "updatedAt": "24/11/2026 21:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -155,28 +155,6 @@
     "id": "pina_81"
   },
   {
-    "title": "Koelner Haie vs Nuernberg",
-    "sport": "HOCKEY",
-    "competition": "Germany. DEL",
-    "time": "19:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "428b92f3c71cd3cbf66ef6193808b39d16a52730",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_82"
-  },
-  {
     "title": "Simulcast",
     "sport": "HOCKEY",
     "competition": "Germany. DEL",
@@ -190,7 +168,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_83"
+    "id": "pina_82"
   },
   {
     "title": "Ingolstadt vs Fischtown Pinguins",
@@ -208,6 +186,28 @@
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "14317c55fadc80ef2b7fb42b3d53e8ccb3b52cd8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_83"
+  },
+  {
+    "title": "Koelner Haie vs Nuernberg",
+    "sport": "HOCKEY",
+    "competition": "Germany. DEL",
+    "time": "19:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "428b92f3c71cd3cbf66ef6193808b39d16a52730",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
