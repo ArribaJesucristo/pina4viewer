@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "24/11/2026 21:41",
+    "updatedAt": "24/11/2026 21:44",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -171,42 +171,26 @@
     "id": "pina_82"
   },
   {
-    "title": "Eisbaeren Berlin vs Loeven Frankfurt",
+    "title": "Augsburg vs Krefeld Pinguine",
     "sport": "HOCKEY",
     "competition": "Germany. DEL",
     "time": "19:30",
     "date": "Hoy",
     "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_83"
-  },
-  {
-    "title": "Ingolstadt vs Fischtown Pinguins",
-    "sport": "HOCKEY",
-    "competition": "Germany. DEL",
-    "time": "19:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "14317c55fadc80ef2b7fb42b3d53e8ccb3b52cd8",
         "type": "ACESTREAM",
         "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ],
-    "id": "pina_84"
+    "id": "pina_83"
   },
   {
     "title": "Koelner Haie vs Nuernberg",
@@ -224,6 +208,22 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_84"
+  },
+  {
+    "title": "Eisbaeren Berlin vs Loeven Frankfurt",
+    "sport": "HOCKEY",
+    "competition": "Germany. DEL",
+    "time": "19:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
