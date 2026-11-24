@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "24/11/2026 18:11",
+    "updatedAt": "24/11/2026 18:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -171,28 +171,6 @@
     "id": "pina_77"
   },
   {
-    "title": "Dynamo Msk vs Avtomobilist",
-    "sport": "HOCKEY",
-    "competition": "KHL",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_82"
-  },
-  {
     "title": "Zenit vs Krylia Sovetov",
     "sport": "FUTBOL",
     "competition": "Russia. Cup",
@@ -232,6 +210,28 @@
       {
         "name": "[LiveTV] Russian Opción 6",
         "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_82"
+  },
+  {
+    "title": "Dynamo Msk vs Avtomobilist",
+    "sport": "HOCKEY",
+    "competition": "KHL",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -494,7 +494,7 @@
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] German Opción 1",
+        "name": "[LiveTV] English Opción 1",
         "streamId": "11c5823d4196a90b509f03df1fe78e13cfbbb175",
         "type": "ACESTREAM",
         "source": "LiveTV"
