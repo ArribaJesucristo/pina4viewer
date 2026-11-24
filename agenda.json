@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "24/11/2026 08:40",
+    "updatedAt": "24/11/2026 08:50",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -18,7 +18,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_76"
+    "id": "pina_77"
   },
   {
     "title": "South Africa vs Bangladesh",
@@ -28,19 +28,19 @@
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "6d95e4b0893e155cc674b84e0763150c445d3ddd",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
         "name": "[LiveTV] English 8000kbps",
         "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
         "type": "ACESTREAM",
         "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "6d95e4b0893e155cc674b84e0763150c445d3ddd",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ],
-    "id": "pina_77"
+    "id": "pina_76"
   },
   {
     "title": "South Africa vs Bangladesh",
@@ -50,14 +50,14 @@
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "6d95e4b0893e155cc674b84e0763150c445d3ddd",
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "6d95e4b0893e155cc674b84e0763150c445d3ddd",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
