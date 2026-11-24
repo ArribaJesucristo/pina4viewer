@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "24/11/2026 19:11",
+    "updatedAt": "24/11/2026 19:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -52,7 +52,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_82"
+    "id": "pina_80"
   },
   {
     "title": "Zenit vs Krylia Sovetov",
@@ -380,7 +380,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_80"
+    "id": "pina_82"
   },
   {
     "title": "Pelister vs Wybrzeze Gdansk",
@@ -412,7 +412,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_84"
+    "id": "pina_83"
   },
   {
     "title": "Crvena Zvezda vs Virtus Bologna",
@@ -428,7 +428,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_98"
+    "id": "pina_97"
   },
   {
     "title": "Al Nassr vs Al-Sadd",
@@ -456,7 +456,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_83"
+    "id": "pina_84"
   },
   {
     "title": "Straubing Tigers vs Adler Mannheim",
@@ -473,22 +473,6 @@
       }
     ],
     "id": "pina_91"
-  },
-  {
-    "title": "Simulcast",
-    "sport": "GERMANY. DEL",
-    "competition": "Germany. DEL",
-    "time": "19:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_92"
   },
   {
     "title": "Koelner Haie vs Nuernberg",
@@ -510,10 +494,10 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_93"
+    "id": "pina_92"
   },
   {
-    "title": "Eisbaeren Berlin vs Loeven Frankfurt",
+    "title": "Simulcast",
     "sport": "GERMANY. DEL",
     "competition": "Germany. DEL",
     "time": "19:30",
@@ -521,12 +505,12 @@
     "channels": [
       {
         "name": "[LiveTV] German Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "streamId": "501141c649a2b78c4965cbf3257224181cc55072",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_94"
+    "id": "pina_93"
   },
   {
     "title": "Ingolstadt vs Fischtown Pinguins",
@@ -548,6 +532,22 @@
         "source": "LiveTV"
       }
     ],
+    "id": "pina_94"
+  },
+  {
+    "title": "Eisbaeren Berlin vs Loeven Frankfurt",
+    "sport": "GERMANY. DEL",
+    "competition": "Germany. DEL",
+    "time": "19:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
     "id": "pina_95"
   },
   {
@@ -564,7 +564,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_97"
+    "id": "pina_98"
   },
   {
     "id": "pina_4",
