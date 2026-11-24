@@ -3,7 +3,9 @@
     <dimen name="screen_padding_horizontal">0dp</dimen>
     <dimen name="screen_padding_top">0dp</dimen>
     <dimen name="screen_padding_bottom">0dp</dimen>
-    <dimen name="control_horizontal_margin">6dp</dimen>
+    <dimen name="control_horizontal_margin">8dp</dimen>
+    <dimen name="toolbar_height">52dp</dimen>
+    <dimen name="toolbar_brand_text_size">14sp</dimen>
     <dimen name="source_tab_height">36dp</dimen>
     <dimen name="source_tab_text_size">12sp</dimen>
     <dimen name="search_box_height">38dp</dimen>
@@ -12,9 +14,10 @@
     <dimen name="chip_text_size">11sp</dimen>
     <dimen name="card_horizontal_margin">8dp</dimen>
     <dimen name="card_sport_text_size">11sp</dimen>
-    <dimen name="card_title_text_size">15sp</dimen>
-    <dimen name="card_time_text_size">12sp</dimen>
-    <dimen name="card_icon_size">40dp</dimen>
-    <dimen name="footer_text_size">10sp</dimen>
-    <dimen name="status_banner_text_size">12sp</dimen>
+    <dimen name="card_title_text_size">14sp</dimen>
+    <dimen name="card_sub_text_size">11sp</dimen>
+    <dimen name="card_time_text_size">11sp</dimen>
+    <dimen name="card_icon_size">38dp</dimen>
+    <dimen name="footer_text_size">11sp</dimen>
+    <dimen name="status_banner_text_size">11sp</dimen>
 </resources>

@@ -4,18 +4,36 @@
     <color name="gold_dark">#C5A000</color>
     <color name="gold_accent">#FFA500</color>
     <color name="colorPrimary">#FFD700</color>
-    <color name="colorPrimaryDark">#121212</color>
+    <color name="colorPrimaryDark">#0D0F14</color>
     <color name="colorAccent">#FFA500</color>
-    
-    <color name="background_dark">#121212</color>
-    <color name="surface_dark">#1E1E1E</color>
-    <color name="card_background">#222222</color>
-    <color name="card_focused">#333333</color>
-    
-    <color name="text_primary">#FFFFFF</color>
-    <color name="text_secondary">#E0E0E0</color>
-    <color name="text_hint">#AAAAAA</color>
-    <color name="divider_color">#333333</color>
+
+    <!-- Paleta Obsidian & Gold para sala de estar / TV -->
+    <color name="background_dark">#0D0F14</color>
+    <color name="surface_dark">#141821</color>
+    <color name="surface_elevated">#181C26</color>
+    <color name="card_background">#161A23</color>
+    <color name="card_focused">#212736</color>
+
+    <color name="border_subtle">#252B3A</color>
+    <color name="border_control">#2A3040</color>
+
+    <color name="text_primary">#F5F7FA</color>
+    <color name="text_secondary">#B8C0D0</color>
+    <color name="text_muted">#8E98AB</color>
+    <color name="text_hint">#7F889B</color>
+    <color name="divider_color">#252B3A</color>
     <color name="badge_background">#FFD700</color>
-    <color name="badge_text">#121212</color>
+    <color name="badge_text">#0D0F14</color>
+
+    <!-- Estados En Directo, Badges y VPN -->
+    <color name="live_green">#00E676</color>
+    <color name="live_green_bg">#1F00E676</color>
+    <color name="live_green_border">#1E4D36</color>
+    <color name="gold_badge_bg">#1AFFD700</color>
+    <color name="gold_badge_border">#33FFD700</color>
+    <color name="time_pill_bg">#232938</color>
+    <color name="warning_amber">#FFB74D</color>
+    <color name="warning_amber_bg">#1AFFA726</color>
+    <color name="warning_amber_border">#4D3816</color>
+    <color name="vpn_off_red">#FF5252</color>
 </resources>

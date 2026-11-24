@@ -11,7 +11,19 @@ import java.util.concurrent.TimeUnit
 
 object DnsHelper {
 
-    private val dnsCache = ConcurrentHashMap<String, List<InetAddress>>()
+    private data class CacheEntry(
+        val addresses: List<InetAddress>,
+        val expiresAtMillis: Long
+    )
+
+    private const val DYNAMIC_TTL_MS = 15L * 60L * 1000L
+
+    private val preseededCache = ConcurrentHashMap<String, List<InetAddress>>()
+    private val dynamicCache = ConcurrentHashMap<String, CacheEntry>()
+    private val bypassedPreseedHosts = java.util.Collections.newSetFromMap(ConcurrentHashMap<String, Boolean>())
+
+    @Volatile
+    internal var clockMillis: () -> Long = { System.currentTimeMillis() }
 
     init {
         // Pre-sembrar IPs conocidas para resolución ultra-rápida (0ms)
@@ -43,9 +55,66 @@ object DnsHelper {
     private fun preseed(host: String, vararg ips: String) {
         try {
             val list = ips.map { InetAddress.getByName(it) }
-            dnsCache[host.lowercase()] = list
+            preseededCache[host.lowercase()] = list
         } catch (ignored: Exception) {
         }
+    }
+
+    fun invalidate(hostname: String) {
+        val key = hostname.lowercase()
+        dynamicCache.remove(key)
+        if (preseededCache.containsKey(key)) {
+            bypassedPreseedHosts.add(key)
+        }
+    }
+
+    fun clearDynamicCache() {
+        dynamicCache.clear()
+        bypassedPreseedHosts.clear()
+    }
+
+    internal fun putDynamicCacheForTest(hostname: String, addresses: List<InetAddress>, ttlMs: Long = DYNAMIC_TTL_MS) {
+        dynamicCache[hostname.lowercase()] = CacheEntry(addresses, clockMillis() + ttlMs)
+    }
+
+    internal fun lookupWithResolver(
+        hostname: String,
+        resolver: (String) -> List<InetAddress>
+    ): List<InetAddress> {
+        val key = hostname.lowercase()
+
+        // 0. Si ya es una dirección IP numérica, devolver directo
+        if (hostname.matches(Regex("^\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}$"))) {
+            return listOf(InetAddress.getByName(hostname))
+        }
+
+        val now = clockMillis()
+
+        // 1. Caché dinámica con TTL (15 min)
+        val cached = dynamicCache[key]
+        if (cached != null) {
+            if (now < cached.expiresAtMillis) {
+                return cached.addresses
+            }
+            dynamicCache.remove(key, cached)
+        }
+
+        // 2. Respaldo pre-sembrado para dominios anti-bloqueo (0ms) salvo invalidación explícita
+        if (!bypassedPreseedHosts.contains(key)) {
+            preseededCache[key]?.let { return it }
+        }
+
+        // 3. Resolución dinámica (sistema / DoH) + guardado con TTL
+        val resolved = resolver(hostname)
+        if (resolved.isNotEmpty()) {
+            dynamicCache[key] = CacheEntry(resolved, now + DYNAMIC_TTL_MS)
+            return resolved
+        }
+
+        // Último recurso: si se invalidó un host presembrado y falló la red, usar preseededCache
+        preseededCache[key]?.let { return it }
+
+        throw UnknownHostException("No se pudo resolver el host: $hostname")
     }
 
     private val bootstrapClient = OkHttpClient.Builder()
@@ -55,58 +124,42 @@ object DnsHelper {
 
     val customDns = object : Dns {
         override fun lookup(hostname: String): List<InetAddress> {
-            val key = hostname.lowercase()
-
-            // 0. Si ya es una dirección IP numérica, devolver directo
-            if (hostname.matches(Regex("^\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}$"))) {
-                return listOf(InetAddress.getByName(hostname))
+            return lookupWithResolver(hostname) { host ->
+                resolveSystemOrDoh(host)
             }
-
-            // 1. Memoria caché ultra-rápida (0ms)
-            dnsCache[key]?.let { return it }
-
-            // 2. Intentar resolución del sistema / VPN UDP (muy rápida, ~10-20ms)
-            try {
-                val sysAddresses = Dns.SYSTEM.lookup(hostname)
-                if (sysAddresses.isNotEmpty()) {
-                    dnsCache[key] = sysAddresses
-                    return sysAddresses
-                }
-            } catch (ignored: Exception) {
-            }
-
-            // 3. Fallback DoH Cifrado: Google DNS
-            try {
-                val addresses = queryGoogleDoh(hostname)
-                if (addresses.isNotEmpty()) {
-                    dnsCache[key] = addresses
-                    return addresses
-                }
-            } catch (ignored: Exception) {
-            }
-
-            // 4. Fallback DoH: AdGuard DNS
-            try {
-                val addresses = queryAdGuardDoh(hostname)
-                if (addresses.isNotEmpty()) {
-                    dnsCache[key] = addresses
-                    return addresses
-                }
-            } catch (ignored: Exception) {
-            }
-
-            // 5. Fallback DoH: Quad9
-            try {
-                val addresses = queryQuad9Doh(hostname)
-                if (addresses.isNotEmpty()) {
-                    dnsCache[key] = addresses
-                    return addresses
-                }
-            } catch (ignored: Exception) {
-            }
-
-            throw UnknownHostException("No se pudo resolver el host: $hostname")
         }
+    }
+
+    private fun resolveSystemOrDoh(hostname: String): List<InetAddress> {
+        // Intentar resolución del sistema / VPN UDP (muy rápida, ~10-20ms)
+        try {
+            val sysAddresses = Dns.SYSTEM.lookup(hostname)
+            if (sysAddresses.isNotEmpty()) return sysAddresses
+        } catch (ignored: Exception) {
+        }
+
+        // Fallback DoH Cifrado: Google DNS
+        try {
+            val addresses = queryGoogleDoh(hostname)
+            if (addresses.isNotEmpty()) return addresses
+        } catch (ignored: Exception) {
+        }
+
+        // Fallback DoH: AdGuard DNS
+        try {
+            val addresses = queryAdGuardDoh(hostname)
+            if (addresses.isNotEmpty()) return addresses
+        } catch (ignored: Exception) {
+        }
+
+        // Fallback DoH: Quad9
+        try {
+            val addresses = queryQuad9Doh(hostname)
+            if (addresses.isNotEmpty()) return addresses
+        } catch (ignored: Exception) {
+        }
+
+        return emptyList()
     }
 
     private fun queryGoogleDoh(hostname: String): List<InetAddress> {

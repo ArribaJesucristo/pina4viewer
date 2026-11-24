@@ -10,7 +10,9 @@ data class EventItem(
     val time: String = "",
     val date: String = "",
     val channels: List<ChannelItem> = emptyList(),
-    val directStreamId: String = ""
+    val directStreamId: String = "",
+    val isLiveNow: Boolean = false,
+    val sortOrderMillis: Long = Long.MAX_VALUE
 ) {
     fun getSportIconRes(): Int = SportFilterMatcher.iconResForSport(sport)
 

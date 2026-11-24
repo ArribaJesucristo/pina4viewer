@@ -13,6 +13,11 @@ import java.util.TimeZone
 
 object PinaVisionParser {
 
+    data class ParseResult(
+        val events: List<EventItem>,
+        val updatedAt: String?
+    )
+
     @Volatile
     var lastParsedUpdatedAt: String? = null
         private set
@@ -26,9 +31,34 @@ object PinaVisionParser {
     }
 
     fun parse(jsonString: String, nowMillis: Long = System.currentTimeMillis()): List<EventItem> {
+        return parseWithMetadata(jsonString, nowMillis, updateGlobalTimestamp = true).events
+    }
+
+    fun parseWithMetadata(
+        jsonString: String,
+        nowMillis: Long = System.currentTimeMillis(),
+        updateGlobalTimestamp: Boolean = true
+    ): ParseResult {
         return try {
             val events = mutableListOf<EventItem>()
             val array = JSONArray(jsonString.trim())
+
+            var localUpdatedAt: String? = null
+            for (i in 0 until array.length()) {
+                val obj = array.optJSONObject(i) ?: continue
+                if (obj.optBoolean("_metadata", false) || obj.has("updatedAt")) {
+                    val upd = obj.optString("updatedAt", "").trim()
+                    if (upd.isNotEmpty()) {
+                        localUpdatedAt = upd
+                        break
+                    }
+                }
+            }
+
+            if (updateGlobalTimestamp && !localUpdatedAt.isNullOrBlank()) {
+                lastParsedUpdatedAt = localUpdatedAt
+            }
+            val effectiveUpdatedAt = localUpdatedAt ?: lastParsedUpdatedAt
 
             val madridTodayStart = startOfMadridDay(nowMillis)
             val madridYesterdayStart = (Calendar.getInstance(MADRID_TZ).apply {
@@ -41,10 +71,6 @@ object PinaVisionParser {
                 val obj = array.optJSONObject(i) ?: continue
 
                 if (obj.optBoolean("_metadata", false) || obj.has("updatedAt")) {
-                    val upd = obj.optString("updatedAt", "")
-                    if (upd.isNotEmpty()) {
-                        lastParsedUpdatedAt = upd
-                    }
                     continue
                 }
 
@@ -55,7 +81,7 @@ object PinaVisionParser {
                 val time = obj.optString("time", "")
                 val date = obj.optString("date", "")
 
-                if (shouldSkipStaleEvent(date, lastParsedUpdatedAt, madridTodayStart, madridYesterdayStart, sdf)) {
+                if (shouldSkipStaleEvent(date, effectiveUpdatedAt, madridTodayStart, madridYesterdayStart, sdf)) {
                     continue
                 }
 
@@ -133,8 +159,10 @@ object PinaVisionParser {
                         existing.title
                     }
 
-                    val bestSport = if (existing.sport in listOf("OTROS", "DEPORTES", "FUTBOL") &&
-                        ev.sport in listOf("FUTBOL AMERICANO", "NFL", "CICLISMO", "SNOOKER", "GOLF", "BALONCESTO", "TENIS")
+                    val existingSportNorm = SportFilterMatcher.normalize(existing.sport)
+                    val newSportNorm = SportFilterMatcher.normalize(ev.sport)
+                    val bestSport = if (existingSportNorm in listOf("OTROS", "DEPORTES", "FUTBOL") &&
+                        newSportNorm in listOf("FUTBOL AMERICANO", "NFL", "CICLISMO", "SNOOKER", "GOLF", "BALONCESTO", "TENIS")
                     ) {
                         ev.sport
                     } else {
@@ -152,9 +180,9 @@ object PinaVisionParser {
                 }
             }
 
-            consolidated
+            ParseResult(consolidated, localUpdatedAt)
         } catch (e: Exception) {
-            emptyList()
+            ParseResult(emptyList(), null)
         }
     }
 

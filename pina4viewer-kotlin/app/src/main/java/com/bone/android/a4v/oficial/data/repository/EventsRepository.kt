@@ -29,11 +29,31 @@ class EventsRepository(
         .build()
 ) {
 
+    data class FetchResult(
+        val events: List<EventItem>,
+        val isOffMode: Boolean,
+        val updatedAt: String?
+    )
+
+    private data class CachedPinaAgenda(
+        val parseResult: PinaVisionParser.ParseResult,
+        val fetchedAtMillis: Long
+    )
+
+    private data class FallbackData(
+        val events: List<EventItem>,
+        val updatedAt: String?
+    )
+
+    // Solo almacena respuestas online válidas; nunca contamina la caché con datos offline de emergencia.
     private val cache = ConcurrentHashMap<SourceType, List<EventItem>>()
     private val offModeSources = java.util.Collections.newSetFromMap(ConcurrentHashMap<SourceType, Boolean>())
 
     @Volatile
     private var lastArenaVisionEvents: List<EventItem>? = null
+
+    @Volatile
+    private var lastOnlinePinaAgenda: CachedPinaAgenda? = null
 
     @Volatile
     var isCurrentSourceOffMode: Boolean = false
@@ -47,6 +67,17 @@ class EventsRepository(
 
     fun peekCachedEvents(source: SourceType): List<EventItem>? {
         cache[source]?.let { return it }
+        if (source == SourceType.OFF_MODE || source == SourceType.SEARCH) {
+            val sharedPina = lastOnlinePinaAgenda
+            if (sharedPina != null) {
+                val derived = if (source == SourceType.SEARCH) {
+                    filter247Events(sharedPina.parseResult.events).ifEmpty { sharedPina.parseResult.events }
+                } else {
+                    sharedPina.parseResult.events
+                }
+                if (derived.isNotEmpty()) return derived
+            }
+        }
         if (isArenaVisionSource(source)) {
             val shared = lastArenaVisionEvents
             if (!shared.isNullOrEmpty()) return shared
@@ -55,19 +86,48 @@ class EventsRepository(
     }
 
     suspend fun getEvents(source: SourceType, forceRefresh: Boolean = false): Result<List<EventItem>> =
+        getEventsWithMeta(source, forceRefresh).map { it.events }
+
+    suspend fun getEventsWithMeta(source: SourceType, forceRefresh: Boolean = false): Result<FetchResult> =
         withContext(Dispatchers.IO) {
             if (!forceRefresh) {
                 cache[source]?.let { cached ->
-                    isCurrentSourceOffMode = isSourceOffMode(source)
-                    return@withContext Result.success(cached)
+                    offModeSources.remove(source)
+                    isCurrentSourceOffMode = false
+                    val upd = if (source == SourceType.OFF_MODE || source == SourceType.SEARCH) {
+                        lastOnlinePinaAgenda?.parseResult?.updatedAt ?: PinaVisionParser.lastParsedUpdatedAt
+                    } else {
+                        null
+                    }
+                    return@withContext Result.success(FetchResult(cached, isOffMode = false, updatedAt = upd))
+                }
+
+                if (source == SourceType.OFF_MODE || source == SourceType.SEARCH) {
+                    val sharedPina = lastOnlinePinaAgenda
+                    if (sharedPina != null && (System.currentTimeMillis() - sharedPina.fetchedAtMillis) < PINA_AGENDA_TTL_MS) {
+                        val events = if (source == SourceType.SEARCH) {
+                            filter247Events(sharedPina.parseResult.events).ifEmpty { sharedPina.parseResult.events }
+                        } else {
+                            sharedPina.parseResult.events
+                        }
+                        if (events.isNotEmpty()) {
+                            cache[source] = events
+                            offModeSources.remove(source)
+                            isCurrentSourceOffMode = false
+                            return@withContext Result.success(
+                                FetchResult(events, isOffMode = false, updatedAt = sharedPina.parseResult.updatedAt)
+                            )
+                        }
+                    }
                 }
 
                 if (isArenaVisionSource(source)) {
                     val shared = lastArenaVisionEvents
                     if (!shared.isNullOrEmpty()) {
                         isCurrentSourceOffMode = false
+                        offModeSources.remove(source)
                         cache[source] = shared
-                        return@withContext Result.success(shared)
+                        return@withContext Result.success(FetchResult(shared, isOffMode = false, updatedAt = null))
                     }
                 }
             }
@@ -105,6 +165,7 @@ class EventsRepository(
                     }
 
                     val body = response.body?.string() ?: ""
+                    var parsedUpdatedAt: String? = null
                     val events = when (source) {
                         SourceType.CAIDO -> {
                             isCurrentSourceOffMode = false
@@ -114,14 +175,14 @@ class EventsRepository(
                             if (parsed.isEmpty()) MarkelScraper.getFallbackMarkelEvents() else parsed
                         }
                         SourceType.SEARCH -> {
-                            val parsed = PinaVisionParser.parse(body)
-                            val channels247 = parsed.filter {
-                                it.sport == "DIRECTO 24/7" || it.competition.contains("24/7", ignoreCase = true)
-                            }
-                            val effective = if (channels247.isNotEmpty()) channels247 else parsed
+                            val parsedResult = PinaVisionParser.parseWithMetadata(body, updateGlobalTimestamp = true)
+                            parsedUpdatedAt = parsedResult.updatedAt
+                            val channels247 = filter247Events(parsedResult.events)
+                            val effective = if (channels247.isNotEmpty()) channels247 else parsedResult.events
                             if (effective.isNotEmpty()) {
                                 isCurrentSourceOffMode = false
                                 offModeSources.remove(source)
+                                lastOnlinePinaAgenda = CachedPinaAgenda(parsedResult, System.currentTimeMillis())
                                 saveOfflineCache(PINA_CACHE_FILE, body)
                                 effective
                             } else {
@@ -135,12 +196,14 @@ class EventsRepository(
                             M3uParser.parse(body, marcaHtml)
                         }
                         SourceType.OFF_MODE -> {
-                            val parsed = PinaVisionParser.parse(body)
-                            if (parsed.isNotEmpty()) {
+                            val parsedResult = PinaVisionParser.parseWithMetadata(body, updateGlobalTimestamp = true)
+                            parsedUpdatedAt = parsedResult.updatedAt
+                            if (parsedResult.events.isNotEmpty()) {
                                 isCurrentSourceOffMode = false
                                 offModeSources.remove(source)
+                                lastOnlinePinaAgenda = CachedPinaAgenda(parsedResult, System.currentTimeMillis())
                                 saveOfflineCache(PINA_CACHE_FILE, body)
-                                parsed
+                                parsedResult.events
                             } else {
                                 return@withContext returnOfflineFallback(source)
                             }
@@ -160,12 +223,18 @@ class EventsRepository(
                     }
 
                     cache[source] = events
-                    Result.success(events)
+                    Result.success(FetchResult(events, isOffMode = false, updatedAt = parsedUpdatedAt))
                 }
             } catch (_: Exception) {
                 returnOfflineFallback(source)
             }
         }
+
+    private fun filter247Events(events: List<EventItem>): List<EventItem> {
+        return events.filter {
+            it.sport == "DIRECTO 24/7" || it.competition.contains("24/7", ignoreCase = true)
+        }
+    }
 
     private fun fetchOptionalMarcaHtml(): String {
         return try {
@@ -181,56 +250,54 @@ class EventsRepository(
         }
     }
 
-    private fun returnOfflineFallback(source: SourceType): Result<List<EventItem>> {
+    private fun returnOfflineFallback(source: SourceType): Result<FetchResult> {
         val fallback = getFallback(source)
         val usingOffline = isArenaVisionSource(source) || source == SourceType.OFF_MODE || source == SourceType.SEARCH
         isCurrentSourceOffMode = usingOffline
         if (usingOffline) offModeSources.add(source) else offModeSources.remove(source)
-        if (fallback.isNotEmpty()) {
-            cache[source] = fallback
-        }
-        return Result.success(fallback)
+        // Importante: NO insertar datos offline en `cache[source]` para que la siguiente consulta sin forceRefresh reintente la red.
+        return Result.success(FetchResult(fallback.events, isOffMode = usingOffline, updatedAt = fallback.updatedAt))
     }
 
-    private fun getFallback(source: SourceType): List<EventItem> {
+    private fun getFallback(source: SourceType): FallbackData {
         return when (source) {
             SourceType.OFF_MODE -> {
                 val cached = loadOfflineCache(PINA_CACHE_FILE)
                     ?: loadLegacyLicIfLooksLikeJson()
                 if (!cached.isNullOrEmpty()) {
-                    val parsed = PinaVisionParser.parse(cached)
-                    if (parsed.isNotEmpty()) return parsed
+                    val parsed = PinaVisionParser.parseWithMetadata(cached, updateGlobalTimestamp = false)
+                    if (parsed.events.isNotEmpty()) return FallbackData(parsed.events, parsed.updatedAt)
                 }
                 val fromAsset = readAssetAgenda()
                 if (!fromAsset.isNullOrEmpty()) {
-                    val parsed = PinaVisionParser.parse(fromAsset)
-                    if (parsed.isNotEmpty()) return parsed
+                    val parsed = PinaVisionParser.parseWithMetadata(fromAsset, updateGlobalTimestamp = false)
+                    if (parsed.events.isNotEmpty()) return FallbackData(parsed.events, parsed.updatedAt)
                 }
-                cache[source].orEmpty()
+                FallbackData(cache[source].orEmpty(), null)
             }
-            SourceType.CAIDO -> MarkelScraper.getFallbackMarkelEvents()
+            SourceType.CAIDO -> FallbackData(MarkelScraper.getFallbackMarkelEvents(), null)
             SourceType.SEARCH -> {
                 val cachedMem = cache[source]
-                if (!cachedMem.isNullOrEmpty()) return cachedMem
+                if (!cachedMem.isNullOrEmpty()) {
+                    return FallbackData(cachedMem, lastOnlinePinaAgenda?.parseResult?.updatedAt)
+                }
                 val cachedDisk = loadOfflineCache(PINA_CACHE_FILE) ?: readAssetAgenda()
                 if (!cachedDisk.isNullOrEmpty()) {
-                    val parsed = PinaVisionParser.parse(cachedDisk)
-                    val channels247 = parsed.filter {
-                        it.sport == "DIRECTO 24/7" || it.competition.contains("24/7", ignoreCase = true)
-                    }
-                    if (channels247.isNotEmpty()) return channels247
+                    val parsed = PinaVisionParser.parseWithMetadata(cachedDisk, updateGlobalTimestamp = false)
+                    val channels247 = filter247Events(parsed.events)
+                    if (channels247.isNotEmpty()) return FallbackData(channels247, parsed.updatedAt)
                 }
-                emptyList()
+                FallbackData(emptyList(), null)
             }
-            SourceType.PETICIONES -> emptyList()
+            SourceType.PETICIONES -> FallbackData(emptyList(), null)
             else -> {
-                lastArenaVisionEvents?.takeIf { it.isNotEmpty() }?.let { return it }
+                lastArenaVisionEvents?.takeIf { it.isNotEmpty() }?.let { return FallbackData(it, null) }
                 val cached = loadOfflineCache(ARENA_CACHE_FILE) ?: loadLegacyLicIfLooksLikeHtml()
                 if (!cached.isNullOrEmpty()) {
                     val parsed = ArenaVisionParser.parseHtmlAgenda(cached)
-                    if (parsed.isNotEmpty()) return parsed
+                    if (parsed.isNotEmpty()) return FallbackData(parsed, null)
                 }
-                ArenaVisionParser.getFallbackAgenda()
+                FallbackData(ArenaVisionParser.getFallbackAgenda(), null)
             }
         }
     }
@@ -278,5 +345,6 @@ class EventsRepository(
         private const val PINA_CACHE_FILE = "pina_agenda.json"
         private const val ARENA_CACHE_FILE = "arenavision_agenda.html"
         private const val LEGACY_CACHE_FILE = "a4v.lic"
+        private const val PINA_AGENDA_TTL_MS = 2L * 60L * 1000L
     }
 }

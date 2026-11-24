@@ -13,6 +13,7 @@ import java.util.Locale
 object SportFilterMatcher {
 
     const val FILTER_ALL = ""
+    const val FILTER_LIVE = "EN_DIRECTO"
     const val FILTER_FUTBOL = "FUTBOL"
     const val FILTER_TENIS_PADEL = "TENIS_PADEL"
     const val FILTER_MOTOR = "MOTOR"
@@ -101,6 +102,12 @@ object SportFilterMatcher {
         val titleNorm = normalize(item.title)
 
         return when (key) {
+            FILTER_LIVE -> {
+                item.isLiveNow ||
+                    item.time.equals("Directo", ignoreCase = true) ||
+                    item.time.equals("En Directo", ignoreCase = true) ||
+                    item.date.equals("24/7", ignoreCase = true)
+            }
             FILTER_TV_TDT -> isTdtChannel(item, titleNorm)
             FILTER_TV_ARENAVISION -> titleNorm.contains("ARENAVISION")
             FILTER_TV_DEPORTES -> !titleNorm.contains("ARENAVISION") && !isTdtChannel(item, titleNorm)
@@ -118,6 +125,26 @@ object SportFilterMatcher {
             }
             else -> sportNorm.contains(key)
         }
+    }
+
+    /**
+     * Búsqueda insensible a tildes/diacríticos y con soporte multi-palabra.
+     */
+    fun matchesSearch(item: EventItem, rawQuery: String): Boolean {
+        val normQuery = normalize(rawQuery)
+        if (normQuery.isEmpty()) return true
+        val tokens = normQuery.split(Regex("\\s+")).filter { it.isNotEmpty() }
+        if (tokens.isEmpty()) return true
+
+        val haystack = buildString {
+            append(normalize(item.title)).append(' ')
+            append(normalize(item.competition)).append(' ')
+            append(normalize(item.sport))
+            for (ch in item.channels) {
+                append(' ').append(normalize(ch.name))
+            }
+        }
+        return tokens.all { haystack.contains(it) }
     }
 
     private fun isTdtChannel(item: EventItem, titleNorm: String): Boolean {

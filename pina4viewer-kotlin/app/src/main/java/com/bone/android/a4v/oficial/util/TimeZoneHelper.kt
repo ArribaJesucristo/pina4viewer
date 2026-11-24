@@ -26,6 +26,32 @@ object TimeZoneHelper {
     private const val THREE_HOURS_MS = 3L * 60L * 60L * 1000L
     private val SOURCE_ZONE: TimeZone = TimeZone.getTimeZone("Europe/Madrid")
 
+    /**
+     * Contexto reutilizable por lote para evitar instanciar Calendar/SimpleDateFormat por evento.
+     */
+    class BatchContext(
+        val targetZone: TimeZone,
+        val nowMillis: Long = System.currentTimeMillis()
+    ) {
+        private val timeFmt = SimpleDateFormat("HH:mm", Locale.US).apply { timeZone = targetZone }
+        private val dateFmt = SimpleDateFormat("dd/MM/yyyy", Locale.US).apply { timeZone = targetZone }
+        private val todayCal = Calendar.getInstance(targetZone).apply { timeInMillis = nowMillis }
+        private val tomorrowCal = (todayCal.clone() as Calendar).apply { add(Calendar.DAY_OF_YEAR, 1) }
+        private val targetCal = Calendar.getInstance(targetZone)
+        val todayStartSource: Long = startOfDayMillis(nowMillis, SOURCE_ZONE)
+
+        fun formatTime(instantMillis: Long): String = timeFmt.format(Date(instantMillis))
+
+        fun formatRelativeDate(instantMillis: Long): String {
+            targetCal.timeInMillis = instantMillis
+            return when {
+                isSameCalendarDay(targetCal, todayCal) -> "Hoy"
+                isSameCalendarDay(targetCal, tomorrowCal) -> "Mañana"
+                else -> dateFmt.format(Date(instantMillis))
+            }
+        }
+    }
+
     val OPTIONS: List<TimezoneOption> = listOf(
         TimezoneOption("Europe/Madrid", "Madrid, París, Bruselas (Hora España)"),
         TimezoneOption("Europe/London", "Londres, Lisboa, Canarias (GMT / BST)"),
@@ -57,11 +83,19 @@ object TimeZoneHelper {
         referenceUpdatedAt: String?,
         nowMillis: Long = System.currentTimeMillis()
     ): EventItem? {
+        return adjustAndFilterEvent(event, BatchContext(targetZone, nowMillis), referenceUpdatedAt)
+    }
+
+    fun adjustAndFilterEvent(
+        event: EventItem,
+        ctx: BatchContext,
+        referenceUpdatedAt: String?
+    ): EventItem? {
         if (event.sport.equals("DIRECTO 24/7", ignoreCase = true)) {
-            return event
+            return event.copy(isLiveNow = true, sortOrderMillis = Long.MAX_VALUE)
         }
 
-        val sourceDay = resolveSourceCalendarDay(event.date, referenceUpdatedAt, nowMillis)
+        val sourceDay = resolveSourceCalendarDay(event.date, referenceUpdatedAt, ctx.nowMillis)
         val parsedClock = parseClockTime(event.time)
 
         if (sourceDay != null && parsedClock != null) {
@@ -76,29 +110,36 @@ object TimeZoneHelper {
             }.timeInMillis
 
             // Purgar eventos que comenzaron hace más de 3 horas (funciona correctamente incluso entre 00:00 y 03:00)
-            if (eventInstant < nowMillis - THREE_HOURS_MS) {
+            if (eventInstant < ctx.nowMillis - THREE_HOURS_MS) {
                 return null
             }
 
-            val formattedTime = formatTimeInZone(eventInstant, targetZone)
-            val formattedDate = formatRelativeDate(eventInstant, targetZone, nowMillis)
-            return if (formattedDate == event.date && formattedTime == event.time) {
-                event
-            } else {
-                event.copy(date = formattedDate, time = formattedTime)
-            }
+            val isLive = eventInstant <= ctx.nowMillis && eventInstant >= ctx.nowMillis - THREE_HOURS_MS
+            val formattedTime = ctx.formatTime(eventInstant)
+            val formattedDate = ctx.formatRelativeDate(eventInstant)
+            return event.copy(
+                date = formattedDate,
+                time = formattedTime,
+                isLiveNow = isLive,
+                sortOrderMillis = eventInstant
+            )
         }
 
         // Eventos sin hora concreta ("Directo", etc.): descartar solo si la fecha es anterior a hoy
         if (sourceDay != null) {
-            val todayStart = startOfDayMillis(nowMillis, SOURCE_ZONE)
             val eventDayStart = startOfDayMillis(sourceDay.timeInMillis, SOURCE_ZONE)
-            if (eventDayStart < todayStart) {
+            if (eventDayStart < ctx.todayStartSource) {
                 return null
             }
         }
 
-        return event
+        val isLive = event.time.equals("Directo", ignoreCase = true) ||
+            event.time.equals("En Directo", ignoreCase = true) ||
+            event.date.equals("24/7", ignoreCase = true)
+        return event.copy(
+            isLiveNow = isLive,
+            sortOrderMillis = if (isLive) ctx.nowMillis else Long.MAX_VALUE
+        )
     }
 
     private fun resolveSourceCalendarDay(

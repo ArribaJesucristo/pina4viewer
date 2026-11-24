@@ -6,84 +6,137 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="@dimen/card_horizontal_margin"
-    android:layout_marginVertical="3dp"
+    android:layout_marginVertical="4dp"
     android:clickable="true"
     android:focusable="true"
     android:foreground="@drawable/card_focused_bg"
     app:cardBackgroundColor="@color/card_background"
-    app:cardCornerRadius="10dp"
+    app:cardCornerRadius="12dp"
     app:cardElevation="2dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="12dp"
-        android:paddingVertical="10dp">
+        android:paddingStart="2dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="10dp">
 
-        <!-- Sport Icon -->
-        <ImageView
-            android:id="@+id/ivSportIcon"
-            android:layout_width="@dimen/card_icon_size"
-            android:layout_height="@dimen/card_icon_size"
-            android:contentDescription="Sport Icon"
-            android:src="@mipmap/futbol"
+        <!-- Franja lateral de acento (verde en directo / dorada próximo) -->
+        <View
+            android:id="@+id/viewAccentBar"
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_marginVertical="2dp"
+            android:background="@drawable/bg_accent_stripe"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- Sport and Competition Header -->
+        <!-- Contenedor del Icono de Deporte -->
+        <FrameLayout
+            android:id="@+id/iconContainer"
+            android:layout_width="@dimen/card_icon_size"
+            android:layout_height="@dimen/card_icon_size"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_icon_container"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/viewAccentBar"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivSportIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Sport Icon"
+                android:src="@mipmap/futbol" />
+        </FrameLayout>
+
+        <!-- Deporte y Competición -->
         <TextView
             android:id="@+id/tvSportCompetition"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="6dp"
+            android:ellipsize="end"
+            android:maxLines="1"
             android:textColor="@color/gold_primary"
             android:textSize="@dimen/card_sport_text_size"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@id/tvDateTime"
-            app:layout_constraintStart_toEndOf="@id/ivSportIcon"
+            app:layout_constraintStart_toEndOf="@id/iconContainer"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="FUTBOL (SPANISH LEAGUE)" />
+            tools:text="FÚTBOL · CHAMPIONS LEAGUE" />
 
-        <!-- Event / Match Title -->
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="8dp"
-            android:textColor="#FFFFFF"
-            android:textSize="@dimen/card_title_text_size"
-            android:textStyle="bold|italic"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/tvDateTime"
-            app:layout_constraintStart_toEndOf="@id/ivSportIcon"
-            app:layout_constraintTop_toBottomOf="@id/tvSportCompetition"
-            tools:text="OSASUNA - GETAFE" />
-
-        <!-- Hidden tvChannels to preserve ViewBinding compatibility -->
-        <TextView
-            android:id="@+id/tvChannels"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:visibility="gone"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <!-- Date & Time on the right -->
+        <!-- Badge EN DIRECTO o Fecha/Hora -->
         <TextView
             android:id="@+id/tvDateTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#E0E0E0"
+            android:background="@drawable/bg_time_badge"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="2dp"
+            android:textColor="@color/text_primary"
             android:textSize="@dimen/card_time_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Hoy 21:00" />
+
+        <!-- Título del Partido / Canal -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="6dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/card_title_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iconContainer"
+            app:layout_constraintTop_toBottomOf="@id/tvSportCompetition"
+            tools:text="Real Madrid vs Arsenal" />
+
+        <!-- Subtítulo de Estado (Inicio / Programado / Emisión continua) -->
+        <TextView
+            android:id="@+id/tvSubInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="6dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_muted"
+            android:textSize="@dimen/card_sub_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvChannels"
+            app:layout_constraintStart_toEndOf="@id/iconContainer"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            tools:text="Inicio 21:00" />
+
+        <!-- Badge Nº de Canales / Acceso 1 clic -->
+        <TextView
+            android:id="@+id/tvChannels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_channel_badge"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="2dp"
+            android:textColor="@color/gold_primary"
+            android:textSize="@dimen/card_sub_text_size"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Hoy 19:30" />
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            tools:text="▶ 4 ch" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

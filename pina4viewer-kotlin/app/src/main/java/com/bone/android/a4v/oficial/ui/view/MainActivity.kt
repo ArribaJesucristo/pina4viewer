@@ -6,6 +6,9 @@ import android.content.pm.ActivityInfo
 import android.content.res.Configuration
 import android.graphics.Color
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.style.ForegroundColorSpan
 import android.util.TypedValue
 import android.view.KeyEvent
 import android.view.Menu
@@ -35,6 +38,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bone.android.a4v.oficial.R
@@ -61,16 +65,18 @@ class MainActivity : AppCompatActivity() {
     private lateinit var drawerToggle: ActionBarDrawerToggle
 
     private var isLandscape = false
+    private var spanCount = 1
     private var vpnActionView: View? = null
     private var overflowButtonView: View? = null
     private var vpnDialog: AlertDialog? = null
     private var pendingToolbarFocus: ToolbarFocusTarget? = null
 
-    private var lastSource: SourceType? = SourceType.OFF_MODE
+    private var lastSource: SourceType? = null
     private var lastSportFilter: String = ""
     private var lastSearchQuery: String = ""
     private var currentChipsAre247 = false
     private var lastRenderedVpnState: Boolean? = null
+    private var lastCachedStreamsCount: Int = -1
 
     private enum class ToolbarFocusTarget { VPN, OVERFLOW }
 
@@ -112,6 +118,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         isLandscape = (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
+        lastSource = viewModel.uiState.value.currentSource
         onBackPressedDispatcher.addCallback(this, drawerBackCallback)
 
         applyTvOverscanFallbackIfNeeded()
@@ -125,7 +132,9 @@ class MainActivity : AppCompatActivity() {
         observeState()
         initVpnShield()
         checkAppUpdate(manual = false)
-        binding.root.post { binding.rbPina.requestFocus() }
+        if (savedInstanceState == null) {
+            binding.root.post { activeSourceRadioView().requestFocus() }
+        }
     }
 
     private fun applyTvOverscanFallbackIfNeeded() {
@@ -154,6 +163,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupToolbarAndDrawer() {
         setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeButtonEnabled(true)
 
@@ -173,9 +183,39 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.toolbar.overflowIcon?.setTint(Color.parseColor("#FFD700"))
+        styleToolbarBrandTitle()
+        setupRefreshToolbarButton()
         binding.toolbar.post {
             configureActionMenuClipping()
             setupOverflowButtonFocus()
+        }
+    }
+
+    private fun styleToolbarBrandTitle() {
+        val brandText = "PIÑA4VIEWER"
+        val spannable = SpannableString(brandText)
+        val accentStart = brandText.indexOf("4VIEWER")
+        if (accentStart >= 0) {
+            spannable.setSpan(
+                ForegroundColorSpan(ContextCompat.getColor(this, R.color.gold_primary)),
+                accentStart,
+                brandText.length,
+                Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+            )
+        }
+        binding.tvToolbarBrand.text = spannable
+    }
+
+    private fun setupRefreshToolbarButton() {
+        binding.btnToolbarRefresh.setOnFocusChangeListener { v, hasFocus ->
+            v.animate().cancel()
+            val scale = if (hasFocus) 1.12f else 1.0f
+            v.animate().scaleX(scale).scaleY(scale).setDuration(130).start()
+        }
+        binding.btnToolbarRefresh.setOnClickListener {
+            binding.btnToolbarRefresh.animate().rotationBy(360f).setDuration(420).start()
+            Toast.makeText(this, "🔄 Actualizando agenda...", Toast.LENGTH_SHORT).show()
+            viewModel.refresh()
         }
     }
 
@@ -197,8 +237,13 @@ class MainActivity : AppCompatActivity() {
             onChannelClick = { channel -> playChannel(channel) }
         )
 
+        spanCount = if (AceStreamInstallerHelper.isTvDevice(this) || resources.configuration.screenWidthDp >= 720) 2 else 1
         binding.recyclerViewEvents.apply {
-            layoutManager = LinearLayoutManager(this@MainActivity)
+            layoutManager = if (spanCount > 1) {
+                GridLayoutManager(this@MainActivity, spanCount)
+            } else {
+                LinearLayoutManager(this@MainActivity)
+            }
             adapter = eventAdapter
             setHasFixedSize(false)
         }
@@ -212,7 +257,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         val allRadios = radioMap.keys.toList()
-        allRadios.forEach { rb -> rb.isChecked = (rb == binding.rbPina) }
+        syncCheckedSourceWithState(viewModel.uiState.value.currentSource)
 
         radioMap.forEach { (radioButton, sourceType) ->
             radioButton.setOnClickListener {
@@ -221,6 +266,17 @@ class MainActivity : AppCompatActivity() {
                 (binding.recyclerViewEvents.layoutManager as? LinearLayoutManager)?.scrollToPositionWithOffset(0, 0)
                 viewModel.selectSource(sourceType)
             }
+        }
+    }
+
+    private fun syncCheckedSourceWithState(source: SourceType) {
+        val target = when (source) {
+            SourceType.SEARCH -> binding.rbTv
+            SourceType.CAIDO -> binding.rbCaido
+            else -> binding.rbPina
+        }
+        if (!target.isChecked) {
+            target.isChecked = true
         }
     }
 
@@ -234,6 +290,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun activeSportChipView(): RadioButton {
         val candidates = listOf(
+            binding.chipSportLive,
             binding.chipSportFutbol,
             binding.chipSportTenis,
             binding.chipSportMotor,
@@ -260,7 +317,42 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupSearch() {
         binding.etSearch.addTextChangedListener { text ->
-            viewModel.onSearchQueryChanged(text?.toString().orEmpty())
+            val query = text?.toString().orEmpty()
+            binding.btnClearSearch.visibility = if (query.isEmpty()) View.GONE else View.VISIBLE
+            viewModel.onSearchQueryChanged(query)
+        }
+
+        binding.btnClearSearch.setOnClickListener {
+            binding.etSearch.setText("")
+            binding.etSearch.requestFocus()
+        }
+
+        binding.btnClearSearch.setOnFocusChangeListener { v, hasFocus ->
+            v.animate().cancel()
+            val scale = if (hasFocus) 1.12f else 1.0f
+            v.animate().scaleX(scale).scaleY(scale).setDuration(110).start()
+        }
+
+        binding.btnClearSearch.setOnKeyListener { _, keyCode, event ->
+            if (event.action == KeyEvent.ACTION_DOWN) {
+                when (keyCode) {
+                    KeyEvent.KEYCODE_DPAD_LEFT -> {
+                        binding.etSearch.requestFocus()
+                        true
+                    }
+                    KeyEvent.KEYCODE_DPAD_DOWN -> {
+                        activeSportChipView().requestFocus()
+                        true
+                    }
+                    KeyEvent.KEYCODE_DPAD_UP -> {
+                        if (isLandscape) binding.btnToolbarRefresh.requestFocus() else activeSourceRadioView().requestFocus()
+                        true
+                    }
+                    else -> false
+                }
+            } else {
+                false
+            }
         }
 
         binding.etSearch.setOnEditorActionListener { v, actionId, event ->
@@ -285,8 +377,26 @@ class MainActivity : AppCompatActivity() {
                         true
                     }
                     KeyEvent.KEYCODE_DPAD_UP -> {
-                        activeSourceRadioView().requestFocus()
+                        if (isLandscape) binding.btnToolbarRefresh.requestFocus() else activeSourceRadioView().requestFocus()
                         true
+                    }
+                    KeyEvent.KEYCODE_DPAD_LEFT -> {
+                        if (isLandscape && binding.etSearch.selectionStart <= 0) {
+                            binding.rbCaido.requestFocus()
+                            true
+                        } else {
+                            false
+                        }
+                    }
+                    KeyEvent.KEYCODE_DPAD_RIGHT -> {
+                        if (binding.btnClearSearch.visibility == View.VISIBLE &&
+                            binding.etSearch.selectionEnd >= (binding.etSearch.text?.length ?: 0)
+                        ) {
+                            binding.btnClearSearch.requestFocus()
+                            true
+                        } else {
+                            false
+                        }
                     }
                     else -> false
                 }
@@ -299,6 +409,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupSportChips() {
         val allChips = listOf(
             binding.chipSportAll,
+            binding.chipSportLive,
             binding.chipSportFutbol,
             binding.chipSportTenis,
             binding.chipSportMotor,
@@ -306,7 +417,7 @@ class MainActivity : AppCompatActivity() {
             binding.chipSportOtros
         )
 
-        updateChipsForSource(SourceType.OFF_MODE)
+        updateChipsForSource(viewModel.uiState.value.currentSource)
 
         allChips.forEach { chip ->
             chip.setOnClickListener {
@@ -323,7 +434,7 @@ class MainActivity : AppCompatActivity() {
                             true
                         }
                         KeyEvent.KEYCODE_DPAD_UP -> {
-                            binding.etSearch.requestFocus()
+                            if (isLandscape) activeSourceRadioView().requestFocus() else binding.etSearch.requestFocus()
                             true
                         }
                         else -> false
@@ -341,6 +452,7 @@ class MainActivity : AppCompatActivity() {
 
         if (is247) {
             binding.chipSportAll.apply { text = "🏆 Todos"; tag = SportFilterMatcher.FILTER_ALL }
+            binding.chipSportLive.visibility = View.GONE
             binding.chipSportFutbol.apply { text = "📺 Deportes TV"; tag = SportFilterMatcher.FILTER_TV_DEPORTES }
             binding.chipSportTenis.apply { text = "🏟️ ArenaVision"; tag = SportFilterMatcher.FILTER_TV_ARENAVISION }
             binding.chipSportMotor.apply { text = "📡 TDT Oficial"; tag = SportFilterMatcher.FILTER_TV_TDT }
@@ -348,6 +460,11 @@ class MainActivity : AppCompatActivity() {
             binding.chipSportOtros.visibility = View.GONE
         } else {
             binding.chipSportAll.apply { text = "🏆 Todos"; tag = SportFilterMatcher.FILTER_ALL }
+            binding.chipSportLive.apply {
+                text = "● En Directo"
+                tag = SportFilterMatcher.FILTER_LIVE
+                visibility = View.VISIBLE
+            }
             binding.chipSportFutbol.apply { text = "⚽ Fútbol"; tag = SportFilterMatcher.FILTER_FUTBOL }
             binding.chipSportTenis.apply { text = "🎾 Tenis / Pádel"; tag = SportFilterMatcher.FILTER_TENIS_PADEL }
             binding.chipSportMotor.apply { text = "🏎️ Motor"; tag = SportFilterMatcher.FILTER_MOTOR }
@@ -364,6 +481,29 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun updateChipLabelsWithCounts(chipCounts: Map<String, Int>, source: SourceType) {
+        if (chipCounts.isEmpty()) return
+        fun fmt(base: String, key: String): String {
+            val count = chipCounts[key] ?: return base
+            return "$base ($count)"
+        }
+
+        if (source == SourceType.SEARCH) {
+            binding.chipSportAll.text = fmt("🏆 Todos", SportFilterMatcher.FILTER_ALL)
+            binding.chipSportFutbol.text = fmt("📺 Deportes TV", SportFilterMatcher.FILTER_TV_DEPORTES)
+            binding.chipSportTenis.text = fmt("🏟️ ArenaVision", SportFilterMatcher.FILTER_TV_ARENAVISION)
+            binding.chipSportMotor.text = fmt("📡 TDT Oficial", SportFilterMatcher.FILTER_TV_TDT)
+        } else {
+            binding.chipSportAll.text = fmt("🏆 Todos", SportFilterMatcher.FILTER_ALL)
+            binding.chipSportLive.text = fmt("● En Directo", SportFilterMatcher.FILTER_LIVE)
+            binding.chipSportFutbol.text = fmt("⚽ Fútbol", SportFilterMatcher.FILTER_FUTBOL)
+            binding.chipSportTenis.text = fmt("🎾 Tenis / Pádel", SportFilterMatcher.FILTER_TENIS_PADEL)
+            binding.chipSportMotor.text = fmt("🏎️ Motor", SportFilterMatcher.FILTER_MOTOR)
+            binding.chipSportBasket.text = fmt("🏀 Basket", SportFilterMatcher.FILTER_BASKET)
+            binding.chipSportOtros.text = fmt("🥊 Otros", SportFilterMatcher.FILTER_OTROS)
+        }
+    }
+
     private fun syncCheckedChipWithFilter(sportFilter: String, source: SourceType) {
         val norm = SportFilterMatcher.normalize(sportFilter)
         val targetChip: RadioButton = if (source == SourceType.SEARCH) {
@@ -377,6 +517,7 @@ class MainActivity : AppCompatActivity() {
         } else {
             when (norm) {
                 "" -> binding.chipSportAll
+                SportFilterMatcher.FILTER_LIVE -> binding.chipSportLive
                 SportFilterMatcher.FILTER_FUTBOL -> binding.chipSportFutbol
                 SportFilterMatcher.FILTER_TENIS_PADEL, "TENIS", "PADEL" -> binding.chipSportTenis
                 SportFilterMatcher.FILTER_MOTOR -> binding.chipSportMotor
@@ -526,9 +667,14 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 viewModel.uiState.collect { state ->
-                    updateDrawerChannelsIfChanged()
+                    val currentStreamCount = ArenaVisionParser.cachedStreams.size
+                    if (currentStreamCount != lastCachedStreamsCount) {
+                        lastCachedStreamsCount = currentStreamCount
+                        updateDrawerChannelsIfChanged()
+                    }
                     binding.swipeRefresh.isRefreshing = state.isLoading
 
+                    syncCheckedSourceWithState(state.currentSource)
                     if (currentChipsAre247 != (state.currentSource == SourceType.SEARCH)) {
                         updateChipsForSource(state.currentSource)
                     }
@@ -564,40 +710,42 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
 
+                    updateChipLabelsWithCounts(state.chipCounts, state.currentSource)
                     syncCheckedChipWithFilter(state.sportFilter, state.currentSource)
 
                     val count = state.filteredEvents.size
                     val unitLabel = if (state.currentSource == SourceType.SEARCH) {
-                        if (count == 1) "canal disponible" else "canales disponibles"
+                        if (count == 1) "canal" else "canales"
                     } else {
-                        if (count == 1) "evento disponible" else "eventos disponibles"
+                        if (count == 1) "evento" else "eventos"
                     }
                     val activeFilterSuffix = if (state.sportFilter.isNotBlank() && state.currentSource != SourceType.SEARCH) {
-                        " • Filtro: ${SportFilterMatcher.normalize(state.sportFilter)}"
+                        val label = if (state.sportFilter == SportFilterMatcher.FILTER_LIVE) "Directo" else SportFilterMatcher.normalize(state.sportFilter)
+                        " · $label"
                     } else {
                         ""
                     }
 
                     if (state.isOffMode) {
-                        binding.tvUserCount.text = "[OFF-MODE] • $count $unitLabel$activeFilterSuffix"
-                        binding.tvUserCount.setTextColor(Color.parseColor("#FFD700"))
+                        binding.tvUserCount.text = "[OFF-MODE] · ${state.liveCount} en directo · $count $unitLabel$activeFilterSuffix"
+                        binding.tvUserCount.setTextColor(ContextCompat.getColor(this@MainActivity, R.color.gold_primary))
                     } else {
-                        binding.tvUserCount.text = "📡 $count $unitLabel$activeFilterSuffix"
-                        binding.tvUserCount.setTextColor(Color.parseColor("#E0E0E0"))
+                        val liveDotPrefix = if (state.liveCount > 0) "● ${state.liveCount} en directo · " else "📡 "
+                        binding.tvUserCount.text = "$liveDotPrefix$count $unitLabel$activeFilterSuffix"
+                        val bannerColor = if (state.liveCount > 0) R.color.live_green else R.color.text_secondary
+                        binding.tvUserCount.setTextColor(ContextCompat.getColor(this@MainActivity, bannerColor))
                     }
 
                     if (state.lastUpdated.isNotEmpty()) {
-                        val tzBadge = if (state.selectedTimezoneId != TimeZoneHelper.DEFAULT_TIMEZONE_ID) {
-                            val shortName = if (state.selectedTimezoneId == TimeZoneHelper.SYSTEM_TIMEZONE_ID) {
-                                "Local"
-                            } else {
-                                state.selectedTimezoneId.substringAfterLast('/').replace('_', ' ')
-                            }
-                            "\n($shortName)"
-                        } else {
-                            ""
+                        val compactTime = state.lastUpdated
+                            .replace("Actualizado:\n", "")
+                            .trim()
+                        val tzName = when (state.selectedTimezoneId) {
+                            TimeZoneHelper.DEFAULT_TIMEZONE_ID -> "Europe/Madrid"
+                            TimeZoneHelper.SYSTEM_TIMEZONE_ID -> "Local"
+                            else -> state.selectedTimezoneId.substringAfterLast('/').replace('_', ' ')
                         }
-                        binding.tvFooterZone.text = "${state.lastUpdated}$tzBadge"
+                        binding.tvFooterZone.text = "Act. $compactTime · $tzName"
                     }
 
                     binding.tvEmpty.visibility = if (!state.isLoading && state.filteredEvents.isEmpty()) {
@@ -635,7 +783,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         val builder = AlertDialog.Builder(this)
-            .setTitle("Canales disponibles")
+            .setTitle("▶ ${event.title}")
             .setAdapter(adapter) { dialog, which ->
                 dialog.dismiss()
                 event.channels.getOrNull(which)?.let { playChannel(it) }
@@ -722,14 +870,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun dispatchKeyEvent(event: KeyEvent): Boolean {
+        if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            if (event.action == KeyEvent.ACTION_DOWN && event.keyCode == KeyEvent.KEYCODE_MENU) {
+                binding.drawerLayout.closeDrawers()
+                return true
+            }
+            return super.dispatchKeyEvent(event)
+        }
+
         if (event.action == KeyEvent.ACTION_DOWN) {
             when (event.keyCode) {
                 KeyEvent.KEYCODE_MENU -> {
-                    if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
-                        binding.drawerLayout.closeDrawers()
-                    } else {
-                        openAppMenu()
-                    }
+                    openAppMenu()
                     return true
                 }
                 KeyEvent.KEYCODE_DPAD_CENTER,
@@ -745,31 +897,41 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 KeyEvent.KEYCODE_DPAD_DOWN -> {
-                    if (vpnActionView?.hasFocus() == true || overflowButtonView?.hasFocus() == true) {
+                    if (binding.btnToolbarRefresh.hasFocus() ||
+                        vpnActionView?.hasFocus() == true ||
+                        overflowButtonView?.hasFocus() == true
+                    ) {
                         activeSourceRadioView().requestFocus()
                         return true
                     }
                 }
                 KeyEvent.KEYCODE_DPAD_UP -> {
-                    if (vpnActionView?.hasFocus() == true || overflowButtonView?.hasFocus() == true) {
+                    if (binding.btnToolbarRefresh.hasFocus() ||
+                        vpnActionView?.hasFocus() == true ||
+                        overflowButtonView?.hasFocus() == true
+                    ) {
                         return true
                     }
-                    if (binding.rbTv.hasFocus() || binding.rbCaido.hasFocus()) {
+                    if (binding.rbPina.hasFocus() || binding.rbTv.hasFocus()) {
+                        binding.btnToolbarRefresh.requestFocus()
+                        return true
+                    }
+                    if (binding.rbCaido.hasFocus()) {
                         val target = vpnActionView ?: binding.toolbar.findViewById(R.id.btnToolbarVpn)
                         if (target != null) {
                             vpnActionView = target
                             target.requestFocus()
                         } else {
-                            openAppMenu()
+                            binding.btnToolbarRefresh.requestFocus()
                         }
                         return true
                     }
-                    if (binding.rbPina.hasFocus()) {
-                        binding.drawerLayout.openDrawer(GravityCompat.START)
-                        return true
-                    }
                     if (binding.etSearch.hasFocus()) {
-                        activeSourceRadioView().requestFocus()
+                        if (isLandscape) {
+                            binding.btnToolbarRefresh.requestFocus()
+                        } else {
+                            activeSourceRadioView().requestFocus()
+                        }
                         return true
                     }
                     val focused = currentFocus
@@ -777,7 +939,7 @@ class MainActivity : AppCompatActivity() {
                         val containing = binding.recyclerViewEvents.findContainingItemView(focused)
                         if (containing != null) {
                             val pos = binding.recyclerViewEvents.getChildAdapterPosition(containing)
-                            if (pos == 0) {
+                            if (pos in 0 until spanCount) {
                                 activeSportChipView().requestFocus()
                                 return true
                             }
@@ -790,15 +952,32 @@ class MainActivity : AppCompatActivity() {
                         if (target != null) {
                             vpnActionView = target
                             target.requestFocus()
+                        } else {
+                            binding.btnToolbarRefresh.requestFocus()
                         }
                         return true
                     }
-                    if (vpnActionView?.hasFocus() == true || binding.rbPina.hasFocus()) {
+                    if (vpnActionView?.hasFocus() == true) {
+                        binding.btnToolbarRefresh.requestFocus()
+                        return true
+                    }
+                    if (binding.btnToolbarRefresh.hasFocus() || binding.rbPina.hasFocus()) {
                         binding.drawerLayout.openDrawer(GravityCompat.START)
                         return true
                     }
                 }
                 KeyEvent.KEYCODE_DPAD_RIGHT -> {
+                    if (binding.btnToolbarRefresh.hasFocus()) {
+                        val target = vpnActionView ?: binding.toolbar.findViewById(R.id.btnToolbarVpn)
+                        if (target != null) {
+                            vpnActionView = target
+                            target.requestFocus()
+                        } else {
+                            val overflow = overflowButtonView ?: findOverflowButton(binding.toolbar)
+                            overflow?.requestFocus() ?: openAppMenu()
+                        }
+                        return true
+                    }
                     if (vpnActionView?.hasFocus() == true) {
                         val overflow = overflowButtonView ?: findOverflowButton(binding.toolbar)
                         if (overflow != null) {
@@ -813,12 +992,10 @@ class MainActivity : AppCompatActivity() {
                         return true
                     }
                     if (binding.rbCaido.hasFocus()) {
-                        val target = vpnActionView ?: binding.toolbar.findViewById(R.id.btnToolbarVpn)
-                        if (target != null) {
-                            vpnActionView = target
-                            target.requestFocus()
+                        if (isLandscape) {
+                            binding.etSearch.requestFocus()
                         } else {
-                            openAppMenu()
+                            binding.btnToolbarRefresh.requestFocus()
                         }
                         return true
                     }

@@ -34,7 +34,10 @@ data class MainUiState(
     val selectedTimezoneId: String = TimeZoneHelper.DEFAULT_TIMEZONE_ID,
     val lastUpdated: String = "",
     val isOffMode: Boolean = false,
-    val errorMessage: String? = null
+    val errorMessage: String? = null,
+    val liveCount: Int = 0,
+    val totalActiveCount: Int = 0,
+    val chipCounts: Map<String, Int> = emptyMap()
 )
 
 class MainViewModel(
@@ -138,26 +141,28 @@ class MainViewModel(
                 _uiState.update { it.copy(isLoading = true, errorMessage = null) }
             }
 
-            val result = repository.getEvents(source, forceRefresh)
-            val workflowTime = PinaVisionParser.lastParsedUpdatedAt
-            if (!workflowTime.isNullOrBlank()) {
-                prefs.edit().putString("workflow_updated_at", workflowTime).apply()
-            }
-            val displayTime = workflowTime ?: SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault()).format(Date())
-            val footerText = "Actualizado:\n$displayTime"
-            val isOff = repository.isCurrentSourceOffMode
+            val result = repository.getEventsWithMeta(source, forceRefresh)
 
             result.fold(
-                onSuccess = { events ->
+                onSuccess = { fetch ->
+                    val events = fetch.events
+                    val effectiveUpdatedAt = fetch.updatedAt ?: PinaVisionParser.lastParsedUpdatedAt
+                    if (!fetch.isOffMode && !fetch.updatedAt.isNullOrBlank()) {
+                        prefs.edit().putString("workflow_updated_at", fetch.updatedAt).apply()
+                    }
+                    val displayTime = effectiveUpdatedAt
+                        ?: SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault()).format(Date())
+                    val footerText = "Actualizado:\n$displayTime"
+
                     val currentSnapshot = _uiState.value
-                    val filtered = withContext(Dispatchers.Default) {
-                        filterAndTransformEvents(
+                    val bundle = withContext(Dispatchers.Default) {
+                        computeFilteredBundle(
                             events = events,
+                            source = source,
                             query = currentSnapshot.searchQuery,
                             sport = currentSnapshot.sportFilter,
                             timezoneId = currentSnapshot.selectedTimezoneId,
-                            isFileBasedSource = isFileBasedSource(source),
-                            referenceUpdatedAt = workflowTime
+                            referenceUpdatedAt = effectiveUpdatedAt
                         )
                     }
                     _uiState.update { state ->
@@ -166,8 +171,11 @@ class MainViewModel(
                             isLoading = false,
                             allEvents = events,
                             lastUpdated = footerText,
-                            isOffMode = isOff,
-                            filteredEvents = filtered
+                            isOffMode = fetch.isOffMode,
+                            filteredEvents = bundle.filteredEvents,
+                            liveCount = bundle.liveCount,
+                            totalActiveCount = bundle.totalActiveCount,
+                            chipCounts = bundle.chipCounts
                         )
                     }
                 },
@@ -194,13 +202,13 @@ class MainViewModel(
         val snapshot = _uiState.value
         val workflowTime = PinaVisionParser.lastParsedUpdatedAt
         filterJob = viewModelScope.launch {
-            val filtered = withContext(Dispatchers.Default) {
-                filterAndTransformEvents(
+            val bundle = withContext(Dispatchers.Default) {
+                computeFilteredBundle(
                     events = snapshot.allEvents,
+                    source = snapshot.currentSource,
                     query = snapshot.searchQuery,
                     sport = snapshot.sportFilter,
                     timezoneId = snapshot.selectedTimezoneId,
-                    isFileBasedSource = isFileBasedSource(snapshot.currentSource),
                     referenceUpdatedAt = workflowTime
                 )
             }
@@ -211,7 +219,12 @@ class MainViewModel(
                     current.selectedTimezoneId == snapshot.selectedTimezoneId &&
                     current.allEvents === snapshot.allEvents
                 ) {
-                    current.copy(filteredEvents = filtered)
+                    current.copy(
+                        filteredEvents = bundle.filteredEvents,
+                        liveCount = bundle.liveCount,
+                        totalActiveCount = bundle.totalActiveCount,
+                        chipCounts = bundle.chipCounts
+                    )
                 } else {
                     current
                 }
@@ -219,9 +232,94 @@ class MainViewModel(
         }
     }
 
+    private data class FilteredBundle(
+        val filteredEvents: List<EventItem>,
+        val liveCount: Int,
+        val totalActiveCount: Int,
+        val chipCounts: Map<String, Int>
+    )
+
     companion object {
         private fun isFileBasedSource(source: SourceType): Boolean =
             source == SourceType.OFF_MODE || source == SourceType.SEARCH
+
+        private fun computeFilteredBundle(
+            events: List<EventItem>,
+            source: SourceType,
+            query: String,
+            sport: String,
+            timezoneId: String,
+            referenceUpdatedAt: String?,
+            nowMillis: Long = System.currentTimeMillis()
+        ): FilteredBundle {
+            val targetZone = TimeZoneHelper.resolveTargetTimeZone(timezoneId)
+            val batchCtx = TimeZoneHelper.BatchContext(targetZone, nowMillis)
+            val effectiveRefTime = if (isFileBasedSource(source)) referenceUpdatedAt else null
+            val trimmedQuery = query.trim()
+            val hasQuery = trimmedQuery.isNotEmpty()
+
+            val timeAdjusted = events.mapNotNull { item ->
+                TimeZoneHelper.adjustAndFilterEvent(item, batchCtx, effectiveRefTime)
+            }
+
+            val queryMatched = if (hasQuery) {
+                timeAdjusted.filter { SportFilterMatcher.matchesSearch(it, trimmedQuery) }
+            } else {
+                timeAdjusted
+            }
+
+            val chipCounts = computeChipCounts(queryMatched, source)
+            val liveCount = queryMatched.count {
+                it.isLiveNow ||
+                    it.time.equals("Directo", ignoreCase = true) ||
+                    it.time.equals("En Directo", ignoreCase = true) ||
+                    it.date.equals("24/7", ignoreCase = true)
+            }
+
+            val filtered = queryMatched
+                .filter { SportFilterMatcher.matchesFilter(it, sport) }
+                .sortedBy { it.sortOrderMillis }
+
+            return FilteredBundle(
+                filteredEvents = filtered,
+                liveCount = liveCount,
+                totalActiveCount = queryMatched.size,
+                chipCounts = chipCounts
+            )
+        }
+
+        fun computeChipCounts(
+            timeAdjustedEvents: List<EventItem>,
+            source: SourceType
+        ): Map<String, Int> {
+            val keys = if (source == SourceType.SEARCH) {
+                listOf(
+                    SportFilterMatcher.FILTER_ALL,
+                    SportFilterMatcher.FILTER_TV_DEPORTES,
+                    SportFilterMatcher.FILTER_TV_ARENAVISION,
+                    SportFilterMatcher.FILTER_TV_TDT
+                )
+            } else {
+                listOf(
+                    SportFilterMatcher.FILTER_ALL,
+                    SportFilterMatcher.FILTER_LIVE,
+                    SportFilterMatcher.FILTER_FUTBOL,
+                    SportFilterMatcher.FILTER_TENIS_PADEL,
+                    SportFilterMatcher.FILTER_MOTOR,
+                    SportFilterMatcher.FILTER_BASKET,
+                    SportFilterMatcher.FILTER_OTROS
+                )
+            }
+            val map = LinkedHashMap<String, Int>(keys.size)
+            for (k in keys) {
+                map[k] = if (k == SportFilterMatcher.FILTER_ALL) {
+                    timeAdjustedEvents.size
+                } else {
+                    timeAdjustedEvents.count { SportFilterMatcher.matchesFilter(it, k) }
+                }
+            }
+            return map
+        }
 
         fun filterAndTransformEvents(
             events: List<EventItem>,
@@ -235,30 +333,26 @@ class MainViewModel(
             val trimmedQuery = query.trim()
             val hasQuery = trimmedQuery.isNotEmpty()
             val targetZone = TimeZoneHelper.resolveTargetTimeZone(timezoneId)
+            val batchCtx = TimeZoneHelper.BatchContext(targetZone, nowMillis)
             val effectiveRefTime = if (isFileBasedSource) referenceUpdatedAt else null
 
             return events.mapNotNull { item ->
                 val adjusted = TimeZoneHelper.adjustAndFilterEvent(
                     event = item,
-                    targetZone = targetZone,
-                    referenceUpdatedAt = effectiveRefTime,
-                    nowMillis = nowMillis
+                    ctx = batchCtx,
+                    referenceUpdatedAt = effectiveRefTime
                 ) ?: return@mapNotNull null
 
                 if (!SportFilterMatcher.matchesFilter(adjusted, sport)) {
                     return@mapNotNull null
                 }
 
-                if (hasQuery) {
-                    val matchesQuery = adjusted.title.contains(trimmedQuery, ignoreCase = true) ||
-                        adjusted.competition.contains(trimmedQuery, ignoreCase = true) ||
-                        adjusted.sport.contains(trimmedQuery, ignoreCase = true) ||
-                        adjusted.channels.any { it.name.contains(trimmedQuery, ignoreCase = true) }
-                    if (!matchesQuery) return@mapNotNull null
+                if (hasQuery && !SportFilterMatcher.matchesSearch(adjusted, trimmedQuery)) {
+                    return@mapNotNull null
                 }
 
                 adjusted
-            }
+            }.sortedBy { it.sortOrderMillis }
         }
     }
 }
