@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "25/11/2026 17:11",
+    "updatedAt": "25/11/2026 17:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -24,7 +24,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_77"
+    "id": "pina_78"
   },
   {
     "title": "Barys vs Severstal",
@@ -46,7 +46,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_84"
+    "id": "pina_85"
   },
   {
     "title": "Dubai Capitals vs Desert Vipers",
@@ -62,7 +62,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_79"
+    "id": "pina_80"
   },
   {
     "id": "pina_1",
@@ -158,7 +158,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_80"
+    "id": "pina_81"
   },
   {
     "title": "Akhmat vs Krasnodar",
@@ -186,7 +186,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_81"
+    "id": "pina_82"
   },
   {
     "title": "PSG U-19 vs Roma U-19",
@@ -208,7 +208,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_82"
+    "id": "pina_83"
   },
   {
     "id": "pina_3",
@@ -252,19 +252,19 @@
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
         "name": "[LiveTV] Russian 8000kbps",
         "streamId": "42fe2ce3ef6b92653a74d85b6e98c2ba0abee707",
         "type": "ACESTREAM",
         "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 2",
+        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ],
-    "id": "pina_78"
+    "id": "pina_77"
   },
   {
     "title": "Vakifbank (W) vs Asterix Avo (W)",
@@ -286,7 +286,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_83"
+    "id": "pina_84"
   },
   {
     "title": "Dubai vs Partizan",
@@ -296,19 +296,35 @@
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "42fe2ce3ef6b92653a74d85b6e98c2ba0abee707",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "42fe2ce3ef6b92653a74d85b6e98c2ba0abee707",
+        "name": "[LiveTV] German Opción 2",
+        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
     "id": "pina_87"
+  },
+  {
+    "title": "Olsztyn vs Resovia Rzeszow",
+    "sport": "OTROS",
+    "competition": "Poland. PlusLiga",
+    "time": "17:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_79"
   },
   {
     "title": "SKA vs Lokomotiv",
@@ -326,22 +342,6 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_85"
-  },
-  {
-    "title": "Olsztyn vs Resovia Rzeszow",
-    "sport": "POLAND. PLUSLIGA",
-    "competition": "Poland. PlusLiga",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
