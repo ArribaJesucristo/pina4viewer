@@ -1,24 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "25/11/2026 18:31",
+    "updatedAt": "25/11/2026 18:41",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Dubai Capitals vs Desert Vipers",
-    "sport": "OTROS",
-    "competition": "UAE. T20 League",
-    "time": "15:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_79"
   },
   {
     "id": "pina_1",
@@ -148,7 +132,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_77"
+    "id": "pina_78"
   },
   {
     "title": "Vakifbank (W) vs Asterix Avo (W)",
@@ -170,7 +154,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_80"
+    "id": "pina_79"
   },
   {
     "title": "Dubai vs Partizan",
@@ -192,7 +176,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_86"
+    "id": "pina_87"
   },
   {
     "title": "Olsztyn vs Resovia Rzeszow",
@@ -208,7 +192,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_78"
+    "id": "pina_77"
   },
   {
     "title": "SKA vs Lokomotiv",
@@ -230,7 +214,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_81"
+    "id": "pina_80"
   },
   {
     "title": "SKA vs Lokomotiv",
@@ -252,7 +236,29 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_83"
+    "id": "pina_84"
+  },
+  {
+    "title": "Rubin vs Rodina",
+    "sport": "FUTBOL",
+    "competition": "Russia. Cup",
+    "time": "18:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "8442b5c7c99e5af57c2c40c1e28153072968988a",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_81"
   },
   {
     "title": "Lokomotiv M vs Rostov",
@@ -302,7 +308,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_87"
+    "id": "pina_83"
   },
   {
     "id": "pina_4",
@@ -357,6 +363,12 @@
       {
         "name": "[LiveTV] Dutch Opción 4",
         "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "016d48fb89bb9505ab3f883db1bfb3a7c0a3eccc",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -441,6 +453,12 @@
         "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
         "type": "ACESTREAM",
         "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "e38b33c56332de27ff25df223cdf488b1ec6051f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
@@ -486,7 +504,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_84"
+    "id": "pina_85"
   },
   {
     "title": "RB Munich vs Grizzlys Wolfsburg",
@@ -508,7 +526,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_85"
+    "id": "pina_86"
   },
   {
     "id": "pina_7",
