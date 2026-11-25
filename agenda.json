@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "25/11/2026 17:41",
+    "updatedAt": "25/11/2026 17:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -117,6 +117,28 @@
     "id": "pina_80"
   },
   {
+    "title": "PSG U-19 vs Roma U-19",
+    "sport": "FUTBOL",
+    "competition": "UEFA Youth League",
+    "time": "16:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "5f595b1bbade5e7c915d99f90645f4c30d4ba540",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 2",
+        "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_81"
+  },
+  {
     "title": "Akhmat vs Krasnodar",
     "sport": "FUTBOL",
     "competition": "Russia. Cup",
@@ -138,28 +160,6 @@
       {
         "name": "[LiveTV] Russian Opción 3",
         "streamId": "9a2aad5b2b4294e07021bdd58b1ca5de3a2c4040",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_81"
-  },
-  {
-    "title": "PSG U-19 vs Roma U-19",
-    "sport": "FUTBOL",
-    "competition": "UEFA Youth League",
-    "time": "16:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish Opción 1",
-        "streamId": "5f595b1bbade5e7c915d99f90645f4c30d4ba540",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Dutch Opción 2",
-        "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -373,6 +373,30 @@
         "streamId": "444b51b2606cba9efb1b4ff56bf652cbc02a5f47",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "897e73c9d578848f596585314ecb9ae067c0e229",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Portuguese 8000kbps",
+        "streamId": "36cad67fed5a739757a9db844a551aa845a8d51b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 4",
+        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
@@ -437,6 +461,24 @@
         "streamId": "36cad67fed5a739757a9db844a551aa845a8d51b",
         "type": "ACESTREAM",
         "source": "Comunidad"
+      },
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "12ea555d431dbe51fc8e4ca745aec09fe22a4865",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Portuguese 8000kbps",
+        "streamId": "d08013df6e437a1fdf1e0c34f573fdf6a40c7fce",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Dutch Opción 3",
+        "streamId": "868a6187d6aeec65ded84bd777814c9f7b7a9027",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
