@@ -1,30 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "25/11/2026 12:51",
+    "updatedAt": "25/11/2026 13:01",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "Kashima Antlers vs Jeonbuk",
-    "sport": "FUTBOL",
-    "competition": "AFC Champions League Elite",
-    "time": "11:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "e61b6538df35e5016635dfa2b3073f5b82ee4c2b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b129146077c1e357e4ab341448b9fb629f939dc",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_73"
   },
   {
     "title": "Polonia Sroda vs Sokol Kleczew",
@@ -36,6 +14,28 @@
       {
         "name": "[LiveTV] Polish 8000kbps",
         "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_73"
+  },
+  {
+    "title": "Sporting U-19 vs Manchester United U-19",
+    "sport": "FUTBOL",
+    "competition": "UEFA Youth League",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Portuguese 8000kbps",
+        "streamId": "36cad67fed5a739757a9db844a551aa845a8d51b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
