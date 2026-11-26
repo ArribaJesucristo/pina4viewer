@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "26/11/2026 12:41",
+    "updatedAt": "26/11/2026 12:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -52,7 +52,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_62"
+    "id": "pina_63"
   },
   {
     "title": "Admiral vs Avangard",
@@ -84,7 +84,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_65"
   },
   {
     "title": "Arthur Fery vs Alexander Zverev",
@@ -112,23 +112,35 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_63"
+    "id": "pina_62"
   },
   {
-    "title": "Pathum Utd vs Lion City Sailors",
-    "sport": "FUTBOL",
-    "competition": "AFC Champions League 2",
-    "time": "13:15",
+    "title": "Patten H./Skupski N. vs Krawietz K./Puetz T.",
+    "sport": "DAVIS CUP",
+    "competition": "Davis Cup",
+    "time": "13:45",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Dutch Opción 1",
-        "streamId": "79f10c6c6168e42bfc606f3f7b9e5f3ca79dedab",
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Ukrainian Opción 2",
+        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] French Opción 3",
+        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_65"
+    "id": "pina_66"
   },
   {
     "id": "pina_2",
