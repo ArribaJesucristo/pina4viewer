@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "26/11/2026 13:41",
+    "updatedAt": "26/11/2026 13:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -49,10 +49,32 @@
     "id": "pina_63"
   },
   {
+    "id": "pina_1",
+    "title": "Jornada 1",
+    "sport": "GOLF",
+    "competition": "OPEN DE ESPAÑA FEMENINO",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "M+ Golf - Opción 1 [New Loop]",
+        "streamId": "872608e734992db636eb79426802cd08f4029afb",
+        "type": "ACESTREAM",
+        "source": "New Loop"
+      },
+      {
+        "name": "M+ Golf - Opción 2 [RCP]",
+        "streamId": "4f945b0ba4206fa2676b61e9eaa465ac3dcc8122",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ]
+  },
+  {
     "title": "Patten H./Skupski N. vs Krawietz K./Puetz T.",
     "sport": "TENIS",
     "competition": "Davis Cup",
-    "time": "13:45",
+    "time": "14:00",
     "date": "Hoy",
     "channels": [
       {
@@ -80,7 +102,7 @@
     "title": "Patten H./Skupski N. vs Krawietz K./Puetz T.",
     "sport": "DAVIS CUP",
     "competition": "Davis Cup",
-    "time": "13:45",
+    "time": "14:00",
     "date": "Hoy",
     "channels": [
       {
@@ -103,28 +125,6 @@
       }
     ],
     "id": "pina_64"
-  },
-  {
-    "id": "pina_1",
-    "title": "Jornada 1",
-    "sport": "GOLF",
-    "competition": "OPEN DE ESPAÑA FEMENINO",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "M+ Golf - Opción 1 [New Loop]",
-        "streamId": "872608e734992db636eb79426802cd08f4029afb",
-        "type": "ACESTREAM",
-        "source": "New Loop"
-      },
-      {
-        "name": "M+ Golf - Opción 2 [RCP]",
-        "streamId": "4f945b0ba4206fa2676b61e9eaa465ac3dcc8122",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      }
-    ]
   },
   {
     "title": "Abu Dhabi Knight Riders vs MI Emirates",
