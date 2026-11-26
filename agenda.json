@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "26/11/2026 21:01",
+    "updatedAt": "26/11/2026 21:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -395,15 +395,33 @@
     ]
   },
   {
-    "title": "Sparta Prague vs AZ",
+    "title": "Sunderland vs Jagiellonia",
     "sport": "FUTBOL",
     "competition": "Europa League",
     "time": "21:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Dutch Opción 1",
-        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "8442b5c7c99e5af57c2c40c1e28153072968988a",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -439,33 +457,15 @@
     "id": "pina_64"
   },
   {
-    "title": "Sunderland vs Jagiellonia",
+    "title": "NEC vs Rennes",
     "sport": "FUTBOL",
     "competition": "Europa League",
     "time": "21:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
         "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "8442b5c7c99e5af57c2c40c1e28153072968988a",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
+        "streamId": "bc99becb2a74f8f455d6dbaa3bd85c6c7e938a6c",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -489,15 +489,15 @@
     "id": "pina_66"
   },
   {
-    "title": "NEC vs Rennes",
+    "title": "Sparta Prague vs AZ",
     "sport": "FUTBOL",
     "competition": "Europa League",
     "time": "21:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "bc99becb2a74f8f455d6dbaa3bd85c6c7e938a6c",
+        "name": "[LiveTV] Dutch Opción 1",
+        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
