@@ -1,28 +1,16 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/11/2026 08:01",
+    "updatedAt": "27/11/2026 08:10",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
     "title": "Grand Prix Tokyo",
-    "sport": "RACING. V8 SUPERCARS",
-    "competition": "V8 Supercars",
+    "sport": "OTROS",
+    "competition": "Figure Skating",
     "time": "08:15",
     "date": "Hoy",
     "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "e61b6538df35e5016635dfa2b3073f5b82ee4c2b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
       {
         "name": "[LiveTV] Polish 8000kbps",
         "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
@@ -46,9 +34,15 @@
         "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
         "type": "ACESTREAM",
         "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ],
-    "id": "pina_57"
+    "id": "pina_58"
   },
   {
     "title": "South Africa vs Bangladesh",
@@ -119,6 +113,12 @@
         "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
         "type": "ACESTREAM",
         "source": "New Era"
+      },
+      {
+        "name": "Al Qadisiyah - Al Fayha - Opción Directa 1 [Comunidad]",
+        "streamId": "e572a5178ff72eed7d1d751a18b4b3419699f370",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
       }
     ]
   },
@@ -365,6 +365,24 @@
         "streamId": "e3249feb41ca1e68f38cf9bd9a196d6b3f873032",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "Levante UD - R. Racing Club - Opción Directa 1 [Comunidad]",
+        "streamId": "7108ad98920a87cc7dc857748e69a5d725890b98",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Levante UD - R. Racing Club - Opción Directa 2 [Comunidad]",
+        "streamId": "d08013df6e437a1fdf1e0c34f573fdf6a40c7fce",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Levante UD - R. Racing Club - Opción Directa 3 [Comunidad]",
+        "streamId": "ffbf8c687c788d9a1a7c651e24802ee773ff3f04",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
       }
     ]
   },
@@ -393,6 +411,18 @@
         "streamId": "47c6e8dadfba2b3bd013feecf4194ecceec428cd",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "Nottingham Forest - Chelsea - Opción Directa 1 [Comunidad]",
+        "streamId": "ec5eabe0144ccfffc337e1d6708e2afb81d0638e",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "Nottingham Forest - Chelsea - Opción Directa 2 [Comunidad]",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
       }
     ]
   },
@@ -478,7 +508,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_58"
+    "id": "pina_57"
   },
   {
     "title": "New Zealand vs India",
