@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/11/2026 18:41",
+    "updatedAt": "27/11/2026 18:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -92,7 +92,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
+    "id": "pina_62"
   },
   {
     "title": "Severstal vs Sibir",
@@ -108,7 +108,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_62"
+    "id": "pina_63"
   },
   {
     "title": "Ocelari Trinec vs Dynamo Pardubice",
@@ -124,7 +124,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_63"
+    "id": "pina_64"
   },
   {
     "title": "Venezuela U-17 vs Mexico U-17",
@@ -140,7 +140,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_65"
   },
   {
     "title": "Severstal vs Sibir",
@@ -178,7 +178,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_65"
+    "id": "pina_66"
   },
   {
     "title": "Torpedo M vs SKA-Khabarovsk",
@@ -194,7 +194,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_67"
   },
   {
     "title": "SKA vs Barys",
@@ -210,7 +210,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_67"
+    "id": "pina_68"
   },
   {
     "title": "Stal Mielec (W) vs MKS Kalisz (W)",
@@ -226,7 +226,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_68"
+    "id": "pina_69"
   },
   {
     "title": "SKA vs Barys",
@@ -258,7 +258,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_69"
+    "id": "pina_70"
   },
   {
     "title": "Fiji vs Italy",
@@ -274,7 +274,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_85"
+    "id": "pina_84"
   },
   {
     "id": "pina_3",
@@ -394,7 +394,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_70"
+    "id": "pina_71"
   },
   {
     "title": "Rizespor vs Kasimpasa",
@@ -410,7 +410,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_71"
+    "id": "pina_72"
   },
   {
     "title": "Alanyaspor vs Konyaspor",
@@ -438,7 +438,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_72"
+    "id": "pina_73"
   },
   {
     "title": "World Cup, Ostrava",
@@ -490,22 +490,6 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_73"
-  },
-  {
-    "title": "GKS Tychy vs Chojniczanka",
-    "sport": "FUTBOL",
-    "competition": "Poland. II Liga",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
     "id": "pina_74"
   },
   {
@@ -525,20 +509,20 @@
     "id": "pina_75"
   },
   {
-    "title": "Rizespor vs Kasimpasa",
-    "sport": "TURKEY. SUPER LEAGUE",
-    "competition": "Turkey. Super League",
+    "title": "GKS Tychy vs Chojniczanka",
+    "sport": "FUTBOL",
+    "competition": "Poland. II Liga",
     "time": "18:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Turkish Opción 1",
-        "streamId": "118416583faa3fb4f03800173429b6b844b43a52",
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_78"
+    "id": "pina_76"
   },
   {
     "title": "Alanyaspor vs Konyaspor",
@@ -569,20 +553,20 @@
     "id": "pina_79"
   },
   {
-    "title": "Bochum vs Darmstadt",
-    "sport": "FUTBOL",
-    "competition": "Germany. 2 Bundesliga",
-    "time": "18:30",
+    "title": "Rizespor vs Kasimpasa",
+    "sport": "TURKEY. SUPER LEAGUE",
+    "competition": "Turkey. Super League",
+    "time": "18:00",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "458a0ddd7d193f6d2750cd14d03a47f47a808e09",
+        "name": "[LiveTV] Turkish Opción 1",
+        "streamId": "118416583faa3fb4f03800173429b6b844b43a52",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_76"
+    "id": "pina_80"
   },
   {
     "title": "Heidenheim vs Nuremberg",
@@ -613,6 +597,22 @@
     "id": "pina_77"
   },
   {
+    "title": "Bochum vs Darmstadt",
+    "sport": "FUTBOL",
+    "competition": "Germany. 2 Bundesliga",
+    "time": "18:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "458a0ddd7d193f6d2750cd14d03a47f47a808e09",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_78"
+  },
+  {
     "title": "Boston vs Toronto",
     "sport": "HOCKEY",
     "competition": "NHL",
@@ -626,7 +626,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_83"
+    "id": "pina_61"
   },
   {
     "id": "pina_4",
@@ -657,64 +657,6 @@
     ]
   },
   {
-    "title": "World Cup, Ostrava",
-    "sport": "CYCLO-CROSS",
-    "competition": "Cyclo-Cross",
-    "time": "19:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 3",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 5",
-        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 6",
-        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "12ea555d431dbe51fc8e4ca745aec09fe22a4865",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 2",
-        "streamId": "5f595b1bbade5e7c915d99f90645f4c30d4ba540",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_80"
-  },
-  {
     "title": "Augsburg vs Eisbaeren Berlin",
     "sport": "GERMANY. DEL",
     "competition": "Germany. DEL",
@@ -728,7 +670,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_84"
+    "id": "pina_83"
   },
   {
     "id": "pina_5",
@@ -965,6 +907,36 @@
         "streamId": "d6622ca93e54e493a6910248f8fe1f03aa85bf01",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "12ea555d431dbe51fc8e4ca745aec09fe22a4865",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 2",
+        "streamId": "5f595b1bbade5e7c915d99f90645f4c30d4ba540",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 3",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
@@ -2655,7 +2627,7 @@
     ]
   },
   {
-    "id": "86",
+    "id": "85",
     "title": "M+ LaLiga",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -2767,7 +2739,7 @@
     ]
   },
   {
-    "id": "87",
+    "id": "86",
     "title": "M+ LaLiga 2",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -2795,7 +2767,7 @@
     ]
   },
   {
-    "id": "88",
+    "id": "87",
     "title": "M+ LaLiga 3",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -2817,7 +2789,7 @@
     ]
   },
   {
-    "id": "89",
+    "id": "88",
     "title": "M+ LaLiga 4",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -2839,7 +2811,7 @@
     ]
   },
   {
-    "id": "90",
+    "id": "89",
     "title": "DAZN LaLiga",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -2885,7 +2857,7 @@
     ]
   },
   {
-    "id": "91",
+    "id": "90",
     "title": "DAZN liga",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -2901,7 +2873,7 @@
     ]
   },
   {
-    "id": "92",
+    "id": "91",
     "title": "LaLiga TV Hypermotion",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -2917,7 +2889,7 @@
     ]
   },
   {
-    "id": "93",
+    "id": "92",
     "title": "M+ Vamos",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -2939,7 +2911,7 @@
     ]
   },
   {
-    "id": "94",
+    "id": "93",
     "title": "M+ Deportes",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -2973,7 +2945,7 @@
     ]
   },
   {
-    "id": "95",
+    "id": "94",
     "title": "M+ Deportes 2",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -2995,7 +2967,7 @@
     ]
   },
   {
-    "id": "96",
+    "id": "95",
     "title": "M+ Deportes 3",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3017,7 +2989,7 @@
     ]
   },
   {
-    "id": "97",
+    "id": "96",
     "title": "M+ Deportes 4",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3039,7 +3011,7 @@
     ]
   },
   {
-    "id": "98",
+    "id": "97",
     "title": "M+ Deportes 5",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3061,7 +3033,7 @@
     ]
   },
   {
-    "id": "99",
+    "id": "98",
     "title": "M+ Deportes 6",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3083,7 +3055,7 @@
     ]
   },
   {
-    "id": "100",
+    "id": "99",
     "title": "M+ Liga de Campeones",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3117,7 +3089,7 @@
     ]
   },
   {
-    "id": "101",
+    "id": "100",
     "title": "M+ Liga de Campeones 2",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3145,7 +3117,7 @@
     ]
   },
   {
-    "id": "102",
+    "id": "101",
     "title": "M+ Liga de Campeones 3",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3173,7 +3145,7 @@
     ]
   },
   {
-    "id": "103",
+    "id": "102",
     "title": "M+ Liga de Campeones 4",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3195,7 +3167,7 @@
     ]
   },
   {
-    "id": "104",
+    "id": "103",
     "title": "M+ Liga de Campeones 5",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3217,7 +3189,7 @@
     ]
   },
   {
-    "id": "105",
+    "id": "104",
     "title": "M+ Liga de Campeones 6",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3239,7 +3211,7 @@
     ]
   },
   {
-    "id": "106",
+    "id": "105",
     "title": "M+ Liga de Campeones 7",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3261,7 +3233,7 @@
     ]
   },
   {
-    "id": "107",
+    "id": "106",
     "title": "M+ Liga de Campeones 8",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3283,7 +3255,7 @@
     ]
   },
   {
-    "id": "108",
+    "id": "107",
     "title": "DAZN 1",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3311,7 +3283,7 @@
     ]
   },
   {
-    "id": "109",
+    "id": "108",
     "title": "DAZN 2",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3339,7 +3311,7 @@
     ]
   },
   {
-    "id": "110",
+    "id": "109",
     "title": "DAZN 3",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3361,7 +3333,7 @@
     ]
   },
   {
-    "id": "111",
+    "id": "110",
     "title": "DAZN 4",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3383,7 +3355,7 @@
     ]
   },
   {
-    "id": "112",
+    "id": "111",
     "title": "DAZN MotoGP",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3405,7 +3377,7 @@
     ]
   },
   {
-    "id": "113",
+    "id": "112",
     "title": "DAZN F1",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3457,7 +3429,7 @@
     ]
   },
   {
-    "id": "114",
+    "id": "113",
     "title": "Eurosport 1",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3497,7 +3469,7 @@
     ]
   },
   {
-    "id": "115",
+    "id": "114",
     "title": "Eurosport 2",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3537,7 +3509,7 @@
     ]
   },
   {
-    "id": "116",
+    "id": "115",
     "title": "M+ Golf 2",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3553,7 +3525,7 @@
     ]
   },
   {
-    "id": "117",
+    "id": "116",
     "title": "M+ Golf",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3575,7 +3547,7 @@
     ]
   },
   {
-    "id": "118",
+    "id": "117",
     "title": "Teledeporte",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3603,7 +3575,7 @@
     ]
   },
   {
-    "id": "119",
+    "id": "118",
     "title": "DAZN 1 DE ...229",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3619,7 +3591,7 @@
     ]
   },
   {
-    "id": "120",
+    "id": "119",
     "title": "DAZN 2 DE ...865",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3635,7 +3607,7 @@
     ]
   },
   {
-    "id": "121",
+    "id": "120",
     "title": "Sky Sport F1 ...076",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3651,7 +3623,7 @@
     ]
   },
   {
-    "id": "122",
+    "id": "121",
     "title": "Eurosport 360",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3709,7 +3681,7 @@
     ]
   },
   {
-    "id": "123",
+    "id": "122",
     "title": "Golf Channel 350 ...689",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3725,7 +3697,7 @@
     ]
   },
   {
-    "id": "124",
+    "id": "123",
     "title": "Eleven Sport 3 fce ...f1e",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3741,7 +3713,7 @@
     ]
   },
   {
-    "id": "125",
+    "id": "124",
     "title": "Eleven Sport 4 f1e ...b98",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3757,7 +3729,7 @@
     ]
   },
   {
-    "id": "126",
+    "id": "125",
     "title": "DAZN 1 ...229",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3773,7 +3745,7 @@
     ]
   },
   {
-    "id": "127",
+    "id": "126",
     "title": "DAZN 2 ...865",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3789,7 +3761,7 @@
     ]
   },
   {
-    "id": "128",
+    "id": "127",
     "title": "Golf Channel ...689",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3805,7 +3777,7 @@
     ]
   },
   {
-    "id": "129",
+    "id": "128",
     "title": "DAZN 1 ...51b",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3821,7 +3793,7 @@
     ]
   },
   {
-    "id": "130",
+    "id": "129",
     "title": "DAZN 2 ...fce",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3837,7 +3809,7 @@
     ]
   },
   {
-    "id": "131",
+    "id": "130",
     "title": "DAZN 5 ...08a",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3853,7 +3825,7 @@
     ]
   },
   {
-    "id": "132",
+    "id": "131",
     "title": "Avto24 ...780",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3869,7 +3841,7 @@
     ]
   },
   {
-    "id": "133",
+    "id": "132",
     "title": "LaLiga Tv Bar",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3891,7 +3863,7 @@
     ]
   },
   {
-    "id": "134",
+    "id": "133",
     "title": "M+ LaLiga 5",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3907,7 +3879,7 @@
     ]
   },
   {
-    "id": "135",
+    "id": "134",
     "title": "M+ LaLiga 6",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3923,7 +3895,7 @@
     ]
   },
   {
-    "id": "136",
+    "id": "135",
     "title": "M+ LaLiga 7",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3939,7 +3911,7 @@
     ]
   },
   {
-    "id": "137",
+    "id": "136",
     "title": "DAZN LaLiga 2",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3973,7 +3945,7 @@
     ]
   },
   {
-    "id": "138",
+    "id": "137",
     "title": "LaLiga SmartBank",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -3995,7 +3967,7 @@
     ]
   },
   {
-    "id": "139",
+    "id": "138",
     "title": "LaLiga SmartBank 2",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4017,7 +3989,7 @@
     ]
   },
   {
-    "id": "140",
+    "id": "139",
     "title": "LaLiga SmartBank 3",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4033,7 +4005,7 @@
     ]
   },
   {
-    "id": "141",
+    "id": "140",
     "title": "#Vamos 720",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4049,7 +4021,7 @@
     ]
   },
   {
-    "id": "142",
+    "id": "141",
     "title": "#Vamos 1080",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4071,7 +4043,7 @@
     ]
   },
   {
-    "id": "143",
+    "id": "142",
     "title": "M+ Deportes 7",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4087,7 +4059,7 @@
     ]
   },
   {
-    "id": "144",
+    "id": "143",
     "title": "M+ Deportes 8",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4103,7 +4075,7 @@
     ]
   },
   {
-    "id": "145",
+    "id": "144",
     "title": "GOL TV",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4119,7 +4091,7 @@
     ]
   },
   {
-    "id": "146",
+    "id": "145",
     "title": "Gol Mundial",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4135,7 +4107,7 @@
     ]
   },
   {
-    "id": "147",
+    "id": "146",
     "title": "M+ Liga de Campeones 9",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4151,7 +4123,7 @@
     ]
   },
   {
-    "id": "148",
+    "id": "147",
     "title": "M+ Liga de Campeones 10",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4167,7 +4139,7 @@
     ]
   },
   {
-    "id": "149",
+    "id": "148",
     "title": "M+ Liga de Campeones 11",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4183,7 +4155,7 @@
     ]
   },
   {
-    "id": "150",
+    "id": "149",
     "title": "M+ Liga de Campeones 12",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4199,7 +4171,7 @@
     ]
   },
   {
-    "id": "151",
+    "id": "150",
     "title": "Barça TV",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4215,7 +4187,7 @@
     ]
   },
   {
-    "id": "152",
+    "id": "151",
     "title": "Real Madrid TV",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
@@ -4231,7 +4203,7 @@
     ]
   },
   {
-    "id": "153",
+    "id": "152",
     "title": "Real Madrid TV EN",
     "sport": "DIRECTO 24/7",
     "competition": "CANALES DEPORTIVOS",
