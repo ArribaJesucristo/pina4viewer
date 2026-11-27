@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/11/2026 21:21",
+    "updatedAt": "27/11/2026 21:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -18,7 +18,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_78"
   },
   {
     "id": "pina_1",
@@ -62,6 +62,22 @@
         "source": "LiveTV"
       }
     ],
+    "id": "pina_64"
+  },
+  {
+    "title": "Grizzlys Wolfsburg vs Nuernberg",
+    "sport": "HOCKEY",
+    "competition": "Germany. DEL",
+    "time": "19:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "ac839cda9709255c21a98af455731f037e77a9e4",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
     "id": "pina_65"
   },
   {
@@ -79,22 +95,6 @@
       }
     ],
     "id": "pina_66"
-  },
-  {
-    "title": "Grizzlys Wolfsburg vs Nuernberg",
-    "sport": "HOCKEY",
-    "competition": "Germany. DEL",
-    "time": "19:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "ac839cda9709255c21a98af455731f037e77a9e4",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_67"
   },
   {
     "title": "Ingolstadt vs Krefeld Pinguine",
@@ -116,23 +116,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_68"
-  },
-  {
-    "title": "Simulcast",
-    "sport": "HOCKEY",
-    "competition": "Germany. DEL",
-    "time": "19:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_69"
+    "id": "pina_67"
   },
   {
     "title": "Augsburg vs Eisbaeren Berlin",
@@ -148,7 +132,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_70"
+    "id": "pina_68"
   },
   {
     "title": "Langnau vs Geneva",
@@ -164,23 +148,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_71"
-  },
-  {
-    "title": "Groningen vs Willem II",
-    "sport": "FUTBOL",
-    "competition": "Netherlands. Eredivisie",
-    "time": "20:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Dutch 8000kbps",
-        "streamId": "3e0ba6867173f345d482d80c771f1a5dc3b37e63",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_58"
+    "id": "pina_69"
   },
   {
     "title": "Chambery vs Limoges",
@@ -192,6 +160,22 @@
       {
         "name": "[LiveTV] French 8000kbps",
         "streamId": "edb507e38394d614c9ff55805c9d354ae13210bc",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_58"
+  },
+  {
+    "title": "Groningen vs Willem II",
+    "sport": "FUTBOL",
+    "competition": "Netherlands. Eredivisie",
+    "time": "20:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Dutch 8000kbps",
+        "streamId": "3e0ba6867173f345d482d80c771f1a5dc3b37e63",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -212,7 +196,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_77"
+    "id": "pina_75"
   },
   {
     "title": "Chambery vs Limoges",
@@ -228,7 +212,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_80"
+    "id": "pina_79"
   },
   {
     "title": "Werder Bremen vs Borussia M",
@@ -302,7 +286,7 @@
         "source": "Comunidad"
       }
     ],
-    "id": "pina_72"
+    "id": "pina_70"
   },
   {
     "title": "Gornik Zabrze vs Wisla Plock",
@@ -330,7 +314,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_73"
+    "id": "pina_71"
   },
   {
     "title": "Gornik Zabrze vs Wisla Plock",
@@ -358,7 +342,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_78"
+    "id": "pina_76"
   },
   {
     "id": "pina_2",
@@ -387,6 +371,40 @@
         "source": "TDTChannels"
       }
     ]
+  },
+  {
+    "title": "Brest vs Paris",
+    "sport": "FUTBOL",
+    "competition": "France. Ligue 1",
+    "time": "20:45",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "897e73c9d578848f596585314ecb9ae067c0e229",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "350b2044f1c9e87e18d8fbda1bcc456c22cf9296",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "b146ee4b6e16c9df58e27bd02ffd6cea840ff212",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Turkish Opción 4",
+        "streamId": "48bee10b883f17c7186d60f1e8022dca0ba41a05",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_60"
   },
   {
     "title": "Venezia vs Bologna",
@@ -432,41 +450,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_60"
-  },
-  {
-    "title": "Brest vs Paris",
-    "sport": "FUTBOL",
-    "competition": "France. Ligue 1",
-    "time": "20:45",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "897e73c9d578848f596585314ecb9ae067c0e229",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "350b2044f1c9e87e18d8fbda1bcc456c22cf9296",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "b146ee4b6e16c9df58e27bd02ffd6cea840ff212",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Turkish Opción 4",
-        "streamId": "48bee10b883f17c7186d60f1e8022dca0ba41a05",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_62"
+    "id": "pina_63"
   },
   {
     "title": "Brest vs Paris",
@@ -500,7 +484,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_79"
+    "id": "pina_77"
   },
   {
     "id": "pina_3",
@@ -850,7 +834,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_74"
+    "id": "pina_72"
   },
   {
     "title": "Maritimo vs Nacional",
@@ -866,7 +850,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_63"
+    "id": "pina_62"
   },
   {
     "title": "New Zealand vs India",
@@ -882,7 +866,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_75"
+    "id": "pina_73"
   },
   {
     "title": "Anaheim vs Los Angeles",
@@ -898,7 +882,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_76"
+    "id": "pina_74"
+  },
+  {
+    "title": "SESI Bauru vs Sao Jose",
+    "sport": "BRAZIL. SUPERLIGA",
+    "competition": "Brazil. Superliga",
+    "time": "22:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "dec96c86080c26ddf667ea90adfb513a40007a0b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_80"
   },
   {
     "id": "pina_6",
