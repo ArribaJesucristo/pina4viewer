@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/11/2026 09:31",
+    "updatedAt": "27/11/2026 09:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -108,11 +108,11 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_64"
   },
   {
     "title": "Macarthur vs Melbourne City",
-    "sport": "FUTBOL",
+    "sport": "AUSTRALIA. A-LEAGUE",
     "competition": "Australia. A-League",
     "time": "09:40",
     "date": "Hoy",
@@ -140,7 +140,7 @@
   },
   {
     "title": "Macarthur vs Melbourne City",
-    "sport": "AUSTRALIA. A-LEAGUE",
+    "sport": "FUTBOL",
     "competition": "Australia. A-League",
     "time": "09:40",
     "date": "Hoy",
@@ -183,22 +183,6 @@
     "id": "pina_61"
   },
   {
-    "title": "World Cup, Altenberg",
-    "sport": "MONOBOB",
-    "competition": "Monobob",
-    "time": "10:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish Opción 1",
-        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_64"
-  },
-  {
     "title": "Taifun vs Akademiya SKA",
     "sport": "RUSSIA. MHL",
     "competition": "Russia. MHL",
@@ -214,6 +198,22 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_63"
+  },
+  {
+    "title": "World Cup, Altenberg",
+    "sport": "MONOBOB",
+    "competition": "Monobob",
+    "time": "10:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -246,7 +246,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_63"
+    "id": "pina_66"
   },
   {
     "id": "pina_1",
