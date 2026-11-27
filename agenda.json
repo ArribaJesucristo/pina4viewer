@@ -1,14 +1,14 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/11/2026 07:51",
+    "updatedAt": "27/11/2026 08:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
-    "title": "V8 Supercars Championship",
+    "title": "Grand Prix Tokyo",
     "sport": "RACING. V8 SUPERCARS",
     "competition": "V8 Supercars",
-    "time": "07:00",
+    "time": "08:15",
     "date": "Hoy",
     "channels": [
       {
@@ -22,17 +22,7 @@
         "streamId": "e61b6538df35e5016635dfa2b3073f5b82ee4c2b",
         "type": "ACESTREAM",
         "source": "LiveTV"
-      }
-    ],
-    "id": "pina_57"
-  },
-  {
-    "title": "Grand Prix Tokyo",
-    "sport": "OTROS",
-    "competition": "Figure Skating",
-    "time": "08:15",
-    "date": "Hoy",
-    "channels": [
+      },
       {
         "name": "[LiveTV] Polish 8000kbps",
         "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
@@ -54,6 +44,28 @@
       {
         "name": "[LiveTV] German Opción 4",
         "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_57"
+  },
+  {
+    "title": "South Africa vs Bangladesh",
+    "sport": "CRICKET. TEST",
+    "competition": "Test",
+    "time": "09:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "6d95e4b0893e155cc674b84e0763150c445d3ddd",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
