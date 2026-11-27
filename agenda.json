@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/11/2026 19:31",
+    "updatedAt": "27/11/2026 19:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -24,7 +24,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_60"
+    "id": "pina_61"
   },
   {
     "title": "SKA vs Barys",
@@ -40,23 +40,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
-  },
-  {
-    "title": "Torpedo M vs SKA-Khabarovsk",
-    "sport": "FUTBOL",
-    "competition": "Russia. First League",
-    "time": "17:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b7c5f21b435d79c823e47572655a9c157a3ba12",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_62"
+    "id": "pina_60"
   },
   {
     "title": "Stal Mielec (W) vs MKS Kalisz (W)",
@@ -72,7 +56,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_63"
+    "id": "pina_62"
   },
   {
     "title": "SKA vs Barys",
@@ -104,7 +88,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_63"
   },
   {
     "title": "Fiji vs Italy",
@@ -227,6 +211,22 @@
     "id": "pina_58"
   },
   {
+    "title": "Rizespor vs Kasimpasa",
+    "sport": "FUTBOL",
+    "competition": "Turkey. Super League",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Turkish Opción 1",
+        "streamId": "118416583faa3fb4f03800173429b6b844b43a52",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_64"
+  },
+  {
     "title": "Rakow vs Piast Gliwice",
     "sport": "FUTBOL",
     "competition": "Poland. Ekstraklasa",
@@ -271,74 +271,6 @@
     "id": "pina_66"
   },
   {
-    "title": "Rizespor vs Kasimpasa",
-    "sport": "FUTBOL",
-    "competition": "Turkey. Super League",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Turkish Opción 1",
-        "streamId": "118416583faa3fb4f03800173429b6b844b43a52",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_67"
-  },
-  {
-    "title": "World Cup, Ostrava",
-    "sport": "CICLISMO",
-    "competition": "Cyclo-Cross",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 3",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 5",
-        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 6",
-        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_68"
-  },
-  {
     "title": "GKS Tychy vs Chojniczanka",
     "sport": "FUTBOL",
     "competition": "Poland. II Liga",
@@ -352,7 +284,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_69"
+    "id": "pina_67"
   },
   {
     "title": "Estonia vs France",
@@ -368,7 +300,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_70"
+    "id": "pina_68"
+  },
+  {
+    "title": "Rizespor vs Kasimpasa",
+    "sport": "TURKEY. SUPER LEAGUE",
+    "competition": "Turkey. Super League",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Turkish Opción 1",
+        "streamId": "118416583faa3fb4f03800173429b6b844b43a52",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_80"
   },
   {
     "title": "Alanyaspor vs Konyaspor",
@@ -392,22 +340,6 @@
       {
         "name": "[LiveTV] Turkish Opción 3",
         "streamId": "48bee10b883f17c7186d60f1e8022dca0ba41a05",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_80"
-  },
-  {
-    "title": "Rizespor vs Kasimpasa",
-    "sport": "TURKEY. SUPER LEAGUE",
-    "competition": "Turkey. Super League",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Turkish Opción 1",
-        "streamId": "118416583faa3fb4f03800173429b6b844b43a52",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -440,7 +372,7 @@
         "source": "Comunidad"
       }
     ],
-    "id": "pina_71"
+    "id": "pina_69"
   },
   {
     "title": "Bochum vs Darmstadt",
@@ -456,7 +388,23 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_72"
+    "id": "pina_70"
+  },
+  {
+    "title": "World Cup, Innsbruck",
+    "sport": "OTROS",
+    "competition": "Freestyle",
+    "time": "18:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_71"
   },
   {
     "title": "Boston vs Toronto",
@@ -488,7 +436,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_73"
+    "id": "pina_72"
   },
   {
     "id": "pina_2",
@@ -532,6 +480,22 @@
         "source": "LiveTV"
       }
     ],
+    "id": "pina_73"
+  },
+  {
+    "title": "Grizzlys Wolfsburg vs Nuernberg",
+    "sport": "HOCKEY",
+    "competition": "Germany. DEL",
+    "time": "19:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "ac839cda9709255c21a98af455731f037e77a9e4",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
     "id": "pina_74"
   },
   {
@@ -551,7 +515,7 @@
     "id": "pina_75"
   },
   {
-    "title": "Grizzlys Wolfsburg vs Nuernberg",
+    "title": "Ingolstadt vs Krefeld Pinguine",
     "sport": "HOCKEY",
     "competition": "Germany. DEL",
     "time": "19:30",
@@ -559,7 +523,13 @@
     "channels": [
       {
         "name": "[LiveTV] English Opción 1",
-        "streamId": "ac839cda9709255c21a98af455731f037e77a9e4",
+        "streamId": "11c5823d4196a90b509f03df1fe78e13cfbbb175",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "428b92f3c71cd3cbf66ef6193808b39d16a52730",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -583,28 +553,6 @@
     "id": "pina_77"
   },
   {
-    "title": "Ingolstadt vs Krefeld Pinguine",
-    "sport": "HOCKEY",
-    "competition": "Germany. DEL",
-    "time": "19:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "11c5823d4196a90b509f03df1fe78e13cfbbb175",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "428b92f3c71cd3cbf66ef6193808b39d16a52730",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_78"
-  },
-  {
     "title": "Augsburg vs Eisbaeren Berlin",
     "sport": "HOCKEY",
     "competition": "Germany. DEL",
@@ -614,6 +562,52 @@
       {
         "name": "[LiveTV] German Opción 1",
         "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_78"
+  },
+  {
+    "title": "World Cup, Ostrava",
+    "sport": "CICLISMO",
+    "competition": "Cyclo-Cross",
+    "time": "19:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 3",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a1d67cb505881b2b5bc58ce2af367e5e6d26cab5",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 5",
+        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 6",
+        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
