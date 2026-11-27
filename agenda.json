@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/11/2026 15:01",
+    "updatedAt": "27/11/2026 15:11",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -347,34 +347,6 @@
     ]
   },
   {
-    "title": "Italy vs Czech Republic",
-    "sport": "DAVIS CUP",
-    "competition": "Davis Cup",
-    "time": "16:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Ukrainian Opción 2",
-        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] French Opción 3",
-        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_69"
-  },
-  {
     "title": "World Cup, Kontiolahti",
     "sport": "BIATHLON",
     "competition": "Biathlon",
@@ -408,6 +380,34 @@
       {
         "name": "[LiveTV] German Opción 5",
         "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_69"
+  },
+  {
+    "title": "Italy vs Czech Republic",
+    "sport": "DAVIS CUP",
+    "competition": "Davis Cup",
+    "time": "16:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "4ce55db7e578ff52a6e526cf610e477464b8a99f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Ukrainian Opción 2",
+        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] French Opción 3",
+        "streamId": "731bd3336ec0986ff9100efe40dbaf1473a22cf8",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -1029,26 +1029,8 @@
     "date": "Mañana",
     "channels": [
       {
-        "name": "Movistar Plus+ - Opción 1 [New Era]",
-        "streamId": "67121cbb722b88ce4489717e9a87a26f60184ec9",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "Movistar Plus+ - Opción 2 [RCP]",
-        "streamId": "f559b9fea692a86e1a1de41cd1aa667e3fa02775",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "Movistar Plus+ - Opción 3 [RCP]",
-        "streamId": "0e18315b703248bb01eab6b9d3f0cb2cd893601f",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "Movistar Plus+ - Opción 4 [RCP]",
-        "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
+        "name": "BE MAD - Opción 1 [RCP]",
+        "streamId": "5c267a00f264736c1d47c1cc3e754447ca8f770c",
         "type": "ACESTREAM",
         "source": "RCP"
       },
@@ -1659,26 +1641,8 @@
     "date": "29/11/2026",
     "channels": [
       {
-        "name": "Movistar Plus+ - Opción 1 [New Era]",
-        "streamId": "67121cbb722b88ce4489717e9a87a26f60184ec9",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "Movistar Plus+ - Opción 2 [RCP]",
-        "streamId": "f559b9fea692a86e1a1de41cd1aa667e3fa02775",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "Movistar Plus+ - Opción 3 [RCP]",
-        "streamId": "0e18315b703248bb01eab6b9d3f0cb2cd893601f",
-        "type": "ACESTREAM",
-        "source": "RCP"
-      },
-      {
-        "name": "Movistar Plus+ - Opción 4 [RCP]",
-        "streamId": "864fc1be34bdedc4bc2c7bb92098c61df8e9c7c2",
+        "name": "TeleCinco - Opción 1 [RCP]",
+        "streamId": "cbf281d5e481697aa4184fe1de5e069928c95057",
         "type": "ACESTREAM",
         "source": "RCP"
       },
