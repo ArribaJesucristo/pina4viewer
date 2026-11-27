@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/11/2026 01:11",
+    "updatedAt": "27/11/2026 01:20",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -24,7 +24,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_58"
+    "id": "pina_59"
   },
   {
     "title": "Australian Championships",
@@ -67,6 +67,18 @@
         "streamId": "47c6e8dadfba2b3bd013feecf4194ecceec428cd",
         "type": "ACESTREAM",
         "source": "RCP"
+      },
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] French 8000kbps",
+        "streamId": "bba1905fcd1c4975aec544047bf8e4cd23ce3fe0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
@@ -466,7 +478,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_59"
+    "id": "pina_58"
   },
   {
     "id": "pina_12",
