@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/11/2026 16:11",
+    "updatedAt": "27/11/2026 16:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -119,22 +119,6 @@
     "id": "pina_62"
   },
   {
-    "title": "Sharjah Warriors vs Dubai Capitals",
-    "sport": "OTROS",
-    "competition": "UAE. T20 League",
-    "time": "14:30",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_65"
-  },
-  {
     "title": "One FC",
     "sport": "BOXEO",
     "competition": "ONE FC",
@@ -156,6 +140,22 @@
       {
         "name": "[LiveTV] Russian Opción 2",
         "streamId": "822654b2c0db24d1de149cb21fdd44a3b968fbfa",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_65"
+  },
+  {
+    "title": "Sharjah Warriors vs Dubai Capitals",
+    "sport": "OTROS",
+    "competition": "UAE. T20 League",
+    "time": "14:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
