@@ -1,16 +1,34 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/11/2026 14:21",
+    "updatedAt": "27/11/2026 14:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
-    "title": "World Cup, Ruka",
+    "title": "World Cup, Altenberg",
     "sport": "OTROS",
-    "competition": "Cross-Country Skiing",
+    "competition": "Skeleton",
     "time": "13:00",
     "date": "Hoy",
     "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "5f966c123759de46dff29c379266b7a403452033",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 2",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 3",
+        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
       {
         "name": "[LiveTV] English 8000kbps",
         "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
@@ -32,24 +50,6 @@
       {
         "name": "[LiveTV] German Opción 4",
         "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "5f966c123759de46dff29c379266b7a403452033",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 3",
-        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -172,7 +172,7 @@
   },
   {
     "title": "One FC",
-    "sport": "ONE FC",
+    "sport": "BOXEO",
     "competition": "ONE FC",
     "time": "14:30",
     "date": "Hoy",
