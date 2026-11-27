@@ -1,30 +1,8 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/11/2026 10:51",
+    "updatedAt": "27/11/2026 11:01",
     "timezone": "Madrid,Paris,Bruselas"
-  },
-  {
-    "title": "South Africa vs Bangladesh",
-    "sport": "CRICKET. TEST",
-    "competition": "Test",
-    "time": "09:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "6d95e4b0893e155cc674b84e0763150c445d3ddd",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_57"
   },
   {
     "title": "Valencian Grand Prix",
@@ -58,7 +36,7 @@
         "source": "New Era"
       }
     ],
-    "id": "pina_58"
+    "id": "pina_57"
   },
   {
     "title": "Australia vs England",
@@ -74,7 +52,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_59"
+    "id": "pina_58"
   },
   {
     "title": "Australia vs England",
@@ -91,6 +69,58 @@
       }
     ],
     "id": "pina_65"
+  },
+  {
+    "title": "Macarthur vs Melbourne City",
+    "sport": "FUTBOL",
+    "competition": "Australia. A-League",
+    "time": "09:40",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Ukrainian Opción 2",
+        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 3",
+        "streamId": "5e94200ae8b1d95cb559fb150e5993d92e15d4e7",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 1",
+        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 2",
+        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 3",
+        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_59"
   },
   {
     "title": "Macarthur vs Melbourne City",
@@ -137,58 +167,6 @@
     "id": "pina_61"
   },
   {
-    "title": "Macarthur vs Melbourne City",
-    "sport": "FUTBOL",
-    "competition": "Monobob",
-    "time": "10:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish Opción 1",
-        "streamId": "ef2cf11fc83f4f15a33c9a514a7afd2bce73122f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 2",
-        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 3",
-        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Ukrainian Opción 2",
-        "streamId": "40f9a0993165b3c0f5bce84f69a0a0f2e205ac9d",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 3",
-        "streamId": "5e94200ae8b1d95cb559fb150e5993d92e15d4e7",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_60"
-  },
-  {
     "title": "Taifun vs Akademiya SKA",
     "sport": "HOCKEY",
     "competition": "Russia. MHL",
@@ -208,7 +186,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_62"
+    "id": "pina_60"
   },
   {
     "title": "Taifun vs Akademiya SKA",
@@ -230,11 +208,11 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_67"
+    "id": "pina_66"
   },
   {
     "title": "Grand Prix, Tokyo",
-    "sport": "FIGURE SKATING",
+    "sport": "OTROS",
     "competition": "Figure Skating",
     "time": "11:00",
     "date": "Hoy",
@@ -258,7 +236,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_66"
+    "id": "pina_62"
   },
   {
     "title": "Perth (W) vs Hobart (W)",
@@ -275,6 +253,76 @@
       }
     ],
     "id": "pina_64"
+  },
+  {
+    "title": "Formula 2, Lusail",
+    "sport": "MOTOR",
+    "competition": "Formula 2",
+    "time": "12:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "4dbe63b44fc4f439f5b634c0d2aa7e0cccad808a",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "14407b00d454cb7dc0d70aa26e8bbc554f457f00",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German 8000kbps",
+        "streamId": "b04372b9543d763bd2dbd2a1842d9723fd080076",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "DAZN F1 - Opción 1 [New Loop]",
+        "streamId": "d65257bb934b73647374224fd62d836815804be2",
+        "type": "ACESTREAM",
+        "source": "New Loop"
+      },
+      {
+        "name": "DAZN F1 - Opción 2 [New Era]",
+        "streamId": "c21d60fa884b24f3cedcb1110b84ac2bcb0c2d19",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "DAZN F1 - Opción 3 [New Era]",
+        "streamId": "ee4646aae30d862e0d9d453998a344a60aaa7cde",
+        "type": "ACESTREAM",
+        "source": "New Era"
+      },
+      {
+        "name": "DAZN F1 - Opción 4 [Comunidad]",
+        "streamId": "dae7d1251f069516cc0a9c8f15f6639d2a17df1e",
+        "type": "ACESTREAM",
+        "source": "Comunidad"
+      },
+      {
+        "name": "DAZN F1 - Opción 5 [RCP]",
+        "streamId": "60cf60019aeef9af6183dd05af1b89e25594ac14",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN F1 - Opción 6 [RCP]",
+        "streamId": "4fc3417ae1f5cfd8c7ab8e4ebdb9ba88d486caf2",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      },
+      {
+        "name": "DAZN F1 - Opción 7 [RCP]",
+        "streamId": "a52bf7c28df63995ad427c32ebf1e517445720bb",
+        "type": "ACESTREAM",
+        "source": "RCP"
+      }
+    ],
+    "id": "pina_67"
   },
   {
     "id": "pina_1",
