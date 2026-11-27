@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "27/11/2026 17:31",
+    "updatedAt": "27/11/2026 17:41",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -401,22 +401,6 @@
     ]
   },
   {
-    "title": "Rizespor vs Kasimpasa",
-    "sport": "TURKEY. SUPER LEAGUE",
-    "competition": "Turkey. Super League",
-    "time": "18:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Turkish Opción 1",
-        "streamId": "118416583faa3fb4f03800173429b6b844b43a52",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_72"
-  },
-  {
     "title": "Alanyaspor vs Konyaspor",
     "sport": "TURKEY. SUPER LEAGUE",
     "competition": "Turkey. Super League",
@@ -438,6 +422,22 @@
       {
         "name": "[LiveTV] Turkish Opción 3",
         "streamId": "48bee10b883f17c7186d60f1e8022dca0ba41a05",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_72"
+  },
+  {
+    "title": "Rizespor vs Kasimpasa",
+    "sport": "TURKEY. SUPER LEAGUE",
+    "competition": "Turkey. Super League",
+    "time": "18:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Turkish Opción 1",
+        "streamId": "118416583faa3fb4f03800173429b6b844b43a52",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
