@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "28/11/2026 10:29",
+    "updatedAt": "28/11/2026 10:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -101,12 +101,18 @@
     "id": "pina_53"
   },
   {
-    "title": "World Cup, Ruka",
+    "title": "World Cup, Altenberg",
     "sport": "OTROS",
-    "competition": "Nordic Combined",
+    "competition": "Skeleton",
     "time": "10:00",
     "date": "Hoy",
     "channels": [
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
       {
         "name": "[LiveTV] Russian Opción 1",
         "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
@@ -122,12 +128,6 @@
       {
         "name": "[LiveTV] German Opción 3",
         "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
