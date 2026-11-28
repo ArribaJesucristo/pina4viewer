@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "28/11/2026 13:41",
+    "updatedAt": "28/11/2026 13:51",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -80,7 +80,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_54"
+    "id": "pina_53"
   },
   {
     "id": "pina_3",
@@ -171,22 +171,6 @@
     ]
   },
   {
-    "title": "Rubin vs Akron",
-    "sport": "FUTBOL",
-    "competition": "Russia. Premier League",
-    "time": "12:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b7c5f21b435d79c823e47572655a9c157a3ba12",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_50"
-  },
-  {
     "title": "Slepsk Suwalki vs Skra Belchatow",
     "sport": "OTROS",
     "competition": "Poland. PlusLiga",
@@ -201,6 +185,22 @@
       }
     ],
     "id": "pina_52"
+  },
+  {
+    "title": "Rubin vs Akron",
+    "sport": "FUTBOL",
+    "competition": "Russia. Premier League",
+    "time": "12:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "4b7c5f21b435d79c823e47572655a9c157a3ba12",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_54"
   },
   {
     "title": "Traktor vs Metallurg Mg",
@@ -260,7 +260,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_63"
   },
   {
     "title": "United Kingdom vs Spain",
@@ -294,7 +294,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_51"
+    "id": "pina_50"
   },
   {
     "id": "pina_4",
@@ -325,7 +325,7 @@
     ]
   },
   {
-    "title": "Hertha Berlin vs Karlsruhe",
+    "title": "Dynamo Dresden vs St Pauli",
     "sport": "FUTBOL",
     "competition": "Germany. 2 Bundesliga",
     "time": "13:00",
@@ -333,7 +333,7 @@
     "channels": [
       {
         "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "14407b00d454cb7dc0d70aa26e8bbc554f457f00",
+        "streamId": "b146ee4b6e16c9df58e27bd02ffd6cea840ff212",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -363,7 +363,7 @@
     "id": "pina_58"
   },
   {
-    "title": "Dynamo Dresden vs St Pauli",
+    "title": "Hertha Berlin vs Karlsruhe",
     "sport": "FUTBOL",
     "competition": "Germany. 2 Bundesliga",
     "time": "13:00",
@@ -371,7 +371,7 @@
     "channels": [
       {
         "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "b146ee4b6e16c9df58e27bd02ffd6cea840ff212",
+        "streamId": "14407b00d454cb7dc0d70aa26e8bbc554f457f00",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -442,7 +442,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_53"
+    "id": "pina_51"
   },
   {
     "id": "pina_5",
@@ -616,7 +616,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_63"
+    "id": "pina_62"
   },
   {
     "title": "World Cup, Altenberg",
@@ -666,7 +666,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_62"
+    "id": "pina_64"
   },
   {
     "title": "World Cup, Ruka",
