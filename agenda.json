@@ -1,28 +1,16 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "28/11/2026 10:21",
+    "updatedAt": "28/11/2026 10:29",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
-    "title": "Valencian Grand Prix",
-    "sport": "MOTOR",
-    "competition": "Moto GP",
-    "time": "08:40",
+    "title": "Desert Vipers vs MI Emirates",
+    "sport": "OTROS",
+    "competition": "Figure Skating",
+    "time": "08:30",
     "date": "Hoy",
     "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Dutch Opción 2",
-        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
       {
         "name": "[LiveTV] English Opción 1",
         "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
@@ -48,26 +36,14 @@
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "d63d8a57cf471394bfa9f619bbd68b01ae27a801",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Polish Opción 2",
-        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 3",
-        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "name": "[LiveTV] Dutch Opción 2",
+        "streamId": "fcd7621df513f600652b4813d5d8fd1daed60058",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
@@ -76,18 +52,6 @@
         "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
         "type": "ACESTREAM",
         "source": "LiveTV"
-      },
-      {
-        "name": "DAZN MotoGP - Opción 1 [New Era]",
-        "streamId": "30bfcdcc472367415184132bf9d8f46a0a4e8b32",
-        "type": "ACESTREAM",
-        "source": "New Era"
-      },
-      {
-        "name": "DAZN MotoGP - Opción 2 [New Era]",
-        "streamId": "2a05a020dfe97aaa0665bb7551022868b2a88b36",
-        "type": "ACESTREAM",
-        "source": "New Era"
       }
     ],
     "id": "pina_50"
@@ -130,6 +94,40 @@
       {
         "name": "[LiveTV] German Opción 3",
         "streamId": "5e94200ae8b1d95cb559fb150e5993d92e15d4e7",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_53"
+  },
+  {
+    "title": "World Cup, Ruka",
+    "sport": "OTROS",
+    "competition": "Nordic Combined",
+    "time": "10:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 2",
+        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 3",
+        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -197,22 +195,6 @@
         "source": "RCP"
       }
     ]
-  },
-  {
-    "title": "Desert Vipers vs MI Emirates",
-    "sport": "UAE. T20 LEAGUE",
-    "competition": "UAE. T20 League",
-    "time": "11:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_53"
   },
   {
     "id": "pina_3",
