@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "28/11/2026 14:11",
+    "updatedAt": "28/11/2026 14:21",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -99,22 +99,6 @@
     ]
   },
   {
-    "title": "Slepsk Suwalki vs Skra Belchatow",
-    "sport": "OTROS",
-    "competition": "Poland. PlusLiga",
-    "time": "12:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "92b6ba09dae4bbb8a67a405125d08ca8d15380ee",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_49"
-  },
-  {
     "title": "Traktor vs Metallurg Mg",
     "sport": "HOCKEY",
     "competition": "KHL",
@@ -172,7 +156,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_70"
+    "id": "pina_72"
   },
   {
     "title": "United Kingdom vs Spain",
@@ -253,6 +237,22 @@
     "id": "pina_53"
   },
   {
+    "title": "Hertha Berlin vs Karlsruhe",
+    "sport": "FUTBOL",
+    "competition": "Germany. 2 Bundesliga",
+    "time": "13:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "14407b00d454cb7dc0d70aa26e8bbc554f457f00",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_54"
+  },
+  {
     "title": "Holstein Kiel vs Kaiserslautern",
     "sport": "FUTBOL",
     "competition": "Germany. 2 Bundesliga",
@@ -268,22 +268,6 @@
       {
         "name": "[LiveTV] Polish 8000kbps",
         "streamId": "54a4a28882d3cae1ca19de5d4b022ebea40351f9",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_54"
-  },
-  {
-    "title": "Hertha Berlin vs Karlsruhe",
-    "sport": "FUTBOL",
-    "competition": "Germany. 2 Bundesliga",
-    "time": "13:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "14407b00d454cb7dc0d70aa26e8bbc554f457f00",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -354,7 +338,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_50"
+    "id": "pina_49"
   },
   {
     "id": "pina_3",
@@ -547,22 +531,6 @@
     "id": "pina_59"
   },
   {
-    "title": "Vanspor vs Bursaspor",
-    "sport": "FUTBOL",
-    "competition": "Turkey. 1 Lig",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Turkish Opción 1",
-        "streamId": "47c1b3a68d03bd190fed521d144ad08fa0f195f3",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_60"
-  },
-  {
     "title": "Simulcast",
     "sport": "FUTBOL",
     "competition": "Germany. 3 Bundesliga",
@@ -576,10 +544,10 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_61"
+    "id": "pina_60"
   },
   {
-    "title": "RW Essen vs Hoffenheim II",
+    "title": "Saarbruecken vs Alemannia",
     "sport": "FUTBOL",
     "competition": "Germany. 3 Bundesliga",
     "time": "14:00",
@@ -587,28 +555,28 @@
     "channels": [
       {
         "name": "[LiveTV] German Opción 1",
-        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_61"
+  },
+  {
+    "title": "Vanspor vs Bursaspor",
+    "sport": "FUTBOL",
+    "competition": "Turkey. 1 Lig",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Turkish Opción 1",
+        "streamId": "47c1b3a68d03bd190fed521d144ad08fa0f195f3",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
     "id": "pina_62"
-  },
-  {
-    "title": "Waldhof vs Stuttgart II",
-    "sport": "FUTBOL",
-    "competition": "Germany. 3 Bundesliga",
-    "time": "14:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] German Opción 1",
-        "streamId": "1fb794b1503c5955b75ea0106ee6360b80d78849",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_63"
   },
   {
     "title": "Preussen Muenster vs Verl",
@@ -624,10 +592,10 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_64"
+    "id": "pina_63"
   },
   {
-    "title": "Saarbruecken vs Alemannia",
+    "title": "RW Essen vs Hoffenheim II",
     "sport": "FUTBOL",
     "competition": "Germany. 3 Bundesliga",
     "time": "14:00",
@@ -635,7 +603,23 @@
     "channels": [
       {
         "name": "[LiveTV] German Opción 1",
-        "streamId": "d0ca51f6145514ee605c2ef5d5a137e2a08c95b8",
+        "streamId": "ab0d54995bdcea2d8f9f588ef631ebbfb3f5a9ab",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_64"
+  },
+  {
+    "title": "Waldhof vs Stuttgart II",
+    "sport": "FUTBOL",
+    "competition": "Germany. 3 Bundesliga",
+    "time": "14:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] German Opción 1",
+        "streamId": "1fb794b1503c5955b75ea0106ee6360b80d78849",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -675,6 +659,28 @@
     "id": "pina_67"
   },
   {
+    "title": "CSKA vs Zenit",
+    "sport": "FUTBOL",
+    "competition": "Russia. Premier League",
+    "time": "14:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "4b7c5f21b435d79c823e47572655a9c157a3ba12",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "a203f6b935a8ad8659c4c76c1d9c13afa6368ef2",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_50"
+  },
+  {
     "title": "World Cup, Ruka",
     "sport": "CROSS-COUNTRY SKIING",
     "competition": "Cross-Country Skiing",
@@ -700,7 +706,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_72"
+    "id": "pina_70"
   },
   {
     "title": "UK Championship",
@@ -843,28 +849,6 @@
     "id": "pina_69"
   },
   {
-    "title": "Spartak M vs Torpedo NN",
-    "sport": "KHL",
-    "competition": "KHL",
-    "time": "15:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] Russian Opción 1",
-        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 2",
-        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_71"
-  },
-  {
     "title": "World Cup, Kontiolahti",
     "sport": "BIATHLON",
     "competition": "Biathlon",
@@ -892,6 +876,28 @@
       {
         "name": "[LiveTV] German Opción 4",
         "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_71"
+  },
+  {
+    "title": "Spartak M vs Torpedo NN",
+    "sport": "KHL",
+    "competition": "KHL",
+    "time": "15:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian Opción 1",
+        "streamId": "aa6c193b9de1e6b6277e3075299fdeea925e2dc0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "dcda9de85f7d662c5c3c2efd74eca0fb5c6aab3b",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
