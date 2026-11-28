@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "28/11/2026 12:21",
+    "updatedAt": "28/11/2026 12:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -215,24 +215,44 @@
         "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
         "type": "ACESTREAM",
         "source": "LiveTV"
-      }
-    ]
-  },
-  {
-    "title": "Rubin vs Akron",
-    "sport": "FUTBOL",
-    "competition": "Russia. Premier League",
-    "time": "12:00",
-    "date": "Hoy",
-    "channels": [
+      },
       {
-        "name": "[LiveTV] Russian 8000kbps",
-        "streamId": "4b7c5f21b435d79c823e47572655a9c157a3ba12",
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "12ea555d431dbe51fc8e4ca745aec09fe22a4865",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 2",
+        "streamId": "5f595b1bbade5e7c915d99f90645f4c30d4ba540",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish 8000kbps",
+        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 3",
+        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 4",
+        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] German Opción 5",
+        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
-    ],
-    "id": "pina_50"
+    ]
   },
   {
     "title": "United Kingdom vs Spain",
@@ -262,6 +282,22 @@
       {
         "name": "[LiveTV] Spanish Opción 4",
         "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_50"
+  },
+  {
+    "title": "Rubin vs Akron",
+    "sport": "FUTBOL",
+    "competition": "Russia. Premier League",
+    "time": "12:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "4b7c5f21b435d79c823e47572655a9c157a3ba12",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -342,7 +378,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_59"
+    "id": "pina_60"
   },
   {
     "id": "pina_4",
@@ -373,44 +409,32 @@
     ]
   },
   {
-    "title": "World Cup, Kontiolahti",
-    "sport": "BIATHLON",
-    "competition": "Biathlon",
-    "time": "13:00",
+    "title": "Preston vs Norwich City",
+    "sport": "OTROS",
+    "competition": "England. Championship",
+    "time": "13:30",
     "date": "Hoy",
     "channels": [
       {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "8dbe2d515e9131fa311353537736f8c94be9b26d",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Polish 8000kbps",
-        "streamId": "d6f0a6377c31f68b1c1c071e0a8f9f105a455867",
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "eab7aeef0218ce8b0752e596e4792b69eda4df5e",
         "type": "ACESTREAM",
         "source": "LiveTV"
       },
       {
-        "name": "[LiveTV] Russian Opción 3",
-        "streamId": "1b0bc4d4dcd609d3c092712e721392b199f50a62",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 4",
-        "streamId": "314eb626864faf52e01624361bd6906b5406127f",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] German Opción 5",
-        "streamId": "b8cad4710b1c3b2b84a82c1ece40c08517b8f766",
+        "name": "[LiveTV] Russian 8000kbps",
+        "streamId": "f6d68cfa8694f814983f2a5757f4e0c4964b880c",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
     ],
-    "id": "pina_60"
+    "id": "pina_59"
   },
   {
     "id": "pina_5",
