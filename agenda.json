@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "28/11/2026 01:51",
+    "updatedAt": "28/11/2026 02:01",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -81,22 +81,6 @@
     "id": "pina_52"
   },
   {
-    "title": "Columbus Crew vs Inter Miami",
-    "sport": "USA. MLS",
-    "competition": "USA. MLS",
-    "time": "02:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "c9c062941fbecb16ce29437f346ea7177d720898",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_56"
-  },
-  {
     "title": "Australian Championships",
     "sport": "GOLF",
     "competition": "DP World Tour",
@@ -112,6 +96,22 @@
       {
         "name": "[LiveTV] Dutch Opción 2",
         "streamId": "9231f38e71a85ad24b4c11a5e360992e30c916ed",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
+    "id": "pina_56"
+  },
+  {
+    "title": "Columbus Crew vs Inter Miami",
+    "sport": "USA. MLS",
+    "competition": "USA. MLS",
+    "time": "02:00",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "c9c062941fbecb16ce29437f346ea7177d720898",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
