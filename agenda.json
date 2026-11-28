@@ -1,7 +1,7 @@
 [
   {
     "_metadata": true,
-    "updatedAt": "28/11/2026 11:21",
+    "updatedAt": "28/11/2026 11:31",
     "timezone": "Madrid,Paris,Bruselas"
   },
   {
@@ -76,46 +76,6 @@
       {
         "name": "[LiveTV] German Opción 3",
         "streamId": "5e94200ae8b1d95cb559fb150e5993d92e15d4e7",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      }
-    ],
-    "id": "pina_53"
-  },
-  {
-    "title": "World Cup, Altenberg",
-    "sport": "OTROS",
-    "competition": "Skeleton",
-    "time": "10:00",
-    "date": "Hoy",
-    "channels": [
-      {
-        "name": "[LiveTV] English Opción 1",
-        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English 8000kbps",
-        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] English Opción 2",
-        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Russian Opción 3",
-        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
-        "type": "ACESTREAM",
-        "source": "LiveTV"
-      },
-      {
-        "name": "[LiveTV] Polish Opción 4",
-        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
         "type": "ACESTREAM",
         "source": "LiveTV"
       }
@@ -198,7 +158,7 @@
         "source": "LiveTV"
       }
     ],
-    "id": "pina_54"
+    "id": "pina_53"
   },
   {
     "title": "World Cup, Ruka",
@@ -226,6 +186,22 @@
         "source": "LiveTV"
       }
     ],
+    "id": "pina_54"
+  },
+  {
+    "title": "Bandirmaspor vs Batman Petrolspor",
+    "sport": "FUTBOL",
+    "competition": "Turkey. 1 Lig",
+    "time": "11:30",
+    "date": "Hoy",
+    "channels": [
+      {
+        "name": "[LiveTV] Turkish Opción 1",
+        "streamId": "48bee10b883f17c7186d60f1e8022dca0ba41a05",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      }
+    ],
     "id": "pina_55"
   },
   {
@@ -247,6 +223,36 @@
         "streamId": "86262568aa72b956b06ac67b1c310a32248a0e98",
         "type": "ACESTREAM",
         "source": "New Era"
+      },
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "ac675c82d6dfd4a201532c18b42e48dacb7c32c6",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Russian Opción 2",
+        "streamId": "6176281b9c46a5621a0e88524f8dc621f173b8e0",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] Polish Opción 3",
+        "streamId": "7aa9cc819c6fa781dea6b4de3aa5393258b766d8",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English Opción 1",
+        "streamId": "efc60cfe5e3a349baa02bcc49f6647c21a9c3c5b",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
+      },
+      {
+        "name": "[LiveTV] English 8000kbps",
+        "streamId": "fc5089d8e1519872fdf951779ccbca913acc9bce",
+        "type": "ACESTREAM",
+        "source": "LiveTV"
       }
     ]
   },
